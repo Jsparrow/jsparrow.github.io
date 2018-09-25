@@ -11,11 +11,12 @@ module.exports = {
         nav: [{
                 text: 'jSparrow',
                 link: '/'
-            },
-            {
-                text: 'Rules',
-                link: '/rules/'
             }
+            // ,
+            // {
+            //     text: 'Rules',
+            //     link: '/rules/'
+            // }
         ],
         sidebar: {
             '/rules/': rules.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
