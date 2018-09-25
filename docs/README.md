@@ -1,6 +1,5 @@
 ---
 title: jSparrow Documentation
-sidebar: auto
 ---
 
 # jSparrow
