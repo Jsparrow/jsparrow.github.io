@@ -18,6 +18,7 @@ module.exports = {
             //     link: '/rules/'
             // }
         ],
+        logo: 'logo.png',
         sidebar: {
             '/rules/': rules.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
                         .sort((a, b) => b < a)
