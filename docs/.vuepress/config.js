@@ -10,6 +10,12 @@ const eclipse = dirTree(path.join(__dirname, '../eclipse'), {
 
 module.exports = {
     title: 'jSparrow Github Documentation',
+    head: [
+        ['link', {
+            rel: 'icon',
+            href: '/logo.png'
+        }]
+    ],
     themeConfig: {
         nav: [{
                 text: 'jSparrow',
