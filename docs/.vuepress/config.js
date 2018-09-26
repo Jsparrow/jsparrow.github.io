@@ -4,6 +4,9 @@ const path = require('path');
 const rules = dirTree(path.join(__dirname, '../rules'), {
     extensions: /\.md/
 });
+const eclipse = dirTree(path.join(__dirname, '../eclipse'), {
+    extensions: /\.md/
+});
 
 module.exports = {
     title: 'jSparrow Github Documentation',
@@ -11,6 +14,10 @@ module.exports = {
         nav: [{
                 text: 'jSparrow',
                 link: '/'
+            },
+            {
+                text: 'Eclipse Plug-In',
+                link: '/eclipse/'
             }
             // ,
             // {
@@ -18,11 +25,12 @@ module.exports = {
             //     link: '/rules/'
             // }
         ],
-        logo: 'logo.png',
+        logo: '/logo.png',
         sidebar: {
-            '/' : [''],
             '/rules/': rules.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
-                        .sort((a, b) => b < a)
+                .sort((a, b) => b < a),
+            '/eclipse/': eclipse.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
+                .sort((a, b) => b < a)
         }
     },
     port: 8081
