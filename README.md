@@ -8,7 +8,7 @@ This is the documentation site for jSparrow!
 
 Fork this repository, make changes and when you are done with them send us a pullrequest. Thank you.
 
-# Ruepress reference guide
+# Vuepress reference guide
 
 [Vuepress documentation](https://vuepress.vuejs.org/guide/)
 
