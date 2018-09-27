@@ -1,10 +1,16 @@
 # About this repository
 
-This is the documentation site for jSparrow! (http://jsparrow.github.io)
+This is the documentation site for jSparrow!
+
+[jsaprrow documentation](http://jsparrow.github.io)
 
 # How to contribute
 
 Fork this repository, make changes and when you are done with them send us a pullrequest. Thank you.
+
+# Ruepress reference guide
+
+[Vuepress documentation](https://vuepress.vuejs.org/guide/)
 
 # Edit guide
 
@@ -26,7 +32,7 @@ npm run dev
 
 # Update jsparrow.github.io
 
-To execute this step it is required to have write access to the repository (https://github.com/Jsparrow/jsparrow.github.io)
+To execute this step it is required to have write access to the [main repository](https://github.com/Jsparrow/jsparrow.github.io)
 
 ## build site
 
