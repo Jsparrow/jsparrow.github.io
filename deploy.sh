@@ -16,7 +16,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
-#if you are deploying to https://jsparrow11.github.io
+# if you are deploying to https://jsparrow.github.io
 git push -f git@github.com:Jsparrow/jsparrow.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
