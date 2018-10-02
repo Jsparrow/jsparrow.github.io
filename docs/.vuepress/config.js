@@ -7,7 +7,7 @@ const rules = dirTree(path.join(__dirname, '../rules'), {
 const eclipse = dirTree(path.join(__dirname, '../eclipse'), {
     extensions: /\.md/
 });
-const gha = dirTree(path.join(__dirname, '../gha'), {
+const github = dirTree(path.join(__dirname, '../github'), {
     extensions: /\.md/
 });
 
@@ -30,7 +30,7 @@ module.exports = {
             },
             {
                 text: 'Github App',
-                link: '/gha/'
+                link: '/github/'
             }
             // ,
             // {
@@ -44,7 +44,7 @@ module.exports = {
                 .sort((a, b) => b < a),
             '/eclipse/': eclipse.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
                 .sort((a, b) => b < a),
-            '/gha/': gha.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
+            '/github/': github.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
                 .sort((a, b) => b < a)
         }
     },
