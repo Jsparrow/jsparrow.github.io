@@ -2,6 +2,9 @@
 title: Installation guide
 ---
 # Installation
+    
+[[toc]]
+
 jSparrow has to be installed via Eclipse update site. 
 
 ## Requirements
@@ -20,6 +23,7 @@ This URL is only usable within Eclipse.
     * Name: “jSparrow Update Site”
     * Location: “http://update.jsparrow.eu”
 
-4. Select jSparrow and click next DEPENDS WHICH ECLIPSE YOU USE
+4. Expand jSparrow entry and choose installation appropriate for your Eclipse version
+    * Because of API changes in Eclipse, you have to choose to install version for Eclipse Neon and Oxygen or version for Eclipse Photon, depending on which Eclipse version you are using
 
-5. Follow the dialog and restart Eclipse afterwards
+5. Select Next, follow the dialog and restart Eclipse afterwards

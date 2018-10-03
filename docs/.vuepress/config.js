@@ -49,5 +49,10 @@ module.exports = {
                 .sort((a, b) => b < a)
         }
     },
-    port: 8081
+    port: 8081,
+    markdown: {
+        toc: { 
+            includeLevel: [2, 3, 4] 
+        }
+    }
 };

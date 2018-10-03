@@ -3,6 +3,8 @@ title: Getting started
 ---
 # Getting started
 
+[[toc]]
+
 ## Introduction
 
 jSparrow is a eclipse plugin, which automaticaly applies improvements, based on a set of predefined rules.
@@ -41,41 +43,46 @@ Screenshot for a selected project:
 ## Selection of rules
 
 After the execution of “Select rules to apply” a selection window is opened to select the rule set.
-On the left side the rules are listed and on the right side there is the description of the rule that is currently selected.
+Window is split in three parts. On the top is filtering part which makes it easier to find rules you would like to apply.
+* add screenshot of filtering part
 
-### Standard rule that are predefined
+Middle of the window is divided in two lists. Left list contains available rules and right one contains rules that you want to apply.
+You can add desired rules to right list by simply selecting one or more rules on left list and clicking Add button or add all the rules by clicking Add all button.
+* add screenshot of rules selection
+
+On the bottom part of the window, the description of currently selected rule will be displayed.
+* add screenshot of description
+    * think of adding just one screenshot for all
+
+### Standard rules that are predefined
 
 The screenshot displays the preselection of the default profile.
 
-Hint: Profiles can be configured in the preference page.
-
-
-
-### Selection of all rules
-
-Through a klick on “Select / unselect all”, all rules will be selected or unselected.
-
-The following screenshot shows the selection of all rules and the description of the selected rule (“For to ForEach”).
+::: tip
+Profiles can be configured in the preference page.
+:::
 
 
 
 ### Selection of the profile
 
-Through the drop down menu of the select rules interface it is possible to choose a profile.
+Through the drop down menu of the select rules interface it is possible to choose a profile. Change of currently selected rule will discard previously made selection.
 
 
 
 ## Preview of the rules to apply
 
-After selecting rules there is for each rule a preview.
+After selecting rules the preview wizard is displayd, containing changes for each rule, one at a time.
 
 Following elements are in the preview:
 * Name of the rule
     * In the left upper corner is the name of current rule
 * Short description of the rule
-Below the name of the rule is a description
+    * Below the name of the rule is a description
+* Statistics for the rule
+    * Displays how many times the rule was applied, what is estimeted time saved and how much time is saved by applying the rule
 * List of changed java classes
-Shows all the classes that are changed by the rule
+    * Shows all the classes that are changed by the rule
 * Diff view
     * Left side: old Javacode
     * Right side: new Javacode
@@ -88,7 +95,7 @@ Shows all the classes that are changed by the rule
 
 ### Rules in detail
 
-In the following there are example screenshots of all rules.
+Following are the example screenshots of all the rules.
 
 #### Arithmetic Assignment
 
@@ -175,12 +182,13 @@ The default profile determines, which rules are pre-selected when starting the r
 Hint: The pre selection can still be changed during the rule selection process.
 
 ### Profiles related to specific Java target versions
+### Filtering rules by a tag
 
-Each rule knows which minimum Java version it requires. Some rules do not require a specific minimum Java version to be executed. For Java 5 to 8 there is a predefined rule set.
+You can filter rules by text or by available tags. Tags group rules by functionality, requirements or any relevant common factor they have.
 
-#### Java 8 Profil
+### Disabled rules
 
-#### Java 7 Profil
-
-#### Java 5 Profil
+Some rules may not be able for applying on a certain project. Reson for that is one of the following missing requirements:
+* Java version too low
+* Missing required library
 

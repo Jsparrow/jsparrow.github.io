@@ -1,4 +1,6 @@
 # Getting started
+    
+[[toc]]
 
 The jsparrow Maven Plugin (JMP) is a continuous integration tool to apply automatic refactorings. It supplies similar rules as the jSparrow Eclipse Plugin, but works without user input. 
 
