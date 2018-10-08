@@ -17,7 +17,8 @@ This URL is only usable within Eclipse.
 
 1. Go to “Help” -> “Install New Software…”
 
-![Install New Software](../images/install_new_software_large.jpg)
+[ ![Install New Software](/img/eclipse/install_new_software_large.jpg) ](/img/eclipse/install_new_software_large.jpg)
+
 
 2. Click on the “Add...” button to add the jSparrow update site
 
@@ -25,11 +26,11 @@ This URL is only usable within Eclipse.
     * Name: “jSparrow Update Site”
     * Location: “http://update.jsparrow.eu”
 
-![Add Repository](../images/add_repository.png)
+[ ![Add Repository](/img/eclipse/add_repository.png) ](/img/eclipse/add_repository.png)
 
 4. Choose installation appropriate for your Eclipse version
     * Because of API changes in Eclipse, you have to choose to install version for Eclipse Neon and Oxygen or version for Eclipse Photon, depending on which Eclipse version you are using
 
-![Choose installation of jSparrow](../images/install_choose_version.png)
+[ ![Choose installation of jSparrow](/img/eclipse/install_choose_version.png) ](/img/eclipse/install_choose_version.png)
 
 5. Select Next, follow the dialog and restart Eclipse afterwards

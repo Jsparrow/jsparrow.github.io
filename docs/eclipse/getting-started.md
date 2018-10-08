@@ -34,14 +34,14 @@ The plugin is activated with a right-click in the editor or the package tree. Th
 * Java editor
     * Changes are applied to the java class that is in focus of the editor
 
-![Screenshot for a selected project](../images/selected_project_large.jpg)
+[ ![Screenshot for a selected project](/img/eclipse/selected_project_large.jpg) ](/img/eclipse/selected_project_large.jpg)
 
 
 ## Selection of rules
 
 After the execution of “Select rules to apply” a selection window is opened to select the rule set.
 
-![Select rules wizard](../images/select_rules_wizard.png)
+[ ![Select rules wizard](/img/eclipse/select_rules_wizard.png) ](/img/eclipse/select_rules_wizard.png)
 
 Window is split in three parts. On the top is filtering part which makes it easier to find rules you would like to apply.
 
@@ -64,7 +64,9 @@ Profiles can be configured in the preference page.
 
 After selecting rules the preview wizard is displayed, containing changes for each rule, one at a time.
 
-![Preview of the rules to apply](../images/preview_wizard.png)
+[ ![Preview of the rules to apply](/img/eclipse/preview_wizard.png) ](/img/eclipse/preview_wizard.png)
+
+[ ![Preview of the rules to apply](/img/eclipse/preview_wizard.png) ](/img/eclipse/preview_wizard.png)
 
 Following elements are in the preview:
 * Name of the rule
@@ -85,7 +87,7 @@ Following elements are in the preview:
     * “Cancel”: Cancel all changes 
     * “Finish”: Apply all changes
 
-![Statistics summary](../images/preview_summary.png)
+[ ![Statistics summary](/img/eclipse/preview_summary.png) ](/img/eclipse/preview_summary.png)
 
 
 

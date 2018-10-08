@@ -18,7 +18,7 @@ Open Preferences -> General -> Network Connections
 
 It is important that the HTTPS entry is set similar to the following where the Host and Port are replaced according to your proxy settings
 
-![Example proxy entries](/img/proxy.png)
+[ ![Example proxy entries](/img/proxy.png) ](/img/proxy.png)
 
 #### Test eclipse proxy settings
 
