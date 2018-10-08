@@ -34,25 +34,21 @@ The plugin is activated with a right-click in the editor or the package tree. Th
 * Java editor
     * Changes are applied to the java class that is in focus of the editor
 
-
-
-Screenshot for a selected project:
-
+![Screenshot for a selected project](../images/selected_project_large.jpg)
 
 
 ## Selection of rules
 
 After the execution of “Select rules to apply” a selection window is opened to select the rule set.
+
+![Select rules wizard](../images/select_rules_wizard.png)
+
 Window is split in three parts. On the top is filtering part which makes it easier to find rules you would like to apply.
-* add screenshot of filtering part
 
 Middle of the window is divided into two lists. Left list contains available rules and right one contains rules that you want to apply.
 You can add desired rules to the right list by simply selecting one or more rules on the left list and selecting the Add button. If you want to apply all the rules, you can do it by just selecting the Add all button.
-* add screenshot of rules selection
 
 On the bottom part of the window, the description of currently selected rule is displayed.
-* add screenshot of description
-    * think of adding just one screenshot for all
 
 
 ### Selection of the profile
@@ -68,6 +64,8 @@ Profiles can be configured in the preference page.
 
 After selecting rules the preview wizard is displayd, containing changes for each rule, one at a time.
 
+![Preview of the rules to apply](../images/preview_wizard.png)
+
 Following elements are in the preview:
 * Name of the rule
     * In the left upper corner is the name of current rule
@@ -81,22 +79,26 @@ Following elements are in the preview:
     * Left side: old Javacode
     * Right side: new Javacode
 * Buttons
-    * “Next”: Forward to the next rule
+    * “Summary”: Skip to the page with statistics summary
     * “Back”: Return to previous rule
+    * “Next”: Forward to the next rule
     * “Cancel”: Cancel all changes 
     * “Finish”: Apply all changes
 
+![Statistics summary](../images/preview_summary.png)
 
 
 
 ## Additional Options
 
-jSparrow allows the generation of a default profile. The preferences are integrated in eclipse and through “Window”/”Preferences”/”jSparrow” to reach.
+jSparrow allows the generation of a default profile. The preferences are integrated in eclipse and through “Window” -> ”Preferences” -> ”jSparrow” to reach.
 
 ### Default profile
 
 The default profile determines, which rules are pre-selected when starting the rule wizard.
-Hint: The pre selection can still be changed during the rule selection process.
+::: tip
+The pre selection can still be changed during the rule selection process.
+:::
 
 ### Filtering rules by a tag
 
@@ -107,4 +109,6 @@ You can filter rules by text or by available tags. Tags group rules by functiona
 Some rules may not be able for applying on a certain project. Reson for that is one of the following missing requirements:
 * Java version too low
 * Missing required library
-
+::: tip
+Information about unsatisfied requirements will be shown in red color in the rule description part of the select rules wizard.
+:::
