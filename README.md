@@ -16,6 +16,20 @@ Fork this repository, make changes and when you are done with them send us a pul
 
 We recommand tu use npm for this project, feel free to use yum if you feel more comfortable.
 
+## Install npm
+
+Install npm from nodejs.org.
+
+https://nodejs.org/en/download/package-manager/
+
+### Trouble shooting
+
+events.js throws an unhandled error might be solved with 
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
+https://github.com/facebook/jest/issues/3254#issuecomment-297869853
+
 ## Install dependencies
 
 ```

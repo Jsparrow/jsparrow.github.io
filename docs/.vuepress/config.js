@@ -27,7 +27,7 @@ module.exports = {
             },
             {
                 text: 'Maven Plugin',
-                link: '/maven/'
+                link: '/maven/getting-started.html'
             },
             {
                 text: 'Eclipse Plugin',

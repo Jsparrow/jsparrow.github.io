@@ -14,8 +14,10 @@ Maven projects themselves may have their Java source version set to an older ver
 ### Using the Jar and Pom Files
 Download the JAR file and the pom.xml. Navigate to the download location and execute this command: 
 
-```
-$ mvn install:install-file -Dfile=jsparrow-maven-plugin-\<VERSION>.jar -DpomFile=pom.xml
+```bash
+$ mvn install:install-file \
+    -Dfile=jsparrow-maven-plugin-<VERSION>.jar \
+    -DpomFile=pom.xml
 ```
 
 ## Usage
@@ -29,7 +31,7 @@ Configuration using command line options, profiles or configuration files possib
 ### Project Setup
 To use jsparrow-maven-plugin on a project, add the following code snippet to the project's pom.xml (in build/plugins):
 
-```
+```XML
 <plugin>
     <groupId>eu.jsparrow</groupId>
     <artifactId>jsparrow-maven-plugin</artifactId>
@@ -39,7 +41,7 @@ To use jsparrow-maven-plugin on a project, add the following code snippet to the
 
 To configure which rules should be applied use the configuration file (jsparrow.yml). Place this file in your projects root directory. If the configuration file is not present there, the JMP will use the default configuration. If the configuration file has errors, an exception will be thrown and the JMP will be terminated.
 
-```
+```yaml
 # specify one of the profiles declared below as the selected profile.  
 # if the selectedProfile is not specified the rules in the “rules:” section will be applied  
 selectedProfile: profile1  
@@ -114,8 +116,9 @@ excludes:
 
 Any configuration options in the YAML file are case sensitive. Be careful how you type out things!
 ::: tip
-The rule IDs can be viewed using the list-rules-short-goal of the jsparrow-maven-plugin (see below).
+The rule IDs can be viewed using the [list-rules-short-goal](#list-rules-short) of the jsparrow-maven-plugin.
 :::
+
 
 ## Plugin Goals
 The following plugin goals are supported: 
@@ -123,58 +126,59 @@ The following plugin goals are supported:
 ### Refactor
 This goal starts the refactoring process.
 
-```
+```bash
 $ mvn jsparrow:refactor 
 ```
 You may add the following parameters:
 
 | Parameter	| Description |
-|----------|:-------------:|
-| `-DconfigFile=\<config-file-path>`	| The specified configuration file will be used. |
-| `-Dprofile=\<selected-profile-id>`	| The specified profile will be used. Make sure that either a jsparrow.yml is in the root directory or `-DconfigFile=\<config-file-path>` is specified. The given profile ID will be compared to the declared profiles in the configuration file. If the given profile ID is not declared, an error will be thrown. |
+|:----------|:-------------|
+| `-DconfigFile=<config-file-path>`	| The specified configuration file will be used. |
+| `-Dprofile=<selected-profile-id>`	| The specified profile will be used. Make sure that either a jsparrow.yml is in the root directory or `-DconfigFile=<config-file-path>` is specified. The given profile ID will be compared to the declared profiles in the configuration file. If the given profile ID is not declared, an error will be thrown. |
 | `-DdefaultConfiguration`	| The built-in default configuration will be used for refactoring. If this parameter is set, the configuration in the root of the project will be ignored. |
-| `-Dlicense=\<license-key>`	| Specify the license key to be used. This takes priority over a configuration via config file. In "Machine Configuration" the config file approach is described. |
-| `-Durl=\<url>`	| Specify the licensing server URL to use in case a local server should be used. |
+| `-Dlicense=<license-key>`	| Specify the license key to be used. This takes priority over a configuration via config file. In "Machine Configuration" the config file approach is described. |
+| `-Durl=<url>`	| Specify the licensing server URL to use in case a local server should be used. |
 
 ### List Rules
 This goal lists rules with their IDs, names and descriptions.
 
-```
+```bash
 $ mvn jsparrow:list-rules 
 ```
 You may add the following parameters:
 
 | Parameter	| Description |
-|----------|:-------------:|
-| -Drules=\<rule1,rule2...>	| The rules with the given IDs will be listed. list-of-rule-ids is a comma-separated (,) list of rule ids. |
+|:----------|:-------------|
+| `-Drules=<rule1,rule2...>`	| The rules with the given IDs will be listed. list-of-rule-ids is a comma-separated (,) list of rule ids. |
+
 Per default all available rules will be listed.
 
 ### List Rules Short
 This goal lists all rules in a table with ID and name
 
-```
+```bash
 $ mvn jsparrow:list-rules-short
 ```
 
 ### License Info
 This goal shows the licensing information. 
 
-```
+```bash
 $ mvn jsparrow:license-info
 ```
 You may add the following parameters:
 
 | Parameter	| Description |
-|----------|:-------------:|
-| -Dlicense=\<license-key>	| The license key to be used. |
-| -Durl=\<url>	| The licensing server to contact. |
+|:----------|-------------|
+| `-Dlicense=<license-key>`	| The license key to be used |
+| `-Durl=<url>`	| The licensing server to contact |
 
 If the license key is not provided as a parameter, JMP will search for it in ~/.config/jsparrow-standalone/config.yaml.
 
 ### Help
 This goal provides the plugin help. 
 
-```
+```bash
 $ mvn jsparrow:help
 ```
 
@@ -185,7 +189,7 @@ Currently only passing the license key and license server location using the con
 
 To pass the properties using the configuration file create a file with the following contents in `$HOME/.config/jsparrow-standalone/config.yaml`:
 
-```
+```yaml
 key: <license-key>
 url: <http://somelocation.loc/>
 ```

@@ -1,1 +1,0 @@
-# jSparrow Maven Plugin Documentation
