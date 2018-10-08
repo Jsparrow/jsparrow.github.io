@@ -22,7 +22,7 @@ $ mvn install:install-file -Dfile=jsparrow-maven-plugin-\<VERSION>.jar -DpomFile
 This section describes how to set up a project to use the jSparrow Maven Plugin and how to use it.
 
 ### Feature Overview
-Fully automatic execution of jSparrow rules for a Maven project. Apply refactorings using the command line. For an overview over the supplied rules use the list-rules goal (see further below).
+Fully automatic execution of jSparrow rules for a Maven project. Apply refactoring using the command line. For an overview over the supplied rules use the list-rules goal (see further below).
 Easy installation, no additional downloads required. 
 Configuration using command line options, profiles or configuration files possible. 
 
@@ -37,7 +37,7 @@ To use jsparrow-maven-plugin on a project, add the following code snippet to the
 </plugin>
 ```
 
-To configure which rules should be applied use the configuration file (jsparrow.yml). Place this file in your projects root directory. If the configuartion file is not present there, the JMP will use the default configuration. If the configuration file has errors, an exception will be thrown and the JMP will be terminated.
+To configure which rules should be applied use the configuration file (jsparrow.yml). Place this file in your projects root directory. If the configuration file is not present there, the JMP will use the default configuration. If the configuration file has errors, an exception will be thrown and the JMP will be terminated.
 
 ```
 # specify one of the profiles declared below as the selected profile.  
@@ -101,7 +101,7 @@ renamingRule:
   
 # define modules, classes and packages that you don't want to apply refactoring to  
 # excluded modules could only be defined on parent project and those modules are then entirely ignored  
-# if modul project has it's own yaml file, it overrides entire configuration from parent project yaml configuration if module wasn't excluded in parent yaml  
+# if module project has it's own yaml file, it overrides entire configuration from parent project yaml configuration if module wasn't excluded in parent yaml  
 excludes:    
     excludeModules:  
       - eu.jsparrow.core  
@@ -134,7 +134,7 @@ You may add the following parameters:
 | `-Dprofile=\<selected-profile-id>`	| The specified profile will be used. Make sure that either a jsparrow.yml is in the root directory or `-DconfigFile=\<config-file-path>` is specified. The given profile ID will be compared to the declared profiles in the configuration file. If the given profile ID is not declared, an error will be thrown. |
 | `-DdefaultConfiguration`	| The built-in default configuration will be used for refactoring. If this parameter is set, the configuration in the root of the project will be ignored. |
 | `-Dlicense=\<license-key>`	| Specify the license key to be used. This takes priority over a configuration via config file. In "Machine Configuration" the config file approach is described. |
-| `-Durl=\<url>`	| Specify the licensing server url to use in case a local server should be used. |
+| `-Durl=\<url>`	| Specify the licensing server URL to use in case a local server should be used. |
 
 ### List Rules
 This goal lists rules with their IDs, names and descriptions.

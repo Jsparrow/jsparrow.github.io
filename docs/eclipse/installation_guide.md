@@ -8,7 +8,7 @@ title: Installation guide
 jSparrow has to be installed via Eclipse update site. 
 
 ## Requirements
-Internet connection
+Internet connection  
 Eclipse Version: Neon Release (4.6.0+)
 
 ## Eclipse installation

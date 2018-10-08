@@ -7,7 +7,7 @@ title: Getting started
 
 ## Introduction
 
-jSparrow is a eclipse plugin, which automaticaly applies improvements, based on a set of predefined rules, to jour Java codebase.
+jSparrow is an eclipse plugin, which automatically applies improvements, based on a set of predefined rules, to your Java code-base.
 
 With the support of screenshots the functionality is explained, by inspecting the following projects with jSparrow:
 
@@ -62,7 +62,7 @@ Profiles can be configured in the preference page.
 
 ## Preview of the rules to apply
 
-After selecting rules the preview wizard is displayd, containing changes for each rule, one at a time.
+After selecting rules the preview wizard is displayed, containing changes for each rule, one at a time.
 
 ![Preview of the rules to apply](../images/preview_wizard.png)
 
@@ -72,12 +72,12 @@ Following elements are in the preview:
 * Short description of the rule
     * Below the name of the rule is a description
 * Statistics for the rule
-    * Displays how many times the rule was applied, what is estimeted time saved and how much time is saved by applying the rule
+    * Displays how many times the rule was applied, what is estimated time saved and how much time is saved by applying the rule
 * List of changed java classes
     * Shows all the classes that are changed by the rule
 * Diff view
-    * Left side: old Javacode
-    * Right side: new Javacode
+    * Left side: old Java code
+    * Right side: new Java code
 * Buttons
     * “Summary”: Skip to the page with statistics summary
     * “Back”: Return to previous rule
@@ -97,7 +97,7 @@ jSparrow allows the generation of a default profile. The preferences are integra
 
 The default profile determines, which rules are pre-selected when starting the rule wizard.
 ::: tip
-The pre selection can still be changed during the rule selection process.
+The pre-selection can still be changed during the rule selection process.
 :::
 
 ### Filtering rules by a tag
@@ -106,7 +106,7 @@ You can filter rules by text or by available tags. Tags group rules by functiona
 
 ### Disabled rules
 
-Some rules may not be able for applying on a certain project. Reson for that is one of the following missing requirements:
+Some rules may not be able for applying on a certain project. Reason for that is one of the following missing requirements:
 * Java version too low
 * Missing required library
 ::: tip
