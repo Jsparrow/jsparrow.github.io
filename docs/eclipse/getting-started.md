@@ -7,7 +7,7 @@ title: Getting started
 
 ## Introduction
 
-jSparrow is an eclipse plugin, which automatically applies improvements, based on a set of predefined rules, to your Java code-base.
+jSparrow is an Eclipse plugin, which automatically applies improvements, based on a set of predefined rules, to your Java code-base.
 
 With the support of screenshots the functionality is explained, by inspecting the following projects with jSparrow:
 
@@ -39,7 +39,7 @@ The plugin is activated with a right-click in the editor or the package tree. Th
 
 ## Selection of rules
 
-After the execution of “Select rules to apply” a selection window is opened to select the rule set.
+After the execution of “Select Rules” a selection window is opened to select the rule to apply.
 
 [ ![Select rules wizard](/img/eclipse/select_rules_wizard.png) ](/img/eclipse/select_rules_wizard.png)
 
@@ -84,7 +84,7 @@ Following elements are in the preview:
     * “Summary”: Skip to the page with statistics summary
     * “Back”: Return to previous rule
     * “Next”: Forward to the next rule
-    * “Cancel”: Cancel all changes 
+    * “Cancel”: Cancel all changes
     * “Finish”: Apply all changes
 
 [ ![Statistics summary](/img/eclipse/preview_summary.png) ](/img/eclipse/preview_summary.png)
@@ -93,7 +93,7 @@ Following elements are in the preview:
 
 ## Additional Options
 
-jSparrow allows the generation of a default profile. The preferences are integrated in eclipse and through “Window” -> ”Preferences” -> ”jSparrow” to reach.
+jSparrow allows the generation of a default profile. The preferences are integrated in Eclipse and through “Window” -> ”Preferences” -> ”jSparrow” to reach.
 
 ### Default profile
 
