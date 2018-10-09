@@ -6,7 +6,7 @@ This is the documentation site for jSparrow!
 
 # How to contribute
 
-Fork this repository, make changes and when you are done with them send us a pullrequest. Thank you.
+Fork this repository, make changes and when you are done with them send us a pull request. Thank you.
 
 # Vuepress reference guide
 
@@ -14,23 +14,33 @@ Fork this repository, make changes and when you are done with them send us a pul
 
 # Edit guide
 
-We recommand tu use npm for this project, feel free to use yum if you feel more comfortable.
+We recommend to use npm for this project, feel free to use yum if you feel more comfortable.
 
-## Install npm
+## Installing npm
 
-Install npm from nodejs.org.
+Install npm as described on nodejs.org:
 
 https://nodejs.org/en/download/package-manager/
 
 ### Trouble shooting
 
-events.js throws an unhandled error might be solved with 
+```
+events.js:1xx
+      throw er; // Unhandled 'error' event
+      ^
+```
+
+This error might be solved as follows:
+
 ```
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
-https://github.com/facebook/jest/issues/3254#issuecomment-297869853
 
-## Install dependencies
+Source: https://github.com/facebook/jest/issues/3254#issuecomment-297869853
+
+## Installing project dependencies
+
+All required dependencies can be installed by executing the following:
 
 ```
 npm install
@@ -38,7 +48,7 @@ npm install
 
 ## Run development server
 
-start development server
+To start a local development server, simply execute the following:
 
 ```
 npm run dev
@@ -46,15 +56,14 @@ npm run dev
 
 # Update jsparrow.github.io
 
-To execute this step it is required to have write access to the [main repository](https://github.com/Jsparrow/jsparrow.github.io)
+To execute this step, it is required to have write access to the [main repository](https://github.com/Jsparrow/jsparrow.github.io)
 
-## build site
+## Build site
 
-Creating a static html/js site at docs/.vuepress/dist
- 
+Creating a static html/js site at docs/.vuepress/dist:
+
 ```
 npm run build
 
-./deploy
+./deploy.sh
 ```
-
