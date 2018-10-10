@@ -7,53 +7,45 @@ title: Getting started
 
 ## Introduction
 
-jSparrow is an Eclipse plugin, which automatically applies improvements, based on a set of predefined rules, to your Java code-base.
+jSparrow is an Eclipse plugin that automates refactoring and therefore makes repetitive work unnecessary.
+jSparrow can help in the following regards:
+* minimizing code smells
+* upgrading to new Java versions (transforming old language constructs in new language constructs)
+* getting performance improvements by using more efficient constructs
 
-With the support of screenshots the functionality is explained, by inspecting the following projects with jSparrow:
-
-* JFreeChart - Future State Edition (FSE)
-    * https://github.com/jfree/jfreechart-fse
-    * GNU License
-* Morphia
-    * https://github.com/mongodb/morphia
-    * Apache License Version 2.0
-* StringTemplate 4
-    * https://github.com/antlr/stringtemplate4
-    * BSD License
-* Own test cases
+With the support of screenshots the functionality of jSparrow will be explained.
 
 ## Usage of the Plugin
 
-The plugin is activated with a right-click in the editor or the package tree. The selection of elements defines which files are used for the improvement process. The following types are supported:
-* A project
-    * Changes are applied to the whole project
-* A package
-    * Changes are limited to the selected package, where it is possible to select multiple packages at once
-* A Java class file
-    * Same functionality as package but on file level
+The plugin is activated with a right-click in the editor or the package tree. The selection of elements defines which files are used for the refactoring process. jSparrow may be applied to the following artifacts:
+* Project
+    * Changes are applied to the whole project.
+* Packages
+    * Changes are limited to the selected package. It is possible to select multiple packages at once.
+* Java classes
+    * Changes are limited to the selected classes. It is possible to select multiple classes at once.
 * Java editor
-    * Changes are applied to the java class that is in focus of the editor
+    * Changes are applied to the Java class currently displayed in the editor.
 
 [ ![Screenshot for a selected project](/img/eclipse/selected_project_large.jpg) ](/img/eclipse/selected_project_large.jpg)
 
 
 ## Selection of rules
 
-After the execution of “Select Rules” a selection window is opened to select the rule to apply.
+After the execution of “Select Rules” a selection window is opened, where rule can be selected to be apply.
 
 [ ![Select rules wizard](/img/eclipse/select_rules_wizard.png) ](/img/eclipse/select_rules_wizard.png)
 
-Window is split in three parts. On the top is filtering part which makes it easier to find rules you would like to apply.
-
-Middle of the window is divided into two lists. Left list contains available rules and right one contains rules that you want to apply.
-You can add desired rules to the right list by simply selecting one or more rules on the left list and selecting the Add button. If you want to apply all the rules, you can do it by just selecting the Add all button.
-
-On the bottom part of the window, the description of currently selected rule is displayed.
+The window is split into three parts:
+* __Top:__ On top there is a filtering part which makes it easier to find rules you would like to apply.
+* __Middle:__ The middle of the window is divided into two lists. The left list contains the unselected rules, whereas the right one contains rules that are about to be applied.
+Desired rules may be added to the right list simply by selecting one or more rules on the left list and pushing the `Add` button. If you want to apply all the rules, you can do just that by simply pushing the `Add all` button.
+* __Bottom:__ On the bottom part of the window, the description of the currently selected rule is displayed.
 
 
 ### Selection of the profile
 
-Through the drop down menu of the select rules interface it is possible to choose a profile. Change of currently selected profile will discard previously made selection of the rules. By default the predefined profile is used with most common rule set.
+Through the `Select profile` drop down menu of the select rules window it is possible to choose a profile. Changing the currently selected profile will discard previously selected rules however. By default, a predefined default profile is used with mix of most common rules.
 
 ::: tip
 Profiles can be configured in the preference page.
@@ -62,30 +54,30 @@ Profiles can be configured in the preference page.
 
 ## Preview of the rules to apply
 
-After selecting rules the preview wizard is displayed, containing changes for each rule, one at a time.
+After confirming the selected rules by clicking `Finish`, the preview window is displayed. This window displays changes for each rule, for one rule at a time.
 
 [ ![Preview of the rules to apply](/img/eclipse/preview_wizard.png) ](/img/eclipse/preview_wizard.png)
 
 [ ![Preview of the rules to apply](/img/eclipse/preview_wizard.png) ](/img/eclipse/preview_wizard.png)
 
-Following elements are in the preview:
+The following elements are displayed in the preview window:
 * Name of the rule
-    * In the left upper corner is the name of current rule
+    * In the upper left corner is the name of current rule
 * Short description of the rule
-    * Below the name of the rule is a description
+    * Below the name of the rule is the short description of the rule
 * Statistics for the rule
-    * Displays how many times the rule was applied, what is estimated time saved and how much time is saved by applying the rule
-* List of changed java classes
-    * Shows all the classes that are changed by the rule
+    * Displays how many times the rule has been applied (`Issues Fixed`) and an estimation of time saved (`Time Saved`) by applying the rule.
+* List of changed Java classes
+    * Shows all the classes that are affected by the rule
 * Diff view
     * Left side: old Java code
     * Right side: new Java code
 * Buttons
-    * “Summary”: Skip to the page with statistics summary
-    * “Back”: Return to previous rule
+    * “Summary”: Skip to the summary page (contains statistics and an overview of all changed classes)
+    * “Back”: Return to the previous rule
     * “Next”: Forward to the next rule
     * “Cancel”: Cancel all changes
-    * “Finish”: Apply all changes
+    * “Finish”: Apply all changes. Only after clicking that, code is changed.
 
 [ ![Statistics summary](/img/eclipse/preview_summary.png) ](/img/eclipse/preview_summary.png)
 
@@ -93,24 +85,24 @@ Following elements are in the preview:
 
 ## Additional Options
 
-jSparrow allows the generation of a default profile. The preferences are integrated in Eclipse and through “Window” -> ”Preferences” -> ”jSparrow” to reach.
+Rules can be grouped into profiles in jSparrow. The preferences concerning profiles may be accessed in Eclipse via “Window” -> ”Preferences” -> ”jSparrow”.
 
 ### Default profile
 
-The default profile determines, which rules are pre-selected when starting the rule wizard.
+The default profile determines, which profile will be selected by default in the select rules window.
 ::: tip
-The pre-selection can still be changed during the rule selection process.
+The default profile can still be changed during the rule selection process.
 :::
 
 ### Filtering rules by a tag
 
-You can filter rules by text or by available tags. Tags group rules by functionality, requirements or any relevant common factor they have.
+Rules can be filtered by text or by tags. Tags group rules by functionality, requirements or any relevant common factor they have.
 
 ### Disabled rules
 
-Some rules may not be able for applying on a certain project. Reason for that is one of the following missing requirements:
+Some rules may not be available to be applied on certain projects. The reason for that is one of the following missing requirements:
 * Java version too low
 * Missing required library
 ::: tip
-Information about unsatisfied requirements will be shown in red color in the rule description part of the select rules wizard.
+Information about unsatisfied requirements will be shown in red color in the rule description in the select rules window.
 :::
