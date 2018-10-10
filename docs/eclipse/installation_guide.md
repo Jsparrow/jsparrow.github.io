@@ -2,35 +2,26 @@
 title: Installation guide
 ---
 # Installation
-    
+
 [[toc]]
 
-jSparrow has to be installed via Eclipse update site. 
+The jSparrow Eclipse Plugin has to be installed via [Eclipse Marketplace](https://marketplace.eclipse.org/content/jsparrow-automatical-java-code-improvement).
 
 ## Requirements
-Internet connection  
-Eclipse Version: Neon Release (4.6.0+)
 
-## Eclipse installation
-Eclipse update site: http://update.jsparrow.eu/ 
-This URL is only usable within Eclipse.
+* Internet connection
+* Required Eclipse version: Eclipse Neon or later (4.6.0+)
 
-1. Go to “Help” -> “Install New Software…”
+## jSparrow installation
 
-[ ![Install New Software](/img/eclipse/install_new_software_large.jpg) ](/img/eclipse/install_new_software_large.jpg)
+jSparrow has to be installed within Eclipse as follows:
 
+1. Go to “Help” -> “Eclipse Marketplace…”
 
-2. Click on the “Add...” button to add the jSparrow update site
+[ ![Opening the Eclipse Marketplace](/img/eclipse/marketplace.png) ](/img/eclipse/marketplace.png)
 
-3. Use the following values in the “Add Repository” dialog:
-    * Name: “jSparrow Update Site”
-    * Location: “http://update.jsparrow.eu”
+2. Search for "jsparrow" and click install
 
-[ ![Add Repository](/img/eclipse/add_repository.png) ](/img/eclipse/add_repository.png)
+[ ![Installing jSparrow](/img/eclipse/jsparrow_installation.png) ](/img/eclipse/jsparrow_installation.png)
 
-4. Choose installation appropriate for your Eclipse version
-    * Because of API changes in Eclipse, you have to choose to install version for Eclipse Neon and Oxygen or version for Eclipse Photon, depending on which Eclipse version you are using
-
-[ ![Choose installation of jSparrow](/img/eclipse/install_choose_version.png) ](/img/eclipse/install_choose_version.png)
-
-5. Select Next, follow the dialog and restart Eclipse afterwards
+3. Restart Eclipse after clicking through the installation process
