@@ -4,12 +4,12 @@
 
 ## Introduction
 
-The jSparrow GitHub App (JGA) is a continuous integration tool to apply automatic refactoring which is integrated in your build pipeline. It supplies similar rules as the jSparrow Eclipse Plugin, but works without user input and is started automatically on every creation of the pull request. 
+The jSparrow GitHub App (JGA) is a continuous integration tool, used to apply automatic refactoring, which is integrated in your build pipeline. It supplies similar rules as the jSparrow Eclipse Plugin, but works without user input and is started automatically on every creation of the pull request. 
 
 ## Why GitHub App
 
-Apps on GitHub allow you to automate and improve your workflow. GitHub Apps are first-class actors within GitHub. A GitHub App acts on its own behalf, taking actions via the API directly using its own identity. 
-GitHub Apps can be installed directly on organizations and user accounts and granted access to specific repositories. They come with built-in webhooks and narrow, specific permissions. When you set up your GitHub App, you can select the repositories you want it to access. For example, if you set up an jSparrow GitHub App on the octocat repository it will write only to the octocat repository. To install a GitHub App in organization account, you must be an organization owner or have admin permissions in a repository.
+Apps on GitHub allow you to automate and improve your workflow. GitHub Apps are first-class actors within GitHub. A GitHub App acts on its own behalf, taking actions via the API directly using its own identity.  
+jSparrow GitHub Apps can be installed directly on organizations and user accounts and granted access to specific repositories. This means, when you set up your GitHub App, you can select the repositories you want it to access. For example, if you set up an jSparrow GitHub App on the octocat repository it will write only to the octocat repository. To install a GitHub App in organization account, you must be an organization owner or have admin permissions in a repository.
 
 ## Installation 
 
@@ -30,6 +30,7 @@ Organization: use the Switch billing account drop-down menu, and choose the orga
 
 ### Requirements
 
+* Maven project
 * Maven 2.2.1 or newer 
 * Java 8 
 
@@ -37,7 +38,16 @@ Organization: use the Switch billing account drop-down menu, and choose the orga
 Maven projects themselves may have their Java source version set to an older version than 1.8 - this is not a problem. However, in this case, all rules requiring a newer source level will be ignored. 
 :::
 
-## Configuration
+## Usage
+
+### How to use when it is installed
+1. Create pull request to GitHub  
+2. Webhook is called that invokes jSparrow with url to repository and changeset
+3. jSparrow fetches code from GitHub using GitHub App authentication
+4. jSparrow makes changes on code
+5. jSparrow pushes changes back to GitHub
+
+### Configuration
 
 To configure which rules should be applied, use the configuration file (`jsparrow.yml`). Place this file in your project's root directory. If the configuration file is not present there, the default configuration will be used. If the configuration file has errors, an exception will be thrown and refactoring won't be executed.
 
