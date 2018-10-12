@@ -4,12 +4,18 @@
 
 ## Introduction
 
-The jSparrow GitHub App (JGA) is a continuous integration tool, used to apply automatic refactoring, which is integrated in your build pipeline. It supplies similar rules as the jSparrow Eclipse Plugin, but works without user input and is started automatically on every creation of the pull request. 
+The jSparrow GitHub App (JGA) is a continuous integration tool, integrated in your build pipeline, used to apply automatic refactoring. It supplies similar rules as the jSparrow Eclipse Plugin, but works without user input and is started automatically on every creation of the pull request.   
+#### jSparrow automates things like:  
+* taking care of formatting and minimizing code smells  
+* transforming old language constructs to new language constructs  
+* using more efficient constructs thus improving performance   
+
+The idea to develop jSparrow for GitHub was to create a tool that improves the code quality automatically during the review process. Whenever a developer using jSparrow creates a pull request, jSparrow is started and a commit to the pull request with code improvement is created automatically. If the reviewer confirms the pull request, the modifications jSparrow is proposing are merged into the branch.  
 
 ## Why GitHub App
 
 Apps on GitHub allow you to automate and improve your workflow. GitHub Apps are first-class actors within GitHub. A GitHub App acts on its own behalf, taking actions via the API directly using its own identity.  
-jSparrow GitHub Apps can be installed directly on organizations and user accounts and granted access to specific repositories. This means, when you set up your GitHub App, you can select the repositories you want it to access. For example, if you set up an jSparrow GitHub App on the octocat repository it will write only to the octocat repository. To install a GitHub App in organization account, you must be an organization owner or have admin permissions in a repository.
+jSparrow GitHub Apps can be installed directly on organizations and user accounts and granted access to specific repositories. This means, when you set up your GitHub App, you can select the repositories you want it to have access to. For example, if you set up an jSparrow GitHub App on the octocat repository it will write only to the octocat repository. To install a GitHub App in organization account, you must be an organization owner or have admin permissions in a repository.
 
 ## Installation 
 
