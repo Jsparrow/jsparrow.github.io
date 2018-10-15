@@ -10,10 +10,13 @@ const maven = dirTree(path.join(__dirname, '../maven'), {
 const eclipse = dirTree(path.join(__dirname, '../eclipse'), {
     extensions: /\.md/
 });
+const github = dirTree(path.join(__dirname, '../github'), {
+    extensions: /\.md/
+});
 
 
 module.exports = {
-    title: 'jSparrow Github Documentation',
+    title: 'jSparrow GitHub Documentation',
     head: [
         ['link', {
             rel: 'icon',
@@ -32,6 +35,10 @@ module.exports = {
             {
                 text: 'Eclipse Plugin',
                 link: '/eclipse/getting-started.html'
+            },
+            {
+                text: 'GitHub App',
+                link: '/github/getting-started.html'
             }
             // ,
             // {
@@ -46,13 +53,15 @@ module.exports = {
             '/maven/': maven.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
                 .sort((a, b) => b < a),
             '/eclipse/': eclipse.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
+                .sort((a, b) => b < a),
+            '/github/': github.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
                 .sort((a, b) => b < a)
         }
     },
     port: 8081,
     markdown: {
-        toc: { 
-            includeLevel: [2, 3, 4] 
+        toc: {
+            includeLevel: [2, 3, 4]
         }
     }
 };
