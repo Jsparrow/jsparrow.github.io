@@ -14,25 +14,19 @@ The idea to develop jSparrow for GitHub was to create a tool that improves the c
 
 ## Why GitHub App
 
-Apps on GitHub allow you to automate and improve your workflow. GitHub Apps are first-class actors within GitHub. A GitHub App acts on its own behalf, taking actions via the API directly using its own identity.  
-jSparrow GitHub Apps can be installed directly on organizations and user accounts and granted access to specific repositories. This means, when you set up your GitHub App, you can select the repositories you want it to have access to. For example, if you set up an jSparrow GitHub App on the octocat repository it will write only to the octocat repository. To install a GitHub App in organization account, you must be an organization owner or have admin permissions in a repository.
+Apps on the GitHub allow you to automate and improve your workflow. GitHub Apps are first-class actors within GitHub. A GitHub App acts on its own behalf, taking actions via the API directly using its own identity.  
+jSparrow GitHub App can be installed directly on organizations and user accounts and granted access to specific repositories. This means, when you set up your GitHub App, you can select the repositories you want it to have access to. For example, if you set up an jSparrow GitHub App on the octocat repository it will write only to the octocat repository. To install a GitHub App in organization account, you must be an organization owner or have an admin permissions in a repository.
 
 ## Installation 
 
-You can install apps from GitHub Marketplace to use in your personal account or in your organization.
+You can install apps from GitHub Marketplace to use in your personal account or in your organization. To install the jSparrow GitHub App, please follow the simple steps below:  
 
-1. At the top of any GitHub page, click Marketplace. 
-2. Browse to the app you'd like to install, then click on the app's name. 
-3. On the app's page, under "Pricing and setup," click on the pricing plan you'd like to use. 
-4. Click Install it for free, Buy with GitHub, or Try free for 14 days. 
-5. Under "Billing information"
-Private: confirm that you're installing the app for your personal account. 
-Organization: use the Switch billing account drop-down menu, and choose the organization in which you'd like to install the app. 
-6. If you chose a paid plan and there isn't a payment method on file for your personal account/organization, click Add a Payment Method, then complete the form to add a credit card or PayPal account. After you successfully add a payment method, you will automatically return to the order page. 
-7. Click Complete order and begin installation. 
-8. If the app requires access to repositories, decide whether to give the app access to all of your repositories, or to certain repositories, then select All repositories or Only select repositories. 
-9. If you chose to give the app access to limited repositories instead of all of your repositories, type the name of each repository you'd like to give the app access to, then click on the repository name to select it. 
-10. Review the app's access permissions, then click Install. 
+1. Open in browser the provided link for the beta version. 
+2. Click on the Install button. 
+3. Choose location for the installation. Decide and select wether you want to install app on your personal account or as the organization. 
+4. The app requires access to repositories, so you have to decide whether to give the app access to all of your repositories, or to certain repositories, then select All repositories or Only select repositories. 
+5. If you chose to give the app access to limited repositories instead of all of your repositories, type the name of each repository you'd like to give the app access to, then click on the repository name to select it. 
+6. Review the app's access permissions, then click Install. 
 
 ### Requirements
 
@@ -48,7 +42,7 @@ Maven projects themselves may have their Java source version set to an older ver
 
 ### How to use when it is installed
 1. Create pull request to GitHub  
-2. Webhook is called that invokes jSparrow with url to repository and changeset
+2. Webhook is called that invokes jSparrow with URL to repository and change-set
 3. jSparrow fetches code from GitHub using GitHub App authentication
 4. jSparrow makes changes on code
 5. jSparrow pushes changes back to GitHub
