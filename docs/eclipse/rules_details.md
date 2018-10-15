@@ -12,7 +12,7 @@ Following are the short description with example screenshot for each the impleme
 
 ### Use Try-With-Resource
 
-This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as the construct takes care of that. Applying this rule makes the code safer and more readable. 
+This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as the construct takes care of that. Applying this rule makes the code safer and more readable.
 
 
 ### Use Multy-Catch
@@ -27,7 +27,7 @@ Anonymous instances of a functional interface type are replaces by a simple lamb
 
 ### Replace removeAll() with clear()
 
-Simplifies the code by replacing all occurrences of removeAll() which have the current collection as parameter with clear(). For example, list.removeAll(list) becomes list.clear(). 
+Simplifies the code by replacing all occurrences of removeAll() which have the current collection as parameter with clear(). For example, list.removeAll(list) becomes list.clear().
 
 
 ### Replace static final Collections with Collections.unmodifiable...()
@@ -46,9 +46,9 @@ In order to apply this rule your project must use Java 1.7 or later.
 
 ### Use @Override Annotation
 
-This rule adds the @Override annotation to methods overriding or implementing parent class methods. Even though using @Override it is not mandatory, using this annotation is considered a best practice for two main reasons: 
- 1) It ensures that the method signature is a subsignature of the overridden method (otherwise, a compile error is indicated). 
- 2) It improves the readability. 
+This rule adds the @Override annotation to methods overriding or implementing parent class methods. Even though using @Override it is not mandatory, using this annotation is considered a best practice for two main reasons:
+ 1) It ensures that the method signature is a subsignature of the overridden method (otherwise, a compile error is indicated).
+ 2) It improves the readability.
 
 
 ### Make SerialVersionUID Static Final
@@ -60,16 +60,16 @@ For example, 'private long serialVersionUID = 1L' becomes 'private static final 
 ### Rearrange Class Members
 
 According to Oracle code conventions members of classes and interfaces should appear in the following order:
- 1) Class variables 
- 2) Instance variables 
- 3) Constructors 
- 4) Methods. 
+ 1) Class variables
+ 2) Instance variables
+ 3) Constructors
+ 4) Methods.
 Additionally, those members should be sorted based on their access modifier. Applying this rule will sort class members to promote readability.
 
 
 ### Add Parenthesis to Control Statements
 
-Transforms single statements after control statements to block constructs by adding curly braces. This improves readability. 
+Transforms single statements after control statements to block constructs by adding curly braces. This improves readability.
 
 
 ### Split Multiple Variable Declarations
@@ -108,12 +108,12 @@ For example 'new String("StringLiteral")' becomes '"StringLiteral"'. This improv
 ### Replace Inefficient Constructors with valueOf()
 
 All calls to a constructor of a primitive type will be replaced by the corresponding static valueOf() method.
-For example 'new Integer("1")' becomes 'Integer.valueOf("1")'. 
+For example 'new Integer("1")' becomes 'Integer.valueOf("1")'.
 
 
 ### Remove Boxing for String Conversions
 
-When calling toString() on a primitive no new instance of that primitive has to be created. This rule replaces occurrences of such code with a static method. For example, 'new Integer(1).toString()' becomes 'Integer.toString(1)'. Applying this rule improves performance. 
+When calling toString() on a primitive no new instance of that primitive has to be created. This rule replaces occurrences of such code with a static method. For example, 'new Integer(1).toString()' becomes 'Integer.toString(1)'. Applying this rule improves performance.
 
 
 ### Use Portable Newline
@@ -127,7 +127,7 @@ The benefit of this approach is that '%n' is portable across platforms.
 
 This rule replaces calls to indexOf() on instances of String or Collection with calls to the contains() method.
 For example 'l.indexOf(s) >= 0' is transformed to 'l.contains(s)'.
-'contains()' was introduced in Java 1.4 and helps to make the code more readable. 
+'contains()' was introduced in Java 1.4 and helps to make the code more readable.
 
 
 ### Remove toString() on String
@@ -201,7 +201,7 @@ This makes code more readable and can be combined with other stream functions su
 
 ### Use Stream::filter
 
-If-Statements making up the entire execution block of a Stream::forEach method can be transformed into a call to Stream::filter. This only applies if there are no other statements passed as arguments to forEach(). filter() can be used with other stream functions and improves readability. 
+If-Statements making up the entire execution block of a Stream::forEach method can be transformed into a call to Stream::filter. This only applies if there are no other statements passed as arguments to forEach(). filter() can be used with other stream functions and improves readability.
 
 
 ### Remove Lambda Expression Parenthesis
@@ -220,7 +220,7 @@ This simplifies adding elements to a list.
 
 ### Use Stream::map
 
-Extracts a block from the body of the consumer of the Stream::forEach method and introduces Stream::map instead. This makes complicated code blocks easier to read and reuse. 
+Extracts a block from the body of the consumer of the Stream::forEach method and introduces Stream::map instead. This makes complicated code blocks easier to read and reuse.
 
 
 ### Replace Nested Loops with flatMap
@@ -235,7 +235,7 @@ Replaces an occurrences of enhanced for-loops which are only used to initialize 
 
 ### Replace For-Loop with Stream::findFirst
 
-Enhanced for-loops which are used to find an element within a collection can be replaced by Stream::findFirst. Using the stream syntax a multi-line control statement can be reduced to a single line. 
+Enhanced for-loops which are used to find an element within a collection can be replaced by Stream::findFirst. Using the stream syntax a multi-line control statement can be reduced to a single line.
 
 
 ### Replace For-Loop with Stream::sum
@@ -245,7 +245,7 @@ Replace For-Loop with Stream::sum.
 
 ### Replace For-Loop with Stream::collect(Collectors.joining())
 
-Transforms loops which are only used for concatenating a string to an invocation of Stream::collect(Collectors.joining()). 
+Transforms loops which are only used for concatenating a string to an invocation of Stream::collect(Collectors.joining()).
 If the Java compliance level is below 1.8 and at least 1.5, then a StringBuilder is introduced for concatenating the values on each iteration of the loop.
 
 
@@ -253,7 +253,7 @@ If the Java compliance level is below 1.8 and at least 1.5, then a StringBuilder
 
 This rule simplifies expression lambdas by using method reference.
 For example, 'personList.forEach(person -> doSomething(person))' becomes 'personList.forEach(this::doSomething)'.
-This rule can only be applied if the parameters of the lambda expression and the method match. 
+This rule can only be applied if the parameters of the lambda expression and the method match.
 
 
 ### Reformat Code
@@ -263,4 +263,4 @@ Reformats code according to the coding conventions defined in Eclipse. For examp
 
 ### Organize Imports
 
-Applying this rule has the same effect as Eclipse's built in Organize Imports functionality. It will remove unused imports and sort import statements alphabetically. 
+Applying this rule has the same effect as Eclipse's built in Organize Imports functionality. It will remove unused imports and sort import statements alphabetically.

@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The jSparrow GitHub App (JGA) is a continuous integration tool, integrated in your build pipeline, used to apply automatic refactoring. It supplies similar rules as the jSparrow Eclipse Plugin, but works without user input and is started automatically on every creation of the pull request.   
+The jSparrow GitHub App (JGA) is a continuous integration tool, integrated in your build pipeline, used to apply automatic refactoring. It supplies similar rules as the jSparrow Eclipse Plugin, but works without user input and is started automatically on every creation of the pull request.
 #### jSparrow automates things like:  
 * taking care of formatting and minimizing code smells  
 * transforming old language constructs to new language constructs  
@@ -17,25 +17,25 @@ The idea to develop jSparrow for GitHub was to create a tool that improves the c
 Apps on the GitHub allow you to automate and improve your workflow. GitHub Apps are first-class actors within GitHub. A GitHub App acts on its own behalf, taking actions via the API directly using its own identity.  
 jSparrow GitHub App can be installed directly on organizations and user accounts and granted access to specific repositories. This means, when you set up your GitHub App, you can select the repositories you want it to have access to. For example, if you set up an jSparrow GitHub App on the octocat repository it will write only to the octocat repository. To install a GitHub App in organization account, you must be an organization owner or have an admin permissions in a repository.
 
-## Installation 
+## Installation
 
 You can install apps from GitHub Marketplace to use in your personal account or in your organization. To install the jSparrow GitHub App, please follow the simple steps below:  
 
-1. Open in browser the provided link for the beta version. 
-2. Click on the Install button. 
-3. Choose location for the installation. Decide and select wether you want to install app on your personal account or as the organization. 
-4. The app requires access to repositories, so you have to decide whether to give the app access to all of your repositories, or to certain repositories, then select All repositories or Only select repositories. 
-5. If you chose to give the app access to limited repositories instead of all of your repositories, type the name of each repository you'd like to give the app access to, then click on the repository name to select it. 
-6. Review the app's access permissions, then click Install. 
+1. Open in browser the provided link for the beta version.
+2. Click on the Install button.
+3. Choose location for the installation. Decide and select wether you want to install app on your personal account or as the organization.
+4. The app requires access to repositories, so you have to decide whether to give the app access to all of your repositories, or to certain repositories, then select All repositories or Only select repositories.
+5. If you chose to give the app access to limited repositories instead of all of your repositories, type the name of each repository you'd like to give the app access to, then click on the repository name to select it.
+6. Review the app's access permissions, then click Install.
 
 ### Requirements
 
 * Maven project
-* Maven 2.2.1 or newer 
-* Java 8 
+* Maven 2.2.1 or newer
+* Java 8
 
 ::: tip
-Maven projects themselves may have their Java source version set to an older version than 1.8 - this is not a problem. However, in this case, all rules requiring a newer source level will be ignored. 
+Maven projects themselves may have their Java source version set to an older version than 1.8 - this is not a problem. However, in this case, all rules requiring a newer source level will be ignored.
 :::
 
 ## Usage
