@@ -6,9 +6,9 @@
 
 The jSparrow GitHub App (JGA) is the integration of jSparrow's refactorings as part of a GitHub app.
 
-It is a continuous integration tool, integrated in your build pipeline and used to apply automatic refactorings. The JGA supplies similar [rules](../eclipse/rules_details.html) as the [jSparrow Eclipse Plugin](../eclipse/getting-started.html), but works without user input and is started automatically on every creation of a pull request.
+It is a continuous integration tool, integrated in your build pipeline and used to apply automatic refactorings. The JGA supplies similar [rules](/eclipse/rules_details.html) as the [jSparrow Eclipse Plugin](/eclipse/getting-started.html), but works without user input and is started automatically on every creation of a pull request.
 
-#### jSparrow automates by..  
+__jSparrow automates by..__
 * ..taking care of formatting and minimizing code smells
 * ..transforming old language constructs to new language constructs
 * ..using more efficient constructs thus improving performance
@@ -34,11 +34,6 @@ You can install apps from the GitHub Marketplace to use in your personal account
 
 * Maven project
 * Maven 2.2.1 or later
-* Java 8
-
-::: tip
-Maven projects themselves may have their Java source version set to an older version than 1.8 - this is not a problem. However, in this case, all rules requiring a newer source level will be ignored.
-:::
 
 ## Usage
 
@@ -125,6 +120,6 @@ excludes:
       - eu.jsparrow.core.Activator.java  
 ```
 
-::: tip
-Any configuration options in the YAML file are case sensitive. Be careful how you type out things!
+::: warning NOTE
+Any configuration options in the YAML file are case sensitive and require precise identation.
 :::
