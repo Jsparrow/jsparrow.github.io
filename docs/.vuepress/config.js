@@ -31,7 +31,7 @@ module.exports = {
             },
             {
                 text: 'Eclipse Plugin',
-                link: '/eclipse/'
+                link: '/eclipse/getting-started.html'
             }
             // ,
             // {
