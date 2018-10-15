@@ -16,7 +16,7 @@ const github = dirTree(path.join(__dirname, '../github'), {
 
 
 module.exports = {
-    title: 'jSparrow Github Documentation',
+    title: 'jSparrow GitHub Documentation',
     head: [
         ['link', {
             rel: 'icon',
@@ -37,7 +37,7 @@ module.exports = {
                 link: '/eclipse/getting-started.html'
             },
             {
-                text: 'Github App',
+                text: 'GitHub App',
                 link: '/github/'
             }
             // ,
@@ -60,8 +60,8 @@ module.exports = {
     },
     port: 8081,
     markdown: {
-        toc: { 
-            includeLevel: [2, 3, 4] 
+        toc: {
+            includeLevel: [2, 3, 4]
         }
     }
 };

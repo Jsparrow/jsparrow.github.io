@@ -1,4 +1,3 @@
-# jSparrow Github App
+# jSparrow GitHub App
 
-The jSparrow Github App is the integration of jSparrow refactoring as part of a Github app.
-
+The jSparrow GitHub App is the integration of jSparrow refactoring as part of a GitHub app.
