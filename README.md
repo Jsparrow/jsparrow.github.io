@@ -63,7 +63,5 @@ To execute this step, it is required to have write access to the [main repositor
 Creating a static html/js site at docs/.vuepress/dist:
 
 ```
-npm run build
-
 ./deploy.sh
 ```
