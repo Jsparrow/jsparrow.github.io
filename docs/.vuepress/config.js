@@ -38,7 +38,7 @@ module.exports = {
             },
             {
                 text: 'GitHub App',
-                link: '/github/'
+                link: '/github/getting-started.html'
             }
             // ,
             // {
