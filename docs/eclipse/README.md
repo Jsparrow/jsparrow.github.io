@@ -1,4 +1,4 @@
-# jSparrow Eclipse Plug-In Documentation
+# jSparrow Eclipse Plugin Documentation
 
 ## Setup proxy
 
@@ -18,7 +18,7 @@ Open Preferences -> General -> Network Connections
 
 It is important that the HTTPS entry is set similar to the following where the Host and Port are replaced according to your proxy settings
 
-![Example proxy entries](/img/proxy.png)
+[ ![Example proxy entries](/img/eclipse/proxy.png) ](/img/eclipse/proxy.png)
 
 #### Test eclipse proxy settings
 
@@ -28,4 +28,4 @@ To test whether the proxy entries are set properly, you can try to open https://
 Open Window -> Show View -> Other -> Internal Web Browser
 :::
 
-If the site prompts for a username and password, the proxy entries should be correct. 
+If the site prompts for a username and password, the proxy entries should be correct.
