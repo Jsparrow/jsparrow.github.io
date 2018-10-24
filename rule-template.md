@@ -10,7 +10,7 @@ description:
 
 ## Description
 
-## Benefits & Redimiation & Sonarlink
+## Benefits
 
 ## Requirement & Tags
 
