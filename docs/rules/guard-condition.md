@@ -1,5 +1,5 @@
 ---
-title: Guard Condition
+title: Use Guard Condition
 description:
     Replaces the last statement of a method with a guard condition.
 ---
@@ -12,7 +12,7 @@ description:
 
 Replaces, when possible, the last if-statement of a method body with a guard-if and unwraps its body. 
 
-## Benefits & Remediation & SonarLint
+## Benefits
 
 Reduces the cognitive complexity of a method. 
 

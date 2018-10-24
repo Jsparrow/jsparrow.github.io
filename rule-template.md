@@ -10,7 +10,7 @@ description:
 
 ## Description
 
-## Benefits & Remediation & SonarLint
+## Benefits
 
 ## Requirement & Tags
 
