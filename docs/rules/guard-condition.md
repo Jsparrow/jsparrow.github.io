@@ -10,7 +10,7 @@ description:
 
 ## Description
 
-If the last statement on a method is an if-statement consisting of two or more statements, then a guard-if can be used instead and the body of the existing if-statement can be unwrapped.
+Replaces, when possible, the last if-statement of a method body with a guard-if and unwraps its body. 
 
 ## Benefits & Remediation & SonarLint
 
@@ -82,6 +82,7 @@ __Post__
 	}
 ```
 
+## Limitations
 
 __Pre__
 ```java
@@ -110,4 +111,4 @@ __Post__
 		}
 	}
 ```
-## Limitations (Optional)
+
