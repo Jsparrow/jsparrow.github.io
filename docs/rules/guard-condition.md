@@ -18,7 +18,7 @@ Reduces the cognitive complexity of a method.
 
 | Property      | Value |
 | ------------- |:-------------:|
-| Remediation cost      | 2 |
+| Remediation cost      | 5 |
 | Links |  |
 
 ## Requirement & Tags
