@@ -20,6 +20,7 @@ Improves the readability of the code, by removing cascaded negations of boolean 
 | ------------- |:-------------:|
 | Remediation cost      | 2 |
 | Links |  |
+| Since | 2.7.0 |
 
 ## Requirement & Tags
 

@@ -20,6 +20,7 @@ Reduces the cognitive complexity of a method.
 | ------------- |:-------------:|
 | Remediation cost      | 5 |
 | Links |  |
+| Since | 2.7.0 |
 
 ## Requirement & Tags
 
