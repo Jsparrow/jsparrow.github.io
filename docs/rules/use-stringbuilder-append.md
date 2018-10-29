@@ -1,0 +1,98 @@
+---
+title: Use StringBuilder::append
+description:
+    Replaces the infix operator `+` on String concatenation by StringBuilder::append
+---
+
+# Use StringBuilder::append
+
+[[toc]]
+
+## Description
+
+Replaces the infix operator `+` over `String` concatenations by `StringBuilder::append`. When possible, unwraps the parenthesized expressions. 
+
+## Benefits
+
+Improves the performance of the String concatenations. 
+
+| Property      | Value |
+| ------------- |:-------------:|
+| Remediation cost      | 2 |
+| Links |  |
+| Since | 2.7.0 |
+
+## Requirement & Tags
+
+::: warning Requirements
+None.
+:::
+
+::: tip Tags
+Java 1.5, String Manipulation, Performance
+::: 
+
+## Code Changes
+
+__Pre__
+
+```java
+String value = "prefix" + "value" + "suffix";
+```
+
+__Post__
+
+```java
+String value = new StringBuilder().append("prefix")
+    .append("value")
+    .append("suffix")
+    .toString();
+```
+__Pre__
+
+```java
+String value = "prefix" + 2 * 3 + ("value" + 2 + 3) + (4 + 5) + "suffix";
+```
+
+__Post__
+
+```java
+String value = new StringBuilder().append("prefix")
+    .append(2*3)
+    .append("value")
+    .append(2)
+    .append(3)
+    .append(4 + 5)
+    .append("suffix")
+    .toString();
+```
+
+__Pre__
+
+```java
+String value = 5 + " (five) = " + 3 + " (three) + " + 2 + " (two).";
+```
+
+__Post__
+
+```java
+String value = new StringBuilder().append(5)
+    .append(" (five) = ")
+    .append(3)
+    .append(" (three) + ")
+    .append(2)
+    .append(" (two).")
+    .toString();
+
+```
+
+## Limitations
+
+If at least two of the first operands of the expression are numeric additions then the expression is evaluated by java as numeric expression rather than String expression. Therefore, the transformation is not performed. E.g.: 
+
+__Pre__
+
+```java
+String value = 2 + 3 + "";
+```
+
