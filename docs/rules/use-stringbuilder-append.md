@@ -25,7 +25,7 @@ Improves the performance of the String concatenations.
 ## Requirement & Tags
 
 ::: warning Requirements
-None.
+Java 1.5
 :::
 
 ::: tip Tags
