@@ -10,7 +10,7 @@ description:
 
 ## Description
 
-Replaces the infix operator `+` over `String` concatenations by `StringBuilder::append`. When possible, unwraps the parenthesized expressions. 
+Replaces the infix operator `+` over `String` concatenations with at least three operands by `StringBuilder::append`. When possible, unwraps the parenthesized expressions. 
 
 ## Benefits
 
