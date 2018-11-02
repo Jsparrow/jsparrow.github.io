@@ -34,6 +34,8 @@ Java 1.1, Coding Conventions
 
 ## Code Changes
 
+### Void method ending with an if statement
+
 __Pre__
 ```java
 	public void voidMethod() {
@@ -56,6 +58,8 @@ __Post__
 		doSomething("Should transform");
 	}
 ```
+
+### Method with return type
 
 __Pre__
 ```java
@@ -84,6 +88,8 @@ __Post__
 ```
 
 ## Limitations
+
+### Multiple if-then-else branches
 
 __Pre__
 ```java

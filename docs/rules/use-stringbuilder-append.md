@@ -34,6 +34,8 @@ Java 1.5, String Manipulation, Performance
 
 ## Code Changes
 
+### Concatenating strings in infix expressions
+
 __Pre__
 
 ```java
@@ -48,6 +50,9 @@ String value = new StringBuilder().append("prefix")
     .append("suffix")
     .toString();
 ```
+
+### Resolving types of arithmetic expressions
+
 __Pre__
 
 ```java
@@ -66,6 +71,8 @@ String value = new StringBuilder().append("prefix")
     .append("suffix")
     .toString();
 ```
+
+### Resolving types of numeric literals
 
 __Pre__
 
