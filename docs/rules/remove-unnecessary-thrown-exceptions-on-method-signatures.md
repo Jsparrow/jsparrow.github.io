@@ -17,7 +17,7 @@ Removes the following exceptions on method signatures:
 
 ## Benefits
 
-Improves the readability by removing code that add no information on the method signature
+Improves the readability by removing code that adds no information on the method signature.
 
 | Property      | Value |
 | ------------- |:-------------:|
@@ -37,7 +37,7 @@ Java 1.1, Coding Conventions
 
 ## Code Changes
 
-### Declaring a thrown exception whose parent type is already thrown
+### Declaring a throws exception whose parent type is already thrown
 __Pre__
 ```java
 public void throwingChildAndParent() throws ChildException, ParentException {
@@ -52,7 +52,7 @@ public void throwingChildAndParent() throws ParentException {
 }
 ```
 
-### Declaring a thrown exceptions more than once
+### Declaring a throws exceptions more than once
 __Pre__
 ```java
 public void throwingTheSameExceptionTwice_() throws Exception, Exception {
@@ -66,7 +66,7 @@ public void throwingTheSameExceptionTwice_() throws Exception {
 	...
 }
 ```
-### Declaring a thrown Unchecked exception
+### Declaring a throws Unchecked exception
 
 __Pre__
 ```java
