@@ -12,7 +12,7 @@ description:
 Finds and removes the unnecessary semicolons from the code blocks. 
 
 ## Benefits
-Improves the readability of the code, by removing code that do not represent any computation steps.
+Improves the readability, by removing code that do not produce any computation steps.
 
 | Property      | Value |
 | ------------- |:-------------:|
