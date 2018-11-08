@@ -16,11 +16,13 @@ Removes pairs of negations from boolean expressions until only zero or one negat
 
 Improves the readability of the code, by removing cascaded negations of boolean expressions.
 
-| Property      | Value |
-| ------------- |:-------------:|
-| Remediation cost      | 2 |
-| Links |  |
-| Since | 2.7.0 |
+| Property                        | Value |
+| ------------------------------- | ----- |
+| First seen in jSparrow version  | 2.7.0 |
+| Minimum Java version            | 1.1   |
+| Remediation cost                | 2 min |
+| Links                           | [S2761](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2761&rule_key=squid%3AS2761) |
+
 
 ## Requirement & Tags
 
@@ -30,7 +32,7 @@ None.
 
 ::: tip Tags
 Java 1.1, Coding Conventions
-::: 
+:::
 
 ## Code Changes
 

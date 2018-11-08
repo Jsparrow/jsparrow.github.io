@@ -14,13 +14,14 @@ If a constructor does not explicitly invoke a superclass constructor, the Java c
 
 ## Benefits
 
-Improves the readability by removing unnecessary lines of code. 
+Improves the readability by removing unnecessary lines of code.
 
-| Property      | Value |
-| ------------- |:-------------:|
-| Remediation cost      | 1 |
-| Links |  |
-| Since | 2.7.0 |
+| Property                        | Value |
+| ------------------------------- | ----- |
+| First seen in jSparrow version  | 2.7.0 |
+| Minimum Java version            | 1.1   |
+| Remediation cost                | 1 min |
+| Links                           |  |
 
 ## Requirement & Tags
 
@@ -30,7 +31,7 @@ None.
 
 ::: tip Tags
 Java 1.1, Readability
-::: 
+:::
 
 ## Code Changes
 
@@ -66,4 +67,3 @@ class Child extends Parent {
      }
 }
 ```
-
