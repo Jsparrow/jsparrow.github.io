@@ -11,6 +11,7 @@ description:
 ## Description
 
 Removes the following exceptions on method signatures:
+
  1. Exceptions that are subtypes of already thrown exceptions
  2. Exceptions that are thrown more than once
  3. Exceptions that are inheriting from `RuntimeException`
@@ -21,9 +22,10 @@ Improves the readability by removing code that adds no information on the method
 
 | Property      | Value |
 | ------------- |:-------------:|
+| Since | 2.7.0 |
+| Java version | 1 |
 | Remediation cost      | 2 |
 | Links |  |
-| Since | 2.7.0 |
 
 ## Requirement & Tags
 

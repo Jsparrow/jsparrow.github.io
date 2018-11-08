@@ -18,9 +18,10 @@ Reduces the cognitive complexity of a method.
 
 | Property      | Value |
 | ------------- |:-------------:|
-| Remediation cost      | 5 |
-| Links |  |
 | Since | 2.7.0 |
+| Java version | 1 |
+| Remediation cost      | 5 |
+| Links | [S3776](https://sonarcloud.io/organizations/default/rules?open=squid%3AS3776&rule_key=squid%3AS3776) |
 
 ## Requirement & Tags
 

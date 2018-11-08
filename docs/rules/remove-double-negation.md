@@ -18,9 +18,11 @@ Improves the readability of the code, by removing cascaded negations of boolean 
 
 | Property      | Value |
 | ------------- |:-------------:|
+| Since | 2.7.0 |
+| Java version      | 1 |
 | Remediation cost      | 2 |
 | Links |  |
-| Since | 2.7.0 |
+
 
 ## Requirement & Tags
 

@@ -6,6 +6,6 @@ rules_index: true
 
 Rules are currently migrated to this platform. It might be that not all rule descriptions are available.
 
-## List
+## Summary  
 
 <rules />

@@ -12,6 +12,13 @@ description:
 
 ## Benefits
 
+| Property      | Value |
+| ------------- |:-------------:|
+| Since |  |
+| Java version |  |
+| Remediation cost      |  |
+| Links | "SonarQube rule |
+
 ## Requirement & Tags
 
 ## Configuration (Optional)

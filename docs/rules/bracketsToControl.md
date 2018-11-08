@@ -21,6 +21,7 @@ While not technically incorrect, the omission of curly braces can be misleading,
 
 | Property      | Value |
 | ------------- |:-------------:|
+| Since | 0.9 |
 | Java version      | 1 |
 | Remediation cost      | 2 |
 | Links | [S00121](https://sonarcloud.io/organizations/default/rules#rule_key=squid%3AS00121) |

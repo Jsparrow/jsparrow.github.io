@@ -18,9 +18,10 @@ Improves the performance of the String concatenations.
 
 | Property      | Value |
 | ------------- |:-------------:|
+| Since | 2.7.0 |
+| Java version | 5 |
 | Remediation cost      | 2 |
 | Links |  |
-| Since | 2.7.0 |
 
 ## Requirement & Tags
 

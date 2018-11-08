@@ -18,9 +18,10 @@ Improves the readability by removing unnecessary lines of code.
 
 | Property      | Value |
 | ------------- |:-------------:|
+| Since | 2.7.0 |
+| Java version | 1 |
 | Remediation cost      | 1 |
 | Links |  |
-| Since | 2.7.0 |
 
 ## Requirement & Tags
 

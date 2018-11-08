@@ -16,9 +16,10 @@ Improves the readability, by removing code that do not produce any computation s
 
 | Property      | Value |
 | ------------- |:-------------:|
-| Remediation cost      | 1 |
-| Links |  |
 | Since | 2.7.0 |
+| Java version     | 1 |
+| Remediation cost      | 1 |
+| Links | [Empty Statement Usage Check](https://sonarcloud.io/organizations/default/rules?open=squid%3AEmptyStatementUsageCheck&rule_key=squid%3AEmptyStatementUsageCheck) |
 
 ## Requirement & Tags
 
