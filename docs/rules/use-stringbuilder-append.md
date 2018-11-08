@@ -10,18 +10,18 @@ description:
 
 ## Description
 
-Replaces the infix operator `+` over `String` concatenations with at least three operands by `StringBuilder::append`. When possible, unwraps the parenthesized expressions. 
+Replaces the infix operator `+` over `String` concatenations with at least three operands by `StringBuilder::append`. When possible, unwraps the parenthesized expressions.
 
 ## Benefits
 
-Improves the performance of the String concatenations. 
+Improves the performance of the String concatenations.
 
-| Property      | Value |
-| ------------- |:-------------:|
-| Since | 2.7.0 |
-| Java version | 5 |
-| Remediation cost      | 2 |
-| Links |  |
+| Property                        | Value |
+| ------------------------------- | ----- |
+| First seen in jSparrow version  | 2.7.0 |
+| Minimum Java version            | 5     |
+| Remediation cost                | 2 min |
+| Links                           | [S1643](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1643&rule_key=squid%3AS1643) |
 
 ## Requirement & Tags
 
@@ -31,7 +31,7 @@ Java 1.5
 
 ::: tip Tags
 Java 1.5, String Manipulation, Performance
-::: 
+:::
 
 ## Code Changes
 
@@ -96,11 +96,10 @@ String value = new StringBuilder().append(5)
 
 ## Limitations
 
-If at least two of the first operands of the expression are numeric additions then the expression is evaluated by java as numeric expression rather than String expression. Therefore, the transformation is not performed. E.g.: 
+If at least two of the first operands of the expression are numeric additions then the expression is evaluated by java as numeric expression rather than String expression. Therefore, the transformation is not performed. E.g.:
 
 __Pre__
 
 ```java
 String value = 2 + 3 + "";
 ```
-

@@ -19,12 +19,12 @@ While not technically incorrect, the omission of curly braces can be misleading,
 
 ## Properties
 
-| Property      | Value |
-| ------------- |:-------------:|
-| Since | 0.9 |
-| Java version      | 1 |
-| Remediation cost      | 2 |
-| Links | [S00121](https://sonarcloud.io/organizations/default/rules#rule_key=squid%3AS00121) |
+| Property                        | Value |
+| ------------------------------- | ----- |
+| First seen in jSparrow version  | 0.9   |
+| Minimum Java version            | 1.1   |
+| Remediation cost                | 2 min |
+| Links                           | [S00121](https://sonarcloud.io/organizations/default/rules?open=squid%3AS00121&rule_key=squid%3AS00121) |
 
 ## Code Changes
 
@@ -49,7 +49,7 @@ __Pre__
 ``` java
 else bar();
 ```
-__Post__ 
+__Post__
 
 ``` java
 else {
@@ -63,7 +63,7 @@ __Pre__
 ``` java
 else if (a &gt;= b) bar();
 ```
-__Post__ 
+__Post__
 
 ``` java
 else if (a &gt;= b) {
@@ -111,6 +111,6 @@ __Post__
 ``` java
 int cnt = 0;
 do {
-    cnt++; 
+    cnt++;
 } while (cnt &lt; 10);
 ```

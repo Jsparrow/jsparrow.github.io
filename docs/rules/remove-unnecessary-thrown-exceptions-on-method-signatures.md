@@ -1,5 +1,5 @@
 ---
-title: Unnecessary Thrown Exceptions on Method Signature 
+title: Unnecessary Thrown Exceptions on Method Signature
 description:
     description
 ---
@@ -20,12 +20,12 @@ Removes the following exceptions on method signatures:
 
 Improves the readability by removing code that adds no information on the method signature.
 
-| Property      | Value |
-| ------------- |:-------------:|
-| Since | 2.7.0 |
-| Java version | 1 |
-| Remediation cost      | 2 |
-| Links |  |
+| Property                        | Value |
+| ------------------------------- | ----- |
+| First seen in jSparrow version  | 2.7.0 |
+| Minimum Java version            | 1.1   |
+| Remediation cost                | 2 min |
+| Links                           |  |
 
 ## Requirement & Tags
 
@@ -35,7 +35,7 @@ None.
 
 ::: tip Tags
 Java 1.1, Coding Conventions
-::: 
+:::
 
 ## Code Changes
 

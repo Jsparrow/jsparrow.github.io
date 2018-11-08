@@ -10,18 +10,18 @@ description:
 
 ## Description
 
-Replaces, when possible, the last if-statement of a method body with a guard-if and unwraps its body. 
+Replaces, when possible, the last if-statement of a method body with a guard-if and unwraps its body.
 
 ## Benefits
 
-Reduces the cognitive complexity of a method. 
+Reduces the cognitive complexity of a method.
 
-| Property      | Value |
-| ------------- |:-------------:|
-| Since | 2.7.0 |
-| Java version | 1 |
-| Remediation cost      | 5 |
-| Links | [S3776](https://sonarcloud.io/organizations/default/rules?open=squid%3AS3776&rule_key=squid%3AS3776) |
+| Property                        | Value |
+| ------------------------------- | ----- |
+| First seen in jSparrow version  | 2.7.0   |
+| Minimum Java version            | 1.1   |
+| Remediation cost                | 5 min |
+| Links                           | [S3776](https://sonarcloud.io/organizations/default/rules?open=squid%3AS3776&rule_key=squid%3AS3776) |
 
 ## Requirement & Tags
 
@@ -31,7 +31,7 @@ None.
 
 ::: tip Tags
 Java 1.1, Coding Conventions
-::: 
+:::
 
 ## Code Changes
 
@@ -119,4 +119,3 @@ __Post__
 		}
 	}
 ```
-
