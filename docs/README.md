@@ -5,7 +5,7 @@ sidebar: auto
 
 # jSparrow
 
-Is a tool that automatically improoves java code
+Is a tool that automatically refactors Java code
 
 ## Where to find it?
 
@@ -17,4 +17,4 @@ Is a tool that automatically improoves java code
 
 ## What is this
 
-The documentation for jsparrow will be created here, stay tuned!
+The documentation for jSparrow will be created here, stay tuned!
