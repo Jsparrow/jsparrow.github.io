@@ -1,24 +1,27 @@
 <template>
+
+
     <div>
-           <h1> General Data of {{ProjectName}}
-           </h1>
+        <div v-for="(project, idx) in statistics">
+
+            <h2> <a href="#" aria-hidden="true" class="header-anchor"> # </a>General Data of {{project.projectName}} </h2>
             <ul>
                 <li>
-                    File Count :{{Data.fileCount}}
+                    File Count :{{project.totalFilesCount}}
                 </li>
                 <li>
-                    Files Changed :{{Data.filesChanged}}
+                    Files Changed :{{project.totalFilesCount}} <!-- TODO:  total files count is different from files changed -->
                 </li>
                 <li>
-                    Total Issues Fixed : {{Data.totalIssuesFixed}}
+                    Total Issues Fixed : {{project.totalIssuesFixed}}
                 </li>
                 <li>
-                    Total time saved [min] : {{Data.totalTimeSaved}}
+                    Total time saved [min] : {{project.totalIssuesFixed}} <!-- TODO:  total issyes fixed is different from total files changed -->
                 </li>
             </ul>
-            <h1>
+            <h3 id="per-rule">
                 Per Rule
-            </h1>
+            </h3>
             <table border="1|0" class="table-hover">
                 <thead>
                     <tr>
@@ -29,7 +32,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="(item, idx) in Data.rulesData">
+                    <tr v-for="(item, idx) in project.rules">
                         <td>{{ item.ruleId }}</td>
                         <td>{{ item.remediationCost }}</td>
                         <td>{{ item.filesChanged }}</td>
@@ -37,39 +40,60 @@
                     </tr>
                 </tbody>
             </table>
+            <hr/>
+            <br/>
         </div>
+    </div>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                Data: 
-{
-                            "durationOfCalculation": 100,
-                            "fileCount": 5,
-                            "filesChanged": 2,
-                            "rulesData": [{
-                                    "filesChanged": 2,
-                                    "issuesFixed": 2,
-                                    "remediationCost": 2,
-                                    "ruleId": "RuleID1"
-                                },
-                                {
-                                    "filesChanged": 23,
-                                    "issuesFixed": 56,
-                                    "remediationCost": 3,
-                                    "ruleId": "RuleID2"
-                                }
-                            ],
-                            "totalIssuesFixed": 5,
-                            "totalTimeSaved": 1000
-                        },
-                        "MetricTimestamp": "0",
-                        "MetricUUID": "1337",
-                        "ProjectName": "Project A"
-                
+export default {
+  data() {
+    return {
+        statistics: [
+        {
+          projectName: "123",
+          duration: 2,
+          totalFilesCount: 10,
+          totalIssuesFixed: 7,
+          rules: [
+            {
+              ruleId: "fistrule",
+              remediationCost: 5,
+              filesChanged: 5,
+              issuesFixed: 4
+            },
+            {
+              ruleId: "secondrule",
+              remediationCost: 2,
+              filesChanged: 5,
+              issuesFixed: 3
             }
+          ]
+        },
+        {
+          projectName: "jSparrow",
+          duration: 10,
+          totalFilesCount: 5,
+          totalIssuesFixed: 5,
+          rules: []
+        },
+        {
+          projectName: "ABC",
+          duration: 33,
+          totalFilesCount: 10,
+          totalIssuesFixed: 10,
+          rules: [
+            {
+              ruleId: "fistrule",
+              remediationCost: 1,
+              filesChanged: 2,
+              issuesFixed: 4
+            }
+          ]
         }
-    }
+      ]
+    };
+  }
+};
 </script>
