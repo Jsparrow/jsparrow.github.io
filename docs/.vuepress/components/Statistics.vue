@@ -5,7 +5,7 @@
             <button class="tablinks" 
                 v-for="(project, index) in statistics" 
                 v-bind:id="index" 
-                v-on:click="openProject(event, project.projectName)"> {{project.projectName}}
+                v-on:click="openProject(index, project.projectName)"> {{project.projectName}}
             </button>
         </div>
 
@@ -71,7 +71,7 @@ export default {
   },
 
   methods: {
-    openProject: function(evt, project) {
+    openProject: function(index, project) {
       // Declare all variables
       var i, tabcontent, tablinks;
 
@@ -89,7 +89,7 @@ export default {
 
       // Show the current tab, and add an "active" class to the button that opened the tab
       document.getElementById(project).style.display = "block";
-      evt.currentTarget.className += " active";
+      document.getElementById(index).className += " active";
     }, 
     openFirstProject : function() {
         document.getElementById("0").click();
