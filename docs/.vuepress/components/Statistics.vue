@@ -1,9 +1,10 @@
 <template>
     <div>
 
-        <div class="tab">
+        <div class="tab" v-on:load="openFirstProject()">            
             <button class="tablinks" 
                 v-for="(project, index) in statistics" 
+                v-bind:id="index" 
                 v-on:click="openProject(event, project.projectName)"> {{project.projectName}}
             </button>
         </div>
@@ -89,7 +90,14 @@ export default {
       // Show the current tab, and add an "active" class to the button that opened the tab
       document.getElementById(project).style.display = "block";
       evt.currentTarget.className += " active";
+    }, 
+    openFirstProject : function() {
+        document.getElementById("0").click();
     }
+  },
+
+  mounted() {
+    this.openFirstProject();
   },
 
   data() {
