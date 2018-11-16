@@ -25,11 +25,12 @@
                 <li>
                     Total Issues Fixed : {{project.totalIssuesFixed}}
                 </li>
+
                 <li>
-                    Total time saved [min] : {{project.totalTimeSaved}}
+                    Total duration [min] : {{ (project.timestampJSparrowFinish - project.timestampGitHubStart)/60 }}
                 </li>
-                <li>
-                    Total duration [min] : {{project.timestampJSparrowFinish - project.timestampGitHubStart}}
+                                <li>
+                    Total time saved [min] : {{project.totalTimeSaved}}
                 </li>
             </ul>
             <h3 id="per-rule">
@@ -60,6 +61,43 @@
 </template>
 
 
+<style>
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
 
 
 <script>
@@ -103,111 +141,239 @@ export default {
   data() {
     return {
       statistics: [
-        {
-          projectName: "ABC",
-          timestampGitHubStart: 33,
-          timestampJSparrowFinish: 63,
-          totalFilesChanged: 9,
-          totalFilesCount: 10,
-          totalIssuesFixed: 10,
-          totalTimeSaved: 15,
-          rules: [
-            {
-              ruleId: "fistrule",
-              remediationCost: 1,
-              fileCount: 2,
-              issuesFixedCount: 5
-            }
-          ]
-        },
-        {
-          projectName: "123",
-          timestampGitHubStart: 12,
-          timestampJSparrowFinish: 30,
-          totalFilesChanged: 9,
-          totalFilesCount: 10,
-          totalIssuesFixed: 10,
-          totalTimeSaved: 15,
-          rules: [
-            {
-              ruleId: "fistrule",
-              remediationCost: 5,
-              fileCount: 21,
-              issuesFixedCount: 123
-            },
-            {
-              ruleId: "secondrule",
-              remediationCost: 2,
-              fileCount: 4,
-              issuesFixedCount: 13
-            }
-          ]
-        },
-        {
-          projectName: "jSparrow",
-          timestampGitHubStart: 23,
-          timestampJSparrowFinish: 75,
-          totalFilesChanged: 9,
-          totalFilesCount: 10,
-          totalIssuesFixed: 10,
-          totalTimeSaved: 15,
-          rules: [
-            {
-              ruleId: "fistrule",
-              remediationCost: 10,
-              fileCount: 15,
-              issuesFixedCount: 35
-            }
-          ]
-        },
-        {
-          projectName: "jSparrow2",
-          duration: 10,
-          totalFilesCount: 5,
-          totalIssuesFixed: 5,
-          rules: []
-        }
-      ]
+          {
+        projectName : "citrus",
+        timestampGitHubStart : 1542379811,
+        timestampJSparrowFinish : 1542380629,
+        totalFilesChanged : 191,
+        totalFilesCount : 1020,
+        totalIssuesFixed : 351,
+        totalTimeSaved : 740,
+        rules : [
+             {
+                ruleId : "GuardCondition",
+                remediationCost : 5,
+                fileCount : 2,
+                issuesFixedCount : 2
+            },        	 {
+                ruleId : "EnhancedForLoopToStreamForEach",
+                remediationCost : 15,
+                fileCount : 4,
+                issuesFixedCount : 5
+            },        	 {
+                ruleId : "StatementLambdaToExpression",
+                remediationCost : 5,
+                fileCount : 4,
+                issuesFixedCount : 4
+            },        	 {
+                ruleId : "StringLiteralEqualityCheck",
+                remediationCost : 10,
+                fileCount : 3,
+                issuesFixedCount : 6
+            },        	 {
+                ruleId : "ArithmethicAssignment",
+                remediationCost : 2,
+                fileCount : 1,
+                issuesFixedCount : 1
+            },        	 {
+                ruleId : "ForToForEach",
+                remediationCost : 5,
+                fileCount : 1,
+                issuesFixedCount : 1
+            },        	 {
+                ruleId : "RearrangeClassMembers",
+                remediationCost : 5,
+                fileCount : 7,
+                issuesFixedCount : 7
+            },        	 {
+                ruleId : "EnumsWithoutEquals",
+                remediationCost : 2,
+                fileCount : 1,
+                issuesFixedCount : 6
+            },        	 {
+                ruleId : "OverrideAnnotation",
+                remediationCost : 5,
+                fileCount : 23,
+                issuesFixedCount : 33
+            },        	 {
+                ruleId : "CodeFormatter",
+                remediationCost : 1,
+                fileCount : 191,
+                issuesFixedCount : 191
+            },        	 {
+                ruleId : "BracketsToControl",
+                remediationCost : 2,
+                fileCount : 1,
+                issuesFixedCount : 1
+            },        	 {
+                ruleId : "UseStringBuilderAppend",
+                remediationCost : 2,
+                fileCount : 28,
+                issuesFixedCount : 40
+            },        	 {
+                ruleId : "RemoveUnnecessaryThrows",
+                remediationCost : 2,
+                fileCount : 21,
+                issuesFixedCount : 21
+            },        	 {
+                ruleId : "StringBufferToBuilder",
+                remediationCost : 2,
+                fileCount : 1,
+                issuesFixedCount : 1
+            },        	 {
+                ruleId : "LambdaToMethodReference",
+                remediationCost : 2,
+                fileCount : 3,
+                issuesFixedCount : 3
+            },        	 {
+                ruleId : "RemoveExplicitCallToSuper",
+                remediationCost : 1,
+                fileCount : 17,
+                issuesFixedCount : 19
+            },        	 {
+                ruleId : "MultiCatch",
+                remediationCost : 5,
+                fileCount : 1,
+                issuesFixedCount : 1
+            },        	 {
+                ruleId : "DiamondOperator",
+                remediationCost : 1,
+                fileCount : 8,
+                issuesFixedCount : 9
+            }        	        ]
+    },	 {
+        projectName : "HL7Receiver",
+        timestampGitHubStart : 1542378461,
+        timestampJSparrowFinish : 1542378872,
+        totalFilesChanged : 161,
+        totalFilesCount : 161,
+        totalIssuesFixed : 1094,
+        totalTimeSaved : 3697,
+        rules : [
+             {
+                ruleId : "EnhancedForLoopToStreamForEach",
+                remediationCost : 15,
+                fileCount : 14,
+                issuesFixedCount : 29
+            },        	 {
+                ruleId : "StandardLogger",
+                remediationCost : 10,
+                fileCount : 7,
+                issuesFixedCount : 19
+            },        	 {
+                ruleId : "GuardCondition",
+                remediationCost : 5,
+                fileCount : 7,
+                issuesFixedCount : 13
+            },        	 {
+                ruleId : "LambdaForEachCollect",
+                remediationCost : 15,
+                fileCount : 2,
+                issuesFixedCount : 2
+            },        	 {
+                ruleId : "FieldRenaming",
+                remediationCost : 15,
+                fileCount : 2,
+                issuesFixedCount : 12
+            },        	 {
+                ruleId : "UseIsEmptyOnCollections",
+                remediationCost : 2,
+                fileCount : 1,
+                issuesFixedCount : 2
+            },        	 {
+                ruleId : "StatementLambdaToExpression",
+                remediationCost : 5,
+                fileCount : 13,
+                issuesFixedCount : 26
+            },        	 {
+                ruleId : "StringLiteralEqualityCheck",
+                remediationCost : 10,
+                fileCount : 5,
+                issuesFixedCount : 6
+            },        	 {
+                ruleId : "FunctionalInterface",
+                remediationCost : 5,
+                fileCount : 1,
+                issuesFixedCount : 4
+            },        	 {
+                ruleId : "ForToForEach",
+                remediationCost : 5,
+                fileCount : 2,
+                issuesFixedCount : 2
+            },        	 {
+                ruleId : "RearrangeClassMembers",
+                remediationCost : 5,
+                fileCount : 10,
+                issuesFixedCount : 10
+            },        	 {
+                ruleId : "EnumsWithoutEquals",
+                remediationCost : 2,
+                fileCount : 2,
+                issuesFixedCount : 9
+            },        	 {
+                ruleId : "OverrideAnnotation",
+                remediationCost : 5,
+                fileCount : 13,
+                issuesFixedCount : 50
+            },        	 {
+                ruleId : "BracketsToControl",
+                remediationCost : 2,
+                fileCount : 72,
+                issuesFixedCount : 501
+            },        	 {
+                ruleId : "CodeFormatter",
+                remediationCost : 1,
+                fileCount : 161,
+                issuesFixedCount : 161
+            },        	 {
+                ruleId : "UseStringBuilderAppend",
+                remediationCost : 2,
+                fileCount : 42,
+                issuesFixedCount : 106
+            },        	 {
+                ruleId : "RemoveUnnecessaryThrows",
+                remediationCost : 2,
+                fileCount : 2,
+                issuesFixedCount : 3
+            },        	 {
+                ruleId : "LambdaToMethodReference",
+                remediationCost : 2,
+                fileCount : 16,
+                issuesFixedCount : 48
+            },        	 {
+                ruleId : "RemoveExplicitCallToSuper",
+                remediationCost : 1,
+                fileCount : 9,
+                issuesFixedCount : 9
+            },        	 {
+                ruleId : "StringUtils",
+                remediationCost : 10,
+                fileCount : 30,
+                issuesFixedCount : 71
+            },        	 {
+                ruleId : "TryWithResource",
+                remediationCost : 15,
+                fileCount : 1,
+                issuesFixedCount : 1
+            },        	 {
+                ruleId : "IndexOfToContains",
+                remediationCost : 2,
+                fileCount : 1,
+                issuesFixedCount : 1
+            },        	 {
+                ruleId : "PrimitiveObjectUseEquals",
+                remediationCost : 2,
+                fileCount : 1,
+                issuesFixedCount : 1
+            },        	 {
+                ruleId : "LambdaForEachIfWrapperToFilter",
+                remediationCost : 5,
+                fileCount : 7,
+                issuesFixedCount : 8
+            }        	        ]
+    } ]
     };
   }
 };
+
 </script>
-
-
-<style>
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-</style>
