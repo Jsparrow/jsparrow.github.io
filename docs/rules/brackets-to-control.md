@@ -5,7 +5,7 @@ description:
 ---
 
 
-# Brackets to Control -- needs update
+# Brackets to Control
 
 [[toc]]
 
