@@ -17,20 +17,20 @@
             <h2> General Data of {{project.projectName}}</h2>
             <ul>
                 <li>
-                    File Count :{{project.totalFilesCount}}
+                    File Count: {{project.totalFilesCount}}
                 </li>
                 <li>
-                    Files Changed :{{project.totalFilesChanged}}
+                    Files Changed: {{project.totalFilesChanged}}
                 </li>
                 <li>
-                    Total Issues Fixed : {{project.totalIssuesFixed}}
+                    Total Issues Fixed: {{project.totalIssuesFixed}}
                 </li>
 
                 <li>
-                    Total duration [min] : {{ (project.timestampJSparrowFinish - project.timestampGitHubStart)/60 }}
+                    Total duration: {{ secondsToHms(project.timestampJSparrowFinish - project.timestampGitHubStart) }}
                 </li>
-                                <li>
-                    Total time saved [min] : {{project.totalTimeSaved}}
+                <li>
+                    Total time saved: {{secondsToHms(project.totalTimeSaved*60)}}
                 </li>
             </ul>
             <h3 id="per-rule">
@@ -131,7 +131,18 @@ export default {
     },
     openFirstProject : function() {
         document.getElementById("0").click();
-    }
+    },
+    secondsToHms: function(d) {
+      d = Number(d);
+      var h = Math.floor(d / 3600);
+      var m = Math.floor(d % 3600 / 60);
+      var s = Math.floor(d % 3600 % 60);
+
+      var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
+      var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
+      var sDisplay = s > -1 ? s + (s == 1 ? " second" : " seconds") : "";
+    return hDisplay + mDisplay + sDisplay;
+}
   },
 
   mounted() {
