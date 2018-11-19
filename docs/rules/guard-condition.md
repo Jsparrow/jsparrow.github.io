@@ -8,13 +8,7 @@ description:
 
 [[toc]]
 
-## Description
-
-Replaces, when possible, the last if-statement of a method body with a guard-if and unwraps its body.
-
-## Benefits
-
-Reduces the cognitive complexity of a method.
+## Properties
 
 | Property                        | Value |
 | ------------------------------- | ----- |
@@ -23,10 +17,18 @@ Reduces the cognitive complexity of a method.
 | Remediation cost                | 5 min |
 | Links                           | [S3776](https://sonarcloud.io/organizations/default/rules?open=squid%3AS3776&rule_key=squid%3AS3776) |
 
+## Description
+
+Replaces, when possible, the last if-statement of a method body with a guard-if and unwraps its body.
+
+## Benefits
+
+Reduces the cognitive complexity of a method.
+
 ## Requirement & Tags
 
 ::: warning Requirements
-None.
+None
 :::
 
 ::: tip Tags

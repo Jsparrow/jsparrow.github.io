@@ -1,12 +1,21 @@
 ---
-title: Local Variable Type Inference
+title: Use Local Variable Type Inference
 description:
     This rule replaces the types on the local variable declarations with the var keyword introduced in Java 10. 
 ---
 
-# Local Variable Type Inference
+# Use Local Variable Type Inference
 
 [[toc]]
+
+## Properties
+
+| Property                        | Value |
+| ------------------------------- | ----- |
+| First seen in jSparrow version  | 2.6.0   |
+| Minimum Java version            | 10   |
+| Remediation cost                | 2 min |
+| Links                           |  |
 
 ## Description
 
@@ -17,14 +26,15 @@ The transformation is avoided for primitive types. For safety reasons, the trans
 
 This rule reduces the length of variable definitions and therefore the improves the readability if the variable is named properly drastically. 
 
-## Properties
+## Requirement & Tags
 
-| Property                        | Value |
-| ------------------------------- | ----- |
-| First seen in jSparrow version  | 2.6.0   |
-| Minimum Java version            | 10   |
-| Remediation cost                | 2 min |
-| Links                           |  |
+::: warning Requirements
+Java 10
+:::
+
+::: tip Tags
+Java 10, Formatting, Readability
+:::
 
 ## Code Changes
 

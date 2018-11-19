@@ -1,13 +1,21 @@
 ---
-title: Brackets to Control
+title: Add Parenthesis to Control Statements
 description:
     Checks if parenthesis are used to encapsulate control statements and adds them if they aren't present.
 ---
 
-
-# Brackets to Control
+# Add Parenthesis to Control Statements
 
 [[toc]]
+
+## Properties
+
+| Property                        | Value |
+|:------------------------------- |:----- |
+| First seen in jSparrow version  | 0.9   |
+| Minimum Java version            | 1.1   |
+| Remediation cost                | 2 min |
+| Links                           | [S00121](https://sonarcloud.io/organizations/default/rules?open=squid%3AS00121&rule_key=squid%3AS00121) |
 
 ## Description
 
@@ -17,14 +25,15 @@ Checks if parenthesis are used to encapsulate control statements and adds them i
 
 While not technically incorrect, the omission of curly braces can be misleading, and may lead to the introduction of errors during maintenance. Applying this read helps avoid such errors and improves readability.
 
-## Properties
+## Requirement & Tags
 
-| Property                        | Value |
-| ------------------------------- | ----- |
-| First seen in jSparrow version  | 0.9   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 2 min |
-| Links                           | [S00121](https://sonarcloud.io/organizations/default/rules?open=squid%3AS00121&rule_key=squid%3AS00121) |
+::: warning Requirements
+None
+:::
+
+::: tip Tags
+Java 1.1, Formatting, Readability
+:::
 
 ## Code Changes
 

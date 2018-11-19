@@ -39,12 +39,11 @@ module.exports = {
             {
                 text: 'GitHub App',
                 link: '/github/getting-started.html'
+            },
+            {
+                text: 'Rules',
+                link: '/rules/'
             }
-            // ,
-            // {
-            //     text: 'Rules',
-            //     link: '/rules/'
-            // }
         ],
         logo: '/logo.png',
         sidebar: {
