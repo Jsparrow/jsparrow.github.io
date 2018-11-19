@@ -4,47 +4,69 @@ description:
     This rule replaces the types on the local variable declarations with the var keyword introduced in Java 10. 
 ---
 
-
-# Local Variable Type Inference -- needs update
-
-Created by Ludwig Werzowa, last modified on May 18, 2018
+# Local Variable Type Inference
 
 [[toc]]
 
 ## Description
 
-For example, the following declaration:
+Local variable where the type could be inferred are changed to the type var. Keep in mind that the transformation is only useful, if the variables have speaking names, otherwise it is only disguising the nature of the variable.
+The transformation is avoided for primitive types. For safety reasons, the transformation is also avoided if the initializer is an anonymous class declaration. 
+
+## Benefits
+
+This rule reduces the length of variable definitions and therefore the improves the readability if the variable is named properly drastically. 
+
+## Properties
+
+| Property                        | Value |
+| ------------------------------- | ----- |
+| First seen in jSparrow version  | 2.6.0   |
+| Minimum Java version            | 10   |
+| Remediation cost                | 2 min |
+| Links                           |  |
+
+## Code Changes
+
+### Variable Declarations
+
+The list is currently not complete.
+
+__Pre__ 
+
 ``` java
 ArrayList<UserDefinedType> list = new ArrayList<UserDefinedType>();
 ```
-will be converted to 
+__Post__
+
 ``` java
 var list = new ArrayList<UserDefinedType>();
 ```
 
-The rules cover the declaration of the parameters of enhanced for loops. For example, 
+### Loops
+
+__Pre__
+
 ``` java
 for(UserDefinedType value : list) {
     consume(value);
 }
 ```
 
-will be transformed to:
+__Post__
+
 ``` java
 for(var value : list) {
     consume(value);
 }
 ```
 
-The transformation is avoided for primitive types. For safety reasons, the transformation is also avoided if the initializer is an anonymous class declaration. 
 
-## Technical Documentation
+## Limitations
 
-### Rule Boundaries
+The following contains a list of cases where a transformation of type with var is not possible.
 
-The following contains a list of cases where a transformation of type with var is not possible. 
-
-#### Initializer containing  diamond operator
+### Initializer containing  diamond operator
 If the initialization of a local variable declaration uses diamond operator, then var can still be used but the argument type will be converted to Object. This may lead to compilation errors. Consider the example:
 
 ``` java
@@ -59,7 +81,7 @@ public void consumeIds(List<String> userIds) {
 
 Transformation of the List&lt;String&gt; to var, would change the type of the userIds to List&lt;Object&gt; which is not expected by the consumeIds method. 
  
-#### Initialization with a subtype
+### Initialization with a subtype
 If the type of the initializer is a  subtype of the declared type, then the transformation is not always possible. Consider the following lines:
 
 ``` java
@@ -68,12 +90,12 @@ list = new LinkedList<String>();
 ```
 The type List&lt;String&gt; cannot be replaced with var because in the second line, list is being reassigned with LinkedList which is not assign-compatible with ArrayList. 
 
-#### Raw types
+### Raw types
 If the declaration or the initializer are raw type, then the transformation is not possible. The following table shows the cases when a var can be used instead of the concrete type:
 
-|declaration|initilization|state|
+|declaration|initialization|state|
 |-|-|-|
-|raw|raw|Shouldwork|
-|raw|concrete|Does NOT always work |
-|concrete|raw|Does NOT always work |
-|concrete|concrete|Should work |
+|raw|raw| works|
+|raw|concrete|not all cases are possible |
+|concrete|raw|not all cases are possible |
+|concrete|concrete|works |
