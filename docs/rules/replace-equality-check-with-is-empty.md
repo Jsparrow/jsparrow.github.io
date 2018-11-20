@@ -43,16 +43,16 @@ __Pre__
 
 ```java
 Map<String, String> m = new HashMap<>();
-m.size() == 0;
+if(m.size() == 0);
 String s = "";
-s.length() == 0;
+if(s.length() == 0);
 ```
 
 __Post__
 
 ```java
 Map<String, String> m = new HashMap<>();
-m.isEmpty();
+if(m.isEmpty());
 String s = "";
 if(s.isEmpty());
 ```
