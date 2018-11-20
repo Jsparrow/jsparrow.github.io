@@ -28,7 +28,7 @@ Applying this rule leads to more simplicity in the code base by using new langua
 ## Requirement & Tags
 
 ::: warning Requirements
-None
+Java 1.5
 :::
 
 ::: tip Tags

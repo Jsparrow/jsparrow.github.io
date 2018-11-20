@@ -30,7 +30,7 @@ Applying this rule leads to more simplicity in the code base and thus improves r
 ## Requirement & Tags
 
 ::: warning Requirements
-None
+Java 1.4
 :::
 
 ::: tip Tags
