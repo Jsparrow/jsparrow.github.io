@@ -4,7 +4,7 @@ description:
     Reformats code according to the coding conventions defined in Eclipse.
 ---
 
-# Add Parenthesis to Control Statements
+# Reformat Code
 
 [[toc]]
 

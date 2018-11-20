@@ -4,7 +4,7 @@ description:
     Simplifies arithmetic operations that an compound operator where possible.
 ---
 
-# Add Parenthesis to Control Statements
+# Replace Assignment with Compound Operator
 
 [[toc]]
 

@@ -4,7 +4,7 @@ description:
     Organize Imports according to the Eclipse's built in Organize Imports functionality.
 ---
 
-# Add Parenthesis to Control Statements
+# Organize Imports
 
 [[toc]]
 
