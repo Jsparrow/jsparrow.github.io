@@ -29,6 +29,7 @@ Using StringUtils helps avoid a number of issues, such as null pointer exception
 ## Requirement & Tags
 
 ::: warning Requirements
+Java 1.1  
 Libraries: org.apache.commons.lang3.StringUtils
 :::
 

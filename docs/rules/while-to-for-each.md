@@ -13,7 +13,7 @@ description:
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | 0.9.2   |
-| Minimum Java version            | 1.5   |
+| Minimum Java version            | 5   |
 | Remediation cost                | 5 min |
 | Links                           |  |
 
@@ -28,11 +28,11 @@ Applying this rule leads to more simplicity in the code base by using new langua
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.5
+Java 5
 :::
 
 ::: tip Tags
-Java 1.5, Loop, Old Language Constructs
+Java 5, Loop, Old Language Constructs
 :::
 
 ## Code Changes

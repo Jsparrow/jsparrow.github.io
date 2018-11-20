@@ -13,7 +13,7 @@ description:
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | 0.9.2   |
-| Minimum Java version            | 1.5   |
+| Minimum Java version            | 5   |
 | Remediation cost                | 1 min |
 | Links                           | [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html#VA_FORMAT_STRING_USES_NEWLINE) |
 
@@ -29,11 +29,11 @@ The benefit of this approach is that '%n' is portable across platforms.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.5
+Java 5
 :::
 
 ::: tip Tags
-Java 1.5, String Manipulation
+Java 5, String Manipulation
 :::
 
 ## Code Changes

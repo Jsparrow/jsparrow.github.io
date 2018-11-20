@@ -28,7 +28,7 @@ Applying this rule improves readability and helps avoid merge conflicts.
 ## Requirement & Tags
 
 ::: warning Requirements
-None
+Java 1.1
 :::
 
 ::: tip Tags
