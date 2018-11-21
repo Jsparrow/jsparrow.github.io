@@ -1,4 +1,4 @@
-# jSparrow Eclipse Plugin Documentation
+# Additional Configuration
 
 ## Setup proxy
 

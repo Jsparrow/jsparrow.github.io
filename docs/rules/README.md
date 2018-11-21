@@ -4,7 +4,7 @@ rules_index: true
 
 # Rules
 
-Rules are currently migrated to this platform. It might be that not all rule descriptions are available.
+This is a list of all the rules that are currently implemented in jSparrow.
 
 ## Summary
 

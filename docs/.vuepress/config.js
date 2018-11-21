@@ -16,7 +16,7 @@ const github = dirTree(path.join(__dirname, '../github'), {
 
 
 module.exports = {
-    title: 'jSparrow GitHub Documentation',
+    title: 'jSparrow Documentation',
     head: [
         ['link', {
             rel: 'icon',
@@ -30,11 +30,28 @@ module.exports = {
             },
             {
                 text: 'Maven Plugin',
-                link: '/maven/getting-started.html'
+                items: [{
+                        text: 'Getting Started',
+                        link: '/maven/getting-started.html'
+                    }
+                ]
             },
             {
                 text: 'Eclipse Plugin',
-                link: '/eclipse/getting-started.html'
+                link: '/eclipse/getting-started.html',
+                items: [{
+                        text: 'Getting Started',
+                        link: '/eclipse/getting-started.html'
+                    },
+                    {
+                        text: 'Installation Guide',
+                        link: '/eclipse/installation-guide.html'
+                    },
+                    {
+                        text: 'Additional Configuration',
+                        link: '/eclipse/additional-configuration.html'
+                    }
+                ]
             },
             {
                 text: 'GitHub App',
@@ -56,7 +73,7 @@ module.exports = {
         logo: '/logo.png',
         sidebar: {
             '/maven/': ['getting-started'],
-            '/eclipse/': ['getting-started','installation-guide',''],
+            '/eclipse/': ['getting-started','installation-guide','additional-configuration'],
             '/github/': ['getting-started', 'statistics'],
             '/rules/' : require('./rules.js'),
             '/': ['']

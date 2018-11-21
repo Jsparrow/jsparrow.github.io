@@ -2,6 +2,12 @@
 
 [[toc]]
 
+## Beta
+
+The jSparrow GitHub App is now available as a free beta version!
+
+Check it out at [GitHub](https://github.com/apps/jsparrow-app)
+
 ## Introduction
 
 The jSparrow GitHub App (JGA) is the integration of jSparrow's refactorings as part of a GitHub app.
@@ -121,5 +127,5 @@ excludes:
 ```
 
 ::: warning NOTE
-Any configuration options in the YAML file are case sensitive and require precise identation.
+Any configuration options in the YAML file are case sensitive and require precise indentation.
 :::
