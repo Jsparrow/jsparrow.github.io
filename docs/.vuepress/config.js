@@ -38,7 +38,15 @@ module.exports = {
             },
             {
                 text: 'GitHub App',
-                link: '/github/getting-started.html'
+                items: [{
+                        text: 'Getting Started',
+                        link: '/github/getting-started.html',
+                    },
+                    {
+                        text: 'Statistics',
+                        link: '/github/statistics.html',
+                    },
+                ]
             },
             {
                 text: 'Rules',
@@ -47,14 +55,11 @@ module.exports = {
         ],
         logo: '/logo.png',
         sidebar: {
-            '/rules/': rules.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
-                .sort((a, b) => b < a),
-            '/maven/': maven.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
-                .sort((a, b) => b < a),
-            '/eclipse/': eclipse.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
-                .sort((a, b) => b < a),
-            '/github/': github.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
-                .sort((a, b) => b < a)
+            '/maven/': ['getting-started'],
+            '/eclipse/': ['getting-started','installation-guide',''],
+            '/github/': ['getting-started', 'statistics'],
+            '/rules/' : require('./rules.js'),
+            '/': ['']
         }
     },
     port: 8081,
