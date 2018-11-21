@@ -15,20 +15,20 @@ description:
 | First seen in jSparrow version  | 1.2   |
 | Minimum Java version            | 1.1   |
 | Remediation cost                | 10 min |
-| Links                           | [S106](https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS106) |
+| Links                           | [S106](https://sonarcloud.io/organizations/default/rules?open=squid%3AS106&rule_key=squid%3AS106) |
 
 ## Description
 
-This rule replaces the standard output statements with logger statements when possible. As a precondition, either SLF4J or LOG4J should be present on the classpath of the project. Then, the user is asked to choose the replacing options for the standard output statements.     
+This rule replaces the standard output statements with logger statements when possible. As a precondition, either [SLF4J](https://www.slf4j.org/) or [LOG4J](https://logging.apache.org/log4j/2.x/) should be present on the classpath of the project. Then, the user is asked to choose the replacing options for the standard output statements.     
   
 The following standard output methods are supported for replacing:  
-System.out.print(String)  
-System.out.println(String)  
-System.err.print(String)  
-System.err.println(String)  
-Throwable.printStackTrace()  
+- `System.out.print(String)`  
+- `System.out.println(String)`  
+- `System.err.print(String)`  
+- `System.err.println(String)`  
+- `Throwable.printStackTrace()`  
   
-If the preconditions of the rule is met, and a standard output method which can be replaced is found in the project, then a new logger object is introduced as the first statement of the type declaration together with the necessary import statements. In particular, if SLF4J is found in the classpath of the project, then the logger object is created as follows:
+The rule is triggered if the preconditions are met and a standard output method which can be replaced is found. In case the logger object is not present in the class, a new logger object is introduced as the first statement of the type declaration together with the necessary import statements. In particular, if SLF4J is found in the classpath of the project, then the logger object is created as follows:
 ``` java
 ....
 import org.slf4j.Logger;
@@ -55,12 +55,11 @@ If a program directly writes to the standard outputs, there is absolutely no way
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1  
-Libraries (one of the following): org.slf4j | ch.qos.logback | org.apache.log4j
+Libraries (any of the following): org.slf4j | ch.qos.logback | org.apache.log4j
 :::
 
 ::: tip Tags
-Java 1.1, String Manipulation
+Java 1.1, Logging, Old Language Constructs, Conventions
 :::
 
 ## Configuration
@@ -68,11 +67,11 @@ Java 1.1, String Manipulation
 Configuration wizard contains three parts. Every part is named after the method which is going to be replaced in the existing code. Drop-downs contain possible choices for severity level which would replace mentioned method calls.  
 
 As a replacement option, the user can chose either of the logger methods provided by api-s of both of the supported loggers. In particular:  
-Logger.trace(String)  
-Logger.debug(String)  
-Logger.info(String)  
-Logger.warn(String)  
-Logger.error(String)  
+- `Logger.trace(String)`  
+- `Logger.debug(String)`  
+- `Logger.info(String)`  
+- `Logger.warn(String)`  
+- `Logger.error(String)`  
 
 There is also an option in each of the drop-downs to "Leave as is", which skips making changes for the selected method.  
   
