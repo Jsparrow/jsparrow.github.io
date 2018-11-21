@@ -15,7 +15,7 @@ description:
 | First seen in jSparrow version  | 1.0.0 |
 | Minimum Java version            | 7     |
 | Remediation cost                | 5 min |
-| Links                           | [squid:S2147](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2147&q=Catches+should+be+combined.) |
+| Links                           | [S2147](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2147&q=Catches+should+be+combined.) |
 
 ## Description
 

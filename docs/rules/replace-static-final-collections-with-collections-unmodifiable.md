@@ -15,7 +15,7 @@ description:
 | First seen in jSparrow version  | 2.1.1 |
 | Minimum Java version            | 2     |
 | Remediation cost                | 10 min |
-| Links                           | [FindBugs#311](http://findbugs.sourceforge.net/bugDescriptions.html#MS_MUTABLE_COLLECTION) |
+| Links                           | [MutableCollection](http://findbugs.sourceforge.net/bugDescriptions.html#MS_MUTABLE_COLLECTION) |
 
 ## Description
 

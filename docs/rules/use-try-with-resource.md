@@ -15,7 +15,7 @@ description:
 | First seen in jSparrow version  | 1.0.0 |
 | Minimum Java version            | 7     |
 | Remediation cost                | 15 min |
-| Links                           | [squid:S2093](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2093&q=Resources+should+be+closed) |
+| Links                           | [S2093](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2093&q=Resources+should+be+closed) |
 
 ## Description
 

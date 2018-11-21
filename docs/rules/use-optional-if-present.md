@@ -15,7 +15,7 @@ description:
 | First seen in jSparrow version  | 2.6.0 |
 | Minimum Java version            | 8 |
 | Remediation cost                | 2 min |
-| Links                           | [Squid:S3655](https://sonarcloud.io/organizations/default/rules?open=squid%3AS3655&rule_key=squid%3AS3655)|
+| Links                           | [S3655](https://sonarcloud.io/organizations/default/rules?open=squid%3AS3655&rule_key=squid%3AS3655)|
 
 ## Description
 
