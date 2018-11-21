@@ -28,7 +28,7 @@ This order prevents null pointer exceptions from being raised, as a string liter
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

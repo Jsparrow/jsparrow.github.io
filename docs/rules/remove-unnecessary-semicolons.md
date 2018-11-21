@@ -26,7 +26,7 @@ Improves the readability, by removing code that do not produce any computation s
 ## Requirement & Tags
 
 ::: warning Requirements
-None.
+None
 :::
 
 ::: tip Tags

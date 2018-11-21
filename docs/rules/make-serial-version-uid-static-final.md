@@ -28,7 +28,7 @@ For serializable classes the SerialVersionUid should be written explicitly. If t
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

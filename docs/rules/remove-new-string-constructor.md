@@ -29,7 +29,7 @@ Furthermore, these constructors are deprecated in Java 9, which is an indication
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

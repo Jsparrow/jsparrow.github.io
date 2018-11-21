@@ -28,7 +28,7 @@ Imports that are not used are optimized away by the compiler. Regardless, they c
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

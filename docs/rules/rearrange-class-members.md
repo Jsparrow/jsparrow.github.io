@@ -45,7 +45,7 @@ Adhering to code conventions such as file member orderings improves maintainabil
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

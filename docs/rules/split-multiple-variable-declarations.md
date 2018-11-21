@@ -34,7 +34,7 @@ Applying this rule makes the code easier to read.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

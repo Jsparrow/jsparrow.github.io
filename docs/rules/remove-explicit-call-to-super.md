@@ -28,7 +28,7 @@ Improves the readability by removing unnecessary lines of code.
 ## Requirement & Tags
 
 ::: warning Requirements
-None.
+None
 :::
 
 ::: tip Tags

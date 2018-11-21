@@ -33,7 +33,7 @@ The more concatenations occur, the bigger the performance gain is.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

@@ -39,7 +39,7 @@ If the equals method was overwritten on the instances being compared the == has 
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

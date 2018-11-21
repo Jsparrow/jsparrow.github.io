@@ -28,7 +28,7 @@ Removing redundant syntax improves readability.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

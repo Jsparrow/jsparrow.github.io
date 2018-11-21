@@ -31,7 +31,7 @@ As described above boxing the object simply to use the static `toString` method 
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+None
 :::
 
 ::: tip Tags

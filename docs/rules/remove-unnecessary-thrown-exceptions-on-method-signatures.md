@@ -32,7 +32,7 @@ Improves the readability by removing code that adds no information on the method
 ## Requirement & Tags
 
 ::: warning Requirements
-None.
+None
 :::
 
 ::: tip Tags
