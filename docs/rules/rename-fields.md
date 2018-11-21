@@ -28,7 +28,7 @@ Furthermore, they should not start with underscore `_` or with dollar sign `$` e
 ## Benefits
 
 Sharing some naming conventions is a key point to make it possible for a team to efficiently collaborate. 
-Thus, this rule improves readability, helps avoid conflicts and helps avoid programming errors. 
+Thus, this rule improves readability, while at the same time helps avoid conflicts and programming errors. 
 
 ## Requirement & Tags
 
@@ -37,21 +37,21 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, String Manipulation, Performance
+Java 1.1, Conventions, Readability
 :::
 
 ## Configuration
 
 The rule provides configuration option for handling the occurrences of underscore `_` and dollar sign `$`. 
-The user can either chose to convert to uppercase the letter following `_`/`$` or to leave it unchanged. 
+The user can either choose to convert to uppercase the letter following `_`/`$` or to leave it unchanged. 
 Note, that in either case occurrences of `$` and `_` will not show up in the new name. 
-Additionally, the user can chose to rename fields with certain access modifiers, and can also select the search scope for the field references. 
+Additionally, the user can choose to rename fields with certain access modifiers, and can also select the search scope for the field references. 
 The following window with the configuration options will show up every time the user applies the rule to the Java sources. 
 
 [ ![Rename fields rule wizard](/img/eclipse/rename_rule_wizard.png) ](/img/eclipse/rename_rule_wizard.png)
 
 When clicking Finish, jSparrow will search for fields (as described above), find their references and will compute the new name. 
-The changes are shown in a Dif-View and the user can chose to accept or ignore the new name for each field: 
+The changes are shown in a Dif-View and the user can choose to accept or ignore the new name for each field: 
 
 [ ![Rename fields preview wizard](/img/eclipse/rename_field_preview_wizard.png) ](/img/eclipse/rename_field_preview_wizard.png)
 
@@ -92,6 +92,6 @@ class FieldNamingConvention {
 
 A filed cannot be automatically renamed on any of the following condition:
 
-- the newly computed name is not a legal variable name in Java. For example,  if the original name is `_int`, the new name computed name would be `int` which is a java keyword and is not allowed to be used as a variable name. 
+- the newly computed name is not a legal variable name in Java. For example, if the original name is `_int`, the new computed name would be `int` which is a Java keyword and is not allowed to be used as a variable name. 
 - the newly computed name coincides with any of the existing variable names in the same class.
-- the type of the field to be renamed has contains a dollar sign. In such a case, the search engine cannot find the references. Therefore, the field is not renamed.
+- the type of the field to be renamed contains a dollar sign. In such a case, the search engine cannot find the references. Therefore, the field is not renamed.
