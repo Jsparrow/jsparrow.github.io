@@ -8,13 +8,7 @@ description:
 
 [[toc]]
 
-## Description
-
-Replaces the infix operator `+` over `String` concatenations with at least three operands by `StringBuilder::append`. When possible, unwraps the parenthesized expressions.
-
-## Benefits
-
-Improves the performance of the String concatenations.
+## Properties
 
 | Property                        | Value |
 | ------------------------------- | ----- |
@@ -23,14 +17,22 @@ Improves the performance of the String concatenations.
 | Remediation cost                | 2 min |
 | Links                           | [S1643](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1643&rule_key=squid%3AS1643) |
 
+## Description
+
+Replaces the infix operator `+` over `String` concatenations with at least three operands by `StringBuilder::append`. When possible, unwraps the parenthesized expressions.
+
+## Benefits
+
+Improves the performance of the String concatenations.
+
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.5
+Java 5
 :::
 
 ::: tip Tags
-Java 1.5, String Manipulation, Performance
+Java 5, String Manipulation, Performance
 :::
 
 ## Code Changes

@@ -8,13 +8,7 @@ description:
 
 [[TOC]]
 
-## Description
-
-Removes pairs of negations from boolean expressions until only zero or one negation is left.
-
-## Benefits
-
-Improves the readability of the code, by removing cascaded negations of boolean expressions.
+## Properties
 
 | Property                        | Value |
 | ------------------------------- | ----- |
@@ -23,6 +17,13 @@ Improves the readability of the code, by removing cascaded negations of boolean 
 | Remediation cost                | 2 min |
 | Links                           | [S2761](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2761&rule_key=squid%3AS2761) |
 
+## Description
+
+Removes pairs of negations from boolean expressions until only zero or one negation is left.
+
+## Benefits
+
+Improves the readability of the code, by removing cascaded negations of boolean expressions.
 
 ## Requirement & Tags
 

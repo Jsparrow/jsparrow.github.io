@@ -16,7 +16,7 @@ const github = dirTree(path.join(__dirname, '../github'), {
 
 
 module.exports = {
-    title: 'jSparrow GitHub Documentation',
+    title: 'jSparrow Documentation',
     head: [
         ['link', {
             rel: 'icon',
@@ -30,32 +30,53 @@ module.exports = {
             },
             {
                 text: 'Maven Plugin',
-                link: '/maven/getting-started.html'
+                items: [{
+                        text: 'Getting Started',
+                        link: '/maven/getting-started.html'
+                    }
+                ]
             },
             {
                 text: 'Eclipse Plugin',
-                link: '/eclipse/getting-started.html'
+                link: '/eclipse/getting-started.html',
+                items: [{
+                        text: 'Getting Started',
+                        link: '/eclipse/getting-started.html'
+                    },
+                    {
+                        text: 'Installation Guide',
+                        link: '/eclipse/installation-guide.html'
+                    },
+                    {
+                        text: 'Additional Configuration',
+                        link: '/eclipse/additional-configuration.html'
+                    }
+                ]
             },
             {
                 text: 'GitHub App',
-                link: '/github/getting-started.html'
+                items: [{
+                        text: 'Getting Started',
+                        link: '/github/getting-started.html',
+                    },
+                    {
+                        text: 'Statistics',
+                        link: '/github/statistics.html',
+                    },
+                ]
+            },
+            {
+                text: 'Rules',
+                link: '/rules/'
             }
-            // ,
-            // {
-            //     text: 'Rules',
-            //     link: '/rules/'
-            // }
         ],
         logo: '/logo.png',
         sidebar: {
-            '/rules/': rules.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
-                .sort((a, b) => b < a),
-            '/maven/': maven.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
-                .sort((a, b) => b < a),
-            '/eclipse/': eclipse.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
-                .sort((a, b) => b < a),
-            '/github/': github.children.map(children => path.parse(children.name).name !== 'README' ? path.parse(children.name).name : '')
-                .sort((a, b) => b < a)
+            '/maven/': ['getting-started'],
+            '/eclipse/': ['getting-started','installation-guide','additional-configuration'],
+            '/github/': ['getting-started', 'statistics'],
+            '/rules/' : require('./rules.js'),
+            '/': ['']
         }
     },
     port: 8081,

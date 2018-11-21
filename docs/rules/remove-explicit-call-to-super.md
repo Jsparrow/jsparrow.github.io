@@ -8,13 +8,7 @@ description:
 
 [[toc]]
 
-## Description
-
-If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. Hence, there is no need to explicitly call the default constructor of the super class.  
-
-## Benefits
-
-Improves the readability by removing unnecessary lines of code.
+## Properties
 
 | Property                        | Value |
 | ------------------------------- | ----- |
@@ -23,10 +17,18 @@ Improves the readability by removing unnecessary lines of code.
 | Remediation cost                | 1 min |
 | Links                           |  |
 
+## Description
+
+If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. Hence, there is no need to explicitly call the default constructor of the super class.  
+
+## Benefits
+
+Improves the readability by removing unnecessary lines of code.
+
 ## Requirement & Tags
 
 ::: warning Requirements
-None.
+None
 :::
 
 ::: tip Tags

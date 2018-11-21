@@ -9,9 +9,11 @@ description:
 [[toc]]
 
 ## Description
+
 Finds and removes the unnecessary semicolons from the code blocks.
 
 ## Benefits
+
 Improves the readability, by removing code that do not produce any computation steps.
 
 | Property                        | Value |
@@ -24,7 +26,7 @@ Improves the readability, by removing code that do not produce any computation s
 ## Requirement & Tags
 
 ::: warning Requirements
-None.
+None
 :::
 
 ::: tip Tags

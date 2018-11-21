@@ -1,5 +1,5 @@
 ---
-title: Unnecessary Thrown Exceptions on Method Signature
+title: Remove Unnecessary Thrown Exceptions on Method Signatures
 description:
     description
 ---
@@ -7,6 +7,15 @@ description:
 # Remove Unnecessary Thrown Exceptions on Method Signatures
 
 [[toc]]
+
+## Properties
+
+| Property                        | Value |
+| ------------------------------- | ----- |
+| First seen in jSparrow version  | 2.7.0 |
+| Minimum Java version            | 1.1   |
+| Remediation cost                | 2 min |
+| Links                           | [Squid:RedundantThrowsDeclarationCheck](https://sonarcloud.io/organizations/default/rules?open=squid%3ARedundantThrowsDeclarationCheck&rule_key=squid%3ARedundantThrowsDeclarationCheck) |
 
 ## Description
 
@@ -20,26 +29,20 @@ Removes the following exceptions on method signatures:
 
 Improves the readability by removing code that adds no information on the method signature.
 
-| Property                        | Value |
-| ------------------------------- | ----- |
-| First seen in jSparrow version  | 2.7.0 |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 2 min |
-| Links                           |  |
-
 ## Requirement & Tags
 
 ::: warning Requirements
-None.
+None
 :::
 
 ::: tip Tags
-Java 1.1, Coding Conventions
+Java 1.1, Readability
 :::
 
 ## Code Changes
 
 ### Declaring a throws exception whose parent type is already thrown
+
 __Pre__
 ```java
 public void throwingChildAndParent() throws ChildException, ParentException {
@@ -55,6 +58,7 @@ public void throwingChildAndParent() throws ParentException {
 ```
 
 ### Declaring a throws exceptions more than once
+
 __Pre__
 ```java
 public void throwingTheSameExceptionTwice_() throws Exception, Exception {
@@ -68,6 +72,7 @@ public void throwingTheSameExceptionTwice_() throws Exception {
 	...
 }
 ```
+
 ### Declaring a throws Unchecked exception
 
 __Pre__

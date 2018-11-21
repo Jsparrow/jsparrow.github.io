@@ -9,6 +9,7 @@ title: Getting started
 
 jSparrow is an Eclipse plugin that automates refactoring and therefore makes repetitive work unnecessary.
 jSparrow can help in the following regards:
+
 * minimizing code smells
 * upgrading to new Java versions (transforming old language constructs in new language constructs)
 * getting performance improvements by using more efficient constructs
@@ -18,6 +19,7 @@ With the support of screenshots the functionality of jSparrow will be explained.
 ## Usage of the Plugin
 
 The plugin is activated with a right-click in the editor or the package tree. The selection of elements defines which files are used for the refactoring process. jSparrow may be applied to the following artifacts:
+
 * Project
     * Changes are applied to the whole project.
 * Packages
@@ -37,6 +39,7 @@ After the execution of “Select Rules” a selection window is opened, where ru
 [ ![Select rules wizard](/img/eclipse/select_rules_wizard.png) ](/img/eclipse/select_rules_wizard.png)
 
 The window is split into three parts:
+
 * __Top:__ On top there is a filtering part which makes it easier to find rules you would like to apply.
 * __Middle:__ The middle of the window is divided into two lists. The left list contains the unselected rules, whereas the right one contains rules that are about to be applied.
 Desired rules may be added to the right list simply by selecting one or more rules on the left list and pushing the `Add` button. If you want to apply all the rules, you can do just that by simply pushing the `Add all` button.
@@ -61,6 +64,7 @@ After confirming the selected rules by clicking `Finish`, the preview window is 
 [ ![Preview of the rules to apply](/img/eclipse/preview_wizard.png) ](/img/eclipse/preview_wizard.png)
 
 The following elements are displayed in the preview window:
+
 * Name of the rule
     * In the upper left corner is the name of current rule
 * Short description of the rule

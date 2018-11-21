@@ -1,9 +1,9 @@
 <template>
 <div>
     <div v-for="rule in rules">
-        <h2>
+        <h3>
             <router-link :to="rule.path">{{ rule.frontmatter.title }}</router-link>
-        </h2>
+        </h3>
         
         <p>{{ rule.frontmatter.description }}</p>
 
