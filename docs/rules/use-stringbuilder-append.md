@@ -28,11 +28,11 @@ Improves the performance of the String concatenations.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.5
+Java 5
 :::
 
 ::: tip Tags
-Java 1.5, String Manipulation, Performance
+Java 5, String Manipulation, Performance
 :::
 
 ## Code Changes

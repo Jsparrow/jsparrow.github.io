@@ -30,11 +30,11 @@ Improves the readability by removing unnecessary syntax.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.8
+Java 8
 :::
 
 ::: tip Tags
-Java 1.8, Lambda
+Java 8, Lambda
 :::
 
 ## Code Changes

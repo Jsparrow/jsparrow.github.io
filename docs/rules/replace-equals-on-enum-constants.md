@@ -30,11 +30,11 @@ Technically, equals and `==` are the same. `==` however is null safe and thus ca
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.5
+Java 5
 :::
 
 ::: tip Tags
-Java 1.5, Conventions
+Java 5, Conventions
 :::
 
 ## Code Changes

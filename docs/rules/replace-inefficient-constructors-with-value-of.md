@@ -28,11 +28,11 @@ Using this rule saves memory and CPU cycles, as the constructors are not needed 
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.5
+Java 5
 :::
 
 ::: tip Tags
-Java 1.5, Coding Conventions, Performance
+Java 5, Coding Conventions, Performance
 :::
 
 ## Code Changes

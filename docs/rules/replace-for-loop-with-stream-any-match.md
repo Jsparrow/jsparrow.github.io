@@ -29,11 +29,11 @@ Applying this rule results in better readability.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.8
+Java 8
 :::
 
 ::: tip Tags
-Java 1.8, Lambda, Loop
+Java 8, Lambda, Loop
 :::
 
 ## Code Changes

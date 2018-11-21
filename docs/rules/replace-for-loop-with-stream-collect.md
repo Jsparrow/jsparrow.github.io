@@ -31,11 +31,11 @@ Performing these operations degrades the longer the String is. Using a `StringBu
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.5
+Java 5
 :::
 
 ::: tip Tags
-Java 1.5, Java 1.8, Loop, Lambda, Performance
+Java 5, Java 8, Loop, Lambda, Performance
 :::
 
 ## Code Changes

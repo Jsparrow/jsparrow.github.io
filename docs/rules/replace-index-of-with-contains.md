@@ -33,7 +33,7 @@ Clearer intent means better readability.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.5
+Java 5
 :::
 
 ::: tip Tags

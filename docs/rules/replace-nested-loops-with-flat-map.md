@@ -29,11 +29,11 @@ Arguably, the lambda expression is easier to read.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.8
+Java 8
 :::
 
 ::: tip Tags
-Java 1.8, Lambda, Loop
+Java 8, Lambda, Loop
 :::
 
 ## Code Changes

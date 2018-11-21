@@ -19,7 +19,7 @@ description:
 
 ## Description
 
-Since Java 1.7 the [Diamond Operator](https://docs.oracle.com/javase/7/docs/technotes/guides/language/type-inference-generic-instance-creation.html) (`<>`) can be used to simplify instance creation where generics are involved.
+Since Java 7 the [Diamond Operator](https://docs.oracle.com/javase/7/docs/technotes/guides/language/type-inference-generic-instance-creation.html) (`<>`) can be used to simplify instance creation where generics are involved.
 
 ## Benefits
 
@@ -28,11 +28,11 @@ Applying this rule reduces clutter and improves readability.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.7
+Java 7
 :::
 
 ::: tip Tags
-Java 1.7, Readability
+Java 7, Readability
 :::
 
 ## Code Changes

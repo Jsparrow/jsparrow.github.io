@@ -27,11 +27,11 @@ Applying this rule yields no major performance benefits. One could argue that re
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.8
+Java 8
 :::
 
 ::: tip Tags
-Java 1.8, Lambda, Loop
+Java 8, Lambda, Loop
 :::
 
 ## Code Changes

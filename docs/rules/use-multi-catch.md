@@ -28,11 +28,11 @@ Using this rule reduces clutter and improves readability.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.7
+Java 7
 :::
 
 ::: tip Tags
-Java 1.7, Old Language Constructs, Readability
+Java 7, Old Language Constructs, Readability
 :::
 
 ## Code Changes
