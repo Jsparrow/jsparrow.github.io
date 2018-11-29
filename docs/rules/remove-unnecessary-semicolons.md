@@ -8,13 +8,7 @@ description:
 
 [[toc]]
 
-## Description
-
-Finds and removes the unnecessary semicolons from the code blocks.
-
-## Benefits
-
-Improves the readability, by removing code that do not produce any computation steps.
+## Properties
 
 | Property                        | Value |
 | ------------------------------- | ----- |
@@ -22,6 +16,14 @@ Improves the readability, by removing code that do not produce any computation s
 | Minimum Java version            | 1.1   |
 | Remediation cost                | 1 min |
 | Links                           | [EmptyStatementUsageCheck](https://sonarcloud.io/organizations/default/rules?open=squid%3AEmptyStatementUsageCheck&rule_key=squid%3AEmptyStatementUsageCheck) |
+
+## Description
+
+Finds and removes the unnecessary semicolons from the code blocks.
+
+## Benefits
+
+Improves the readability, by removing code that do not produce any computation steps.
 
 ## Requirement & Tags
 
