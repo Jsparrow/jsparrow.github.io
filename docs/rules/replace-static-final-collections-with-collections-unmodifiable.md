@@ -1,7 +1,7 @@
 ---
 title: Replace static final Collections with Collections.unmodifiable...()
 description:
-    description
+    Wraps the initialization of a final collection with Collections.unmodifiable...()
 ---
 
 # Replace static final Collections with Collections.unmodifiable...()

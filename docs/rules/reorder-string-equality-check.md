@@ -1,7 +1,7 @@
 ---
 title: Reorder String Equality Check 
 description:
-    description
+    Moves the string literals in the left-hand-side of equals() or equalsIgnoreCase() when checking for equality.
 ---
 
 # Reorder String Equality Check
@@ -19,7 +19,7 @@ description:
 
 ## Description
 
-To avoid NullPointerExceptions , it is recommended to put string literals in the left-hand-side of equals() or equalsIgnoreCase() when checking for equality.
+To avoid NullPointerExceptions , it is recommended to put string literals in the left-hand-side of `equals()` or `equalsIgnoreCase()` when checking for equality.
 
 ## Benefits
 

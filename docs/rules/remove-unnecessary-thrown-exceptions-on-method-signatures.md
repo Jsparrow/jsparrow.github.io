@@ -1,7 +1,7 @@
 ---
 title: Remove Unnecessary Thrown Exceptions on Method Signatures
 description:
-    description
+    Removes the RuntimeExceptions, duplications and exceptions which are subtypes of already thrown exceptions on the method signatures. 
 ---
 
 # Remove Unnecessary Thrown Exceptions on Method Signatures
