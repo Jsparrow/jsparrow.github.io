@@ -50,6 +50,10 @@ module.exports = {
                     {
                         text: 'Additional Configuration',
                         link: '/eclipse/additional-configuration.html'
+                    },
+                    {
+                        text: 'Release Notes',
+                        link: '/eclipse/release-notes.html'
                     }
                 ]
             },
@@ -73,7 +77,7 @@ module.exports = {
         logo: '/logo.png',
         sidebar: {
             '/maven/': ['getting-started'],
-            '/eclipse/': ['getting-started','installation-guide','additional-configuration'],
+            '/eclipse/': ['getting-started','installation-guide','additional-configuration','release-notes'],
             '/github/': ['getting-started', 'statistics'],
             '/rules/' : require('./rules.js'),
             '/': ['']
