@@ -16,7 +16,7 @@ This release brings 6 new rules and a news dashboard.
 A news dashboard has been added to jSparrow.
 Make sure to visit the dashboard regularly to get news on upcoming updates!
 
-[ ![Open the dashboard](/img/eclipse/release_notes/2_7_0_open_dashboard.gif) ](/img/eclipse/release_notes/2_7_0_open_dashboard.gif)
+[ ![Open the dashboard](/img/eclipse/release_notes/2-7-0-open-dashboard.gif) ](/img/eclipse/release_notes/2-7-0-open-dashboard.gif)
 
 ### New rules
 
