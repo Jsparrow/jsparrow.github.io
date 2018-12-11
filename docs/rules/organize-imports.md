@@ -12,7 +12,7 @@ description:
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 0.9.2   |
+| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
 | Minimum Java version            | 1.1   |
 | Remediation cost                | 1 min |
 | Links                           | [RSPEC-1128](https://rules.sonarsource.com/java/RSPEC-1128) |

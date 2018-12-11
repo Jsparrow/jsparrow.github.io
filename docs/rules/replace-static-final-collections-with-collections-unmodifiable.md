@@ -12,7 +12,7 @@ description:
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 2.1.1 |
+| First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
 | Minimum Java version            | 2     |
 | Remediation cost                | 10 min |
 | Links                           | [MutableCollection](http://findbugs.sourceforge.net/bugDescriptions.html#MS_MUTABLE_COLLECTION) |
