@@ -1,20 +1,3 @@
-const dirTree = require('directory-tree');
-const path = require('path');
-
-const rules = dirTree(path.join(__dirname, '../rules'), {
-    extensions: /\.md/
-});
-const maven = dirTree(path.join(__dirname, '../maven'), {
-    extensions: /\.md/
-});
-const eclipse = dirTree(path.join(__dirname, '../eclipse'), {
-    extensions: /\.md/
-});
-const github = dirTree(path.join(__dirname, '../github'), {
-    extensions: /\.md/
-});
-
-
 module.exports = {
     title: 'jSparrow Documentation',
     head: [
@@ -31,10 +14,9 @@ module.exports = {
             {
                 text: 'Maven Plugin',
                 items: [{
-                        text: 'Getting Started',
-                        link: '/maven/getting-started.html'
-                    }
-                ]
+                    text: 'Getting Started',
+                    link: '/maven/getting-started.html'
+                }]
             },
             {
                 text: 'Eclipse Plugin',
@@ -77,9 +59,9 @@ module.exports = {
         logo: '/logo.png',
         sidebar: {
             '/maven/': ['getting-started'],
-            '/eclipse/': ['getting-started','installation-guide','additional-configuration','release-notes'],
+            '/eclipse/': ['getting-started', 'installation-guide', 'additional-configuration', 'release-notes'],
             '/github/': ['getting-started', 'statistics'],
-            '/rules/' : require('./rules.js'),
+            '/rules/': require('./rules.js'),
             '/': ['']
         }
     },
