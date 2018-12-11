@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 2.7.0
 
-_21. 11. 2018_
+_21.11.2018_
 
 This release brings 6 new rules and a news dashboard.
 
@@ -50,7 +50,7 @@ See official documentation for more information: [Remove Unnecessary Semicolons]
 
 #### Use StringBuilder::append
 
-Replaces the infix operator _+_ over _String_ concatenations with at least three operands by _StringBuilder::append_. When possible, unwraps the parenthesized expressions.
+Replaces the infix operator `+` over `String` concatenations with at least three operands by `StringBuilder::append`. When possible, unwraps the parenthesized expressions.
 
 See official documentation for more information: [Use StringBuilder::append](/rules/use-stringbuilder-append.html)
 
@@ -62,7 +62,7 @@ See official documentation for more information: [Use Guard Condition](/rules/gu
 
 ## 2.6.0
 
-_21. 09. 2018_
+_21.09.2018_
 
 ### Update site change
 
@@ -85,13 +85,13 @@ Replaces local variable declarations with var, wherever it is legal.
 #### Use Optional::ifPresent
 
 Minimum Java Version: 8
-Replaces if-clauses for Optionals with isPresent() by using the ifPresent(Consumer<? extends T>) method, which wraps the executing statements of the if clause into a Consumer.
+Replaces if-clauses for Optionals with `isPresent()` by using the `ifPresent(Consumer<? extends T>)` method, which wraps the executing statements of the if clause into a Consumer.
 
 ### Fixed bugs
 
 #### Reformat code rule replaces mutated vowels in constant strings
 
-The reformat code rule was replacing mutated vowels with question marks within constant Strings. This behavior was corrected and the constant Strings remain unchanged.
+The reformat code rule was replacing mutated vowels with question marks within constant `Strings`. This behavior was corrected and the constant `Strings` remain unchanged.
 
 #### Compilation units with syntax errors stayed flagged as error afflicted classes even if the errors had been removed
 
@@ -103,9 +103,9 @@ This issue has been fixed and Java classes will be evaluated for errors on each 
 
 _16.08.2018_
 
-The version range of the apache.commons.lang3 library that is used for the “Use StringUtils Methods” rule has been enlarged. Currently we support all versions that are released.
+The version range of the `apache.commons.lang3` library that is used for the “Use StringUtils Methods” rule has been enlarged. Currently we support all versions that are released.
 
-* Accepted versions of apache.commons.lang3 are now : [3.0,3.7]
+* Accepted versions of `apache.commons.lang3` are now : [3.0,3.7]
 
 ## 2.5.2
 
@@ -139,7 +139,7 @@ Process improvements of the rule engine led to an overall reduced time for apply
 
 ### Remove deprecated date constructs
 
-Some java.util.Date constructors like new Date(int year, int month, int day), new Date(int year, int month, int date, int hrs, int min) and new Date(int year, int month, int date, int hrs, int min, int sec) are deprecated and the Calendar should be used instead.  This rule searches for deprecated calendar instances, introduces calendar instances and sets the time corresponding to the parameters in the deprecated constructor, and replaces the latter with an invocation of Calendar.getTime().  For instance, the following code:
+Some `java.util.Date` constructors like `new Date(int year, int month, int day)`, `new Date(int year, int month, int date, int hrs, int min)` and `new Date(int year, int month, int date, int hrs, int min, int sec)` are deprecated and the Calendar should be used instead.  This rule searches for deprecated calendar instances, introduces calendar instances and sets the time corresponding to the parameters in the deprecated constructor, and replaces the latter with an invocation of `Calendar.getTime()`.  For instance, the following code:
 
 ``` java
 // Deprecated Date Constructor
@@ -155,7 +155,7 @@ calendar.set(1990, 1, 31);
 Date date = calendar.getTime();
 ```
 
-Note that the date constructor is implicitly adding 1900 to the first argument (i.e. year), whereas Calendar.set is expecting the exact year value. Therefore, the rule takes care of preparing the parameters for the Calendar.set()-method properly.
+Note that the date constructor is implicitly adding 1900 to the first argument (i.e. year), whereas `Calendar.set` is expecting the exact year value. Therefore, the rule takes care of preparing the parameters for the `Calendar.set()`-method properly.
 If the deprecated constructor is used in a field initialization, then an initializing block is introduced for creating the calendar and initializing the field properly. See the before/after table.
 
 ### Removal of the obsolete _Field naming convention_ rule
@@ -197,7 +197,7 @@ Updated the way the free licenses work.
 ### Detailed information
 
 Free licenses have been reworked to no longer require a connection to the licensing server. When using older versions of jSparrow this might have led to warning issues. However, jSparrow functionality should not be adversely impacted.
-Any warnings should be able to be removed by upgrading to the latest version of jSparrow. If you experience errors that persist after the upgrade please contact us at bugreport@jsparrow.eu.
+Any warnings should be able to be removed by upgrading to the latest version of jSparrow. If you experience errors that persist after the upgrade please contact us at [bugreport@jsparrow.eu](mailto:bugreport@jsparrow.eu).
 
 ## 2.4.3
 
@@ -245,9 +245,9 @@ A configuration wizards provides different refactoring options. The user can sel
 
 ![RenameFieldsRule](/img/eclipse/release_notes/rename-fields-rule.png)
 
-The new name is computed based on the existing field’ name and the configuration options that the user can provide on the rule wizard. On the default configuration, the existing field name is converted to camelCase. Furthermore the occurrences of underscores ‘\_’ and dollar-signs ‘$’ are removed and the first letter which is following them (if any) is converted to uppercase. Note however, that the user has the possibility to choose in the configuration wizard whether or not to change the first letter after ‘\_’ or ’$’ to uppercase.
+The new name is computed based on the existing field’ name and the configuration options that the user can provide on the rule wizard. On the default configuration, the existing field name is converted to camelCase. Furthermore the occurrences of underscores `_` and dollar-signs `$` are removed and the first letter which is following them (if any) is converted to uppercase. Note however, that the user has the possibility to choose in the configuration wizard whether or not to change the first letter after `_` or `$` to uppercase.
 
-Before the renaming is applied to the original sources, a preview wizard will show the changes related to the renaming of each field. Since a non-private field may be accessed in multiple classes,  a single renaming may affect more than one file. A tree-style view in the preview wizard will show the the changes to all of the affected files for each renaming. The user has the possibility to ignore a renaming by unchecking the corresponding element in the tree view.
+Before the renaming is applied to the original sources, a preview wizard will show the changes related to the renaming of each field. Since a non-private field may be accessed in multiple classes,  a single renaming may affect more than one file. A tree-style view in the preview wizard will show the the changes to all of the affected files for each renaming. The user has the possibility to ignore a renaming by un-checking the corresponding element in the tree view.
 
 ![RenameFieldsRulePreviewBlur](/img/eclipse/release_notes/rename-fields-rule-preview-blur.png)
 
@@ -299,13 +299,13 @@ The Logging Rule has been updated in major ways to support more cases and provid
 
 * (New) Logging Exceptions: A new grouping of Exception related logging options.
   * (Updated) “Replace printStackTrace by a logger statement with selected level”
-    * Option to replace all occurrences of printStackStrace with the selected severity level
+    * Option to replace all occurrences of `printStackTrace` with the selected severity level
   * (New) “Insert a logger statement with the selected level for unlogged exceptions”
     * Option to add a logger statement to catch-clauses that do not log an Exception in any way
   * (New) “Always add the exceptions as a parameter in logger statements”
     * Option to always log an Exception if there is one present. For example, if only the message of an Exception is logged but not the Exception itself, the Exception will be added as additional argument to the log statement.
   * (New) “Always use this severity level for logging exceptions”
-    * Option to always use the selected severity of “Logging Exceptions” when an Exception is logged, even though “System.out.orint” or “System.err.print” might specify a different severity level.
+    * Option to always use the selected severity of “Logging Exceptions” when an Exception is logged, even though `System.out.print` or `System.err.print` might specify a different severity level.
   * (New) Tooltips: Added examples for the checkboxes to illustrate the functionality
 
   ![Summary page](/img/eclipse/release_notes/logging-rule.png)
@@ -325,7 +325,7 @@ The profiles settings have been improved and jSparrow is now capable of importin
 
 This Java 8 rule updates the following old language construct and improves readability:
 
-* If map.put(..) is wrapped with a condition verifying the existence of an element one can use map.putIfAbsent(…) instead.
+* If `map.put(..)` is wrapped with a condition verifying the existence of an element one can use `map.putIfAbsent(…)` instead.
 
 ### Usability improvements
 
@@ -340,18 +340,18 @@ This Java 8 rule updates the following old language construct and improves reada
   * Fixed a NullPointerException that could occur under very specific circumstances
   * Fixed an issue where a very specific case of an anonymous class containing wildcards in the body should not have been converted
 * Replace Nested Loops with flatMap:
-  * Fixed an issue where more than two nested streams could not be converted to a flatMap
+  * Fixed an issue where more than two nested streams could not be converted to a `flatMap`
 * Use Multi-Catch:
   * Fixed an issue where catch clauses were shifted below more generic Exceptions
 * Replace Expression Lambda with Method Reference:
   * Fixed an issue where method references were incorrectly used for inner types
-  * Fixed an issue where jSparrow would not distinguish between Integer.toString() and Integer.toString(Integer)
+  * Fixed an issue where jSparrow would not distinguish between `Integer.toString()` and `Integer.toString(Integer)`
 * Remove Explicit Type Argument:
   * Fixed an issue where a Type Argument could not safely be inferred
-* Replace static final Collections with Collections.unmodifiable…():
+* Replace static final Collections with `Collections.unmodifiable…()`:
   * Fixed an issue where unused imports where added
 * Use StringUtils Methods:
-  * Fixed an issue where not all changes were added on the first run if a paramter of a method invocation was a method invocation that could also be transformed
+  * Fixed an issue where not all changes were added on the first run if a parameter of a method invocation was a method invocation that could also be transformed
 * Rule tags:
   * Fixed an issue where tags and “Remove disabled rules” would not work together
 
@@ -381,7 +381,7 @@ This release is shipped with twelve new rules and other improvements to the user
 
 ### Names of the OSGi bundles have been changed
 
-* The prefix of the OSGI-bundles and OSGi-features of jSparrow has been changed from: jSparrow → eu.jSparrow 
+* The prefix of the OSGI-bundles and OSGi-features of jSparrow has been changed from: `jSparrow` → `eu.jSparrow` 
 * __Important__: The result is that it is not possible to update from a previous version of jSparrow! It is required to uninstall and reinstall jSparrow to upgrade to 2.2.0. Otherwise there might be side effects because there will be two different named instances of jSparrow within your Eclipse version.
 
 ### Trial Licencing Model Changed
@@ -398,28 +398,28 @@ This release is shipped with twelve new rules and other improvements to the user
 
 * Remove Inherited Interfaces from Class Declaration
   * Remove interfaces from class declaration, which are already implemented by a super class. These interfaces are inherited from the super class.
-* Replace Equality Check with isEmpty()
-  * Java 6 introduced isEmpty() on collections and Strings. This rule replaces equality checks involving length() or size() with calls to isEmpty(). For example, ‘s.length() == 0’ becomes ‘s.isEmpty()’. Applying this rule improves readability.
-* Replace equals() on Enum constants
-  * Replace occurrences of equals() on Enum constants with an identity comparison (==). In the case the equals relation is wrapped with an boolean negation the result will be an not equals (!=).
-* Replace For-Loop with Stream::anyMatch
-  * Replaces an occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with Stream::anyMatch. The stream syntax is more concise and improves readability.
-* Replace For-Loop with Stream::collect(Collectors.joining())
-  * Transforms loops which are only used for concatenating a string to an invocation of Stream::collect(Collectors.joining()). If the Java compliance level is below 1.8 and at least 1.5, then a StringBuilder is introduced for concatenating the values on each iteration of the loop.
-* Replace For-Loop with Stream::findFirst
-  * Enhanced for-loops which are used to find an element within a collection can be replaced by Stream::findFirst. Using the stream syntax a multi-line control statement can be reduced to a single line.
-* Replace For-Loop with Stream::sum
-  * Transforms enhanced for-loops which are only used for summing up the elements of a collection to a Stream::sum invocation
-* Replace indexOf() with contains()
-  * This rule replaces calls to indexOf() on instances of String or Collection with calls to the contains() method. For example ‘l.indexOf(s) >= 0’ is transformed to ‘l.contains(s)’. ‘contains()’ was introduced in Java 1.4 and helps to make the code more readable.
+* Replace Equality Check with `isEmpty()`
+  * Java 6 introduced `isEmpty()` on `Collections` and `Strings`. This rule replaces equality checks involving `length()` or `size()` with calls to `isEmpty()`. For example, `s.length() == 0` becomes `s.isEmpty()`. Applying this rule improves readability.
+* Replace `equals()` on Enum constants
+  * Replace occurrences of `equals()` on Enum constants with an identity comparison (==). In the case the equals relation is wrapped with an boolean negation the result will be an not equals (!=).
+* Replace For-Loop with `Stream::anyMatch`
+  * Replaces an occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with `Stream::anyMatch`. The stream syntax is more concise and improves readability.
+* Replace For-Loop with `Stream::collect(Collectors.joining())`
+  * Transforms loops which are only used for concatenating a `String` to an invocation of `Stream::collect(Collectors.joining())`. If the Java compliance level is below 1.8 and at least 1.5, then a `StringBuilder` is introduced for concatenating the values on each iteration of the loop.
+* Replace For-Loop with `Stream::findFirst`
+  * Enhanced for-loops which are used to find an element within a collection can be replaced by `Stream::findFirst`. Using the stream syntax a multi-line control statement can be reduced to a single line.
+* Replace For-Loop with `Stream::sum`
+  * Transforms enhanced for-loops which are only used for summing up the elements of a collection to a `Stream::sum` invocation
+* Replace `indexOf()` with `contains()`
+  * This rule replaces calls to `indexOf()` on instances of `String` or Collection with calls to the `contains()` method. For example `l.indexOf(s) >= 0` is transformed to `l.contains(s)`. `contains()` was introduced in Java 1.4 and helps to make the code more readable.
 * Replace Nested Loops with flatMap
-  * Nested For-Loops or invocations of forEach commonly used to iterate over all elements of a collection of collections, can be avoided by using flatMap(). Using flatMap() makes code much more readable and can be combined with other stream functions.
+  * Nested For-Loops or invocations of forEach commonly used to iterate over all elements of a collection of collections, can be avoided by using `flatMap()`. Using `flatMap()` makes code much more readable and can be combined with other stream functions.
 * Replace static final Collections With Collections.unmodifiable…()
-  * An unmodifiable Collection can be created with the matching Collections.unmodifiable…() method. Some examples are Collections.unmodifiableList(), Collections.unmodifiableSortedSet(), etc. A declaration of a Collection with the static and final modifiers is not sufficient because it might still be modifiable. The Collections which are created with Collections.unmodifiable…() throw an UnsupportedOperationException as soon as a modification is attempted.
+  * An unmodifiable Collection can be created with the matching `Collections.unmodifiable…()` method. Some examples are `Collections.unmodifiableList()`, `Collections.unmodifiableSortedSet()`, etc. A declaration of a `Collection` with the `static` and `final` modifiers is not sufficient because it might still be modifiable. The `Collections` which are created with `Collections.unmodifiable…()` throw an `UnsupportedOperationException` as soon as a modification is attempted.
 * StringBuffer() to StringBuilder()
-  * This rule changes the type of local variables from StringBuffer() to StringBuilder().
+  * This rule changes the type of local variables from `StringBuffer()` to `StringBuilder()`.
 * Use equals() on Primitive Objects
-  * It is recommended that you use equals() on primitive objects. Applying this rule will replace occurrences of != and == with equals(). For example, ‘”hello” == “world”‘ will become ‘”hello”.equals(“world”)’ Using this rule helps to avoid bugs, as == checks for object reference equality instead of value equality.
+  * It is recommended that you use `equals()` on primitive objects. Applying this rule will replace occurrences of `!=` and `==` with `equals()`. For example, `”hello” == “world”` will become `”hello”.equals(“world”)` Using this rule helps to avoid bugs, as `==` checks for object reference equality instead of value equality.
 
 ### Name Changes of Rules
 
@@ -500,11 +500,11 @@ _21.06.2017_
     * Multiple variables should not be declared in the same line
       * Splitting the variable declaration to multiple lines to prevent implicit changes on multiple variables, by changing the modifier of one line.
     * Interactive Rule: System out to logging
-      * Introduces the replacement of System.out statements (println, error, e.printstacktrace) with a logging statement
+      * Introduces the replacement of System.out statements (`println`, `error`, `e.printstacktrace`) with a logging statement
         * Requires the configuration of a logging environment (log4j, slf4j)
   * Target Java 1.6 and upwards
     * @Override addition
-      * To improve readability and enforcing compile errors on methods where the signature has changed the @Override annotation should be applied
+      * To improve readability and enforcing compile errors on methods where the signature has changed the `@Override` annotation should be applied
   * Target Java 1.7 and upwards
     * Diamondrule
       * Removes unnecessary generic type references to replace them with diamonds
@@ -545,36 +545,36 @@ _01.02.2017_
     * OrganiseImports
       * Removes unused imports and organizes them
     * StringUtils
-      * Apache Commons Lang StringUtils required in classpath of executing project
-      * Replaces operations on String object with corresponding StringUtils operation
+      * Apache Commons Lang `StringUtils` required in classpath of executing project
+      * Replaces operations on `String` object with corresponding `StringUtils` operation
   * Target Java 1.1. and upwards
     * SerialVersionUid
-      * Adds the modifieres static and final to SerialVersionUid long variables when they are absent
+      * Adds the modifieres `static` and `final` to `SerialVersionUid` long variables when they are absent
     * RemoveNewStringConstructor
-      * Removes all class instantiations from String if its parameter is empty or a String.
+      * Removes all class instantiations from `String` if its parameter is empty or a `String`.
     * RemoveToStringOnString
-      * Removes all method invocation of toString() on a String object
+      * Removes all method invocation of `toString()` on a `String` object
     * StringConcatToPlus
-      * Replaces the String concatenation with the method invocation with the plus operation for Strings
+      * Replaces the `String` concatenation with the method invocation with the plus operation for `Strings`
     * PrimitiveBoxedForString
-      * A boxed primitive is allocated just to call toString(). It is more effective to just use the static form of toString which takes the primitive value.
+      * A boxed primitive is allocated just to call `toString()`. It is more effective to just use the `static` form of `toString` which takes the primitive value.
     * InefficientConstructor
-      * All calls to a constructor of a primitive type will be replaced by the corresponding static valueOf() method.
+      * All calls to a constructor of a primitive type will be replaced by the corresponding static `valueOf()` method.
     * ArithmeticAssignment
       * Assignments that only execute simple arithmetic operations on the target are resolved as arithmetic assignment
-    * BracketsToControll
+    * BracketsToControl
       * All control flow statements that aren’t using curly braces are wrapped to improve readability
   * Target Java 1.2 and upwards
     * CollectionRemoveAll
       * Collections that use remove all elements by applying it to itself could also be cleared.
-      * use collection.clear() instead of collection.removeAll(collection)
+      * use `collection.clear()` instead of `collection.removeAll(collection)`
   * Target Java 1.5 and upwards
     * WhileToForEach
       * Replaces while loops with for-each loops that have been introduced in Java 1.5
     * ForToForEach
       * Replaces traditional for loops with for-each loops that have been introduced in Java 1.5
     * StringFormatLineSeparator
-      * Use String.format placeholder for linebreak instead of distribution system dependent linebreak.
+      * Use `String.format` placeholder for linebreak instead of distribution system dependent linebreak.
   * Target Java 1.7 and upwards
     * MultiCatch
       * Combines multiple catch phrases that handle the error identically

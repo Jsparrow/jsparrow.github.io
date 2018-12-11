@@ -58,7 +58,7 @@ module.exports = {
         ],
         logo: '/logo.png',
         sidebar: {
-            '/maven/': ['getting-started'],
+            '/maven/': ['getting-started', 'release-notes'],
             '/eclipse/': ['getting-started', 'installation-guide', 'additional-configuration', 'release-notes'],
             '/github/': ['getting-started', 'statistics'],
             '/rules/': require('./rules.js'),
