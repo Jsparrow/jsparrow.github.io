@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Documentation',
+    title: 'jSparrow Documentation',
     head: [
         ['link', {
             rel: 'icon',
@@ -28,7 +28,7 @@ module.exports = {
                 link: '/rules/'
             }
         ],
-        logo: '/jsparrow.png',
+        logo: '/logo.png',
         sidebar: {
             '/maven/': ['getting-started', 'release-notes'],
             '/eclipse/': ['getting-started', 'installation-guide', 'additional-configuration', 'release-notes'],
