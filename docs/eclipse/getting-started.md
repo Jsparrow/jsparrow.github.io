@@ -111,7 +111,8 @@ Information about unsatisfied requirements will be shown in red color in the rul
 
 
 ## License key
-To update the jSparrow license, open the License Preference Page under "Window" -> "Preferences" -> "jSparrow" -> "License"
+To update the jSparrow license, open the License Preference Page under "Window" -> "Preferences" -> "jSparrow" -> "License". 
+On Mac OS X this can be found under "Eclipse" -> "Preferences" -> "jSparrow" -> "License". 
 
 [ ![License Preference Page](/img/eclipse/license_preference_page.png) ](/img/eclipse/license_preference_page.png)
 
