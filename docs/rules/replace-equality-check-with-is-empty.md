@@ -12,7 +12,7 @@ description:
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 2.0.2 |
+| First seen in jSparrow version  | [2.0.2](/eclipse/release-notes.html#_2-0-2) |
 | Minimum Java version            | 6 |
 | Remediation cost                | 2 min |
 | Links                           | [S1155](https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS1155) |

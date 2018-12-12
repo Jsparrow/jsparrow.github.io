@@ -12,7 +12,7 @@ description:
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 0.9.2 |
+| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0) |
 | Minimum Java version            | 1.2   |
 | Remediation cost                | 2 min |
 | Links                           | [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html#DMI_USING_REMOVEALL_TO_CLEAR_COLLECTION) |
