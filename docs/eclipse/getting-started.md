@@ -85,8 +85,6 @@ The following elements are displayed in the preview window:
 
 [ ![Statistics summary](/img/eclipse/preview_summary.png) ](/img/eclipse/preview_summary.png)
 
-
-
 ## Additional Options
 
 Rules can be grouped into profiles in jSparrow. The preferences concerning profiles may be accessed in Eclipse via “Window” -> ”Preferences” -> ”jSparrow”.
@@ -110,3 +108,18 @@ Some rules may not be available to be applied on certain projects. The reason fo
 ::: tip
 Information about unsatisfied requirements will be shown in red color in the rule description in the select rules window.
 :::
+
+
+## License key
+To update the jSparrow license, open the License Preference Page under "Window" -> "Preferences" -> "jSparrow" -> "License". 
+On Mac OS X this can be found under "Eclipse" -> "Preferences" -> "jSparrow" -> "License". 
+
+[ ![License Preference Page](/img/eclipse/license_preference_page.png) ](/img/eclipse/license_preference_page.png)
+
+Click the "Update license key" button to open the following dialog:
+
+[ ![Update license key](/img/eclipse/update_license_empty_dialog.png) ](/img/eclipse/update_license_empty_dialog.png)
+
+Enter your license key and press "Update". The following should be displayed if the license key is valid:
+
+[ ![Update license key](/img/eclipse/update_license_success_dialog.png) ](/img/eclipse/update_license_success_dialog.png)
