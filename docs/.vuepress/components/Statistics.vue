@@ -8,43 +8,55 @@
 
   <div v-for="(project, index) in statistics" v-bind:id="project.projectName" class="tabcontent">
 
-    <h2> General Data of {{project.projectName}}</h2>
-    <ul>
-      <li>
-        File Count: {{project.totalFilesCount}}
-      </li>
-      <li>
-        Files Changed: {{project.totalFilesChanged}}
-      </li>
-      <li>
-        Total Issues Fixed: {{project.totalIssuesFixed}}
-      </li>
+    <h2>jSparrow results for {{project.projectName}}</h2>
 
-      <li>
-        Total duration: {{ secondsToHms(project.timestampJSparrowFinish - project.timestampGitHubStart) }}
-      </li>
-      <li>
-        Total time saved: {{secondsToHms(project.totalTimeSaved*60)}}
-      </li>
-    </ul>
-    <h3 id="per-rule">
-                Per Rule
-            </h3>
-    <table border="1|0" class="table-hover">
+    Metrics for {{project.projectName}}:
+
+    <table class="table-hover">
+      <tbody>
+        <tr>
+          <td>Total Java file* count</td>
+          <td>{{project.totalFilesCount}}</td>
+        </tr>
+        <tr>
+          <td>Number of files changed</td>
+          <td>{{project.totalFilesChanged}}</td>
+        </tr>
+        <tr>
+          <td>Total number of issues fixed</td>
+          <td>{{project.totalIssuesFixed}}</td>
+        </tr>
+        <tr>
+          <td>jSparrow execution time</td>
+          <td>{{ secondsToHms(project.timestampJSparrowFinish - project.timestampGitHubStart) }}</td>
+        </tr>
+        <tr>
+          <td>Total time saved</td>
+          <td>{{secondsToHms(project.totalTimeSaved*60)}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    * One Java file could contain more than one Java class.
+
+    <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on {{project.projectName}}.
+    <table class="table-hover">
       <thead>
         <tr>
           <th>Rule ID</th>
-          <th>Remediation Cost</th>
-          <th>Files Changed</th>
           <th>Issues Fixed</th>
+          <th>Files Changed</th>
+          <th>Time saved</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="(item, idx) in project.rules">
           <td>{{ item.ruleId }}</td>
-          <td>{{ item.remediationCost }}</td>
-          <td>{{ item.fileCount }}</td>
           <td>{{ item.issuesFixedCount }}</td>
+          <td>{{ item.fileCount }}</td>
+          <td>{{ secondsToHms(item.remediationCost * item.issuesFixedCount *60) }}</td>
         </tr>
       </tbody>
     </table>
@@ -137,9 +149,10 @@ export default {
       var m = Math.floor(d % 3600 / 60);
       var s = Math.floor(d % 3600 % 60);
 
+      // always show minutes, add comma and seconds if they are not 0
       var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
-      var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " minutes, ") : "";
-      var sDisplay = s > -1 ? s + (s == 1 ? " second" : " seconds") : "";
+      var mDisplay = m + (m == 1 ? " minute" : " minutes");
+      var sDisplay = s > 0 ? ", " + s + (s == 1 ? " second" : " seconds") : "";
       return hDisplay + mDisplay + sDisplay;
     }
   },
