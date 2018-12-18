@@ -3,7 +3,7 @@ title: Release Notes
 ---
 # Release Notes
 
-Here you will find the latest information about releases of the jSparrow Eclipse Plugin.
+Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
 ## 2.7.0
 

@@ -26,6 +26,10 @@ module.exports = {
             {
                 text: 'Rules',
                 link: '/rules/'
+            },
+            {
+                text: 'Homepage',
+                link: 'https://jsparrow.eu/'
             }
         ],
         logo: '/logo.png',

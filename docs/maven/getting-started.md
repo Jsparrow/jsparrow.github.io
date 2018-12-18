@@ -2,7 +2,7 @@
 
 [[toc]]
 
-The jSparrow Maven Plugin (JMP) is a continuous integration tool to apply automatic refactorings. It supplies similar rules as the jSparrow Eclipse Plugin, but works without user input.
+The jSparrow Maven plugin (JMP) is a continuous integration tool to apply automatic refactorings. It supplies similar rules as the jSparrow Eclipse plugin, but works without user input.
 
 ## Installation
 ### Requirements
@@ -21,7 +21,7 @@ $ mvn install:install-file \
 ```
 
 ## Usage
-This section describes how to set up a project to use the jSparrow Maven Plugin and how to use it.
+This section describes how to set up a project to use the jSparrow Maven plugin and how to use it.
 
 ### Feature Overview
 * Fully automatic execution of jSparrow rules for a Maven project.
@@ -199,4 +199,4 @@ url: <http://somelocation.loc/>
 
 
 ## Limitations
-In case of multi-module maven projects, the Field Renaming rule is limited to private fields only. The jSparrow Maven Plugin will detect whether the project being refactored is part of a multi-module maven project and restrict the Field Renaming rule to be executed only on private fields.
+In case of multi-module maven projects, the Field Renaming rule is limited to private fields only. The jSparrow Maven plugin will detect whether the project being refactored is part of a multi-module maven project and restrict the Field Renaming rule to be executed only on private fields.

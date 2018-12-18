@@ -5,7 +5,7 @@ title: Installation guide
 
 [[toc]]
 
-The jSparrow Eclipse Plugin has to be installed via [Eclipse Marketplace](https://marketplace.eclipse.org/content/jsparrow-automatical-java-code-improvement).
+The jSparrow Eclipse plugin has to be installed via [Eclipse Marketplace](https://marketplace.eclipse.org/content/jsparrow-automatical-java-code-improvement).
 
 ## Requirements
 

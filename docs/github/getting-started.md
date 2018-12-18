@@ -12,7 +12,7 @@ Check it out at [GitHub](https://github.com/apps/jsparrow-app)
 
 The jSparrow GitHub App (JGA) is the integration of jSparrow's refactorings as part of a GitHub app.
 
-It is a continuous integration tool, integrated in your build pipeline and used to apply automatic refactorings. The JGA supplies similar [rules](/rules/) as the [jSparrow Eclipse Plugin](/eclipse/getting-started.html), but works without user input and is started automatically on every creation of a pull request.
+It is a continuous integration tool, integrated in your build pipeline and used to apply automatic refactorings. The JGA supplies similar [rules](/rules/) as the [jSparrow Eclipse plugin](/eclipse/getting-started.html), but works without user input and is started automatically on every creation of a pull request.
 
 __jSparrow automates by..__
 * ..taking care of formatting and minimizing code smells
