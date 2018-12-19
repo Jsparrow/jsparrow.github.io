@@ -20,7 +20,7 @@ You can execute it as part of your development process as an Eclipse IDE plugin 
 
 * [jSparrow Eclipse plugin](eclipse/getting-started.html)
 * [jSparrow Maven plugin](maven/getting-started.html)
-* [jSparrow Github App](github/getting-started.html)
+* [jSparrow GitHub App](github/getting-started.html)
 
 ## Statistical Data
 
