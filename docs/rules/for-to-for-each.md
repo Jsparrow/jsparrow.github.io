@@ -2,7 +2,7 @@
 title: Replace For-Loop with Enhanced-For-Loop
 description:
     Transforms all possible for loops with iterators to a ForEach loop
-tags: ["rule"]
+tags: ["rule", "free"]
 ---
 
 # Replace For-Loop with Enhanced-For-Loop

@@ -2,7 +2,7 @@
 title: Use @Override Annotation
 description:
     This rule adds the @Override annotation to methods overriding or implementing parent class methods.
-tags: ["rule"]
+tags: ["rule", "free"]
 ---
 
 # Use @Override Annotation

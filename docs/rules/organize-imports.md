@@ -2,7 +2,7 @@
 title: Organize Imports
 description:
     Organize Imports according to the Eclipse's built in Organize Imports functionality.
-tags: ["rule"]
+tags: ["rule", "free"]
 ---
 
 # Organize Imports

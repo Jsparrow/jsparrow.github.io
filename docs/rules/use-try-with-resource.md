@@ -2,7 +2,7 @@
 title: Use Try-With-Resource
 description:
     This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as the construct takes care of that.
-tags: ["rule"]
+tags: ["rule", "free"]
 ---
 
 # Use Try-With-Resource

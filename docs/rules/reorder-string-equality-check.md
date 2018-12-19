@@ -2,7 +2,7 @@
 title: Reorder String Equality Check
 description:
     Moves the string literals in the left-hand-side of equals() or equalsIgnoreCase() when checking for equality.
-tags: ["rule"]
+tags: ["rule", "free"]
 ---
 
 # Reorder String Equality Check

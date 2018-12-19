@@ -2,7 +2,7 @@
 title: Replace Inefficient Constructors with valueOf()
 description:
    All calls to a constructor of a primitive type will be replaced by the corresponding static valueOf() method. For example 'new Integer("1")' becomes 'Integer.valueOf("1")'.
-tags: ["rule"]
+tags: ["rule", "free"]
 ---
 
 # Replace Inefficient Constructors with valueOf()

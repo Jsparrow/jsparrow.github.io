@@ -2,7 +2,7 @@
 title: Remove Double Negations
 description:
     Removes multiple negations from boolean expressions.
-tags: ["rule"]
+tags: ["rule", "free"]
 ---
 
 # Remove Double Negations
