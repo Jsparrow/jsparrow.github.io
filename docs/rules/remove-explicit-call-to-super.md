@@ -2,6 +2,7 @@
 title: Remove Explicit Call To super()
 description:
     Removes unnecessary explicit call to the default constructor of the super class.
+tags: ["rule"]
 ---
 
 # Remove Explicit Call To super()

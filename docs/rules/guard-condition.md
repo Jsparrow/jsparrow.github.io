@@ -2,6 +2,7 @@
 title: Use Guard Condition
 description:
     Replaces the last statement of a method with a guard condition.
+tags: ["rule"]
 ---
 
 # Use Guard Condition
@@ -9,6 +10,8 @@ description:
 [[toc]]
 
 ## Properties
+
+<TagLinks />
 
 | Property                        | Value |
 | ------------------------------- | ----- |

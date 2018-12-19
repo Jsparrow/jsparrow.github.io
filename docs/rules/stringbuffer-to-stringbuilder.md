@@ -2,6 +2,7 @@
 title: StringBuffer() to StringBuilder()
 description:
     This rule changes the type of local variables from StringBuffer() to StringBuilder().
+tags: ["rule"]
 ---
 
 # StringBuffer() to StringBuilder()
@@ -19,7 +20,7 @@ description:
 
 ## Description
 
-This rule changes the type of local variables from StringBuffer() to StringBuilder(). The `java.lang.StringBuilder` and the `java.lang.StringBuffer` have exactly the same API and functionality, so it could just be replaced without any effort. The only difference is, that `StringBuffer` uses synchronized methods, which doesn't automatically result in thread safety. In almost all cases, it is recommended to use StringBuilder because no locking and syncing is done. Hence, it's faster. Also the java compiler optimizes strings, which are altered, and replaces them with `StringBuilder`. 
+This rule changes the type of local variables from StringBuffer() to StringBuilder(). The `java.lang.StringBuilder` and the `java.lang.StringBuffer` have exactly the same API and functionality, so it could just be replaced without any effort. The only difference is, that `StringBuffer` uses synchronized methods, which doesn't automatically result in thread safety. In almost all cases, it is recommended to use StringBuilder because no locking and syncing is done. Hence, it's faster. Also the java compiler optimizes strings, which are altered, and replaces them with `StringBuilder`.
 
 ## Benefits
 

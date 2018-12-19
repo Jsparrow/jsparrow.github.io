@@ -1,8 +1,9 @@
 ---
 title: Replace For-Loop with Stream::anyMatch
 description:
-    Replaces occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with `Stream::anyMatch`. 
+    Replaces occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with `Stream::anyMatch`.
     The stream syntax is more concise and improves readability.
+tags: ["rule"]
 ---
 
 # Replace For-Loop with Stream::anyMatch
@@ -20,7 +21,7 @@ description:
 
 ## Description
 
-Replaces occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with `Stream::anyMatch`. 
+Replaces occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with `Stream::anyMatch`.
 The stream syntax is more concise and improves readability.
 
 ## Benefits

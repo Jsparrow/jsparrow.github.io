@@ -2,6 +2,7 @@
 title: Replace While-Loop with Enhanced For-Loop
 description:
     While-loops over Iterators which could be expressed with a for-loop, are transformed to an equivalent for-loop.
+tags: ["rule"]
 ---
 
 # Replace While-Loop with Enhanced For-Loop

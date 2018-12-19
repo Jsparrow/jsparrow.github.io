@@ -2,6 +2,7 @@
 title: Remove toString() on String
 description:
     Removes all invocations of toString() method used on a String element.
+tags: ["rule"]
 ---
 
 # Remove toString() on String

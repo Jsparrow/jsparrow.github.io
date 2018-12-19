@@ -1,7 +1,8 @@
 ---
 title: Use Local Variable Type Inference
 description:
-    This rule replaces the types on the local variable declarations with the var keyword introduced in Java 10. 
+    This rule replaces the types on the local variable declarations with the var keyword introduced in Java 10.
+tags: ["rule"]
 ---
 
 # Use Local Variable Type Inference
@@ -9,6 +10,8 @@ description:
 [[toc]]
 
 ## Properties
+
+<TagLinks />
 
 | Property                        | Value |
 | ------------------------------- | ----- |
@@ -20,11 +23,11 @@ description:
 ## Description
 
 Local variable where the type could be inferred are changed to the type var. Keep in mind that the transformation is only useful, if the variables have speaking names, otherwise it is only disguising the nature of the variable.
-The transformation is avoided for primitive types. For safety reasons, the transformation is also avoided if the initializer is an anonymous class declaration. 
+The transformation is avoided for primitive types. For safety reasons, the transformation is also avoided if the initializer is an anonymous class declaration.
 
 ## Benefits
 
-This rule reduces the length of variable definitions and therefore the improves the readability if the variable is named properly drastically. 
+This rule reduces the length of variable definitions and therefore the improves the readability if the variable is named properly drastically.
 
 ## Requirement & Tags
 
@@ -42,7 +45,7 @@ Java 10, Formatting, Readability
 
 The list is currently not complete.
 
-__Pre__ 
+__Pre__
 
 ``` java
 ArrayList<UserDefinedType> list = new ArrayList<UserDefinedType>();
@@ -82,15 +85,15 @@ If the initialization of a local variable declaration uses diamond operator, the
 ``` java
 List<String> userIds = new ArrayList<>();
 consumeIds(userIds);
- 
+
 ....
 public void consumeIds(List<String> userIds) {
 ...
 }
 ```
 
-Transformation of the List&lt;String&gt; to var, would change the type of the userIds to List&lt;Object&gt; which is not expected by the consumeIds method. 
- 
+Transformation of the List&lt;String&gt; to var, would change the type of the userIds to List&lt;Object&gt; which is not expected by the consumeIds method.
+
 ### Initialization with a subtype
 If the type of the initializer is a  subtype of the declared type, then the transformation is not always possible. Consider the following lines:
 
@@ -98,7 +101,7 @@ If the type of the initializer is a  subtype of the declared type, then the tran
 List<String> list = new ArrayList<String>();
 list = new LinkedList<String>();
 ```
-The type List&lt;String&gt; cannot be replaced with var because in the second line, list is being reassigned with LinkedList which is not assign-compatible with ArrayList. 
+The type List&lt;String&gt; cannot be replaced with var because in the second line, list is being reassigned with LinkedList which is not assign-compatible with ArrayList.
 
 ### Raw types
 If the declaration or the initializer are raw type, then the transformation is not possible. The following table shows the cases when a var can be used instead of the concrete type:

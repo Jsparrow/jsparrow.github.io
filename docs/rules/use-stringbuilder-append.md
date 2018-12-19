@@ -2,6 +2,7 @@
 title: Use StringBuilder::append
 description:
     Replaces the infix operator `+` on String concatenation by StringBuilder::append
+tags: ["rule"]
 ---
 
 # Use StringBuilder::append

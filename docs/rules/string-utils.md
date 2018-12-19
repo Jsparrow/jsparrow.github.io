@@ -2,6 +2,7 @@
 title: Use StringUtils Methods
 description:
     Replaces various String methods with their null-safe counterparts from StringUtils.
+tags: ["rule"]
 ---
 
 # Use StringUtils Methods
@@ -155,14 +156,14 @@ public static boolean startsWith(CharSequence str, CharSequence prefix)
 __Pre String API__
 
 ``` java
-public String toUpperCase()	
+public String toUpperCase()
 public String toUpperCase(Locale locale)
 ```
 
 __Post StringUtils API__
 
 ``` java
-public static String upperCase(String str)	
+public static String upperCase(String str)
 public static String upperCase(String str, Locale locale)
 ```
 
@@ -171,14 +172,14 @@ public static String upperCase(String str, Locale locale)
 __Pre String API__
 
 ``` java
-public String toLowerCase()	
-public String toLowerCase(Locale locale)	
+public String toLowerCase()
+public String toLowerCase(Locale locale)
 ```
 
 __Post StringUtils API__
 
 ``` java
-public static String lowerCase(String str)	
+public static String lowerCase(String str)
 public static String lowerCase(String str, Locale locale)
 ```
 
@@ -223,4 +224,3 @@ public boolean testEqualsIgnoreCase(String testString) {
     return StringUtils.equalsIgnoreCase(testString, sometimesExpectedString);
 }
 ```
-

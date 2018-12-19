@@ -1,7 +1,8 @@
 ---
 title: Rearrange Class Members
 description:
-    This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization. 
+    This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization.
+tags: ["rule"]
 ---
 
 # Rearrange Class Members
@@ -19,7 +20,7 @@ description:
 
 ## Description
 
-This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization. 
+This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization.
 The order of members in a class or interface should appears as follows:
 
 1. Class (static) variables
@@ -27,7 +28,7 @@ The order of members in a class or interface should appears as follows:
 3. Constructors
 4. Methods
 
-Furthermore, the members of the above list are also sorted according to their access modifier. 
+Furthermore, the members of the above list are also sorted according to their access modifier.
 The priority of the access modifiers is as follows:
 
 1. public
@@ -35,7 +36,7 @@ The priority of the access modifiers is as follows:
 3. none (package private)
 4. private
 
-Initializers are placed between instance variables and constructors. 
+Initializers are placed between instance variables and constructors.
 The rest of inner type declarations like enumeration declarations, annotation declarations and inner class declarations are placed below the method declarations.
 
 ## Benefits
@@ -66,7 +67,7 @@ public class RearrangeClassMembersRule {
 
 	class SomethingCouldBeInnerType {
 		public SomethingCouldBeInnerType() {
-			
+
 		}
 
 		private String foo = "";
@@ -136,5 +137,3 @@ public class RearrangeClassMembersRule {
 	}
 }
 ```
-
-

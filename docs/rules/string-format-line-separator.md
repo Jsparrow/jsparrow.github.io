@@ -2,6 +2,7 @@
 title: Use Portable Newline
 description:
     It is generally preferable better to use %n, which will produce the platform-specific line separator.
+tags: ["rule"]
 ---
 
 # Use Portable Newline

@@ -3,6 +3,7 @@ title: Replace indexOf() with contains()
 description:
     This rule replaces calls to indexOf() on instances of `String`s or `Collection`S with calls to the `contains()` method.
     `contains()` was introduced in Java 1.4 and helps to make the code more readable.
+tags: ["rule"]
 ---
 
 # Replace indexOf() with contains()
@@ -25,9 +26,9 @@ This rule replaces calls to indexOf() on instances of `String`s or `Collection`s
 
 ## Benefits
 
-Most checks against an indexOf value compare it with `-1` because `0` is a valid index. 
-Any checks which look for values `>0` ignore the first element, which is likely a bug. 
-If the intent is merely to check inclusion of a value in a `String` or a List, the contains method is better suited to express this intent. 
+Most checks against an indexOf value compare it with `-1` because `0` is a valid index.
+Any checks which look for values `>0` ignore the first element, which is likely a bug.
+If the intent is merely to check inclusion of a value in a `String` or a List, the contains method is better suited to express this intent.
 Clearer intent means better readability.
 
 ## Requirement & Tags
@@ -42,7 +43,7 @@ Java 1.5, Old language construct, Readability
 
 ## Code Changes
 
-### Replacing `indexOf()` by `!contains()` on String 
+### Replacing `indexOf()` by `!contains()` on String
 __Pre__
 ```java
 String hello = "Hello World";
@@ -59,7 +60,7 @@ if (!hello.contains("ello")) {
 }
 ```
 
-### Replacing `indexOf()` by `contains()` on String 
+### Replacing `indexOf()` by `contains()` on String
 __Pre__
 ```java
 String hello = "Hello World";

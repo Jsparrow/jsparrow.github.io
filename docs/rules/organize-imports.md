@@ -2,6 +2,7 @@
 title: Organize Imports
 description:
     Organize Imports according to the Eclipse's built in Organize Imports functionality.
+tags: ["rule"]
 ---
 
 # Organize Imports
@@ -9,6 +10,8 @@ description:
 [[toc]]
 
 ## Properties
+
+<TagLinks />
 
 | Property                        | Value |
 |:------------------------------- |:----- |

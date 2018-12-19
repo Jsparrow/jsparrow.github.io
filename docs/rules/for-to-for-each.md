@@ -2,6 +2,7 @@
 title: Replace For-Loop with Enhanced-For-Loop
 description:
     Transforms all possible for loops with iterators to a ForEach loop
+tags: ["rule"]
 ---
 
 # Replace For-Loop with Enhanced-For-Loop
@@ -9,6 +10,8 @@ description:
 [[toc]]
 
 ## Properties
+
+<TagLinks />
 
 | Property                        | Value |
 |:------------------------------- |:----- |
@@ -40,7 +43,7 @@ Java 5, Loop, Old Language Constructs
 __Pre__
 
 ``` java
-	
+
 public String testConvertIteratorToForEach(String input) {
     List<String> foo = generateList(input);
     StringBuilder sb = new StringBuilder();

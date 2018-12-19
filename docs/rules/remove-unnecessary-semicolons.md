@@ -2,6 +2,7 @@
 title: Remove Unnecessary Semicolons
 description:
     Removes the unnecessary semicolons from the code blocks
+tags: ["rule"]
 ---
 
 # Remove Unnecessary Semicolons

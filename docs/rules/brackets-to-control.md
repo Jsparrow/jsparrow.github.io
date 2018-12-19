@@ -2,6 +2,7 @@
 title: Add Parenthesis to Control Statements
 description:
     Checks if parenthesis are used to encapsulate control statements and adds them if they aren't present.
+tags: ["rule"]
 ---
 
 # Add Parenthesis to Control Statements
@@ -9,6 +10,8 @@ description:
 [[toc]]
 
 ## Properties
+
+<TagLinks />
 
 | Property                        | Value |
 |:------------------------------- |:----- |

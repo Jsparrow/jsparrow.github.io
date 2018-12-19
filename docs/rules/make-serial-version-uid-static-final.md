@@ -1,7 +1,8 @@
 ---
-title: Make SerialVersionUID Static Final 
+title: Make SerialVersionUID Static Final
 description:
     Adds the modifiers static and final to SerialVersionUid long variables when they are absent.
+tags: ["rule"]
 ---
 
 # Make SerialVersionUID Static Final
@@ -9,6 +10,8 @@ description:
 [[toc]]
 
 ## Properties
+
+<TagLinks />
 
 | Property                        | Value |
 |:------------------------------- |:----- |

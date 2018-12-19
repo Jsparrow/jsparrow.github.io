@@ -1,6 +1,7 @@
 ---
 title: jSparrow Documentation
 ---
+<TagLinks />
 
 # jSparrow
 
