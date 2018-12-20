@@ -38,7 +38,7 @@ None
 :::
 
 ::: tip Tags
-
+<TagLinks />
 :::
 
 ## Code Changes

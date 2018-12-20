@@ -1,3 +1,7 @@
+---
+title: Tags
+---
+
 # Tags
 
 <TagList />
