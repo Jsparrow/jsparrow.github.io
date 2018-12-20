@@ -2,7 +2,7 @@
 title: Reformat Code
 description:
     Reformats code according to the coding conventions defined in Eclipse.
-tags: ["rule"]
+tags: ["Rule", "Java 1.1", "Formatting", "Readability"]
 ---
 
 # Reformat Code
@@ -11,7 +11,7 @@ tags: ["rule"]
 
 ## Properties
 
-<TagLinks />
+
 
 | Property                        | Value |
 |:------------------------------- |:----- |
@@ -35,7 +35,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Formatting, Readability
+<TagLinks />
 :::
 
 ## Code Changes

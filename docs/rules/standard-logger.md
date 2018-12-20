@@ -2,7 +2,7 @@
 title: System Out To Logging
 description:
     Replaces the standard output statements with logger statements when possible.
-tags: ["rule"]
+tags: ["Rule", "Java 1.1", "Logging", "Old Language Constructs", "Conventions"]
 ---
 
 # System Out To Logging
@@ -60,7 +60,7 @@ Libraries (any of the following): org.slf4j | ch.qos.logback | org.apache.log4j
 :::
 
 ::: tip Tags
-Java 1.1, Logging, Old Language Constructs, Conventions
+<TagLinks />
 :::
 
 ## Configuration

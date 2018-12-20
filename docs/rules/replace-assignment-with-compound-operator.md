@@ -2,7 +2,7 @@
 title: Replace Assignment with Compound Operator
 description:
     Simplifies arithmetic operations that an compound operator where possible.
-tags: ["rule"]
+tags: ["Rule", "Java 1.4", "Readability", "Coding Conventions"]
 ---
 
 # Replace Assignment with Compound Operator
@@ -35,7 +35,7 @@ Java 1.4
 :::
 
 ::: tip Tags
-Java 1.4, Readability, Coding Conventions
+<TagLinks />
 :::
 
 ## Code Changes

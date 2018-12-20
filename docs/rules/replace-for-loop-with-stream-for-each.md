@@ -2,7 +2,7 @@
 title: Replace For-Loop with Stream::forEach
 description:
     This rule replaces enhanced for loops (for-each-loops) with an invocation of `java.util.stream.Stream::forEach`-method and passes the body of the for-loop as a lambda `Consumer` parameter.
-tags: ["rule"]
+tags: ["Rule", "Java 8", "Lambda", "Loop"]
 ---
 
 # Replace For-Loop with Stream::forEach
@@ -35,7 +35,7 @@ Java 8
 :::
 
 ::: tip Tags
-Java 8, Lambda, Loop
+<TagLinks />
 :::
 
 ## Code Changes

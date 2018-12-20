@@ -2,7 +2,7 @@
 title: Rearrange Class Members
 description:
     This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization.
-tags: ["rule"]
+tags: ["Rule", "Java 1.1", "Conventions", "Readability"]
 ---
 
 # Rearrange Class Members
@@ -50,7 +50,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Conventions, Readability
+<TagLinks />
 :::
 
 ## Code Changes

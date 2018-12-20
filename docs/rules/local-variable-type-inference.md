@@ -2,7 +2,7 @@
 title: Use Local Variable Type Inference
 description:
     This rule replaces the types on the local variable declarations with the var keyword introduced in Java 10.
-tags: ["rule"]
+tags: ["Rule", "Java 10", "Formatting", "Readability"]
 ---
 
 # Use Local Variable Type Inference
@@ -10,8 +10,6 @@ tags: ["rule"]
 [[toc]]
 
 ## Properties
-
-<TagLinks />
 
 | Property                        | Value |
 | ------------------------------- | ----- |
@@ -36,7 +34,7 @@ Java 10
 :::
 
 ::: tip Tags
-Java 10, Formatting, Readability
+<TagLinks />
 :::
 
 ## Code Changes

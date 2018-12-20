@@ -2,7 +2,7 @@
 title: Use equals() on Primitive Objects
 description:
     This rule replaces the infix operators "==" and "!=" with equals() when used on primitive objects.
-tags: ["rule"]
+tags: ["Rule", "Java 1.1", "Coding conventions", "String Manipulation"]
 ---
 
 # Use equals() on Primitive Objects
@@ -43,7 +43,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Coding conventions, String Manipulation
+<TagLinks />
 :::
 
 ## Code Changes

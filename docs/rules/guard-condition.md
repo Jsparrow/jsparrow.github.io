@@ -2,7 +2,7 @@
 title: Use Guard Condition
 description:
     Replaces the last statement of a method with a guard condition.
-tags: ["rule"]
+tags: ["Rule", "Java 1.1", "Coding Conventions"]
 ---
 
 # Use Guard Condition
@@ -10,8 +10,6 @@ tags: ["rule"]
 [[toc]]
 
 ## Properties
-
-<TagLinks />
 
 | Property                        | Value |
 | ------------------------------- | ----- |
@@ -35,7 +33,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Coding Conventions
+<TagLinks />
 :::
 
 ## Code Changes

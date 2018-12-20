@@ -2,7 +2,7 @@
 title: Replace removeAll() with clear()
 description:
     Simplifies the code by replacing all occurrences of removeAll() which have the current collection as parameter with clear().
-tags: ["rule"]
+tags: ["Rule", "Java 1.2", "Conventions"]
 ---
 
 # Replace removeAll() with clear()
@@ -11,7 +11,6 @@ tags: ["rule"]
 
 ## Properties
 
-<TagLinks />
 
 | Property                        | Value |
 |:------------------------------- |:----- |
@@ -35,7 +34,7 @@ Java 1.2
 :::
 
 ::: tip Tags
-Java 1.2, Conventions
+<TagLinks />
 :::
 
 ## Code Changes

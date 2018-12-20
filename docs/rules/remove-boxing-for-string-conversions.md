@@ -3,7 +3,7 @@ title: Remove Boxing for String Conversions
 description:
     When calling toString() on a boxed primitive no new instance of that primitive has to be created.
     This rule replaces occurrences of such code with a static method
-tags: ["rule", "free"]
+tags: ["Rule", "Free", "Java 1.1", "String Manipulation", "Performance"]
 ---
 
 # Remove Boxing for String Conversions
@@ -36,7 +36,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, String Manipulation, Performance
+<TagLinks />
 :::
 
 ## Code Changes

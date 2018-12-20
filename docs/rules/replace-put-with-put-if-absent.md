@@ -2,7 +2,7 @@
 title: Replace put(..) with putIfAbsent(..)
 description:
     If map.put(..) is wrapped with a condition verifying the existence of an element one can use map.putIfAbsent(...) instead.
-tags: ["rule"]
+tags: ["Rule", "Java 8", "Old Language Constructs"]
 ---
 
 # Replace put(..) with putIfAbsent(..)
@@ -33,7 +33,7 @@ Java 8
 :::
 
 ::: tip Tags
-Java 8, Old Language Constructs
+<TagLinks />
 :::
 
 ## Code Changes

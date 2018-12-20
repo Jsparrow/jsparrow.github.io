@@ -2,7 +2,7 @@
 title: Remove Unnecessary Semicolons
 description:
     Removes the unnecessary semicolons from the code blocks
-tags: ["rule", "free"]
+tags: ["Rule", "Free", "Java 1.1", "Coding Conventions"]
 ---
 
 # Remove Unnecessary Semicolons
@@ -33,7 +33,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Coding Conventions
+<TagLinks />
 :::
 
 ## Code Changes

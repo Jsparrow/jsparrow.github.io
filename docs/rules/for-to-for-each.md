@@ -2,7 +2,7 @@
 title: Replace For-Loop with Enhanced-For-Loop
 description:
     Transforms all possible for loops with iterators to a ForEach loop
-tags: ["rule", "free"]
+tags: ["Rule", "Free", "Java 5", "Loop", "Old Language Constructs"]
 ---
 
 # Replace For-Loop with Enhanced-For-Loop
@@ -10,8 +10,6 @@ tags: ["rule", "free"]
 [[toc]]
 
 ## Properties
-
-<TagLinks />
 
 | Property                        | Value |
 |:------------------------------- |:----- |
@@ -35,7 +33,7 @@ Java 5
 :::
 
 ::: tip Tags
-Java 5, Loop, Old Language Constructs
+<TagLinks />
 :::
 
 ## Code Changes

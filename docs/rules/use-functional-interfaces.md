@@ -2,7 +2,7 @@
 title: Use Functional Interfaces
 description:
     Converts anonymous inner classes to equivalent lambda expressions.
-tags: ["rule"]
+tags: ["Rule", "Java 8", "Old Language Constructs", "Lambda"]
 ---
 
 # Use Functional Interfaces
@@ -33,7 +33,7 @@ Java 8
 :::
 
 ::: tip Tags
-Java 8, Old Language Constructs, Lambda
+<TagLinks />
 :::
 
 ## Code Changes

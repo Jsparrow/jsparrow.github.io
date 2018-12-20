@@ -4,7 +4,7 @@ description:
     Multiple field or variable declarations on the same line could cause confusion about their types and initial values. That also makes it harder to read and to understand the code.
     In order to improve readability, each field or variable should be declared on a separate line.
     This is recommended by the Code Conventions for the Java Programming Language.
-tags: ["rule", "free"]
+tags: ["Rule", "Free", "Java 1.1", "Readability", "Coding Conventions"]
 ---
 
 # Split Multiple Variable Declarations
@@ -39,7 +39,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Readability, Coding Conventions
+<TagLinks />
 :::
 
 ## Code Changes

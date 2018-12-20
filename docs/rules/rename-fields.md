@@ -3,7 +3,7 @@ title: Rename Fields
 description:
     Renames the non-final fields to comply with the naming convention "^[a-z][a-zA-Z0-9]*$" i.e. a lower case
     prefix followed by any sequence of alpha-numeric characters
-tags: ["rule"]
+tags: ["Rule", "Java 1.1", "Conventions", "Readability"]
 ---
 
 # Rename Fields
@@ -38,7 +38,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Conventions, Readability
+<TagLinks />
 :::
 
 ## Configuration

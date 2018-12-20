@@ -2,7 +2,7 @@
 title: StringBuffer() to StringBuilder()
 description:
     This rule changes the type of local variables from StringBuffer() to StringBuilder().
-tags: ["rule"]
+tags: ["Rule", "Java 5", "String Manipulation", "Performance"]
 ---
 
 # StringBuffer() to StringBuilder()
@@ -35,7 +35,7 @@ Java 5
 :::
 
 ::: tip Tags
-Java 5, String Manipulation, Performance
+<TagLinks />
 :::
 
 ## Code Changes

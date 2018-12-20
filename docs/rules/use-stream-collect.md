@@ -3,7 +3,7 @@ title: Use Stream::collect
 description:
     Replaces `Stream::forEach` with `Stream::collect` if the argument of the `forEach` statement is only used for adding elements to a list.
     This simplifies adding elements to a list.
-tags: ["rule"]
+tags: ["Rule", "Java 8", "Lambda", "Loop"]
 ---
 
 # Use Stream::collect
@@ -34,7 +34,7 @@ Java 8
 :::
 
 ::: tip Tags
-Java 8, Lambda, Loop
+<TagLinks />
 :::
 
 ## Code Changes
