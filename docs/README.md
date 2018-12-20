@@ -24,7 +24,7 @@ You can execute it as part of your development process as an Eclipse IDE plugin 
 
 ## jSparrow 3.0.0 has been released!
 
-This brings free rules! See [Release Notes](/eclipse/release-notes.html). 
+This brings free rules! See [Release Notes](/eclipse/release-notes.html#_3-0-0). 
 
 ## Statistical Data
 

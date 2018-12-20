@@ -20,6 +20,26 @@ Previously, the free version of jSparrow showed possible changes, but did not ha
 #### How to register?
 See the documentation at: [Registration for 15 free rules](installation-guide.html#jsparrow-starter-registration).
 
+#### List of free rules
+
+* [Replace For-Loop with Enhanced-For-Loop](/rules/for-to-for-each.html)
+* [Organize Imports](/rules/organize-imports.html)
+* [Use @Override Annotation](/rules/override-annotation.html)
+* [Remove Boxing for String Conversions](/rules/remove-boxing-for-string-conversions.html)
+* [Remove Double Negations](/rules/remove-double-negation.html)
+* [Remove toString() on String](/rules/remove-to-string-on-string.html)
+* [Remove Unnecessary Semicolons](/rules/remove-unnecessary-semicolons.html)
+* [Remove Unnecessary Thrown Exceptions on Method Signatures](/rules/remove-unnecessary-thrown-exceptions-on-method-signatures.html)
+* [Reorder String Equality Check](/rules/reorder-string-equality-check.html)
+* [Replace Equality Check with isEmpty()](/rules/replace-equality-check-with-is-empty.html)
+* [Replace equals() on Enum Constants](/rules/replace-equals-on-enum-constants.html)
+* [Replace Expression Lambda with Method Reference](/rules/replace-expression-lambda-with-method-reference.html)
+* [Replace Inefficient Constructors with valueOf()](/rules/replace-inefficient-constructors-with-value-of.html)
+* [Split Multiple Variable Declarations](/rules/split-multiple-variable-declarations.html)
+* [Use Try-With-Resource](/rules/use-try-with-resource.html)
+
+Note: All free rules have the tag "[Free](/tags.html#Free)" added to them. 
+
 ### Fixed Bugs
 
 #### Use StringUtils Methods
