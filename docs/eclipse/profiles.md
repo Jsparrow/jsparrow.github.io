@@ -12,7 +12,9 @@ jSparrow offers the following functions regarding profiles:
 
 ## Creating profiles
 
-1. Go to "Window" -> "Preferences" -> "jSparrow" and click on "New Profile..."
+jSparrow allows for grouping sets of rules into profiles. Follow these steps to create a profile:
+
+1. Navigate to "Window" -> "Preferences" -> "jSparrow" and click on "New Profile..."
 
 [ ![jSparrow preferences](/img/eclipse/jsparrow_preferences.png) ](/img/eclipse/jsparrow_preferences.png)
 
@@ -22,23 +24,23 @@ jSparrow offers the following functions regarding profiles:
 
 ## Editing profiles
 
-1. Go to "Window" -> "Preferences" -> "jSparrow"
+The custom profiles can be modified as follows:
+
+1. Navigate to "Window" -> "Preferences" -> "jSparrow"
 
 2. Select the corresponding profile and click "Edit Profile..."
 
 [ ![Edit profile](/img/eclipse/jsparrow_edit_profile.png) ](/img/eclipse/jsparrow_edit_profile.png)
 
-## Profile selection an default
+## Setting the default profile
 
-1. Go to "Window" -> "Preferences" -> "jSparrow"
+The default profile determines which profile is first selected when opening the "Select Rules" dialog (see [Usage of the Plugin](/eclipse/getting-started.html#usage-of-the-plugin)).
+
+1. Navigate to "Window" -> "Preferences" -> "jSparrow"
 
 2. Just select the corresponding profile and click on "Use As Default Profile"
 
 [ ![Select default profile](/img/eclipse/jsparrow_select_default_profile.gif) ](/img/eclipse/jsparrow_select_default_profile.gif)
-
-::: tip Note
-The default profile determines, which profile is first selected when opening the "Select Rules" dialog (see [Usage of the Plugin](/eclipse/getting-started.html#usage-of-the-plugin))
-:::
 
 ## Exporting profiles
 
@@ -53,7 +55,7 @@ To export a profile:
 
 4. Click "OK". A dialog shows the path to the generated file. 
 
-The generated `yml` file contains the the list of the rules in the selected profile and the default configuration values for the rules that require an initial configuration. 
+The generated `yml` file contains the list of the rules in the selected profile and the default configuration values for the rules that require an initial configuration. 
 The exported profile can also be used by the [jSparrow Maven Plugin](/maven/getting-started.html#usage).
 
 ## Importing profiles

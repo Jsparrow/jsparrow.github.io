@@ -95,7 +95,8 @@ Rules can be grouped into profiles in jSparrow. The preferences concerning profi
 
 The default profile determines, which profile will be selected by default in the select rules window.
 ::: tip
-The default profile can still be changed during the rule selection process.
+The default profile can still be changed during the rule selection process. 
+For more information see [Setting the default profile](profiles.html#setting-the-default-profile).
 :::
 
 ### Filtering rules by a tag
