@@ -2,6 +2,7 @@
 title: Use Portable Newline
 description:
     It is generally preferable better to use %n, which will produce the platform-specific line separator.
+tags: ["Rule", "Java 5", "String Manipulation"]
 ---
 
 # Use Portable Newline
@@ -33,7 +34,7 @@ Java 5
 :::
 
 ::: tip Tags
-Java 5, String Manipulation
+<TagLinks />
 :::
 
 ## Code Changes

@@ -2,6 +2,7 @@
 title: System Out To Logging
 description:
     Replaces the standard output statements with logger statements when possible.
+tags: ["Rule", "Java 1.1", "Logging", "Old Language Constructs", "Conventions"]
 ---
 
 # System Out To Logging
@@ -20,26 +21,26 @@ description:
 ## Description
 
 This rule replaces the standard output statements with logger statements when possible. As a precondition, either [SLF4J](https://www.slf4j.org/) or [LOG4J](https://logging.apache.org/log4j/2.x/) should be present on the classpath of the project. Then, the user is asked to choose the replacing options for the standard output statements.     
-  
+
 The following standard output methods are supported for replacing:  
 - `System.out.print(String)`  
 - `System.out.println(String)`  
 - `System.err.print(String)`  
 - `System.err.println(String)`  
 - `Throwable.printStackTrace()`  
-  
+
 The rule is triggered if the preconditions are met and a standard output method which can be replaced is found. In case the logger object is not present in the class, a new logger object is introduced as the first statement of the type declaration together with the necessary import statements. In particular, if SLF4J is found in the classpath of the project, then the logger object is created as follows:
 ``` java
 ....
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 ...
- 
+
 class TopLevelClass {
- 
+
     private static final Logger logger = LoggerFactory.getLogger(TopLevelClass.class);
 ....
- 
+
 }
 ```
 
@@ -51,7 +52,7 @@ When logging a message there are several important requirements which must be fu
 * Logged data must actually be recorded  
 * Sensitive data must only be logged securely  
 If a program directly writes to the standard outputs, there is absolutely no way to comply with those requirements. Using this rule satisfies the requirements.  
-  
+
 ## Requirement & Tags
 
 ::: warning Requirements
@@ -59,7 +60,7 @@ Libraries (any of the following): org.slf4j | ch.qos.logback | org.apache.log4j
 :::
 
 ::: tip Tags
-Java 1.1, Logging, Old Language Constructs, Conventions
+<TagLinks />
 :::
 
 ## Configuration
@@ -74,7 +75,7 @@ As a replacement option, the user can chose either of the logger methods provide
 - `Logger.error(String)`  
 
 There is also an option in each of the drop-downs to "Leave as is", which skips making changes for the selected method.  
-  
+
 ![[Configuration](/rules/images/logger_configuration.png)](/img/rules_config/logger_configuration.png)
 
 The bottom of the wizard contains additional configuration. It allows you to choose if you want to add logger statements where they are missing, like empty catch blocks. Also, there you can choose whether you want to always add the exception as a parameter in the logger statements and always use the selected severity level for logging exceptions.  
@@ -87,11 +88,11 @@ __Pre__
 public void replaceSystemOutPrint(String input) {
     System.out.print(input);
 }
- 
+
 public void replaceSystemErrPrintln(String input) {
     System.err.println(input);
 }
- 
+
 public void replacePrintStackTrace(String input) {
     try {
         input.substring(5);
@@ -107,11 +108,11 @@ __Post__
 public void replaceSystemOutPrint(String input) {
     logger.info(input);
 }
- 
+
 public void replaceSystemErrPrintln(String input) {
     logger.info(input);
 }
- 
+
 public void replacePrintStackTrace(String input) {
     try {
         StringUtils.substring(input, 5);
@@ -120,4 +121,3 @@ public void replacePrintStackTrace(String input) {
     }
 }
 ```
-

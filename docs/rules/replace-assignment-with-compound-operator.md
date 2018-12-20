@@ -2,6 +2,7 @@
 title: Replace Assignment with Compound Operator
 description:
     Simplifies arithmetic operations that an compound operator where possible.
+tags: ["Rule", "Java 1.4", "Readability", "Coding Conventions"]
 ---
 
 # Replace Assignment with Compound Operator
@@ -19,7 +20,7 @@ description:
 
 ## Description
 
-Assignments involving an arithmetic assignment can be simplified by using a compound operator such as '+=', '-=', '/=' or '*='. 
+Assignments involving an arithmetic assignment can be simplified by using a compound operator such as '+=', '-=', '/=' or '*='.
 For example, this rule will transform 'a=a+1' into 'a+=1'.  
 The rule only applies if both operands are primitive types.  
 
@@ -34,7 +35,7 @@ Java 1.4
 :::
 
 ::: tip Tags
-Java 1.4, Readability, Coding Conventions
+<TagLinks />
 :::
 
 ## Code Changes

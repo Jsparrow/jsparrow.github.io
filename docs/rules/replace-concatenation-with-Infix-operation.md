@@ -2,6 +2,7 @@
 title: Replace Concatenation with Infix-Operation
 description:
     This rule replaces the `concat()` method on `String`s with the `+` operator.
+tags: ["Rule", "Java 1.1", "String Manipulation", "Performance"]
 ---
 
 # Replace Concatenation with Infix-Operation
@@ -21,14 +22,14 @@ description:
 
 This rule replaces the `concat()` method on `String`s with the `+` operator.
 
-For example, `s = s.concat("bar")` becomes `s = s + "bar"`. This improves readability and performance for 
+For example, `s = s.concat("bar")` becomes `s = s + "bar"`. This improves readability and performance for
  chained concatenations.
 
 ## Benefits
 
-Applying this rule has slight performance benefits and arguably improves readability. 
-The Java compiler will convert the `+` operation to use a `StringBuilder`. 
-The more concatenations occur, the bigger the performance gain is. 
+Applying this rule has slight performance benefits and arguably improves readability.
+The Java compiler will convert the `+` operation to use a `StringBuilder`.
+The more concatenations occur, the bigger the performance gain is.
 
 ## Requirement & Tags
 
@@ -37,7 +38,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, String Manipulation, Performance
+<TagLinks />
 :::
 
 ## Code Changes

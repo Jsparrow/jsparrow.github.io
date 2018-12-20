@@ -2,6 +2,7 @@
 title: Remove Explicit Type Argument
 description:
     Since Java 1.7 the Diamond Operator (`<>`) can be used to simplify instance creation where generics are involved.
+tags: ["Rule", "Java 7", "Readability"]
 ---
 
 # Remove Explicit Type Argument
@@ -32,12 +33,12 @@ Java 7
 :::
 
 ::: tip Tags
-Java 7, Readability
+<TagLinks />
 :::
 
 ## Code Changes
 
-### Type arguments on new instance creations 
+### Type arguments on new instance creations
 __Pre__
 ```java
 Map<String, List<String>> myMap = new HashMap<String, List<String>>();

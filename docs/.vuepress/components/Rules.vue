@@ -19,7 +19,7 @@ export default {
             return this.$site.pages
                 .filter(x => x.path.startsWith('/rules/') && !x.frontmatter.rules_index)
                 .sort((a, b) => b.frontmatter.title < a.frontmatter.title);
-        }
+        } 
     }
 }
 </script>

@@ -1,7 +1,8 @@
 ---
 title: Use Try-With-Resource
 description:
-    This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as the construct takes care of that. 
+    This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as the construct takes care of that.
+tags: ["Rule", "Free", "Java 7", "Old Language Constructs", "Readability"]
 ---
 
 # Use Try-With-Resource
@@ -19,8 +20,8 @@ description:
 
 ## Description
 
-This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as 
-the construct takes care of that. 
+This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as
+the construct takes care of that.
 
 ## Benefits
 
@@ -33,7 +34,7 @@ Java 7
 :::
 
 ::: tip Tags
-Java 7, Old Language Constructs, Readability
+<TagLinks />
 :::
 
 ## Code Changes
@@ -47,7 +48,7 @@ try {
     br.readLine();
     br.readLine();
     br.close();
-    
+
 } catch (IOException e) {
     logger.error(e.getMessage(), e);
 }
@@ -71,13 +72,13 @@ __Pre__
 
 ```java
 try {
-    BufferedReader br = new BufferedReader(new FileReader(path)); 
+    BufferedReader br = new BufferedReader(new FileReader(path));
     BufferedReader br2 = new BufferedReader(new FileReader(path));
     br.readLine();
     br2.readLine();
     br.close();
     br2.close();
-    
+
 } catch (IOException e) {
     logger.error(e.getMessage(), e);
 }
@@ -85,7 +86,7 @@ try {
 
 __Post__
 ```java
-try (BufferedReader br = new BufferedReader(new FileReader(path)); 
+try (BufferedReader br = new BufferedReader(new FileReader(path));
         BufferedReader br2 = new BufferedReader(new FileReader(path))) {
     br.readLine();
     br2.readLine();

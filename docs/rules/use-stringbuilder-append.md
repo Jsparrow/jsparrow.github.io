@@ -2,6 +2,7 @@
 title: Use StringBuilder::append
 description:
     Replaces the infix operator `+` on String concatenation by StringBuilder::append
+tags: ["Rule", "Java 5", "String Manipulation", "Performance"]
 ---
 
 # Use StringBuilder::append
@@ -32,7 +33,7 @@ Java 5
 :::
 
 ::: tip Tags
-Java 5, String Manipulation, Performance
+<TagLinks />
 :::
 
 ## Code Changes

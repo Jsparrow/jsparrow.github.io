@@ -2,6 +2,7 @@
 title: Remove Explicit Call To super()
 description:
     Removes unnecessary explicit call to the default constructor of the super class.
+tags: ["Rule", "Java 1.1", "Readability"]
 ---
 
 # Remove Explicit Call To super()
@@ -32,7 +33,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Readability
+<TagLinks />
 :::
 
 ## Code Changes

@@ -2,6 +2,7 @@
 title: Replace Equality Check with isEmpty()
 description:
     This rule replaces comparisons of length() or size() with 0 with a call to isEmpty(). Any occurrences of such a comparison will be replaced, regardless of surrounding control structure.
+tags: ["Rule", "Free", "Java 6", "Old Language Constructs", "Coding Conventions", "Readability"]
 ---
 
 # Replace Equality Check with isEmpty()
@@ -32,7 +33,7 @@ Java 6
 :::
 
 ::: tip Tags
-Java 6, Old Language Constructs, Coding Conventions, Readability
+<TagLinks />
 :::
 
 ## Code Changes

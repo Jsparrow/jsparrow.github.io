@@ -1,7 +1,8 @@
 ---
-title: Reorder String Equality Check 
+title: Reorder String Equality Check
 description:
     Moves the string literals in the left-hand-side of equals() or equalsIgnoreCase() when checking for equality.
+tags: ["Rule", "Free", "Java 1.1", "String Manipulation"]
 ---
 
 # Reorder String Equality Check
@@ -32,7 +33,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, String Manipulation
+<TagLinks />
 :::
 
 ## Code Changes

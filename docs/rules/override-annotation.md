@@ -1,7 +1,8 @@
 ---
 title: Use @Override Annotation
 description:
-    This rule adds the @Override annotation to methods overriding or implementing parent class methods. 
+    This rule adds the @Override annotation to methods overriding or implementing parent class methods.
+tags: ["Rule", "Free", "Java 6", "Readability", "Conventions"]
 ---
 
 # Use @Override Annotation
@@ -19,24 +20,24 @@ description:
 
 ## Description
 
-This rule adds the @Override annotation to methods overriding or implementing parent class methods. 
-Even though using @Override it is not mandatory, using this annotation is considered a best practice for 
- two main reasons: 
- 1. It ensures that the method signature is a sub-signature of the overridden method. 
+This rule adds the @Override annotation to methods overriding or implementing parent class methods.
+Even though using @Override it is not mandatory, using this annotation is considered a best practice for
+ two main reasons:
+ 1. It ensures that the method signature is a sub-signature of the overridden method.
  2. It improves the readability.
 
 ## Benefits
 
-Improves the readability by making it clear that the methods are overridden and helps avoiding potential bugs arising from unintended changes in method signatures. 
+Improves the readability by making it clear that the methods are overridden and helps avoiding potential bugs arising from unintended changes in method signatures.
 
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.6
+Java 6
 :::
 
 ::: tip Tags
-Java 1.6, Readability, Conventions
+<TagLinks />
 :::
 
 ## Code Changes

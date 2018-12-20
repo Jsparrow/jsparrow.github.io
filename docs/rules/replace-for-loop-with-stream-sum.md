@@ -2,6 +2,7 @@
 title: Replace For-Loop with Stream::sum
 description:
     Transforms enhanced for-loops which are only used for summing up the elements of a collection to a `Stream::sum` invocation.
+tags: ["Rule", "Java 8", "Lambda", "Loop"]
 ---
 
 # Replace For-Loop with Stream::sum
@@ -31,7 +32,7 @@ Java 8
 :::
 
 ::: tip Tags
-Java 8, Lambda, Loop
+<TagLinks />
 :::
 
 ## Code Changes

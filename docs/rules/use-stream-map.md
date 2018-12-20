@@ -1,8 +1,9 @@
 ---
 title: Use Stream::map
 description:
-    Extracts a block from the body of the consumer of the Stream::forEach method and introduces Stream::map instead. 
+    Extracts a block from the body of the consumer of the Stream::forEach method and introduces Stream::map instead.
     This makes complicated code blocks easier to read and reuse.
+tags: ["Rule", "Java 8", "Lambda", "Loop"]
 ---
 
 # Use Stream::map
@@ -20,7 +21,7 @@ description:
 
 ## Description
 
-Extracts a block from the body of the consumer of the Stream::forEach method and introduces Stream::map instead. 
+Extracts a block from the body of the consumer of the Stream::forEach method and introduces Stream::map instead.
 This makes complicated code blocks easier to read and reuse.
 
 ## Benefits
@@ -33,7 +34,7 @@ Java 8
 :::
 
 ::: tip Tags
-Java 8, Lambda, Loop
+<TagLinks />
 :::
 
 ## Code Changes

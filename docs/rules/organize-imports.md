@@ -2,6 +2,7 @@
 title: Organize Imports
 description:
     Organize Imports according to the Eclipse's built in Organize Imports functionality.
+tags: ["Rule", "Free", "Java 1.1", "Formatting", "Readability"]
 ---
 
 # Organize Imports
@@ -32,7 +33,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Formatting, Readability
+<TagLinks />
 :::
 
 ## Code Changes

@@ -1,8 +1,9 @@
 ---
 title: Replace Nested Loops with flatMap
 description:
-    Nested For-Loops or invocations of forEach commonly used to iterate over all elements of a collection of collections, can be avoided by using flatMap(). 
+    Nested For-Loops or invocations of forEach commonly used to iterate over all elements of a collection of collections, can be avoided by using flatMap().
     Using flatMap() makes code much more readable and can be combined with other stream functions.
+tags: ["Rule", "Java 8", "Lambda", "Loop"]
 ---
 
 # Replace Nested Loops with flatMap
@@ -20,7 +21,7 @@ description:
 
 ## Description
 
-Nested For-Loops or invocations of `forEach` commonly used to iterate over all elements of a collection of collections, can be avoided by using `flatMap()`. 
+Nested For-Loops or invocations of `forEach` commonly used to iterate over all elements of a collection of collections, can be avoided by using `flatMap()`.
 Using `flatMap()` makes code much more readable and can be combined with other stream functions.
 
 ## Benefits
@@ -33,7 +34,7 @@ Java 8
 :::
 
 ::: tip Tags
-Java 8, Lambda, Loop
+<TagLinks />
 :::
 
 ## Code Changes

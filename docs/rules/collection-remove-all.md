@@ -2,6 +2,7 @@
 title: Replace removeAll() with clear()
 description:
     Simplifies the code by replacing all occurrences of removeAll() which have the current collection as parameter with clear().
+tags: ["Rule", "Java 1.2", "Conventions"]
 ---
 
 # Replace removeAll() with clear()
@@ -9,6 +10,7 @@ description:
 [[toc]]
 
 ## Properties
+
 
 | Property                        | Value |
 |:------------------------------- |:----- |
@@ -32,7 +34,7 @@ Java 1.2
 :::
 
 ::: tip Tags
-Java 1.2, Conventions
+<TagLinks />
 :::
 
 ## Code Changes
@@ -42,29 +44,29 @@ __Pre__
 ```java
 public String testIfCollectionIsEmpty(String input){
     List<String> resultList = generateList(input);
-     
+
     resultList.removeAll(resultList);
-     
+
     StringBuilder sb = new StringBuilder();
-     
+
     resultList.stream().forEach((s)->sb.append(s));
-     
+
     return sb.toString();
 }
 ```
 
 __Post__
 
-```java	
+```java
 public String testIfCollectionIsEmpty(String input){
     List<String> resultList = generateList(input);
-     
+
     resultList.clear();
-     
+
     StringBuilder sb = new StringBuilder();
-     
+
     resultList.stream().forEach((s)->sb.append(s));
-     
+
     return sb.toString();
 }
 ```

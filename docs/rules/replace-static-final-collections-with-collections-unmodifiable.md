@@ -2,6 +2,7 @@
 title: Replace static final Collections with Collections.unmodifiable...()
 description:
     Wraps the initialization of a final collection with Collections.unmodifiable...()
+tags: ["Rule", "Java 1.2", "Conventions"]
 ---
 
 # Replace static final Collections with Collections.unmodifiable...()
@@ -19,16 +20,16 @@ description:
 
 ## Description
 
-An unmodifiable Collection can be created with the matching Collections.unmodifiable...() method. 
+An unmodifiable Collection can be created with the matching Collections.unmodifiable...() method.
  Some examples are Collections.unmodifiableList(), Collections.unmodifiableSortedSet(), etc.
-A declaration of a Collection with the static and final modifiers is not sufficient because it might still be 
+A declaration of a Collection with the static and final modifiers is not sufficient because it might still be
  modifiable.
-The Collections which are created with Collections.unmodifiable...() throw an 
+The Collections which are created with Collections.unmodifiable...() throw an
  UnsupportedOperationException as soon as a modification is attempted.
 
 ## Benefits
 
-Applying this rule helps avoid common errors by making sure a static final field is always modifiable. 
+Applying this rule helps avoid common errors by making sure a static final field is always modifiable.
 
 ## Requirement & Tags
 
@@ -37,7 +38,7 @@ Java 1.2
 :::
 
 ::: tip Tags
-Java 1.2, Conventions
+<TagLinks />
 :::
 
 ## Code Changes

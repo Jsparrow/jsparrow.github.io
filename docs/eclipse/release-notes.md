@@ -3,7 +3,64 @@ title: Release Notes
 ---
 # Release Notes
 
-Here you will find the latest information about releases of the jSparrow Eclipse Plugin.
+Here you will find the latest information about releases of the jSparrow Eclipse plugin.
+
+## 3.0.0
+
+_21.12.2018_
+
+### Introduction of jSparrow Starter
+Version 3.0.0 introduces *jSparrow Starter*!
+
+This version of jSparrow makes it possible to apply ***15 selected rules free of charge***.
+
+Registering enables jSparrow Starter permanently and allows you to apply the free rules without limitation.
+
+#### What does this mean exactly?
+Previously, the free version of jSparrow showed possible changes, but did not have the finish button enabled. With jSparrow Starter, the finish button will be enabled for the free rules.
+
+The original behavior of *jSparrow Free* remains unaffected.
+
+#### How to register?
+See the documentation at: [Registration for 15 free rules](installation-guide.html#jsparrow-starter-registration).
+
+#### List of free rules
+
+* [Replace For-Loop with Enhanced-For-Loop](/rules/for-to-for-each.html)
+* [Organize Imports](/rules/organize-imports.html)
+* [Use @Override Annotation](/rules/override-annotation.html)
+* [Remove Boxing for String Conversions](/rules/remove-boxing-for-string-conversions.html)
+* [Remove Double Negations](/rules/remove-double-negation.html)
+* [Remove toString() on String](/rules/remove-to-string-on-string.html)
+* [Remove Unnecessary Semicolons](/rules/remove-unnecessary-semicolons.html)
+* [Remove Unnecessary Thrown Exceptions on Method Signatures](/rules/remove-unnecessary-thrown-exceptions-on-method-signatures.html)
+* [Reorder String Equality Check](/rules/reorder-string-equality-check.html)
+* [Replace Equality Check with isEmpty()](/rules/replace-equality-check-with-is-empty.html)
+* [Replace equals() on Enum Constants](/rules/replace-equals-on-enum-constants.html)
+* [Replace Expression Lambda with Method Reference](/rules/replace-expression-lambda-with-method-reference.html)
+* [Replace Inefficient Constructors with valueOf()](/rules/replace-inefficient-constructors-with-value-of.html)
+* [Split Multiple Variable Declarations](/rules/split-multiple-variable-declarations.html)
+* [Use Try-With-Resource](/rules/use-try-with-resource.html)
+
+Note: All free rules have the tag "[Free](/tags.html#Free)" added to them.
+
+### Fixed Bugs
+
+#### Use StringUtils Methods
+* Avoid implicit import collisions of 'StringUtils' classes from different packages.
+
+#### Replace For-Loop with Stream::findFirst
+* Fixed an issue related to deriving the generic types of elements on a stream.
+
+#### System Out To Logging
+* Finding the legal locations for using non-static loggers.
+
+#### Replace Expression Lambda with Method Reference
+* Using fully qualified names if it is not possible to add import statements.
+* Avoiding ambiguities with overloaded methods when replacing lambdas by method references.
+
+#### Replace Concatenation with Infix-Operation
+* Fixed an issue where the 'concat' method is not used for concatenating 'java.lang.String' instances.
 
 ## 2.7.0
 
@@ -317,7 +374,7 @@ The profiles settings have been improved and jSparrow is now capable of importin
 * (New) Import Profile(s)…
   * Adds the functionality to import YAML formatted jSparrow profiles
 * (New) Export Profile(s)…
-  *Adds the functionality to export the selected profile(s) into a YAML formatted file
+  * Adds the functionality to export the selected profile(s) into a YAML formatted file
 
   ![Summary page](/img/eclipse/release_notes/logging-rule.png)
 
@@ -375,13 +432,13 @@ _10.10.2017_
 
 ## 2.2.0
 
-_21.09.2018_
+_21.09.2017_
 
 This release is shipped with twelve new rules and other improvements to the user interface and the logic behind. In order to improve our possibility to track down bugs and other errors the OSGi bundle names have been changed. This has been necessary for jSparrow to work correctly with Eclipse Error Reporting. We have also added a new Summary Screen, where all changes can be reviewed before applying them. To make the selection of rules more intuitive and clearer we have changed their names to be more descriptive and consistent. The trial licensing model has been changed to accommodate new needs. Therefore it’s not possible anymore to persist changes with a trial license. However, changes can still be reviewed on the Summary Screen.
 
 ### Names of the OSGi bundles have been changed
 
-* The prefix of the OSGI-bundles and OSGi-features of jSparrow has been changed from: `jSparrow` → `eu.jSparrow` 
+* The prefix of the OSGI-bundles and OSGi-features of jSparrow has been changed from: `jSparrow` → `eu.jSparrow`
 * __Important__: The result is that it is not possible to update from a previous version of jSparrow! It is required to uninstall and reinstall jSparrow to upgrade to 2.2.0. Otherwise there might be side effects because there will be two different named instances of jSparrow within your Eclipse version.
 
 ### Trial Licencing Model Changed

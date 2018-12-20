@@ -2,6 +2,7 @@
 title: Add Parenthesis to Control Statements
 description:
     Checks if parenthesis are used to encapsulate control statements and adds them if they aren't present.
+tags: ["Rule", "Java 1.1", "Formatting", "Readability"]
 ---
 
 # Add Parenthesis to Control Statements
@@ -32,7 +33,7 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, Formatting, Readability
+<TagLinks />
 :::
 
 ## Code Changes

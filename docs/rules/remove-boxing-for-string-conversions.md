@@ -1,8 +1,9 @@
 ---
 title: Remove Boxing for String Conversions
 description:
-    When calling toString() on a boxed primitive no new instance of that primitive has to be created. 
+    When calling toString() on a boxed primitive no new instance of that primitive has to be created.
     This rule replaces occurrences of such code with a static method
+tags: ["Rule", "Free", "Java 1.1", "String Manipulation", "Performance"]
 ---
 
 # Remove Boxing for String Conversions
@@ -20,12 +21,12 @@ description:
 
 ## Description
 
-When calling toString() on a boxed primitive no new instance of that primitive has to be created. 
-This rule replaces occurrences of such code with a static method. 
+When calling toString() on a boxed primitive no new instance of that primitive has to be created.
+This rule replaces occurrences of such code with a static method.
 
 ## Benefits
 
-This rule has performance benefits. 
+This rule has performance benefits.
 As described above boxing the object simply to use the static `toString` method is a waste of memory and CPU cycles.
 
 ## Requirement & Tags
@@ -35,13 +36,13 @@ None
 :::
 
 ::: tip Tags
-Java 1.1, String Manipulation, Performance
+<TagLinks />
 :::
 
 ## Code Changes
 
 ### Boolean
-__Pre__ 
+__Pre__
 ```java
 new Boolean(true).toString();
 ```
@@ -51,7 +52,7 @@ Boolean.toString(true);
 ```
 
 ### Byte
-__Pre__ 
+__Pre__
 ```java
 new Byte(1).toString();
 ```
@@ -61,7 +62,7 @@ Byte.toString(1);
 ```
 
 ### Double
-__Pre__ 
+__Pre__
 ```java
 new Double(1.0).toString();
 ```
@@ -71,7 +72,7 @@ Double.toString(1.0);
 ```
 
 ### Float
-__Pre__ 
+__Pre__
 ```java
 new Float(1.0).toString();
 ```
@@ -81,7 +82,7 @@ Float.toString(1.0);
 ```
 
 ### Integer
-__Pre__ 
+__Pre__
 ```java
 new Integer(1).toString();
 ```
@@ -91,7 +92,7 @@ Integer.toString(1);
 ```
 
 ### Long
-__Pre__ 
+__Pre__
 ```java
 new Long(1).toString();
 ```
@@ -101,7 +102,7 @@ Long.toString(1);
 ```
 
 ### Short
-__Pre__ 
+__Pre__
 ```java
 new Short(1).toString();
 ```

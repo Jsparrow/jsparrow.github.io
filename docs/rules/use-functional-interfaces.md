@@ -1,7 +1,8 @@
 ---
-title: Use Functional Interfaces 
+title: Use Functional Interfaces
 description:
     Converts anonymous inner classes to equivalent lambda expressions.
+tags: ["Rule", "Java 8", "Old Language Constructs", "Lambda"]
 ---
 
 # Use Functional Interfaces
@@ -32,7 +33,7 @@ Java 8
 :::
 
 ::: tip Tags
-Java 8, Old Language Constructs, Lambda
+<TagLinks />
 :::
 
 ## Code Changes
@@ -64,7 +65,7 @@ __Pre__
 
 ```java
 int a = 5;
-    
+
 AFunctionalInterface foo = new AFunctionalInterface() {
     @Override
     public void method(int a) {
@@ -77,7 +78,7 @@ __Post__
 
 ```java
 int a = 5;
- 
+
 AFunctionalInterface foo = (int a1) -> {
     int b = a1;
 };
