@@ -1,7 +1,6 @@
 ---
 title: jSparrow Documentation
 ---
-<TagLinks />
 
 # jSparrow
 
@@ -22,6 +21,10 @@ You can execute it as part of your development process as an Eclipse IDE plugin 
 * [jSparrow Eclipse plugin](eclipse/getting-started.html)
 * [jSparrow Maven plugin](maven/getting-started.html)
 * [jSparrow GitHub App](github/getting-started.html)
+
+## jSparrow 3.0.0 has been released!
+
+This brings free rules! See [Release Notes](/eclipse/release-notes.html). 
 
 ## Statistical Data
 

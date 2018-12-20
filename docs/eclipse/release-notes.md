@@ -5,6 +5,39 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.0.0
+
+_21.12.2018_
+
+### Introduction of jSparrow Starter
+This update introduces jSparrow Starter, a free version of jSparrow that makes it possible to apply 15 rules free of charge.
+
+Registering enables jSparrow Starter permanently and allows you to apply the free rules without limitation.
+
+#### What does this mean exactly?
+Previously, the free version of jSparrow showed possible changes, but did not have the finish button enabled. With jSparrow Starter, the finish button will be enabled, as long as free rules are selected.
+
+#### How to register?
+See the documentation at: [Registration for 15 free rules](installation-guide.html#jsparrow-starter-registration).
+
+### Fixed Bugs
+
+#### Use StringUtils Methods
+* Avoid implicit import collisions of 'StringUtils' classes from different packages.
+
+#### Replace For-Loop with Stream::findFirst
+* Fixed an issue related to deriving the generic types of elements on a stream.
+
+#### System Out To Logging
+* Finding the legal locations for using non-static loggers.
+
+#### Replace Expression Lambda with Method Reference
+* Using fully qualified names if it is not possible to add import statements.
+* Avoiding ambiguities with overloaded methods when replacing lambdas by method references.
+
+#### Replace Concatenation with Infix-Operation
+* Fixed an issue where the 'concat' method is not used for concatenating 'java.lang.String' instances.
+
 ## 2.7.0
 
 _21.11.2018_
@@ -381,7 +414,7 @@ This release is shipped with twelve new rules and other improvements to the user
 
 ### Names of the OSGi bundles have been changed
 
-* The prefix of the OSGI-bundles and OSGi-features of jSparrow has been changed from: `jSparrow` → `eu.jSparrow` 
+* The prefix of the OSGI-bundles and OSGi-features of jSparrow has been changed from: `jSparrow` → `eu.jSparrow`
 * __Important__: The result is that it is not possible to update from a previous version of jSparrow! It is required to uninstall and reinstall jSparrow to upgrade to 2.2.0. Otherwise there might be side effects because there will be two different named instances of jSparrow within your Eclipse version.
 
 ### Trial Licencing Model Changed
