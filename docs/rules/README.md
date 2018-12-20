@@ -10,6 +10,13 @@ This is a list of all the rules that are currently implemented in jSparrow.
 
 <TagListShort />
 
+## Free rules  in jSparrow Starter
+
+The following rules are included in *jSparrow Starter*. 
+See the documentation at: [Registration for 15 free rules](/eclipse/installation-guide.html#jsparrow-starter-registration).
+
+<freeRules />
+
 ## Summary
 
 <rules />
