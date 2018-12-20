@@ -22,7 +22,7 @@ jSparrow offers the following functions regarding profiles:
 
 ## Editing profiles
 
-1. Go to "Window" -> "Preferences" -> "jSparrow" and click on "New Profile..."
+1. Go to "Window" -> "Preferences" -> "jSparrow"
 
 2. Select the corresponding profile and click "Edit Profile..."
 
@@ -30,7 +30,7 @@ jSparrow offers the following functions regarding profiles:
 
 ## Profile selection an default
 
-1. Go to "Window" -> "Preferences" -> "jSparrow" and click on "New Profile..."
+1. Go to "Window" -> "Preferences" -> "jSparrow"
 
 2. Just select the corresponding profile and click on "Use As Default Profile"
 
@@ -44,4 +44,4 @@ The default profile determines, which profile is first selected when opening the
 
 1. Go to "Window" -> "Preferences" -> "jSparrow" and click on "New Profile..."
 
-2. 
+2.

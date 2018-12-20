@@ -374,7 +374,7 @@ The profiles settings have been improved and jSparrow is now capable of importin
 * (New) Import Profile(s)…
   * Adds the functionality to import YAML formatted jSparrow profiles
 * (New) Export Profile(s)…
-  *Adds the functionality to export the selected profile(s) into a YAML formatted file
+  * Adds the functionality to export the selected profile(s) into a YAML formatted file
 
   ![Summary page](/img/eclipse/release_notes/logging-rule.png)
 
