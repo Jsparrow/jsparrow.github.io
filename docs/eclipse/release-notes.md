@@ -10,12 +10,16 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 _21.12.2018_
 
 ### Introduction of jSparrow Starter
-This update introduces jSparrow Starter, a free version of jSparrow that makes it possible to apply 15 rules free of charge.
+Version 3.0.0 introduces *jSparrow Starter*!
+
+This version of jSparrow makes it possible to apply ***15 selected rules free of charge***.
 
 Registering enables jSparrow Starter permanently and allows you to apply the free rules without limitation.
 
 #### What does this mean exactly?
-Previously, the free version of jSparrow showed possible changes, but did not have the finish button enabled. With jSparrow Starter, the finish button will be enabled, as long as free rules are selected.
+Previously, the free version of jSparrow showed possible changes, but did not have the finish button enabled. With jSparrow Starter, the finish button will be enabled for the free rules.
+
+The original behavior of *jSparrow Free* remains unaffected.
 
 #### How to register?
 See the documentation at: [Registration for 15 free rules](installation-guide.html#jsparrow-starter-registration).
@@ -38,7 +42,7 @@ See the documentation at: [Registration for 15 free rules](installation-guide.ht
 * [Split Multiple Variable Declarations](/rules/split-multiple-variable-declarations.html)
 * [Use Try-With-Resource](/rules/use-try-with-resource.html)
 
-Note: All free rules have the tag "[Free](/tags.html#Free)" added to them. 
+Note: All free rules have the tag "[Free](/tags.html#Free)" added to them.
 
 ### Fixed Bugs
 
