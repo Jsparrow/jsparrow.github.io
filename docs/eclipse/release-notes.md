@@ -5,11 +5,46 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.1.0
+
+_29.01.2019_
+
+### jSparrow lands on Eclipse 2018-12
+
+Eclipse will be startin with version 3.1.0 able to be installed with Eclipse 2018-12.
+
+### Old welcome screen has been removed
+
+The old welcome screen was removed due to the presence of the dashboard which allows you to up to date with dynamic content.
+
+### Fixed Bugs
+
+#### Replace For-Loop with Stream::findFrist
+
+* Identifiying cases where the argument type of the orElse invocation is not cast compatible with the stream type.
+
+#### Use Multi Catch
+
+* Verifying that the types of the arguments in overloaded methods are not changed after merging the Catch clauses.
+
+#### Replace Expression Lambda with Method Reference
+
+* Avoiding ambiguities caused when converting a lambda expression to a method reference on an object with a raw type.
+
+#### Remove Lambda Expression Parenthesis
+
+* Avoid introducing implicit return types when converting a lambda 'single-body-statement' (i.e. lambda statements whose body consist of a block with a single statement) to a lambda expression (i.e. a lambda statement whose body consist of a single expression instead of a block).
+
+#### Replace static final Collections with Collections.unmodifiable...()
+
+* Avoid converting a static final collection to an unmodifiable collection if it  is used as an initialzer of another collection
+
 ## 3.0.0
 
 _21.12.2018_
 
 ### Introduction of jSparrow Starter
+
 Version 3.0.0 introduces *jSparrow Starter*!
 
 This version of jSparrow makes it possible to apply ***15 selected rules free of charge***.
@@ -17,11 +52,13 @@ This version of jSparrow makes it possible to apply ***15 selected rules free of
 Registering enables jSparrow Starter permanently and allows you to apply the free rules without limitation.
 
 #### What does this mean exactly?
+
 Previously, the free version of jSparrow showed possible changes, but did not have the finish button enabled. With jSparrow Starter, the finish button will be enabled for the free rules.
 
 The original behavior of *jSparrow Free* remains unaffected.
 
 #### How to register?
+
 See the documentation at: [Registration for 15 free rules](installation-guide.html#jsparrow-starter-registration).
 
 #### List of free rules
@@ -47,19 +84,24 @@ Note: All free rules have the tag "[Free](/tags.html#Free)" added to them.
 ### Fixed Bugs
 
 #### Use StringUtils Methods
+
 * Avoid implicit import collisions of 'StringUtils' classes from different packages.
 
 #### Replace For-Loop with Stream::findFirst
+
 * Fixed an issue related to deriving the generic types of elements on a stream.
 
 #### System Out To Logging
+
 * Finding the legal locations for using non-static loggers.
 
 #### Replace Expression Lambda with Method Reference
+
 * Using fully qualified names if it is not possible to add import statements.
 * Avoiding ambiguities with overloaded methods when replacing lambdas by method references.
 
 #### Replace Concatenation with Infix-Operation
+
 * Fixed an issue where the 'concat' method is not used for concatenating 'java.lang.String' instances.
 
 ## 2.7.0
