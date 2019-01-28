@@ -11,7 +11,7 @@ _29.01.2019_
 
 ### jSparrow lands on Eclipse 2018-12
 
-Starting with version 3.1.0, jSparrow will be able be installed in Eclipse 2018-12. 
+Starting with version 3.1.0, jSparrow will be able be installed in Eclipse 2018-12.
 
 ### Old welcome screen has been removed
 
@@ -19,13 +19,13 @@ The old welcome screen was removed due to the presence of the dashboard which al
 
 ### Fixed Bugs
 
-#### Replace For-Loop with ```Stream::findFirst```
+#### Replace For-Loop with `Stream::findFirst`
 
-* Identifying cases where the argument's type of the orElse invocation is not cast compatible with the stream type.
+* Identifying cases where the argument's type of the `orElse` invocation is not cast compatible with the stream type.
 
 #### Use Multi Catch
 
-* Verifying that the types of the arguments in overloaded methods are not changed after merging the Catch clauses.
+* Verifying that the types of the arguments in overloaded methods are not changed after merging the `catch` clauses.
 
 #### Replace Expression Lambda with Method Reference
 
@@ -33,7 +33,7 @@ The old welcome screen was removed due to the presence of the dashboard which al
 
 #### Remove Lambda Expression Parenthesis
 
-* Avoid introducing implicit return types when converting a lambda 'single-body-statement' (i.e. lambda statements whose body consist of a block with a single statement) to a lambda expression (i.e. a lambda statement whose body consist of a single expression).
+* Avoid introducing implicit return types when converting a lambda 'single-body-statement' (i.e., lambda statements whose body consist of a block with a single statement) to a lambda expression (i.e., a lambda statement whose body consist of a single expression).
 
 #### Replace static final Collections with Collections.unmodifiable...()
 
