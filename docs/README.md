@@ -22,9 +22,9 @@ You can execute it as part of your development process as an Eclipse IDE plugin 
 * [jSparrow Maven plugin](maven/getting-started.html)
 * [jSparrow GitHub App](github/getting-started.html)
 
-## jSparrow 3.0.0 has been released!
+## jSparrow 3.1.0 has been released!
 
-This brings free rules! See [Release Notes](/eclipse/release-notes.html#_3-0-0). 
+We are now supporting the latest Eclipse version! See [Release Notes](/eclipse/release-notes.html#_3-1-0). 
 
 ## Statistical Data
 
