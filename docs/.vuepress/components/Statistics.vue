@@ -2,11 +2,11 @@
 <div>
 
   <div class="tab" v-on:load="openFirstProject()">
-    <button class="tablinks" v-for="(project, index) in statistics" v-bind:id="index" v-on:click="openProject(index, project.projectName)"> {{project.projectName}}
+    <button class="tablinks" v-for="(project, index) in statistics" v-bind:id="project.projectName" v-on:click="openProject(index, project.projectName)"> {{project.projectName}}
             </button>
   </div>
 
-  <div v-for="(project, index) in statistics" v-bind:id="project.projectName" class="tabcontent">
+  <div v-for="(project, index) in statistics" v-bind:id="index" class="tabcontent">
 
     <h2>jSparrow results for {{project.projectName}}</h2>
 
@@ -137,24 +137,30 @@ export default {
       }
 
       // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(project).style.display = "block";
-      document.getElementById(index).className += " active";
+      document.getElementById(index).style.display = "block";
+      document.getElementById(project).className += " active";
+
+      this.updateAddressBar(project);
+    },
+    updateAddressBar: function(project) {
+      // Clear all query strings on the address bar
+      var uri = window.location.toString();
+      var index = uri.length;
+      if (uri.indexOf("?") > 0) {
+        index =  uri.indexOf("?");
+      }
+      var clean_uri = uri.substring(0, index) + "?p=" + project;
+      window.history.replaceState({}, document.title, clean_uri);
     },
     openFirstProject: function() {
       var urlParams = new URLSearchParams(window.location.search);
-      var id = urlParams.get('id');
-      if(id == null || id >= this.statistics.length) {
-        id = 0;
+      var id = urlParams.get('p');
+      if(id == null || !this.statistics.some(item => item.projectName === id)) {
+        id = this.statistics[0].projectName;
       }
+      
       document.getElementById(id).click();
-
-      // Clear all query strings on the address bar
-      var uri = window.location.toString();
-      if (uri.indexOf("?") > 0) {
-          var clean_uri = uri.substring(0, uri.indexOf("?"));
-          window.history.replaceState({}, document.title, clean_uri);
-      }
-
+      this.updateAddressBar(id);
     },
     secondsToHms: function(d) {
       d = Number(d);
