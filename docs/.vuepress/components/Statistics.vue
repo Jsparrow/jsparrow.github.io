@@ -141,7 +141,20 @@ export default {
       document.getElementById(index).className += " active";
     },
     openFirstProject: function() {
-      document.getElementById("0").click();
+      var urlParams = new URLSearchParams(window.location.search);
+      var id = urlParams.get('id');
+      if(id == null || id >= this.statistics.length) {
+        id = 0;
+      }
+      document.getElementById(id).click();
+
+      // Clear all query strings on the address bar
+      var uri = window.location.toString();
+      if (uri.indexOf("?") > 0) {
+          var clean_uri = uri.substring(0, uri.indexOf("?"));
+          window.history.replaceState({}, document.title, clean_uri);
+      }
+
     },
     secondsToHms: function(d) {
       d = Number(d);
