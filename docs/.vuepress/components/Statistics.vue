@@ -45,7 +45,7 @@
     <table class="table-hover">
       <thead>
         <tr>
-          <th>Rule ID</th>
+          <th>Rule Name</th>
           <th>Issues Fixed</th>
           <th>Files Changed</th>
           <th>Time saved</th>
@@ -53,7 +53,7 @@
       </thead>
       <tbody>
         <tr v-for="(item, idx) in project.rules">
-          <td>{{ item.ruleId }}</td>
+          <td> <a v-bind:href=findRuleLink(item.ruleId) target="_blank"> {{findRuleName(item.ruleId)}} </a></td>
           <td>{{ item.issuesFixedCount }}</td>
           <td>{{ item.fileCount }}</td>
           <td>{{ secondsToHms(item.remediationCost * item.issuesFixedCount *60) }}</td>
@@ -167,6 +167,14 @@ export default {
       var mDisplay = m + (m == 1 ? " minute" : " minutes");
       var sDisplay = s > 0 ? ", " + s + (s == 1 ? " second" : " seconds") : "";
       return hDisplay + mDisplay + sDisplay;
+    }, 
+    findRuleName: function(id) {
+      var rule = this.ruleNameMap[id];
+      return rule.name;
+    },
+    findRuleLink: function(id) {
+      var rule = this.ruleNameMap[id];
+      return  "../" + rule.url;
     }
   },
 
@@ -179,7 +187,10 @@ export default {
   data() {
     return {
       statistics: 
-        require('../statistics.js')
+        require('../statistics.js'), 
+      ruleNameMap:
+        require('../rule-name-map.js')
+
     };
   }
 };
