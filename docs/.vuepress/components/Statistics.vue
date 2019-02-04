@@ -2,11 +2,11 @@
 <div>
 
   <div class="tab" v-on:load="openFirstProject()">
-    <button class="tablinks" v-for="(project, index) in statistics" v-bind:id="index" v-on:click="openProject(index, project.projectName)"> {{project.projectName}}
+    <button class="tablinks" v-for="(project, index) in statistics" v-bind:id="project.projectName" v-on:click="openProject(index, project.projectName)"> {{project.projectName}}
             </button>
   </div>
 
-  <div v-for="(project, index) in statistics" v-bind:id="project.projectName" class="tabcontent">
+  <div v-for="(project, index) in statistics" v-bind:id="index" class="tabcontent">
 
     <h2>jSparrow results for {{project.projectName}}</h2>
 
@@ -45,7 +45,7 @@
     <table class="table-hover">
       <thead>
         <tr>
-          <th>Rule ID</th>
+          <th>Rule Name</th>
           <th>Issues Fixed</th>
           <th>Files Changed</th>
           <th>Time saved</th>
@@ -53,7 +53,7 @@
       </thead>
       <tbody>
         <tr v-for="(item, idx) in project.rules">
-          <td>{{ item.ruleId }}</td>
+          <td> <a v-bind:href=findRuleLink(item.ruleId) target="_blank"> {{findRuleName(item.ruleId)}} </a></td>
           <td>{{ item.issuesFixedCount }}</td>
           <td>{{ item.fileCount }}</td>
           <td>{{ secondsToHms(item.remediationCost * item.issuesFixedCount *60) }}</td>
@@ -137,11 +137,30 @@ export default {
       }
 
       // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(project).style.display = "block";
-      document.getElementById(index).className += " active";
+      document.getElementById(index).style.display = "block";
+      document.getElementById(project).className += " active";
+
+      this.updateAddressBar(project);
+    },
+    updateAddressBar: function(project) {
+      // Clear all query strings on the address bar
+      var uri = window.location.toString();
+      var index = uri.length;
+      if (uri.indexOf("?") > 0) {
+        index =  uri.indexOf("?");
+      }
+      var clean_uri = uri.substring(0, index) + "?p=" + project;
+      window.history.replaceState({}, document.title, clean_uri);
     },
     openFirstProject: function() {
-      document.getElementById("0").click();
+      var urlParams = new URLSearchParams(window.location.search);
+      var id = urlParams.get('p');
+      if(id == null || !this.statistics.some(item => item.projectName === id)) {
+        id = this.statistics[0].projectName;
+      }
+      
+      document.getElementById(id).click();
+      this.updateAddressBar(id);
     },
     secondsToHms: function(d) {
       d = Number(d);
@@ -154,6 +173,14 @@ export default {
       var mDisplay = m + (m == 1 ? " minute" : " minutes");
       var sDisplay = s > 0 ? ", " + s + (s == 1 ? " second" : " seconds") : "";
       return hDisplay + mDisplay + sDisplay;
+    }, 
+    findRuleName: function(id) {
+      var rule = this.ruleNameMap[id];
+      return rule.name;
+    },
+    findRuleLink: function(id) {
+      var rule = this.ruleNameMap[id];
+      return  "../" + rule.url;
     }
   },
 
@@ -166,7 +193,10 @@ export default {
   data() {
     return {
       statistics: 
-        require('../statistics.js')
+        require('../statistics.js'), 
+      ruleNameMap:
+        require('../rule-name-map.js')
+
     };
   }
 };
