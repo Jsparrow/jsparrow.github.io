@@ -10,9 +10,12 @@
   "author": "Martin Huter <martin.huter@splendit.at>",
   "license": "MIT",
   "dependencies": {
-    "vuepress": "^0.14.4"
+    "jshint": "^2.9.7",
+    "vuepress": "^0.14.4",
+    "vee-validate": "^2.1.7"
   },
   "devDependencies": {
-    "jshint": "^2.9.7"
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
   }
 }
