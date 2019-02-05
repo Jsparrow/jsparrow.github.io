@@ -34,7 +34,7 @@ The plugin is activated with a right-click in the editor or the package tree. Th
 
 ## Selection of rules
 
-After the execution of “Select Rules” a selection window is opened, where rule can be selected to be apply.
+After the execution of “Select Rules” a selection window is opened, where rules to be applied can be selected.
 
 [ ![Select rules wizard](/img/eclipse/select_rules_wizard.png) ](/img/eclipse/select_rules_wizard.png)
 
