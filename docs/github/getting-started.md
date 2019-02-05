@@ -30,7 +30,7 @@ The jSparrow GitHub App can be installed directly on organizations and user acco
 
 You can install apps from the GitHub Marketplace to use in your personal account or in your organization. To install the jSparrow GitHub App, please follow these simple steps:  
 
-1. Open the provided link for the beta version in your browser.
+1. Open the [link](https://github.com/apps/jsparrow-app) for the beta version in your browser.
 2. Click on the Install button.
 3. Choose the location for the installation. Decide and select whether you want to install the app on your personal account, or as an organization account.
 4. The app requires access to repositories. You have to decide whether to grant the app access to all of your repositories, or just to certain repositories, then select `All repositories` or `Only selected repositories` accordingly.
