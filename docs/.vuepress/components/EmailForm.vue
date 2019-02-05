@@ -80,13 +80,13 @@ export default {
       return re.test(email);
     },
     sendRegistration: function() {
-      console.log(JSON.stringify(JSON.parse(JSON.stringify(this.registeration))));
+      console.log(JSON.stringify(this.registeration));
        const Url ='http://localhost:3000/starter/create';
        const otherPram={
            headers:{
              "content-type":"application/json; charset=UTF-8"
            },
-           body:JSON.stringify(JSON.parse(JSON.stringify(this.registeration))),
+           body:JSON.stringify(this.registeration),
            method:"POST",
            mode: "no-cors"
        };
