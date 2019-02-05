@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     title: 'jSparrow Documentation',
     head: [
@@ -45,6 +47,13 @@ module.exports = {
     markdown: {
         toc: {
             includeLevel: [2, 3, 4]
+        }
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@styles':  path.resolve(__dirname, './styles')
+            }
         }
     }
 };

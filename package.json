@@ -10,7 +10,9 @@
   "author": "Martin Huter <martin.huter@splendit.at>",
   "license": "MIT",
   "dependencies": {
-    "jshint": "^2.9.7",
     "vuepress": "^0.14.4"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.7"
   }
 }
