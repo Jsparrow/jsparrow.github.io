@@ -8,82 +8,89 @@
       novalidate="true"
       enctype="application/json"
     >
-      <vue-input
+      <div>
+        <vue-input
           name="firstName"
-          id="firstName1"
+          id="firstName"
           required
           placeholder="First Name"
           validation="required"
           v-model="registeration.firstName"
         />
-
-
-      <p>
-        <label for="firstName">First name</label>
-        <input
-          data-vv-as="First Name"
-          id="firstName"
-          v-model="registeration.firstName"
-          type="text"
-          name="firstName"
-          v-validate="'required'"
-        >
-        <span>{{ errors.first('firstName') }}</span>
-      </p>
-
-      <p>
-        <label for="lastName">Last Name</label>
-        <input
-          id="lastName"
-          v-model="registeration.lastName"
-          type="text"
+      </div>
+      <div>
+        <vue-input
           name="lastName"
-          v-validate="'required'"
-        >
-        <span>{{ errors.first('lastName') }}</span>
-      </p>
+          id="lastName"
+          required
+          placeholder="Last Name"
+          validation="required"
+          v-model="registeration.lastName"
+        />
+      </div>
 
-      <p>
-        <label for="company">Company</label>
-        <input id="company" v-model="registeration.company" type="text" name="company">
-      </p>
+      <div>
+        <vue-input
+          name="company"
+          id="company"
+          placeholder="Company"
+          v-model="registeration.company"
+        />
+      </div>
 
-      <p>
-        <label for="email">Email</label>
-        <input
-          id="email"
-          v-model="registeration.email"
-          type="email"
-          name="email"
-          v-validate="'required|email'"
-        >
-        <span>{{ errors.first('email') }}</span>
-      </p>
+      <div>
+        <vue-input
+      name="email"
+      id="email"
+      required
+      type="email"
+      placeholder="E-mail"
+      validation="required|email"
+      v-model="registeration.email"
+      />
 
-      <p>
-        <label for="dsgvo">dsgvo</label>
-        <input type="checkbox" id="dsgvo" v-model="registeration.dsgvo" checked>
-      </p>
+      </div>
 
+<div>
+      <vue-checkbox
+          name="dsgvo"
+          id="dsgvo"
+          v-model="registeration.dsgvo"
+          label="I accept dsgvo"
+          validation="required"
+          required
+        />
+</div>
+<div>
+         <vue-checkbox
+          name="license"
+          id="license"
+          v-model="registeration.license"
+          label="I accept the terms"
+          validation="required"
+          required
+        />
+</div>
+<div>
+         <vue-checkbox
+          name="newsletter"
+          id="newsletter"
+          v-model="registeration.newsletter"
+          label="I want newsletter"
+        />
+</div>
       <p>
-        <label for="license">license</label>
-        <input type="checkbox" id="license" v-model="registeration.license" checked>
-      </p>
-
-      <p>
-        <label for="newsletter">Newsletter</label>
-        <input type="checkbox" id="newsletter" v-model="registeration.newsletter" checked>
-      </p>
-
-      <p>
-        <input type="submit" value="Submit" :disabled="isSubmitDisabled">
+        <vue-button color="primary" :disabled="isSubmitDisabled" :loading="isLoading"> Save </vue-button>
       </p>
     </form>
   </div>
 </template>
 
 <script>
+import VueInput from "./VueInput.vue";
+
 export default {
+  components: { VueInput },
   data() {
     return {
       registeration: {
@@ -94,7 +101,8 @@ export default {
         dsgvo: false,
         license: false,
         newsletter: true
-      }
+      },
+      isLoading: false
     };
   },
   computed: {
@@ -108,7 +116,7 @@ export default {
       let hasEmptyField = false;
       Object.keys(this.registeration).forEach(key => {
         if (
-          key !== "newsletter" &&
+          key !== "newsletter" && key !== "company" &&
           (this.registeration[key] === "" || this.registeration[key] === false)
         ) {
           hasEmptyField = true;
@@ -120,30 +128,8 @@ export default {
   methods: {
     checkForm: function(e) {
       e.preventDefault();
-      // this.errors = [];
 
-      // if (!this.registeration.firstName) {
-      //   this.errors.push("Firstname required.");
-      // }
-      // if (!this.registeration.lastName) {
-      //   this.errors.push("Lastname required.");
-      // }
-      // if (!this.registeration.email) {
-      //   this.errors.push("Email required.");
-      // } else if (!this.validEmail(this.registeration.email)) {
-      //   this.errors.push("Valid email required.");
-      // }
-
-      // if (!this.errors.length) {
       //   this.sendRegistration();
-
-      //   return true;
-      // }
-      console.log(this.errors);
-    },
-    validEmail: function(email) {
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(email);
     },
     sendRegistration: function() {
       console.log(JSON.stringify(this.registeration));
@@ -170,5 +156,5 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style>
 </style>

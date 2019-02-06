@@ -137,114 +137,87 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" module>
 @import '~@styles/styles';
-.vueInput {
-  position: relative;
-  margin: $input-margin;
-
+  
+.vueInput
+  position: relative
+  margin: $input-margin
   input,
   input:active,
   input:focus,
-  input:hover {
-    outline: none !important;
-  }
-  input {
-    background-color: $input-background-color;
-    border: none;
-    border-bottom: $input-border-bottom;
-    padding: $input-padding;
-    display: block;
-    width: 100%;
-    font-family: $input-font-family;
-    font-size: $input-font-size;
-    font-weight: $input-font-weight;
-    color: $input-color;
-    height: $input-height;
-    border-radius: 0;
-  }
+  input:hover
+    outline: none !important
+  input
+    background-color: $input-background-color
+    border: none
+    border-bottom: $input-border-bottom
+    padding: $input-padding
+    display: block
+    width: 100%
+    font-family: $input-font-family
+    font-size: $input-font-size
+    font-weight: $input-font-weight
+    color: $input-color
+    height: $input-height
+    border-radius: 0
   input:focus ~ label,
-  input.hasValue ~ label {
-    top: -($space-unit * 2.5);
-    font-size: $input-placeholder-active-font-size;
-    font-weight: $input-placeholder-active-font-weight;
-    color: $input-placeholder-active-font-color;
-    height: $input-placeholder-active-height;
-  }
+  input.hasValue ~ label
+    top: -($space-unit * 2.5)
+    font-size: $input-placeholder-active-font-size
+    font-weight: $input-placeholder-active-font-weight
+    color: $input-placeholder-active-font-color
+    height: $input-placeholder-active-height
   input:focus ~ .bar:before,
-  input:focus ~ .bar:after {
-    width: 50%;
-  }
-
-  label {
-    color: $input-placeholder-color;
-    font-size: $input-placeholder-font-size;
-    font-weight: $input-placeholder-font-weight;
-    position: absolute;
-    pointer-events: none;
-    top: $input-placeholder-top;
-    transition: 0.2s ease all;
-  }
-}
-
-.error {
-  label {
-    color: $input-error-color;
-  }
-  input {
-    border-bottom-color: $input-error-color;
-  }
+  input:focus ~ .bar:after
+    width: 50%
+  label
+    color: $input-placeholder-color
+    font-size: $input-placeholder-font-size
+    font-weight: $input-placeholder-font-weight
+    position: absolute
+    pointer-events: none
+    top: $input-placeholder-top
+    transition: 0.2s ease all
+.error
+  label
+    color: $input-error-color
+  input
+    border-bottom-color: $input-error-color
   input:focus ~ label,
-  input.hasValue ~ label {
-    color: $input-error-color;
-  }
-
-  .bar {
+  input.hasValue ~ label
+    color: $input-error-color
+  .bar
     &:before,
-    &:after {
-      background: $input-error-color;
-    }
-  }
-
-  .message {
-    color: $input-error-color;
-  }
-}
-
-.bar {
-  position: relative;
-  display: block;
-  width: 100%;
-
+    &:after
+      background: $input-error-color
+  .message
+    color: $input-error-color
+.bar
+  position: relative
+  display: block
+  width: 100%
   &:before,
-  &:after {
-    content: '';
-    height: $input-bar-height;
-    width: 0;
-    bottom: 0;
-    position: absolute;
-    background: $input-bar-color;
-    transition: all 0.2s ease-in-out;
-  }
-  &:before {
-    left: 50%;
-  }
-  &:after {
-    right: 50%;
-  }
-}
-
-.message {
-  display: block;
-  height: $input-message-height;
-  padding: $input-message-padding;
-  position: relative;
-  color: $input-message-color;
-  font-size: $input-message-font-size;
-  font-weight: $input-message-font-weight;
-}
-
-.disabled {
-  opacity: 0.6;
-}
+  &:after
+    content: ''
+    height: $input-bar-height
+    width: 0
+    bottom: 0
+    position: absolute
+    background: $input-bar-color
+    transition: all 0.2s ease-in-out
+  &:before
+    left: 50%
+  &:after
+    right: 50%
+.message
+  display: block
+  height: $input-message-height
+  padding: $input-message-padding
+  position: relative
+  color: $input-message-color
+  font-size: $input-message-font-size
+  font-weight: $input-message-font-weight
+.disabled
+  opacity: 0.6
 </style>
