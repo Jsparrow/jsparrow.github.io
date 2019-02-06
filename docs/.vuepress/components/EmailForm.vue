@@ -1,144 +1,114 @@
 <template>
-  <div class="container">
-    <form
-      id="app"
-      action="http://127.0.0.1:3000/starter/create/"
-      @submit="checkForm"
-      method="post"
-      novalidate="true"
-      enctype="application/json"
-    >
-      <div>
-        <vue-input
-          name="firstName"
-          id="firstName"
-          required
-          placeholder="First Name"
-          validation="required"
-          v-model="registeration.firstName"
-        />
-      </div>
-      <div>
-        <vue-input
-          name="lastName"
-          id="lastName"
-          required
-          placeholder="Last Name"
-          validation="required"
-          v-model="registeration.lastName"
-        />
-      </div>
+  <v-app>
+    <v-form ref="form" v-model="valid" lazy-validation>
+      <v-text-field
+        v-model="registration.firstName"
+        :counter="15"
+        :rules="firstNameRules"
+        label="First Name*"
+        required
+      ></v-text-field>
 
-      <div>
-        <vue-input
-          name="company"
-          id="company"
-          placeholder="Company"
-          v-model="registeration.company"
-        />
-      </div>
+      <v-text-field
+        v-model="registration.lastName"
+        :counter="15"
+        :rules="lastNameRules"
+        label="Last Name*"
+        required
+      ></v-text-field>
 
-      <div>
-        <vue-input
-      name="email"
-      id="email"
-      required
-      type="email"
-      placeholder="E-mail"
-      validation="required|email"
-      v-model="registeration.email"
-      />
+      <v-text-field v-model="registration.company" label="Company"></v-text-field>
 
-      </div>
+      <v-text-field v-model="registration.email" :rules="emailRules" label="Email*" required></v-text-field>
 
-<div>
-      <vue-checkbox
-          name="dsgvo"
-          id="dsgvo"
-          v-model="registeration.dsgvo"
-          label="I accept dsgvo"
-          validation="required"
-          required
-        />
-</div>
-<div>
-         <vue-checkbox
-          name="license"
-          id="license"
-          v-model="registeration.license"
-          label="I accept the terms"
-          validation="required"
-          required
-        />
-</div>
-<div>
-         <vue-checkbox
-          name="newsletter"
-          id="newsletter"
-          v-model="registeration.newsletter"
-          label="I want newsletter"
-        />
-</div>
-      <p>
-        <vue-button color="primary" :disabled="isSubmitDisabled" :loading="isLoading"> Save </vue-button>
-      </p>
-    </form>
-  </div>
+      <v-checkbox
+        v-model="registration.dsgvo"
+        :rules="[v => !!v || 'Dsgvo musst be accepted!']"
+        required
+      >
+        <span slot="label">
+          By clicking on the checkbox you confirm that you have read and understoof the
+          <a @click.stop href="https://jsparrow.eu/gdpr/" target="_blank">
+          Data Protection Declaration</a> and that you agree to all points listed therein.
+        </span>
+      </v-checkbox>
+
+      <v-checkbox
+        v-model="registration.license"
+        :rules="[v => !!v || 'License musst be accepted!']"
+        required
+      >
+        <span slot="label">
+          I agree with the terms and conditions of 
+          <a @click.stop href="https://jsparrow.eu/eula/" target="_blank">
+          the License Agreement</a>
+        </span>
+      </v-checkbox>
+
+      <v-checkbox v-model="registration.newsletter" 
+      label="I agree to receive the jSparrow newsletter about new product features,
+       special offers and interesting information about Java refactoring and improving code quality"></v-checkbox>
+
+      <v-btn :disabled="!valid" color="success" @click="validate">Send</v-btn>
+
+      <v-btn color="error" @click="reset">Reset Form</v-btn>
+    </v-form>
+  </v-app>
 </template>
 
 <script>
-import VueInput from "./VueInput.vue";
-
 export default {
-  components: { VueInput },
-  data() {
-    return {
-      registeration: {
-        firstName: "",
-        lastName: "",
-        email: "",
-        company: "",
-        dsgvo: false,
-        license: false,
-        newsletter: true
-      },
-      isLoading: false
-    };
-  },
-  computed: {
-    hasErrors() {
-      return this.errors && this.errors.items.length > 0;
+  data: () => ({
+    registration: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      company: "",
+      dsgvo: false,
+      license: false,
+      newsletter: true
     },
-    isSubmitDisabled() {
-      return this.hasErrors || this.hasEmptyFields;
-    },
-    hasEmptyFields() {
-      let hasEmptyField = false;
-      Object.keys(this.registeration).forEach(key => {
-        if (
-          key !== "newsletter" && key !== "company" &&
-          (this.registeration[key] === "" || this.registeration[key] === false)
-        ) {
-          hasEmptyField = true;
-        }
-      });
-      return hasEmptyField;
-    }
-  },
+    valid: true,
+    firstNameRules: [
+      v => !!v || "First name is required",
+      v => (v && v.length <= 15) || "Name must be less than 15 characters"
+    ],
+    lastNameRules: [
+      v => !!v || "Last name is required",
+      v => (v && v.length <= 15) || "Name must be less than 15 characters"
+    ],
+    email: "",
+    emailRules: [
+      v => !!v || "E-mail is required",
+      v => /.+@.+/.test(v) || "E-mail must be valid"
+    ]
+  }),
   methods: {
-    checkForm: function(e) {
-      e.preventDefault();
-
-      //   this.sendRegistration();
+    validate() {
+      if (this.$refs.form.validate()) {
+        console.log(this.registration);
+        console.log(JSON.stringify(this.registration));
+        this.sendRegistration();
+      }
+    },
+    reset() {
+      this.registration.firstName = "";
+      this.registration.lastName = "";
+      this.registration.email = "";
+      this.registration.company = "";
+      this.registration.dsgvo = false;
+      this.registration.license = false;
+      this.registration.newsletter = true;
+      this.$refs.form.resetValidation();
     },
     sendRegistration: function() {
-      console.log(JSON.stringify(this.registeration));
+      console.log(JSON.stringify(this.registration));
       const Url = "http://localhost:3000/starter/create";
       const otherPram = {
         headers: {
           "content-type": "application/json; charset=UTF-8"
         },
-        body: JSON.stringify(this.registeration),
+        body: JSON.stringify(this.registration),
         method: "POST",
         mode: "no-cors"
       };
@@ -157,4 +127,7 @@ export default {
 </script>
 
 <style>
+.theme--light.application {
+  background: #ffffff;
+}
 </style>

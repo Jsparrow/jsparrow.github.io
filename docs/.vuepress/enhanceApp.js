@@ -1,4 +1,7 @@
 import VeeValidate from 'vee-validate';
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
+import 'material-design-icons-iconfont/dist/material-design-icons.css';
 
 export default ({
     Vue, // the version of Vue being used in the VuePress app
@@ -7,4 +10,5 @@ export default ({
     siteData // site metadata
   }) => {
     Vue.use(VeeValidate);
+    Vue.use(Vuetify);
   }
