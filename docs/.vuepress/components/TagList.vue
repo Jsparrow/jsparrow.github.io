@@ -26,16 +26,18 @@ export default {
       for (let page of this.$site.pages) {
         for (let index in page.frontmatter.tags) {
           const tag = page.frontmatter.tags[index]
-          if(tag != "Rule") {
-            if (tag in tags) {
-              tags[tag].push(page)
-            } else {
-              tags[tag] = [page]
-            }
+          if (tag in tags) {
+            tags[tag].push(page)
+          } else {
+            tags[tag] = [page]
           }
         }
       }
-      return tags
+      let orderedTags = {};
+      Object.keys(tags).sort().forEach(function(key) {
+        orderedTags[key] = tags[key];
+      })
+      return orderedTags;
     }
   }, 
 

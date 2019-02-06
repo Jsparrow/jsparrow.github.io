@@ -2,7 +2,7 @@
 title: Use Multi Catch
 description:
     Java 7 introduced the possibility to merge multiple catch clauses into a single multi-catch clause. Merging is only possible if the catch statements are identical.
-tags: ["Rule", "Java 7", "Old Language Constructs", "Readability"]
+tags: ["Java 7", "Old Language Constructs", "Readability"]
 ---
 
 # Use Multi Catch

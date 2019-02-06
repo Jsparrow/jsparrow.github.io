@@ -2,7 +2,7 @@
 title: Use Optional::ifPresent
 description:
     The usage of  Optional.get should be avoided in general because it can potentially throw a NoSuchElementException (it is likely to be deprecated in future releases).  It is often the case that the invocation of Optional.get is wrapped by a condition that uses  Optional.isPresent. Such cases can be replaced with the Optional.ifPresent(Consumer<? super T> consumer).
-tags: ["Rule", "Java 8", "Old Language Constructs", "Lambda"]
+tags: ["Java 8", "Old Language Constructs", "Lambda"]
 ---
 
 # Use Optional::ifPresent

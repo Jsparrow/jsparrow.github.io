@@ -2,7 +2,7 @@
 title: Use String Literals
 description:
     Removes all class instantiations from String if its parameter is empty or a String.
-tags: ["Rule", "Java 1.1", "String Manipulation", "Performance"]
+tags: ["Java 1.1", "String Manipulation", "Performance"]
 ---
 
 # Use String Literals
