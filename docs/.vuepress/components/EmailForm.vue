@@ -126,7 +126,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+@import '../../../node_modules/vuetify/dist/vuetify.min.css';
+@import '../../../node_modules/material-design-icons-iconfont/dist/material-design-icons.css';
+
 .theme--light.application {
   background: #ffffff;
 }

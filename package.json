@@ -12,10 +12,12 @@
   "dependencies": {
     "material-design-icons-iconfont": "^4.0.4",
     "vue": "^2.6.2",
-    "vuepress": "^0.14.4",
+    "vuepress": "^0.14.5",
     "vuetify": "^1.5.0"
   },
   "devDependencies": {
-    "jshint": "^2.9.7"
+    "jshint": "^2.9.7",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
   }
 }

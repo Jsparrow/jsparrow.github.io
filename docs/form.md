@@ -2,6 +2,6 @@
 title: Email registration
 ---
 
-# Register-yourself for jSparrow Starter
+# Register for jSparrow Starter
 
 <EmailForm />
