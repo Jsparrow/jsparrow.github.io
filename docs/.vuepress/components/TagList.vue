@@ -1,9 +1,9 @@
 <template lang="html">
   <div>
     <span v-for="tag in Object.keys(tags)">
-      <h2 :id="tag">
+      <h2 :id="findTagId(tag)">
         <router-link
-          :to="{ path: `/tags.html#${tag}`}"
+          :to="{ path: findPath(tag)}"
           class="header-anchor"
           aria-hidden="true">#</router-link>
         {{tag}}
@@ -33,7 +33,22 @@ export default {
           }
         }
       }
-      return tags
+      let orderedTags = {};
+      Object.keys(tags).sort().forEach(function(key) {
+        orderedTags[key] = tags[key];
+      })
+      return orderedTags;
+    }
+  }, 
+
+  methods: {
+    findTagId : function(tag) {
+      // this regex is always used to create a unique id for a tag
+      var id = tag.replace(/[^A-Z0-9]+/ig, "_");
+      return id;
+    }, 
+    findPath : function(tag) {
+      return `/tags.html#` + this.findTagId(tag);
     }
   }
 }

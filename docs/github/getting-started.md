@@ -1,3 +1,8 @@
+---
+title: Getting started
+sidebarDepth: 2
+---
+
 # Getting started
 
 [[toc]]
@@ -49,48 +54,65 @@ You can install apps from the GitHub Marketplace to use in your personal account
 2. Wait until jSparrow finishes and pushes back changes
 3. Review the results
 
-### Configuration
+### Rule selection and configuration
 
-To configure which rules should be applied, use a configuration file named `jsparrow.yml`. Place this file in your project's root directory. If the configuration file is not present there, the default configuration will be used. If the configuration file has errors, an exception will be thrown and refactorings will not be executed.
+To configure which rules should be applied, use the configuration file (`jsparrow.yml`). Place this file in your project's root directory.
+The child projects will inherit the parent's configuration, unless another `jsparrow.yml` is placed in their base directory. If the configuration file is not present and no configuration is inherited from parents, the JMP will use the default configuration. If the configuration file has errors, an exception will be thrown and the JMP will terminate.
+
+The `jsparrow.yml` file consists of three optional sections.
+The first section contains the profiles definition.
+To define a profile you should specify its name, the list of rules included in the profile and their configuration if any applies (e.g., configuration for [LoggerRule](/rules/standard-logger.html) and [RenamingRule](/rules/rename-fields.html)).
+Any number of profiles can be defined. The profile to be used for refactoring should be designated with the `selectedProfile` key.
+
+The second section contains a list of rules which will be used for refactoring if no profile is designated as `selectedProfile`.
+Similarly as in profile definition, the list of rules can be followed by the rule configuration if any is required.
+
+The third section under `excludes` node consists of the modules, packages and classes that shall not be refactored by JMP. If no `excludes` are defined, JMP will refactor the entire main resources of the project.
+This section will only be recognized in the `yml` file in the root project, i.e., in any `yml` file placed in child projects the `excludes` section will be discarded.
+
+The following is an example of a `jsparrow.yml` configuration file:
 
 ```yaml
-# specify one of the profiles declared below as the selected profile.  
-# if the selectedProfile is not specified the rules in the “rules:” section will be applied  
+# Specify one of the profiles declared below as the selected profile.  
+# If the selectedProfile is not specified the rules in the “rules:” section
+# will be applied  
 selectedProfile: profile1  
 
 # define profiles here  
 profiles:  
  - name: profile1  
- rules:  
-   - TryWithResource
-   - MultiCatch
-   - FieldRenaming
-   - StandardLogger
+   rules:  
+    - TryWithResource
+    - MultiCatch
+    - FieldRenaming
+    - StandardLogger
 
-# configuration for LoggerRule and RenamingRule can be placed together with profile in which rules are included.   
-# if there is no additional configuration for those rules when they are included in the list of rules for the profile, default values are used.   
-# following is the configuration sample with default values set  
- loggerRule:  
-   systemOutReplaceOption: INFO  
-   systemErrReplaceOption: ERROR  
-   printStacktraceReplaceOption: ERROR  
-   systemOutPrintExceptionReplaceOption: INFO  
-   systemErrPrintExceptionReplaceOption: ERROR  
-   addMissingLoggingStatement: ERROR  
-   attachExceptionObject: true  
- renamingRule:  
-   fieldTypes:  
-     - private
-     - protected
-     - package-protected
-     - public
-   underscoreReplacementOption: Upper  
-   dollarReplacementOption: Leave  
+# The configuration for LoggerRule and RenamingRule can be placed together
+# with the profile in which the rules are included. If the configuration
+# within the profile is missing, then the default values are used. The
+# following is a configuration sample with default values  
+  loggerRule:  
+    systemOutReplaceOption: INFO  
+    systemErrReplaceOption: ERROR  
+    printStacktraceReplaceOption: ERROR  
+    systemOutPrintExceptionReplaceOption: INFO  
+    systemErrPrintExceptionReplaceOption: ERROR  
+    addMissingLoggingStatement: ERROR  
+    attachExceptionObject: true  
+  renamingRule:  
+    fieldTypes:  
+      - private
+      - protected
+      - package-protected
+      - public
+    underscoreReplacementOption: Upper  
+    dollarReplacementOption: Leave  
 
-# rules in this section will be executed, if no profile has been specified as selectedProfile or via maven.  
-# to deactivate rules, they could be commented with the #-sign  
-# configuration for RenamingRule and LoggerRule in this section can be made same way as in the configuration in profiles, under the rules section.   
-# this configuration is used if no profile is selected and rules are listed in rules section  
+# The rules in this section will be executed, if no profile has been
+# specified as selectedProfile or via maven. To deactivate rules, they can be
+# commented with the #-sign. The configuration for RenamingRule and LoggerRule
+# in this section can be done the same way as in the configuration
+# in profiles, under the rules section.
 rules:
   - TryWithResource
   - MultiCatch
@@ -113,9 +135,11 @@ renamingRule:
   underscoreReplacementOption: Upper  
   dollarReplacementOption: Leave  
 
-# define modules, classes and packages that you don't want to apply refactoring to  
-# excluded modules could only be defined on parent project and those modules are then entirely ignored  
-# if module project has it's own yaml file, it overrides entire configuration from parent project yaml configuration if module wasn't excluded in parent yaml  
+# Define modules, classes and packages that you don't want to apply refactoring
+# to. Excluded modules can only be defined on the parent project and those modules
+# are then entirely ignored. If the module project has it's own yml file, it
+# overrides the entire configuration inherited from the yml configuration of
+# the parent project, unless it is an excluded module.
 excludes:    
     excludeModules:  
       - eu.jsparrow.core  

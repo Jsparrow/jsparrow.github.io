@@ -2,7 +2,7 @@
 title: Remove Double Negations
 description:
     Removes multiple negations from boolean expressions.
-tags: ["Rule", "Free", "Java 1.1", "Coding Conventions"]
+tags: ["Free", "Java 1.1", "Coding Conventions"]
 ---
 
 # Remove Double Negations

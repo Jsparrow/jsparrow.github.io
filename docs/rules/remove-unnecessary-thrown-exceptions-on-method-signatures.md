@@ -2,7 +2,7 @@
 title: Remove Unnecessary Thrown Exceptions on Method Signatures
 description:
     Removes the RuntimeExceptions, duplications and exceptions which are subtypes of already thrown exceptions on the method signatures.
-tags: ["Rule", "Free", "Java 1.1", "Readability"]
+tags: ["Free", "Java 1.1", "Readability"]
 ---
 
 # Remove Unnecessary Thrown Exceptions on Method Signatures

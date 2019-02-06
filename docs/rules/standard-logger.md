@@ -2,7 +2,7 @@
 title: System Out To Logging
 description:
     Replaces the standard output statements with logger statements when possible.
-tags: ["Rule", "Java 1.1", "Logging", "Old Language Constructs", "Conventions"]
+tags: ["Java 1.1", "Logging", "Old Language Constructs", "Coding Conventions"]
 ---
 
 # System Out To Logging

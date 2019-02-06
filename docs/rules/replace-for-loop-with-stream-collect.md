@@ -2,7 +2,7 @@
 title: Replace For-Loop with Stream::collect(Collectors.joining())
 description:
     This rule refactors the enhanced for loops which are only being used for concatenating the elements of collections or arrays.
-tags: ["Rule", "Java 5", "Java 8", "Loop", "Lambda", "Performance"]
+tags: ["Java 5", "Java 8", "Loop", "Lambda", "Performance"]
 ---
 
 # Replace For-Loop with Stream::collect(Collectors.joining())

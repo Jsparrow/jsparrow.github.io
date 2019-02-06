@@ -2,7 +2,7 @@
 title: Remove Inherited Interfaces from Class Declaration
 description:
     This rule removes interfaces from class declaration, which are already implemented by a super class. These interfaces are inherited from the super class.
-tags: ["Rule", "Java 1.1", "Conventions"]
+tags: ["Java 1.1", "Coding Conventions"]
 ---
 
 # Remove Inherited Interfaces from Class Declaration

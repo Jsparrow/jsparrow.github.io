@@ -2,7 +2,7 @@
 title: Use StringUtils Methods
 description:
     Replaces various String methods with their null-safe counterparts from StringUtils.
-tags: ["Rule", "Java 1.1", "String Manipulation"]
+tags: ["Java 1.1", "String Manipulation"]
 ---
 
 # Use StringUtils Methods

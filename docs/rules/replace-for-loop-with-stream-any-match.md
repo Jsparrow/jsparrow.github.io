@@ -3,7 +3,7 @@ title: Replace For-Loop with Stream::anyMatch
 description:
     Replaces occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with `Stream::anyMatch`.
     The stream syntax is more concise and improves readability.
-tags: ["Rule", "Java 8", "Lambda", "Loop"]
+tags: ["Java 8", "Lambda", "Loop"]
 ---
 
 # Replace For-Loop with Stream::anyMatch
