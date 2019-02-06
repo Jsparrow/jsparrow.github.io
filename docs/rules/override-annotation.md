@@ -2,7 +2,7 @@
 title: Use @Override Annotation
 description:
     This rule adds the @Override annotation to methods overriding or implementing parent class methods.
-tags: ["Rule", "Free", "Java 6", "Readability", "Conventions"]
+tags: ["Rule", "Free", "Java 6", "Readability", "Coding Conventions"]
 ---
 
 # Use @Override Annotation
