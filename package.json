@@ -10,14 +10,11 @@
   "author": "Martin Huter <martin.huter@splendit.at>",
   "license": "MIT",
   "dependencies": {
-    "jshint": "^2.9.7",
-    "material-design-icons-iconfont": "^4.0.4",
-    "vee-validate": "^2.1.7",
     "vuepress": "^0.14.4",
-    "vuetify": "^1.5.0"
+    "vuetify": "^1.5.0",
+    "material-design-icons-iconfont": "^4.0.4"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "jshint": "^2.9.7"
   }
 }

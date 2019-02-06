@@ -1,4 +1,3 @@
-import VeeValidate from 'vee-validate';
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 import 'material-design-icons-iconfont/dist/material-design-icons.css';
@@ -9,6 +8,5 @@ export default ({
     router, // the router instance for the app
     siteData // site metadata
   }) => {
-    Vue.use(VeeValidate);
     Vue.use(Vuetify);
   }
