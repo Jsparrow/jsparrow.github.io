@@ -1,5 +1,6 @@
 ---
 title: Getting started
+sidebarDepth: 2
 ---
 # Getting started
 
@@ -93,7 +94,7 @@ Rules can be grouped into profiles in jSparrow. The preferences concerning profi
 
 The default profile determines, which profile will be selected by default in the select rules window.
 ::: tip
-The default profile can still be changed during the rule selection process. 
+The default profile can still be changed during the rule selection process.
 For more information see [Setting the default profile](profiles.html#setting-the-default-profile).
 :::
 
@@ -112,8 +113,8 @@ Information about unsatisfied requirements will be shown in red color in the rul
 
 
 ## License key
-To update the jSparrow license, open the License Preference Page under "Window" -> "Preferences" -> "jSparrow" -> "License". 
-On Mac OS X this can be found under "Eclipse" -> "Preferences" -> "jSparrow" -> "License". 
+To update the jSparrow license, open the License Preference Page under "Window" -> "Preferences" -> "jSparrow" -> "License".
+On Mac OS X this can be found under "Eclipse" -> "Preferences" -> "jSparrow" -> "License".
 
 [ ![License Preference Page](/img/eclipse/license_preference_page.png) ](/img/eclipse/license_preference_page.png)
 

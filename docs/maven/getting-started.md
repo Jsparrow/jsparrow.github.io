@@ -1,3 +1,8 @@
+---
+title: Getting started
+sidebarDepth: 2
+---
+
 # Getting started
 
 [[toc]]
@@ -43,26 +48,26 @@ To use the jsparrow-maven-plugin on a project, add the following code snippet to
 
 ### Rule Selection
 
-To configure which rules should be applied, use the configuration file (`jsparrow.yml`). Place this file in your project's root directory. 
+To configure which rules should be applied, use the configuration file (`jsparrow.yml`). Place this file in your project's root directory.
 The child projects will inherit the parent's configuration, unless another `jsparrow.yml` is placed in their base directory. If the configuration file is not present and no configuration is inherited from parents, the JMP will use the default configuration. If the configuration file has errors, an exception will be thrown and the JMP will terminate.
 
-The `jsparrow.yml` file consists of three optional sections. 
+The `jsparrow.yml` file consists of three optional sections.
 The first section contains the profiles definition.
-To define a profile you should specify its name, the list of rules included in the profile and their configuration if any applies (e.g. configuration for LoggerRule and RenamingRule).
-Any number of profiles can be defined. The profile to be used for refactoring should be designated with the `selectedProfile` key. 
+To define a profile you should specify its name, the list of rules included in the profile and their configuration if any applies (e.g., configuration for [LoggerRule](/rules/standard-logger.html) and [RenamingRule](/rules/rename-fields.html)).
+Any number of profiles can be defined. The profile to be used for refactoring should be designated with the `selectedProfile` key.
 
-The second section contains a list of rules which will be used for refactoring if no profile is designated as `selectedProfile`. 
-Similarly as in profile definition, the list of rules can be followed by the rule configuration if any is required. 
+The second section contains a list of rules which will be used for refactoring if no profile is designated as `selectedProfile`.
+Similarly as in profile definition, the list of rules can be followed by the rule configuration if any is required.
 
-The third section under `excludes` node consists of the modules, packages and classes that shall not be refactored by JMP. If no `excludes` are defined, JMP will refactor the entire main resources of the project. 
+The third section under `excludes` node consists of the modules, packages and classes that shall not be refactored by JMP. If no `excludes` are defined, JMP will refactor the entire main resources of the project.
 This section will only be recognized in the `yml` file in the root project, i.e., in any `yml` file placed in child projects the `excludes` section will be discarded.
 
-The following is an example of a `jsparrow.yml` configuration file: 
+The following is an example of a `jsparrow.yml` configuration file:
 
 
 ```yaml
-# Specify one of the profiles declared below as the selected profile.  
-# If the selectedProfile is not specified the rules in the “rules:” section 
+# Specify one of the profiles declared below as the selected profile.
+# If the selectedProfile is not specified the rules in the “rules:” section
 # will be applied  
 selectedProfile: profile1  
 
@@ -75,9 +80,9 @@ profiles:
     - FieldRenaming
     - StandardLogger
 
-# The configuration for LoggerRule and RenamingRule can be placed together 
-# with the profile in which the rules are included. If the configuration 
-# within the profile is missing, then the default values are used. The 
+# The configuration for LoggerRule and RenamingRule can be placed together
+# with the profile in which the rules are included. If the configuration
+# within the profile is missing, then the default values are used. The
 # following is a configuration sample with default values  
   loggerRule:  
     systemOutReplaceOption: INFO  
@@ -96,10 +101,10 @@ profiles:
     underscoreReplacementOption: Upper  
     dollarReplacementOption: Leave  
 
-# The rules in this section will be executed, if no profile has been 
-# specified as selectedProfile or via maven. To deactivate rules, they can be 
-# commented with the #-sign. The configuration for RenamingRule and LoggerRule 
-# in this section can be done the same way as in the configuration 
+# The rules in this section will be executed, if no profile has been
+# specified as selectedProfile or via maven. To deactivate rules, they can be
+# commented with the #-sign. The configuration for RenamingRule and LoggerRule
+# in this section can be done the same way as in the configuration
 # in profiles, under the rules section.
 rules:
   - TryWithResource
@@ -123,10 +128,10 @@ renamingRule:
   underscoreReplacementOption: Upper  
   dollarReplacementOption: Leave  
 
-# Define modules, classes and packages that you don't want to apply refactoring 
-# to. Excluded modules can only be defined on the parent project and those modules 
-# are then entirely ignored. If the module project has it's own yml file, it 
-# overrides the entire configuration inherited from the yml configuration of 
+# Define modules, classes and packages that you don't want to apply refactoring
+# to. Excluded modules can only be defined on the parent project and those modules
+# are then entirely ignored. If the module project has it's own yml file, it
+# overrides the entire configuration inherited from the yml configuration of
 # the parent project, unless it is an excluded module.
 excludes:    
     excludeModules:  
@@ -219,8 +224,6 @@ To pass the properties using the configuration file, create a file with the foll
 key: <license-key>
 url: <http://somelocation.loc/>
 ```
-
-
 
 ## Limitations
 In case of multi-module maven projects, the Field Renaming rule is limited to private fields only. The jSparrow Maven plugin will detect whether the project being refactored is part of a multi-module maven project and restrict the Field Renaming rule to be executed only on private fields.
