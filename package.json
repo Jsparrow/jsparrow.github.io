@@ -11,6 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "jshint": "^2.9.7",
-    "vuepress": "^0.14.4"
+    "material-design-icons-iconfont": "^4.0.4",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vuepress": "^0.14.4",
+    "vuetify": "^1.5.0"
   }
 }
