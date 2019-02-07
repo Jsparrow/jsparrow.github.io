@@ -86,8 +86,8 @@ export default {
   methods: {
     validate() {
       if (this.$refs.form.validate()) {
-        console.log(this.registration);
-        console.log(JSON.stringify(this.registration));
+        //console.log(this.registration);
+        //console.log(JSON.stringify(this.registration));
         this.sendRegistration();
       }
     },
@@ -102,25 +102,25 @@ export default {
       this.$refs.form.resetValidation();
     },
     sendRegistration: function() {
-      console.log(JSON.stringify(this.registration));
-      const Url = "http://localhost:3000/starter/create";
+      //const Url = "https://1k4wn56lwd.execute-api.eu-central-1.amazonaws.com/Prod/starter/create";
+      const Url = "https://5dblvgznqf.execute-api.eu-central-1.amazonaws.com/Prod/starter/create";
       const otherPram = {
         headers: {
           "content-type": "application/json; charset=UTF-8"
         },
         body: JSON.stringify(this.registration),
         method: "POST",
-        mode: "no-cors"
+        mode: "no-cors",
       };
 
       fetch(Url, otherPram)
-        .then(data => {
-          return data.json();
-        })
         .then(res => {
           console.log(res);
+          window.location.href = '../sucess.html';
         })
         .catch(error => console.log(error));
+
+         //one level up
     }
   }
 };
