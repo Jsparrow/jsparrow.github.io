@@ -20,8 +20,8 @@ tags: ["Java 1.4", "Readability", "Coding Conventions"]
 
 ## Description
 
-Assignments involving an arithmetic assignment can be simplified by using a compound operator such as '+=', '-=', '/=' or '*='.
-For example, this rule will transform 'a=a+1' into 'a+=1'.  
+Assignments involving an arithmetic assignment can be simplified by using a compound operator such as `+=`, `-=`, `/=` or `*=`.
+For example, this rule will transform `a=a+1` into `a+=1`.  
 The rule only applies if both operands are primitive types.  
 
 ## Benefits
@@ -107,8 +107,8 @@ i /= (3 + 4);
 ## Limitations
 
 Rule can be applied only on the following types:
-* int
-* double
-* float
-* long
-* short
+* `int`
+* `double`
+* `float`
+* `long`
+* `short`
