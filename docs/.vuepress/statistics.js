@@ -227,47 +227,65 @@ module.exports = [
                 ruleId: "LambdaForEachIfWrapperToFilter"
               }
             ]
-  },	 {
-            projectName: "NetLicensingClient-java (Java 7)",
-            timestampGitHubStart: 1549622223,
-            timestampJSparrowFinish: 1549622477,
-            totalFilesChanged: 77,
-            totalFilesCount: 95,
-            totalIssuesFixed: 109,
-            totalTimeSaved: 138,
-            rules: [
-           {
-             fileCount: 77,
-             issuesFixedCount: 77,
-             remediationCost: 1,
-             ruleId: "CodeFormatter"
-           },
-           {
-             fileCount: 1,
-             issuesFixedCount: 1,
-             remediationCost: 2,
-             ruleId: "UseIsEmptyOnCollections"
-           },
-           {
-             fileCount: 16,
-             issuesFixedCount: 24,
-             remediationCost: 1,
-             ruleId: "DiamondOperator"
-           },
-           {
-             fileCount: 4,
-             issuesFixedCount: 4,
-             remediationCost: 5,
-             ruleId: "RearrangeClassMembers"
-           },
-           {
-             fileCount: 2,
-             issuesFixedCount: 3,
-             remediationCost: 5,
-             ruleId: "StringConcatToPlus"
-           }
-         ],
-    },   {
+  },	{
+          projectName: "NetLicensingClient-java (Java 7)",
+          timestampGitHubStart: 1549889303,
+          timestampJSparrowFinish: 1549889715,
+          totalFilesChanged: 77,
+          totalFilesCount: 95,
+          totalIssuesFixed: 151,
+          totalTimeSaved: 305,
+          rules: [
+            {
+              fileCount: 77,
+              issuesFixedCount: 77,
+              remediationCost: 1,
+              ruleId: "CodeFormatter"
+            },
+            {
+              fileCount: 9,
+              issuesFixedCount: 10,
+              remediationCost: 10,
+              ruleId: "StandardLogger"
+            },
+            {
+              fileCount: 1,
+              issuesFixedCount: 1,
+              remediationCost: 5,
+              ruleId: "GuardCondition"
+            },
+            {
+              fileCount: 12,
+              issuesFixedCount: 31,
+              remediationCost: 2,
+              ruleId: "UseStringBuilderAppend"
+            },
+            {
+              fileCount: 1,
+              issuesFixedCount: 1,
+              remediationCost: 2,
+              ruleId: "UseIsEmptyOnCollections"
+            },
+            {
+              fileCount: 16,
+              issuesFixedCount: 24,
+              remediationCost: 1,
+              ruleId: "DiamondOperator"
+            },
+            {
+              fileCount: 4,
+              issuesFixedCount: 4,
+              remediationCost: 5,
+              ruleId: "RearrangeClassMembers"
+            },
+            {
+              fileCount: 2,
+              issuesFixedCount: 3,
+              remediationCost: 5,
+              ruleId: "StringConcatToPlus"
+            }
+          ],
+  },  {
        projectName : "spring-cloud-gateway",
        timestampGitHubStart : 1543311704,
        timestampJSparrowFinish : 1543312283,
