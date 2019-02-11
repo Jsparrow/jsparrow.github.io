@@ -10,7 +10,7 @@
 
     <h2>jSparrow results for {{project.projectName}}</h2>
 
-    Metrics for {{project.projectName}}:
+    <p>Metrics for {{project.projectName}} (created on {{timestampToDate(project.timestampGitHubStart)}}):</p>
 
     <table class="table-hover">
       <tbody>
@@ -158,7 +158,7 @@ export default {
       if(id == null || !this.statistics.some(item => item.projectName === id)) {
         id = this.statistics[0].projectName;
       }
-      
+
       document.getElementById(id).click();
       this.updateAddressBar(id);
     },
@@ -173,7 +173,11 @@ export default {
       var mDisplay = m + (m == 1 ? " minute" : " minutes");
       var sDisplay = s > 0 ? ", " + s + (s == 1 ? " second" : " seconds") : "";
       return hDisplay + mDisplay + sDisplay;
-    }, 
+    },
+    timestampToDate: function(timestamp) {
+      var d = new Date(timestamp*1000);
+      return d.getDate() + "." + (d.getMonth() + 1) + "." + (d.getYear() + 1900);
+    },
     findRuleName: function(id) {
       var rule = this.ruleNameMap[id];
       return rule.name;
@@ -192,8 +196,8 @@ export default {
 
   data() {
     return {
-      statistics: 
-        require('../statistics.js'), 
+      statistics:
+        require('../statistics.js'),
       ruleNameMap:
         require('../rule-name-map.js')
 
