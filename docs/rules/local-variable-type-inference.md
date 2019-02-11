@@ -20,12 +20,12 @@ tags: ["Java 10", "Formatting", "Readability"]
 
 ## Description
 
-Local variable where the type could be inferred are changed to the type var. Keep in mind that the transformation is only useful, if the variables have speaking names, otherwise it is only disguising the nature of the variable.
+Local variable where the type could be inferred are changed to the type `var`. Keep in mind that the transformation is only useful, if the variables have speaking names, otherwise it is only disguising the nature of the variable.
 The transformation is avoided for primitive types. For safety reasons, the transformation is also avoided if the initializer is an anonymous class declaration.
 
 ## Benefits
 
-This rule reduces the length of variable definitions and therefore the improves the readability if the variable is named properly drastically.
+This rule reduces the length of variable definitions and therefore  improves the readability if the variable is named properly drastically.
 
 ## Requirement & Tags
 
@@ -78,7 +78,7 @@ for(var value : list) {
 The following contains a list of cases where a transformation of type with var is not possible.
 
 ### Initializer containing  diamond operator
-If the initialization of a local variable declaration uses diamond operator, then var can still be used but the argument type will be converted to Object. This may lead to compilation errors. Consider the example:
+If the initialization of a local variable declaration uses diamond operator, then `var` can still be used but the argument type will be converted to Object. This may lead to compilation errors. Consider the example:
 
 ``` java
 List<String> userIds = new ArrayList<>();
@@ -90,19 +90,19 @@ public void consumeIds(List<String> userIds) {
 }
 ```
 
-Transformation of the List&lt;String&gt; to var, would change the type of the userIds to List&lt;Object&gt; which is not expected by the consumeIds method.
+Transformation of the List<String> to `var`, would change the type of the userIds to List<Object> which is not expected by the consumeIds method.
 
 ### Initialization with a subtype
-If the type of the initializer is a  subtype of the declared type, then the transformation is not always possible. Consider the following lines:
+If the type of the initializer is a subtype of the declared type, then the transformation is not always possible. Consider the following lines:
 
 ``` java
 List<String> list = new ArrayList<String>();
 list = new LinkedList<String>();
 ```
-The type List&lt;String&gt; cannot be replaced with var because in the second line, list is being reassigned with LinkedList which is not assign-compatible with ArrayList.
+The type List<String> cannot be replaced with `var` because in the second line, list is being reassigned with LinkedList which is not assign-compatible with ArrayList.
 
 ### Raw types
-If the declaration or the initializer are raw type, then the transformation is not possible. The following table shows the cases when a var can be used instead of the concrete type:
+If the declaration or the initializer are raw type, then the transformation is not possible. The following table shows the cases when a `var` can be used instead of the concrete type:
 
 |declaration|initialization|state|
 |-|-|-|

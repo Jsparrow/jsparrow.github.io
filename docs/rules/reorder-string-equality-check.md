@@ -24,7 +24,7 @@ To avoid NullPointerExceptions , it is recommended to put string literals in the
 
 ## Benefits
 
-This order prevents null pointer exceptions from being raised, as a string literal can never be null by definition, and therefore makes the code less prone to errors. An example can be seen above.
+This order prevents NullPointerExceptions from being raised, as a string literal can never be `null` by definition, and therefore makes the code less prone to errors. An example can be seen below.
 
 ## Requirement & Tags
 

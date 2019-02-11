@@ -24,7 +24,7 @@ Removes all class instantiations from String if its parameter is empty or a Stri
 
 ## Benefits
 
-Avoiding the constructor call has performance benefits as it reduced memory usage and improves readability.   
+Avoiding the constructor call has performance benefits as it reduces memory usage and improves readability.   
 Furthermore, these constructors are deprecated in Java 9, which is an indication that they will eventually be removed from the language altogether.   
 
 ## Requirement & Tags

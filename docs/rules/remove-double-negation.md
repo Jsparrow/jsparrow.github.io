@@ -38,7 +38,7 @@ None.
 
 ## Code Changes
 
-Example is based on an odd number of negations
+### Example based on an even number of negations
 
 __Pre__
 
@@ -52,7 +52,7 @@ __Post__
 boolean a = true; // removed negations completely
 ```
 
-
+### Example based on an odd number of negations
 
 __Pre__
 

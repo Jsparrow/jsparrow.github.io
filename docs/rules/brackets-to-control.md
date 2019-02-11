@@ -71,12 +71,12 @@ else {
 __Pre__
 
 ``` java
-else if (a &gt;= b) bar();
+else if (a >= b) bar();
 ```
 __Post__
 
 ``` java
-else if (a &gt;= b) {
+else if (a >= b) {
     bar();
 }
 ```
@@ -86,12 +86,12 @@ else if (a &gt;= b) {
 __Pre__
 ``` java
 boolean petal = true;
-for (int i = 0; i &lt; 10; i++) petal = !petal;
+for (int i = 0; i < 10; i++) petal = !petal;
 ```
 __Post__
 ``` java
 boolean petal = true;
-for (int i = 0; i &lt; 10; i++) {
+for (int i = 0; i < 10; i++) {
     petal = !petal;
 }
 ```
@@ -101,12 +101,12 @@ for (int i = 0; i &lt; 10; i++) {
 __Pre__
 ``` java
 int cnt = 0;
-while (cnt &lt; 10) cnt++;
+while (cnt < 10) cnt++;
 ```
 __Post__
 ``` java
 int cnt = 0;
-while (cnt &lt; 10) {
+while (cnt < 10) {
     cnt++;
 }
 ```
@@ -115,12 +115,12 @@ while (cnt &lt; 10) {
 __Pre__
 ``` java
 int cnt = 0;
-do cnt++; while (cnt &lt; 10);
+do cnt++; while (cnt < 10);
 ```
 __Post__
 ``` java
 int cnt = 0;
 do {
     cnt++;
-} while (cnt &lt; 10);
+} while (cnt < 10);
 ```

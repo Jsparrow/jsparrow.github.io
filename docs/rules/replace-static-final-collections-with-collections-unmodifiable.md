@@ -20,12 +20,12 @@ tags: ["Java 1.2", "Coding Conventions"]
 
 ## Description
 
-An unmodifiable Collection can be created with the matching Collections.unmodifiable...() method.
- Some examples are Collections.unmodifiableList(), Collections.unmodifiableSortedSet(), etc.
+An unmodifiable Collection can be created with the matching `Collections.unmodifiable...()` method.
+ Some examples are `Collections.unmodifiableList()`, `Collections.unmodifiableSortedSet()`, etc.
 A declaration of a Collection with the static and final modifiers is not sufficient because it might still be
  modifiable.
-The Collections which are created with Collections.unmodifiable...() throw an
- UnsupportedOperationException as soon as a modification is attempted.
+The Collections which are created with `Collections.unmodifiable...()` throw an
+ `UnsupportedOperationException` as soon as a modification is attempted.
 
 ## Benefits
 
