@@ -10,7 +10,7 @@ Configure your proxy to allow to reach the endpoint for our registration and lic
 https://go.netlicensing.io/core/v2/rest
 :::
 
-::: tip Registration API endpoint hosted in:
+::: tip Registration API endpoint
 https://amazonaws.com
 :::
 
