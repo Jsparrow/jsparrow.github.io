@@ -85,9 +85,8 @@ export default {
   }),
   methods: {
     validate() {
+      window.location.href = './jsparrow-starter-registration.html';
       if (this.$refs.form.validate()) {
-        //console.log(this.registration);
-        //console.log(JSON.stringify(this.registration));
         this.sendRegistration();
       }
     },
@@ -102,7 +101,9 @@ export default {
       this.$refs.form.resetValidation();
     },
     sendRegistration: function() {
+      // Prod stack
       //const Url = "https://1k4wn56lwd.execute-api.eu-central-1.amazonaws.com/Prod/starter/create";
+      // Test stack
       const Url = "https://5dblvgznqf.execute-api.eu-central-1.amazonaws.com/Prod/starter/create";
       const otherPram = {
         headers: {
@@ -116,7 +117,7 @@ export default {
       fetch(Url, otherPram)
         .then(res => {
           console.log(res);
-          window.location.href = '../sucess.html';
+          window.location.href = './jsparrow-starter-registration.html';
         })
         .catch(error => console.log(error));
 
