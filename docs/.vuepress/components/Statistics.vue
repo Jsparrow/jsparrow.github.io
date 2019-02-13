@@ -46,7 +46,7 @@
     <v-data-table
       :headers="headers"
       :items="project.rules"
-      class="elevation-1"
+      class=""
       hide-actions=""
       :custom-sort="customSort"
     >
@@ -199,6 +199,13 @@ export default {
             return a.issuesFixedCount - b.issuesFixedCount;
           } else {
             return b.issuesFixedCount - a.issuesFixedCount;
+          }
+        }
+        else if (index === 'fileCount') {
+          if (isDescending) {
+            return a.fileCount - b.fileCount;
+          } else {
+            return b.fileCount - a.fileCount;
           }
         }
         else if (index === 'remediationCost') {
