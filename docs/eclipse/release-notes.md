@@ -19,6 +19,8 @@ Resolving a connectivity failure in jSparrow Starter registration.
 
 * Fixes a bug related to the registration for jSparrow Starter in cases where the internet access is regulated with a proxy. 
 
+See also [Define proxy in Eclipse](./additional-configuration.html#setup-proxy).
+
 ## 3.1.0
 
 _29.01.2019_
