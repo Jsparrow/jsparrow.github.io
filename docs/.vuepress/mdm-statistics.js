@@ -1,5 +1,202 @@
 module.exports = [
   {
+      projectName: "org.eclipse.mdm Statistics Over All Projects",
+      timestampGitHubStart: 1550073955,
+      timestampJSparrowFinish: 1550074001,
+      totalTimeSaved: 29695,
+      totalIssuesFixed: 7086,
+      totalFilesChanged: 1088,
+      totalFilesCount: 1575,
+      rules: [
+        {
+          ruleId: "BracketsToControl",
+          issuesFixedCount: 2285,
+          remediationCost: 2,
+          fileCount: 327
+        },
+        {
+          ruleId: "DiamondOperator",
+          issuesFixedCount: 108,
+          remediationCost: 1,
+          fileCount: 38
+        },
+        {
+          ruleId: "EnhancedForLoopToStreamForEach",
+          issuesFixedCount: 241,
+          remediationCost: 15,
+          fileCount: 70
+        },
+        {
+          ruleId: "EnumsWithoutEquals",
+          issuesFixedCount: 6,
+          remediationCost: 2,
+          fileCount: 3
+        },
+        {
+          ruleId: "ForToForEach",
+          issuesFixedCount: 91,
+          remediationCost: 5,
+          fileCount: 86
+        },
+        {
+          ruleId: "FunctionalInterface",
+          issuesFixedCount: 6,
+          remediationCost: 5,
+          fileCount: 3
+        },
+        {
+          ruleId: "GuardCondition",
+          issuesFixedCount: 73,
+          remediationCost: 5,
+          fileCount: 48
+        },
+        {
+            ruleId: "ImmutableStaticFinalCollections",
+            issuesFixedCount: 1,
+            remediationCost: 10,
+            fileCount: 1
+        },
+        {
+          ruleId: "InefficientConstructor",
+          issuesFixedCount: 2,
+          remediationCost: 5,
+          fileCount: 1
+        },
+        {
+            ruleId: "LambdaForEachCollect",
+            issuesFixedCount: 2,
+            remediationCost: 15,
+            fileCount: 2
+        },
+        {
+            ruleId: "LambdaForEachIfWrapperToFilter",
+            issuesFixedCount: 5,
+            remediationCost: 5,
+            fileCount: 3
+        },
+        {
+          ruleId: "LambdaForEachMap",
+          issuesFixedCount: 13,
+          remediationCost: 15,
+          fileCount: 7
+        },
+        {
+          ruleId: "LambdaToMethodReference",
+          issuesFixedCount: 44,
+          remediationCost: 2,
+          fileCount: 27
+        },
+        {
+            ruleId: "LocalVariableTypeInference",
+            issuesFixedCount: 102,
+            remediationCost: 2,
+            fileCount: 24
+        },
+        {
+            ruleId: "MultiCatch",
+            issuesFixedCount: 4,
+            remediationCost: 5,
+            fileCount: 4
+        },
+        {
+            ruleId: "MultiVariableDeclarationLine",
+            issuesFixedCount: 4,
+            remediationCost: 2,
+            fileCount: 3
+        },
+        {
+          ruleId: "OptionalIfPresent",
+          issuesFixedCount: 3,
+          remediationCost: 2,
+          fileCount: 3
+        },
+        {
+          ruleId: "OrganiseImports",
+          issuesFixedCount: 426,
+          remediationCost: 1,
+          fileCount: 426
+        },
+        {
+          ruleId: "OverrideAnnotation",
+          issuesFixedCount: 2047,
+          remediationCost: 5,
+          fileCount: 417
+        },
+        {
+            ruleId: "PrimitiveObjectUseEquals",
+            issuesFixedCount: 1,
+            remediationCost: 2,
+            fileCount: 1
+        },
+        {
+          ruleId: "RemoveExplicitCallToSuper",
+          issuesFixedCount: 7,
+          remediationCost: 1,
+          fileCount: 6
+        },
+        {
+          ruleId: "RemoveToStringOnString",
+          issuesFixedCount: 1,
+          remediationCost: 2,
+          fileCount: 1
+        },
+        {
+          ruleId: "RemoveUnnecessaryThrows",
+          issuesFixedCount: 214,
+          remediationCost: 2,
+          fileCount: 49
+        },
+        {
+          ruleId: "StatementLambdaToExpression",
+          issuesFixedCount: 74,
+          remediationCost: 5,
+          fileCount: 36
+        },
+        {
+            ruleId: "StringBufferToBuilder",
+            issuesFixedCount: 2,
+            remediationCost: 2,
+            fileCount: 2
+        },
+        {
+            ruleId: "StringConcatToPlus",
+            issuesFixedCount: 4,
+            remediationCost: 5,
+            fileCount: 1
+        },
+        {
+          ruleId: "StringLiteralEqualityCheck",
+          issuesFixedCount: 821,
+          remediationCost: 10,
+          fileCount: 94
+        },
+        {
+          ruleId: "StringUtils",
+          issuesFixedCount: 134,
+          remediationCost: 10,
+          fileCount: 43
+        },
+        {
+          ruleId: "UseStringBuilderAppend",
+          issuesFixedCount: 270,
+          remediationCost: 2,
+          fileCount: 111
+        },
+        {
+          ruleId: "UseStringBuilderAppend",
+          issuesFixedCount: 235,
+          remediationCost: 2,
+          fileCount: 90
+        },
+        {
+            ruleId: "WhileToForEach",
+            issuesFixedCount: 1,
+            remediationCost: 5,
+            fileCount: 1
+        }
+      ]
+},
+  {
         projectName: "org.eclipse.mdm.api.base",
         timestampGitHubStart: 1550073955,
         timestampJSparrowFinish: 1550073958,
