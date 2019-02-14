@@ -105,11 +105,11 @@ module.exports = {
     },
     "OptionalIfPresent": {
         "name": "Use Optional::ifPresent",
-        "url": "rules/use-optional-if-present.html"
+        "url": "rules/optional-if-present.html"
     },
     "OrganiseImports": {
         "name": "Organize Imports",
-        "url": "rules/organise-imports.html"
+        "url": "rules/organize-imports.html"
     },
     "OverrideAnnotation": {
         "name": "Use @Override Annotation",

@@ -2,7 +2,7 @@ module.exports = [
 '',
 'brackets-to-control',
 'serial-version-uid',
-'organise-imports',
+'organize-imports',
 'rearrange-class-members',
 'code-formatter',
 'primitive-boxed-for-string',

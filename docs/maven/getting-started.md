@@ -53,7 +53,7 @@ The child projects will inherit the parent's configuration, unless another `jspa
 
 The `jsparrow.yml` file consists of three optional sections.
 The first section contains the profiles definition.
-To define a profile you should specify its name, the list of rules included in the profile and their configuration if any applies (e.g., configuration for [LoggerRule](/rules/standard-logger.html) and [RenamingRule](/rules/rename-fields.html)).
+To define a profile you should specify its name, the list of rules included in the profile and their configuration if any applies (e.g., configuration for [LoggerRule](/rules/standard-logger.html) and [RenamingRule](/rules/field-renaming.html)).
 Any number of profiles can be defined. The profile to be used for refactoring should be designated with the `selectedProfile` key.
 
 The second section contains a list of rules which will be used for refactoring if no profile is designated as `selectedProfile`.
