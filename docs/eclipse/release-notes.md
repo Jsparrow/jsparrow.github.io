@@ -64,7 +64,7 @@ See the documentation at: [Registration for 15 free rules](installation-guide.ht
 #### List of free rules
 
 * [Replace For-Loop with Enhanced-For-Loop](/rules/for-to-for-each.html)
-* [Organize Imports](/rules/organise-imports.html)
+* [Organize Imports](/rules/organize-imports.html)
 * [Use @Override Annotation](/rules/override-annotation.html)
 * [Remove Boxing for String Conversions](/rules/primitive-boxed-for-string.html)
 * [Remove Double Negations](/rules/remove-double-negation.html)
