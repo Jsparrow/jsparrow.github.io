@@ -67,7 +67,7 @@ See the documentation at: [Registration for 15 free rules](installation-guide.ht
 * [Organize Imports](/rules/organise-imports.html)
 * [Use @Override Annotation](/rules/override-annotation.html)
 * [Remove Boxing for String Conversions](/rules/primitive-boxed-for-string.html)
-* [Remove Double Negations](/rules/remove-double-negation-rule.html)
+* [Remove Double Negations](/rules/remove-double-negation.html)
 * [Remove toString() on String](/rules/remove-to-string-on-string.html)
 * [Remove Unnecessary Semicolons](/rules/remove-empty-statement.html)
 * [Remove Unnecessary Thrown Exceptions on Method Signatures](/rules/remove-unnecessary-throws.html)
@@ -133,7 +133,7 @@ See official documentation for more information: [Remove Unnecessary Thrown Exce
 
 Removes pairs of negations from boolean expressions until only zero or one negation is left.
 
-See official documentation for more information: [Remove Double Negations](/rules/remove-double-negation-rule.html)
+See official documentation for more information: [Remove Double Negations](/rules/remove-double-negation.html)
 
 #### Remove explicit call to super()
 
