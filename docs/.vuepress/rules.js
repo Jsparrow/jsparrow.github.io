@@ -7,7 +7,7 @@ module.exports = [
 'code-formatter',
 'primitive-boxed-for-string',
 'date-deprecated.html',
-'remove-double-negation-rule',
+'remove-double-negation',
 'remove-explicit-call-to-super',
 'diamond-operator',
 're-implementing-interface',
