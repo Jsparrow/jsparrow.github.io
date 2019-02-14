@@ -72,7 +72,6 @@ for(var value : list) {
 }
 ```
 
-
 ## Limitations
 
 The following contains a list of cases where a transformation of type with var is not possible.
