@@ -90,7 +90,7 @@ public void consumeIds(List<String> userIds) {
 }
 ```
 
-Transformation of the List<String> to `var`, would change the type of the userIds to List<Object> which is not expected by the consumeIds method.
+Transformation of the `List<String>` to `var`, would change the type of the userIds to `List<Object>` which is not expected by the consumeIds method.
 
 ### Initialization with a subtype
 If the type of the initializer is a subtype of the declared type, then the transformation is not always possible. Consider the following lines:
@@ -99,7 +99,7 @@ If the type of the initializer is a subtype of the declared type, then the trans
 List<String> list = new ArrayList<String>();
 list = new LinkedList<String>();
 ```
-The type List<String> cannot be replaced with `var` because in the second line, list is being reassigned with LinkedList which is not assign-compatible with ArrayList.
+The type `List<String>` cannot be replaced with `var` because in the second line, list is being reassigned with LinkedList which is not assign-compatible with ArrayList.
 
 ### Raw types
 If the declaration or the initializer are raw type, then the transformation is not possible. The following table shows the cases when a `var` can be used instead of the concrete type:
