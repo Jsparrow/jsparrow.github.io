@@ -177,17 +177,11 @@ module.exports = [
           fileCount: 43
         },
         {
-          ruleId: "UseStringBuilderAppend",
-          issuesFixedCount: 270,
-          remediationCost: 2,
-          fileCount: 111
-        },
-        {
-          ruleId: "UseStringBuilderAppend",
-          issuesFixedCount: 235,
-          remediationCost: 2,
-          fileCount: 90
-        },
+      		ruleId: "UseStringBuilderAppend",
+      		issuesFixedCount: 505,
+      		remediationCost: 2,
+      		fileCount: 201
+      	},
         {
             ruleId: "WhileToForEach",
             issuesFixedCount: 1,
