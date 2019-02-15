@@ -5,6 +5,22 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.1.2
+
+_15.02.2019_
+
+### Hotfix Release
+
+This Hotfix Release brings bugfixes on refactoring rules. 
+
+### Fixed Bugs
+
+#### Use Try-With-Resource
+* Avoiding runtime exceptions when searching for the [Resource::close](https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html#close--) invocations. 
+
+#### Replace Expression Lambda with Method Reference
+* Avoid creating method references on java arrays.
+
 ## 3.1.1
 
 _13.02.2019_
