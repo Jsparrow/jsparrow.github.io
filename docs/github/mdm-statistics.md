@@ -1,5 +1,5 @@
 ---
-sidebarDepth: 2
+sidebar: false
 ---
 
 # Statistics for Eclipse MDM|BL
