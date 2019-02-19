@@ -21,8 +21,9 @@ tags: ["Java 1.1", "Coding Conventions", "Readability"]
 
 ## Description
 
-Collapses, when possible, the nested if-statements into a single one by concatenating the conditions with the infix operator `&&`. 
-Introduces a local variable to store the condition, if it consists of more than two components. 
+Collapses, when possible, the nested if-statements into a single one by concatenating their conditions with the infix operator `&&`. 
+If the concatenation results to an infix expression with more than two components, then a new local variable is introduced to store the condition.
+
 
 ## Benefits
 
