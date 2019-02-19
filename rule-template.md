@@ -2,6 +2,8 @@
 title: title
 description:
     description
+
+tags: ["Java 1.5", "String Manipulation", "Performance"]
 ---
 
 # Rulename
@@ -28,7 +30,7 @@ Java 1.5
 :::
 
 ::: tip Tags
-Java 1.5, String Manipulation, Performance
+<TagLinks />
 :::
 
 ## Configuration (Optional)
