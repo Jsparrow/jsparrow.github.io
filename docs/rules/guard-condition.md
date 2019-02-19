@@ -43,7 +43,7 @@ None
 __Pre__
 ```java
 	public void voidMethod() {
-		doSomething("what ever");
+		doSomething("whatever");
 		if(numericCondition() > 0) {
 			doSomething("Should create guard condition with less");
 			doSomething("Should transform");
@@ -54,7 +54,7 @@ __Pre__
 __Post__
 ```java
 	public void voidMethod() {
-		doSomething("what ever");
+		doSomething("whatever");
 		if (numericCondition() <= 0) {
 			return;
 		}
@@ -68,7 +68,7 @@ __Post__
 __Pre__
 ```java
 	public int methodWithReturnType() {
-		doSomething("what ever");
+		doSomething("whatever");
 		if(condition()) {
 			doSomething("Should be moved out of the if");
 			doSomething("should transform");
@@ -81,7 +81,7 @@ __Pre__
 __Post__
 ```java
 	public int methodWithReturnType() {
-		doSomething("what ever");
+		doSomething("whatever");
 		if (!condition()) {
 			return 0;
 		}

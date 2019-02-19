@@ -21,7 +21,7 @@ tags: ["Java 1.1", "Coding Conventions", "Readability"]
 ## Description
 
 This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization.
-The order of members in a class or interface should appears as follows:
+The order of members in a class or interface should appear as follows:
 
 1. Class (static) variables
 2. Instance variables
