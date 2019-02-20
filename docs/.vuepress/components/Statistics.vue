@@ -49,6 +49,7 @@
       class=""
       hide-actions=""
       :custom-sort="customSort"
+      :must-sort="true"
     >
       <template slot="items" slot-scope="props">
         <td class="text-xs-right"><a v-bind:href=findRuleLink(props.item.ruleId) target="_blank"> {{findRuleName(props.item.ruleId)}} </a</td>
@@ -111,6 +112,8 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+
+
 </style>
 
 
