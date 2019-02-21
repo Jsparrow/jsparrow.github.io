@@ -90,7 +90,7 @@ public void consumeIds(List<String> userIds) {
 }
 ```
 
-Transforming the List<String> to `var`, would change the type of the userIds to ArrayList<Object> which is not expected by the consumeIds method.
+Transforming the `List<String>` to `var`, would change the type of the userIds to `ArrayList<Object>` which is not expected by the consumeIds method.
 
 ### Initialization with a subtype
 If the type of the initializer is a subtype of the declared type, then the transformation is not always possible. Consider the following lines:
