@@ -22,6 +22,8 @@ The motivation behind this rule is to improve the readability of code by reducin
 
 In the “Select Rules” wizard we have added a link to each rule description which leads directly to a detailed documentation of that rule on our website.
 
+[ ![Preview of rule's documentation link](/img/eclipse/release_notes/srw_doc_link.jpg) ](/img/eclipse/release_notes/srw_doc_link.jpg)
+
 ## 3.1.2
 
 _15.02.2019_
