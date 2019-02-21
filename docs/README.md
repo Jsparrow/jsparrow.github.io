@@ -26,10 +26,6 @@ You can execute it as part of your development process as an Eclipse IDE plugin 
 
 We are now supporting Eclipse versions using Java 11 and Java 11 projects! See [Release Notes](/eclipse/release-notes.html#_3-2-0). 
 
-## jSparrow 3.1.0 has been released!
-
-We are now supporting the latest Eclipse version! See [Release Notes](/eclipse/release-notes.html#_3-1-0). 
-
 ## Statistical Data
 
 Our latest measurements of open source available test projects can be found at [Github App statistics](/github/statistics.html).
