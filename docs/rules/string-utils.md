@@ -1,7 +1,7 @@
 ---
 title: Use StringUtils Methods
 description:
-    Replaces various String methods with their null-safe counterparts from StringUtils.
+    Replaces various 'String' methods with their null-safe counterparts from 'StringUtils'.
 tags: ["Java 1.1", "String Manipulation"]
 ---
 

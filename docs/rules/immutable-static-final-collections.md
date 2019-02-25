@@ -1,7 +1,7 @@
 ---
 title: Replace static final Collections with Collections.unmodifiable...()
 description:
-    Wraps the initialization of a final collection with Collections.unmodifiable...()
+    Wraps the initialization of a final collection with 'Collections.unmodifiable...()'
 tags: ["Java 1.2", "Coding Conventions"]
 ---
 

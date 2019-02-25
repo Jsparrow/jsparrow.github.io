@@ -1,7 +1,7 @@
 ---
 title: Replace removeAll() with clear()
 description:
-    Simplifies the code by replacing all occurrences of removeAll() which have the current collection as parameter with clear().
+    Simplifies the code by replacing all occurrences of 'removeAll()' which have the current collection as parameter with 'clear()'.
 tags: ["Java 1.2", "Coding Conventions"]
 ---
 

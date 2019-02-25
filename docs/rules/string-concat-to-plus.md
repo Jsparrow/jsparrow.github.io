@@ -1,7 +1,7 @@
 ---
 title: Replace Concatenation with Infix-Operation
 description:
-    This rule replaces the `concat()` method on `String`s with the `+` operator.
+    This rule replaces the 'concat()' method on 'Strings' with the + operator.
 tags: ["Java 1.1", "String Manipulation", "Performance"]
 ---
 
