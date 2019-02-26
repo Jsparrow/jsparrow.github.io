@@ -65,9 +65,10 @@
 </v-app>
 </template>
 
-<style lang="scss">
-@import '../../../node_modules/vuetify/dist/vuetify.min.css';
+<style lang="stylus">
+@import '../../../node_modules/vuetify/src/stylus/components/_data-table.styl';
 @import '../../../node_modules/material-design-icons-iconfont/dist/material-design-icons.css';
+
 
 .theme--light.application {
   background: #ffffff;
@@ -164,7 +165,7 @@ export default {
       if(id == null || !this.statistics.some(item => item.projectName === id)) {
         id = this.statistics[0].projectName;
       }
-      
+
       document.getElementById(id).click();
       this.updateAddressBar(id);
     },
@@ -179,7 +180,7 @@ export default {
       var mDisplay = m + (m == 1 ? " minute" : " minutes");
       var sDisplay = s > 0 ? ", " + s + (s == 1 ? " second" : " seconds") : "";
       return hDisplay + mDisplay + sDisplay;
-    }, 
+    },
     findRuleName: function(id) {
       var rule = this.ruleNameMap[id];
       return rule.name;
@@ -232,8 +233,8 @@ export default {
 
   data() {
     return {
-      statistics: 
-        require('../statistics.js'), 
+      statistics:
+        require('../statistics.js'),
       ruleNameMap:
         require('../rule-name-map.js'),
       headers: [
