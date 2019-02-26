@@ -39,13 +39,13 @@
         required
       >
         <span slot="label">
-          I agree with the terms and conditions of 
+          I agree with the terms and conditions of
           <a @click.stop href="https://jsparrow.eu/eula/" target="_blank">
           the License Agreement</a>
         </span>
       </v-checkbox>
 
-      <v-checkbox v-model="registration.newsletter" 
+      <v-checkbox v-model="registration.newsletter"
       label="I agree to receive the jSparrow newsletter about new product features,
        special offers and interesting information about Java refactoring and improving code quality"></v-checkbox>
 
@@ -127,8 +127,16 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import '../../../node_modules/vuetify/dist/vuetify.min.css';
+<style lang="stylus">
+@import '../../../node_modules/vuetify/src/stylus/components/_forms.styl';
+@import '../../../node_modules/vuetify/src/stylus/components/_text-fields.styl';
+@import '../../../node_modules/vuetify/src/stylus/components/_inputs.styl';
+@import '../../../node_modules/vuetify/src/stylus/components/_labels.styl';
+@import '../../../node_modules/vuetify/src/stylus/components/_selection-controls.styl';
+@import '../../../node_modules/vuetify/src/stylus/components/_buttons.styl';
+@import '../../../node_modules/vuetify/src/stylus/components/_counters.styl';
+@import '../../../node_modules/vuetify/src/stylus/components/_messages.styl';
+@import '../../../_my-reset.styl';
 @import '../../../node_modules/material-design-icons-iconfont/dist/material-design-icons.css';
 
 .theme--light.application {
