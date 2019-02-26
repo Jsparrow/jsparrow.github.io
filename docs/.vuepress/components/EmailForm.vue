@@ -136,7 +136,6 @@ export default {
 @import '../../../node_modules/vuetify/src/stylus/components/_buttons.styl';
 @import '../../../node_modules/vuetify/src/stylus/components/_counters.styl';
 @import '../../../node_modules/vuetify/src/stylus/components/_messages.styl';
-@import '../../../_my-reset.styl';
 @import '../../../node_modules/material-design-icons-iconfont/dist/material-design-icons.css';
 
 .theme--light.application {

@@ -1,1 +1,20 @@
 $accentColor = #147db9
+
+/* Remove the default button styling in all browsers */
+/* Removes the border around the input divs on the starter registration.
+This part has been copied from node_modules/vuetify/src/stylus/generic/_reset.styl */
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+}
+
+/* Fixes an issue where Vuetify overrides the .warning class with !important, causing ::: warning boxes to have a messed up style */
+.custom-block.warning {
+    background-color: rgba(255,229,100,.3) !important;
+    border-color: #e7c000 !important;
+    color: #6b5900 !important;
+}
