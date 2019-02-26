@@ -1,7 +1,7 @@
 ---
 title: Remove Explicit Type Argument
 description:
-    Since Java 1.7 the Diamond Operator (`<>`) can be used to simplify instance creation where generics are involved.
+    Since Java 1.7 the Diamond Operator (<>) can be used to simplify instance creation where generics are involved.
 tags: ["Java 7", "Readability"]
 ---
 

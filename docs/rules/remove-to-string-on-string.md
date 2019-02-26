@@ -1,7 +1,7 @@
 ---
 title: Remove toString() on String
 description:
-    Removes all invocations of toString() method used on a String element.
+    Removes all invocations of 'toString()' method used on a 'String' element.
 tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
 ---
 

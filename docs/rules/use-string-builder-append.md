@@ -1,7 +1,7 @@
 ---
 title: Use StringBuilder::append
 description:
-    Replaces the infix operator `+` on String concatenation by StringBuilder::append
+    Replaces the infix operator + on String concatenation by 'StringBuilder::append'
 tags: ["Java 5", "String Manipulation", "Performance"]
 ---
 

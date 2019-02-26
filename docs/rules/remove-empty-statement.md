@@ -1,7 +1,7 @@
 ---
 title: Remove Unnecessary Semicolons
 description:
-    Removes the unnecessary semicolons from the code blocks
+    Removes the unnecessary semicolons from the code blocks.
 tags: ["Free", "Java 1.1", "Coding Conventions"]
 ---
 
