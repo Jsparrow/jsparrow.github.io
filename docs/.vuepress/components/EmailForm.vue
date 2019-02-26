@@ -23,25 +23,25 @@
 
       <v-checkbox
         v-model="registration.dsgvo"
-        :rules="[v => !!v || 'Dsgvo musst be accepted!']"
+        :rules="[v => !!v || 'The GDPR must be accepted!']"
         required
       >
         <span slot="label">
           By clicking on the checkbox you confirm that you have read and understoof the
           <a @click.stop href="https://jsparrow.eu/gdpr/" target="_blank">
-          Data Protection Declaration</a> and that you agree to all points listed therein.
+          General Data Protection Regulation</a> and that you agree to all points listed therein.
         </span>
       </v-checkbox>
 
       <v-checkbox
         v-model="registration.license"
-        :rules="[v => !!v || 'License musst be accepted!']"
+        :rules="[v => !!v || 'The License Agreement must be accepted!']"
         required
       >
         <span slot="label">
-          I agree with the terms and conditions of
+          I agree with the terms and conditions of the
           <a @click.stop href="https://jsparrow.eu/eula/" target="_blank">
-          the License Agreement</a>
+          License Agreement</a>
         </span>
       </v-checkbox>
 
