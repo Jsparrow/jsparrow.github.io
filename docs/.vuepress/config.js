@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     title: 'jSparrow Documentation',
     head: [
@@ -35,7 +37,7 @@ module.exports = {
         logo: '/logo.png',
         sidebar: {
             '/maven/': ['getting-started', 'local-license-server', 'release-notes'],
-            '/eclipse/': ['getting-started', 'installation-guide', 'profiles', 'additional-configuration', 'release-notes'],
+            '/eclipse/': ['getting-started', 'installation-guide','jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
             '/github/': ['getting-started', 'statistics'],
             '/rules/': require('./rules.js'),
             '/': ['']
@@ -45,6 +47,13 @@ module.exports = {
     markdown: {
         toc: {
             includeLevel: [2, 3, 4]
+        }
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@styles':  path.resolve(__dirname, './styles')
+            }
         }
     }
 };

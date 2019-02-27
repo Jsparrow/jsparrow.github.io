@@ -110,7 +110,7 @@ The original behavior of *jSparrow Free* remains unaffected.
 
 #### How to register?
 
-See the documentation at: [Registration for 15 free rules](installation-guide.html#jsparrow-starter-registration).
+See the documentation at: [Registration for 15 free rules](jsparrow-starter-registration.html).
 
 #### List of free rules
 
