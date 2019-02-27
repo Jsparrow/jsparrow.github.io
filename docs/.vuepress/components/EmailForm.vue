@@ -85,7 +85,6 @@ export default {
   }),
   methods: {
     validate() {
-      window.location.href = './jsparrow-starter-registration.html';
       if (this.$refs.form.validate()) {
         this.sendRegistration();
       }
