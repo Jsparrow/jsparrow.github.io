@@ -1,8 +1,8 @@
 ---
 title: Replace indexOf() with contains()
 description:
-    This rule replaces calls to indexOf() on instances of `String`s or `Collection`S with calls to the `contains()` method.
-    `contains()` was introduced in Java 1.4 and helps to make the code more readable.
+    This rule replaces calls to 'indexOf()' on instances of Strings or Collections with calls to the 'contains()' method.
+    'contains()' was introduced in Java 1.4 and helps to make the code more readable.
 tags: ["Java 5", "Old Language Constructs", "Readability"]
 ---
 

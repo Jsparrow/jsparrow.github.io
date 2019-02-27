@@ -1,7 +1,7 @@
 ---
 title: Remove Deprecated Date Constructs
 description:
-   Some java.util.Date constructors like new Date(int year, int month, int day), new Date(int year, int month, int date, int hrs, int min) and new Date(int year, int month, int date, int hrs, int min, int sec) are deprecated and the Calendar should be used instead.  This rule searches for deprecated calendar instances, introduces calendar instances and sets the time corresponding to the parameters in the deprecated constructor, and replaces the latter with an invocation of Calendar.getTime().
+   Some 'java.util.Date' constructors like 'new Date(int year, int month, int day)', 'new Date(int year, int month, int date, int hrs, int min)' and 'new Date(int year, int month, int date, int hrs, int min, int sec)' are deprecated. A 'Calendar' instance should be used instead. This rule searches for deprecated date constructors, introduces calendar instances, sets the time corresponding to the parameters in the deprecated constructor, and replaces the latter with an invocation of 'Calendar.getTime()'.
 tags: ["Java 1.1", "Formatting", "Readability"]
 ---
 
@@ -20,7 +20,7 @@ tags: ["Java 1.1", "Formatting", "Readability"]
 
 ## Description
 
-Some `java.util.Date` constructors like `new Date(int year, int month, int day)`, `new Date(int year, int month, int date, int hrs, int min)` and `new Date(int year, int month, int date, int hrs, int min, int sec)` are deprecated and the `Calendar` should be used instead.  This rule searches for deprecated date constructors, introduces calendar instances and sets the time corresponding to the parameters in the deprecated constructor, and replaces the latter with an invocation of `Calendar.getTime()`.
+Some `java.util.Date` constructors like `new Date(int year, int month, int day)`, `new Date(int year, int month, int date, int hrs, int min)` and `new Date(int year, int month, int date, int hrs, int min, int sec)` are deprecated and the `Calendar` should be used instead.  This rule searches for deprecated date constructors, introduces calendar instances, sets the time corresponding to the parameters in the deprecated constructor, and replaces the latter with an invocation of `Calendar.getTime()`.
 
 Note that the date constructor is implicitly adding 1900 to the first argument (i.e. year), whereas Calendar.set is expecting the exact year value. Therefore, the rule takes care of preparing the parameters of the Calendar.set properly.
 

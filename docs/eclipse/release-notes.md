@@ -5,18 +5,37 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.2.0
+
+_21.02.2019_
+
+### jSparrow is Fit for Java 11
+
+Since the official End of Life of Java 8 has been reached, we have updated jSparrow to be able to run on Java 11 as well as Java 8.
+
+### New Rule
+
+jSparrow 3.2.0 brings a new rule for [collapsing if statements](/rules/collapse-if-statements.html). 
+The motivation behind this rule is to improve the readability of code by reducing the number of nested language constructs. 
+
+### Direct Link to Rule Documentation
+
+In the “Select Rules” wizard we have added a link to each rule description which leads directly to a detailed documentation of that rule on our website.
+
+[ ![Preview of rule's documentation link](/img/eclipse/release_notes/srw_doc_link.jpg) ](/img/eclipse/release_notes/srw_doc_link.jpg)
+
 ## 3.1.2
 
 _15.02.2019_
 
 ### Hotfix Release
 
-This Hotfix Release brings bugfixes on refactoring rules. 
+This Hotfix Release brings bugfixes on refactoring rules.
 
 ### Fixed Bugs
 
 #### Use Try-With-Resource
-* Avoiding runtime exceptions when searching for the [Resource::close](https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html#close--) invocations. 
+* Avoiding runtime exceptions when searching for the [Resource::close](https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html#close--) invocations.
 
 #### Replace Expression Lambda with Method Reference
 * Avoid creating method references on java arrays.
@@ -27,13 +46,13 @@ _13.02.2019_
 
 ### Hotfix Release
 
-Resolving a connectivity failure in jSparrow Starter registration. 
+Resolving a connectivity failure in jSparrow Starter registration.
 
 ### Fixed Bugs
 
 #### jSparrow Starter Registration over proxy
 
-* Fixes a bug related to the registration for jSparrow Starter in cases where the internet access is regulated with a proxy. 
+* Fixes a bug related to the registration for jSparrow Starter in cases where the internet access is regulated with a proxy.
 
 See also [Define proxy in Eclipse](./additional-configuration.html#setup-proxy).
 
@@ -91,7 +110,7 @@ The original behavior of *jSparrow Free* remains unaffected.
 
 #### How to register?
 
-See the documentation at: [Registration for 15 free rules](installation-guide.html#jsparrow-starter-registration).
+See the documentation at: [Registration for 15 free rules](jsparrow-starter-registration.html).
 
 #### List of free rules
 

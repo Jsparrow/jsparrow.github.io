@@ -1,11 +1,11 @@
 ---
-title: Add Parenthesis to Control Statements
+title: Add Braces to Control Statements
 description:
-    Checks if parenthesis are used to encapsulate control statements and adds them if they aren't present.
+    Checks if braces are used to encapsulate control statements and adds them if they aren't present.
 tags: ["Java 1.1", "Formatting", "Readability"]
 ---
 
-# Add Parenthesis to Control Statements
+# Add Braces to Control Statements
 
 [[toc]]
 
@@ -20,7 +20,7 @@ tags: ["Java 1.1", "Formatting", "Readability"]
 
 ## Description
 
-Checks if parenthesis are used to encapsulate control statements and adds them if they aren't present.
+Checks if braces are used to encapsulate control statements and adds them if they aren't present.
 
 ## Benefits
 

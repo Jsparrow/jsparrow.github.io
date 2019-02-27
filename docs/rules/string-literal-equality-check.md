@@ -1,7 +1,7 @@
 ---
 title: Reorder String Equality Check
 description:
-    Moves the string literals in the left-hand-side of equals() or equalsIgnoreCase() when checking for equality.
+    Moves the string literals in the left-hand-side of 'equals()' or 'equalsIgnoreCase()' when checking for equality.
 tags: ["Free", "Java 1.1", "String Manipulation"]
 ---
 
