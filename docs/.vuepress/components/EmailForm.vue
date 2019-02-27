@@ -102,9 +102,9 @@ export default {
     },
     sendRegistration: function() {
       // Prod stack
-      //const Url = "https://1k4wn56lwd.execute-api.eu-central-1.amazonaws.com/Prod/starter/create";
+      const Url = "https://1k4wn56lwd.execute-api.eu-central-1.amazonaws.com/Prod/starter/create";
       // Test stack
-      const Url = "https://5dblvgznqf.execute-api.eu-central-1.amazonaws.com/Prod/starter/create";
+      // const Url = "https://5dblvgznqf.execute-api.eu-central-1.amazonaws.com/Prod/starter/create";
       const otherPram = {
         headers: {
           "content-type": "application/json; charset=UTF-8"
