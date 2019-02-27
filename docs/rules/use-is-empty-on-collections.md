@@ -20,11 +20,11 @@ tags: ["Free", "Java 6", "Old Language Constructs", "Coding Conventions", "Reada
 
 ## Description
 
-This rule replaces comparisons of length() or size() with 0 with a call to isEmpty(). Any occurrences of such a comparison will be replaced, regardless of surrounding control structure.
+This rule replaces comparisons of `length()` or `size()` with `0` with a call to `isEmpty()`. Any occurrences of such a comparison will be replaced, regardless of surrounding control structure.
 
 ## Benefits
 
-The time complexity of any isEmpty() method implementation should be O(1) whereas some implementations of size() can be O(n). Thus, using this rule provides performance benefits.
+The time complexity of any `isEmpty()` method implementation should be `O(1)` whereas some implementations of `size()` can be `O(n)`. Thus, using this rule provides performance benefits.
 
 ## Requirement & Tags
 

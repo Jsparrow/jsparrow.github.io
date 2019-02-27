@@ -20,8 +20,8 @@ tags: ["Free", "Java 6", "Readability", "Coding Conventions"]
 
 ## Description
 
-This rule adds the @Override annotation to methods overriding or implementing parent class methods.
-Even though using @Override it is not mandatory, using this annotation is considered a best practice for
+This rule adds the `@Override` annotation to methods overriding or implementing parent class methods.
+Even though adding `@Override` is not mandatory, using this annotation is considered a best practice for
  two main reasons:
  1. It ensures that the method signature is a sub-signature of the overridden method.
  2. It improves the readability.

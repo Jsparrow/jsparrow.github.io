@@ -21,7 +21,7 @@ tags: ["Java 1.1", "String Manipulation"]
 ## Description
 
 This rule replaces various String methods with their null-safe counterparts from StringUtils.
-For example, '"String".trim()' becomes 'StringUtils.trim("String")'.   
+For example, `"String".trim()` becomes `StringUtils.trim("String")`.   
 
 ## Benefits
 

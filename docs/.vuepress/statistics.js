@@ -139,7 +139,7 @@ module.exports = [
                 fileCount : 2,
                 issuesFixedCount : 2
             }        	        ]
-    },	 {
+    },      {
        projectName : "spring-cloud-gateway",
        timestampGitHubStart : 1543311704,
        timestampJSparrowFinish : 1543312283,
@@ -6144,7 +6144,154 @@ module.exports = [
                fileCount : 4,
                issuesFixedCount : 4
            }        	        ]
-   },	 {
+   },
+   {
+          projectName: "NetLicensingClient-java (Java 8)",
+          timestampGitHubStart: 1549625479,
+          timestampJSparrowFinish: 1549625718,
+          totalFilesChanged: 77,
+          totalFilesCount: 95,
+          totalIssuesFixed: 167,
+          totalTimeSaved: 435,
+          rules: [
+            {
+              fileCount: 9,
+              issuesFixedCount: 10,
+              remediationCost: 10,
+              ruleId: "StandardLogger"
+            },
+            {
+              fileCount: 3,
+              issuesFixedCount: 6,
+              remediationCost: 15,
+              ruleId: "EnhancedForLoopToStreamForEach"
+            },
+            {
+              fileCount: 1,
+              issuesFixedCount: 1,
+              remediationCost: 5,
+              ruleId: "GuardCondition"
+            },
+            {
+              fileCount: 1,
+              issuesFixedCount: 1,
+              remediationCost: 2,
+              ruleId: "UseIsEmptyOnCollections"
+            },
+            {
+              fileCount: 3,
+              issuesFixedCount: 6,
+              remediationCost: 5,
+              ruleId: "StatementLambdaToExpression"
+            },
+            {
+              fileCount: 1,
+              issuesFixedCount: 1,
+              remediationCost: 2,
+              ruleId: "PutIfAbsent"
+            },
+            {
+              fileCount: 4,
+              issuesFixedCount: 4,
+              remediationCost: 5,
+              ruleId: "RearrangeClassMembers"
+            },
+            {
+              fileCount: 77,
+              issuesFixedCount: 77,
+              remediationCost: 1,
+              ruleId: "CodeFormatter"
+            },
+            {
+              fileCount: 12,
+              issuesFixedCount: 31,
+              remediationCost: 2,
+              ruleId: "UseStringBuilderAppend"
+            },
+            {
+              fileCount: 1,
+              issuesFixedCount: 1,
+              remediationCost: 2,
+              ruleId: "LambdaToMethodReference"
+            },
+            {
+              fileCount: 16,
+              issuesFixedCount: 25,
+              remediationCost: 1,
+              ruleId: "DiamondOperator"
+            },
+            {
+              fileCount: 2,
+              issuesFixedCount: 3,
+              remediationCost: 5,
+              ruleId: "StringConcatToPlus"
+            },
+            {
+              fileCount: 1,
+              issuesFixedCount: 1,
+              remediationCost: 5,
+              ruleId: "LambdaForEachIfWrapperToFilter"
+            }
+          ]
+  },	{
+        projectName: "NetLicensingClient-java (Java 7)",
+        timestampGitHubStart: 1549889303,
+        timestampJSparrowFinish: 1549889715,
+        totalFilesChanged: 77,
+        totalFilesCount: 95,
+        totalIssuesFixed: 151,
+        totalTimeSaved: 305,
+        rules: [
+          {
+            fileCount: 77,
+            issuesFixedCount: 77,
+            remediationCost: 1,
+            ruleId: "CodeFormatter"
+          },
+          {
+            fileCount: 9,
+            issuesFixedCount: 10,
+            remediationCost: 10,
+            ruleId: "StandardLogger"
+          },
+          {
+            fileCount: 1,
+            issuesFixedCount: 1,
+            remediationCost: 5,
+            ruleId: "GuardCondition"
+          },
+          {
+            fileCount: 12,
+            issuesFixedCount: 31,
+            remediationCost: 2,
+            ruleId: "UseStringBuilderAppend"
+          },
+          {
+            fileCount: 1,
+            issuesFixedCount: 1,
+            remediationCost: 2,
+            ruleId: "UseIsEmptyOnCollections"
+          },
+          {
+            fileCount: 16,
+            issuesFixedCount: 24,
+            remediationCost: 1,
+            ruleId: "DiamondOperator"
+          },
+          {
+            fileCount: 4,
+            issuesFixedCount: 4,
+            remediationCost: 5,
+            ruleId: "RearrangeClassMembers"
+          },
+          {
+            fileCount: 2,
+            issuesFixedCount: 3,
+            remediationCost: 5,
+            ruleId: "StringConcatToPlus"
+          }
+        ],
+  }, {
        projectName : "cucumber-jvm",
        timestampGitHubStart : 1542977106,
        timestampJSparrowFinish : 1542977920,
@@ -6245,4 +6392,3 @@ module.exports = [
                issuesFixedCount : 1
            }        	        ]
    }	    ]
-    

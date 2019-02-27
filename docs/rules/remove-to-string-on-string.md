@@ -20,8 +20,8 @@ tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
 
 ## Description
 
-All method invocations of toString() are tested as to whether they are used on a String element. If this is the case, the method call is removed, because it is not necessary.  
-For example, '"string".toString()' becomes '"string"'.    
+All method invocations of `toString()` are tested as to whether they are used on a String element. If this is the case, the method call is removed, because it is not necessary.  
+For example, `"string".toString()` becomes `"string"`.    
 
 ## Benefits
 

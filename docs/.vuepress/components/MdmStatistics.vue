@@ -1,5 +1,4 @@
 <template>
-<v-app>
 <div>
 
   <div class="tab" v-on:load="openFirstProject()">
@@ -43,36 +42,32 @@
     <h3 id="per-rule">Per Rule Statistics</h3>
 
     This table contains the list of rules that were applied on {{project.projectName}}.
-    <v-data-table
-      :headers="headers"
-      :items="project.rules"
-      class=""
-      hide-actions=""
-      :custom-sort="customSort"
-      :must-sort="true"
-    >
-      <template slot="items" slot-scope="props">
-        <td class="text-xs-right"><a v-bind:href=findRuleLink(props.item.ruleId) target="_blank"> {{findRuleName(props.item.ruleId)}} </a</td>
-        <td class="text-xs-right">{{ props.item.issuesFixedCount }}</td>
-        <td class="text-xs-right">{{ props.item.fileCount }}</td>
-        <td class="text-xs-right">{{ secondsToHms(props.item.remediationCost * props.item.issuesFixedCount *60) }}</td>
-      </template>
-    </v-data-table>
+    <table class="table-hover">
+      <thead>
+        <tr>
+          <th>Rule Name</th>
+          <th>Issues Fixed</th>
+          <th>Files Changed</th>
+          <th>Time saved</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(item, idx) in project.rules">
+          <td> <a v-bind:href=findRuleLink(item.ruleId) target="_blank"> {{findRuleName(item.ruleId)}} </a></td>
+          <td>{{ item.issuesFixedCount }}</td>
+          <td>{{ item.fileCount }}</td>
+          <td>{{ secondsToHms(item.remediationCost * item.issuesFixedCount *60) }}</td>
+        </tr>
+      </tbody>
+    </table>
     <hr/>
     <br/>
   </div>
 </div>
-</v-app>
 </template>
 
-<style lang="stylus">
-@import '../../../node_modules/vuetify/src/stylus/components/_data-table.styl';
-@import '../../../node_modules/material-design-icons-iconfont/dist/material-design-icons.css';
 
-
-.theme--light.application {
-  background: #ffffff;
-}
+<style>
 /* Style the tab */
 
 .tab {
@@ -113,8 +108,6 @@
   border: 1px solid #ccc;
   border-top: none;
 }
-
-
 </style>
 
 
@@ -192,40 +185,6 @@ export default {
     findRuleLink: function(id) {
       var rule = this.ruleNameMap[id];
       return  "../" + rule.url;
-    },
-    customSort: function(items, index, isDescending) {
-      items.sort((a, b) => {
-        if (index === 'ruleId') {
-          if (isDescending) {
-            return this.findRuleName(a.ruleId).localeCompare(this.findRuleName(b.ruleId));
-          } else {
-            return this.findRuleName(b.ruleId).localeCompare(this.findRuleName(a.ruleId));
-          }
-        }
-        else if (index === 'issuesFixedCount') {
-          if (isDescending) {
-            return a.issuesFixedCount - b.issuesFixedCount;
-          } else {
-            return b.issuesFixedCount - a.issuesFixedCount;
-          }
-        }
-        else if (index === 'fileCount') {
-          if (isDescending) {
-            return a.fileCount - b.fileCount;
-          } else {
-            return b.fileCount - a.fileCount;
-          }
-        }
-        else if (index === 'remediationCost') {
-          if (isDescending) {
-            return a.remediationCost * a.issuesFixedCount - b.remediationCost * b.issuesFixedCount;
-          } else {
-            return b.remediationCost * b.issuesFixedCount - a.remediationCost * a.issuesFixedCount;
-        }
-      }
-    });
-
-    return items;
     }
   },
 
@@ -238,15 +197,9 @@ export default {
   data() {
     return {
       statistics:
-        require('../statistics.js'),
+        require('../mdm-statistics.js'),
       ruleNameMap:
-        require('../rule-name-map.js'),
-      headers: [
-        { text: 'Rule Name', value: 'ruleId', align: 'center' },
-        { text: 'Issues Fixed', value: 'issuesFixedCount', align: 'center' },
-        { text: 'Files Changed', value: 'fileCount', align: 'center' },
-        { text: 'Time saved', value: 'remediationCost', align: 'center' }
-      ],
+        require('../rule-name-map.js')
 
     };
   }

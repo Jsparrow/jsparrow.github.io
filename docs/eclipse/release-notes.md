@@ -5,6 +5,38 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.1.2
+
+_15.02.2019_
+
+### Hotfix Release
+
+This Hotfix Release brings bugfixes on refactoring rules. 
+
+### Fixed Bugs
+
+#### Use Try-With-Resource
+* Avoiding runtime exceptions when searching for the [Resource::close](https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html#close--) invocations. 
+
+#### Replace Expression Lambda with Method Reference
+* Avoid creating method references on java arrays.
+
+## 3.1.1
+
+_13.02.2019_
+
+### Hotfix Release
+
+Resolving a connectivity failure in jSparrow Starter registration. 
+
+### Fixed Bugs
+
+#### jSparrow Starter Registration over proxy
+
+* Fixes a bug related to the registration for jSparrow Starter in cases where the internet access is regulated with a proxy. 
+
+See also [Define proxy in Eclipse](./additional-configuration.html#setup-proxy).
+
 ## 3.1.0
 
 _29.01.2019_
@@ -66,18 +98,18 @@ See the documentation at: [Registration for 15 free rules](installation-guide.ht
 * [Replace For-Loop with Enhanced-For-Loop](/rules/for-to-for-each.html)
 * [Organize Imports](/rules/organize-imports.html)
 * [Use @Override Annotation](/rules/override-annotation.html)
-* [Remove Boxing for String Conversions](/rules/remove-boxing-for-string-conversions.html)
+* [Remove Boxing for String Conversions](/rules/primitive-boxed-for-string.html)
 * [Remove Double Negations](/rules/remove-double-negation.html)
 * [Remove toString() on String](/rules/remove-to-string-on-string.html)
-* [Remove Unnecessary Semicolons](/rules/remove-unnecessary-semicolons.html)
-* [Remove Unnecessary Thrown Exceptions on Method Signatures](/rules/remove-unnecessary-thrown-exceptions-on-method-signatures.html)
-* [Reorder String Equality Check](/rules/reorder-string-equality-check.html)
-* [Replace Equality Check with isEmpty()](/rules/replace-equality-check-with-is-empty.html)
-* [Replace equals() on Enum Constants](/rules/replace-equals-on-enum-constants.html)
-* [Replace Expression Lambda with Method Reference](/rules/replace-expression-lambda-with-method-reference.html)
-* [Replace Inefficient Constructors with valueOf()](/rules/replace-inefficient-constructors-with-value-of.html)
-* [Split Multiple Variable Declarations](/rules/split-multiple-variable-declarations.html)
-* [Use Try-With-Resource](/rules/use-try-with-resource.html)
+* [Remove Unnecessary Semicolons](/rules/remove-empty-statement.html)
+* [Remove Unnecessary Thrown Exceptions on Method Signatures](/rules/remove-unnecessary-throws.html)
+* [Reorder String Equality Check](/rules/string-literal-equality-check.html)
+* [Replace Equality Check with isEmpty()](/rules/use-is-empty-on-collections.html)
+* [Replace equals() on Enum Constants](/rules/enums-without-equals.html)
+* [Replace Expression Lambda with Method Reference](/rules/lambda-to-method-reference.html)
+* [Replace Inefficient Constructors with valueOf()](/rules/inefficient-constructor.html)
+* [Split Multiple Variable Declarations](/rules/multi-variable-declaration-line.html)
+* [Use Try-With-Resource](/rules/try-with-resource.html)
 
 Note: All free rules have the tag "[Free](/tags.html#Free)" added to them.
 
@@ -127,7 +159,7 @@ The following exceptions on method signatures are removed:
 * Exceptions that are thrown more than once
 * Exceptions that are inheriting from RuntimeException
 
-See official documentation for more information: [Remove Unnecessary Thrown Exceptions on Method Signatures](/rules/remove-unnecessary-thrown-exceptions-on-method-signatures.html)
+See official documentation for more information: [Remove Unnecessary Thrown Exceptions on Method Signatures](/rules/remove-unnecessary-throws.html)
 
 #### Remove double negations
 
@@ -145,13 +177,13 @@ See official documentation for more information: [Remove Explicit Call To super(
 
 Finds and removes the unnecessary semicolons from the code blocks.
 
-See official documentation for more information: [Remove Unnecessary Semicolons](/rules/remove-unnecessary-semicolons.html)
+See official documentation for more information: [Remove Unnecessary Semicolons](/rules/remove-empty-statement.html)
 
 #### Use StringBuilder::append
 
 Replaces the infix operator `+` over `String` concatenations with at least three operands by `StringBuilder::append`. When possible, unwraps the parenthesized expressions.
 
-See official documentation for more information: [Use StringBuilder::append](/rules/use-stringbuilder-append.html)
+See official documentation for more information: [Use StringBuilder::append](/rules/use-string-builder-append.html)
 
 #### Use guard condition
 
