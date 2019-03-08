@@ -42,58 +42,58 @@ Java 8
 ### While Loops 
 __Pre__
 ```java
-    try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
-        String line;
-        while((line = bufferedReader.readLine())  != null) {
-            consume(line);
-        }
+try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
+    String line;
+    while((line = bufferedReader.readLine())  != null) {
+        consume(line);
     }
+}
 ```
 
 __Post__
 ```java
-    try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
-        bufferedReader.lines().forEach(line -> {
-            consume(line);
-        });
-    }
+try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
+    bufferedReader.lines().forEach(line -> {
+        consume(line);
+    });
+}
 ```
 
 ### For Loops with initializer
 __Pre__
 ```java
-    try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
-        for(String line; (line = bufferedReader.readLine())  != null;) {
-            consume(line);
-        }
+try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
+    for(String line; (line = bufferedReader.readLine())  != null;) {
+        consume(line);
     }
+}
 ```
 
 __Post__
 ```java
-    try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
-        bufferedReader.lines().forEach(line -> {
-            consume(line);
-        });
-    }
+try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
+    bufferedReader.lines().forEach(line -> {
+        consume(line);
+    });
+}
 ```
 
 ### For Loops without initializer
 __Pre__
 ```java
-    try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
-        String line;
-        for(; (line = bufferedReader.readLine())  != null;) {
-            consume(line);
-        }
+try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
+    String line;
+    for(; (line = bufferedReader.readLine())  != null;) {
+        consume(line);
     }
+}
 ```
 
 __Post__
 ```java
-    try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
-        bufferedReader.lines().forEach(line -> {
-            consume(line);
-        });
-    }
+try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.name.txt"))) {			
+    bufferedReader.lines().forEach(line -> {
+        consume(line);
+    });
+}
 ```
