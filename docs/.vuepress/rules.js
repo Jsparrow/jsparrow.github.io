@@ -1,6 +1,7 @@
 module.exports = [
 '',
 'brackets-to-control',
+'buffered-reader-lines',
 'collapse-if-statements',
 'serial-version-uid',
 'organize-imports',
