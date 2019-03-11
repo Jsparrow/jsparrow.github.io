@@ -1,7 +1,13 @@
+/*
+
+Guideline
+
+Fill in a new page, at a position, so that the page title will be sorted alphabetically.
+
+*/
 module.exports = [
 '',
 'brackets-to-control',
-'buffered-reader-lines',
 'collapse-if-statements',
 'serial-version-uid',
 'organize-imports',
@@ -41,6 +47,7 @@ module.exports = [
 'string-buffer-to-builder',
 'standard-logger',
 'override-annotation',
+'buffered-reader-lines',
 'functional-interface',
 'guard-condition',
 'local-variable-type-inference',
