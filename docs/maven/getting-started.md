@@ -12,9 +12,9 @@ The jSparrow Maven plugin (JMP) is a continuous integration tool to apply automa
 ## Installation
 ### Requirements
 * Maven 2.2.1 or later
-* Java 8
+* Java 8 or Java 11
 
-Maven projects themselves may have their Java source version set to an older version than 1.8 - this is not a problem. However, in this case, all rules requiring a newer source level will be ignored.
+Maven projects themselves may have their Java source version set to an older version than 1.8 or 11 - this is not a problem. However, in this case, all rules requiring a newer source level will be ignored.
 
 ### Using the Jar and Pom Files
 Download the JAR file and the `pom.xml`. Navigate to the download location and execute this command:
@@ -24,6 +24,19 @@ $ mvn install:install-file \
     -Dfile=jsparrow-maven-plugin-<VERSION>.jar \
     -DpomFile=pom.xml
 ```
+
+### Increasing Java Heap Space
+Especially with larger projects, a `java.lang.OutOfMemoryError: Java heap space` could occur.
+This means, as the error message suggests, that the allocated heap space is too small.
+To increase your Java heap space set the following environment variable:
+```bash
+$ export MAVEN_OPTS="-Xmx3000m"
+```
+This option sets the maxium heap space (`-Xmx`) to 3000 MB (`3000m`).
+
+::: tip
+Depending on your project you might need a smaller or bigger heap space. The default for modern Java Virtual Machines is smaller than 1/4th of the phisical memory or 1 GB.
+:::
 
 ## Usage
 This section describes how to set up a project to use the jSparrow Maven plugin and how to use it.
