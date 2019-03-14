@@ -13,6 +13,7 @@ module.exports = [
 'diamond-operator',
 're-implementing-interface',
 'statement-lambda-to-expression',
+'remove-modifiers-in-interface-properties',
 'remove-empty-statement',
 'remove-unnecessary-throws',
 'remove-to-string-on-string',
