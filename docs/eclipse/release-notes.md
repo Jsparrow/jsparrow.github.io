@@ -5,6 +5,17 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.3.0
+
+_21.03.2019_
+
+### WIP
+
+### New Rules
+
+* Updated rule: [Replace For-Loop with Stream::Match](/rules/enhanced-for-loop-to-stream-any-match.html)
+* New rule: [Use BufferedReader::lines](/rules/buffered-reader-lines.html)
+
 ## 3.2.0
 
 _21.02.2019_
@@ -15,8 +26,8 @@ Since the official End of Life of Java 8 has been reached, we have updated jSpar
 
 ### New Rule
 
-jSparrow 3.2.0 brings a new rule for [collapsing if statements](/rules/collapse-if-statements.html). 
-The motivation behind this rule is to improve the readability of code by reducing the number of nested language constructs. 
+jSparrow 3.2.0 brings a new rule for [collapsing if statements](/rules/collapse-if-statements.html).
+The motivation behind this rule is to improve the readability of code by reducing the number of nested language constructs.
 
 ### Direct Link to Rule Documentation
 
