@@ -197,9 +197,9 @@ export default {
       items.sort((a, b) => {
         if (index === 'ruleId') {
           if (isDescending) {
-            return this.findRuleName(a.ruleId).localeCompare(this.findRuleName(b.ruleId));
-          } else {
             return this.findRuleName(b.ruleId).localeCompare(this.findRuleName(a.ruleId));
+          } else {
+            return this.findRuleName(a.ruleId).localeCompare(this.findRuleName(b.ruleId));
           }
         }
         else if (index === 'issuesFixedCount') {
