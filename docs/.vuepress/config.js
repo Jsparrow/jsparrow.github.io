@@ -8,7 +8,11 @@ module.exports = {
             href: '/logo.png'
         }]
     ],
+    theme: "yuu",
     themeConfig: {
+        yuu: {
+            colorThemes: ['blue', 'green']
+        },
         nav: [{
                 text: 'jSparrow',
                 link: '/'
