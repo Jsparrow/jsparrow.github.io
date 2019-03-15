@@ -14,5 +14,11 @@
     "material-design-icons-iconfont": "^4.0.4",
     "vuepress": "^0.14.4",
     "vuetify": "^1.5.0"
+  },
+  "dependencies": {
+    "vuepress-theme-yuu": "1.0.0"
+  },
+  "resolutions": {
+    "webpack-dev-middleware": "3.6.0"
   }
 }
