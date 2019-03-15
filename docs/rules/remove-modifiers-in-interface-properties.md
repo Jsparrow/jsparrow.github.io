@@ -1,7 +1,7 @@
 ---
 title: Remove Modifiers in Interface Properties
 description:
-    Removes 'public' modifiers from methods and 'public static final' modifiers from fields declared in interfaces.
+    Removes the 'public' modifiers from method declarations and 'public static final' modifiers from field declarations in Java interfaces.
 
 tags: ["Java 1.1", "Readability"]
 ---
@@ -21,13 +21,14 @@ tags: ["Java 1.1", "Readability"]
 
 ## Description
 
-Prior to Java 9, all properties declared in interfaces are implicitly `public`.  
+By default, the attributes declared in Java interfaces are `public`.
 This rule, removes the `public` modifiers from method declarations and `public static final` modifiers from field declarations in interfaces.
 
+Note, from Java 9 it is possible to have [`private` methods](http://openjdk.java.net/jeps/213) in interfaces, too. 
 
 ## Benefits
 
-Removes the clutter and unifies the property declarations in interfaces. 
+Removes the clutter and unifies the attributes of Java interfaces. 
 
 ## Requirement & Tags
 
@@ -50,7 +51,6 @@ public interface InterfaceWithProperties {
 	public static String FIELD_WITH_PUBLIC_STATIC_MODIFIER = "";
 	
 	public static final String FIELD_WITH_PUBLIC_STATIC_FINAL_MODIFIER = "";
-	
 	
 	void method();
 	
@@ -76,7 +76,6 @@ public interface InterfaceWithProperties {
 	String FIELD_WITH_PUBLIC_STATIC_MODIFIER = "";
 	
 	String FIELD_WITH_PUBLIC_STATIC_FINAL_MODIFIER = "";
-	
 	
 	void method();
 	
