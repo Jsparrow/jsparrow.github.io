@@ -14,10 +14,10 @@ tags: ["Java 1.1", "Readability"]
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | X.X.X |
-| Minimum Java version            | X     |
-| Remediation cost                | X min |
-| Links                           | [XXX](https://sonarcloud.io/organizations/default/rules?open=squid%3AXXX&rule_key=squid%3AXXX) |
+| First seen in jSparrow version  | 3.3.0 |
+| Minimum Java version            | 1.1   |
+| Remediation cost                | 1 min |
+| Links                           | [S2333](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS2333&q=S2333) |
 
 ## Description
 
