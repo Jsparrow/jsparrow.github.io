@@ -62,7 +62,7 @@ To use the jsparrow-maven-plugin on a project, add the following code snippet to
 ### Rule Selection
 
 To configure which rules should be applied, use the configuration file (`jsparrow.yml`). Place this file in your project's root directory.
-The child projects will inherit the parent's configuration, unless another `jsparrow.yml` is placed in their base directory. If the configuration file is not present and no configuration is inherited from parents, the JMP will use the default configuration. If the configuration file has errors, an exception will be thrown and the JMP will terminate.
+The child projects will inherit the parent's configuration, unless another `jsparrow.yml` is placed in their base directory. In this case, the parent's configuration is ignored completely. If the configuration file is not present, has errors or isn't inherited from a parent, an exception will be thrown and the JMP will terminate. If the `-DconfigFile` option is specified, it will override all other configuration files.
 
 The `jsparrow.yml` file consists of three optional sections.
 The first section contains the profiles definition.
