@@ -9,12 +9,18 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 _21.03.2019_
 
-### WIP
+The 3.3.0 jSparrow Release brings you a bunch of new rules and some minjor UI improvements.
 
 ### New Rules
 
 * Updated rule: [Replace For-Loop with Stream::Match](/rules/enhanced-for-loop-to-stream-any-match.html)
 * New rule: [Use BufferedReader::lines](/rules/buffered-reader-lines.html)
+* New rule: [Remove Modifiers in Interface Properties](/rules/remove-modifiers-in-interface-properties.html)
+
+### UI Improvements
+
+* Feedback when entering a license was improved.
+* License status in preference page has been unified.
 
 ## 3.2.0
 
