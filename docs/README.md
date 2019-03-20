@@ -24,7 +24,7 @@ You can execute it as part of your development process as an Eclipse IDE plugin 
 
 ## jSparrow 3.3.0 has been released!
 
-We released two new rules and one improved rule in jSparrow 3.0.0! Check out the [Release Notes](/eclipse/release-notes.html#_3-3-0).
+We released two new rules and one improved rule in jSparrow 3.3.0! Check out the [Release Notes](/eclipse/release-notes.html#_3-3-0).
 
 ## Statistical Data
 
