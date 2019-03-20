@@ -5,9 +5,7 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
-## 2.0.0
-
-_xx. xx. xxxx_
+## 2.0.0 <Badge vertical="middle" text="xx.xx.xxxx"/>
 
 ::: tip TODO
 Currently just a short summary of the tickets
@@ -25,9 +23,7 @@ Currently just a short summary of the tickets
 * improved documentation
 * using the m2e connector to create eclipse project for the jsparrow engine to reduce the overhead for projects to let jsparrow run.
 
-## 1.0.0
-
-_25. 06. 2018_
+## 1.0.0 <Badge vertical="middle" text="25.06.2018"/>
 
 This version contains all the features all the rules of the Eclipse Plugin 2.6.0 except OrganizeImports, Logging and Fieldrenaming.
 
