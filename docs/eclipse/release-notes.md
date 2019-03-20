@@ -9,7 +9,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 _21.03.2019_
 
-The 3.3.0 jSparrow Release brings you a bunch of new rules and some minjor UI improvements.
+The 3.3.0 jSparrow Release brings you a bunch of new rules and some minor UI improvements.
 
 ### New Rules
 
