@@ -20,6 +20,8 @@ The 3.3.0 jSparrow Release brings you a bunch of new rules and some minor UI imp
 * Feedback when entering a license was improved.
 * License status in preference page has been unified.
 
+[ ![License settings Starter](/img/eclipse/release_notes/license-settings-starter.png) ](/img/eclipse/release_notes/license-settings-starter.png)
+
 ## 3.2.0 <Badge vertical="middle" text="21.02.2019"/>
 
 ### jSparrow Is Fit for Java 11
