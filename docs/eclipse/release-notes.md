@@ -5,9 +5,7 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
-## 3.3.0
-
-_21.03.2019_
+## 3.3.0 <Badge vertical="middle" text="21.03.2019"/>
 
 The 3.3.0 jSparrow Release brings you a bunch of new rules and some minor UI improvements.
 
@@ -22,9 +20,7 @@ The 3.3.0 jSparrow Release brings you a bunch of new rules and some minor UI imp
 * Feedback when entering a license was improved.
 * License status in preference page has been unified.
 
-## 3.2.0
-
-_21.02.2019_
+## 3.2.0 <Badge vertical="middle" text="21.02.2019"/>
 
 ### jSparrow is Fit for Java 11
 
@@ -41,9 +37,7 @@ In the “Select Rules” wizard we have added a link to each rule description w
 
 [ ![Preview of rule's documentation link](/img/eclipse/release_notes/srw_doc_link.jpg) ](/img/eclipse/release_notes/srw_doc_link.jpg)
 
-## 3.1.2
-
-_15.02.2019_
+## 3.1.2 <Badge vertical="middle" text="15.02.2019"/>
 
 ### Hotfix Release
 
@@ -57,9 +51,7 @@ This Hotfix Release brings bugfixes on refactoring rules.
 #### Replace Expression Lambda with Method Reference
 * Avoid creating method references on java arrays.
 
-## 3.1.1
-
-_13.02.2019_
+## 3.1.1 <Badge vertical="middle" text="13.02.2019"/>
 
 ### Hotfix Release
 
@@ -73,9 +65,7 @@ Resolving a connectivity failure in jSparrow Starter registration.
 
 See also [Define proxy in Eclipse](./additional-configuration.html#setup-proxy).
 
-## 3.1.0
-
-_29.01.2019_
+## 3.1.0 <Badge vertical="middle" text="29.01.2019"/>
 
 ### jSparrow lands on Eclipse 2018-12
 
@@ -107,9 +97,7 @@ The old welcome screen was removed due to the presence of the dashboard which al
 
 * Avoid converting a static final collection to an unmodifiable collection if it is used as an initializer of another collection.
 
-## 3.0.0
-
-_21.12.2018_
+## 3.0.0 <Badge vertical="middle" text="21.12.2018"/>
 
 ### Introduction of jSparrow Starter
 
@@ -172,9 +160,7 @@ Note: All free rules have the tag "[Free](/tags.html#Free)" added to them.
 
 * Fixed an issue where the 'concat' method is not used for concatenating 'java.lang.String' instances.
 
-## 2.7.0
-
-_21.11.2018_
+## 2.7.0 <Badge vertical="middle" text="21.11.2018"/>
 
 This release brings 6 new rules and a news dashboard.
 
@@ -227,9 +213,7 @@ Replaces, when possible, the last if-statement of a method body with a guard-if 
 
 See official documentation for more information: [Use Guard Condition](/rules/guard-condition.html)
 
-## 2.6.0
-
-_21.09.2018_
+## 2.6.0 <Badge vertical="middle" text="21.09.2018"/>
 
 ### Update site change
 
@@ -266,25 +250,19 @@ Java classes with compilation errors are excluded from any refactoring by jSparr
 
 This issue has been fixed and Java classes will be evaluated for errors on each execution of jSparrow.
 
-## 2.5.3
-
-_16.08.2018_
+## 2.5.3 <Badge vertical="middle" text="16.08.2018"/>
 
 The version range of the `apache.commons.lang3` library that is used for the “Use StringUtils Methods” rule has been enlarged. Currently we support all versions that are released.
 
 * Accepted versions of `apache.commons.lang3` are now : [3.0,3.7]
 
-## 2.5.2
-
-_31.07.2018_
+## 2.5.2 <Badge vertical="middle" text="31.07.2018"/>
 
 Eclipse Photon is now Supported
 
 * Organize imports has been updates to work with Eclipse Photon
 
-## 2.5.0
-
-_22.05.2018_
+## 2.5.0 <Badge vertical="middle" text="22.05.2017"/>
 
 This release brings substantial performance improvements, one new rule and various small improvements.
 
@@ -343,9 +321,7 @@ On the summary page the value of “Time Saved” now uses man-days, meaning eig
 * Bugfix to avoid UI freezes when committing survey results
 * Bugfix that prevents a rare case where it was possible to select no profile
 
-## 2.4.5
-
-_25.04.2018_
+## 2.4.5 <Badge vertical="middle" text="25.04.2018"/>
 
 ### Bugfix for ImmutableStaticFinalCollections-Rule
 
@@ -355,9 +331,7 @@ Diamond Operators in Java 7 are not valid within a method parameter because thei
 
 Solves an issue where the renaming of a field did not change the references to it in anonymous inner classes.
 
-## 2.4.4
-
-_26.03.2018_
+## 2.4.4 <Badge vertical="middle" text="26.03.2018"/>
 
 Updated the way the free licenses work.
 
@@ -366,9 +340,7 @@ Updated the way the free licenses work.
 Free licenses have been reworked to no longer require a connection to the licensing server. When using older versions of jSparrow this might have led to warning issues. However, jSparrow functionality should not be adversely impacted.
 Any warnings should be able to be removed by upgrading to the latest version of jSparrow. If you experience errors that persist after the upgrade please contact us at [bugreport@jsparrow.eu](mailto:bugreport@jsparrow.eu).
 
-## 2.4.3
-
-_20.02.2018_
+## 2.4.3 <Badge vertical="middle" text="20.02.2018"/>
 
 ### Bug fixes
 
@@ -379,17 +351,13 @@ _20.02.2018_
 * jSparrow was executable on sub-elements of a class but was not executed because the types are not suitable for refactoring
 * The visual display of jSparrow was removed from sub-elements of a class
 
-## 2.4.2
-
-_30.01.2018_
+## 2.4.2 <Badge vertical="middle" text="30.01.2018"/>
 
 ### Bug fixes
 
 * Fixed a bug where comments were lost in some cases.
 
-## 2.4.1
-
-_09.01.2018_
+## 2.4.1 <Badge vertical="middle" text="09.01.2018"/>
 
 ### Bug fixes
 
@@ -398,9 +366,7 @@ _09.01.2018_
 * Fixed a bug where changes made by the “Use Try-With-Resource” rule were not displayed under certain circumstances.
 * Fixed a bug where no license warning was displayed if a license was already in use by another user.
 
-## 2.4.0
-
-_19.12.2017_
+## 2.4.0 <Badge vertical="middle" text="19.12.2017"/>
 
 ### Rename fields rule
 
@@ -430,18 +396,14 @@ The renaming cannot be performed automatically if:
 * Logging Rule:
   * Fixed a bug where tooltips for checkboxes would not show up at the right position.
 
-## 2.3.1
-
-_29.11.2017_
+## 2.3.1 <Badge vertical="middle" text="29.11.2017"/>
 
 ### Bug fixes
 
 * Fixed a bug where controls on the Summary Page could be duplicated under certain circumstances.
 * Fixed a bug where alphabetical sorting of files in the Summary page was disabled.
 
-## 2.3.0
-
-_21.11.2017_
+## 2.3.0 <Badge vertical="middle" text="21.11.2017"/>
 
 ### Statistics
 jSparrow now estimates the time it takes to fix issues. All rules in jSparrow get an individual estimation time to fix the corresponding issue. On each run of jSparrow, the time for each rule is multiplied by the number of occurrences of each corresponding rule, resulting in an estimation of saved time.
@@ -522,17 +484,13 @@ This Java 8 rule updates the following old language construct and improves reada
 * Rule tags:
   * Fixed an issue where tags and “Remove disabled rules” would not work together
 
-## 2.2.2
-
-_25.10.2017_
+## 2.2.2 <Badge vertical="middle" text="25.10.2017"/>
 
 ### Bug fixes
 
 * Fixed a bug where Eclipse would report “Save Problems” when manually editing and saving files right after running jSparrow.
 
-## 2.2.1
-
-_10.10.2017_
+## 2.2.1 <Badge vertical="middle" text="10.10.2017"/>
 
 ### Bug fixes
 
@@ -540,9 +498,7 @@ _10.10.2017_
   * Replace For-Loop with Enhanced-For-Loop
     * In cases the iterable was named after an primitive type with “s” as postfix the derived loop variable was translated to the corresponding primitive type. The behavior was changed so that an “a/an” is added as prefix to the created variable.
 
-## 2.2.0
-
-_21.09.2017_
+## 2.2.0 <Badge vertical="middle" text="21.09.2017"/>
 
 This release is shipped with twelve new rules and other improvements to the user interface and the logic behind. In order to improve our possibility to track down bugs and other errors the OSGi bundle names have been changed. This has been necessary for jSparrow to work correctly with Eclipse Error Reporting. We have also added a new Summary Screen, where all changes can be reviewed before applying them. To make the selection of rules more intuitive and clearer we have changed their names to be more descriptive and consistent. The trial licensing model has been changed to accommodate new needs. Therefore it’s not possible anymore to persist changes with a trial license. However, changes can still be reviewed on the Summary Screen.
 
@@ -623,9 +579,7 @@ This release is shipped with twelve new rules and other improvements to the user
 |TryWithResource|Use Try-With-Resource|
 |While-loops to for-loop|Replace While-Loop With Enhanced For-Loop|
 
-## 2.1.0
-
-_14.08.2017_
+## 2.1.0 <Badge vertical="middle" text="14.08.2017"/>
 
 * New welcome screen that explains in very short terms how to use jSparrow, including a feedback area
 * A new license expired dialog with a feedback form
@@ -633,16 +587,12 @@ _14.08.2017_
 * Improvement of the forEach to Lambda rule
 * Minor bugfix of the Lambda do method reference rule
 
-## 2.0.2
-
-_06.07.2017_
+## 2.0.2 <Badge vertical="middle" text="06.07.2017"/>
 
 * Support for Eclipse Oxygen
 * Support for macOS
 
-## 2.0.0
-
-_21.06.2017_
+## 2.0.0 <Badge vertical="middle" text="21.06.2017"/>
 
 * UI improvements
   * Redesign of the selection process within the corresponding wizard
@@ -687,18 +637,14 @@ _21.06.2017_
       * unwrapping object done with mapping from streams
       * collecting objects done with collect from streams
 
-## 1.1.0
-
-_31.03.2017_
+## 1.1.0 <Badge vertical="middle" text="31.03.2017"/>
 
 * Support for Eclipse Mars
 * UI improvements
   * Addition of progress monitors for better feedback
   * Loading indicators on various points where real time background processing is not possible
 
-## 1.0.0
-
-_01.02.2017_
+## 1.0.0 <Badge vertical="middle" text="01.02.2017"/>
 
 * Support for Eclipse Neon
 * Support for Ubuntu and Windows 7/10
