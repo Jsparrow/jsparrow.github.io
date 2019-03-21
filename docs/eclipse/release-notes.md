@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.3.0 <Badge vertical="middle" text="21.03.2019"/>
 
-The 3.3.0 jSparrow Release brings you a bunch of new rules and some minor UI improvements.
+The jSparrow 3.3.0 release brings a bunch of new rules, improvements to Java version handling, and some minor UI improvements.
 
 ### New Rules
 
@@ -15,10 +15,14 @@ The 3.3.0 jSparrow Release brings you a bunch of new rules and some minor UI imp
 * New rule: [Use BufferedReader::lines](/rules/buffered-reader-lines.html)
 * New rule: [Remove Modifiers in Interface Properties](/rules/remove-modifiers-in-interface-properties.html)
 
+### Java Version handling
+
+Version resolution when running Eclipse with JDK 11 on Java 8 projects has been improved.
+
 ### UI Improvements
 
-* Feedback when entering a license was improved.
-* License status in preference page has been unified.
+* Feedback when entering a license has been improved.
+* License status in the jSparrow license preference page has been unified.
 
 [ ![License settings Starter](/img/eclipse/release_notes/license-settings-starter.png) ](/img/eclipse/release_notes/license-settings-starter.png)
 
@@ -519,7 +523,7 @@ This release is shipped with twelve new rules and other improvements to the user
 
 * Introduction of a Summary Page that displays all the changes from all rules that will be made.
 
-### New Rules Have Been Added	
+### New Rules Have Been Added
 
 * Remove Inherited Interfaces from Class Declaration
   * Remove interfaces from class declaration, which are already implemented by a super class. These interfaces are inherited from the super class.
