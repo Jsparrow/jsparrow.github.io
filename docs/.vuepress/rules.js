@@ -1,3 +1,10 @@
+/*
+
+Guideline
+
+Fill in a new page, at a position, so that the page title will be sorted alphabetically.
+
+*/
 module.exports = [
 '',
 'brackets-to-control',
@@ -13,6 +20,7 @@ module.exports = [
 'diamond-operator',
 're-implementing-interface',
 'statement-lambda-to-expression',
+'remove-modifiers-in-interface-properties',
 'remove-empty-statement',
 'remove-unnecessary-throws',
 'remove-to-string-on-string',
@@ -40,6 +48,7 @@ module.exports = [
 'string-buffer-to-builder',
 'standard-logger',
 'override-annotation',
+'buffered-reader-lines',
 'functional-interface',
 'guard-condition',
 'local-variable-type-inference',
