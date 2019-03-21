@@ -9,11 +9,19 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 The jSparrow 3.3.0 release brings a bunch of new rules, improvements to Java version handling, and some minor UI improvements.
 
-### New Rules
+### New Rules 
+#### [**Use BufferedReader::lines**](/rules/buffered-reader-lines.html)
 
-* Updated rule: [Replace For-Loop with Stream::Match](/rules/enhanced-for-loop-to-stream-any-match.html)
-* New rule: [Use BufferedReader::lines](/rules/buffered-reader-lines.html)
-* New rule: [Remove Modifiers in Interface Properties](/rules/remove-modifiers-in-interface-properties.html)
+Replaces While-Loops and For-Loops that are iterating over lines of a file by streams generated with [`BufferedReader::readLine`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html#lines--).
+
+#### [**Remove Modifiers in Interface Properties**](/rules/remove-modifiers-in-interface-properties.html) 
+Removes unnecessary modifiers on interface properties. 
+
+### Extended Rules
+
+#### [**Replace For-Loop with Stream::Match**](/rules/enhanced-for-loop-to-stream-any-match.html) 
+
+In addition to [`Stream::anyMatch`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#anyMatch-java.util.function.Predicate-), this rule is extended to allow converting Enhanced For-Loops to [`Stream::allMatch`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#allMatch-java.util.function.Predicate-) or [`Stream::noneMatch`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#noneMatch-java.util.function.Predicate-). 
 
 ### Java Version handling
 
