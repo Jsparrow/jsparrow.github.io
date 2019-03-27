@@ -7,24 +7,43 @@ Here you will find the latest information about releases of the jSparrow Maven p
 
 ## 2.0.0 <Badge vertical="middle" text="28.03.2019"/>
 
-::: tip TODO
-Currently just a short summary of the tickets
-:::
+Version 2.0.0 brings a lot of new rules, better performance and a lot of general improvements.
 
-* Performance improvements
-* JDK 11 support
-* Added a help mojo
-* Add sweet asci art
-* Logging and fieldrenaming added
-* maven module handling improved
-* yaml parsing improvements
-* error message improvements
-* better yaml parsing feedback (warning for non existing packages or classes)
-* improved documentation
-* using the m2e connector to create eclipse project for the jsparrow engine to reduce the overhead for projects to let jsparrow run.
+### New Ruleset
+
+This release contains [55 automatic refactoring rules](/rules/):
+
+* All rules of the jSparrow Eclipse plugin 3.3.0 are included in this release, except for the [Organize Imports](/rules/organize-imports.html) rule.
+* The previously excluded rules [System Out To Logging](/rules/standard-logger.html) and [Rename Fields](/rules/field-renaming.html) have now been added!
+
+### Performance Improvements
+
+* By using an improved dependency mechanism the start time of the jSparrow Maven plugin has been improved significantly.
+
+### Java 11 Support
+
+* The jSparrow Maven plugin can now be executed with a Maven version using Java 11.
+
+### Usability and General Improvements
+
+* A [help mojo](/maven/getting-started.html#help) has been added.
+* The YAML parsing has been improved in regards to functionality and user feedback (e.g., warnings for non-existing packages or classes).
+* Error messages have been improved.
+
+### Source and Module Discovery
+
+The Maven module handling has been improved.
+
+* Maven modules defined in profiles can now be located.
+* Non-default source folders can now be used (e.g., folders not following the `src/main/java` schema).
+* Supported packaging types are now `jar` and `war`.
+
+### Installation
+
+Have a look at the [installation instructions](/maven/getting-started.html#installation) for more information!
 
 ## 1.0.0 <Badge vertical="middle" text="25.06.2018"/>
 
-This version contains all the features all the rules of the Eclipse Plugin 2.6.0 except OrganizeImports, Logging and Fieldrenaming.
+This version contains all the features and all the rules of the [jSparrow Eclipse plugin 2.5.0](/eclipse/release-notes.html#_2-5-0) except [Organize Imports](/rules/organize-imports.html), [System Out To Logging](/rules/standard-logger.html), and [Rename Fields](/rules/field-renaming.html).
 
-Download can be found at [jSparrow Maven plugin](https://download.jsparrow.eu/)
+The download can be found at [jSparrow Maven plugin](https://download.jsparrow.eu/)
