@@ -14,6 +14,7 @@ The jSparrow Maven plugin (JMP) is a continuous integration tool to apply automa
 
 * Maven 2.2.1+ (3.5.0+ for Java 11)
 * Java 8 or 11
+* Linux or Windows operating system
 
 Maven projects themselves may have their Java source version set to an older version than 1.8 or 11 - this is not a problem. However, in this case, all rules requiring a newer source level will be ignored.
 
@@ -23,7 +24,7 @@ Maven projects themselves may have their Java source version set to an older ver
 [https://download.jsparrow.eu/maven2](https://download.jsparrow.eu/maven2)
 :::
 
-In order to access jSparrow from the jSparrow plugin repository, you need to add it to Maven's `settings.xml` file or in the `pom.xml` of the project you are using it. `M2_HOME/conf/settings.xml` is the default location of the system-level maven settings. 
+In order to access jSparrow from the jSparrow plugin repository, you need to add it to Maven's `settings.xml` file or in the `pom.xml` of the project you are using it. `M2_HOME/conf/settings.xml` is the default location of the system-level maven settings.
 
 ```XML
 <settings> or <project>
