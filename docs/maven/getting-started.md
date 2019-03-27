@@ -11,18 +11,30 @@ The jSparrow Maven plugin (JMP) is a continuous integration tool to apply automa
 
 ## Installation
 ### Requirements
-* Maven 2.2.1 or later
-* Java 8 or Java 11
+
+* Maven 2.2.1+ (3.5.0+ for Java 11)
+* Java 8 or 11
 
 Maven projects themselves may have their Java source version set to an older version than 1.8 or 11 - this is not a problem. However, in this case, all rules requiring a newer source level will be ignored.
 
-### Using the Jar and Pom Files
-Download the JAR file and the `pom.xml`. Navigate to the download location and execute this command:
+### Using the jSparrow Plugin Repository
 
-```bash
-$ mvn install:install-file \
-    -Dfile=jsparrow-maven-plugin-<VERSION>.jar \
-    -DpomFile=pom.xml
+::: tip URL
+[https://download.jsparrow.eu/maven2](https://download.jsparrow.eu/maven2)
+:::
+
+In order to access jSparrow from the jSparrow plugin repository, you need to add it to Maven's `settings.xml` file or in the `pom.xml` of the project you are using it. `M2_HOME/conf/settings.xml` is the default location of the system-level maven settings. 
+
+```XML
+<settings> or <project>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>jsparrow-plugin-repository</id>
+      <name>jSparrow Plugin Repository</name>
+      <url>https://download.jsparrow.eu/maven2/</url>
+    </pluginRepository>
+  </pluginRepositories>
+</settings> or </project>
 ```
 
 ### Increasing Java Heap Space
@@ -49,17 +61,21 @@ This section describes how to set up a project to use the jSparrow Maven plugin 
 * Configuration using command line options, profiles or configuration files possible.
 
 ### Project Setup
-To use the jsparrow-maven-plugin on a project, add the following code snippet to the project's `pom.xml` (in build/plugins):
+To use the jsparrow-maven-plugin on a project, add the following code snippet to the project's `pom.xml`:
 
 ```XML
-<plugin>
-    <groupId>eu.jsparrow</groupId>
-    <artifactId>jsparrow-maven-plugin</artifactId>
-    <version>${VERSION}</version>
-</plugin>
+<build>
+  <plugins>
+    <plugin>
+      <groupId>eu.jsparrow</groupId>
+      <artifactId>jsparrow-maven-plugin</artifactId>
+      <version>2.0.0</version>
+    </plugin>
+  </plugins>
+</build>  
 ```
 
-### Rule Selection
+### Plugin Configuration
 
 To configure which rules should be applied, use the configuration file (`jsparrow.yml`). Place this file in your project's root directory.
 The child projects will inherit the parent's configuration, unless another `jsparrow.yml` is placed in their base directory. In this case, the parent's configuration is ignored completely. If the configuration file is not present, has errors or isn't inherited from a parent, an exception will be thrown and the JMP will terminate. If the `-DconfigFile` option is specified, it will override all other configuration files.
