@@ -26,6 +26,10 @@ You can execute it as part of your development process as an Eclipse IDE plugin 
 
 We released two new rules and one improved rule in jSparrow 3.3.0! Check out the [Release Notes](/eclipse/release-notes.html#_3-3-0).
 
+## jSparrow Maven Plugin 2.0.0 has been released!
+
+Version 2.0.0 brings performance improvements, support for Java 11, and much more! Have a look at the [Release Notes](/maven/release-notes.html#_2-0-0). 
+
 ## Statistical Data
 
 Our latest measurements of open source available test projects can be found at [Github App statistics](/github/statistics.html).
