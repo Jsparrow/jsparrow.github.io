@@ -5,7 +5,7 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
-## 2.0.0 <Badge vertical="middle" text="xx.xx.xxxx"/>
+## 2.0.0 <Badge vertical="middle" text="28.03.2019"/>
 
 ::: tip TODO
 Currently just a short summary of the tickets
