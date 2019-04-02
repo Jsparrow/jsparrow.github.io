@@ -24,10 +24,15 @@ Maven projects themselves may have their Java source version set to an older ver
 [https://download.jsparrow.eu/maven2](https://download.jsparrow.eu/maven2)
 :::
 
-In order to access jSparrow from the jSparrow plugin repository, you need to add it to Maven's `settings.xml` file or in the `pom.xml` of the project you are using it. `M2_HOME/conf/settings.xml` is the default location of the system-level maven settings. Have a look at the [Maven Settings Reference](https://maven.apache.org/settings.html) for more information. 
+In order to access jSparrow from the jSparrow plugin repository, you need to add it to Maven's `settings.xml` or to the `pom.xml` of the project you are using it. Both configuration options are listed below.
+
+#### Configuration via pom.xml
+
+The `pluginRepository` configuration via `pom.xml`:
 
 ```XML
-<settings> or <project>
+<project>
+  ...
   <pluginRepositories>
     <pluginRepository>
       <id>jsparrow-plugin-repository</id>
@@ -35,7 +40,44 @@ In order to access jSparrow from the jSparrow plugin repository, you need to add
       <url>https://download.jsparrow.eu/maven2/</url>
     </pluginRepository>
   </pluginRepositories>
-</settings> or </project>
+  ...
+</project>
+```
+
+#### Configuration via settings.xml
+
+Maven has two locations for the `settings.xml`:
+* Global Maven settings: `${maven.home}/conf/settings.xml`
+* User Maven settings: `${user.home}/.m2/settings.xml`
+
+If both exist, the contents are getting merged, with the user settings being dominant (have a look at the [Maven Settings Reference](https://maven.apache.org/settings.html) for more information.).
+
+In contrast to the `pom.xml` configuration, the configuration in `settings.xml` needs additional `profile` configuration, as seen below:
+
+```XML
+<settings>
+  ...
+  <profiles>
+    ...
+    <profile>
+      <id>default</id>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>jsparrow-plugin-repository</id>
+          <name>jSparrow Plugin Repository</name>
+          <url>https://download.jsparrow.eu/maven2/</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+  ...
+  <activeProfiles>
+    ...
+    <activeProfile>default</activeProfile>
+    ...
+  </activeProfiles>
+  ...
+</settings>
 ```
 
 ### Increasing Java Heap Space
