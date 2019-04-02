@@ -24,7 +24,7 @@ Maven projects themselves may have their Java source version set to an older ver
 [https://download.jsparrow.eu/maven2](https://download.jsparrow.eu/maven2)
 :::
 
-In order to access jSparrow from the jSparrow plugin repository, you need to add it to Maven's `settings.xml` file or in the `pom.xml` of the project you are using it. `M2_HOME/conf/settings.xml` is the default location of the system-level maven settings.
+In order to access jSparrow from the jSparrow plugin repository, you need to add it to Maven's `settings.xml` file or in the `pom.xml` of the project you are using it. `M2_HOME/conf/settings.xml` is the default location of the system-level maven settings. Have a look at the [Maven Settings Reference](https://maven.apache.org/settings.html) for more information. 
 
 ```XML
 <settings> or <project>
