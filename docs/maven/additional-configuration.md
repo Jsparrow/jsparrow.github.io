@@ -1,19 +1,19 @@
 # Additional Configuration
 
-## Setup proxy
+## Setup Proxy
 
-### Set forwarding in proxy
+### Set Forwarding in Proxy
 
-Configure your proxy to allow to reach the endpoint for our registration and licensing service at:
+Configure your proxy to allow to reach the endpoint for our licensing service at:
 
 ::: tip License API endpoint
 https://go.netlicensing.io/core/v2/rest
 :::
 
 
-### Define proxy for Maven
+### Define Proxy for Maven
 
-The proxy for maven can be defined in your maven's `settings.xml` like this:
+The proxy for maven can be defined in your Maven's `settings.xml` like this:
 
 ```xml
 <settings>
@@ -35,4 +35,3 @@ The proxy for maven can be defined in your maven's `settings.xml` like this:
 ```
 
 For further information, have a look at [Configuring a Proxy](https://maven.apache.org/guides/mini/guide-proxies.html)
-
