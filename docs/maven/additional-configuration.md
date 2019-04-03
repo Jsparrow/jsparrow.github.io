@@ -17,8 +17,7 @@ The proxy for maven can be defined in your maven's `settings.xml` like this:
 
 ```xml
 <settings>
-  .
-  .
+  ...
   <proxies>
    <proxy>
       <id>example-proxy</id>
@@ -31,8 +30,7 @@ The proxy for maven can be defined in your maven's `settings.xml` like this:
       <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts>
     </proxy>
   </proxies>
-  .
-  .
+  ...
 </settings>
 ```
 
