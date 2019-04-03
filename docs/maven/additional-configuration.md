@@ -2,6 +2,10 @@
 
 ## Setup Proxy
 
+::: warning Requirements
+Proxy settings require at least [version 2.0.1](/maven/release-notes.html#_2-0-1) of the jSparrow Maven plugin.
+:::
+
 ### Set Forwarding in Proxy
 
 Configure your proxy to allow to reach the endpoint for our licensing service at:
