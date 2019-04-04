@@ -80,19 +80,6 @@ In contrast to the `pom.xml` configuration, the configuration in `settings.xml` 
 </settings>
 ```
 
-### Increasing Java Heap Space
-Especially with larger projects, a `java.lang.OutOfMemoryError: Java heap space` could occur.
-This means, as the error message suggests, that the allocated heap space is too small.
-To increase your Java heap space set the following environment variable:
-```bash
-$ export MAVEN_OPTS="-Xmx3000m"
-```
-This option sets the maximum heap space (`-Xmx`) to 3000 MB (`3000m`).
-
-::: tip
-Depending on your project you might need a smaller or bigger heap space. The default for modern Java Virtual Machines is smaller than 1/4th of the physical memory or 1 GB.
-:::
-
 ## Usage
 This section describes how to set up a project to use the jSparrow Maven plugin and how to use it.
 
