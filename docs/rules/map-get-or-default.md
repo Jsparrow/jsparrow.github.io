@@ -42,7 +42,7 @@ Java 8
 __Pre__
 
 ```java
-String value = map.get(key);
+String value = concurrentHashMap.get(key);
 if(value == null) {
     value = defaultValue;
 }
@@ -50,5 +50,5 @@ if(value == null) {
 
 __Post__
 ```java
-String value = map.getOrDefault(key, defaultValue);
+String value = concurrentHashMap.getOrDefault(key, defaultValue);
 ```
