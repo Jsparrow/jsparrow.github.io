@@ -3,6 +3,7 @@ title: Replace For-Loop with Enhanced-For-Loop
 description:
     Transforms all possible for loops with iterators to a ForEach loop.
 tags: ["Free", "Java 5", "Loop", "Old Language Constructs"]
+defaultConfiguration: true
 ---
 
 # Replace For-Loop with Enhanced-For-Loop

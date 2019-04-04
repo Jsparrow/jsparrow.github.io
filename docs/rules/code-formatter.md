@@ -3,6 +3,7 @@ title: Reformat Code
 description:
     Reformats code according to the coding conventions defined in Eclipse.
 tags: ["Java 1.1", "Formatting", "Readability"]
+defaultConfiguration: true
 ---
 
 # Reformat Code
