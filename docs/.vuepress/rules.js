@@ -23,6 +23,7 @@ module.exports = [
 'remove-modifiers-in-interface-properties',
 'remove-empty-statement',
 'remove-unnecessary-throws',
+'remove-unused-parameter',
 'remove-to-string-on-string',
 'field-renaming',
 'string-literal-equality-check',
