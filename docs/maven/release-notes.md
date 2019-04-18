@@ -5,6 +5,13 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.1.0 <Badge vertical="middle" text="18.04.2019"/>
+
+The jSparrow Maven Plugin release 2.1.0 includes:
+
+* A new rule for [Removing Unused Parameters in Private Methods](/rules/remove-unused-parameter.html)
+* Stability improvements for [StringBuilder() to StringBuffer()](/rules/string-buffer-to-builder.html) rule. 
+
 ## 2.0.1 <Badge vertical="middle" text="03.04.2019"/>
 
 This version adds proxy support for the jSparrow Maven plugin. See [Setup Proxy](/maven/additional-configuration.html#setup-proxy) for more information. 
