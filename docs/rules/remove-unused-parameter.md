@@ -14,7 +14,7 @@ tags: ["Java 1.1", "Readability", "Coding Conventions"]
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 3.4.0 |
+| First seen in jSparrow version  | [3.4.0](/eclipse/release-notes.html#_3-4-0) |
 | Minimum Java version            | 1.1   |
 | Remediation cost                | 5 min |
 | Links                           | [squid:S1172](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1172&q=squid%3AS1172) |
@@ -24,7 +24,7 @@ This rule finds and removes unused parameters in private method declarations.
 Consequently, all the invocations of the affected methods are updated accordingly.
 
 ## Benefits
-Removes the clutter and simplifies the method declarations. 
+Removes the clutter and simplifies the method declarations.
 
 ## Requirement & Tags
 
@@ -42,7 +42,7 @@ __Pre__
 ```java
 /**
  * Java doc for the affected method
- * 
+ *
  * @param first  discarded parameter
  * @param second used parameter
  * @param third  discarded parameter
@@ -60,7 +60,7 @@ __Post__
 ```java
 /**
  * Java doc for the affected method
- * 
+ *
  * @param second used parameter
  */
 private void discardedParameters(String second) {
@@ -75,4 +75,4 @@ void invocationSample() {
 
 ## Limitations
 
-The non-private methods are not modified by this rule because they could be invoked or overridden in locations that are not reachable by jSparrow. 
+The non-private methods are not modified by this rule because they could be invoked or overridden in locations that are not reachable by jSparrow.
