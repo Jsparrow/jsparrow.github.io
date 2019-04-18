@@ -5,6 +5,21 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.4.0 <Badge vertical="middle" text="18.04.2019"/>
+
+The jSparrow 3.4.0 release extends the the rule set further with one more rule. 
+Some stability improvements are also included. 
+
+### New Rules 
+#### [**Remove Unused Parameters in Private Methods**](/rules/remove-unused-parameter.html)
+This new rule finds and removes the unused parameters in private methods. 
+As a result, all the references of the affected method are updated accordingly.
+
+### Fixed Bugs
+#### StringBuffer() to StringBuilder()
+
+* Avoid type incompatibilities in assignments and return statements when replacing a StringBuffer by a StringBuilder.  
+
 ## 3.3.0 <Badge vertical="middle" text="21.03.2019"/>
 
 The jSparrow 3.3.0 release brings a bunch of new rules, improvements to Java version handling, and some minor UI improvements.
