@@ -1,10 +1,10 @@
 # Additional Configuration
 
-## Setup proxy
+## Setup Proxy
 
-### Set forwarding in proxy
+### Set Forwarding in Proxy
 
-Configure your proxy to allow to reach the endpoint for our registration and licensing service at:
+Configure your proxy to allow to reach the endpoints for our registration and licensing services at:
 
 ::: tip License API endpoint
 https://go.netlicensing.io/core/v2/rest
@@ -14,22 +14,12 @@ https://go.netlicensing.io/core/v2/rest
 https://amazonaws.com
 :::
 
-### Define proxy in eclipse
+### Define Proxy in Eclipse
 
 ::: tip Proxy entries
 Open Preferences -> General -> Network Connections
 :::
 
-It is important that the HTTPS entry is set similar to the following where the Host and Port are replaced according to your proxy settings
+It is important that the HTTPS entry is set similar to the following example. The Host and Port have to be replaced according to your proxy settings:
 
 [ ![Example proxy entries](/img/eclipse/proxy.png) ](/img/eclipse/proxy.png)
-
-#### Test proxy settings
-
-To test whether the proxy entries are set properly, you can try to open https://go.netlicensing.io/core/v2/rest in a browser.
-If the site prompts for a username and password, the proxy entries should be correct.
-Similarly, you should be able to reach AWS services. 
-
-::: tip Eclipse Browser
-Open Window -> Show View -> Other -> Internal Web Browser
-:::

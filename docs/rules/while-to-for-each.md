@@ -3,6 +3,7 @@ title: Replace While-Loop with Enhanced For-Loop
 description:
     While-loops over Iterators which could be expressed with a for-loop, are transformed to an equivalent for-loop.
 tags: ["Java 5", "Loop", "Old Language Constructs"]
+defaultConfiguration: true
 ---
 
 # Replace While-Loop with Enhanced For-Loop

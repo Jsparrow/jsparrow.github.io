@@ -80,19 +80,6 @@ In contrast to the `pom.xml` configuration, the configuration in `settings.xml` 
 </settings>
 ```
 
-### Increasing Java Heap Space
-Especially with larger projects, a `java.lang.OutOfMemoryError: Java heap space` could occur.
-This means, as the error message suggests, that the allocated heap space is too small.
-To increase your Java heap space set the following environment variable:
-```bash
-$ export MAVEN_OPTS="-Xmx3000m"
-```
-This option sets the maximum heap space (`-Xmx`) to 3000 MB (`3000m`).
-
-::: tip
-Depending on your project you might need a smaller or bigger heap space. The default for modern Java Virtual Machines is smaller than 1/4th of the physical memory or 1 GB.
-:::
-
 ## Usage
 This section describes how to set up a project to use the jSparrow Maven plugin and how to use it.
 
@@ -112,7 +99,7 @@ To use the jsparrow-maven-plugin on a project, add the following code snippet to
     <plugin>
       <groupId>eu.jsparrow</groupId>
       <artifactId>jsparrow-maven-plugin</artifactId>
-      <version>2.0.0</version>
+      <version>2.1.0</version>
     </plugin>
   </plugins>
 </build>  
@@ -238,7 +225,7 @@ You may add the following parameters:
 |:----------|:-------------|
 | `-DconfigFile=<config-file-path>`	| The specified configuration file will be used instead of the default (`jsparrow.yml`). |
 | `-Dprofile=<selected-profile-id>`	| The specified profile will be used. Make sure that either a `jsparrow.yml` is in the root directory or `-DconfigFile=<config-file-path>` is specified. The given profile ID will be compared to the declared profiles in the configuration file. If the given profile ID is not declared, an error will be thrown. |
-| `-DdefaultConfiguration`	| The built-in default configuration will be used for refactoring. If this parameter is set, the configuration in the root of the project will be ignored. |
+| `-DdefaultConfiguration`	| The built-in default configuration will be used for refactoring. If this parameter is set, the configuration in the root of the project will be ignored. <br /> It executes the following rules: <DefaultConfigurationRules /> |
 | `-Dlicense=<license-key>`	| Specify the license key to be used. This takes priority over a configuration via config file. In "Machine Configuration" the config file approach is described. |
 | `-Durl=<url>`	| Specify the licensing server URL to use in case a [local server](/maven/local-license-server.html) should be used. |
 
