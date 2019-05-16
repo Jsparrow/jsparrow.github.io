@@ -14,7 +14,7 @@ tags: ["Java 8", "Old Language Constructs"]
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 3.4.0 |
+| First seen in jSparrow version  | [3.5.0](/eclipse/release-notes.html#_3-5-0) |
 | Minimum Java version            | 8     |
 | Remediation cost                | 2 min |
 
