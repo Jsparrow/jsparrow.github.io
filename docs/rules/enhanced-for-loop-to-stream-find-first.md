@@ -17,7 +17,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 | First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
 | Minimum Java version            | 8     |
 | Remediation cost                | 2 min |
-| Links                           |       |
 
 ## Description
 

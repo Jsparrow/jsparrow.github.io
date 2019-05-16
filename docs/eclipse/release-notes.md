@@ -5,6 +5,14 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.5.0 <Badge vertical="middle" text="16.05.2019"/>
+
+A new rule with the [Old Language Constructs](/tags.html#Old_Language_Constructs) tag has been implemented for jSparrow 3.5.0. This brings jSparrow to a new total of 58 rules.
+
+### New Rule
+#### [**Replace Map::get by Map::getOrDefault**](/rules/map-get-or-default.html)
+This rule automatically replaces invocations of [`Map::get`](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#get-java.lang.Object-) with the alternative [`Map::getOrDefault`](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#getOrDefault-java.lang.Object-V-), thus eliminating the succeeding null checks.
+
 ## 3.4.0 <Badge vertical="middle" text="18.04.2019"/>
 
 The jSparrow 3.4.0 release extends the the rule set further with one more rule.
