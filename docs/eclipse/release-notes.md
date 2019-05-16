@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.5.0 <Badge vertical="middle" text="16.05.2019"/>
 
-A new rule with the [Old Language Constructs](/tags.html#Old_Language_Constructs) tag has been implemented in jSparrow 3.5.0. This brings jSparrow to a new total of 58 rules.
+A new rule with the [Old Language Constructs](/tags.html#Old_Language_Constructs) tag has been implemented for jSparrow 3.5.0. This brings jSparrow to a new total of 58 rules.
 
 ### New Rule
 #### [**Replace Map::get by Map::getOrDefault**](/rules/map-get-or-default.html)

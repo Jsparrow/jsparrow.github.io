@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.2.0 <Badge vertical="middle" text="16.05.2019"/>
+
+This release provides a new rule:
+
+* [Replace Map::get by Map::getOrDefault](/rules/map-get-or-default.html)
+
 ## 2.1.0 <Badge vertical="middle" text="18.04.2019"/>
 
 The jSparrow Maven Plugin release 2.1.0 includes:
