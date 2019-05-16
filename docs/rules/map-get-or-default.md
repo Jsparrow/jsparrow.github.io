@@ -17,7 +17,6 @@ tags: ["Java 8", "Old Language Constructs"]
 | First seen in jSparrow version  | 3.4.0 |
 | Minimum Java version            | 8     |
 | Remediation cost                | 2 min |
-| Links                           |  |
 
 ## Description
 Java 8 introduced [`Map::getOrDefault`](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#getOrDefault-java.lang.Object-V-) which offers the possibility to return a default value if the map does not contain a mapping for the given key. 

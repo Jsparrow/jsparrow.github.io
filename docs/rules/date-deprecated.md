@@ -16,7 +16,6 @@ tags: ["Java 1.1", "Formatting", "Readability"]
 | First seen in jSparrow version  | [2.5.0](/eclipse/release-notes.html#_2-5-0) |
 | Minimum Java version            | 1.1 |
 | Remediation cost                | 1 min |
-| Links                           | |
 
 ## Description
 

@@ -16,7 +16,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 | First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
 | Minimum Java version            | 8     |
 | Remediation cost                | 10 min |
-| Links                           |       |
 
 ## Description
 Transforms enhanced for-loops which are only used for summing up the elements of a collection into a stream and uses the sum operation to compute the result.

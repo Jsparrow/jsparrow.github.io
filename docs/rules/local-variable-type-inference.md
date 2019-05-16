@@ -16,7 +16,6 @@ tags: ["Java 10", "Formatting", "Readability"]
 | First seen in jSparrow version  | [2.6.0](/eclipse/release-notes.html#_2-6-0)   |
 | Minimum Java version            | 10   |
 | Remediation cost                | 2 min |
-| Links                           |  |
 
 ## Description
 
