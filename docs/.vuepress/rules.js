@@ -51,6 +51,7 @@ module.exports = [
 'standard-logger',
 'override-annotation',
 'buffered-reader-lines',
+'collections-factory-methods',
 'functional-interface',
 'guard-condition',
 'local-variable-type-inference',
