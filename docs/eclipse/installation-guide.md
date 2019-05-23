@@ -21,7 +21,7 @@ jSparrow can simply be installed by dragging this Button to your running Eclipse
 Alternatively, follow these steps to install jSparrow:
 
 ::: warning Current Eclipse Marketplace Problems
-Due to current problems, the installation via the Eclipse Marketplace doesn't work at the moment. Please use the Install Button or install jSparrow manually.
+Due to problems on the Eclipse Marketplace, the installation via the Eclipse Marketplace does not work currently. Please use the Install Button or install jSparrow manually.
 :::
 
 1. Go to “Help” -> “Eclipse Marketplace…”
