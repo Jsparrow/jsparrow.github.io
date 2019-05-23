@@ -7,7 +7,10 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.5.1 <Badge vertical="middle" text="23.05.2019"/>
 
-We have now introduced a [Customer Portal](https://jsparrow.atlassian.net/servicedesk/customer/portal/1), where our users can report bugs and get support. There is also a new email address for customer support: [support@jsparrow.eu](mailto:support@jsparrow.eu) This release adds the link to our Customer Portal and the new email address to the help dialogs in jSparrow.
+We have introduced a [Customer Portal](https://jsparrow.atlassian.net/servicedesk/customer/portal/1), where you can report bugs and get support. 
+There is also a new email address for customer support: [support@jsparrow.eu](mailto:support@jsparrow.eu) 
+
+This release adds the link to our Customer Portal and the new email address to the help dialogs in jSparrow.
 
 ## 3.5.0 <Badge vertical="middle" text="16.05.2019"/>
 
