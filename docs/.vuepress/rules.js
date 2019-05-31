@@ -54,6 +54,7 @@ module.exports = [
 'collections-factory-methods',
 'functional-interface',
 'guard-condition',
+'use-list-sort',
 'local-variable-type-inference',
 'multi-catch',
 'optional-if-present',
