@@ -26,6 +26,7 @@ module.exports = [
 'remove-unused-parameter',
 'remove-to-string-on-string',
 'field-renaming',
+'reorder-modifiers',
 'string-literal-equality-check',
 'arithmethic-assignment',
 'string-concat-to-plus',
