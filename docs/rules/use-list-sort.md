@@ -17,7 +17,6 @@ tags: ["Java 1.8", "Old Language Constructs", "Coding Conventions", "Readability
 | First seen in jSparrow version  | 3.6.0 |
 | Minimum Java version            | 8     |
 | Remediation cost                | 2 min |
-| Links                           |  |
 
 ## Description
 
