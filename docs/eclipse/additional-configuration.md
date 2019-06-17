@@ -33,4 +33,4 @@ If your proxy requires it, the `Basic` authentication scheme can be reactivated 
 jdk.http.auth.tunneling.disabledSchemes=
 ```
 
-In Java 8, this property may be configured in `$JAVA_HOME$/jre/lib/net.properties`. From Java 9 onwards, the path changed to `$JAVA_HOME$/conf/net.properties`. 
+In Java 8, this property may be configured in `$JAVA_HOME/jre/lib/net.properties`. From Java 9 onwards, the path changed to `$JAVA_HOME/conf/net.properties`. 
