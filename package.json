@@ -10,10 +10,10 @@
   "author": "Martin Huter <martin.huter@splendit.at>",
   "license": "MIT",
   "devDependencies": {
-    "jshint": "^2.9.7",
-    "material-design-icons-iconfont": "^4.0.4",
-    "vuepress": "^0.14.4",
-    "vuetify": "^1.5.0"
+    "jshint": "^2.10.2",
+    "material-design-icons-iconfont": "^5.0.1",
+    "vuepress": "^1.0.1",
+    "vuetify": "^1.5.14"
   },
   "resolutions": {
     "webpack-dev-middleware": "3.6.0"
