@@ -51,7 +51,7 @@ Desired rules may be added to the right list simply by selecting one or more rul
 
 Through the `Select profile` drop down menu of the select rules window it is possible to choose a profile. Changing the currently selected profile will discard previously selected rules however. By default, a predefined default profile is used with mix of most common rules.
 
-::: tip
+::: tip Note
 Profiles can be configured in the preference page.
 :::
 
@@ -93,7 +93,7 @@ Rules can be grouped into profiles in jSparrow. The preferences concerning profi
 ### Default profile
 
 The default profile determines, which profile will be selected by default in the select rules window.
-::: tip
+::: tip Note
 The default profile can still be changed during the rule selection process.
 For more information see [Setting the default profile](profiles.html#setting-the-default-profile).
 :::
@@ -107,7 +107,7 @@ Rules can be filtered by text or by tags. Tags group rules by functionality, req
 Some rules may not be available to be applied on certain projects. The reason for that is one of the following missing requirements:
 * Java version too low
 * Missing required library
-::: tip
+::: tip Note
 Information about unsatisfied requirements will be shown in red color in the rule description in the select rules window.
 :::
 

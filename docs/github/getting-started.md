@@ -150,6 +150,6 @@ excludes:
       - eu.jsparrow.core.Activator.java  
 ```
 
-::: warning NOTE
+::: warning Important
 Any configuration options in the YAML file are case sensitive and require precise indentation.
 :::
