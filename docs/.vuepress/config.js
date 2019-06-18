@@ -44,7 +44,7 @@ module.exports = {
         }
     },
     port: 8081,
-    markdown: {
+    extendMarkdown(md) {
         toc: {
             includeLevel: [2, 3, 4]
         }
