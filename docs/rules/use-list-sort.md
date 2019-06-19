@@ -24,7 +24,7 @@ Replace static invocations of `Collections.sort(List, Comparator)` with `List.so
 
 ## Benefits
 
-Improves the readability by utilizing the Java 8 extensions of `List` API. 
+Improves the readability by utilizing the Java 8 extensions of the `List` API. 
 
 ## Requirement & Tags
 
