@@ -14,6 +14,6 @@ $ export MAVEN_OPTS="-Xmx3000m"
 ```
 This option sets the maximum heap space (`-Xmx`) to 3000 MB (`3000m`).
 
-::: tip
+::: tip Note
 Depending on your project you might need a smaller or bigger heap space. The default for modern Java Virtual Machines is smaller than 1/4th of the physical memory or 1 GB.
 :::

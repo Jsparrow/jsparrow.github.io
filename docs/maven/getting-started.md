@@ -202,10 +202,10 @@ excludes:
       - eu.jsparrow.core.Activator.java  
 ```
 
-::: warning NOTE
+::: warning Important
 Any configuration options in the YML file are case sensitive. Be careful how you type out things!
 :::
-::: tip
+::: tip Note
 The rule IDs can be viewed using the [list-rules-short-goal](#list-rules-short) of the jsparrow-maven-plugin.
 :::
 
