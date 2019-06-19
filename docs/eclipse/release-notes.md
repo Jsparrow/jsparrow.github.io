@@ -5,6 +5,24 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.6.0 <Badge vertical="middle" text="19.06.2019"/>
+
+jSparrow 3.6.0 introduces three refactoring rules. 
+
+### New Rules 
+#### [**Use Factory Methods for Collections**](/rules/collections-factory-methods.html)
+
+Java 9 introduced a convenient way to create immutable collections with factory methods. 
+This rule, replaces the invocations of ```Collections.unmodifiableList/Set/Map``` with the corresponding factory method [```List.of```](https://docs.oracle.com/javase/9/docs/api/java/util/List.html#of-E...-), [```Set.of```](https://docs.oracle.com/javase/9/docs/api/java/util/Set.html#of-E...-) and [```Map.ofEntries```](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-) accordingly.
+
+#### [**Reorder Modifiers**](/rules/reorder-modifiers.html)
+
+This rule reorders the modifiers on Type, Field and Method Declarations based on the recommendation of Java Language Specification.
+
+####  [**Use List Sort**](/rules/use-list-sort.html)
+
+Replace static invocations of `Collections.sort(List, Comparator)` with `List.sort(Comparator)`.
+
 ## 3.5.1 <Badge vertical="middle" text="23.05.2019"/>
 
 We have introduced a [Customer Portal](https://jsparrow.atlassian.net/servicedesk/customer/portal/1), where you can report bugs and get support. 
