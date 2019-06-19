@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.6.0 <Badge vertical="middle" text="19.06.2019"/>
 
-jSparrow 3.6.0 introduces three refactoring rules. 
+jSparrow 3.6.0 introduces three new refactoring rules. 
 
 ### New Rules 
 #### [**Use Factory Methods for Collections**](/rules/collections-factory-methods.html)
@@ -21,7 +21,7 @@ This rule reorders the modifiers on Type, Field and Method Declarations based on
 
 ####  [**Use List Sort**](/rules/use-list-sort.html)
 
-Replace static invocations of `Collections.sort(List, Comparator)` with `List.sort(Comparator)`.
+Java 8 introduced an extension to the List API by adding a [sort](https://docs.oracle.com/javase/8/docs/api/java/util/List.html#sort-java.util.Comparator-) method that sorts by Comparator. This rule replaces static invocations of `Collections.sort(List, Comparator)` with `List.sort(Comparator)`.
 
 ## 3.5.1 <Badge vertical="middle" text="23.05.2019"/>
 

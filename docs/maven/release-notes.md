@@ -7,10 +7,9 @@ Here you will find the latest information about releases of the jSparrow Maven p
 
 ## 2.3.0 <Badge vertical="middle" text="19.05.2019"/>
 
-The jSparrow Maven Plugin 2.3.0 introduces three rules: 
-* [**Use Factory Methods for Collections**](/rules/collections-factory-methods.html).
-* [**Reorder Modifiers**](/rules/reorder-modifiers.html).
-* [**Use List Sort**](/rules/use-list-sort.html).
+The jSparrow Maven Plugin 2.3.0 introduces two new rules: 
+* [Reorder Modifiers](/rules/reorder-modifiers.html).
+* [Use List Sort](/rules/use-list-sort.html).
 
 ## 2.2.0 <Badge vertical="middle" text="16.05.2019"/>
 
