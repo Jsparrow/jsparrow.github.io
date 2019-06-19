@@ -23,13 +23,13 @@ You can execute it as part of your development process as an Eclipse IDE plugin 
 * [jSparrow GitHub App](github/getting-started.html)
 
 
-## jSparrow 3.5.0 has been released!
+## jSparrow 3.6.0 has been released!
 
-We released a new rule in jSparrow 3.5.0! Check out the [Release Notes](/eclipse/release-notes.html#_3-5-0).
+We released three new rules in jSparrow 3.6.0! Check out the [Release Notes](/eclipse/release-notes.html#_3-6-0).
 
-## jSparrow Maven Plugin 2.2.0 has been released!
+## jSparrow Maven Plugin 2.3.0 has been released!
 
-Version 2.2.0 brings a new rule to the jSparrow Maven plugin! Have a look at the [Release Notes](/maven/release-notes.html#_2-2-0).
+Version 2.3.0 brings three new rules to the jSparrow Maven plugin! Have a look at the [Release Notes](/maven/release-notes.html#_2-3-0).
 
 ## Statistical Data
 
