@@ -7,9 +7,17 @@ module.exports = {
         "name": "Add Parenthesis to Control Statements",
         "url": "rules/brackets-to-control.html"
     },
+    "BufferedReaderLines": {
+        "name": "Use BufferedReader::lines",
+        "url": "rules/buffered-reader-lines.html"
+    },
     "CodeFormatter": {
         "name": "Reformat Code",
         "url": "rules/code-formatter.html"
+    },
+    "CollapseIfStatements": {
+        "name": "Collapse If Statements",
+        "url": "rules/collapse-if-statements.html"
     },
     "CollectionRemoveAll": {
         "name": "Replace removeAll() with clear()",
@@ -158,6 +166,10 @@ module.exports = {
     "RemoveUnnecessaryThrows": {
         "name": "Remove Unnecessary Thrown Exceptions on Method Signatures",
         "url": "rules/remove-unnecessary-throws.html"
+    },
+    "RemoveUnusedParameter": {
+        "name": "Remove Unused Parameters in Private Methods",
+        "url": "rules/remove-unused-parameter.html"
     },
     "SerialVersionUid": {
         "name": "Make SerialVersionUID Static Final",
