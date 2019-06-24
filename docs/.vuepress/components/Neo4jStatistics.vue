@@ -187,7 +187,6 @@ export default {
     },
     findRuleName: function(id) {
       var rule = this.ruleNameMap[id];
-      console.log("rule id: " + id);
       return rule.name;
     },
     findRuleLink: function(id) {
