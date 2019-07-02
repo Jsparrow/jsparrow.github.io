@@ -9,7 +9,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ### Hotfix Release
 
-This Hotfix Release brings a bugfix on refactoring rules.
+This hotfix release brings a bugfix on a refactoring rule.
 
 ### Fixed Bugs
 
@@ -114,7 +114,7 @@ In the “Select Rules” wizard we have added a link to each rule description w
 
 ### Hotfix Release
 
-This Hotfix Release brings bugfixes on refactoring rules.
+This hotfix release brings bugfixes on refactoring rules.
 
 ### Fixed Bugs
 
