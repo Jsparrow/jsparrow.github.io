@@ -5,6 +5,17 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.6.1 <Badge vertical="middle" text="02.07.2019"/>
+
+### Hotfix Release
+
+This hotfix release brings a bugfix on a refactoring rule.
+
+### Fixed Bugs
+
+#### [**Use Local Variable Type Inference**](/rules/local-variable-type-inference.html)
+* Allow converting the declared type to `var` if the local variable is used as a parameter in overloaded methods.
+
 ## 3.6.0 <Badge vertical="middle" text="19.06.2019"/>
 
 jSparrow 3.6.0 introduces three new refactoring rules. 
@@ -103,7 +114,7 @@ In the “Select Rules” wizard we have added a link to each rule description w
 
 ### Hotfix Release
 
-This Hotfix Release brings bugfixes on refactoring rules.
+This hotfix release brings bugfixes on refactoring rules.
 
 ### Fixed Bugs
 
