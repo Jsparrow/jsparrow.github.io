@@ -52,3 +52,47 @@ __Post__
 	}
 ```
 
+### Inline Comparator Implementation
+
+__Pre__
+```java
+public void sortUsersById(List<User> users) {
+	Collections.sort(users, new Comparator<User>() {
+		@Override
+		public int compare(User o1, User o2) {
+			return o1.getId() - o2.getId();
+		}
+	});
+}
+```
+
+__Post__
+```java
+public void sortUsersById(List<User> users) {
+	users.sort(new Comparator<User>() {
+		@Override
+		public int compare(User o1, User o2) {
+			return o1.getId() - o2.getId();
+		}
+	});
+}
+```
+
+### Comparator Reference
+
+__Pre__
+```java
+public void sortUsersById(List<User> users) {
+	Comparator<User> comparator = (User o1, User o2) -> o1.getId() - o2.getId();
+	Collections.sort(users, comparator);
+}
+```
+
+__Post__
+```java
+public void sortUsersById(List<User> users) {
+	Comparator<User> comparator = (User o1, User o2) -> o1.getId() - o2.getId();
+	users.sort(comparator);
+}
+```
+
