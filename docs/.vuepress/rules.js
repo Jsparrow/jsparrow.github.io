@@ -38,6 +38,7 @@ module.exports = [
 'enhanced-for-loop-to-stream-sum',
 'enhanced-for-loop-to-stream-for-each',
 'enhanced-for-loop-to-stream-find-first',
+'enhanced-for-loop-to-stream-take-while-rule',
 'map-get-or-default',
 'inefficient-constructor',
 'flat-map-instead-of-nested-loops',

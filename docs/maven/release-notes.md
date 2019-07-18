@@ -5,7 +5,13 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
-## 2.3.0 <Badge vertical="middle" text="19.05.2019"/>
+## 2.4.0 <Badge vertical="middle" text="18.07.2019"/>
+
+The jSparrow Maven Plugin 2.4.0 introduces two new rules for Java 9 and above: 
+* [Replace For-Loop with Stream::takeWhile](/rules/enhanced-for-loop-to-stream-take-while-rule.html).
+* [Use Factory Methods for Collections](/rules/collections-factory-methods.html).
+
+## 2.3.0 <Badge vertical="middle" text="19.06.2019"/>
 
 The jSparrow Maven Plugin 2.3.0 introduces two new rules: 
 * [Reorder Modifiers](/rules/reorder-modifiers.html).
