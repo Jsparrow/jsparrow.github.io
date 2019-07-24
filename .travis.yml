@@ -10,9 +10,9 @@ addons:
         packages:
             - g++-4.8
 install:
-    - npm install
+    - yarn install
 script:
-    - npm run build
+    - yarn run build
 cache:
     directories:
         - "node_modules"
