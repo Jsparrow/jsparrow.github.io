@@ -13,10 +13,10 @@
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "jshint": "^2.10.2",
     "material-design-icons-iconfont": "^5.0.1",
-    "vuepress": "^1.0.1",
+    "vuepress": "^1.0.2",
     "vuetify": "^1.5.14"
   },
   "resolutions": {
-    "webpack-dev-middleware": "3.6.0"
+    "webpack-dev-middleware": "3.7.0"
   }
 }

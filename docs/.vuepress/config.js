@@ -9,41 +9,43 @@ module.exports = {
         }]
     ],
     plugins: [
-        '@vuepress/google-analytics',
-        {
-            'ga': 'UA-144352955-2'
-        }
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'UA-144352955-2'
+            }
+        ]
     ],
     themeConfig: {
         nav: [{
-                text: 'jSparrow',
-                link: '/'
-            },
-            {
-                text: 'Maven Plugin',
-                link: '/maven/getting-started.html'
-            },
-            {
-                text: 'Eclipse Plugin',
-                link: '/eclipse/getting-started.html',
-            },
-            {
-                text: 'GitHub App',
-                link: '/github/getting-started.html'
-            },
-            {
-                text: 'Rules',
-                link: '/rules/'
-            },
-            {
-                text: 'Homepage',
-                link: 'https://jsparrow.eu/'
-            }
+            text: 'jSparrow',
+            link: '/'
+        },
+        {
+            text: 'Maven Plugin',
+            link: '/maven/getting-started.html'
+        },
+        {
+            text: 'Eclipse Plugin',
+            link: '/eclipse/getting-started.html',
+        },
+        {
+            text: 'GitHub App',
+            link: '/github/getting-started.html'
+        },
+        {
+            text: 'Rules',
+            link: '/rules/'
+        },
+        {
+            text: 'Homepage',
+            link: 'https://jsparrow.eu/'
+        }
         ],
         logo: '/logo.png',
         sidebar: {
             '/maven/': ['getting-started', 'local-license-server', 'additional-configuration', 'troubleshooting', 'release-notes'],
-            '/eclipse/': ['getting-started', 'installation-guide','jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
+            '/eclipse/': ['getting-started', 'installation-guide', 'jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
             '/github/': ['getting-started', 'statistics'],
             '/rules/': require('./rules.js'),
             '/': ['']
@@ -58,7 +60,7 @@ module.exports = {
     configureWebpack: {
         resolve: {
             alias: {
-                '@styles':  path.resolve(__dirname, './styles')
+                '@styles': path.resolve(__dirname, './styles')
             }
         }
     }
