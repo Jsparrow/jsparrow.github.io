@@ -10,6 +10,7 @@
   "author": "Martin Huter <martin.huter@splendit.at>",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "jshint": "^2.10.2",
     "material-design-icons-iconfont": "^5.0.1",
     "vuepress": "^1.0.1",
