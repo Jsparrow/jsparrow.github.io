@@ -14,7 +14,7 @@ tags: ["Java 1.3", "Old Language Constructs", "Performance"]
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 3.8.0 |
+| First seen in jSparrow version  | [3.8.0](/eclipse/release-notes.html#_3-8-0) |
 | Minimum Java version            | 1.3   |
 | Remediation cost                | 2 min |
 
@@ -22,7 +22,9 @@ tags: ["Java 1.3", "Old Language Constructs", "Performance"]
 
 Replaces [`Arrays.asList`](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#asList-T...-) with 0 or 1 parameters respectively with [`Collections.emptyList()`](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#emptyList--) or [`Collections.singletonList(..)`](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singletonList-T-).
 
-**Note**: `Arrays.asList` creates a fixed size list while `Collections.singletonList` creates an immutable list and therefore does not allow operations like [`set(int index, E element)`](https://docs.oracle.com/javase/10/docs/api/java/util/List.html#set(int,E)). 
+::: warning Note
+`Arrays.asList` creates a fixed size list while `Collections.singletonList` creates an immutable list and therefore does not allow operations like [`set(int index, E element)`](https://docs.oracle.com/javase/10/docs/api/java/util/List.html#set(int,E)). 
+:::
 
 ## Benefits
 
