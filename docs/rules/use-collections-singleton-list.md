@@ -14,7 +14,7 @@ tags: ["Java 1.3", "Old Language Constructs", "Performance"]
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 3.7.0 |
+| First seen in jSparrow version  | 3.8.0 |
 | Minimum Java version            | 1.3   |
 | Remediation cost                | 2 min |
 | Links                           | |
