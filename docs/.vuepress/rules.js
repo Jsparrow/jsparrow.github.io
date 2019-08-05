@@ -53,6 +53,7 @@ module.exports = [
 'standard-logger',
 'override-annotation',
 'buffered-reader-lines',
+'use-collections-singleton-list.md',
 'collections-factory-methods',
 'functional-interface',
 'guard-condition',
