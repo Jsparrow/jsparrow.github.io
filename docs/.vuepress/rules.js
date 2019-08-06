@@ -21,6 +21,7 @@ module.exports = [
 're-implementing-interface',
 'statement-lambda-to-expression',
 'remove-modifiers-in-interface-properties',
+'remove-null-check-before-instanceof',
 'remove-empty-statement',
 'remove-unnecessary-throws',
 'remove-unused-parameter',
