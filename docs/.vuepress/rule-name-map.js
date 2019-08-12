@@ -222,5 +222,21 @@ module.exports = {
     "WhileToForEach": {
         "name": "Replace While-Loop with Enhanced For-Loop",
         "url": "rules/while-to-for-each.html"
+    },
+    "ReorderModifiers": {
+        "name": "Reorder Modifiers",
+        "url": "rules/reorder-modifiers.html"
+    },
+    "MapGetOrDefault": {
+        "name": "Replace Map::get by Map::getOrDefault",
+        "url": "rules/map-get-or-default.html"
+    },
+    "UseListSort": {
+        "name": "Use List Sort",
+        "url": "rules/use-list-sort.html"
+    },
+    "OrganizeImports": {
+        "name": "Organize Imports",
+        "url": "rules/organize-imports.html"
     }
 }
