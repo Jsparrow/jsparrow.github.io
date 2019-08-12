@@ -24,8 +24,8 @@ You can execute it as part of your development process as an Eclipse IDE plugin 
 
 ## The Latest New Features
 
-We released three new rules for jSparrow!
-Check out the release notes for [jSparrow 3.6.0](/eclipse/release-notes.html#_3-6-0) and the [jSparrow Maven plugin 2.3.0](/maven/release-notes.html#_2-3-0)!
+We released two new rules for jSparrow!
+Check out the release notes for [jSparrow 3.8.0](/eclipse/release-notes.html#_3-8-0) and the [jSparrow Maven plugin 2.5.0](/maven/release-notes.html#_2-5-0)!
 
 ## Statistical Data
 

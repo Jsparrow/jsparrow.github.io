@@ -5,6 +5,16 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.8.0 <Badge vertical="middle" text="14.08.2019"/>
+
+The jSparrow 3.8.0 release contains two new refactoring rules ......
+
+### New Rules
+
+#### [**Use Collections Singleton List**](/rules/use-collections-singleton-list.html)
+
+#### [**Remove Null Checks Before Instanceof**](/rules/remove-null-check-before-instanceof.html)
+
 ## 3.7.0 <Badge vertical="middle" text="18.07.2019"/>
 
 The jSparrow 3.7.0 release contains a new refactoring rule and brings compatibility with [Lombok](https://projectlombok.org/) annotations. 

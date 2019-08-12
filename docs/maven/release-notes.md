@@ -5,6 +5,13 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.5.0 <Badge vertical="middle" text="14.08.2019"/>
+
+Release 2.5.0 of the jSparrow Maven Plugin contains two new rules:
+
+* [Use Collections Singleton List](/rules/use-collections-singleton-list.html)
+* [Remove Null Checks Before Instanceof](/rules/remove-null-check-before-instanceof.html)
+
 ## 2.4.0 <Badge vertical="middle" text="18.07.2019"/>
 
 The jSparrow Maven Plugin 2.4.0 introduces two new rules for Java 9 and above: 
