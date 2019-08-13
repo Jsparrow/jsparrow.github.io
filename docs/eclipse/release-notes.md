@@ -15,9 +15,9 @@ With version 3.8.0 of jSparrow, two new refactoring rules are introduced. This b
 
 Java offers an efficient way to create empty lists and single-element lists with [`Collections.emptyList()`](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#emptyList--) and [`Collections.singletonList(..)`](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singletonList-T-) respectively. This rule searches for occurrences of [`Arrays.asList`](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#asList-T...-) that can be replaced with either of those methods. 
 
-#### [**Remove Null Checks Before Instanceof**](/rules/remove-null-check-before-instanceof.html)
+#### [**Remove Null-Checks Before Instanceof**](/rules/remove-null-check-before-instanceof.html)
 
-As seen in [SonarCloud](https://sonarcloud.io/organizations/default/rules?open=squid%3AS4201&rule_key=squid%3AS4201), checks for `null` before `instanceof` can be redundant, since `null` cannot be an instance of anything. In logical conjunctions and disjunctions, this rule removes a null check whenever it is redundant. 
+As seen in [SonarCloud](https://sonarcloud.io/organizations/default/rules?open=squid%3AS4201&rule_key=squid%3AS4201), checks for `null` before `instanceof` can be redundant, since `null` cannot be an instance of anything. In logical conjunctions and disjunctions, this rule removes a null-check whenever it is redundant. 
 
 ## 3.7.0 <Badge vertical="middle" text="18.07.2019"/>
 
@@ -83,7 +83,7 @@ A new rule with the [Old Language Constructs](/tags.html#Old_Language_Constructs
 
 ### New Rule
 #### [**Replace Map::get by Map::getOrDefault**](/rules/map-get-or-default.html)
-This rule automatically replaces invocations of [`Map::get`](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#get-java.lang.Object-) with the alternative [`Map::getOrDefault`](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#getOrDefault-java.lang.Object-V-), thus eliminating the succeeding null checks.
+This rule automatically replaces invocations of [`Map::get`](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#get-java.lang.Object-) with the alternative [`Map::getOrDefault`](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html#getOrDefault-java.lang.Object-V-), thus eliminating the succeeding null-checks.
 
 ## 3.4.0 <Badge vertical="middle" text="18.04.2019"/>
 

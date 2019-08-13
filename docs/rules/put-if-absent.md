@@ -66,7 +66,7 @@ __Post__
 map.putIfAbsent(aKey, aValue);
 ```
 
-### Including Null Checks
+### Including Null-Checks
 
 __Pre__
 

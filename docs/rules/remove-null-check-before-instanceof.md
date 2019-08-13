@@ -1,12 +1,12 @@
 ---
-title: Remove Null Checks Before Instanceof
+title: Remove Null-Checks Before Instanceof
 description:
-    Finds and removes null checks before occurrences of instanceof. Since null is not an instance of anything, the null check is redundant.
+    Finds and removes null-checks before occurrences of instanceof. Since null is not an instance of anything, the null-check is redundant.
 
 tags: ["Java 1.1", "Readability", "Coding Conventions"]
 ---
 
-# Remove Null Checks Before Instanceof
+# Remove Null-Checks Before Instanceof
 
 [[toc]]
 
@@ -21,7 +21,7 @@ tags: ["Java 1.1", "Readability", "Coding Conventions"]
 
 ## Description
 
-Finds and removes null checks before occurrences of `instanceof`. Since `null` is not an instance of anything, the null check is redundant.
+Finds and removes null-checks before occurrences of `instanceof`. Since `null` is not an instance of anything, the null-check is redundant.
 
 ## Benefits
 
