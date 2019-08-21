@@ -39,4 +39,3 @@ Our latest measurements of open source available test projects can be found at [
 
 [info@jsparrow.eu](mailto:info@jsparrow.eu)
 
-<Footer />
