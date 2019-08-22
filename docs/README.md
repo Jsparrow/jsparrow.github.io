@@ -37,5 +37,4 @@ Our latest measurements of open source available test projects can be found at [
 
 ## How to reach us?
 
-[info@jsparrow.eu](mailto:info@jsparrow.eu)
-
+[support@jsparrow.eu](mailto:support@jsparrow.eu)
