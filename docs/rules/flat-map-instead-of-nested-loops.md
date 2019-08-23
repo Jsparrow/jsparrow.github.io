@@ -21,7 +21,7 @@ tags: ["Java 8", "Lambda", "Loop"]
 ## Description
 
 Compound data structures similar to `Collection<Collection<T>>` are fairly common. 
-This rule, finds the nested invocations of `Stream::forEach` which are used to iterate over such data structures and replaces them with single invocations of  [`Stream::flatMap`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-).
+This rule finds the nested invocations of `Stream::forEach` which are used to iterate over such data structures and replaces them with single invocations of  [`Stream::flatMap`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-).
 Using `flatMap()` not only makes the code more readable and but also allows for additional combinations with other Stream operations.
 
 ## Benefits
