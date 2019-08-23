@@ -20,11 +20,12 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 ## Description
 
-Nested For-Loops or invocations of `forEach` commonly used to iterate over all elements of a collection of collections, can be avoided by using `flatMap()`.
-Using `flatMap()` makes code much more readable and can be combined with other stream functions.
+Compound data structures similar to `Collection<Collection<T>>` are fairly common. 
+This rule, finds the nested invocations of `Stream::forEach` which are used to iterate over such data structures and replaces them with single invocations of  [`Stream::flatMap`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-).
+Using `flatMap()` not only makes the code more readable and but also allows for additional combinations with other Stream operations.
 
 ## Benefits
-Arguably, the lambda expression is easier to read.
+Arguably, a flattened stream is easier to read.
 
 ## Requirement & Tags
 
@@ -37,6 +38,53 @@ Java 8
 :::
 
 ## Code Changes
+
+### Iterating over nested collections
+__Pre__
+```java
+    List<List<User>> groups = findGroups();
+    groups.forEach(group -> {
+        group.forEach(user -> {
+            sendAward(user);
+        });
+    });
+```
+__Post__
+```java
+    List<List<User>> groups = findGroups();
+    groups.stream()
+        .flatMap(group -> group.stream())
+        .forEach(user -> {
+            sendAward(user);
+        });
+```
+
+### Nested Stream::forEach
+__Pre__
+```java
+orders.stream()
+    .map(Order::getOrderItems)
+    .forEach(items -> {
+        items.forEach(item -> {
+            Product product = item.getProduct();
+            int quantity = item.getQuantity();
+            add(product, quantity);
+        });
+    });
+```
+__Post__
+```java
+orders.stream()
+    .map(Order::getOrderItems)
+    .flatMap(items -> items.stream())
+    .forEach(item -> {
+        Product product = item.getProduct();
+        int quantity = item.getQuantity();
+        add(product, quantity);
+    });
+```
+
+### Deep nested loops
 
 __Pre__
 ```java
