@@ -30,8 +30,8 @@ module.exports = {
             link: '/eclipse/getting-started.html',
         },
         {
-            text: 'GitHub App',
-            link: '/github/getting-started.html'
+            text: 'Cloud App',
+            link: '/cloud/getting-started.html'
         },
         {
             text: 'Rules',
@@ -46,7 +46,7 @@ module.exports = {
         sidebar: {
             '/maven/': ['getting-started', 'local-license-server', 'additional-configuration', 'troubleshooting', 'release-notes'],
             '/eclipse/': ['getting-started', 'installation-guide', 'jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
-            '/github/': ['getting-started', 'statistics'],
+            '/cloud/': ['getting-started', 'statistics'],
             '/rules/': require('./rules.js'),
             '/': ['']
         }
