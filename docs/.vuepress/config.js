@@ -22,12 +22,16 @@ module.exports = {
             link: '/'
         },
         {
-            text: 'Maven Plugin',
-            link: '/maven/getting-started.html'
+            text: 'Rules',
+            link: '/rules/'
         },
         {
             text: 'Eclipse Plugin',
             link: '/eclipse/getting-started.html',
+        },
+        {
+            text: 'Maven Plugin',
+            link: '/maven/getting-started.html'
         },
         {
             text: 'Cloud App',
