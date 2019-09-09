@@ -1,7 +1,7 @@
 {
   "name": "jsparrow-docu",
   "version": "1.0.0",
-  "description": "jSparrow documentation",
+  "description": "jSparrow Documentation",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
