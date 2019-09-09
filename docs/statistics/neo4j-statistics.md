@@ -1,8 +1,8 @@
 ---
-sidebar: false
+sidebarDepth: 2
 ---
 
-# Statistics for neo4j
+# neo4j
 GitHub: [https://github.com/neo4j/neo4j](https://github.com/neo4j/neo4j)
 
 <neo4j-statistics />
