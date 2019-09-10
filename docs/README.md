@@ -28,7 +28,7 @@ Check out the release notes for [jSparrow 3.8.0](/eclipse/release-notes.html#_3-
 
 ## Statistical Data
 
-Our latest measurements of open source available test projects can be found at [Github App statistics](/cloud/statistics.html).
+Our latest measurements of open source available test projects can be found at [Github App statistics](/statistics/statistics.html).
 
 ## Where to find it?
 
