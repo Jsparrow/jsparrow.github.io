@@ -69,3 +69,6 @@ class Child extends Parent {
      }
 }
 ```
+
+<VersionNotice />
+

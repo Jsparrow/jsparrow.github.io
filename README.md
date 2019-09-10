@@ -14,13 +14,14 @@ Fork this repository, make changes and when you are done with them send us a pul
 
 # Edit guide
 
-We recommend to use npm for this project, feel free to use yum if you feel more comfortable.
+We recommend to use yarn for this project, feel free to use npm if you feel more comfortable.
 
-## Installing npm
+## Installing yarn
 
-Install npm as described on nodejs.org:
+Install yarn as described on their website:
 
-https://nodejs.org/en/download/package-manager/
+https://yarnpkg.com/lang/en/docs/install/#debian-stable
+
 
 ### Trouble shooting
 
@@ -43,7 +44,7 @@ Source: https://github.com/facebook/jest/issues/3254#issuecomment-297869853
 All required dependencies can be installed by executing the following:
 
 ```
-npm install
+yarn install
 ```
 
 ## Run development server
@@ -51,17 +52,6 @@ npm install
 To start a local development server, simply execute the following:
 
 ```
-npm run dev
+yarn run dev
 ```
 
-# Update jsparrow.github.io
-
-To execute this step, it is required to have write access to the [main repository](https://github.com/Jsparrow/jsparrow.github.io)
-
-## Build site
-
-Creating a static html/js site at docs/.vuepress/dist:
-
-```
-./deploy.sh
-```

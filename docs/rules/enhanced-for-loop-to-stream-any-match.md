@@ -106,3 +106,6 @@ __Post__
 ```java
 return strings.stream().anyMatch(value -> emptyString.equals(value));
 ```
+
+<VersionNotice />
+

@@ -57,3 +57,6 @@ list.stream()
     .map(s -> s.substring(1))
     .forEach(subString -> sb.append(subString));
 ```
+
+<VersionNotice />
+

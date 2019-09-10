@@ -67,3 +67,6 @@ __Post__
 List<Double> numbers = generateDoubleList(input);
 double sum = numbers.stream().mapToDouble(Double::doubleValue).sum();
 ```
+
+<VersionNotice />
+

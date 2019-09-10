@@ -18,7 +18,7 @@ module.exports = {
     ],
     themeConfig: {
         nav: [{
-            text: 'jSparrow',
+            text: 'What is jSparrow?',
             link: '/'
         },
         {

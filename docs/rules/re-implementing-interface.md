@@ -72,3 +72,6 @@ class Parent implements Observer {
 	}
 }
 ```
+
+<VersionNotice />
+

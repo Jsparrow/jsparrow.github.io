@@ -72,3 +72,6 @@ public String testNewStringOnNonStringElement(StringBuilder sb) {
     return new String(sb);
 }
 ```
+
+<VersionNotice />
+

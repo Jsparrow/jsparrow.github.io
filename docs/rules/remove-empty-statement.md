@@ -84,3 +84,6 @@ class Foo {
     private String foo;
 }
 ```
+
+<VersionNotice />
+

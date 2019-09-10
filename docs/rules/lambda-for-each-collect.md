@@ -53,3 +53,6 @@ oStrings.addAll(objectList.stream()
     .map(o -> o.substring(0))
     .collect(Collectors.toList()));
 ```
+
+<VersionNotice />
+

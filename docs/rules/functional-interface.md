@@ -87,3 +87,6 @@ AFunctionalInterface foo = (int a1) -> {
 ## Limitations
 
 Variables that are used inside the anonymous class must be effectively final.
+
+<VersionNotice />
+

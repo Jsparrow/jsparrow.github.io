@@ -82,3 +82,6 @@ enum Foo {
     int c;
 }
 ```
+
+<VersionNotice />
+

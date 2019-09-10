@@ -90,3 +90,6 @@ public void multipleInitialiyers_shouldTransform(Optional<String> input) {
 ## Limitations
 
 Can not be applied if the __then__ path of the branch contains a non-effectively final variable or contains unhandled exceptions.
+
+<VersionNotice />
+

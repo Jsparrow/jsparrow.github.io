@@ -108,3 +108,6 @@ class Foo {
 ## Limitations
 
 Another deprecated `java.util.Date` constructor is `new Date(String s)` and is not handled by this rule.
+
+<VersionNotice />
+

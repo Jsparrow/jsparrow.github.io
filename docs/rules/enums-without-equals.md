@@ -83,3 +83,6 @@ public boolean isRoundUp(RoundingMode roundingMode) {
     return !(RoundingMode.UP == roundingMode);
 }
 ```
+
+<VersionNotice />
+
