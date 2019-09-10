@@ -22,20 +22,24 @@ module.exports = {
             link: '/'
         },
         {
-            text: 'Maven Plugin',
-            link: '/maven/getting-started.html'
+            text: 'Rules',
+            link: '/rules/'
         },
         {
             text: 'Eclipse Plugin',
             link: '/eclipse/getting-started.html',
         },
         {
-            text: 'GitHub App',
-            link: '/github/getting-started.html'
+            text: 'Maven Plugin',
+            link: '/maven/getting-started.html'
         },
         {
-            text: 'Rules',
-            link: '/rules/'
+            text: 'Cloud App',
+            link: '/cloud/getting-started.html'
+        },
+        {
+            text: 'Statistics',
+            link: '/statistics/statistics.html'
         },
         {
             text: 'Homepage',
@@ -46,8 +50,9 @@ module.exports = {
         sidebar: {
             '/maven/': ['getting-started', 'local-license-server', 'additional-configuration', 'troubleshooting', 'release-notes'],
             '/eclipse/': ['getting-started', 'installation-guide', 'jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
-            '/github/': ['getting-started', 'statistics'],
+            '/cloud/': ['getting-started'],
             '/rules/': require('./rules.js'),
+            '/statistics/': ['statistics', 'jenkins-statistics', 'mdm-statistics', 'neo4j-statistics'],
             '/': ['']
         }
     },

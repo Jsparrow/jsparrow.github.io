@@ -2,7 +2,7 @@
 sidebarDepth: 2
 ---
 
-# Statistics
+# 50+ Open Source Projects
 
 For our testing we measured over 50 open source projects on GitHub.
 

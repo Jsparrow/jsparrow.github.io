@@ -22,7 +22,6 @@ You can use jSparrow as part of your development process in the Eclipse IDE or i
 
 * [jSparrow Eclipse plugin](eclipse/getting-started.html)
 * [jSparrow Maven plugin](maven/getting-started.html)
-* [jSparrow GitHub App](github/getting-started.html)
 
 ## The Latest New Features
 
