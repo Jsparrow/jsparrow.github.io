@@ -48,3 +48,6 @@ __Post__
 ```java
 "Foo".equals(getClass().getName());
 ```
+
+<VersionNotice />
+

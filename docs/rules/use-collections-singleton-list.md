@@ -89,3 +89,5 @@ class MyClass {
     List<String> singletonList = Collections.singletonList("value");
 }
 ```
+<VersionNotice />
+

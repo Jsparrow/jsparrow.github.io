@@ -90,3 +90,5 @@ public interface InterfaceWithProperties {
 	}
 }
 ```
+<VersionNotice />
+

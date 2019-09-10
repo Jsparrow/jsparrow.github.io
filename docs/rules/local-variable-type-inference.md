@@ -109,3 +109,6 @@ If the declaration or the initializer are raw type, then the transformation is n
 |raw|concrete|not all cases are possible |
 |concrete|raw|not all cases are possible |
 |concrete|concrete|works |
+
+<VersionNotice />
+

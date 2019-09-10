@@ -54,3 +54,6 @@ __Post__
 ```java
 public Function<Function, Function> f = (Function function) -> function.compose(function);
 ```
+
+<VersionNotice />
+

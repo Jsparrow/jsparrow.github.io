@@ -223,3 +223,6 @@ public boolean testEqualsIgnoreCase(String testString) {
     return StringUtils.equalsIgnoreCase(testString, sometimesExpectedString);
 }
 ```
+
+<VersionNotice />
+

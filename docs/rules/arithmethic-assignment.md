@@ -111,3 +111,6 @@ Rule can be applied only on the following types:
 * `float`
 * `long`
 * `short`
+
+<VersionNotice />
+

@@ -99,3 +99,6 @@ __Post__
 ```java
 Set<Person> persSet = transferElements(personList, HashSet::new);
 ```
+
+<VersionNotice />
+

@@ -62,3 +62,6 @@ __Post__
 // Requires Java 8
 List<GenericSample> result = foo.genericMethod(new ArrayList<>(), input);
 ```
+
+<VersionNotice />
+

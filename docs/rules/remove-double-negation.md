@@ -65,3 +65,6 @@ __Post__
 ``` java
 boolean a = !true; // reduced to one time
 ```
+
+<VersionNotice />
+

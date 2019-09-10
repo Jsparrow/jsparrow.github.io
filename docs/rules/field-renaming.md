@@ -96,3 +96,6 @@ A filed cannot be automatically renamed on any of the following condition:
 - the newly computed name is not a legal variable name in Java. For example, if the original name is `_int`, the new computed name would be `int` which is a Java keyword and is not allowed to be used as a variable name.
 - the newly computed name coincides with any of the existing variable names in the same class.
 - the type of the field to be renamed contains a dollar sign. In such a case, the search engine cannot find the references. Therefore, the field is not renamed.
+
+<VersionNotice />
+

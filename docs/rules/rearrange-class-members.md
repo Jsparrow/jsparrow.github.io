@@ -137,3 +137,6 @@ public class RearrangeClassMembersRule {
 	}
 }
 ```
+
+<VersionNotice />
+

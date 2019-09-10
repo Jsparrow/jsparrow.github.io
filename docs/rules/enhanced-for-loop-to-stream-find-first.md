@@ -107,3 +107,6 @@ double defaultIndex = values.stream()
     .map(Double::valueOf)
     .orElse(defaultValue);
 ```
+
+<VersionNotice />
+

@@ -106,3 +106,6 @@ __Pre__
 ```java
 String value = 2 + 3 + "";
 ```
+
+<VersionNotice />
+

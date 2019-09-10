@@ -72,3 +72,6 @@ if (a.equals(b)) {
 if (!a.equals(b)) {
 }
 ```
+
+<VersionNotice />
+

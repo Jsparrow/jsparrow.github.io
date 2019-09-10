@@ -83,3 +83,6 @@ Boolean.valueOf(false);
 Boolean.valueOf((String) input);
 Boolean.valueOf((Boolean) input);
 ```
+
+<VersionNotice />
+

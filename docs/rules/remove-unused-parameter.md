@@ -76,3 +76,6 @@ void invocationSample() {
 ## Limitations
 
 The non-private methods are not modified by this rule because they could be invoked or overridden in locations that are not reachable by jSparrow.
+
+<VersionNotice />
+
