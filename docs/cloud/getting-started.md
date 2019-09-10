@@ -6,7 +6,7 @@ sidebarDepth: 2
 ::: warning Please Note!
 This part of the documentation is out of date. The GitHub App Beta has ended.  
 Further information about the jSparrow Cloud App will be coming soon.  
-[Statistics](/cloud/statistics/) are still available.
+[Statistics](/statistics/statistics/) are available at a new location.
 :::
 
 # Getting started

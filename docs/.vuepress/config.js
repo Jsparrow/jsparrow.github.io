@@ -50,7 +50,7 @@ module.exports = {
         sidebar: {
             '/maven/': ['getting-started', 'local-license-server', 'additional-configuration', 'troubleshooting', 'release-notes'],
             '/eclipse/': ['getting-started', 'installation-guide', 'jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
-            '/cloud/': ['getting-started', 'statistics'],
+            '/cloud/': ['getting-started'],
             '/rules/': require('./rules.js'),
             '/statistics/': ['statistics', 'jenkins-statistics', 'mdm-statistics', 'neo4j-statistics'],
             '/': ['']
