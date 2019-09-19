@@ -42,7 +42,7 @@ Java 8
 __Pre__
 
 ```java
-if (!map.containsKey(aKey)){
+if (!map.containsKey(aKey)) {
     map.put(aKey, aValue);
 }
 ```
@@ -57,7 +57,7 @@ map.putIfAbsent(aKey, aValue);
 __Pre__
 
 ```java
-if (!map.containsKey(aKey))u
+if (!map.containsKey(aKey))
     map.put(aKey, aValue);
 ```
 
