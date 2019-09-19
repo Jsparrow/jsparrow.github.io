@@ -5,6 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.9.0 <Badge vertical="middle" text="19.09.2019"/>
+
+jSparrow 3.9.0 introduces a new automatic refactoring rule that improves performance in certain loops by eliminating redundant loop cycles. 
+
+### New Rule
+#### [**Insert Break Statements in For-loops**](/rules/insert-break-statement-in-loops.html)
+
+This rule finds Enhanced For-loops that return a boolean flag in case at least one element matches a certain criteria. In such cases, a break statement is added after the flag has been set the first time. This eliminates additional redundant loop cycles. 
+
 ## 3.8.0 <Badge vertical="middle" text="14.08.2019"/>
 
 With version 3.8.0 of jSparrow, two new refactoring rules are introduced. This brings jSparrow to a total number of [64 automatic refactoring rules](/rules/)! 
