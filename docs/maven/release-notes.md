@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.6.0 <Badge vertical="middle" text="19.09.2019"/>
+
+Release 2.6.0 provides a new rule:
+
+* [Insert Break Statements in For-loops](/rules/insert-break-statement-in-loops.html)
+
 ## 2.5.0 <Badge vertical="middle" text="14.08.2019"/>
 
 Release 2.5.0 of the jSparrow Maven Plugin contains two new rules:

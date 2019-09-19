@@ -14,7 +14,7 @@ tags: ["Java 1.5", "Loop", "Performance"]
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 3.9.0 |
+| First seen in jSparrow version  | [3.9.0](/eclipse/release-notes.html#_3-9-0) |
 | Minimum Java version            | 1.5   |
 | Remediation cost                | 2 min |
 
@@ -90,6 +90,7 @@ __Post__
 
 __Pre__
 ```java
+    boolean empty = false;
     for(String value : values)
         if(value.isEmpty()) 
             empty = true;
@@ -97,6 +98,7 @@ __Pre__
 
 __Post__
 ```java
+    boolean empty = false;
     for(String value : values)
         if(value.isEmpty()) {
             empty = true;
