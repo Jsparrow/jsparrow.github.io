@@ -7,13 +7,4 @@ export default ({
   siteData // site metadata
 }) => {
   Vue.use(Vuetify);
-
-  // routes for redirecting to the correct page after getting rid of /github/
-  router.addRoutes([
-    { path: '/github/statistics.html', redirect: '/statistics/statistics.html' },
-    { path: '/github/mdm-statistics.html', redirect: '/statistics/mdm-statistics.html' },
-    { path: '/github/jenkins-statistics.html', redirect: '/statistics/jenkins-statistics.html' },
-    { path: '/github/neo4j-statistics.html', redirect: '/statistics/neo4j-statistics.html' },
-    { path: '/github/', redirect: '/cloud/getting-started.html' }
-  ])
 }
