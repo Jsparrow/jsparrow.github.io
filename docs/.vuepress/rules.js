@@ -63,6 +63,7 @@ module.exports = [
 'local-variable-type-inference',
 'multi-catch',
 'optional-if-present',
+'optional-if-present-or-else',
 'string-format-line-separator',
 'lambda-for-each-if-wrapper-to-filter',
 'lambda-for-each-map',
