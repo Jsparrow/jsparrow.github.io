@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.7.0 <Badge vertical="middle" text="31.10.2019"/>
+
+Release 2.7.0 intorduces a new rule:
+
+* [Use Optional::ifPresentOrElse](/rules/optional-if-present-or-else.html)
+
 ## 2.6.0 <Badge vertical="middle" text="19.09.2019"/>
 
 Release 2.6.0 provides a new rule:

@@ -5,6 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.10.0 <Badge vertical="middle" text="31.10.2019"/>
+
+In this release, jSparrow 3.10.0, we introduce a new rule for Java 9 and above.
+
+### New Rule
+#### [**Use Optional::ifPresentOrElse**](/rules/optional-if-present-or-else.html)
+
+In Java 9, the [`Optional`](https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html) API has been extended with the [`Optional#ifPresentOrElse`](https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html#ifPresentOrElse-java.util.function.Consumer-java.lang.Runnable-) method. jSparrow replaces if-then-else statements, checking for [`Optional#isPresent`](https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html#isPresent--), with a single invocation of [`Optional#ifPresentOrElse`](https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html#ifPresentOrElse-java.util.function.Consumer-java.lang.Runnable-). This improves the readability of the code and enables the usage of higher order functions with [`Optional`](https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html).
+
 ## 3.9.0 <Badge vertical="middle" text="19.09.2019"/>
 
 jSparrow 3.9.0 introduces a new automatic refactoring rule that improves performance in certain loops by eliminating redundant loop cycles. 
