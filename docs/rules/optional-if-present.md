@@ -16,7 +16,6 @@ tags: ["Java 8", "Old Language Constructs", "Lambda"]
 | First seen in jSparrow version  | [2.6.0](/eclipse/release-notes.html#_2-6-0) |
 | Minimum Java version            | 8 |
 | Remediation cost                | 2 min |
-| Links                           | [S3655](https://sonarcloud.io/organizations/default/rules?open=squid%3AS3655&rule_key=squid%3AS3655)|
 
 ## Description
 
@@ -24,7 +23,7 @@ The usage of  `Optional.get` should be avoided in general because it can potenti
 
 ## Benefits
 
-Reduces the risk of raising a `NoSuchElementException` at runtime.
+Improves readability and enables the use of higher order funtions on `Optional`.
 
 ## Requirement & Tags
 
