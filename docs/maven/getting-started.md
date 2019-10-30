@@ -194,12 +194,12 @@ renamingRule:
 # the parent project, unless it is an excluded module.
 excludes:    
     excludeModules:  
-      - eu.jsparrow.core  
+      - com.example.module1  
     excludePackages:  
-      - eu.jsparrow.core  
-      - eu.jsparrow.core.rule  
+      - com.example.core  
+      - com.example.core.service  
     excludeClasses:  
-      - eu.jsparrow.core.Activator.java  
+      - com.example.core.Activator.java  
 ```
 
 ::: warning Important
