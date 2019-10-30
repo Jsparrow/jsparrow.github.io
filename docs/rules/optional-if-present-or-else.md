@@ -44,7 +44,7 @@ is transformed to:
 
 ## Benefits
 
-Reduces the risk of raising a `NoSuchElementException` at runtime. Improves readability.
+Improves readability and enables the use of higher order funtions on `Optional`.
 
 ## Requirement & Tags
 
