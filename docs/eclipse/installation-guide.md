@@ -28,7 +28,7 @@ jSparrow can simply be installed by dragging this Button to your running Eclipse
 
 [ ![Install Dialog](/img/eclipse/jep-manual-installation-install-dialog.png) ](/img/eclipse/jep-manual-installation-install-dialog.png)
 
-3. Select "Photon" for Eclipse Photon and newer or "Neon and Oxygen" for Eclipse Neon or Eclipse Oxygen
+3. Select "Photon and above" for Eclipse Photon and newer. (Oxygen and older versions are not supported anymore)
 
 4. Press "Next" twice
 
