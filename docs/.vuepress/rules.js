@@ -9,6 +9,7 @@ module.exports = [
 '',
 'brackets-to-control',
 'collapse-if-statements',
+'hide-default-constructor-in-utility-classes',
 'insert-break-statement-in-loops',
 'serial-version-uid',
 'organize-imports',
