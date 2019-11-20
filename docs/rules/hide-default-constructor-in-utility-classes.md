@@ -14,7 +14,7 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | 3.11.0 |
+| First seen in jSparrow version  | [3.11.0](/eclipse/release-notes.html#_3-11-0) |
 | Minimum Java version            | 1.1     |
 | Remediation cost                | 5 min |
 | Links                           | [S1118](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1118&rule_key=squid%3AS1118) |
