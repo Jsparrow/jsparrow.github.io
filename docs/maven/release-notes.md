@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.8.0 <Badge vertical="middle" text="21.11.2019"/>
+
+Release 2.8.0 brings a new rule to the jSparrow Maven Plugin:
+
+* [Hide Default Constructor In Utility Classes](/rules/hide-default-constructor-in-utility-classes.html)
+
 ## 2.7.0 <Badge vertical="middle" text="31.10.2019"/>
 
 Release 2.7.0 intorduces a new rule:
