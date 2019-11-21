@@ -5,6 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.11.0 <Badge vertical="middle" text="21.11.2019"/>
+
+jSparrow 3.11.0 brings you a new rule for enforcing coding conventions. It provides [67 automatic refactoring rules](/rules/) now. 
+
+### New Rule
+#### [**Hide Default Constructor In Utility Classes**](/rules/hide-default-constructor-in-utility-classes.html)
+
+Utility classes are classes containing `static` methods and fields only. Such classes should not be instantiated. The default constructor will be hidden by adding a private constructor to utility classes, which prevents their instantiation.
+
 ## 3.10.0 <Badge vertical="middle" text="31.10.2019"/>
 
 In this release, jSparrow 3.10.0, we introduce a new rule for Java 9 and above.
