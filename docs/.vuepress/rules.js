@@ -11,6 +11,7 @@ module.exports = [
 'collapse-if-statements',
 'hide-default-constructor-in-utility-classes',
 'insert-break-statement-in-loops',
+'make-fields-and-variables-final',
 'serial-version-uid',
 'organize-imports',
 'rearrange-class-members',
