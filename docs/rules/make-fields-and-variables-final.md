@@ -35,7 +35,7 @@ The criteria for being effectively `final` are as follows:
 
 ## Benefits
 
-The readability and maintainability of the source code is improved. Furthermore, an accidental overwrite of variables or fields is prevented.
+Readability and maintainability of code is improved and accidental reassignments are prevented for affected fields and variables.
 
 ## Requirement & Tags
 
