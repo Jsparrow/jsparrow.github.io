@@ -5,6 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.12.0 <Badge vertical="middle" text="19.12.2019"/>
+
+jSparrow 3.12.0 adds a new refactoring rule for improving source code readability. This brings jSparrow to a total of [68 automatic refactoring rules](/rules/).
+
+### New Rule
+#### [**Make Fields And Variables Final**](/rules/make-fields-and-variables-final.html)
+
+This rule declares `private` fields and local variables `final`, if they are effectively `final`. Readability and maintainability of code is improved and accidental reassignments are prevented for affected fields and variables.
+
 ## 3.11.0 <Badge vertical="middle" text="21.11.2019"/>
 
 jSparrow 3.11.0 brings you a new rule for enforcing coding conventions. It provides [67 automatic refactoring rules](/rules/) now. 

@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.9.0 <Badge vertical="middle" text="19.12.2019"/>
+
+Release 2.9.0 adds a new rule to the jSparrow Maven Plugin:
+
+* [Make Fields And Variables Final](/rules/make-fields-and-variables-final.html)
+
 ## 2.8.0 <Badge vertical="middle" text="21.11.2019"/>
 
 Release 2.8.0 brings a new rule to the jSparrow Maven Plugin:
