@@ -15,7 +15,7 @@ tags: ["Java 1.8", "Coding Conventions", "Lambda"]
 
 | Property                        | Value |
 |:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.14.0](/eclipse/release-notes.html#_3-14-0) |
+| First seen in jSparrow version  | [3.13.0](/eclipse/release-notes.html#_3-13-0) |
 | Minimum Java version            | 8     |
 | Remediation cost                | 2 min |
 
