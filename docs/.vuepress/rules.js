@@ -64,6 +64,7 @@ module.exports = [
 'use-list-sort',
 'local-variable-type-inference',
 'multi-catch',
+'optional-filter',
 'optional-if-present',
 'optional-if-present-or-else',
 'string-format-line-separator',

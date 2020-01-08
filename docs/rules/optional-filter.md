@@ -1,0 +1,80 @@
+---
+title: Use Optional::filter
+description:
+    Extracts an Optional::filter from the consumer used in Optional::ifPresent. 
+    This simplifies the lambda expression used with Optional operations. 
+
+tags: ["Java 1.8", "Coding Conventions", "Lambda", "Readability"]
+---
+
+# Use Optional::filter
+
+[[toc]]
+
+## Properties
+
+| Property                        | Value |
+|:------------------------------- |:----- |
+| First seen in jSparrow version  | [3.13.0](/eclipse/release-notes.html#_3-13-0) |
+| Minimum Java version            | 8     |
+| Remediation cost                | 2 min |
+
+## Description
+
+Extracts an [`Optional::filter`](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html#filter-java.util.function.Predicate-) from the consumer used in [`Optional::ifPresent`](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html#ifPresent-java.util.function.Consumer-). 
+Hence, simplifying the lambda expressions used with `Optional` operations. 
+This transformation is feasible only if the entire consumer's body is wrapped into an if-statement.
+
+## Benefits
+
+Arguably, the lambda expression is easier to read and can be combined with other `Optional` operations.
+
+## Requirement & Tags
+
+::: warning Requirements
+Java 1.8
+:::
+
+::: tip Tags
+<TagLinks />
+:::
+
+## Code Changes
+
+### Base Case
+
+__Pre__
+```java
+		Optional<User> oUser = findById(userId);
+		oUser.ifPresent(user -> {
+			if (isSpecial(user)) {
+				sendMail(user.getMail());
+			}
+		});
+```
+
+__Post__
+```java
+		Optional<User> oUser = findById(userId);
+		oUser.filter(user -> isSpecial(user)).ifPresent(user -> {
+			sendMail(user.getMail());
+		});
+```
+
+### Limitations
+
+Multiple Statements in Lambda Body - no transformation is feasible. 
+
+__Pre__
+```java
+		Optional<User> oUser = findById(userId);
+		oUser.ifPresent(user -> {
+			if (isSpecial(user)) {
+				sendPresent(user);
+			}
+			sendMail(user.getMail());
+		});
+```
+
+
+
