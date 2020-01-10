@@ -1,12 +1,12 @@
 ---
-title: Use List Sort
+title: Replace Collection.sort with List.sort
 description:
     Replace static invocations of 'Collections.sort(List, Comparator)' with 'List.sort(Comparator)'.
 
 tags: ["Java 1.8", "Old Language Constructs", "Coding Conventions", "Readability"]
 ---
 
-# Use List Sort
+# Replace Collection.sort with List.sort
 
 [[toc]]
 
