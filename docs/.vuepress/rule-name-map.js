@@ -232,7 +232,7 @@ module.exports = {
         "url": "rules/map-get-or-default.html"
     },
     "UseListSort": {
-        "name": "Use List Sort",
+        "name": "Replace Collection.sort with List.sort",
         "url": "rules/use-list-sort.html"
     },
     "OrganizeImports": {

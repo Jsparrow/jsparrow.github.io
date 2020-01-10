@@ -46,7 +46,7 @@ The jSparrow Maven Plugin 2.4.0 introduces two new rules for Java 9 and above:
 
 The jSparrow Maven Plugin 2.3.0 introduces two new rules: 
 * [Reorder Modifiers](/rules/reorder-modifiers.html).
-* [Use List Sort](/rules/use-list-sort.html).
+* [Replace Collection.sort with List.sort](/rules/use-list-sort.html).
 
 ## 2.2.0 <Badge vertical="middle" text="16.05.2019"/>
 
