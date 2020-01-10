@@ -238,5 +238,37 @@ module.exports = {
     "OrganizeImports": {
         "name": "Organize Imports",
         "url": "rules/organize-imports.html"
+    },
+    "CollectionsFactoryMethods": {
+        "name": "Use Factory Methods for Collections",
+        "url": "rules/collections-factory-methods.html"
+    },
+    "EnhancedForLoopToStreamTakeWhile": {
+        "name": "Replace For-Loop with Stream::takeWhile",
+        "url": "rules/"
+    },
+    "RemoveNullCheckBeforeInstanceof": {
+        "name": "Remove Null-Checks Before Instanceof",
+        "url": "rules/remove-null-check-before-instanceof.html"
+    },
+    "UseCollectionsSingletonList": {
+        "name": "Use Collections Singleton List",
+        "url": "rules/use-collections-singleton-list.html"
+    },
+    "InsertBreakStatementInLoops": {
+        "name": "Insert Break Statements in For-loops",
+        "url": "rules/insert-break-statement-in-loops.html"
+    },
+    "OptionalIfPresentOrElse": {
+        "name": "Use Optional::ifPresentOrElse",
+        "url": "rules/optional-if-present-or-else.html"
+    },
+    "HideDefaultConstructorInUtilityClasses": {
+        "name": "Hide Default Constructor In Utility Classes",
+        "url": "rules/hide-default-constructor-in-utility-classes.html"
+    },
+    "MakeFieldsAndVariablesFinal": {
+        "name": "Make Fields And Variables Final",
+        "url": "rules/make-fields-and-variables-final.html"
     }
 }
