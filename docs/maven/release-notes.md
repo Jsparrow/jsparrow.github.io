@@ -39,7 +39,7 @@ Release 2.5.0 of the jSparrow Maven Plugin contains two new rules:
 ## 2.4.0 <Badge vertical="middle" text="18.07.2019"/>
 
 The jSparrow Maven Plugin 2.4.0 introduces two new rules for Java 9 and above: 
-* [Replace For-Loop with Stream::takeWhile](/rules/enhanced-for-loop-to-stream-take-while-rule.html).
+* [Replace For-Loop with Stream::takeWhile](/rules/enhanced-for-loop-to-stream-take-while.html).
 * [Use Factory Methods for Collections](/rules/collections-factory-methods.html).
 
 ## 2.3.0 <Badge vertical="middle" text="19.06.2019"/>

@@ -61,7 +61,7 @@ The jSparrow 3.7.0 release contains a new refactoring rule and brings compatibil
 Some stability improvements are also included. 
 
 ### New Rule
-#### [**Replace For-Loop with Stream::takeWhile**](/rules/enhanced-for-loop-to-stream-take-while-rule.html)
+#### [**Replace For-Loop with Stream::takeWhile**](/rules/enhanced-for-loop-to-stream-take-while.html)
 
 Since Java 9, it is possible to get the prefix of a Stream with the [`takeWhile`](https://docs.oracle.com/javase/9/docs/api/java/util/stream/Stream.html#takeWhile-java.util.function.Predicate-) method.
 This rule replaces enhanced for-loops iterating over the prefix of a collection with `Stream::takeWhile`. 
