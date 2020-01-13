@@ -143,7 +143,7 @@ module.exports = {
         "name": "Remove Inherited Interfaces from Class Declaration",
         "url": "rules/re-implementing-interface.html"
     },
-    "RemoveDoubleNegationRule": {
+    "RemoveDoubleNegation": {
         "name": "Remove Double Negations",
         "url": "rules/remove-double-negation.html"
     },
@@ -270,5 +270,9 @@ module.exports = {
     "MakeFieldsAndVariablesFinal": {
         "name": "Make Fields And Variables Final",
         "url": "rules/make-fields-and-variables-final.html"
+    },
+    "RemoveModifiersInInterfaceProperties": {
+        "name": "Remove Modifiers from Interface Properties",
+        "url": "rules/remove-modifiers-in-interface-properties.html"
     }
 }
