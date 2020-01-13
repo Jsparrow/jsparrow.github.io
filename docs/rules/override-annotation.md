@@ -1,5 +1,10 @@
 ---
 title: Use @Override Annotation
+ruleId: OverrideAnnotation
+since: 2.0.0
+minJavaVersion: 6
+remediationCost: 5
+links: "[squid:S1161](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1161)"
 description:
     This rule adds the '@Override' annotation to methods overriding or implementing parent class methods.
 tags: ["Free", "Java 6", "Readability", "Coding Conventions"]

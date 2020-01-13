@@ -1,5 +1,10 @@
 ---
 title: Use Multi Catch
+ruleId: MultiCatch
+since: 1.0.0
+minJavaVersion: 7
+remediationCost: 5
+links: "[S2147](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2147&q=Catches+should+be+combined.)"
 description:
     Java 7 introduced the possibility to merge multiple catch clauses into a single multi-catch clause. Merging is only possible if the catch statements are identical.
 tags: ["Java 7", "Old Language Constructs", "Readability"]

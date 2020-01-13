@@ -1,5 +1,10 @@
 ---
 title: Remove Unnecessary Thrown Exceptions on Method Signatures
+ruleId: RemoveUnnecessaryThrows
+since: 2.7.0
+minJavaVersion: 1.1
+remediationCost: 2
+links: "[Squid:RedundantThrowsDeclarationCheck](https://sonarcloud.io/organizations/default/rules?open=squid%3ARedundantThrowsDeclarationCheck&rule_key=squid%3ARedundantThrowsDeclarationCheck)"
 description:
     Removes the RuntimeExceptions, duplications and exceptions which are subtypes of already thrown exceptions on the method signatures.
 tags: ["Free", "Java 1.1", "Readability"]

@@ -1,5 +1,10 @@
 ---
 title: Use Stream::collect
+ruleId: LambdaForEachCollect
+since: 2.0.0
+minJavaVersion: 8
+remediationCost: 15
+links: ""
 description:
     Replaces 'Stream::forEach' with 'Stream::collect' if the argument of the 'forEach' statement is only used for adding elements to a list.
     This simplifies adding elements to a list.

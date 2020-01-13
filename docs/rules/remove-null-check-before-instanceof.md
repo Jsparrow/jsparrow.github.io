@@ -1,5 +1,10 @@
 ---
 title: Remove Null-Checks Before Instanceof
+ruleId: RemoveNullCheckBeforeInstanceof
+since: 3.8.0
+minJavaVersion: 1.1
+remediationCost: 5
+links: "[S4201](https://sonarcloud.io/organizations/default/rules?open=squid%3AS4201&rule_key=squid%3AS4201)"
 description:
     Finds and removes null-checks before occurrences of instanceof. Since null is not an instance of anything, the null-check is redundant.
 

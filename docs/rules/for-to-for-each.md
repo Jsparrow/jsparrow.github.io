@@ -1,5 +1,10 @@
 ---
 title: Replace For-Loop with Enhanced-For-Loop
+ruleId: ForToForEach
+since: 1.0.0
+minJavaVersion: 5
+remediationCost: 5
+links: ""
 description:
     Transforms all possible for loops with iterators to a ForEach loop.
 tags: ["Free", "Java 5", "Loop", "Old Language Constructs"]

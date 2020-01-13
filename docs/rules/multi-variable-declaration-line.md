@@ -1,5 +1,10 @@
 ---
 title: Split Multiple Variable Declarations
+ruleId: MultiVariableDeclarationLine
+since: 2.0.0
+minJavaVersion: 1.1
+remediationCost: 2
+links: ""
 description:
     Multiple field or variable declarations on the same line could cause confusion about their types and initial values. That also makes it harder to read and to understand the code.
     In order to improve readability, each field or variable should be declared on a separate line.

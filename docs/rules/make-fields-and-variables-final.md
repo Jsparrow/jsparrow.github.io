@@ -1,5 +1,10 @@
 ---
 title: Make Fields And Variables Final
+ruleId: MakeFieldsAndVariablesFinal
+since: 3.12.0
+minJavaVersion: 1.1
+remediationCost: 5
+links: ""
 description:
     This rule declares private fields and local variables final, if they are effectively final
 

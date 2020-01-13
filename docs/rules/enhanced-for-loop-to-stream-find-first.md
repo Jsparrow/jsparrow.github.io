@@ -1,5 +1,10 @@
 ---
 title: Replace For-Loop with Stream::findFirst
+ruleId: EnhancedForLoopToStreamFindFirst
+since: 2.2.0
+minJavaVersion: 8
+remediationCost: 2
+links: ""
 description:
     Replaces enhanced for-loops which are used to find an element within a collection by a stream and uses 'Stream::findFirst' to find the result.
     By using the stream syntax, a multi-line control statement can be reduced to a single line.

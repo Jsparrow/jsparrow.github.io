@@ -1,5 +1,10 @@
 ---
 title: Replace Concatenation with Infix-Operation
+ruleId: StringConcatToPlus
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 5
+links: ""
 description:
     This rule replaces the 'concat()' method on 'Strings' with the + operator.
 tags: ["Java 1.1", "String Manipulation", "Performance"]

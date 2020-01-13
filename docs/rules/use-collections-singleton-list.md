@@ -1,5 +1,10 @@
 ---
 title: Use Collections Singleton List
+ruleId: UseCollectionsSingletonList
+since: 3.8.0
+minJavaVersion: 1.3
+remediationCost: 2
+links: ""
 description:
     Replaces Arrays.asList with 0 or 1 parameters respectively with Collections.emptyList() or Collections.singletonList(..)
 

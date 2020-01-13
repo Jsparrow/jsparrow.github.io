@@ -1,5 +1,10 @@
 ---
 title: Use Factory Methods for Collections
+ruleId: CollectionsFactoryMethods
+since: 3.6.0
+minJavaVersion: 9
+remediationCost: 5
+links: ""
 description:
     Replaces the invocations of 'Collections.unmodifiableList/Set/Map' with the corresponding factory method 'List.of', 'Set.of' and 'Map.ofEntries' introduced in Java 9. 
 

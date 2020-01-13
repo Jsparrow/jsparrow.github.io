@@ -1,5 +1,10 @@
 ---
 title: Use StringBuilder::append
+ruleId: UseStringBuilderAppend
+since: 2.7.0
+minJavaVersion: 5
+remediationCost: 2
+links: "[S1643](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1643&rule_key=squid%3AS1643)"
 description:
     Replaces the infix operator + on String concatenation by 'StringBuilder::append'
 tags: ["Java 5", "String Manipulation", "Performance"]

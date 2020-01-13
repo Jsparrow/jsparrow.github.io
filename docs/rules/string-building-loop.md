@@ -1,5 +1,10 @@
 ---
 title: Replace For-Loop with Stream::collect(Collectors.joining())
+ruleId: StringBuildingLoop
+since: 2.2.0
+minJavaVersion: 5
+remediationCost: 10
+links: "[S1643](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1643&q=S1643)"
 description:
     This rule refactors the enhanced for loops which are only being used for concatenating the elements of collections or arrays.
 tags: ["Java 5", "Java 8", "Loop", "Lambda", "Performance"]

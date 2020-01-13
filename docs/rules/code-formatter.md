@@ -1,5 +1,10 @@
 ---
 title: Reformat Code
+ruleId: CodeFormatter
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 1
+links: ""
 description:
     Reformats code according to the coding conventions defined in Eclipse.
 tags: ["Java 1.1", "Formatting", "Readability"]

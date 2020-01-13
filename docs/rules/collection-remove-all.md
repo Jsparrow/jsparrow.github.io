@@ -1,5 +1,10 @@
 ---
 title: Replace removeAll() with clear()
+ruleId: CollectionRemoveAll
+since: 1.0.0
+minJavaVersion: 1.2
+remediationCost: 2
+links: "[FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html#DMI_USING_REMOVEALL_TO_CLEAR_COLLECTION)"
 description:
     Simplifies the code by replacing all occurrences of 'removeAll()' which have the current collection as parameter with 'clear()'.
 tags: ["Java 1.2", "Coding Conventions"]

@@ -1,5 +1,10 @@
 ---
 title: Reorder Modifiers
+ruleId: ReorderModifiers
+since: 3.6.0
+minJavaVersion: 1.1
+remediationCost: 2
+links: "[squid:ModifiersOrderCheck](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AModifiersOrderCheck&q=ModifiersOrderCheck)"
 description:
     This rule reorders the modifiers on Type, Field and Method declarations.
 
