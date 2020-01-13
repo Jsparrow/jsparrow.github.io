@@ -1,6 +1,6 @@
 ---
 title: Make SerialVersionUID Static Final
-ruleId: SerialVersionUid
+ruleId: SerialVersionUID
 since: 1.0.0
 minJavaVersion: 1.1
 remediationCost: 5
