@@ -9,28 +9,28 @@
       </thead>
       <tbody>
         <tr>
-          <td>Rule ID</td>
-          <td>{{ $page.frontmatter.ruleId }}</td>
+          <td style="text-align: left;">Rule ID</td>
+          <td style="text-align: left;">{{ $page.frontmatter.ruleId }}</td>
         </tr>
         <tr>
-          <td>First seen in jSparrow version</td>
-          <td>
+          <td style="text-align: left;">First seen in jSparrow version</td>
+          <td style="text-align: left;">
             <router-link
               :to="getRouteToReleaseNotes($page.frontmatter.since)"
             >{{ $page.frontmatter.since }}</router-link>
           </td>
         </tr>
         <tr>
-          <td>Minimum Java version</td>
-          <td>{{ $page.frontmatter.minJavaVersion }}</td>
+          <td style="text-align: left;">Minimum Java version</td>
+          <td style="text-align: left;">{{ $page.frontmatter.minJavaVersion }}</td>
         </tr>
         <tr>
-          <td>Remediation cost</td>
-          <td>{{ $page.frontmatter.remediationCost }} min</td>
+          <td style="text-align: left;">Remediation cost</td>
+          <td style="text-align: left;">{{ $page.frontmatter.remediationCost }} min</td>
         </tr>
         <tr v-if="$page.frontmatter.links != null">
-          <td>Links</td>
-          <td>
+          <td style="text-align: left;">Links</td>
+          <td style="text-align: left;">
             <a :href="$page.frontmatter.links[0].url" target="_blank">
               {{ $page.frontmatter.links[0].displayName }}<svg
                 xmlns="http://www.w3.org/2000/svg"
