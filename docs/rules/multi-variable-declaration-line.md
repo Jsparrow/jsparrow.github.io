@@ -20,12 +20,6 @@ tags: ["Free", "Java 1.1", "Readability", "Coding Conventions"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.0.0](/eclipse/release-notes.html#_2-0-0) |
-| Minimum Java version            | 1.1     |
-| Remediation cost                | 2 min |
-| Links                           | [S1659](https://sonarcloud.io/organizations/default/rules#rule_key=squid%3AS1659)|
 
 ## Description
 

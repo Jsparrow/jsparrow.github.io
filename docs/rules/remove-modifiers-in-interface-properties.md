@@ -22,12 +22,6 @@ tags: ["Java 1.1", "Readability"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.3.0](/eclipse/release-notes.html#_3-3-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 1 min |
-| Links                           | [S2333](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS2333&q=S2333) |
 
 ## Description
 

@@ -18,11 +18,6 @@ tags: ["Java 1.1", "String Manipulation"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 10 min |
 
 ## Description
 

@@ -19,11 +19,6 @@ tags: ["Java 1.5", "Loop", "Performance"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.9.0](/eclipse/release-notes.html#_3-9-0) |
-| Minimum Java version            | 1.5   |
-| Remediation cost                | 2 min |
 
 ## Description
 

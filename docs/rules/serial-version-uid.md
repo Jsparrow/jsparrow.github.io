@@ -21,12 +21,6 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0) |
-| Minimum Java version            | 1.1     |
-| Remediation cost                | 5 min |
-| Links                           | [S2057](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2057&rule_key=squid%3AS2057) |
 
 ## Description
 

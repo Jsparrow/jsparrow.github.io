@@ -21,12 +21,6 @@ tags: ["Free", "Java 1.1", "Readability"]
 
 <RuleProperties />
 
-| Property                        | Value |
-| ------------------------------- | ----- |
-| First seen in jSparrow version  | [2.7.0](/eclipse/release-notes.html#_2-7-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 2 min |
-| Links                           | [Squid:RedundantThrowsDeclarationCheck](https://sonarcloud.io/organizations/default/rules?open=squid%3ARedundantThrowsDeclarationCheck&rule_key=squid%3ARedundantThrowsDeclarationCheck) |
 
 ## Description
 

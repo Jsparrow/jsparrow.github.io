@@ -19,11 +19,6 @@ tags: ["Free", "Java 5", "Coding Conventions"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
-| Minimum Java version            | 5     |
-| Remediation cost                | 2 min |
 
 ## Description
 

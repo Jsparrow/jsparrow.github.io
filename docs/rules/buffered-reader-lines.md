@@ -19,11 +19,6 @@ tags: ["Java 8", "Lambda", "Loop", "Old Language Constructs"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.3.0](/eclipse/release-notes.html#_3-3-0) |
-| Minimum Java version            | 8     |
-| Remediation cost                | 5 min |
 
 ## Description
 Java 8 introduced [`BufferedReader::lines`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html#lines--) to generate a stream of elements representing lines in the `BufferedReader`.

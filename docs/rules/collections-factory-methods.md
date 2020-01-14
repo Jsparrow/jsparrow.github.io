@@ -19,11 +19,6 @@ tags: ["Java 9", "Old Language Constructs", "Readability"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.6.0](/eclipse/release-notes.html#_3-6-0) |
-| Minimum Java version            | 9     |
-| Remediation cost                | 5 min |
 
 ## Description
 

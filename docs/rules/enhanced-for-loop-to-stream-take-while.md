@@ -20,12 +20,6 @@ tags: ["Java 9", "Loop", "Lambda"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.7.0](/eclipse/release-notes.html#_3-7-0) |
-| Minimum Java version            | 9     |
-| Remediation cost                | 2 min |
-| Links                           |       |
 
 ## Description
 

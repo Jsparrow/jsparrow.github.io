@@ -18,11 +18,6 @@ tags: ["Java 9", "Old Language Constructs", "Lambda"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.10.0](/eclipse/release-notes.html#_3-10-0) |
-| Minimum Java version            | 9 |
-| Remediation cost                | 2 min |
 
 ## Description
 

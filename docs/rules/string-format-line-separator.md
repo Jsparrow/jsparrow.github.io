@@ -21,12 +21,6 @@ tags: ["Java 5", "String Manipulation"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 5   |
-| Remediation cost                | 1 min |
-| Links                           | [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html#VA_FORMAT_STRING_USES_NEWLINE) |
 
 ## Description
 

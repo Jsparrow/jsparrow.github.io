@@ -19,11 +19,6 @@ tags: ["Java 1.1", "Readability"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.12.0](/eclipse/release-notes.html#_3-12-0) |
-| Minimum Java version            | 1.1    |
-| Remediation cost                | 5 min |
 
 ## Description
 

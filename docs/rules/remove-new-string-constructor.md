@@ -21,12 +21,6 @@ tags: ["Java 1.1", "String Manipulation", "Performance"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 5 min |
-| Links                           | [S2129](https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS2129) |
 
 ## Description
 

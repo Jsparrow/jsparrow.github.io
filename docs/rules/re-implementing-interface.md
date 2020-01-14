@@ -21,12 +21,6 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
-| Minimum Java version            | 1     |
-| Remediation cost                | 2 min |
-| Links                           | [FindBugs:RedundantInterface](http://findbugs.sourceforge.net/bugDescriptions.html#RI_REDUNDANT_INTERFACES) |
 
 ## Description
 This rule removes interfaces from class declaration, which are already implemented by a super class.

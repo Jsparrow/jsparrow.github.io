@@ -22,12 +22,6 @@ defaultConfiguration: true
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0) |
-| Minimum Java version            | 7     |
-| Remediation cost                | 1 min |
-| Links                           | [S2293](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2293&q=The+diamond+operator+%28%22%3C%3E%22%29+should+be+used+) |
 
 ## Description
 

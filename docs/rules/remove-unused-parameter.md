@@ -22,12 +22,6 @@ tags: ["Java 1.1", "Readability", "Coding Conventions"]
 
 <RuleProperties />
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.4.0](/eclipse/release-notes.html#_3-4-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 5 min |
-| Links                           | [squid:S1172](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1172&q=squid%3AS1172) |
 
 ## Description
 This rule finds and removes unused parameters in private method declarations.
