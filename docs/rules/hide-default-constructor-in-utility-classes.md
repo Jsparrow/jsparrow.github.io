@@ -4,7 +4,10 @@ ruleId: HideDefaultConstructorInUtilityClasses
 since: 3.11.0
 minJavaVersion: 1.1
 remediationCost: 5
-links: "[S1118](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1118&rule_key=squid%3AS1118)"
+links:
+    - displayName: "S1118"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1118&rule_key=squid%3AS1118"
+    
 description:
     Hides the default constructor of utility classes by adding a private constructor.
 

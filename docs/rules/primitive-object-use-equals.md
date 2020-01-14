@@ -4,7 +4,7 @@ ruleId: PrimitiveObjectUseEquals
 since: 2.2.0
 minJavaVersion: 1.1
 remediationCost: 2
-links: ""
+links:
 description:
     This rule replaces the infix operators "==" and "!=" with 'equals()' when used on primitive objects.
 tags: ["Java 1.1", "Coding Conventions", "String Manipulation"]

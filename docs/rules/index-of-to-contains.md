@@ -4,7 +4,7 @@ ruleId: IndexOfToContains
 since: 2.2.0
 minJavaVersion: 5
 remediationCost: 2
-links: ""
+links:
 description:
     This rule replaces calls to 'indexOf()' on instances of Strings or Collections with calls to the 'contains()' method.
     'contains()' was introduced in Java 1.4 and helps to make the code more readable.

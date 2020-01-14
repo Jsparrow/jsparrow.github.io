@@ -4,7 +4,10 @@ ruleId: UseIsEmptyOnCollections
 since: 2.0.2
 minJavaVersion: 6
 remediationCost: 2
-links: "[S1155](https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS1155)"
+links:
+    - displayName: "S1155"
+      url: "https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS1155"
+    
 description:
     This rule replaces comparisons of 'length()' or 'size()' with 0 with a call to 'isEmpty()'. Any occurrences of such a comparison will be replaced, regardless of surrounding control structure.
 tags: ["Free", "Java 6", "Old Language Constructs", "Coding Conventions", "Readability"]

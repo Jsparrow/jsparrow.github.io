@@ -4,7 +4,7 @@ ruleId: EnhancedForLoopToStreamAnyMatch
 since: 2.2.0
 minJavaVersion: 8
 remediationCost: 2
-links: ""
+links:
 description:
     Replaces occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with 'Stream::anyMatch', 'Stream::allMatch' or 'Stream::noneMatch'.
     The stream syntax is more concise and improves readability.

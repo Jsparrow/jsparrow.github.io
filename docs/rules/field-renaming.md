@@ -4,7 +4,10 @@ ruleId: FieldRenaming
 since: 2.3.0
 minJavaVersion: 1.1
 remediationCost: 15
-links: "[S00116](https://sonarcloud.io/organizations/default/rules?open=squid%3AS00116&q=squid%3AS00116)"
+links:
+    - displayName: "S00116"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS00116&q=squid%3AS00116"
+    
 description:
     Renames the non-final fields to comply with the naming convention "^[a-z][a-zA-Z0-9]*$" i.e. a lower case
     prefix followed by any sequence of alpha-numeric characters

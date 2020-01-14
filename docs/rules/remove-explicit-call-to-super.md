@@ -4,7 +4,7 @@ ruleId: RemoveExplicitCallToSuper
 since: 2.7.0
 minJavaVersion: 1.1
 remediationCost: 1
-links: ""
+links:
 description:
     Removes unnecessary explicit call to the default constructor of the super class.
 tags: ["Java 1.1", "Readability"]

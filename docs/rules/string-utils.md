@@ -4,7 +4,7 @@ ruleId: StringUtils
 since: 1.0.0
 minJavaVersion: 1.1
 remediationCost: 10
-links: ""
+links:
 description:
     Replaces various 'String' methods with their null-safe counterparts from 'StringUtils'.
 tags: ["Java 1.1", "String Manipulation"]

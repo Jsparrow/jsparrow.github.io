@@ -4,7 +4,10 @@ ruleId: TryWithResource
 since: 1.0.0
 minJavaVersion: 7
 remediationCost: 15
-links: "[S2093](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2093&q=Resources+should+be+closed)"
+links:
+    - displayName: "S2093"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2093&q=Resources+should+be+closed"
+    
 description:
     This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as the construct takes care of that.
 tags: ["Free", "Java 7", "Old Language Constructs", "Readability"]

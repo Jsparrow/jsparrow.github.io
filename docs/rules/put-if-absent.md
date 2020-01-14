@@ -4,7 +4,7 @@ ruleId: PutIfAbsent
 since: 2.3.0
 minJavaVersion: 8
 remediationCost: 2
-links: ""
+links:
 description:
     If 'map.put(..)' is wrapped with a condition verifying the existence of an element one can use 'map.putIfAbsent(...)' instead.
 tags: ["Java 8", "Old Language Constructs"]

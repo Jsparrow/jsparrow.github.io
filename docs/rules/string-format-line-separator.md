@@ -4,7 +4,10 @@ ruleId: StringFormatLineSeparator
 since: 1.0.0
 minJavaVersion: 5
 remediationCost: 1
-links: "[FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html#VA_FORMAT_STRING_USES_NEWLINE)"
+links:
+    - displayName: "FindBugs"
+      url: "http://findbugs.sourceforge.net/bugDescriptions.html#VA_FORMAT_STRING_USES_NEWLINE"
+    
 description:
     It is generally preferable better to use "%n", which will produce the platform-specific line separator.
 tags: ["Java 5", "String Manipulation"]

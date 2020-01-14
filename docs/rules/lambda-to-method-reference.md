@@ -4,7 +4,10 @@ ruleId: LambdaToMethodReference
 since: 2.0.0
 minJavaVersion: 8
 remediationCost: 2
-links: "[S1612](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1612&q=squid%3AS1612)"
+links:
+    - displayName: "S1612"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1612&q=squid%3AS1612"
+    
 description:
     This rule simplifies expression lambdas by using method reference.
     The rule can only be applied if the parameters of the lambda expression and the method match.

@@ -4,7 +4,7 @@ ruleId: UseListSort
 since: 3.6.0
 minJavaVersion: 8
 remediationCost: 2
-links: ""
+links:
 description:
     Replace static invocations of 'Collections.sort(List, Comparator)' with 'List.sort(Comparator)'.
 

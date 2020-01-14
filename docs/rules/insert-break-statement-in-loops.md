@@ -4,7 +4,7 @@ ruleId: InsertBreakStatementInLoops
 since: 3.9.0
 minJavaVersion: 1.5
 remediationCost: 2
-links: ""
+links:
 description:
     Finds the Enhanced For-loops whose sole purpose is to compute a boolean value without causing side effects and inserts a break statement immediately after the boolean value is computed. Thus, eliminating redundant loop iterations.
 

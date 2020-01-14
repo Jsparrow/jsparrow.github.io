@@ -4,7 +4,7 @@ ruleId: ArithmethicAssignment
 since: 1.0.0
 minJavaVersion: 1.4
 remediationCost: 2
-links: ""
+links:
 description:
     Simplifies arithmetic operations that an compound operator where possible.
 tags: ["Java 1.4", "Readability", "Coding Conventions"]

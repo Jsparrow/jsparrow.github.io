@@ -4,7 +4,7 @@ ruleId: EnhancedForLoopToStreamTakeWhile
 since: 3.7.0
 minJavaVersion: 9
 remediationCost: 2
-links: ""
+links:
 description:
     The Stream API in Java 9 is extended with the 'takeWhile' method to get the prefix of a stream. 
     This rule replaces the enhanced for-loops with a stream iterating over the prefix of a collection with 'Stream::takeWhile'. 

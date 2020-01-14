@@ -4,7 +4,7 @@ ruleId: EnhancedForLoopToStreamForEach
 since: 2.0.0
 minJavaVersion: 8
 remediationCost: 15
-links: ""
+links:
 description:
     This rule replaces enhanced for loops (for-each-loops) with an invocation of 'java.util.stream.Stream::forEach' method and passes the body of the for-loop as a lambda Consumer parameter.
 tags: ["Java 8", "Lambda", "Loop"]

@@ -4,7 +4,10 @@ ruleId: RearrangeClassMembers
 since: 1.1.0
 minJavaVersion: 1.1
 remediationCost: 5
-links: "[S1213](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1213&q=squid%3AS1213)"
+links:
+    - displayName: "S1213"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1213&q=squid%3AS1213"
+    
 description:
     This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization.
 tags: ["Java 1.1", "Coding Conventions", "Readability"]

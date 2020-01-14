@@ -4,7 +4,7 @@ ruleId: LambdaForEachMap
 since: 2.0.0
 minJavaVersion: 8
 remediationCost: 15
-links: ""
+links:
 description:
     Extracts a block from the body of the consumer of the 'Stream::forEach' method and introduces 'Stream::map' instead.
     This makes complicated code blocks easier to read and reuse.

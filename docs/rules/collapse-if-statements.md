@@ -4,7 +4,10 @@ ruleId: CollapseIfStatements
 since: 3.2.0
 minJavaVersion: 1.1
 remediationCost: 5
-links: "[S1066](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1066&q=squid%3AS1066)"
+links:
+    - displayName: "S1066"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1066&q=squid%3AS1066"
+    
 description:
     Collapses, when possible, the nested if-statements into a single one by concatenating the conditions with the infix operator &&.
     

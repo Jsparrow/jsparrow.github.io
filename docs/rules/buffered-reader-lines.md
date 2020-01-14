@@ -4,7 +4,7 @@ ruleId: BufferedReaderLines
 since: 3.3.0
 minJavaVersion: 8
 remediationCost: 5
-links: ""
+links:
 description:
     Replaces While-Loops and For-Loops that are using 'BufferedReader::readLine' to iterate through lines of a file by a stream generated with 'BufferedReader::lines'.
 

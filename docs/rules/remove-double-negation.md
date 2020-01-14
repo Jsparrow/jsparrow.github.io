@@ -4,7 +4,10 @@ ruleId: RemoveDoubleNegation
 since: 2.7.0
 minJavaVersion: 1.1
 remediationCost: 2
-links: "[S2761](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2761&rule_key=squid%3AS2761)"
+links:
+    - displayName: "S2761"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2761&rule_key=squid%3AS2761"
+    
 description:
     Removes multiple negations from boolean expressions.
 tags: ["Free", "Java 1.1", "Coding Conventions"]
