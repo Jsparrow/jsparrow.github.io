@@ -18,6 +18,8 @@ tags: ["Java 9", "Loop", "Lambda"]
 
 ## Properties
 
+<RuleProperties />
+
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | [3.7.0](/eclipse/release-notes.html#_3-7-0) |

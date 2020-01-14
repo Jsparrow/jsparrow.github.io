@@ -20,6 +20,8 @@ tags: ["Free", "Java 8", "Lambda"]
 
 ## Properties
 
+<RuleProperties />
+
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | [2.0.0](/eclipse/release-notes.html#_2-0-0) |

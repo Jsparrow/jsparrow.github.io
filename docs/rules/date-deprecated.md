@@ -16,6 +16,8 @@ tags: ["Java 1.1", "Formatting", "Readability"]
 
 ## Properties
 
+<RuleProperties />
+
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | [2.5.0](/eclipse/release-notes.html#_2-5-0) |

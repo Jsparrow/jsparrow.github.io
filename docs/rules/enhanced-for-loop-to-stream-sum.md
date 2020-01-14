@@ -16,6 +16,8 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 ## Properties
 
+<RuleProperties />
+
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |

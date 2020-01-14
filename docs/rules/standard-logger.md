@@ -19,6 +19,8 @@ tags: ["Java 1.1", "Logging", "Old Language Constructs", "Coding Conventions"]
 
 ## Properties
 
+<RuleProperties />
+
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | [2.0.0](/eclipse/release-notes.html#_2-0-0)   |

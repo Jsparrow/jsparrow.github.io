@@ -17,6 +17,8 @@ defaultConfiguration: true
 
 ## Properties
 
+<RuleProperties />
+
 
 
 | Property                        | Value |

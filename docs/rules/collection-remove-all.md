@@ -19,6 +19,8 @@ tags: ["Java 1.2", "Coding Conventions"]
 
 ## Properties
 
+<RuleProperties />
+
 
 | Property                        | Value |
 |:------------------------------- |:----- |

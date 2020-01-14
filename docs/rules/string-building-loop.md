@@ -19,6 +19,8 @@ tags: ["Java 5", "Java 8", "Loop", "Lambda", "Performance"]
 
 ## Properties
 
+<RuleProperties />
+
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |

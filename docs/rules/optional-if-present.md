@@ -16,6 +16,8 @@ tags: ["Java 8", "Old Language Constructs", "Lambda"]
 
 ## Properties
 
+<RuleProperties />
+
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | [2.6.0](/eclipse/release-notes.html#_2-6-0) |

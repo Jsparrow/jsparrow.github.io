@@ -19,6 +19,8 @@ tags: ["Free", "Java 6", "Old Language Constructs", "Coding Conventions", "Reada
 
 ## Properties
 
+<RuleProperties />
+
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | [2.0.2](/eclipse/release-notes.html#_2-0-2) |

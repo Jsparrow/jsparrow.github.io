@@ -20,6 +20,8 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 ## Properties
 
+<RuleProperties />
+
 | Property                        | Value |
 |:------------------------------- |:----- |
 | First seen in jSparrow version  | [3.11.0](/eclipse/release-notes.html#_3-11-0) |
