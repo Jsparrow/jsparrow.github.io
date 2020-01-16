@@ -194,7 +194,6 @@ export default {
 
     findRuleName: function(id) {
       var rule = this.findRule(id);
-      console.log("id: " + id + ",rule: " + rule);
       return rule.frontmatter.title;
     },
 
