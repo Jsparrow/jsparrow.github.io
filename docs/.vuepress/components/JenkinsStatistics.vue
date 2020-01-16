@@ -203,9 +203,14 @@ export default {
     },
 
     findRule: function(id) {
+      if (id in this.ruleCache) {
+        return this.ruleCache[id];
+      }
+
       for(var i = 0; i < this.rules.length; i++) {
         var element = this.rules[i];
         if(element.frontmatter.ruleId == id) {
+          this.ruleCache[id] = element;
           return element;
         }
       }
@@ -261,7 +266,7 @@ export default {
         { text: 'Files Changed', value: 'fileCount', align: 'center' },
         { text: 'Time saved', value: 'remediationCost', align: 'center' }
       ],
-
+      ruleCache: {}
     };
   }
 };
