@@ -1,5 +1,10 @@
 ---
 title: Use Collections Singleton List
+ruleId: UseCollectionsSingletonList
+since: 3.8.0
+minJavaVersion: 1.3
+remediationCost: 2
+links:
 description:
     Replaces Arrays.asList with 0 or 1 parameters respectively with Collections.emptyList() or Collections.singletonList(..)
 
@@ -12,11 +17,8 @@ tags: ["Java 1.3", "Old Language Constructs", "Performance"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.8.0](/eclipse/release-notes.html#_3-8-0) |
-| Minimum Java version            | 1.3   |
-| Remediation cost                | 2 min |
+<RuleProperties />
+
 
 ## Description
 

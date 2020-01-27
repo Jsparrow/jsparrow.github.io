@@ -1,5 +1,10 @@
 ---
 title: Replace put(..) with putIfAbsent(..)
+ruleId: PutIfAbsent
+since: 2.3.0
+minJavaVersion: 8
+remediationCost: 2
+links:
 description:
     If 'map.put(..)' is wrapped with a condition verifying the existence of an element one can use 'map.putIfAbsent(...)' instead.
 tags: ["Java 8", "Old Language Constructs"]
@@ -11,11 +16,8 @@ tags: ["Java 8", "Old Language Constructs"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.3.0](/eclipse/release-notes.html#_2-3-0) |
-| Minimum Java version            | 8 |
-| Remediation cost                | 2 min |
+<RuleProperties />
+
 
 ## Description
 

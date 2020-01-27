@@ -1,5 +1,13 @@
 ---
 title: Replace Inefficient Constructors with valueOf()
+ruleId: InefficientConstructor
+since: 1.0.0
+minJavaVersion: 5
+remediationCost: 5
+links:
+    - displayName: "S2129"
+      url: "https://sonarcloud.io/organizations/default/rules#rule_key=squid%3AS2129"
+    
 description:
    All calls to a constructor of a primitive type will be replaced by the corresponding static 'valueOf()' method. For example 'new Integer("1")' becomes 'Integer.valueOf("1")'.
 tags: ["Free", "Java 5", "Coding Conventions", "Performance"]
@@ -11,12 +19,8 @@ tags: ["Free", "Java 5", "Coding Conventions", "Performance"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0) |
-| Minimum Java version            | 5     |
-| Remediation cost                | 5 min |
-| Links                           | [S2129](https://sonarcloud.io/organizations/default/rules#rule_key=squid%3AS2129) |
+<RuleProperties />
+
 
 ## Description
 

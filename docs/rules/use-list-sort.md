@@ -1,5 +1,10 @@
 ---
 title: Replace Collection.sort with List.sort
+ruleId: UseListSort
+since: 3.6.0
+minJavaVersion: 8
+remediationCost: 2
+links:
 description:
     Replace static invocations of 'Collections.sort(List, Comparator)' with 'List.sort(Comparator)'.
 
@@ -12,11 +17,8 @@ tags: ["Java 1.8", "Old Language Constructs", "Coding Conventions", "Readability
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.6.0](/eclipse/release-notes.html#_3-6-0) |
-| Minimum Java version            | 8     |
-| Remediation cost                | 2 min |
+<RuleProperties />
+
 
 ## Description
 

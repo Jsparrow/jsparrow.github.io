@@ -1,5 +1,13 @@
 ---
 title: Make SerialVersionUID Static Final
+ruleId: SerialVersionUID
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 5
+links:
+    - displayName: "S2057"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2057&rule_key=squid%3AS2057"
+    
 description:
     Adds the modifiers static and final to SerialVersionUid long variables when they are absent.
 tags: ["Java 1.1", "Coding Conventions"]
@@ -11,12 +19,8 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0) |
-| Minimum Java version            | 1.1     |
-| Remediation cost                | 5 min |
-| Links                           | [S2057](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2057&rule_key=squid%3AS2057) |
+<RuleProperties />
+
 
 ## Description
 

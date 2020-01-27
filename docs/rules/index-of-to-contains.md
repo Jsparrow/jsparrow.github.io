@@ -1,5 +1,10 @@
 ---
 title: Replace indexOf() with contains()
+ruleId: IndexOfToContains
+since: 2.2.0
+minJavaVersion: 5
+remediationCost: 2
+links:
 description:
     This rule replaces calls to 'indexOf()' on instances of Strings or Collections with calls to the 'contains()' method.
     'contains()' was introduced in Java 1.4 and helps to make the code more readable.
@@ -12,11 +17,8 @@ tags: ["Java 5", "Old Language Constructs", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
-| Minimum Java version            | 5     |
-| Remediation cost                | 2 min |
+<RuleProperties />
+
 
 ## Description
 

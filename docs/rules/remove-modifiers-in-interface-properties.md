@@ -1,5 +1,13 @@
 ---
 title: Remove Modifiers in Interface Properties
+ruleId: RemoveModifiersInInterfaceProperties
+since: 3.3.0
+minJavaVersion: 1.1
+remediationCost: 1
+links:
+    - displayName: "S2333"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS2333&q=S2333"
+    
 description:
     Removes the 'public' modifiers from method declarations and 'public static final' modifiers from field declarations in Java interfaces.
 
@@ -12,12 +20,8 @@ tags: ["Java 1.1", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.3.0](/eclipse/release-notes.html#_3-3-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 1 min |
-| Links                           | [S2333](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS2333&q=S2333) |
+<RuleProperties />
+
 
 ## Description
 

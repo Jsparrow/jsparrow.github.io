@@ -1,5 +1,13 @@
 ---
 title: Replace Equality Check with isEmpty()
+ruleId: UseIsEmptyOnCollections
+since: 2.0.2
+minJavaVersion: 6
+remediationCost: 2
+links:
+    - displayName: "S1155"
+      url: "https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS1155"
+    
 description:
     This rule replaces comparisons of 'length()' or 'size()' with 0 with a call to 'isEmpty()'. Any occurrences of such a comparison will be replaced, regardless of surrounding control structure.
 tags: ["Free", "Java 6", "Old Language Constructs", "Coding Conventions", "Readability"]
@@ -11,12 +19,8 @@ tags: ["Free", "Java 6", "Old Language Constructs", "Coding Conventions", "Reada
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.0.2](/eclipse/release-notes.html#_2-0-2) |
-| Minimum Java version            | 6 |
-| Remediation cost                | 2 min |
-| Links                           | [S1155](https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS1155) |
+<RuleProperties />
+
 
 ## Description
 

@@ -1,5 +1,10 @@
 ---
 title: Use Optional::ifPresentOrElse
+ruleId: OptionalIfPresentOrElse
+since: 3.10.0
+minJavaVersion: 9
+remediationCost: 2
+links:
 description:
     It is common to have an else-statement following an Optional.isPresent check. One of the extensions of the Optional API in Java 9 is Optional.ifPresentOrElse, which performs either a Consumer or a Runnable depending on the presence of the value. This rule replaces an 'isPresent' check followed by an else-statement with a single 'ifPresentOrElse' invocation.
 tags: ["Java 9", "Old Language Constructs", "Lambda"]
@@ -11,11 +16,8 @@ tags: ["Java 9", "Old Language Constructs", "Lambda"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.10.0](/eclipse/release-notes.html#_3-10-0) |
-| Minimum Java version            | 9 |
-| Remediation cost                | 2 min |
+<RuleProperties />
+
 
 ## Description
 

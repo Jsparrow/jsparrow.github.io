@@ -1,5 +1,10 @@
 ---
 title: Replace Nested Loops with flatMap
+ruleId: FlatMapInsteadOfNestedLoops
+since: 2.2.0
+minJavaVersion: 8
+remediationCost: 15
+links:
 description:
     Nested For-Loops or invocations of forEach commonly used to iterate over all elements of a collection of collections, can be avoided by using flatMap().
     Using 'flatMap()' makes code much more readable and can be combined with other stream functions.
@@ -12,11 +17,8 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
-| Minimum Java version            | 8     |
-| Remediation cost                | 15 min |
+<RuleProperties />
+
 
 ## Description
 

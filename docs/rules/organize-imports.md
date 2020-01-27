@@ -1,5 +1,13 @@
 ---
 title: Organize Imports
+ruleId: OrganizeImports
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 1
+links:
+    - displayName: "RSPEC-1128"
+      url: "https://rules.sonarsource.com/java/RSPEC-1128"
+    
 description:
     Organize Imports according to the Eclipse's built in Organize Imports functionality.
 tags: ["Free", "Java 1.1", "Formatting", "Readability"]
@@ -11,12 +19,8 @@ tags: ["Free", "Java 1.1", "Formatting", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 1 min |
-| Links                           | [RSPEC-1128](https://rules.sonarsource.com/java/RSPEC-1128) |
+<RuleProperties />
+
 
 ## Description
 

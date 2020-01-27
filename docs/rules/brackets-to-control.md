@@ -1,5 +1,13 @@
 ---
 title: Add Braces to Control Statements
+ruleId: BracketsToControl
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 2
+links:
+    - displayName: "S00121"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS00121&rule_key=squid%3AS00121"
+    
 description:
     Checks if braces are used to encapsulate control statements and adds them if they aren't present.
 tags: ["Java 1.1", "Formatting", "Readability"]
@@ -11,12 +19,8 @@ tags: ["Java 1.1", "Formatting", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 2 min |
-| Links                           | [S00121](https://sonarcloud.io/organizations/default/rules?open=squid%3AS00121&rule_key=squid%3AS00121) |
+<RuleProperties />
+
 
 ## Description
 

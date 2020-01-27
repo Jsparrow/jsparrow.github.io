@@ -1,5 +1,13 @@
 ---
 title: Replace static final Collections with Collections.unmodifiable...()
+ruleId: ImmutableStaticFinalCollections
+since: 2.2.0
+minJavaVersion: 2
+remediationCost: 10
+links:
+    - displayName: "MutableCollection"
+      url: "http://findbugs.sourceforge.net/bugDescriptions.html#MS_MUTABLE_COLLECTION"
+    
 description:
     Wraps the initialization of a final collection with 'Collections.unmodifiable...()'
 tags: ["Java 1.2", "Coding Conventions"]
@@ -11,12 +19,8 @@ tags: ["Java 1.2", "Coding Conventions"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
-| Minimum Java version            | 2     |
-| Remediation cost                | 10 min |
-| Links                           | [MutableCollection](http://findbugs.sourceforge.net/bugDescriptions.html#MS_MUTABLE_COLLECTION) |
+<RuleProperties />
+
 
 ## Description
 
