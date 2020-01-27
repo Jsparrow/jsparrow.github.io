@@ -25,7 +25,7 @@ The usage of  `Optional.get` should be avoided in general because it can potenti
 
 ## Benefits
 
-Improves readability and enables the use of higher order funtions on `Optional`.
+Improves readability and enables the use of higher order functions on `Optional`.
 
 ## Requirement & Tags
 
@@ -66,7 +66,7 @@ __Pre__
 
 ```java
 String value = "prefix" + "value" + "suffix";
-public void multipleInitialiyers_shouldTransform(Optional<String> input) {
+public void multipleInitializers_shouldTransform(Optional<String> input) {
     if (input.isPresent()) {
         String value = input.get(), second = "";
         System.out.println(value);
@@ -79,7 +79,7 @@ __Post__
 
 ```java
 String value = "prefix" + "value" + "suffix";
-public void multipleInitialiyers_shouldTransform(Optional<String> input) {
+public void multipleInitializers_shouldTransform(Optional<String> input) {
     input.ifPresent(value -> {
         String second = "";
         System.out.println(value);

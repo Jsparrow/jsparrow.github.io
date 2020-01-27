@@ -66,6 +66,7 @@ module.exports = [
 'multi-catch',
 'optional-if-present',
 'optional-if-present-or-else',
+'optional-map',
 'string-format-line-separator',
 'lambda-for-each-if-wrapper-to-filter',
 'lambda-for-each-map',
