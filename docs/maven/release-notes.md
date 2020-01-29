@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.10.0 <Badge vertical="middle" text="30.01.2020"/>
+
+Release 2.10.0 of the jSparrow Maven Plugin contains a new rule:
+
+* [Use Optional::map](/rules/optional-map.html)
+
 ## 2.9.0 <Badge vertical="middle" text="19.12.2019"/>
 
 Release 2.9.0 adds a new rule to the jSparrow Maven Plugin:

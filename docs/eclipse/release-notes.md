@@ -5,6 +5,20 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.13.0 <Badge vertical="middle" text="30.01.2020"/>
+
+jSparrow 3.13.0 contains [69 refactoring rules](/rules/) now. The new rule improves your `java.util.Optional`s.
+
+### New Rule
+#### [**Use Optional::map**](/rules/optional-map.html)
+
+This rule extracts an `Optional::map` from the consumer used in `Optional::ifPresent`. This makes complicated code blocks easier to read and reuse.
+
+### Fixed Bugs
+#### [**Replace For-Loop with Enhanced-For-Loop**](/rules/for-to-for-each.html)
+
+* If the loop variable has been used in the initialization expression of an inner loop, the variable name would have been dropped from this expression, rather than replaced properly.
+
 ## 3.12.0 <Badge vertical="middle" text="19.12.2019"/>
 
 jSparrow 3.12.0 adds a new refactoring rule for improving source code readability. This brings jSparrow to a total of [68 automatic refactoring rules](/rules/).
