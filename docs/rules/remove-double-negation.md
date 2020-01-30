@@ -1,5 +1,13 @@
 ---
 title: Remove Double Negations
+ruleId: RemoveDoubleNegation
+since: 2.7.0
+minJavaVersion: 1.1
+remediationCost: 2
+links:
+    - displayName: "S2761"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2761&rule_key=squid%3AS2761"
+    
 description:
     Removes multiple negations from boolean expressions.
 tags: ["Free", "Java 1.1", "Coding Conventions"]
@@ -11,12 +19,8 @@ tags: ["Free", "Java 1.1", "Coding Conventions"]
 
 ## Properties
 
-| Property                        | Value |
-| ------------------------------- | ----- |
-| First seen in jSparrow version  | [2.7.0](/eclipse/release-notes.html#_2-7-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 2 min |
-| Links                           | [S2761](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2761&rule_key=squid%3AS2761) |
+<RuleProperties />
+
 
 ## Description
 

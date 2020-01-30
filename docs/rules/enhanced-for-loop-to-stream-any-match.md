@@ -1,5 +1,10 @@
 ---
 title: Replace For-Loop with Stream::Match
+ruleId: EnhancedForLoopToStreamAnyMatch
+since: 2.2.0
+minJavaVersion: 8
+remediationCost: 2
+links:
 description:
     Replaces occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with 'Stream::anyMatch', 'Stream::allMatch' or 'Stream::noneMatch'.
     The stream syntax is more concise and improves readability.
@@ -12,12 +17,8 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
-| Updated in jSparrow version     | [3.3.0](/eclipse/release-notes.html#_3-3-0) |
-| Minimum Java version            | 8     |
-| Remediation cost                | 2 min |
+<RuleProperties />
+
 
 ## Description
 

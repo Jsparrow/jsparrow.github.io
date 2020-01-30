@@ -1,5 +1,10 @@
 ---
 title: Reformat Code
+ruleId: CodeFormatter
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 1
+links:
 description:
     Reformats code according to the coding conventions defined in Eclipse.
 tags: ["Java 1.1", "Formatting", "Readability"]
@@ -12,13 +17,10 @@ defaultConfiguration: true
 
 ## Properties
 
+<RuleProperties />
 
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 1 min |
+
 
 ## Description
 

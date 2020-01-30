@@ -1,5 +1,13 @@
 ---
 title: Remove Unnecessary Semicolons
+ruleId: RemoveEmptyStatement
+since: 2.7.0
+minJavaVersion: 1.1
+remediationCost: 1
+links:
+    - displayName: "EmptyStatementUsageCheck"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AEmptyStatementUsageCheck&rule_key=squid%3AEmptyStatementUsageCheck"
+    
 description:
     Removes the unnecessary semicolons from the code blocks.
 tags: ["Free", "Java 1.1", "Coding Conventions"]
@@ -11,12 +19,8 @@ tags: ["Free", "Java 1.1", "Coding Conventions"]
 
 ## Properties
 
-| Property                        | Value |
-| ------------------------------- | ----- |
-| First seen in jSparrow version  | [2.7.0](/eclipse/release-notes.html#_2-7-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 1 min |
-| Links                           | [EmptyStatementUsageCheck](https://sonarcloud.io/organizations/default/rules?open=squid%3AEmptyStatementUsageCheck&rule_key=squid%3AEmptyStatementUsageCheck) |
+<RuleProperties />
+
 
 ## Description
 

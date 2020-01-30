@@ -1,5 +1,13 @@
 ---
 title: Remove Boxing for String Conversions
+ruleId: PrimitiveBoxedForString
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 5
+links:
+    - displayName: "S2131"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS2131&q=squid%3AS2131"
+    
 description:
     When calling 'toString()' on a boxed primitive no new instance of that primitive has to be created.
     This rule replaces occurrences of such code with a static method
@@ -12,12 +20,8 @@ tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 5 min |
-| Links                           | [S2131](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS2131&q=squid%3AS2131) |
+<RuleProperties />
+
 
 ## Description
 

@@ -1,5 +1,13 @@
 ---
 title: Remove Explicit Type Argument
+ruleId: DiamondOperator
+since: 1.0.0
+minJavaVersion: 7
+remediationCost: 1
+links:
+    - displayName: "S2293"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2293&q=The+diamond+operator+%28%22%3C%3E%22%29+should+be+used+"
+    
 description:
     Since Java 1.7 the Diamond Operator (<>) can be used to simplify instance creation where generics are involved.
 tags: ["Java 7", "Readability"]
@@ -12,12 +20,8 @@ defaultConfiguration: true
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0) |
-| Minimum Java version            | 7     |
-| Remediation cost                | 1 min |
-| Links                           | [S2293](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2293&q=The+diamond+operator+%28%22%3C%3E%22%29+should+be+used+) |
+<RuleProperties />
+
 
 ## Description
 

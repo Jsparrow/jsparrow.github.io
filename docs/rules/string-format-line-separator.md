@@ -1,5 +1,13 @@
 ---
 title: Use Portable Newline
+ruleId: StringFormatLineSeparator
+since: 1.0.0
+minJavaVersion: 5
+remediationCost: 1
+links:
+    - displayName: "FindBugs"
+      url: "http://findbugs.sourceforge.net/bugDescriptions.html#VA_FORMAT_STRING_USES_NEWLINE"
+    
 description:
     It is generally preferable better to use "%n", which will produce the platform-specific line separator.
 tags: ["Java 5", "String Manipulation"]
@@ -11,12 +19,8 @@ tags: ["Java 5", "String Manipulation"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 5   |
-| Remediation cost                | 1 min |
-| Links                           | [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html#VA_FORMAT_STRING_USES_NEWLINE) |
+<RuleProperties />
+
 
 ## Description
 

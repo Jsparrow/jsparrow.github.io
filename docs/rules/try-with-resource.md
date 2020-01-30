@@ -1,5 +1,13 @@
 ---
 title: Use Try-With-Resource
+ruleId: TryWithResource
+since: 1.0.0
+minJavaVersion: 7
+remediationCost: 15
+links:
+    - displayName: "S2093"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2093&q=Resources+should+be+closed"
+    
 description:
     This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as the construct takes care of that.
 tags: ["Free", "Java 7", "Old Language Constructs", "Readability"]
@@ -12,12 +20,8 @@ defaultConfiguration: true
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0) |
-| Minimum Java version            | 7     |
-| Remediation cost                | 15 min |
-| Links                           | [S2093](https://sonarcloud.io/organizations/default/rules?open=squid%3AS2093&q=Resources+should+be+closed) |
+<RuleProperties />
+
 
 ## Description
 

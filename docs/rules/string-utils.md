@@ -1,5 +1,10 @@
 ---
 title: Use StringUtils Methods
+ruleId: StringUtils
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 10
+links:
 description:
     Replaces various 'String' methods with their null-safe counterparts from 'StringUtils'.
 tags: ["Java 1.1", "String Manipulation"]
@@ -11,11 +16,8 @@ tags: ["Java 1.1", "String Manipulation"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 10 min |
+<RuleProperties />
+
 
 ## Description
 

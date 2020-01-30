@@ -1,5 +1,13 @@
 ---
 title: StringBuffer() to StringBuilder()
+ruleId: StringBufferToBuilder
+since: 2.2.0
+minJavaVersion: 5
+remediationCost: 2
+links:
+    - displayName: "S1149"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1149&q=squid%3AS1149"
+    
 description:
     This rule changes the type of local variables from 'StringBuffer()' to 'StringBuilder()'.
 tags: ["Java 5", "String Manipulation", "Performance"]
@@ -11,12 +19,8 @@ tags: ["Java 5", "String Manipulation", "Performance"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.2.0](/eclipse/release-notes.html#_2-2-0) |
-| Minimum Java version            | 5     |
-| Remediation cost                | 2 min |
-| Links                           | [S1149](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1149&q=squid%3AS1149) |
+<RuleProperties />
+
 
 ## Description
 

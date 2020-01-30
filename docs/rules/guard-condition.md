@@ -1,5 +1,13 @@
 ---
 title: Use Guard Condition
+ruleId: GuardCondition
+since: 2.7.0
+minJavaVersion: 1.1
+remediationCost: 5
+links:
+    - displayName: "S3776"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS3776&rule_key=squid%3AS3776"
+    
 description:
     Replaces the last statement of a method with a guard condition.
 tags: ["Java 1.1", "Coding Conventions"]
@@ -11,12 +19,8 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 ## Properties
 
-| Property                        | Value |
-| ------------------------------- | ----- |
-| First seen in jSparrow version  | [2.7.0](/eclipse/release-notes.html#_2-7-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 5 min |
-| Links                           | [S3776](https://sonarcloud.io/organizations/default/rules?open=squid%3AS3776&rule_key=squid%3AS3776) |
+<RuleProperties />
+
 
 ## Description
 
