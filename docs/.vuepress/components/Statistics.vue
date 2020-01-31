@@ -117,6 +117,9 @@
 
 <script>
 export default {
+  props: {
+    statistics: Array
+  },
   computed: {
     currentTabComponent() {
       return "tab-" + this.currentTab.toLowerCase();
@@ -258,8 +261,6 @@ export default {
 
   data() {
     return {
-      statistics:
-        require('../statistics.js'),
       headers: [
         { text: 'Rule Name', value: 'ruleId', align: 'center' },
         { text: 'Issues Fixed', value: 'issuesFixedCount', align: 'center' },
