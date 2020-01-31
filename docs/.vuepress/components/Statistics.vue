@@ -28,10 +28,6 @@
           <td>{{project.totalIssuesFixed}}</td>
         </tr>
         <tr>
-          <td>jSparrow execution time</td>
-          <td>{{ secondsToHms(project.timestampJSparrowFinish - project.timestampGitHubStart) }}</td>
-        </tr>
-        <tr>
           <td>Total time saved</td>
           <td>{{secondsToHms(project.totalTimeSaved*60)}}</td>
         </tr>
