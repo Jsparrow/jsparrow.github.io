@@ -28,10 +28,6 @@
           <td>{{project.totalIssuesFixed}}</td>
         </tr>
         <tr>
-          <td>jSparrow execution time</td>
-          <td>{{ secondsToHms(project.timestampJSparrowFinish - project.timestampGitHubStart) }}</td>
-        </tr>
-        <tr>
           <td>Total time saved</td>
           <td>{{secondsToHms(project.totalTimeSaved*60)}}</td>
         </tr>
@@ -117,6 +113,9 @@
 
 <script>
 export default {
+  props: {
+    statistics: Array
+  },
   computed: {
     currentTabComponent() {
       return "tab-" + this.currentTab.toLowerCase();
@@ -258,8 +257,6 @@ export default {
 
   data() {
     return {
-      statistics:
-        require('../statistics.js'),
       headers: [
         { text: 'Rule Name', value: 'ruleId', align: 'center' },
         { text: 'Issues Fixed', value: 'issuesFixedCount', align: 'center' },
