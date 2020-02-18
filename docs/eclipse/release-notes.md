@@ -12,7 +12,7 @@ The [70<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.14.0.
 ### New Rule
 #### [**Use Optional::filter**](/rules/optional-filter.html)
 
-This rule extracts an `Optional::filter` from the consumer used in `Optional::ifPresent`. This makes the lambda expression easier to read and it can be combined with other `Optional` operations.
+This rule extracts an `Optional::filter` from the consumer used in `Optional::ifPresent`. This simplifies the lambda expression used with Optional operations.
 
 ## 3.13.0 <Badge vertical="middle" text="30.01.2020"/>
 
