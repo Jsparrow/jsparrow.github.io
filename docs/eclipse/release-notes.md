@@ -5,6 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.14.0 <Badge vertical="middle" text="20.02.2020"/>
+
+The [70<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.14.0. It improves your `java.util.Optional`.
+
+### New Rule
+#### [**Use Optional::filter**](/rules/optional-filter.html)
+
+This rule extracts an `Optional::filter` from the consumer used in `Optional::ifPresent`. This makes the lambda expression easier to read and it can be combined with other `Optional` operations.
+
 ## 3.13.0 <Badge vertical="middle" text="30.01.2020"/>
 
 jSparrow 3.13.0 contains [69 refactoring rules](/rules/) now. The new rule improves your `java.util.Optional`s.
