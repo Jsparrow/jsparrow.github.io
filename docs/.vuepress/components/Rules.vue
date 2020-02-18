@@ -18,7 +18,7 @@ export default {
         rules() {
             return this.$site.pages
                 .filter(x => x.path.startsWith('/rules/') && !x.frontmatter.rules_index)
-                .sort((a, b) => b.frontmatter.title < a.frontmatter.title);
+                .sort((a, b) => ('' + a.frontmatter.title).localeCompare(b.frontmatter.title));
         } 
     }
 }

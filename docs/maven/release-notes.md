@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.10.0 <Badge vertical="middle" text="30.01.2020"/>
+
+Release 2.10.0 of the jSparrow Maven Plugin contains a new rule:
+
+* [Use Optional::map](/rules/optional-map.html)
+
 ## 2.9.0 <Badge vertical="middle" text="19.12.2019"/>
 
 Release 2.9.0 adds a new rule to the jSparrow Maven Plugin:
@@ -39,14 +45,14 @@ Release 2.5.0 of the jSparrow Maven Plugin contains two new rules:
 ## 2.4.0 <Badge vertical="middle" text="18.07.2019"/>
 
 The jSparrow Maven Plugin 2.4.0 introduces two new rules for Java 9 and above: 
-* [Replace For-Loop with Stream::takeWhile](/rules/enhanced-for-loop-to-stream-take-while-rule.html).
+* [Replace For-Loop with Stream::takeWhile](/rules/enhanced-for-loop-to-stream-take-while.html).
 * [Use Factory Methods for Collections](/rules/collections-factory-methods.html).
 
 ## 2.3.0 <Badge vertical="middle" text="19.06.2019"/>
 
 The jSparrow Maven Plugin 2.3.0 introduces two new rules: 
 * [Reorder Modifiers](/rules/reorder-modifiers.html).
-* [Use List Sort](/rules/use-list-sort.html).
+* [Replace Collection.sort with List.sort](/rules/use-list-sort.html).
 
 ## 2.2.0 <Badge vertical="middle" text="16.05.2019"/>
 

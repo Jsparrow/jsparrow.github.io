@@ -1,5 +1,10 @@
 ---
 title: Remove Explicit Call To super()
+ruleId: RemoveExplicitCallToSuper
+since: 2.7.0
+minJavaVersion: 1.1
+remediationCost: 1
+links:
 description:
     Removes unnecessary explicit call to the default constructor of the super class.
 tags: ["Java 1.1", "Readability"]
@@ -11,11 +16,8 @@ tags: ["Java 1.1", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-| ------------------------------- | ----- |
-| First seen in jSparrow version  | [2.7.0](/eclipse/release-notes.html#_2-7-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 1 min |
+<RuleProperties />
+
 
 ## Description
 

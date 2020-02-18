@@ -1,5 +1,10 @@
 ---
 title: Split Multiple Variable Declarations
+ruleId: MultiVariableDeclarationLine
+since: 2.0.0
+minJavaVersion: 1.1
+remediationCost: 2
+links:
 description:
     Multiple field or variable declarations on the same line could cause confusion about their types and initial values. That also makes it harder to read and to understand the code.
     In order to improve readability, each field or variable should be declared on a separate line.
@@ -13,12 +18,8 @@ tags: ["Free", "Java 1.1", "Readability", "Coding Conventions"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.0.0](/eclipse/release-notes.html#_2-0-0) |
-| Minimum Java version            | 1.1     |
-| Remediation cost                | 2 min |
-| Links                           | [S1659](https://sonarcloud.io/organizations/default/rules#rule_key=squid%3AS1659)|
+<RuleProperties />
+
 
 ## Description
 

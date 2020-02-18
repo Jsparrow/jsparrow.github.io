@@ -1,5 +1,10 @@
 ---
 title: Use BufferedReader::lines
+ruleId: BufferedReaderLines
+since: 3.3.0
+minJavaVersion: 8
+remediationCost: 5
+links:
 description:
     Replaces While-Loops and For-Loops that are using 'BufferedReader::readLine' to iterate through lines of a file by a stream generated with 'BufferedReader::lines'.
 
@@ -12,11 +17,8 @@ tags: ["Java 8", "Lambda", "Loop", "Old Language Constructs"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.3.0](/eclipse/release-notes.html#_3-3-0) |
-| Minimum Java version            | 8     |
-| Remediation cost                | 5 min |
+<RuleProperties />
+
 
 ## Description
 Java 8 introduced [`BufferedReader::lines`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html#lines--) to generate a stream of elements representing lines in the `BufferedReader`.

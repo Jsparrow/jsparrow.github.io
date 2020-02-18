@@ -28,10 +28,6 @@
           <td>{{project.totalIssuesFixed}}</td>
         </tr>
         <tr>
-          <td>jSparrow execution time</td>
-          <td>{{ secondsToHms(project.timestampJSparrowFinish - project.timestampGitHubStart) }}</td>
-        </tr>
-        <tr>
           <td>Total time saved</td>
           <td>{{secondsToHms(project.totalTimeSaved*60)}}</td>
         </tr>
@@ -113,17 +109,22 @@
   border: 1px solid #ccc;
   border-top: none;
 }
-
-
 </style>
-
 
 <script>
 export default {
+  props: {
+    statistics: Array
+  },
   computed: {
     currentTabComponent() {
       return "tab-" + this.currentTab.toLowerCase();
-    }
+    },
+
+    rules() {
+      return this.$site.pages
+          .filter(x => x.path.startsWith('/rules/') && !x.frontmatter.rules_index);
+    } 
   },
 
   methods: {
@@ -149,6 +150,7 @@ export default {
 
       this.updateAddressBar(project);
     },
+
     updateAddressBar: function(project) {
       // Clear all query strings on the address bar
       var uri = window.location.toString();
@@ -159,6 +161,7 @@ export default {
       var clean_uri = uri.substring(0, index) + "?p=" + project;
       window.history.replaceState({}, document.title, clean_uri);
     },
+
     openFirstProject: function() {
       var urlParams = new URLSearchParams(window.location.search);
       var id = urlParams.get('p');
@@ -169,6 +172,7 @@ export default {
       document.getElementById(id).click();
       this.updateAddressBar(id);
     },
+
     secondsToHms: function(d) {
       d = Number(d);
       var h = Math.floor(d / 3600);
@@ -181,18 +185,36 @@ export default {
       var sDisplay = s > 0 ? ", " + s + (s == 1 ? " second" : " seconds") : "";
       return hDisplay + mDisplay + sDisplay;
     },
+
     timestampToDate: function(timestamp) {
       var d = new Date(timestamp*1000);
       return d.getDate() + "." + (d.getMonth() + 1) + "." + (d.getYear() + 1900);
     },
+
     findRuleName: function(id) {
-      var rule = this.ruleNameMap[id];
-      return rule.name;
+      var rule = this.findRule(id);
+      return rule.frontmatter.title;
     },
+
     findRuleLink: function(id) {
-      var rule = this.ruleNameMap[id];
-      return  "../" + rule.url;
+      var rule = this.findRule(id);
+      return rule.path;
     },
+
+    findRule: function(id) {
+      if (id in this.ruleCache) {
+        return this.ruleCache[id];
+      }
+
+      for(var i = 0; i < this.rules.length; i++) {
+        var element = this.rules[i];
+        if(element.frontmatter.ruleId == id) {
+          this.ruleCache[id] = element;
+          return element;
+        }
+      }
+    },
+
     customSort: function(items, index, isDescending) {
       items.sort((a, b) => {
         if (index === 'ruleId') {
@@ -233,21 +255,15 @@ export default {
     this.openFirstProject();
   },
 
-
-
   data() {
     return {
-      statistics:
-        require('../statistics.js'),
-      ruleNameMap:
-        require('../rule-name-map.js'),
       headers: [
         { text: 'Rule Name', value: 'ruleId', align: 'center' },
         { text: 'Issues Fixed', value: 'issuesFixedCount', align: 'center' },
         { text: 'Files Changed', value: 'fileCount', align: 'center' },
         { text: 'Time saved', value: 'remediationCost', align: 'center' }
       ],
-
+      ruleCache: {}
     };
   }
 };

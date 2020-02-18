@@ -1,5 +1,13 @@
 ---
 title: Remove Unused Parameters in Private Methods
+ruleId: RemoveUnusedParameter
+since: 3.4.0
+minJavaVersion: 1.1
+remediationCost: 5
+links:
+    - displayName: "squid:S1172"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1172&q=squid%3AS1172"
+    
 description:
     Finds and removes unused parameters in private method declarations. Updates the affected method invocations accordingly.
 
@@ -12,12 +20,8 @@ tags: ["Java 1.1", "Readability", "Coding Conventions"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.4.0](/eclipse/release-notes.html#_3-4-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 5 min |
-| Links                           | [squid:S1172](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1172&q=squid%3AS1172) |
+<RuleProperties />
+
 
 ## Description
 This rule finds and removes unused parameters in private method declarations.

@@ -1,5 +1,13 @@
 ---
 title: Remove toString() on String
+ruleId: RemoveToStringOnString
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 5
+links:
+    - displayName: "S1858"
+      url: "https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS1858"
+    
 description:
     Removes all invocations of 'toString()' method used on a 'String' element.
 tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
@@ -11,12 +19,8 @@ tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 5 min |
-| Links                           | [S1858](https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS1858) |
+<RuleProperties />
+
 
 ## Description
 

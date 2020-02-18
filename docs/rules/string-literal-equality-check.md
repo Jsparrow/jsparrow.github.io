@@ -1,5 +1,13 @@
 ---
 title: Reorder String Equality Check
+ruleId: StringLiteralEqualityCheck
+since: 2.0.0
+minJavaVersion: 1.1
+remediationCost: 10
+links:
+    - displayName: "S1132"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1132&rule_key=squid%3AS1132"
+    
 description:
     Moves the string literals in the left-hand-side of 'equals()' or 'equalsIgnoreCase()' when checking for equality.
 tags: ["Free", "Java 1.1", "String Manipulation"]
@@ -11,12 +19,8 @@ tags: ["Free", "Java 1.1", "String Manipulation"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.0.0](/eclipse/release-notes.html#_2-0-0) |
-| Minimum Java version            | 1.1     |
-| Remediation cost                | 10 min |
-| Links                           | [S1132](https://sonarcloud.io/organizations/default/rules?open=squid%3AS1132&rule_key=squid%3AS1132) |
+<RuleProperties />
+
 
 ## Description
 

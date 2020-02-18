@@ -1,5 +1,10 @@
 ---
 title: Remove Deprecated Date Constructs
+ruleId: DateDeprecated
+since: 2.5.0
+minJavaVersion: 1.1
+remediationCost: 1
+links:
 description:
    Some 'java.util.Date' constructors like 'new Date(int year, int month, int day)', 'new Date(int year, int month, int date, int hrs, int min)' and 'new Date(int year, int month, int date, int hrs, int min, int sec)' are deprecated. A 'Calendar' instance should be used instead. This rule searches for deprecated date constructors, introduces calendar instances, sets the time corresponding to the parameters in the deprecated constructor, and replaces the latter with an invocation of 'Calendar.getTime()'.
 tags: ["Java 1.1", "Formatting", "Readability"]
@@ -11,11 +16,8 @@ tags: ["Java 1.1", "Formatting", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.5.0](/eclipse/release-notes.html#_2-5-0) |
-| Minimum Java version            | 1.1 |
-| Remediation cost                | 1 min |
+<RuleProperties />
+
 
 ## Description
 

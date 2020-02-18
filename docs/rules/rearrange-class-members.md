@@ -1,5 +1,13 @@
 ---
 title: Rearrange Class Members
+ruleId: RearrangeClassMembers
+since: 1.1.0
+minJavaVersion: 1.1
+remediationCost: 5
+links:
+    - displayName: "S1213"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1213&q=squid%3AS1213"
+    
 description:
     This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization.
 tags: ["Java 1.1", "Coding Conventions", "Readability"]
@@ -11,12 +19,8 @@ tags: ["Java 1.1", "Coding Conventions", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.1.0](/eclipse/release-notes.html#_1-1-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 5 min |
-| Links                           | [S1213](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1213&q=squid%3AS1213) |
+<RuleProperties />
+
 
 ## Description
 

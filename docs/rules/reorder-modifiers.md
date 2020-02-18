@@ -1,5 +1,13 @@
 ---
 title: Reorder Modifiers
+ruleId: ReorderModifiers
+since: 3.6.0
+minJavaVersion: 1.1
+remediationCost: 2
+links:
+    - displayName: "squid:ModifiersOrderCheck"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AModifiersOrderCheck&q=ModifiersOrderCheck"
+    
 description:
     This rule reorders the modifiers on Type, Field and Method declarations.
 
@@ -12,12 +20,8 @@ tags: ["Java 1.1", "Coding Conventions", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.6.0](/eclipse/release-notes.html#_3-6-0) |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 2 min |
-| Links                           | [squid:ModifiersOrderCheck](https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AModifiersOrderCheck&q=ModifiersOrderCheck) |
+<RuleProperties />
+
 
 ## Description
 

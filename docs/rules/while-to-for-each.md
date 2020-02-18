@@ -1,5 +1,10 @@
 ---
 title: Replace While-Loop with Enhanced For-Loop
+ruleId: WhileToForEach
+since: 1.0.0
+minJavaVersion: 5
+remediationCost: 5
+links:
 description:
     While-loops over Iterators which could be expressed with a for-loop, are transformed to an equivalent for-loop.
 tags: ["Java 5", "Loop", "Old Language Constructs"]
@@ -12,11 +17,8 @@ defaultConfiguration: true
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 5   |
-| Remediation cost                | 5 min |
+<RuleProperties />
+
 
 ## Description
 

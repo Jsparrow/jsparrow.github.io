@@ -1,5 +1,13 @@
 ---
 title: System Out To Logging
+ruleId: StandardLogger
+since: 2.0.0
+minJavaVersion: 1.1
+remediationCost: 10
+links:
+    - displayName: "S106"
+      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS106&rule_key=squid%3AS106"
+    
 description:
     Replaces the standard output statements with logger statements when possible.
 tags: ["Java 1.1", "Logging", "Old Language Constructs", "Coding Conventions"]
@@ -11,12 +19,8 @@ tags: ["Java 1.1", "Logging", "Old Language Constructs", "Coding Conventions"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [2.0.0](/eclipse/release-notes.html#_2-0-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 10 min |
-| Links                           | [S106](https://sonarcloud.io/organizations/default/rules?open=squid%3AS106&rule_key=squid%3AS106) |
+<RuleProperties />
+
 
 ## Description
 

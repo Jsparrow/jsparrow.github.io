@@ -111,7 +111,7 @@ module.exports = [
           fileCount: 3
         },
         {
-          ruleId: "OrganiseImports",
+          ruleId: "OrganizeImports",
           issuesFixedCount: 426,
           remediationCost: 1,
           fileCount: 426
@@ -260,7 +260,7 @@ module.exports = [
                 fileCount: 14
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 49,
                 remediationCost: 1,
                 fileCount: 49
@@ -324,7 +324,7 @@ module.exports = [
                 fileCount: 2
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 17,
                 remediationCost: 1,
                 fileCount: 17
@@ -437,7 +437,7 @@ module.exports = [
                 fileCount: 9
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 63,
                 remediationCost: 1,
                 fileCount: 63
@@ -514,7 +514,7 @@ module.exports = [
                 fileCount: 34
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 52,
                 remediationCost: 1,
                 fileCount: 52
@@ -549,7 +549,7 @@ module.exports = [
                 fileCount: 1
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 4,
                 remediationCost: 1,
                 fileCount: 4
@@ -662,7 +662,7 @@ module.exports = [
                 fileCount: 39
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 106,
                 remediationCost: 1,
                 fileCount: 106
@@ -715,7 +715,7 @@ module.exports = [
                 fileCount: 3
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 4,
                 remediationCost: 1,
                 fileCount: 4
@@ -798,7 +798,7 @@ module.exports = [
                 fileCount: 9
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 17,
                 remediationCost: 1,
                 fileCount: 17
@@ -881,7 +881,7 @@ module.exports = [
                 fileCount: 3
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 10,
                 remediationCost: 1,
                 fileCount: 10
@@ -922,7 +922,7 @@ module.exports = [
                 fileCount: 1
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 5,
                 remediationCost: 1,
                 fileCount: 5
@@ -969,7 +969,7 @@ module.exports = [
                 fileCount: 1
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 2,
                 remediationCost: 1,
                 fileCount: 2
@@ -1034,7 +1034,7 @@ module.exports = [
                 fileCount: 42
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 95,
                 remediationCost: 1,
                 fileCount: 95
@@ -1057,7 +1057,7 @@ module.exports = [
                 fileCount: 2
             },
             {
-                ruleId: "OrganiseImports",
+                ruleId: "OrganizeImports",
                 issuesFixedCount: 2,
                 remediationCost: 1,
                 fileCount: 2

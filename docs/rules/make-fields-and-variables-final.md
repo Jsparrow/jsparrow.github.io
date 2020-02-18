@@ -1,5 +1,10 @@
 ---
 title: Make Fields And Variables Final
+ruleId: MakeFieldsAndVariablesFinal
+since: 3.12.0
+minJavaVersion: 1.1
+remediationCost: 5
+links:
 description:
     This rule declares private fields and local variables final, if they are effectively final
 
@@ -12,11 +17,8 @@ tags: ["Java 1.1", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.12.0](/eclipse/release-notes.html#_3-12-0) |
-| Minimum Java version            | 1.1    |
-| Remediation cost                | 5 min |
+<RuleProperties />
+
 
 ## Description
 

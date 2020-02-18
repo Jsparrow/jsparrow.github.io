@@ -1,5 +1,13 @@
 ---
 title: Use String Literals
+ruleId: RemoveNewStringConstructor
+since: 1.0.0
+minJavaVersion: 1.1
+remediationCost: 5
+links:
+    - displayName: "S2129"
+      url: "https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS2129"
+    
 description:
     Removes all class instantiations from 'String' if its parameter is empty or a 'String'.
 tags: ["Java 1.1", "String Manipulation", "Performance"]
@@ -11,12 +19,8 @@ tags: ["Java 1.1", "String Manipulation", "Performance"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [1.0.0](/eclipse/release-notes.html#_1-0-0)   |
-| Minimum Java version            | 1.1   |
-| Remediation cost                | 5 min |
-| Links                           | [S2129](https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS2129) |
+<RuleProperties />
+
 
 ## Description
 

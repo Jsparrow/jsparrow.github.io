@@ -1,5 +1,10 @@
 ---
 title: Use Local Variable Type Inference
+ruleId: LocalVariableTypeInference
+since: 2.6.0
+minJavaVersion: 10
+remediationCost: 2
+links:
 description:
     This rule replaces the types on the local variable declarations with the reserved word var introduced in Java 10.
 tags: ["Java 10", "Formatting", "Readability"]
@@ -11,11 +16,8 @@ tags: ["Java 10", "Formatting", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-| ------------------------------- | ----- |
-| First seen in jSparrow version  | [2.6.0](/eclipse/release-notes.html#_2-6-0)   |
-| Minimum Java version            | 10   |
-| Remediation cost                | 2 min |
+<RuleProperties />
+
 
 ## Description
 
