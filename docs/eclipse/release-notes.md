@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.14.0 <Badge vertical="middle" text="20.02.2020"/>
 
-The [70<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.14.0. It improves your `java.util.Optional`.
+The [70<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.14.0. It improves your `java.util.Optional`s.
 
 ### New Rule
 #### [**Use Optional::filter**](/rules/optional-filter.html)
