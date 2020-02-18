@@ -1,5 +1,10 @@
 ---
 title: Use Optional::filter
+ruleId: OptionalFilter
+since: 3.14.0
+minJavaVersion: 8
+remediationCost: 2
+links:
 description:
     Extracts an Optional::filter from the consumer used in Optional::ifPresent. 
     This simplifies the lambda expression used with Optional operations. 
@@ -13,11 +18,7 @@ tags: ["Java 1.8", "Coding Conventions", "Lambda", "Readability"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | [3.13.0](/eclipse/release-notes.html#_3-13-0) |
-| Minimum Java version            | 8     |
-| Remediation cost                | 2 min |
+<RuleProperties />
 
 ## Description
 
