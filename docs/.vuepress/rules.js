@@ -64,6 +64,7 @@ module.exports = [
 'guard-condition',
 'local-variable-type-inference',
 'multi-catch',
+'optional-filter',
 'optional-if-present',
 'optional-if-present-or-else',
 'optional-map',

@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.11.0 <Badge vertical="middle" text="20.02.2020"/>
+
+A new rule is shipped with release 2.11.0 of the jSparrow Maven Plugin:
+
+* [Use Optional::filter](/rules/optional-filter.html)
+
 ## 2.10.0 <Badge vertical="middle" text="30.01.2020"/>
 
 Release 2.10.0 of the jSparrow Maven Plugin contains a new rule:
