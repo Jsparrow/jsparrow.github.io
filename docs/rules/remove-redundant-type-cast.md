@@ -101,5 +101,10 @@ List<?> l = new ArrayList<>();
 ((List<?>)l).size();
 ```
 
+__Not Transformed__
+```java
+Object object = (Supplier<String>) () -> "";
+```
+
 <VersionNotice />
 
