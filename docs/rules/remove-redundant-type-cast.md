@@ -101,6 +101,8 @@ List<?> l = new ArrayList<>();
 ((List<?>)l).size();
 ```
 
+### No transformation in connection with type cast of lambda expression to Object
+
 __Not Transformed__
 ```java
 Object object = (Supplier<String>) () -> "";
