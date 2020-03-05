@@ -1,7 +1,7 @@
 ---
 title: Remove Collections.addAll
 ruleId: RemoveCollectionsAddAll
-since: 3.14.0
+since: 3.15.0
 minJavaVersion: 1.2
 remediationCost: 2
 links:
