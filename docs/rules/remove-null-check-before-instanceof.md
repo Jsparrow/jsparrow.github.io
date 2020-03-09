@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 5
 links:
     - displayName: "S4201"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS4201&rule_key=squid%3AS4201"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS4201&q=S4201"
     
 description:
     Finds and removes null-checks before occurrences of instanceof. Since null is not an instance of anything, the null-check is redundant.

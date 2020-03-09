@@ -6,7 +6,7 @@ minJavaVersion: 8
 remediationCost: 5
 links:
     - displayName: "S1604"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1604&rule_key=squid%3AS1604"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1604&q=S1604"
     
 description:
     Converts anonymous inner classes to equivalent lambda expressions.

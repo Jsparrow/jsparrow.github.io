@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 5
 links:
     - displayName: "S1213"
-      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1213&q=squid%3AS1213"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1213&q=S1213"
     
 description:
     This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization.

@@ -6,7 +6,7 @@ minJavaVersion: 6
 remediationCost: 2
 links:
     - displayName: "S1155"
-      url: "https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS1155"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1155&q=S1155"
     
 description:
     This rule replaces comparisons of 'length()' or 'size()' with 0 with a call to 'isEmpty()'. Any occurrences of such a comparison will be replaced, regardless of surrounding control structure.

@@ -6,7 +6,7 @@ minJavaVersion: 7
 remediationCost: 15
 links:
     - displayName: "S2093"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2093&q=Resources+should+be+closed"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2093&q=S2093"
     
 description:
     This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as the construct takes care of that.

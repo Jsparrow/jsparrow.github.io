@@ -6,7 +6,7 @@ minJavaVersion: 5
 remediationCost: 2
 links:
     - displayName: "S1643"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1643&rule_key=squid%3AS1643"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1643&q=S1643"
     
 description:
     Replaces the infix operator + on String concatenation by 'StringBuilder::append'

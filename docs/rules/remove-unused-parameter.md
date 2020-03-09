@@ -5,8 +5,8 @@ since: 3.4.0
 minJavaVersion: 1.1
 remediationCost: 5
 links:
-    - displayName: "squid:S1172"
-      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS1172&q=squid%3AS1172"
+    - displayName: "S1172"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1172&q=S1172"
     
 description:
     Finds and removes unused parameters in private method declarations. Updates the affected method invocations accordingly.

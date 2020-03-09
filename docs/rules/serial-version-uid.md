@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 5
 links:
     - displayName: "S2057"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2057&rule_key=squid%3AS2057"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2057&q=S2057"
     
 description:
     Adds the modifiers static and final to SerialVersionUid long variables when they are absent.

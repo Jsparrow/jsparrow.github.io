@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 2
 links:
     - displayName: "S2761"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2761&rule_key=squid%3AS2761"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2761&q=S2761"
     
 description:
     Removes multiple negations from boolean expressions.

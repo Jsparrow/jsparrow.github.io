@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 5
 links:
     - displayName: "S1858"
-      url: "https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS1858"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1858&q=S1858"
     
 description:
     Removes all invocations of 'toString()' method used on a 'String' element.

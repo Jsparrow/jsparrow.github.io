@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 5
 links:
     - displayName: "S1118"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1118&rule_key=squid%3AS1118"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1118&q=S1118"
     
 description:
     Hides the default constructor of utility classes by adding a private constructor.

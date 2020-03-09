@@ -5,8 +5,8 @@ since: 1.0.0
 minJavaVersion: 1.1
 remediationCost: 1
 links:
-    - displayName: "RSPEC-1128"
-      url: "https://rules.sonarsource.com/java/RSPEC-1128"
+    - displayName: "S1128"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1128&q=S1128"
     
 description:
     Organize Imports according to the Eclipse's built in Organize Imports functionality.

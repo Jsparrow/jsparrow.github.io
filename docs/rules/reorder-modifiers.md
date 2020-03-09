@@ -5,8 +5,8 @@ since: 3.6.0
 minJavaVersion: 1.1
 remediationCost: 2
 links:
-    - displayName: "squid:ModifiersOrderCheck"
-      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AModifiersOrderCheck&q=ModifiersOrderCheck"
+    - displayName: "S1124"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1124&q=S1124"
     
 description:
     This rule reorders the modifiers on Type, Field and Method declarations.

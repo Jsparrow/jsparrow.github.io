@@ -5,8 +5,8 @@ since: 2.7.0
 minJavaVersion: 1.1
 remediationCost: 2
 links:
-    - displayName: "Squid:RedundantThrowsDeclarationCheck"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3ARedundantThrowsDeclarationCheck&rule_key=squid%3ARedundantThrowsDeclarationCheck"
+    - displayName: "S1130"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1130&q=S1130"
     
 description:
     Removes the RuntimeExceptions, duplications and exceptions which are subtypes of already thrown exceptions on the method signatures.

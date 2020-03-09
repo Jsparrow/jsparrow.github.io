@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 10
 links:
     - displayName: "S106"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS106&rule_key=squid%3AS106"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS106&q=S106"
     
 description:
     Replaces the standard output statements with logger statements when possible.

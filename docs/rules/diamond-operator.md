@@ -6,7 +6,7 @@ minJavaVersion: 7
 remediationCost: 1
 links:
     - displayName: "S2293"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2293&q=The+diamond+operator+%28%22%3C%3E%22%29+should+be+used+"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2293&q=S2293"
     
 description:
     Since Java 1.7 the Diamond Operator (<>) can be used to simplify instance creation where generics are involved.
