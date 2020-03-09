@@ -6,7 +6,7 @@ minJavaVersion: 5
 remediationCost: 2
 links:
     - displayName: "S1149"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1149&q=squid%3AS1149"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1149&q=S1149"
     
 description:
     This rule changes the type of local variables from 'StringBuffer()' to 'StringBuilder()'.

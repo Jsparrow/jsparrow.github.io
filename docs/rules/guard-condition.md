@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 5
 links:
     - displayName: "S3776"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS3776&rule_key=squid%3AS3776"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS3776&q=S3776"
     
 description:
     Replaces the last statement of a method with a guard condition.

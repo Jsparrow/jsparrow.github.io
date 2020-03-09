@@ -6,7 +6,7 @@ minJavaVersion: 8
 remediationCost: 2
 links:
     - displayName: "S1612"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1612&q=squid%3AS1612"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1612&q=S1612"
     
 description:
     This rule simplifies expression lambdas by using method reference.

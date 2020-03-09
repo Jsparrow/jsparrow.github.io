@@ -5,8 +5,8 @@ since: 2.7.0
 minJavaVersion: 1.1
 remediationCost: 1
 links:
-    - displayName: "EmptyStatementUsageCheck"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AEmptyStatementUsageCheck&rule_key=squid%3AEmptyStatementUsageCheck"
+    - displayName: "S1116"
+      url: "https://sonarcloud.io/organizations/default/rules?open=java%3AS1116&q=java%3AS1116"
     
 description:
     Removes the unnecessary semicolons from the code blocks.

@@ -6,7 +6,7 @@ minJavaVersion: 7
 remediationCost: 5
 links:
     - displayName: "S2147"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS2147&q=Catches+should+be+combined."
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2147&q=S2147"
     
 description:
     Java 7 introduced the possibility to merge multiple catch clauses into a single multi-catch clause. Merging is only possible if the catch statements are identical.

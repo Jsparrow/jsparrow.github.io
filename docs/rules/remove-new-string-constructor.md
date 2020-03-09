@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 5
 links:
     - displayName: "S2129"
-      url: "https://sonarcloud.io/organizations/default/rules?rule_key=squid%3AS2129"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2129&q=S2129"
     
 description:
     Removes all class instantiations from 'String' if its parameter is empty or a 'String'.

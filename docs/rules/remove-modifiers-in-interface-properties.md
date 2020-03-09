@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 1
 links:
     - displayName: "S2333"
-      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=squid%3AS2333&q=S2333"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2333&q=S2333"
     
 description:
     Removes the 'public' modifiers from method declarations and 'public static final' modifiers from field declarations in Java interfaces.

@@ -6,7 +6,7 @@ minJavaVersion: 5
 remediationCost: 10
 links:
     - displayName: "S1643"
-      url: "https://sonarcloud.io/organizations/default/rules?open=squid%3AS1643&q=S1643"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1643&q=S1643"
     
 description:
     This rule refactors the enhanced for loops which are only being used for concatenating the elements of collections or arrays.
