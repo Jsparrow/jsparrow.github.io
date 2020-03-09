@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 2
 links:
     - displayName: "S121"
-      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS121&q=s121"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS121&q=S121"
     
 description:
     Checks if braces are used to encapsulate control statements and adds them if they aren't present.
