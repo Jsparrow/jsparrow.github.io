@@ -40,7 +40,7 @@ Java 8
 
 ## Code Changes
 
-### Concatenating with no delimiter
+### Concatenating without delimiter
 
 __Pre__
 ```java
