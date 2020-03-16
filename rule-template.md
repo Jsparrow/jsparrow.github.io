@@ -1,9 +1,16 @@
 ---
-title: title
+title: RULE_NAME
+ruleId: RULE_ID
+since: JSPARROW_VERSION
+minJavaVersion: MIN_REQUIRED_JAVA_VERSION
+remediationCost: REMEDIATION_COST
+links:
+    - displayName: "[sid, rule_name, ...]"
+      url: "[URL]"
+    
 description:
-    description
-
-tags: ["Java 1.5", "String Manipulation", "Performance"]
+    Rule description.
+tags: ["String Manipulation", "Performance", "Lambda", "Old Language Constructs", "Loop", "Readability", "Formatting", "Coding Conventions", "Logging", "Free"]
 ---
 
 # Rulename
@@ -12,12 +19,7 @@ tags: ["Java 1.5", "String Manipulation", "Performance"]
 
 ## Properties
 
-| Property                        | Value |
-|:------------------------------- |:----- |
-| First seen in jSparrow version  | X.X.X |
-| Minimum Java version            | X     |
-| Remediation cost                | X min |
-| Links                           | [XXX](https://sonarcloud.io/organizations/default/rules?open=squid%3AXXX&rule_key=squid%3AXXX) |
+<RuleProperties />
 
 ## Description
 
@@ -37,4 +39,19 @@ Java 1.5
 
 ## Code Changes
 
+
+### Case description
+
+__Pre__
+```java
+sampleCode();
+```
+
+__Post__
+```java
+sampleCode();
+```
+
 ## Limitations (Optional)
+
+<VersionNotice />
