@@ -95,10 +95,10 @@ long x = ((100 + 200L)) + 300;
 
 ## Limitations
 
-### Cast expressions using wild cards
+### Casting expressions using wild cards
+It is not safe to remove type casts containing __wild cards__ (`?`). E.g.:
 
-Types using the __joker type__ '?' will never be regarded as the same type. E.g.:
-
+__Not Transformed__
 ```java
 List<?> l = new ArrayList<>();
 ((List<?>)l).size();
@@ -108,6 +108,7 @@ List<?> l = new ArrayList<>();
 
 Lambda expressions are not subtypes of Object and therefore implicit casting is not possible. E.g.:
 
+__Not Transformed__
 ```java
 Object object = (Supplier<String>) () -> "";
 ```
