@@ -26,7 +26,7 @@ The rule first searches the next type-cast operation. If the expression is caste
 
 ## Benefits
 
-This rule increases readability of code.
+This rule increases readability by removing redundant code.
 
 ## Requirement & Tags
 
@@ -81,7 +81,7 @@ List<String> l = new ArrayList<>();
 l.add("value1");
 ```
 
-### Type cast combined with removing of unnecessary parentheses
+### Type cast combined with unnecessary parentheses
 
 __Pre__
 ```java
@@ -93,17 +93,21 @@ __Post__
 long x = ((100 + 200L)) + 300;
 ```
 
-### No transformation in connection with type cast combined with joker types
+## Limitations
 
-__Not Transformed__
+### Cast expressions using wild cards
+
+Types using the __joker type__ '?' will never be regarded as the same type. E.g.:
+
 ```java
 List<?> l = new ArrayList<>();
 ((List<?>)l).size();
 ```
 
-### No transformation in connection with type cast of lambda expression to Object
+### Casting lambda expressions to Object
 
-__Not Transformed__
+Lambda expressions are not subtypes of Object and therefore implicit casting is not possible. E.g.:
+
 ```java
 Object object = (Supplier<String>) () -> "";
 ```
