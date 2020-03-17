@@ -24,7 +24,10 @@ tags: ["Java 1.2", "Readability"]
 
 ## Description
 
-In order to apply the rule, the following two statements must occur: A declaration of a local variable storing an instance of  `java.util.Collection` which is initialized with an empty constructor call and which is immediately followed by an invocation of the `java.util.Collection#addAll` - method on the same variable.
+In order to apply the rule, the following two statements must occur:
+
+* A declaration of a local variable storing an instance of `java.util.Collection` which is initialized with the default constructor.
+* An invocation of `java.util.Collection#addAll` immediately following the variable declaration.
 
 ## Benefits
 
