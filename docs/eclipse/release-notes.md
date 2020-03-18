@@ -23,7 +23,7 @@ Finds and removes casting expressions whose target types matches exactly the typ
 
 #### [**Remove Collections.addAll**](/rules/remove-collections-add-all.html)
 
-Moves the parameters used in [Collection.addAll](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
+Moves the parameters used in [Collection#addAll(Collection c)](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
 to the constructor which is used for initializing a collection.
 
 ### UI improvements
@@ -38,7 +38,7 @@ The results shown in jSparrow Summary Page can be sorted by the rule name, the n
 ### Fixed Bugs
 #### [**Replace For-Loop with Enhanced-For-Loop**](/rules/for-to-for-each.html)
 
-* If the iterable object has been modified inside the loop body, the transformation would still taken place.
+* If the `Iterable` object has been modified inside the loop body, the transformation would still have taken place.
 
 ## 3.14.0 <Badge vertical="middle" text="20.02.2020"/>
 
