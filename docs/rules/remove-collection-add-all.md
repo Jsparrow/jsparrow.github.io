@@ -13,7 +13,7 @@ description:
 tags: ["Java 1.2", "Readability"]
 ---
 
-# Remove Collections.addAll
+# Remove Collection::addAll
 
 [[toc]]
 
