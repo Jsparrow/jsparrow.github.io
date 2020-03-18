@@ -17,7 +17,7 @@ module.exports = [
 'rearrange-class-members',
 'code-formatter',
 'primitive-boxed-for-string',
-'remove-collections-add-all',
+'remove-collection-add-all',
 'date-deprecated.html',
 'remove-double-negation',
 'remove-explicit-call-to-super',

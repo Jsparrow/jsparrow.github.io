@@ -13,7 +13,7 @@ Three new rules are shipped with release 2.12.0 of the jSparrow Maven Plugin:
 
 * [Remove Redundant Type Casts](/rules/remove-redundant-type-cast.html)
 
-* [Remove Collections.addAll](/rules/remove-collections-add-all.html)
+* [Remove Collections.addAll](/rules/remove-collection-add-all.html)
 
 
 ## 2.11.0 <Badge vertical="middle" text="20.02.2020"/>

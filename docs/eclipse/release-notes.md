@@ -21,7 +21,7 @@ in cases where the sole purpose of the stream is to concatenate the String value
 
 Finds and removes casting expressions whose target types matches exactly the type of the original expression.
 
-#### [**Remove Collections.addAll**](/rules/remove-collections-add-all.html)
+#### [**Remove Collection::addAll**](/rules/remove-collection-add-all.html)
 
 Moves the parameters used in [Collection.addAll](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
 to the constructor which is used for initializing a collection.
