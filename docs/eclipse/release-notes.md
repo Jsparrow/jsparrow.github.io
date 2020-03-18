@@ -32,6 +32,8 @@ to the constructor which is used for initializing a collection.
 jSparrow can be executed in multiple projects simultaneously either by selecting a parent project or by 
 selecting more than one project on the project explorer. 
 
+[ ![Starting jSparrow on Multiple Projects](/img/eclipse/release_notes/jsparrow-start-on-multiple-projects.png) ](/img/eclipse/release_notes/jsparrow-start-on-multiple-projects.png)
+
 #### Sorting Results on the Summary Page 
 The results shown in jSparrow Summary Page can be sorted by the rule name, the number of findings or the time saved. 
 
