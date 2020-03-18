@@ -7,31 +7,38 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.15.0 <Badge vertical="middle" text="19.03.2020"/>
 
-jSparrow 3.15.0 extends the rule set 73 rules. Some UI improvements and Bug Fixes are also included. 
+jSparrow 3.15.0 extends the rule set to 73 rules. Some UI improvements and Bug Fixes are also included. 
 
 ### New Rules
 
-#### [Use String Join](/rules/use-string-join.html) 
-Replaces streams whose sole purpose is to concatenate the string values of a collection with a single invocation of [String::join]()https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#join-java.lang.CharSequence-java.lang.Iterable-. 
+#### [**Use String Join**](/rules/use-string-join.html) 
 
-#### [Remove Redundant Type Casts](/rules/remove-redundant-type-cast.html)
+Replaces [Collection::stream](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#stream--) with 
+[String::join](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#join-java.lang.CharSequence-java.lang.Iterable-) 
+in cases where the sole purpose of the stream is to concatenate the String values of the collection. 
+
+#### [**Remove Redundant Type Casts**](/rules/remove-redundant-type-cast.html)
+
 Finds and removes casting expressions whose target types matches exactly the type of the original expression.
 
-#### [Remove Collections.addAll](/rules/remove-collections-add-all.html)
-Moves the parameters used in [Collection.addAll](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) to the constructor which is used for initializing a collection.
+#### [**Remove Collections.addAll**](/rules/remove-collections-add-all.html)
+
+Moves the parameters used in [Collection.addAll](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
+to the constructor which is used for initializing a collection.
 
 ### UI improvements
 
-#### Start jSparrow on multiple projects simultaneously
-jSparrow can be executed in multiple projects simultaneously either by selecting a parent projects or by 
+#### Starting jSparrow on Multiple Projects
+jSparrow can be executed in multiple projects simultaneously either by selecting a parent project or by 
 selecting more than one project on the project explorer. 
 
-#### Sorting the results on the summary page 
-The results shown in jSparrow Summary Page can be sorted by the rule name, number of findings or time saved. 
+#### Sorting Results on the Summary Page 
+The results shown in jSparrow Summary Page can be sorted by the rule name, the number of findings or the time saved. 
 
 ### Fixed Bugs
+#### [**Replace For-Loop with Enhanced-For-Loop**](/rules/for-to-for-each.html)
 
-A bug related to the iterables updated in the body of for-loops and while-loops. 
+* If the iterable object has been modified inside the loop body, the transformation would still taken place.
 
 ## 3.14.0 <Badge vertical="middle" text="20.02.2020"/>
 
