@@ -5,6 +5,17 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.12.0 <Badge vertical="middle" text="19.03.2020"/>
+
+Three new rules are shipped with release 2.12.0 of the jSparrow Maven Plugin:
+
+* [Use String Join](/rules/use-string-join.html) 
+
+* [Remove Redundant Type Casts](/rules/remove-redundant-type-cast.html)
+
+* [Remove Collection::addAll](/rules/remove-collection-add-all.html)
+
+
 ## 2.11.0 <Badge vertical="middle" text="20.02.2020"/>
 
 A new rule is shipped with release 2.11.0 of the jSparrow Maven Plugin:

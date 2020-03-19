@@ -5,6 +5,43 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.15.0 <Badge vertical="middle" text="19.03.2020"/>
+
+jSparrow 3.15.0 extends the rule set to 73 rules. Some UI improvements and Bug Fixes are also included. 
+
+### New Rules
+
+#### [**Use String Join**](/rules/use-string-join.html) 
+
+Replaces [Collection::stream](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#stream--) with 
+[String::join](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#join-java.lang.CharSequence-java.lang.Iterable-) 
+in cases where the sole purpose of the stream is to concatenate the String values of the collection. 
+
+#### [**Remove Redundant Type Casts**](/rules/remove-redundant-type-cast.html)
+
+Finds and removes casting expressions whose target types matches exactly the type of the original expression.
+
+#### [**Remove Collection::addAll**](/rules/remove-collection-add-all.html)
+
+Moves the parameters used in [Collection#addAll(Collection c)](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
+to the constructor which is used for initializing a collection.
+
+### UI improvements
+
+#### Starting jSparrow on Multiple Projects
+jSparrow can be executed in multiple projects simultaneously either by selecting a parent project or by 
+selecting more than one project on the project explorer. 
+
+[ ![Starting jSparrow on Multiple Projects](/img/eclipse/release_notes/jsparrow-start-on-multiple-projects.png) ](/img/eclipse/release_notes/jsparrow-start-on-multiple-projects.png)
+
+#### Sorting Results on the Summary Page 
+The results shown in jSparrow Summary Page can be sorted by the rule name, the number of findings or the time saved. 
+
+### Fixed Bugs
+#### [**Replace For-Loop with Enhanced-For-Loop**](/rules/for-to-for-each.html)
+
+* If the `Iterable` object has been modified inside the loop body, the transformation would still have taken place.
+
 ## 3.14.0 <Badge vertical="middle" text="20.02.2020"/>
 
 The [70<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.14.0. It improves your `java.util.Optional`s.
