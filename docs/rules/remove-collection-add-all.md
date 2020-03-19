@@ -1,5 +1,5 @@
 ---
-title: Remove Collections.addAll
+title: Remove Collection::addAll
 ruleId: RemoveCollectionsAddAll
 since: 3.15.0
 minJavaVersion: 1.2
