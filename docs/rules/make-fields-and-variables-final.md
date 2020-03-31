@@ -214,3 +214,5 @@ public class MakeFinal {
 ## Limitations
 
 This rule only affects `private` fields and local variables at the moment. `public`, `protected` or package-private fields as well as method parameters are not considered yet.
+
+<VersionNotice />
