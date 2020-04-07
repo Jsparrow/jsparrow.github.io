@@ -39,6 +39,7 @@ module.exports = [
 'string-concat-to-plus',
 'use-is-empty-on-collections',
 'lambda-to-method-reference',
+'replace-dynamic-query-by-prepared-statement',
 'for-to-for-each',
 'enhanced-for-loop-to-stream-any-match',
 'string-building-loop',
