@@ -88,8 +88,10 @@ __Pre__
 ```java
 String departmentId = "40 OR '1'='1";
 int id = 10;
-String query = "SELECT first_name FROM employee WHERE  id > '" + id + "'";
-query += " AND department_id ='" + departmentId + "' ORDER BY last_name";
+String query = "SELECT first_name FROM employee WHERE";
+query += " id > '" + id + "'";
+query += " AND department_id ='" + departmentId + "'";
+query += " ORDER BY last_name";
 Statement statement = connection.createStatement();
 ResultSet resultSet = statement.executeQuery(query);
 ```
@@ -98,10 +100,13 @@ __Post__
 ```java
 String departmentId = "40 OR '1'='1";
 int id = 10;
-String query = "SELECT first_name FROM employee WHERE  id >  ?" + "";
-query += " AND department_id ='" + departmentId + "' ORDER BY last_name";
+String query = "SELECT first_name FROM employee WHERE";
+query += " id >  ?" + "";
+query += " AND department_id = ?" + "";
+query += " ORDER BY last_name";
 PreparedStatement statement = connection.prepareStatement(query);
 statement.setInt(1, id);
+statement.setString(2, departmentId);
 ResultSet resultSet = statement.executeQuery();
 ```
 
