@@ -52,6 +52,22 @@ __Post__
 sampleCode();
 ```
 
+### Bytecode JDK 1.8 (Optional)
+
+__Pre__
+```java
+```
+
+```
+```
+
+__Post__
+```java
+```
+
+```
+```
+
 ## Limitations (Optional)
 
 <VersionNotice />

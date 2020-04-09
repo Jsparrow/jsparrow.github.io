@@ -88,5 +88,48 @@ Boolean.valueOf((String) input);
 Boolean.valueOf((Boolean) input);
 ```
 
+### Bytecode JDK 1.8 
+
+__Pre__
+```java
+public void original() {
+   Integer val1 = new Integer(1);
+   Integer val2 = new Integer("1");
+}
+```
+
+```
+ 0 new #2 <java/lang/Integer>
+ 3 dup
+ 4 iconst_1
+ 5 invokespecial #3 <java/lang/Integer.<init>>
+ 8 astore_1
+ 9 new #2 <java/lang/Integer>
+12 dup
+13 ldc #4 <1>
+15 invokespecial #5 <java/lang/Integer.<init>>
+18 astore_2
+19 return
+```
+
+__Post__
+```java
+public void transformed() {
+   Integer val1 = Integer.valueOf(1);
+   Integer val2 = Integer.valueOf("1");
+}
+```
+
+```
+ 0 iconst_1
+ 1 invokestatic #6 <java/lang/Integer.valueOf>
+ 4 astore_1
+ 5 ldc #4 <1>
+ 7 invokestatic #7 <java/lang/Integer.valueOf>
+10 astore_2
+11 return
+```
+
+
 <VersionNotice />
 

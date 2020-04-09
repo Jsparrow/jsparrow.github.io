@@ -115,5 +115,38 @@ __Post__
 Short.toString(1);
 ```
 
+### Bytecode JDK 1.8 
+
+__Pre__
+```java
+public void original(boolean b) {
+    String value = new Boolean(b).toString();
+}
+```
+
+```
+ 0 new #2 <java/lang/Boolean>
+ 3 dup
+ 4 iload_1
+ 5 invokespecial #3 <java/lang/Boolean.<init>>
+ 8 invokevirtual #4 <java/lang/Boolean.toString>
+11 astore_2
+12 return
+```
+
+__Post__
+```java
+public void transformed(boolean b) {
+    String value = Boolean.toString(b);
+}
+```
+
+```
+0 iload_1
+1 invokestatic #5 <java/lang/Boolean.toString>
+4 astore_2
+5 return
+```
+
 <VersionNotice />
 

@@ -88,6 +88,53 @@ AFunctionalInterface foo = (int a1) -> {
 };
 ```
 
+### Bytecode JDK 1.8 
+
+__Pre__
+```java
+public Runnable runableWithAnonymousClass() {
+    Runnable r = new Runnable() {
+        public void run() {
+            System.out.println("Anonymous class");
+        }
+    };
+    return r;
+}
+```
+
+```
+ 0 new #2 <at/splendit/AnonymousClassesToLambdaExpressions$1>
+ 3 dup
+ 4 aload_0
+ 5 invokespecial #3 <at/splendit/AnonymousClassesToLambdaExpressions$1.<init>>
+ 8 astore_1
+ 9 aload_1
+10 areturn
+```
+
+__Post__
+```java
+public Runnable runableWithLambda() {
+    Runnable r = () -> {
+            System.out.println("Lambda");
+        };
+    return r;
+}
+```
+
+```
+0 invokedynamic #4 <run, BootstrapMethods #0>
+5 astore_1
+6 aload_1
+7 areturn
+
+
+0 getstatic #5 <java/lang/System.out>
+3 ldc #6 <Lambda>
+5 invokevirtual #7 <java/io/PrintStream.println>
+8 return
+```
+
 ## Limitations
 
 Variables that are used inside the anonymous class must be effectively final.
