@@ -54,7 +54,7 @@ __Post__
 StringBuilder localStringBuffer = new StringBuilder();
 ```
 
-### Bytecode JDK 1.8 (Optional)
+### Bytecode JDK 1.8
 
 __Pre__
 ```java
