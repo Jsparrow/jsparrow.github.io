@@ -91,5 +91,40 @@ class MyClass {
     List<String> singletonList = Collections.singletonList("value");
 }
 ```
+
+### Bytecode JDK 1.8
+
+__Pre__
+```java
+public void original() {
+    List<String> list = Arrays.asList("value");
+}
+```
+
+```
+ 0 iconst_1
+ 1 anewarray #2 <java/lang/String>
+ 4 dup
+ 5 iconst_0
+ 6 ldc #3 <value>
+ 8 aastore
+ 9 invokestatic #4 <java/util/Arrays.asList>
+12 astore_1
+13 return
+```
+
+__Post__
+```java
+public void transformed() {
+    List<String> list = Collections.singletonList("value");
+}
+```
+
+```
+0 ldc #3 <value>
+2 invokestatic #5 <java/util/Collections.singletonList>
+5 astore_1
+6 return
+```
 <VersionNotice />
 

@@ -86,5 +86,34 @@ public String testToStringOnParenthesizePlusString(String s) {
 }
 ```
 
+### Bytecode JDK 1.8 
+
+__Pre__
+```java
+public void original(String value) {
+    String newValue = value.toString();
+}
+```
+
+```
+0 aload_1
+1 invokevirtual #2 <java/lang/String.toString>
+4 astore_2
+5 return
+```
+
+__Post__
+```java
+public void transformed(String value) {
+    String newValue = value;
+}
+```
+
+```
+0 aload_1
+1 astore_2
+2 return
+```
+
 <VersionNotice />
 

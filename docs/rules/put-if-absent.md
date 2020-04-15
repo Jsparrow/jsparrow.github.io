@@ -86,6 +86,47 @@ map.putIfAbsent(key, value);
 return v;
 ```
 
+### Bytecode JDK 1.8 
+
+__Pre__
+```java
+public void original(Map<String, String> map, String newKey, String newValue) {
+    if(!map.containsKey(newKey)) {
+        map.put(newKey, newValue);
+    }
+}
+```
+
+```
+ 0 aload_1
+ 1 aload_2
+ 2 invokeinterface #2 <java/util/Map.containsKey> count 2
+ 7 ifne 19 (+12)
+10 aload_1
+11 aload_2
+12 aload_3
+13 invokeinterface #3 <java/util/Map.put> count 3
+18 pop
+19 return
+
+```
+
+__Post__
+```java
+public void transformed(Map<String, String> map, String newKey, String newValue) {
+    map.putIfAbsent(newKey, newValue);
+}
+```
+
+```
+0 aload_1
+1 aload_2
+2 aload_3
+3 invokeinterface #4 <java/util/Map.putIfAbsent> count 3
+8 pop
+9 return
+```
+
 ## Limitations
 
 The rule can be applied if a map type is present, a call to map.put(..) is present, and that call is wrapped in an if-Statement.

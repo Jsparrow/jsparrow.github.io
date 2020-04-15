@@ -80,5 +80,35 @@ __Post__
 input + param + param;
 ```
 
+### Bytecode JDK 1.8 
+
+__Pre__
+```java
+public void original() {
+    String value = "foo".concat("bar");
+}
+```
+
+```
+0 ldc #2 <foo>
+2 ldc #3 <bar>
+4 invokevirtual #4 <java/lang/String.concat>
+7 astore_1
+8 return
+```
+
+__Post__
+```java
+public void transformed() {
+    String value = "foo" + "bar";
+}
+```
+
+```
+0 ldc #5 <foobar>
+2 astore_1
+3 return
+```
+
 <VersionNotice />
 

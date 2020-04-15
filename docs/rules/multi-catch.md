@@ -152,5 +152,55 @@ public int cornerCaseDifferentBodies(int i) {
 }
 ```
 
+### Bytecode JDK 1.8 
+
+__Pre__
+```java
+public void original() {
+    try {
+        throwSomeExceptions();
+    } catch (FileNotFoundException e) {
+        e.printStackTrace();
+    } catch (InvalidClassException e) {
+        e.printStackTrace();
+    }
+}
+```
+
+```
+ 0 aload_0
+ 1 invokespecial #2 <at/splendit/MultiCatchSamples.throwSomeExceptions>
+ 4 goto 20 (+16)
+ 7 astore_1
+ 8 aload_1
+ 9 invokevirtual #4 <java/io/FileNotFoundException.printStackTrace>
+12 goto 20 (+8)
+15 astore_1
+16 aload_1
+17 invokevirtual #6 <java/io/InvalidClassException.printStackTrace>
+20 return
+```
+
+__Post__
+```java
+public void transformed() {
+    try {
+        throwSomeExceptions();
+    } catch (FileNotFoundException | InvalidClassException e) {
+        e.printStackTrace();
+    }
+}
+```
+
+```
+ 0 aload_0
+ 1 invokespecial #2 <at/splendit/MultiCatchSamples.throwSomeExceptions>
+ 4 goto 12 (+8)
+ 7 astore_1
+ 8 aload_1
+ 9 invokevirtual #7 <java/io/IOException.printStackTrace>
+12 return
+```
+
 <VersionNotice />
 

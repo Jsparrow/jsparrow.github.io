@@ -75,4 +75,39 @@ String result = String.join(",", values);
 ```
 
 
+### Bytecode JDK 1.8 
+
+__Pre__
+```java
+public void original(List<String> values) {
+    String result = values.stream().collect(Collectors.joining(","));
+}
+```
+
+```
+ 0 aload_1
+ 1 invokeinterface #2 <java/util/List.stream> count 1
+ 6 ldc #3 <,>
+ 8 invokestatic #4 <java/util/stream/Collectors.joining>
+11 invokeinterface #5 <java/util/stream/Stream.collect> count 2
+16 checkcast #6 <java/lang/String>
+19 astore_2
+20 return
+```
+
+__Post__
+```java
+public void transformed(List<String> values) {
+    String result = String.join(",", values);
+}
+```
+
+```
+0 ldc #3 <,>
+2 aload_1
+3 invokestatic #7 <java/lang/String.join>
+6 astore_2
+7 return
+```
+
 <VersionNotice />

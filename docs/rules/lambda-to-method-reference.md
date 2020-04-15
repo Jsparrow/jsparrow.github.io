@@ -104,5 +104,37 @@ __Post__
 Set<Person> persSet = transferElements(personList, HashSet::new);
 ```
 
+### Bytecode JDK 1.8 
+
+__Pre__
+```java
+public void original(List<String> values) {
+    values.forEach(value -> consume(value));
+}
+```
+
+```
+ 0 aload_1
+ 1 aload_0
+ 2 invokedynamic #2 <accept, BootstrapMethods #0>
+ 7 invokeinterface #3 <java/util/List.forEach> count 2
+12 return
+```
+
+__Post__
+```java
+public void transformed(List<String> values) {
+    values.forEach(this::consume);
+}
+```
+
+```
+ 0 aload_1
+ 1 aload_0
+ 2 invokedynamic #4 <accept, BootstrapMethods #1>
+ 7 invokeinterface #3 <java/util/List.forEach> count 2
+12 return
+```
+
 <VersionNotice />
 

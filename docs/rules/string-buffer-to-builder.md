@@ -54,5 +54,69 @@ __Post__
 StringBuilder localStringBuffer = new StringBuilder();
 ```
 
+### Bytecode JDK 1.8
+
+__Pre__
+```java
+public String original() {
+    StringBuffer sb = new StringBuffer();
+    sb.append("val1");
+    sb.append("val2");
+    String result = sb.toString();
+    return result;
+}
+```
+
+```
+ 0 new #2 <java/lang/StringBuffer>
+ 3 dup
+ 4 invokespecial #3 <java/lang/StringBuffer.<init>>
+ 7 astore_1
+ 8 aload_1
+ 9 ldc #4 <val1>
+11 invokevirtual #5 <java/lang/StringBuffer.append>
+14 pop
+15 aload_1
+16 ldc #6 <val2>
+18 invokevirtual #5 <java/lang/StringBuffer.append>
+21 pop
+22 aload_1
+23 invokevirtual #7 <java/lang/StringBuffer.toString>
+26 astore_2
+27 aload_2
+28 areturn
+```
+
+__Post__
+```java
+public String transformed() {
+    StringBuilder sb = new StringBuilder();
+    sb.append("val1");
+    sb.append("val2");
+    String result = sb.toString();
+    return result;
+}
+```
+
+```
+ 0 new #8 <java/lang/StringBuilder>
+ 3 dup
+ 4 invokespecial #9 <java/lang/StringBuilder.<init>>
+ 7 astore_1
+ 8 aload_1
+ 9 ldc #4 <val1>
+11 invokevirtual #10 <java/lang/StringBuilder.append>
+14 pop
+15 aload_1
+16 ldc #6 <val2>
+18 invokevirtual #10 <java/lang/StringBuilder.append>
+21 pop
+22 aload_1
+23 invokevirtual #11 <java/lang/StringBuilder.toString>
+26 astore_2
+27 aload_2
+28 areturn
+```
+
 <VersionNotice />
 

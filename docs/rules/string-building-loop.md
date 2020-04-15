@@ -83,5 +83,64 @@ for(String val : collectionOfStrings) {
 String result = resultSb.toString();
 ```
 
+### Bytecode JDK 1.8 (Optional)
+
+__Pre__
+```java
+public String original(List<String> values) {
+    String result = "";
+    for(String val : values) {
+        result = result + val;
+    }
+    return result;
+}
+```
+
+```
+ 0 ldc #2
+ 2 astore_2
+ 3 aload_1
+ 4 invokeinterface #3 <java/util/List.iterator> count 1
+ 9 astore_3
+10 aload_3
+11 invokeinterface #4 <java/util/Iterator.hasNext> count 1
+16 ifeq 53 (+37)
+19 aload_3
+20 invokeinterface #5 <java/util/Iterator.next> count 1
+25 checkcast #6 <java/lang/String>
+28 astore 4
+30 new #7 <java/lang/StringBuilder>
+33 dup
+34 invokespecial #8 <java/lang/StringBuilder.<init>>
+37 aload_2
+38 invokevirtual #9 <java/lang/StringBuilder.append>
+41 aload 4
+43 invokevirtual #9 <java/lang/StringBuilder.append>
+46 invokevirtual #10 <java/lang/StringBuilder.toString>
+49 astore_2
+50 goto 10 (-40)
+53 aload_2
+54 areturn
+```
+
+__Post__
+```java
+public String transformed(List<String>values) {
+    String result = values.stream().collect(Collectors.joining());
+    return result;
+}
+```
+
+```
+ 0 aload_1
+ 1 invokeinterface #11 <java/util/List.stream> count 1
+ 6 invokestatic #12 <java/util/stream/Collectors.joining>
+ 9 invokeinterface #13 <java/util/stream/Stream.collect> count 2
+14 checkcast #6 <java/lang/String>
+17 astore_2
+18 aload_2
+19 areturn
+```
+
 <VersionNotice />
 
