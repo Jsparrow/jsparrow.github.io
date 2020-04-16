@@ -5,6 +5,20 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.16.0 <Badge vertical="middle" text="16.04.2020"/>
+
+The [74<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.16.0. It reduces security flaws by utilizing parameterized queries.
+
+### New Rule
+#### [**Use Parameterized Query**](/rules/use-parameterized-query.html)
+
+This rule replaces a [java.sql.Statement](https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html) with a [java.sql.PreparedStatement](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) if the SQL query is constructed by concatenating string literals with user defined expressions (e.g. variables, method invocations, user input, etc). 
+Parameterized queries enforce a distinction between the SQL code and the data passed through parameters.
+
+### Fixed Bugs
+#### Referencing constants in lambda expressions
+Fixes unqualified field references when transforming an anonymous class into a lambda expression. 
+
 ## 3.15.0 <Badge vertical="middle" text="19.03.2020"/>
 
 jSparrow 3.15.0 extends the rule set to 73 rules. Some UI improvements and Bug Fixes are also included. 
