@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.13.0 <Badge vertical="middle" text="16.04.2020"/>
+
+A new rule is shipped with release 2.13.0 of the jSparrow Maven Plugin:
+
+* [Use Parameterized Query](/rules/use-parameterized-query.html)
+
 ## 2.12.0 <Badge vertical="middle" text="19.03.2020"/>
 
 Three new rules are shipped with release 2.12.0 of the jSparrow Maven Plugin:
