@@ -50,22 +50,23 @@ export default {
           name: 'default',
         },
       },
+      replies: {
+        whatIs: 'jSparrow is a tool that provides automatic refactoring of Java sources', 
+        howDoIUse: 'You can install jSparrow as a plugin in Eclipse or you can integrate it into your maven build process using jSparrow Maven Plugin',
+        whereDoIFind: 'You can find jSparrow in the Eclipse Marketplace or you can directly install it from the jSparrow update site https://update.jsparrow.eu', 
+        tryAgain: 'I didn\'t quite get that. Please try again...'
+      },
       participants: [
         {
-          id: 'user1',
-          name: 'Matteo',
-          imageUrl: 'https://avatars3.githubusercontent.com/u/1915989?s=230&v=4'
-        },
-        {
-          id: 'user2',
-          name: 'Support',
-          imageUrl: 'https://avatars3.githubusercontent.com/u/37018832?s=200&v=4'
+          id: 'support',
+          name: 'jSparrow',
+          imageUrl: 'logo.png'
         }
       ], // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
-      titleImageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png',
+      titleImageUrl: '',
       messageList: [
-          { type: 'text', author: `me`, data: { text: `Say yes!` } },
-          { type: 'text', author: `user1`, data: { text: `No.` } }
+          { type: 'text', author: `support`, data: { text: `Hey there! Ask me a question...` }, suggestions: ['What is jSparrow?', 'How do I use jSparrow?', 'Where do I find jSparrow?', 'Talk to a human'] },
+          
       ], // the list of the messages to show, can be paginated and adjusted dynamically
       newMessagesCount: 0,
       isChatOpen: false, // to determine whether the chat window should be open or closed
@@ -94,7 +95,8 @@ export default {
           text: '#565867'
         }
       }, // specifies the color scheme for the component
-      alwaysScrollToBottom: false, // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
+      isReply: false,
+      alwaysScrollToBottom: true, // when set to true always scrolls the chat to the bottom when new events are in (new message, user starts typing...)
       messageStyling: true // enables *bold* /emph/ _underline_ and such (more info at github.com/mattezza/msgdown)
     }
   },
@@ -102,12 +104,35 @@ export default {
     sendMessage (text) {
       if (text.length > 0) {
         this.newMessagesCount = this.isChatOpen ? this.newMessagesCount : this.newMessagesCount + 1
-        this.onMessageWasSent({ author: 'support', type: 'text', data: { text } })
+        this.onMessageWasSent({ author: 'support', type: 'text', data: { text }, suggestions: ['What is jSparrow?', 'How do I use jSparrow?', 'Where do I find jSparrow?', 'Talk to a human'] })
       }
     },
     onMessageWasSent (message) {
       // called when the user sends a message
       this.messageList = [ ...this.messageList, message ]
+      var choice = message.data.text
+      console.log(choice)
+      if(this.isReply) {
+        this.isReply = false
+        return
+      }
+      
+      if(choice == 'What is jSparrow?') {
+        this.isReply = true
+        this.sendMessage(this.replies.whatIs)
+      } else if (choice == 'Where do I find jSparrow?') {
+        this.isReply = true
+        this.sendMessage(this.replies.whereDoIFind)
+      } else if (choice == 'How do I use jSparrow?') {
+        this.isReply = true
+        this.sendMessage(this.replies.howDoIUse)
+      } else {
+        this.isReply = true
+        this.sendMessage(this.replies.tryAgain)
+      }
+
+      
+
     },
     openChat () {
       // called when the user clicks on the fab button to open the chat

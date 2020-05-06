@@ -39,3 +39,5 @@ Compare jSparrow versions at: [Get jSparrow: The automatic Java code refactoring
 Do you have questions, want to report a bug, or want to see a feature implemented?  
 Contact us at: [support@jsparrow.eu](mailto:support@jsparrow.eu)
 
+<BeautifulChat />
+
