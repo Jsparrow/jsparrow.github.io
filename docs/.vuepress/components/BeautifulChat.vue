@@ -29,11 +29,9 @@ import CloseIconSvg from 'vue-beautiful-chat/src/assets/close.svg'
 
 
 export default {
-    props: {
-      beautifulchat: Array
-    },
     data() {
     return {
+      db: require('../beautifulchat.js'),
       icons:{
         open:{
           img: OpenIcon,
@@ -68,10 +66,13 @@ export default {
       ], // the list of all the participant of the conversation. `name` is the user name, `id` is used to establish the author of a message, `imageUrl` is supposed to be the user avatar.
       titleImageUrl: '',
       messageList: [
-          { type: 'text', author: `support`, data: { text: `Hey there! Ask me a question...` }, suggestions: ['What is jSparrow?', 'How do I use jSparrow?', 'Where do I find jSparrow?', 'Talk to a human'] },
-          
+          { 
+            type: 'text', author: `support`, 
+            data: { text: `Hey there! Ask me a question...` }, 
+            suggestions: ['What is jSparrow?', 'What are the benefits?', 'Which editions are available?'] 
+            },
       ], // the list of the messages to show, can be paginated and adjusted dynamically
-      newMessagesCount: 0,
+      newMessagesCount: 1,
       isChatOpen: false, // to determine whether the chat window should be open or closed
       showTypingIndicator: '', // when set to a value matching the participant.id it shows the typing indicator for the specific user
       colors: {
@@ -107,7 +108,10 @@ export default {
     sendMessage (text) {
       if (text.length > 0) {
         this.newMessagesCount = this.isChatOpen ? this.newMessagesCount : this.newMessagesCount + 1
-        this.onMessageWasSent({ author: 'support', type: 'text', data: { text }, suggestions: ['What is jSparrow?', 'How do I use jSparrow?', 'Where do I find jSparrow?', 'Talk to a human'] })
+        var answer = this.findAnswer(text)
+        var nextSuggestions = this.findNextSuggestions(text)
+        
+        this.onMessageWasSent({ author: 'support', type: 'text', data: { text: answer }, suggestions: nextSuggestions })
       }
     },
     onMessageWasSent (message) {
@@ -120,6 +124,28 @@ export default {
         return
       }
       this.isReply = true
+
+      //this.findReplyKey(choice)
+      var key = this.findChoiceKey(choice)
+      this.sendMessage(key)
+    },
+    findChoiceKey(choice) {
+      for(let[key, questionObject] of Object.entries(this.db)) {
+        if(questionObject.questions.includes(choice)) {
+          return key;
+        }
+      }
+      return Object.keys(this.db)[0]
+    },
+    findAnswer(key) {
+      var questionObject = this.db[key]
+      var answer = questionObject.answers[Math.floor(Math.random() * questionObject.answers.length)]
+      return answer
+    },
+    findNextSuggestions(key) {
+      var questionObject = this.db[key]
+      var nextSuggestions = questionObject.nextSuggestions.map(suggestionKey => this.db[suggestionKey].questions[0]) 
+      return nextSuggestions
     },
     findReplyKey(choice) {
       if(choice == 'What is jSparrow?') {
@@ -130,6 +156,19 @@ export default {
         this.sendMessage(this.replies.howDoIUse)
       } else {
         this.sendMessage(this.replies.tryAgain)
+      }
+
+      for(let[key, questionObject] of Object.entries(this.db)) {
+        if(questionObject.questions.includes(choice)) {
+          console.log(`${key}:${choice}`) 
+          var answer = this.db[key].answers[Math.floor(Math.random() * this.db[key].answers.length)]
+          console.log(`Answer: ${answer}`)
+          var nextSuggestions = this.db[key].nextSuggestions.map(suggestionKey => this.db[suggestionKey].questions[0]) 
+          console.log('Next suggestions:')
+          nextSuggestions.forEach(element => {
+            console.log(element)
+          });
+        }
       }
     },
     openChat () {

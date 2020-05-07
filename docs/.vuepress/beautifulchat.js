@@ -1,5 +1,5 @@
-module.exports = [
-  {
+module.exports = {
+  
     whatIs: {
       questions: ['What is jSparrow?', 'What does jSparrow do?'],
       answers: [
@@ -35,39 +35,39 @@ module.exports = [
     },
 
     whatIsJEP: {
-      questions: [],
-      answers: [],
-      nextSuggestions: [],
+      questions: ['What is jSparrow Eclipse Plugin?'],
+      answers: ['jSparrow Eclipse Plugin is ...'],
+      nextSuggestions: ['whatIsRle', 'whatIsJMP', 'whatIsJGA'],
     },
 
     whatIsJMP: {
-      questions: [],
-      answers: [],
-      nextSuggestions: [],
+      questions: ['What is jSparrow Maven Plugin?'],
+      answers: ['jSparrow Maven Plugin is....'],
+      nextSuggestions: ['howToInstall', 'whatIsJGA', 'whatIsJEP'],
     },
 
     whatIsJGA: {
-      questions: [],
-      answers: [],
-      nextSuggestions: [],
+      questions: ['What is jSparrow Cloud App?'],
+      answers: ['jSparrow Could App is....'],
+      nextSuggestions: ['howToInstall', 'whatIsJMP', 'whatIsJEP'],
     },
 
     howDoIBenefit: {
-      questions: [],
-      answers: [],
-      nextSuggestions: [],
+      questions: ['What are the benefits of using jSparrow?', 'What are the benefits?'],
+      answers: ['Remove code smells'],
+      nextSuggestions: ['howToInstall', 'whatIsStarter', 'whichEditions'],
     },
 
     howToInstallJmp: {
-      questions: [],
-      answers: [],
-      nextSuggestions: [],
+      questions: ['How to install jSparrow Maven Plugin?'],
+      answers: ['Download it from our repository and include it in your build script'],
+      nextSuggestions: ['whatIsJMP', 'whichPlatforms', 'howManyRules'],
     },
 
     whichPlatforms: {
-      questions: [],
-      answers: [],
-      nextSuggestions: [],
+      questions: ['Which platorm does jSparrow support'],
+      answers: ['jSparrow is available for Eclipse, Maven, and GitHub apps'],
+      nextSuggestions: ['whatIsJEP', 'whatIsJMP', 'whatIsJGA'],
     },
 
     whatIsStarter: {
@@ -105,15 +105,36 @@ module.exports = [
     },
 
     whatIsRule: {
-      questions: [],
-      answers: [],
-      nextSuggestions: [],
+      questions: ['What is a jSparrow Rule?', 'What is a jSparrow refactoring Rule?', 'What is a Rule?'],
+      answers: ['Fill the answers for jSparrow rule'],
+      nextSuggestions: ['whatIsProfile'],
     },
 
     whatIsProfile: {
-      questions: [],
-      answers: [],
-      nextSuggestions: [],
+      questions: ['What is a profile?', 'howManyRules'],
+      answers: ['A profile is a list of jSparrow rules. You can use profiles to group together the rules of your choice. '],
+      nextSuggestions: ['whatIsRule', 'howDoIBenefit'],
     },
-  },
-];
+
+    howManyRules: {
+      questions: ['How many rules are implemented in jSparrow?'],
+      answers: ['Check our documentation space. '],
+      nextSuggestions: ['whatIsReleaseSchedule', 'whichEditions'],
+    }, 
+    requestFeature: {
+      questions: ['How to request a new feature?', 'Can I create my own rule?'],
+      answers: ['If you have a suggestion, feel free to contact us. We will consider the recommendation for the upcoming releases.'],
+      nextSuggestions: ['howDoIBenefit'],
+    }, 
+    whatIsReleaseSchedule: {
+      questions: ['What is jSparrow release chedule?'],
+      answers: ['Every third Thursday of each month.'],
+      nextSuggestions: ['howManyRules', 'whichEditions'],
+    },
+    default: {
+      questions: [],
+      answers: ['Sorry, I didnt catch that. Please try again.'],
+      nextSuggestions: ['whatIs', 'howToInstall', 'whichEditions', 'howDoIBenefit'],
+    }
+  
+  };
