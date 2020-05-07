@@ -29,7 +29,9 @@ import CloseIconSvg from 'vue-beautiful-chat/src/assets/close.svg'
 
 
 export default {
-
+    props: {
+      beautifulchat: Array
+    },
     data() {
     return {
       icons:{
@@ -56,6 +58,7 @@ export default {
         whereDoIFind: 'You can find jSparrow in the Eclipse Marketplace or you can directly install it from the jSparrow update site https://update.jsparrow.eu', 
         tryAgain: 'I didn\'t quite get that. Please try again...'
       },
+
       participants: [
         {
           id: 'support',
@@ -116,23 +119,18 @@ export default {
         this.isReply = false
         return
       }
-      
+      this.isReply = true
+    },
+    findReplyKey(choice) {
       if(choice == 'What is jSparrow?') {
-        this.isReply = true
         this.sendMessage(this.replies.whatIs)
       } else if (choice == 'Where do I find jSparrow?') {
-        this.isReply = true
         this.sendMessage(this.replies.whereDoIFind)
       } else if (choice == 'How do I use jSparrow?') {
-        this.isReply = true
         this.sendMessage(this.replies.howDoIUse)
       } else {
-        this.isReply = true
         this.sendMessage(this.replies.tryAgain)
       }
-
-      
-
     },
     openChat () {
       // called when the user clicks on the fab button to open the chat
