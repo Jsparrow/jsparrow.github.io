@@ -23,11 +23,14 @@ tags: ["Security"]
 
 ## Description
 
-This rule is applied in connection with an ORACLE DBMS and prevents injection by the escaping of user input before putting it in a SQL-query. The following classes are required:  
-[OracleCodec](https://javadoc.io/static/org.owasp.esapi/esapi/2.2.0.0/org/owasp/esapi/codecs/OracleCodec.html)  
-[Codec](https://javadoc.io/static/org.owasp.esapi/esapi/2.2.0.0/org/owasp/esapi/codecs/Codec.html)  
-[ESAPI](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/ESAPI.html)  
-User input may be done by an attacker and contain fragments of SQL code which change the intent of SQL-queries. A good Example is an input like ```1' or '1'='1``` when a user-id is required. To protect the system against this, the class ```ESAPI``` provides an ```Encoder``` with the method ```encodeForSQL```. This way the input is wrapped into an expression which cannot be interpreted as SQL code any more.  
+This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [ESAPI.encoder().encodeForSql(codec, input)](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
+In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL Injection vulnerabilities.  
+A typical example of a malicious user input containing fragments that can change the intent of the SQL query is `1' or '1'='1`. 
+When wrapped into `encodeForSql`, no part of the user input will be considered as code. For more details, see the examples below. 
+
+::: warning Note
+This technique of escaping user supplied input is database specific. The first version of this rule supports only Oracle DBMS. 
+:::
 
 ## Benefits
 
@@ -36,7 +39,10 @@ Prevents SQL injections.
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+Libraries: 
+* org.owasp.esapi.codecs.OracleCodec 
+* org.owasp.esapi.codecs.Codec 
+* org.owasp.esapi.ESAPI
 :::
 
 ::: tip Tags
