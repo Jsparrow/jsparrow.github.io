@@ -3,7 +3,7 @@ title: Escape User Inputs in SQL Queries
 ruleId: EscapeUserInputsInSQLQueries
 since: 3.17.0
 minJavaVersion: 1.1
-remediationCost: 10
+remediationCost: 5
 links:
     - displayName: "Prepared Statements (with Parameterized Queries)"
       url: "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html#defense-option-4-escaping-all-user-supplied-input"
@@ -23,7 +23,11 @@ tags: ["Security"]
 
 ## Description
 
-This rule prevents Injection by escaping user input before putting it in a SQL-query. It can be applied when an ORACLE-database management system is used. 
+This rule is applied in connection with an ORACLE DBMS and prevents injection by the escaping of user input before putting it in a SQL-query. The following classes are required:  
+[OracleCodec](https://javadoc.io/static/org.owasp.esapi/esapi/2.2.0.0/org/owasp/esapi/codecs/OracleCodec.html)  
+[Codec](https://javadoc.io/static/org.owasp.esapi/esapi/2.2.0.0/org/owasp/esapi/codecs/Codec.html)  
+[ESAPI](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/ESAPI.html)  
+User input may be done by an attacker and contain fragments of SQL code which change the intent of SQL-queries. A good Example is an input like ```1' or '1'='1``` when a user-id is required. To protect the system against this, the class ```ESAPI``` provides an ```Encoder``` with the method ```encodeForSQL```. This way the input is wrapped into an expression which cannot be interpreted as SQL code any more.  
 
 ## Benefits
 
@@ -56,27 +60,8 @@ ResultSet resultSet = statement.getResultSet();
 __Post__
 ```java
 HttpServletRequest req = getRequest();
-Codec<Character> ORACLE_CODEC = new OracleCodec();
-String query = "SELECT first_name FROM employee WHERE department_id ='" +  ESAPI.encoder().encodeForSQL(ORACLE_CODEC, req.getParameter("departmentId")) + "' ORDER BY last_name";
-Statement statement = connection.createStatement();
-statement.execute(query);
-ResultSet resultSet = statement.getResultSet();
-```
-
-__Pre__
-```java
-String departmentId = "40 OR '1'='1";
-String query = "SELECT first_name FROM employee WHERE department_id ='" + departmentId + "' ORDER BY last_name";		
-Statement statement = connection.createStatement();
-statement.execute(query);
-ResultSet resultSet = statement.getResultSet();
-```
-
-__Post__
-```java
-String departmentId = "40 OR '1'='1";
-Codec<Character> ORACLE_CODEC = new OracleCodec();
-String query = "SELECT first_name FROM employee WHERE department_id ='" + ESAPI.encoder().encodeForSQL(ORACLE_CODEC, departmentId) + "' ORDER BY last_name";		
+Codec<Character> oracleCodec = new OracleCodec();
+String query = "SELECT first_name FROM employee WHERE department_id ='" +  ESAPI.encoder().encodeForSQL(oracleCodec, req.getParameter("departmentId")) + "' ORDER BY last_name";
 Statement statement = connection.createStatement();
 statement.execute(query);
 ResultSet resultSet = statement.getResultSet();
@@ -95,25 +80,8 @@ ResultSet resultSet = statement.executeQuery(query);
 __Post__
 ```java
 HttpServletRequest req = getRequest();
-Codec<Character> ORACLE_CODEC = new OracleCodec();
-String query = "SELECT first_name FROM employee WHERE department_id ='" + ESAPI.encoder().encodeForSQL(ORACLE_CODEC, req.getParameter("departmentId")) + "' ORDER BY last_name";
-Statement statement = connection.createStatement();
-ResultSet resultSet = statement.executeQuery(query);
-```
-
-__Pre__
-```java
-String departmentId = "40 OR '1'='1";
-String query = "SELECT first_name FROM employee WHERE department_id ='" + departmentId + "' ORDER BY last_name";
-Statement statement = connection.createStatement();
-ResultSet resultSet = statement.executeQuery(query);
-```
-
-__Post__
-```java
-String departmentId = "40 OR '1'='1";
-Codec<Character> ORACLE_CODEC = new OracleCodec();
-String query = "SELECT first_name FROM employee WHERE department_id ='" + ESAPI.encoder().encodeForSQL(ORACLE_CODEC, departmentId) + "' ORDER BY last_name";
+Codec<Character> oracleCodec = new OracleCodec();
+String query = "SELECT first_name FROM employee WHERE department_id ='" + ESAPI.encoder().encodeForSQL(oracleCodec, req.getParameter("departmentId")) + "' ORDER BY last_name";
 Statement statement = connection.createStatement();
 ResultSet resultSet = statement.executeQuery(query);
 ```
@@ -134,37 +102,13 @@ ResultSet resultSet = statement.executeQuery(query);
 __Post__
 ```java
 HttpServletRequest req = getRequest();
-Codec<Character> ORACLE_CODEC = new OracleCodec();
+Codec<Character> oracleCodec = new OracleCodec();
 String query = "SELECT first_name FROM employee WHERE";
-query += " id > '" + ESAPI.encoder().encodeForSQL(ORACLE_CODEC, req.getParameter("id")) + "'";
-query += " AND department_id ='" + ESAPI.encoder().encodeForSQL(ORACLE_CODEC, req.getParameter("departmentId")) + "'";
+query += " id > '" + ESAPI.encoder().encodeForSQL(oracleCodec, req.getParameter("id")) + "'";
+query += " AND department_id ='" + ESAPI.encoder().encodeForSQL(oracleCodec, req.getParameter("departmentId")) + "'";
 query += " ORDER BY last_name";
 Statement statement = connection.createStatement();
 ResultSet resultSet = statement.executeQuery(query);
 ```
 
-__Pre__
-```java
-String departmentId = "40 OR '1'='1";
-String id = "10";
-String query = "SELECT first_name FROM employee WHERE";
-query += " id > '" + id + "'";
-query += " AND department_id ='" + departmentId + "'";
-query += " ORDER BY last_name";
-Statement statement = connection.createStatement();
-ResultSet resultSet = statement.executeQuery(query);
-```
-
-__Post__
-```java
-String departmentId = "40 OR '1'='1";
-String id = "10";
-Codec<Character> ORACLE_CODEC = new OracleCodec();
-String query = "SELECT first_name FROM employee WHERE";
-query += " id > '" + ESAPI.encoder().encodeForSQL(ORACLE_CODEC, id) + "'";
-query += " AND department_id ='" + ESAPI.encoder().encodeForSQL(ORACLE_CODEC, departmentId) + "'";
-query += " ORDER BY last_name";
-Statement statement = connection.createStatement();
-ResultSet resultSet = statement.executeQuery(query);
-```
 <VersionNotice />
