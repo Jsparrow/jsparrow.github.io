@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.14.0 <Badge vertical="middle" text="20.05.2020"/>
+
+Another security rule is shipped with release 2.14.0 of the jSparrow Maven Plugin:
+
+* [Escape User Inputs in SQL Queries](/rules/escape-user-inputs-in-sql-queries.html)
+
 ## 2.13.0 <Badge vertical="middle" text="16.04.2020"/>
 
 A new rule is shipped with release 2.13.0 of the jSparrow Maven Plugin:

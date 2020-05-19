@@ -5,6 +5,21 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.17.0 <Badge vertical="middle" text="20.05.2020"/>
+
+The [75<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.17.0. It reduces security flaws by escaping user supplied inputs concatenated with SQL queries.
+
+### New Rule
+#### [**Escape User Inputs in SQL Queries**](/rules/escape-user-inputs-in-sql-queries.html)
+
+This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [ESAPI.encoder().encodeForSql(codec, input)](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
+In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL Injection vulnerabilities.  
+
+
+### Fixed Bugs
+#### Referencing Instance Methods in Lambda Expressions
+This fix relates to invocations of methods declared in Object class, default methods, and `this` keyword when transforming anonymous classes to lambda expressions.
+
 ## 3.16.0 <Badge vertical="middle" text="16.04.2020"/>
 
 The [74<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.16.0. It reduces security flaws by utilizing parameterized queries.
