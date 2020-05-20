@@ -9,6 +9,7 @@ module.exports = [
 '',
 'brackets-to-control',
 'collapse-if-statements',
+'escape-user-inputs-in-sql-queries',
 'hide-default-constructor-in-utility-classes',
 'insert-break-statement-in-loops',
 'make-fields-and-variables-final',
