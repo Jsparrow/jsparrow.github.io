@@ -75,6 +75,7 @@ export default {
       newMessagesCount: 1,
       isChatOpen: false, // to determine whether the chat window should be open or closed
       showTypingIndicator: '', // when set to a value matching the participant.id it shows the typing indicator for the specific user
+      responseTimeout: 700,
       colors: {
         header: {
           bg: '#4e8cff',
@@ -123,11 +124,16 @@ export default {
         this.isReply = false
         return
       }
+      this.showTypingIndicator = 'support'
       this.isReply = true
 
       //this.findReplyKey(choice)
       var key = this.findChoiceKey(choice)
-      this.sendMessage(key)
+      setTimeout(() => {
+        this.sendMessage(key);
+        this.showTypingIndicator = ''
+        }, this.responseTimeout);
+      
     },
     findChoiceKey(choice) {
       for(let[key, questionObject] of Object.entries(this.db)) {
