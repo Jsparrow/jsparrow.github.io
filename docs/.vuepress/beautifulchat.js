@@ -37,7 +37,7 @@ module.exports = {
     whatIsJEP: {
       questions: ['What is jSparrow Eclipse Plugin?'],
       answers: ['jSparrow Eclipse Plugin is ...'],
-      nextSuggestions: ['whatIsRle', 'whatIsJMP', 'whatIsJGA'],
+      nextSuggestions: ['whatIsRule', 'whatIsJMP', 'whatIsJGA'],
     },
 
     whatIsJMP: {
@@ -65,7 +65,7 @@ module.exports = {
     },
 
     whichPlatforms: {
-      questions: ['Which platorm does jSparrow support'],
+      questions: ['Which platforms does jSparrow support'],
       answers: ['jSparrow is available for Eclipse, Maven, and GitHub apps'],
       nextSuggestions: ['whatIsJEP', 'whatIsJMP', 'whatIsJGA'],
     },
