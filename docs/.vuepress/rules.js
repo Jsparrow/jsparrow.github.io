@@ -72,6 +72,7 @@ module.exports = [
 'optional-if-present-or-else',
 'optional-map',
 'use-parameterized-query',
+'use-parameterized-jpa-query',
 'string-format-line-separator',
 'lambda-for-each-if-wrapper-to-filter',
 'lambda-for-each-map',
