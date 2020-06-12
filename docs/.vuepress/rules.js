@@ -60,6 +60,7 @@ module.exports = [
 'string-buffer-to-builder',
 'standard-logger',
 'override-annotation',
+'use-arrays-stream',
 'buffered-reader-lines',
 'use-collections-singleton-list',
 'collections-factory-methods',
