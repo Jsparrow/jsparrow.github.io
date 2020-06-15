@@ -1,9 +1,9 @@
 ---
 title: RULE_NAME
 ruleId: RULE_ID
-since: JSPARROW_VERSION
-minJavaVersion: MIN_REQUIRED_JAVA_VERSION
-remediationCost: REMEDIATION_COST
+since: [e.g. 3.18.0]
+minJavaVersion: [e.g.: 1.1, 1.2, 1.3, 1.4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, ....]
+remediationCost: [e.g.: 1, 2, 5, 10, 15]
 links:
     - displayName: "[sid, rule_name, ...]"
       url: "[URL]"
