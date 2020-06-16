@@ -9,7 +9,7 @@ links:
       url: "https://software-security.sans.org/developer-how-to/fix-sql-injection-in-java-persistence-api-jpa"
     
 description:
-    This rule prevents SQL injections by parameterizing vulnerable concats of a JPQL query string. Thus user input can only be considered as data and not as code.
+    This rule prevents SQL injections by parameterizing vulnerable concats of a JPQL query string. Thus, vulnerable fragments of JPQL query string can only be considered as data and not as code.
 tags: ["Security"]
 ---
 
@@ -36,7 +36,9 @@ Prevents SQL injections when using the Java Persistence API (JPA).
 ## Requirement & Tags
 
 ::: warning Requirements
-Java 1.1
+Works if the Query and the EntityManager have the respective following types:
+* [`javax.persistence.Query`](https://docs.oracle.com/javaee/7/api/javax/persistence/Query.html)
+* [`javax.persistence.EntityManager`](https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html)
 :::
 
 ::: tip Tags
@@ -45,25 +47,23 @@ Java 1.1
 
 ## Code Changes
 
-
-
 ### Using Query get single result
 
 __Pre__
 ```java
-	String orderId = "1 OR 1 = 1";
-	EntityManager entityManager = getEntityManager();
-	Query jpqlQuery = entityManager.createQuery("Select order from Orders order where order.id = " + orderId);
-	Object singleResult = jpqlQuery.getSingleResult();
+String orderId = "1 OR 1 = 1";
+EntityManager entityManager = getEntityManager();
+Query jpqlQuery = entityManager.createQuery("Select order from Orders order where order.id = " + orderId);
+Object singleResult = jpqlQuery.getSingleResult();
 ```
 
 __Post__
 ```java
-	String orderId = "1 OR 1 = 1";
-	EntityManager entityManager = getEntityManager();
-	Query jpqlQuery = entityManager.createQuery("Select order from Orders order where order.id =  ?1");
-	jpqlQuery.setParameter(1, orderId);
-	Object singleResult = jpqlQuery.getSingleResult();
+String orderId = "1 OR 1 = 1";
+EntityManager entityManager = getEntityManager();
+Query jpqlQuery = entityManager.createQuery("Select order from Orders order where order.id =  ?1");
+jpqlQuery.setParameter(1, orderId);
+Object singleResult = jpqlQuery.getSingleResult();
 ```
 
 
@@ -71,24 +71,24 @@ __Post__
 
 __Pre__
 ```java
-	String orderId1 = "1000000000";
-	String orderId2 = "1 OR 1 = 1";
-	EntityManager entityManager = getEntityManager();
-	Query jpqlQuery = entityManager.createQuery(
-			"Select order from Orders order where order.id = " + orderId1 + " or order.id = " + orderId2);
-	List resultList = jpqlQuery.getResultList();
+String orderId1 = "1000000000";
+String orderId2 = "1 OR 1 = 1";
+EntityManager entityManager = getEntityManager();
+Query jpqlQuery = entityManager.createQuery(
+		"Select order from Orders order where order.id = " + orderId1 + " or order.id = " + orderId2);
+List resultList = jpqlQuery.getResultList();
 ```
 
 __Post__
 ```java
-	String orderId1 = "1000000000";
-	String orderId2 = "1 OR 1 = 1";
-	EntityManager entityManager = getEntityManager();
-	Query jpqlQuery = entityManager
-			.createQuery("Select order from Orders order where order.id =  ?1" + " or order.id =  ?2");
-	jpqlQuery.setParameter(1, orderId1);
-	jpqlQuery.setParameter(2, orderId2);
-	List resultList = jpqlQuery.getResultList();
+String orderId1 = "1000000000";
+String orderId2 = "1 OR 1 = 1";
+EntityManager entityManager = getEntityManager();
+Query jpqlQuery = entityManager
+		.createQuery("Select order from Orders order where order.id =  ?1" + " or order.id =  ?2");
+jpqlQuery.setParameter(1, orderId1);
+jpqlQuery.setParameter(2, orderId2);
+List resultList = jpqlQuery.getResultList();
 ```
 
 
