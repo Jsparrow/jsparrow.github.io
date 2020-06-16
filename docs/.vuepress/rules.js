@@ -8,6 +8,7 @@ Fill in a new page, at a position, so that the page title will be sorted alphabe
 module.exports = [
 '',
 'brackets-to-control',
+'avoid-concatenation-in-logging-statements',
 'collapse-if-statements',
 'escape-user-inputs-in-sql-queries',
 'hide-default-constructor-in-utility-classes',
