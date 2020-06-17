@@ -123,3 +123,8 @@ __Pre__
 ```
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

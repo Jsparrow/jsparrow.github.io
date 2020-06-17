@@ -62,3 +62,9 @@ list.stream()
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

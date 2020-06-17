@@ -103,3 +103,9 @@ A file cannot be automatically renamed on any of the following condition:
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

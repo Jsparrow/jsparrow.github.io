@@ -89,3 +89,9 @@ public class TestSerialVersionUidRule {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

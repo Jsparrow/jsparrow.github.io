@@ -207,3 +207,9 @@ public void transformedTryWithResource(String path) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

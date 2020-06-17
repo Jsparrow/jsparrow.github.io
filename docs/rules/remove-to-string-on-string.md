@@ -117,3 +117,9 @@ public void transformed(String value) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

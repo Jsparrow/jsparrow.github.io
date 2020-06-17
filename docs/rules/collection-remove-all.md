@@ -77,3 +77,9 @@ public String testIfCollectionIsEmpty(String input){
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

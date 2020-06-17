@@ -99,3 +99,9 @@ __Post__
 ```
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

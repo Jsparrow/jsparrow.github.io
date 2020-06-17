@@ -150,3 +150,9 @@ public void transformed(boolean b) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

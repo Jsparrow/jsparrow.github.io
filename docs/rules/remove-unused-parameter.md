@@ -83,3 +83,9 @@ The non-private methods are not modified by this rule because they could be invo
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

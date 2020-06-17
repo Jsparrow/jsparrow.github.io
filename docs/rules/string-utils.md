@@ -228,3 +228,9 @@ public boolean testEqualsIgnoreCase(String testString) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

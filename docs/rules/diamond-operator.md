@@ -69,3 +69,9 @@ List<GenericSample> result = foo.genericMethod(new ArrayList<>(), input);
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

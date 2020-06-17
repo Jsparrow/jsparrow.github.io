@@ -110,3 +110,9 @@ return strings.stream().anyMatch(value -> emptyString.equals(value));
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

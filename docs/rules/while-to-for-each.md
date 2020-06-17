@@ -74,3 +74,9 @@ Loops where the body modifies the iterator in some way will not be transformed.
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

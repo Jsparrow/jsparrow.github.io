@@ -85,3 +85,9 @@ public class OrganiseImportsRule {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

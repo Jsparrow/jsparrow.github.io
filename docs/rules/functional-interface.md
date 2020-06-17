@@ -141,3 +141,9 @@ Variables that are used inside the anonymous class must be effectively final.
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

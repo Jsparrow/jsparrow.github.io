@@ -101,3 +101,9 @@ public void sortUsersById(List<User> users) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

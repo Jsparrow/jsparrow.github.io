@@ -86,3 +86,9 @@ enum Foo {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

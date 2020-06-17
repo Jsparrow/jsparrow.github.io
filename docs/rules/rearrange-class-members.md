@@ -144,3 +144,9 @@ public class RearrangeClassMembersRule {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -91,3 +91,9 @@ class Foo {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

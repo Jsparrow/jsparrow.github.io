@@ -96,3 +96,9 @@ public interface InterfaceWithProperties {
 ```
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

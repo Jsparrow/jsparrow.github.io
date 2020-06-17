@@ -84,3 +84,9 @@ public class TestStringFormatLineSeparatorRule {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

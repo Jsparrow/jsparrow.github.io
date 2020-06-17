@@ -93,3 +93,8 @@ List resultList = jpqlQuery.getResultList();
 
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

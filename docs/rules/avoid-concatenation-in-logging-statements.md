@@ -110,3 +110,8 @@ logger.info("A " + 1 + " B {}", 2);
 ```
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -115,3 +115,8 @@ Stream.of(stringArray)
 
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

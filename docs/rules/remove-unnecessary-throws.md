@@ -96,3 +96,9 @@ public void throwingRuntimeException() {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

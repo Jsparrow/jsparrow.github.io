@@ -77,3 +77,9 @@ if (!a.equals(b)) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

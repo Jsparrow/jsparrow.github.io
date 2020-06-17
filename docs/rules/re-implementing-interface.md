@@ -79,3 +79,9 @@ class Parent implements Observer {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -118,3 +118,8 @@ ResultSet resultSet = statement.executeQuery(query);
 ```
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

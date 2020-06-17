@@ -133,3 +133,9 @@ The rule can be applied if a map type is present, a call to map.put(..) is prese
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

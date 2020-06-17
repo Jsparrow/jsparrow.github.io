@@ -88,3 +88,9 @@ users.entrySet()
 ```
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
