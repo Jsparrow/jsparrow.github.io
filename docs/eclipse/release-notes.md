@@ -30,21 +30,21 @@ Otherwise, the same stream generation is replaced with the short hand method [St
 
 ### Fixed Bugs
 
-#### Identifying Reassignments of Private Fields
+#### [**Make Fields And Variables Final**](/rules/make-fields-and-variables-final.html)
 
-Avoids converting a field to final if it is reassigned in the constructors or initializers of inner classes. 
+* Avoids converting a field to final if it is reassigned in the constructors or initializers of inner classes. 
 
-#### Using `this` keyword in anonymous classes
+#### [**Use Functional Interfaces**](/rules/functional-interface.html)
 
-Prevents transforming an anonymous class into a lambda expression in a some cases where occurrences of `this` keyword refers to the instance of the anonymous class. 
+* Prevents transforming an anonymous class into a lambda expression in a some cases where occurrences of `this` keyword refers to the instance of the anonymous class. 
 
-#### Replace StringBuffer with StringBuilder
+#### [**StringBuffer() to StringBuilder()**](/rules/string-buffer-to-builder.html)
 
 Prevents replacing a StringBuffer with a StringBuilder in case the original StringBuffer variable implicitly determines the type of the returned value. 
 
-#### Replace For-Loop with Stream::forEach 
+#### [**Replace For-Loop with Stream::forEach**](/rules/enhanced-for-loop-to-stream-for-each.html)
 
-Using explicit parameter type for the lambda expression of the Stream::forEach, in certain cases when the loop parameter has a generic type. 
+* Using explicit parameter type for the lambda expression of the Stream::forEach, in certain cases when the loop parameter has a generic type. 
 
 ## 3.17.0 <Badge vertical="middle" text="20.05.2020"/>
 
@@ -58,8 +58,8 @@ In this way, the contents of the user input will only be considered as values an
 
 
 ### Fixed Bugs
-#### Referencing Instance Methods in Lambda Expressions
-This fix relates to invocations of methods declared in Object class, default methods, and `this` keyword when transforming anonymous classes to lambda expressions.
+#### [**Use Functional Interfaces**](/rules/functional-interface.html)
+* This fix relates to invocations of methods declared in Object class, default methods, and `this` keyword when transforming anonymous classes to lambda expressions.
 
 ## 3.16.0 <Badge vertical="middle" text="16.04.2020"/>
 
@@ -72,8 +72,8 @@ This rule replaces a [java.sql.Statement](https://docs.oracle.com/javase/8/docs/
 Parameterized queries enforce a distinction between the SQL code and the data passed through parameters.
 
 ### Fixed Bugs
-#### Referencing constants in lambda expressions
-Fixes unqualified field references when transforming an anonymous class into a lambda expression. 
+#### [**Use Functional Interfaces**](/rules/functional-interface.html)
+* Fixes unqualified field references when transforming an anonymous class into a lambda expression. 
 
 ## 3.15.0 <Badge vertical="middle" text="19.03.2020"/>
 
@@ -262,7 +262,7 @@ This new rule finds and removes the unused parameters in private methods.
 As a result, all the references of the affected method are updated accordingly.
 
 ### Fixed Bugs
-#### StringBuffer() to StringBuilder()
+#### [**StringBuffer() to StringBuilder()**](/rules/string-buffer-to-builder.html)
 
 * Avoid type incompatibilities in assignments and return statements when replacing a `StringBuffer` by a `StringBuilder`.  
 
