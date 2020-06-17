@@ -8,7 +8,7 @@ links:
 description:
     Replace static invocations of 'Collections.sort(List, Comparator)' with 'List.sort(Comparator)'.
 
-tags: ["Java 1.8", "Old Language Constructs", "Coding Conventions", "Readability"]
+tags: ["Java 8", "Old Language Constructs", "Coding Conventions", "Readability"]
 ---
 
 # Replace Collection.sort with List.sort

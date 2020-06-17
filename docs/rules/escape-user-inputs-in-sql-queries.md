@@ -10,7 +10,7 @@ links:
     
 description:
     Rule description.
-tags: ["Security"]
+tags: ["Java 1.1", "Security"]
 ---
 
 # Escape User Inputs in SQL Queries

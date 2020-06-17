@@ -10,7 +10,7 @@ links:
     
 description:
     This rule prevents SQL injections by parameterizing vulnerable concats of a JPQL query string. Thus, vulnerable fragments of JPQL query string can only be considered as data and not as code.
-tags: ["Security"]
+tags: ["Java 1.1", "Security"]
 ---
 
 # Use Parameterized JPA Query

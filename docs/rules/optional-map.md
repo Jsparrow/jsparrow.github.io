@@ -9,7 +9,7 @@ description:
     Extracts an Optional::map from the consumer used in Optional::ifPresent. 
     This makes complicated code blocks easier to read and reuse.
 
-tags: ["Java 1.8", "Coding Conventions", "Lambda", "Readability"]
+tags: ["Java 8", "Coding Conventions", "Lambda", "Readability"]
 ---
 
 # Use Optional::map
