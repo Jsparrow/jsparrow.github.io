@@ -102,6 +102,11 @@ try {
 
 ## Limitations
 
-This rule does not apply to any logging messages use concatenation but already contains parameters (other than a `Throwable` parameter). In such cases, it is assumed that a deliberate decision has been made. 
+This rule does not apply to logging messages that use concatenation but already contain parameters (other than a `Throwable` parameter). In such cases, it is assumed that a deliberate decision has been made. See examples below:
+
+```java
+// this will not transform
+logger.info("A " + 1 + " B {}", 2);
+```
 
 <VersionNotice />

@@ -103,7 +103,7 @@ String value = new StringBuilder().append(5)
 
 ## Limitations
 
-If at least two of the first operands of the expression are numeric additions then the expression is evaluated by java as numeric expression rather than String expression. Therefore, the transformation is not performed. E.g.:
+If at least two of the first operands of the expression are numeric additions then the expression is evaluated by Java as numeric expression rather than String expression. Therefore, the transformation is not performed. E.g.:
 
 __Pre__
 

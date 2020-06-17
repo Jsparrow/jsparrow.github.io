@@ -24,7 +24,7 @@ tags: ["Free", "Java 1.1", "Formatting", "Readability"]
 
 ## Description
 
-Organizes the imports of a java class. Removes unused imports and applies an alphanumeric order.   
+Organizes the imports of a Java class. Removes unused imports and applies an alphanumeric order.   
 
 ## Benefits
 
