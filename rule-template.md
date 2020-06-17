@@ -9,8 +9,8 @@ links:
       url: "[URL]"
     
 description:
-    Rule description.
-tags: ["String Manipulation", "Performance", "Lambda", "Old Language Constructs", "Loop", "Readability", "Formatting", "Coding Conventions", "Logging", "Free"]
+    Short rule description (this is shown on the [summary page](https://jsparrow.github.io/rules/#summary)).
+tags: ["Java 1.1", "Java 1.2", "Java 1.3", "Java 1.4", "Java 5", "Java 7", "Java 8", "Java 9", "Java 10", "String Manipulation", "Performance", "Lambda", "Old Language Constructs", "Loop", "Readability", "Formatting", "Coding Conventions", "Logging", "Free"]
 ---
 
 # Rulename
@@ -23,17 +23,21 @@ tags: ["String Manipulation", "Performance", "Lambda", "Old Language Constructs"
 
 ## Description
 
+Longer description of the rule.
+
+::: warning Requirements (Optional)
+(optional) Java 9 (only add Java version 9 or above here)
+
+(optional) Are classpath entries required? -> Specify specify which one. See example below:
+Activation of this rule requires the following classpath entries to be present:
+* (fully qualified name)
+
+(optional) Does the rule only work with a specific type (e.g., it only works on org.slf4j.Logger and no other Logger)? -> state that as a requirement! See example below:
+Works on the following types and implementations of them:
+* (fully qualified name)
+:::
+
 ## Benefits
-
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Configuration (Optional)
 
@@ -71,3 +75,9 @@ __Post__
 ## Limitations (Optional)
 
 <VersionNotice />
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
