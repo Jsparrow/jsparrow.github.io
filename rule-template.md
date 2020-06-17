@@ -28,12 +28,12 @@ Longer description of the rule.
 ::: warning Requirements (Optional)
 (optional) Java 9 (only add Java version 9 or above here)
 
-(optional) Are classpath entries required? -> Specify specify which one. See example below:
+(optional) Are classpath entries required? -> Specify which one. See example below:
 Activation of this rule requires the following classpath entries to be present:
 * (fully qualified name)
 
-(optional) Does the rule only work with a specific type (e.g., it only works on org.slf4j.Logger and no other Logger)? -> state that as a requirement! See example below:
-Works on the following types and implementations of them:
+(optional) Does the rule only work with a specific type on a third-party library (e.g., it only works on org.slf4j.Logger and no other Logger)? -> state that as a requirement! See example below:
+This rule works on the following types and implementations of them:
 * (fully qualified name)
 :::
 
@@ -73,6 +73,12 @@ __Post__
 ```
 
 ## Limitations (Optional)
+
+Limitations are use cases that are not covered by the requirements. Example reasons: 
+* API not supporting a use case 
+* It becoms exeptionally hard to cover uncommon use cases and therefore a relaxed implementation of the rule is acceptable (see [Avoid Concatenation in Logging Statements](https://jsparrow.github.io/rules/avoid-concatenation-in-logging-statements.html#limitations))
+
+An example code snippet could make sense. 
 
 <VersionNotice />
 
