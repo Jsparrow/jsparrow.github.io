@@ -26,15 +26,6 @@ Transforms enhanced for-loops which are only used for summing up the elements of
 
 Applying this rule yields no major performance benefits. One could argue that readability is somewhat improved, at least if one is familiar with lambdas.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

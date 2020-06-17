@@ -32,15 +32,6 @@ Applying this rule has slight performance benefits and arguably improves readabi
 The Java compiler will convert the `+` operation to use a `StringBuilder`.
 The more concatenations occur, the bigger the performance gain is.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

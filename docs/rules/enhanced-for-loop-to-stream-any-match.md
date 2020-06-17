@@ -28,15 +28,6 @@ The stream syntax is more concise and improves readability.
 ## Benefits
 Applying this rule results in better readability.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

@@ -30,15 +30,6 @@ This transformation is feasible only if the entire consumer's body is wrapped in
 
 Arguably, the lambda expression is easier to read and can be combined with other `Optional` operations.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

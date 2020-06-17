@@ -28,15 +28,6 @@ This rule transforms an if-Statement (without an else statement), which wraps th
 
 This rule provides an easier-to read alternative to filter items in a list.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

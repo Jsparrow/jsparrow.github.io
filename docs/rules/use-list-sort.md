@@ -28,15 +28,6 @@ Replace static invocations of `Collections.sort(List, Comparator)` with `List.so
 
 Improves the readability by utilizing the Java 8 extensions of the `List` API. 
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

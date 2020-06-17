@@ -35,15 +35,6 @@ The Collections which are created with `Collections.unmodifiable...()` throw an
 
 Applying this rule helps avoid common errors by making sure a static final field is always modifiable.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.2
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

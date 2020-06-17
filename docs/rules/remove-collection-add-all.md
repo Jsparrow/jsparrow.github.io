@@ -33,15 +33,6 @@ In order to apply the rule, the following two statements must occur:
 
 Reducing lines of code and improving readability.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.2
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

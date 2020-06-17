@@ -28,15 +28,6 @@ A performance improvement can be observed with the increase of the number of ele
 
 Improves performance and reduces code clutter. 
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

@@ -32,15 +32,6 @@ Replaces [`Arrays.asList`](https://docs.oracle.com/javase/8/docs/api/java/util/A
 
 Improves the efficiency of creating short lists. 
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.3
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

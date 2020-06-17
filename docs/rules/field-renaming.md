@@ -35,15 +35,6 @@ Furthermore, they should not start with underscore `_` or with dollar sign `$` e
 Sharing some naming conventions is a key point to make it possible for a team to efficiently collaborate.
 Thus, this rule improves readability, while at the same time helps avoid conflicts and programming errors.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Configuration
 

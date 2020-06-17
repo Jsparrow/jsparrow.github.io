@@ -30,16 +30,6 @@ Checks if braces are used to encapsulate control statements and adds them if the
 
 While not technically incorrect, the omission of curly braces can be misleading, and may lead to the introduction of errors during maintenance. Applying this read helps avoid such errors and improves readability.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Code Changes
 
 ### if

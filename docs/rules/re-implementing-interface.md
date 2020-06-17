@@ -30,15 +30,6 @@ These interfaces are inherited from the super class.
 
 Removing redundant syntax improves readability.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

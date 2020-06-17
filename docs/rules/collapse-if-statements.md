@@ -33,16 +33,6 @@ If the concatenation results to an infix expression with more than two component
 
 Improves the readability by reducing the number of the nested language constructs. 
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
-
 
 ## Code Changes
 

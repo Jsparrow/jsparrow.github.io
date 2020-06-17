@@ -29,15 +29,6 @@ This makes complicated code blocks easier to read and reuse.
 
 Arguably, the lambda expression is easier to read and can be combined with other `Optional` operations.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

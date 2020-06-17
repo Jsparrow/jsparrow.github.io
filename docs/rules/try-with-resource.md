@@ -32,15 +32,6 @@ the construct takes care of that.
 
 Applying this rule makes the code safer and more readable.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 7
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

@@ -29,15 +29,6 @@ Thus, eliminating redundant loop iterations.
 
 Improves performance by eliminating redundant cycles in Enhanced For-loops. 
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

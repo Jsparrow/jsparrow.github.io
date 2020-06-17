@@ -28,15 +28,6 @@ The rule first searches the next type-cast operation. If the expression is caste
 
 This rule increases readability by removing redundant code.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.1
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

@@ -29,24 +29,17 @@ By using the built-in string formatting of loggers, an evaluation will only happ
 
 This rule transforms logger statements where the message uses concatenation by introducing string formatting placeholders `{}` and moving the concatenated parts to be parameters.
 
-## Benefits
-
-Improved performance, especially in cases where concatenation is used at low logging levels, such as `debug`. 
-
-## Requirement & Tags
-
 ::: warning Requirements
-Works on the following loggers and implementations of them:
+This rule works on the following types and implementations of them:
 * [org.slf4j.Logger](http://www.slf4j.org/apidocs/org/slf4j/Logger.html) (includes [ch.qos.logback.classic.Logger](http://logback.qos.ch/apidocs/ch/qos/logback/classic/Logger.html))
 * [org.apache.logging.log4j.Logger](https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html) 
 :::
 
-::: tip Tags
-<TagLinks />
-:::
+## Benefits
+
+Improved performance, especially in cases where concatenation is used at low logging levels, such as `debug`. 
 
 ## Code Changes
-
 
 ### Introducing Parameters and Merging Strings
 

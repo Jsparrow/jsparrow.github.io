@@ -32,15 +32,6 @@ The rule can only be applied if the parameters of the lambda expression and the 
 
 Improves the readability by removing unnecessary syntax.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

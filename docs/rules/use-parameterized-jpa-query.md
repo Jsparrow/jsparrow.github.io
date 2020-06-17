@@ -29,21 +29,17 @@ Such a query string concatenation in JPQL may cause the same kind of vulnerabili
 This rule looks for queries of type [javax.persistence.Query](https://docs.oracle.com/javaee/7/api/javax/persistence/Query.html) which are created by [EntityManager::createQuery](https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#createQuery-java.lang.String-).
 The vulnerable concats of the JPQL query strings are parameterized, so that they can only be considered as data and not as code.
 
-## Benefits
-
-Prevents SQL injections when using the Java Persistence API (JPA).
-
-## Requirement & Tags
-
 ::: warning Requirements
-Works if the Query and the EntityManager have the respective following types:
+Activation of this rule requires the following classpath entries to be present:
+
 * [`javax.persistence.Query`](https://docs.oracle.com/javaee/7/api/javax/persistence/Query.html)
 * [`javax.persistence.EntityManager`](https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html)
 :::
 
-::: tip Tags
-<TagLinks />
-:::
+## Benefits
+
+Prevents SQL injections when using the Java Persistence API (JPA).
+
 
 ## Code Changes
 

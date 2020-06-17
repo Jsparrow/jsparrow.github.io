@@ -30,15 +30,6 @@ Organizes the imports of a Java class. Removes unused imports and applies an alp
 
 Imports that are not used are optimized away by the compiler. Regardless, they clutter up the file and might lead to confusion. Removing unused imports and applying alphanumeric order improves readability and maintainability.    
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

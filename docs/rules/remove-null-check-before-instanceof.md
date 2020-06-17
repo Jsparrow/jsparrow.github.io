@@ -31,15 +31,6 @@ Finds and removes null-checks before occurrences of `instanceof`. Since `null` i
 
 Improves readability by removing redundant code.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.1
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

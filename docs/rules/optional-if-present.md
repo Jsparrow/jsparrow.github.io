@@ -27,15 +27,6 @@ The usage of  `Optional.get` should be avoided in general because it can potenti
 
 Improves readability and enables the use of higher order functions on `Optional`.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

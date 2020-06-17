@@ -30,15 +30,6 @@ Finds and removes the unnecessary semicolons from the code blocks.
 
 Improves the readability, by removing code that do not produce any computation steps.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

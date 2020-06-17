@@ -30,16 +30,6 @@ Reformats code according to the coding conventions defined in Eclipse. For examp
 
 Applying this rule improves readability and helps avoid merge conflicts.   
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Code Changes
 
 __Pre__

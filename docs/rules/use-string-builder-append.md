@@ -30,15 +30,6 @@ Replaces the infix operator `+` over `String` concatenations with at least three
 
 Improves the performance of the String concatenations.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

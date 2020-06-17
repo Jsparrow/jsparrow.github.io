@@ -26,19 +26,13 @@ tags: ["Java 9", "Loop", "Lambda"]
 The Stream API in Java 9 is extended with the [`takeWhile`](https://docs.oracle.com/javase/9/docs/api/java/util/stream/Stream.html#takeWhile-java.util.function.Predicate-) method to get the prefix of a stream. 
 This rule replaces the enhanced for-loops iterating over the prefix of a collection with `Stream::takeWhile`. 
 
-
-## Benefits
-Applying this rule results in better readability and more compact code. 
-
-## Requirement & Tags
-
 ::: warning Requirements
 Java 9
 :::
 
-::: tip Tags
-<TagLinks />
-:::
+## Benefits
+Applying this rule results in better readability and more compact code. 
+
 
 ## Code Changes
 

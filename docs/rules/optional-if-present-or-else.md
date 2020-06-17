@@ -23,40 +23,16 @@ tags: ["Java 9", "Old Language Constructs", "Lambda"]
 
 It is common to have an else-statement following an Optional.isPresent check. 
 One of the extensions of the Optional API in Java 9 is [Optional.ifPresentOrElse](https://docs.oracle.com/javase/9/docs/api/java/util/Optional.html#ifPresentOrElse-java.util.function.Consumer-java.lang.Runnable-), which performs either a Consumer or a Runnable depending on the presence of the value. 
-This rule replaces an `isPresent` check followed by an else-statement with a single `ifPresentOrElse` invocation. E.g.:
-
-```java
-		Optional<User> optional = findById(id);
-		if(optional.isPresent()) {
-			User user = optional.get();
-			consume(user);
-		} else {
-			noUserFound();
-		}
-```
-
-is transformed to:
-
-```java
-		Optional<User> optional = findById(id);
-		optional.ifPresentOrElse(
-            user -> consume(user), 
-            () -> noUserFound());
-```
-
-## Benefits
-
-Improves readability and enables the use of higher order funtions on `Optional`.
-
-## Requirement & Tags
+This rule replaces an `isPresent` check followed by an else-statement with a single `ifPresentOrElse` invocation. 
 
 ::: warning Requirements
 Java 9
 :::
 
-::: tip Tags
-<TagLinks />
-:::
+## Benefits
+
+Improves readability and enables the use of higher order funtions on `Optional`.
+
 
 ## Code Changes
 

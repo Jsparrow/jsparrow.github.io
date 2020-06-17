@@ -30,15 +30,6 @@ Parameterized queries enforce a distinction between the SQL code and the data pa
 
 Prevents SQL injections.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.1
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 

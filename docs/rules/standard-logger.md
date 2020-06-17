@@ -48,6 +48,13 @@ class TopLevelClass {
 }
 ```
 
+::: warning Requirements
+This rule requires one of the following libraries to be present:
+* org.slf4j 
+* ch.qos.logback 
+* org.apache.log4j
+:::
+
 ## Benefits
 
 When logging a message there are several important requirements which must be fulfilled:   
@@ -56,16 +63,6 @@ When logging a message there are several important requirements which must be fu
 * Logged data must actually be recorded  
 * Sensitive data must only be logged securely  
 If a program directly writes to the standard outputs, there is absolutely no way to comply with those requirements. Using this rule satisfies the requirements.  
-
-## Requirement & Tags
-
-::: warning Requirements
-Libraries (any of the following): org.slf4j | ch.qos.logback | org.apache.log4j
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Configuration
 

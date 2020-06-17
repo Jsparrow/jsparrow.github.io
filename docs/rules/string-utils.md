@@ -22,21 +22,17 @@ tags: ["Java 1.1", "String Manipulation"]
 ## Description
 
 This rule replaces various String methods with their null-safe counterparts from StringUtils.
-For example, `"String".trim()` becomes `StringUtils.trim("String")`.   
+For example, `"String".trim()` becomes `StringUtils.trim("String")`.
+
+::: warning Requirements
+Activation of this rule requires the following classpath entry to be present:
+* org.apache.commons.lang3.StringUtils
+:::
 
 ## Benefits
 
 Using StringUtils helps avoid a number of issues, such as null pointer exceptions. Depending on the specific methods readability, performance and others may also be improved. In short: StringUtils is just generally better.   
 
-## Requirement & Tags
-
-::: warning Requirements
-Libraries: org.apache.commons.lang3.StringUtils
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Implemented Methods
 

@@ -30,15 +30,6 @@ Converts anonymous inner classes to equivalent lambda expressions.
 
 Increases the performance, because lesser objects need to be created. Improves readability because a lot of boilerplate code will be removed.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
