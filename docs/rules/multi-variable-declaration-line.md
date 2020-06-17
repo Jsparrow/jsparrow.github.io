@@ -33,15 +33,6 @@ This is recommended by the Code Conventions for the Java Programming Language.
 
 Applying this rule makes the code easier to read.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -86,3 +77,9 @@ enum Foo {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -31,15 +31,6 @@ If the deprecated constructor is used in a field initialization, then an initial
 
 The major advantage of this rule is that you get rid of the long deprecated Date constructors.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -113,3 +104,9 @@ Another deprecated `java.util.Date` constructor is `new Date(String s)` and is n
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

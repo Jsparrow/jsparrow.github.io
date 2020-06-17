@@ -28,15 +28,6 @@ This makes complicated code blocks easier to read and reuse.
 ## Benefits
 Arguably the lambda expression is easier to read and can be combined with other stream operations.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -62,3 +53,9 @@ list.stream()
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

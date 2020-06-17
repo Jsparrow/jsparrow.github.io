@@ -31,15 +31,6 @@ For example, `"string".toString()` becomes `"string"`.
 
 As the Java compiler will get rid of the redundant method call, there are no performance benefits.  However, removing the call improves readability of the code.  
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.1
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -117,3 +108,9 @@ public void transformed(String value) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

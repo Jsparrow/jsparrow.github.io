@@ -7,7 +7,7 @@ remediationCost: 5
     
 description:
     Replaces stream Collectors that are used for concatenating values of a collection with StringJoiner.
-tags: ["Performance", "String Manipulation"]
+tags: ["Java 5", "Performance", "String Manipulation"]
 ---
 
 # Use String Join
@@ -28,15 +28,6 @@ A performance improvement can be observed with the increase of the number of ele
 
 Improves performance and reduces code clutter. 
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -111,3 +102,8 @@ public void transformed(List<String> values) {
 ```
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

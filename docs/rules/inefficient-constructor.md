@@ -30,15 +30,6 @@ All calls to a constructor of a primitive type will be replaced by the correspon
 
 Using this rule saves memory and CPU cycles, as the constructors are not needed in this case. Furthermore, the constructors are deprecated in Java 9, which is an indication that they will eventually be removed from the language altogether.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -133,3 +124,9 @@ public void transformed() {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

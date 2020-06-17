@@ -10,7 +10,7 @@ links:
     
 description:
     Rule description.
-tags: ["Security"]
+tags: ["Java 1.1", "Security"]
 ---
 
 # Escape User Inputs in SQL Queries
@@ -28,26 +28,16 @@ In this way, the contents of the user input will only be considered as values an
 A typical example of a malicious user input containing fragments that can change the intent of the SQL query is `1' or '1'='1`. 
 When wrapped by `encodeForSql(...)`, no part of the user input will be considered as code. For more details, see the examples below. 
 
-::: warning Note
-This technique of escaping user supplied input is database specific. The first version of this rule supports only Oracle DBMS. 
-:::
-
-## Benefits
-
-Prevents SQL injections.
-
-## Requirement & Tags
-
 ::: warning Requirements
-Libraries: 
+Activation of this rule requires the following classpath entries to be present:
 * org.owasp.esapi.codecs.OracleCodec 
 * org.owasp.esapi.codecs.Codec 
 * org.owasp.esapi.ESAPI
 :::
 
-::: tip Tags
-<TagLinks />
-:::
+## Benefits
+
+Prevents SQL injections.
 
 ## Code Changes
 
@@ -117,4 +107,13 @@ Statement statement = connection.createStatement();
 ResultSet resultSet = statement.executeQuery(query);
 ```
 
+## Limitations
+
+This technique of escaping user supplied input is database specific and supports Oracle DBMS. 
+
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

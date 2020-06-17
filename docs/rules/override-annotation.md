@@ -34,15 +34,6 @@ Even though adding `@Override` is not mandatory, using this annotation is consid
 
 Improves the readability by making it clear that the methods are overridden and helps avoiding potential bugs arising from unintended changes in method signatures.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 6
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -108,3 +99,9 @@ class Foo {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

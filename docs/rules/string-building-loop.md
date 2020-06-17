@@ -33,15 +33,6 @@ Strings are immutable objects, so concatenation doesn't simply add the new Strin
 Instead, in each loop iteration, the first String is converted to an intermediate object type, the second string is appended, and then the intermediate object is converted back to a String.
 Performing these operations degrades the longer the String is. Using a `StringBuilder` instead increases performance.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -144,3 +135,9 @@ public String transformed(List<String>values) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

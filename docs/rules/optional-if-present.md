@@ -27,15 +27,6 @@ The usage of  `Optional.get` should be avoided in general because it can potenti
 
 Improves readability and enables the use of higher order functions on `Optional`.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -94,3 +85,9 @@ Can not be applied if the __then__ path of the branch contains a non-effectively
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -29,16 +29,6 @@ The rule only applies if both operands are primitive types.
 
 Applying this rule leads to more simplicity in the code base and thus improves readability.  
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.4
-:::
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Code Changes
 
 ### Operator +=
@@ -116,3 +106,9 @@ Rule can be applied only on the following types:
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

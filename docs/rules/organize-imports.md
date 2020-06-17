@@ -24,21 +24,12 @@ tags: ["Free", "Java 1.1", "Formatting", "Readability"]
 
 ## Description
 
-Organizes the imports of a java class. Removes unused imports and applies an alphanumeric order.   
+Organizes the imports of a Java class. Removes unused imports and applies an alphanumeric order.   
 
 ## Benefits
 
 Imports that are not used are optimized away by the compiler. Regardless, they clutter up the file and might lead to confusion. Removing unused imports and applying alphanumeric order improves readability and maintainability.    
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -85,3 +76,9 @@ public class OrganiseImportsRule {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

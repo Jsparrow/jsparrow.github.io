@@ -31,17 +31,6 @@ This rule changes the type of local variables from StringBuffer() to StringBuild
 When running programs in a single thread, which is generally the case, `StringBuilder` offers performance benefits over StringBuffer. This is due to the fact that `StringBuffer` is synchronized and `StringBuilder` is not. For a reference see [here](https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/StringBuilder.html).
 
 
-
-## Requirement & Tags
-
-::: warning Requirements
-Java 5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Code Changes
 
 __Pre__
@@ -120,3 +109,9 @@ public String transformed() {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -39,15 +39,6 @@ The criteria for being effectively `final` are as follows:
 
 Readability and maintainability of code is improved and accidental reassignments are prevented for affected fields and variables.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.1
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -216,3 +207,8 @@ public class MakeFinal {
 This rule only affects `private` fields and local variables at the moment. `public`, `protected` or package-private fields as well as method parameters are not considered yet.
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -29,15 +29,6 @@ By using the stream syntax, a multi-line control statement can be reduced to a s
 
 Applying this rule results in better readability.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -112,3 +103,9 @@ double defaultIndex = values.stream()
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

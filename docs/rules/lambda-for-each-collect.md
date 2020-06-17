@@ -28,15 +28,6 @@ This simplifies adding elements to a list.
 
 This rule provides an easier-to read alternative to add items in a list.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -58,3 +49,9 @@ oStrings.addAll(objectList.stream()
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

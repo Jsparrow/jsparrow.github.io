@@ -30,15 +30,6 @@ This rule replaces comparisons of `length()` or `size()` with `0` with a call to
 
 The time complexity of any `isEmpty()` method implementation should be `O(1)` whereas some implementations of `size()` can be `O(n)`. Thus, using this rule provides performance benefits.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 6
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -64,3 +55,9 @@ if(s.isEmpty());
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

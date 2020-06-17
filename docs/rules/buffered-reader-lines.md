@@ -28,16 +28,6 @@ This rule, replaces While-Loops and For-Loops that are using `BufferedReader::re
 
 Using streams instead of loops improves the readability and makes the code more compact.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Code Changes
 
 ### While Loops
@@ -101,3 +91,9 @@ try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.nam
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

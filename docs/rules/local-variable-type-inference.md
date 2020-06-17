@@ -25,19 +25,14 @@ The derivable types on the declaration of local variables are replaced by the re
 Keep in mind that the transformation is only useful, if the variables have speaking names, otherwise it is only disguising the nature of the variable.
 The transformation is avoided for primitive types. For safety reasons, the transformation is also avoided if the initializer is an anonymous class declaration.
 
-## Benefits
-
-This rule reduces the length of variable definitions and therefore  improves the readability if the variable is named properly drastically.
-
-## Requirement & Tags
-
 ::: warning Requirements
 Java 10
 :::
 
-::: tip Tags
-<TagLinks />
-:::
+## Benefits
+
+This rule reduces the length of variable definitions and therefore  improves the readability if the variable is named properly drastically.
+
 
 ## Code Changes
 
@@ -114,3 +109,9 @@ If the declaration or the initializer are raw type, then the transformation is n
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

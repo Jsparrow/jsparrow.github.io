@@ -28,15 +28,6 @@ Applying this rule replaces While-loops over iterators with an equivalent for-lo
 
 Applying this rule leads to more simplicity in the code base by using new language constructs.  
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -74,3 +65,9 @@ Loops where the body modifies the iterator in some way will not be transformed.
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -30,15 +30,6 @@ There are some special cases, in which the transformation won't be possible due 
 
 Using streams instead of loops improves the readability and makes the code more compact.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -78,3 +69,9 @@ stringList1.forEach(s -> {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -35,15 +35,6 @@ Furthermore, they should not start with underscore `_` or with dollar sign `$` e
 Sharing some naming conventions is a key point to make it possible for a team to efficiently collaborate.
 Thus, this rule improves readability, while at the same time helps avoid conflicts and programming errors.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Configuration
 
@@ -95,7 +86,7 @@ class FieldNamingConvention {
 
 ## Limitations
 
-A filed cannot be automatically renamed on any of the following condition:
+A file cannot be automatically renamed on any of the following condition:
 
 - the newly computed name is not a legal variable name in Java. For example, if the original name is `_int`, the new computed name would be `int` which is a Java keyword and is not allowed to be used as a variable name.
 - the newly computed name coincides with any of the existing variable names in the same class.
@@ -103,3 +94,9 @@ A filed cannot be automatically renamed on any of the following condition:
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

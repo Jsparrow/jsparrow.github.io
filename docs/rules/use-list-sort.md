@@ -8,7 +8,7 @@ links:
 description:
     Replace static invocations of 'Collections.sort(List, Comparator)' with 'List.sort(Comparator)'.
 
-tags: ["Java 1.8", "Old Language Constructs", "Coding Conventions", "Readability"]
+tags: ["Java 8", "Old Language Constructs", "Coding Conventions", "Readability"]
 ---
 
 # Replace Collection.sort with List.sort
@@ -28,15 +28,6 @@ Replace static invocations of `Collections.sort(List, Comparator)` with `List.so
 
 Improves the readability by utilizing the Java 8 extensions of the `List` API. 
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -101,3 +92,9 @@ public void sortUsersById(List<User> users) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
