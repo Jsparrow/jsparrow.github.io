@@ -5,6 +5,47 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.18.0 <Badge vertical="middle" text="18.06.2020"/>
+
+jSparrow 3.18.0 adds three additional rules to the rule set. Bugfixes are also included. 
+
+### New Rules
+
+#### [**Use Parameterized JPA Query**](/rules/use-parameterized-jpa-query.html)
+
+JPA queries are also vulnerable to SQL injections.
+This rule finds [JPQL](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF) queries that are built by dynamically concatenating query fragments with potential user inputs and replaces them with parameterized JPQL queries. 
+
+#### [**Avoid Concatenation in Logging Statements**](/rules/avoid-concatenation-in-logging-statements.html)
+
+Replaces string concatenations passed in logging statements with built-in string formatting. 
+This spares some needless computation in case the logging level is not low enough to show the message. 
+Additionally, a built-in formatted string message improves the readability, too. 
+
+#### [**Use Arrays Stream**](/rules/use-arrays-stream.html)
+
+Transforms `Arrays.asList(T..values).stream()` into an un-boxed specialized stream (i.e., [`IntStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html), [`LongStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html),
+ or [`DoubleStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html)) when possible. 
+Otherwise, the same stream generation is replaced with the short hand method [Stream.of(T... values)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
+
+### Fixed Bugs
+
+#### Identifying Reassignments of Private Fields
+
+Avoids converting a field to final if it is reassigned in the constructors or initializers of inner classes. 
+
+#### Using `this` keyword in anonymous classes
+
+Prevents transforming an anonymous class into a lambda expression in a some cases where occurrences of `this` keyword refers to the instance of the anonymous class. 
+
+#### Replace StringBuffer with StringBuilder
+
+Prevents replacing a StringBuffer with a StringBuilder in case the original StringBuffer variable implicitly determines the type of the returned value. 
+
+#### Replace For-Loop with Stream::forEach 
+
+Using explicit parameter type for the lambda expression of the Stream::forEach, in certain cases when the loop parameter has a generic type. 
+
 ## 3.17.0 <Badge vertical="middle" text="20.05.2020"/>
 
 The [75<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.17.0. It reduces security flaws by escaping user supplied inputs concatenated with SQL queries.
