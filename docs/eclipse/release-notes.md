@@ -5,6 +5,48 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.18.0 <Badge vertical="middle" text="18.06.2020"/>
+
+The midsummer release of jSparrow 3.18.0 adds three new rules to the ruleset and includes a few bugfixes. 
+
+### New Rules
+
+#### [**Use Parameterized JPA Query**](/rules/use-parameterized-jpa-query.html)
+
+It is a common misconception that JPA queries are immune to SQL injections, however, there are ways to secure them. 
+This rule finds [JPQL](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF) queries that are built by dynamically concatenating query fragments with potential user inputs and replaces them with parameterized JPQL queries. 
+With this measure, the JDBC driver will escape input data before it is executed and therefore prevent SQL injection. 
+
+#### [**Avoid Concatenation in Logging Statements**](/rules/avoid-concatenation-in-logging-statements.html)
+
+Replaces string concatenations passed in logging statements with built-in string formatting. 
+This spares some needless computation in case the logging level is not low enough to show the message. 
+Additionally, a built-in formatted string message improves the readability, too. 
+
+#### [**Use Arrays Stream**](/rules/use-arrays-stream.html)
+
+Transforms `Arrays.asList(T..values).stream()` into an un-boxed specialized stream (i.e., [`IntStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html), [`LongStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html),
+ or [`DoubleStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html)) whenever possible. 
+Otherwise, the same stream generation is replaced with the shorthand method [Stream.of(T... values)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
+
+### Fixed Bugs
+
+#### [**Make Fields And Variables Final**](/rules/make-fields-and-variables-final.html)
+
+* Avoids converting a field to `final` if it is reassigned in the constructors or initializers of inner classes. 
+
+#### [**Use Functional Interfaces**](/rules/functional-interface.html)
+
+* Prevents transforming an anonymous class into a lambda expression in some cases where occurrences of the `this` keyword refers to the instance of the anonymous class. 
+
+#### [**StringBuffer() to StringBuilder()**](/rules/string-buffer-to-builder.html)
+
+* Prevents replacing a `StringBuffer` with a `StringBuilder` in case the original `StringBuffer` variable implicitly determines the type of the returned value. 
+
+#### [**Replace For-Loop with Stream::forEach**](/rules/enhanced-for-loop-to-stream-for-each.html)
+
+* Fixes a corner case where the type boundaries of a generic lambda parameter could no longer be derived after the transformation. 
+
 ## 3.17.0 <Badge vertical="middle" text="20.05.2020"/>
 
 The [75<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.17.0. It reduces security flaws by escaping user supplied inputs concatenated with SQL queries.
@@ -13,12 +55,12 @@ The [75<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.17.0.
 #### [**Escape User Inputs in SQL Queries**](/rules/escape-user-inputs-in-sql-queries.html)
 
 This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [ESAPI.encoder().encodeForSql(codec, input)](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
-In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL Injection vulnerabilities.  
+In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL injection vulnerabilities.  
 
 
 ### Fixed Bugs
-#### Referencing Instance Methods in Lambda Expressions
-This fix relates to invocations of methods declared in Object class, default methods, and `this` keyword when transforming anonymous classes to lambda expressions.
+#### [**Use Functional Interfaces**](/rules/functional-interface.html)
+* This fix relates to invocations of methods declared in Object class, default methods, and `this` keyword when transforming anonymous classes to lambda expressions.
 
 ## 3.16.0 <Badge vertical="middle" text="16.04.2020"/>
 
@@ -31,12 +73,12 @@ This rule replaces a [java.sql.Statement](https://docs.oracle.com/javase/8/docs/
 Parameterized queries enforce a distinction between the SQL code and the data passed through parameters.
 
 ### Fixed Bugs
-#### Referencing constants in lambda expressions
-Fixes unqualified field references when transforming an anonymous class into a lambda expression. 
+#### [**Use Functional Interfaces**](/rules/functional-interface.html)
+* Fixes unqualified field references when transforming an anonymous class into a lambda expression. 
 
 ## 3.15.0 <Badge vertical="middle" text="19.03.2020"/>
 
-jSparrow 3.15.0 extends the rule set to 73 rules. Some UI improvements and Bug Fixes are also included. 
+jSparrow 3.15.0 extends the ruleset to 73 rules. Some UI improvements and Bug Fixes are also included. 
 
 ### New Rules
 
@@ -212,7 +254,7 @@ This rule automatically replaces invocations of [`Map::get`](https://docs.oracle
 
 ## 3.4.0 <Badge vertical="middle" text="18.04.2019"/>
 
-The jSparrow 3.4.0 release extends the the rule set further with one more rule.
+The jSparrow 3.4.0 release extends the the ruleset further with one more rule.
 Some stability improvements are also included.
 
 ### New Rules
@@ -221,7 +263,7 @@ This new rule finds and removes the unused parameters in private methods.
 As a result, all the references of the affected method are updated accordingly.
 
 ### Fixed Bugs
-#### StringBuffer() to StringBuilder()
+#### [**StringBuffer() to StringBuilder()**](/rules/string-buffer-to-builder.html)
 
 * Avoid type incompatibilities in assignments and return statements when replacing a `StringBuffer` by a `StringBuilder`.  
 

@@ -30,15 +30,6 @@ Consequently, all the invocations of the affected methods are updated accordingl
 ## Benefits
 Removes the clutter and simplifies the method declarations.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.1
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -83,3 +74,9 @@ The non-private methods are not modified by this rule because they could be invo
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

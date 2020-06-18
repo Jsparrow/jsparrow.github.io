@@ -9,7 +9,7 @@ description:
     Extracts an Optional::filter from the consumer used in Optional::ifPresent. 
     This simplifies the lambda expression used with Optional operations. 
 
-tags: ["Java 1.8", "Coding Conventions", "Lambda", "Readability"]
+tags: ["Java 8", "Coding Conventions", "Lambda", "Readability"]
 ---
 
 # Use Optional::filter
@@ -30,15 +30,6 @@ This transformation is feasible only if the entire consumer's body is wrapped in
 
 Arguably, the lambda expression is easier to read and can be combined with other `Optional` operations.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -78,3 +69,8 @@ __Pre__
 ```
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

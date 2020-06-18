@@ -27,15 +27,6 @@ If `map.put(..)` is wrapped with a condition verifying the existence of an eleme
 
 Makes the code more readable, by using Java 8 extensions of Map interface.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -133,3 +124,9 @@ The rule can be applied if a map type is present, a call to map.put(..) is prese
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

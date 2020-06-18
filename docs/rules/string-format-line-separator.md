@@ -31,15 +31,6 @@ For example 'String.format("\n\n")' is replaced by 'String.format("%n%n")'.
 
 The benefit of this approach is that '%n' is portable across platforms.  
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -84,3 +75,9 @@ public class TestStringFormatLineSeparatorRule {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

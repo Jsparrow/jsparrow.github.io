@@ -30,15 +30,6 @@ This is comparable to if-statements or loops with a single expression inside the
 
 This rule provides an easier-to read alternative to filter items in a list.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 8
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -58,3 +49,9 @@ public Function<Function, Function> f = (Function function) -> function.compose(
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

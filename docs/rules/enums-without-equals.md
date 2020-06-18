@@ -29,15 +29,6 @@ In the case the equals relation is wrapped with an boolean negation the result w
 
 Technically, equals and `==` are the same. `==` however is null safe and thus can help avoid programming errors.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -88,3 +79,9 @@ public boolean isRoundUp(RoundingMode roundingMode) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

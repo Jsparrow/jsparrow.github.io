@@ -10,7 +10,7 @@ links:
     
 description:
     Rule description.
-tags: ["Security"]
+tags: ["Java 1.1", "Security"]
 ---
 
 # Use Parameterized Query
@@ -30,15 +30,6 @@ Parameterized queries enforce a distinction between the SQL code and the data pa
 
 Prevents SQL injections.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.1
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -111,3 +102,8 @@ ResultSet resultSet = statement.executeQuery();
 ```
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

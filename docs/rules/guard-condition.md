@@ -30,15 +30,6 @@ Replaces, when possible, the last if-statement of a method body with a guard-if 
 
 Reduces the cognitive complexity of a method.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -129,3 +120,9 @@ __Post__
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

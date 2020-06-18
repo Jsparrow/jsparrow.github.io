@@ -8,6 +8,7 @@ Fill in a new page, at a position, so that the page title will be sorted alphabe
 module.exports = [
 '',
 'brackets-to-control',
+'avoid-concatenation-in-logging-statements',
 'collapse-if-statements',
 'escape-user-inputs-in-sql-queries',
 'hide-default-constructor-in-utility-classes',
@@ -60,6 +61,7 @@ module.exports = [
 'string-buffer-to-builder',
 'standard-logger',
 'override-annotation',
+'use-arrays-stream',
 'buffered-reader-lines',
 'use-collections-singleton-list',
 'collections-factory-methods',
@@ -71,6 +73,7 @@ module.exports = [
 'optional-if-present',
 'optional-if-present-or-else',
 'optional-map',
+'use-parameterized-jpa-query',
 'use-parameterized-query',
 'string-format-line-separator',
 'lambda-for-each-if-wrapper-to-filter',

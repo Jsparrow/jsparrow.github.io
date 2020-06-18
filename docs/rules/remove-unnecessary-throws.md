@@ -34,15 +34,6 @@ Removes the following exceptions on method signatures:
 
 Improves the readability by removing code that adds no information on the method signature.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -96,3 +87,9 @@ public void throwingRuntimeException() {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

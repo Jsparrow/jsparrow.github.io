@@ -37,15 +37,6 @@ This hides the default public constructor and thus prevents the instantiation of
 
 Prevents the bad practice of unnecessary instatiation of utility classes.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -86,3 +77,8 @@ __Post__
 ```
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

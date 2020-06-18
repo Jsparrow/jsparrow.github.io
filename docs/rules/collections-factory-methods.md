@@ -25,18 +25,13 @@ tags: ["Java 9", "Old Language Constructs", "Readability"]
 Java 9 introduced factory methods for creating immutable collections. 
 This rule replaces the invocations of ```Collections.unmodifiable{List|Set|Map}``` with the corresponding factory method [```List.of```](https://docs.oracle.com/javase/9/docs/api/java/util/List.html#of-E...-), [```Set.of```](https://docs.oracle.com/javase/9/docs/api/java/util/Set.html#of-E...-) and [```Map.ofEntries```](https://docs.oracle.com/javase/9/docs/api/java/util/Map.html#ofEntries-java.util.Map.Entry...-) accordingly.
 
-## Benefits
-Remove verbosity and avoid creating intermediate collections only for the sake of initialization.
-
-## Requirement & Tags
-
 ::: warning Requirements
 Java 9
 :::
 
-::: tip Tags
-<TagLinks />
-:::
+## Benefits
+Remove verbosity and avoid creating intermediate collections only for the sake of initialization.
+
 
 ## Code Changes
 
@@ -115,3 +110,9 @@ __Post__
 ```
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

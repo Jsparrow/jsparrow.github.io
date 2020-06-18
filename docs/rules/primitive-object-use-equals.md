@@ -37,15 +37,6 @@ This rule replaces the infix operators "==" and "!=" with equals() when used on 
 
 If the equals method was overwritten on the instances being compared the == has a different meaning than using equals. This may lead to programming errors. Applying this rule means keeping with the coding conventions and thus helps avoid errors.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -77,3 +68,9 @@ if (!a.equals(b)) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

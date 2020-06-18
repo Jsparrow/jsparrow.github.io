@@ -30,15 +30,6 @@ Removes pairs of negations from boolean expressions until only zero or one negat
 
 Improves the readability of the code, by removing cascaded negations of boolean expressions.
 
-## Requirement & Tags
-
-::: warning Requirements
-None.
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -72,3 +63,9 @@ boolean a = !true; // reduced to one time
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

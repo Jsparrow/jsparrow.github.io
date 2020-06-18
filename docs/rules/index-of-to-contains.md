@@ -32,15 +32,6 @@ Any checks which look for values `>0` ignore the first element, which is likely 
 If the intent is merely to check inclusion of a value in a `String` or a List, the contains method is better suited to express this intent.
 Clearer intent means better readability.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -110,3 +101,9 @@ if (list.contains(string)) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

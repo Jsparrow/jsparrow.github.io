@@ -34,15 +34,6 @@ Note, from Java 9 it is possible to have [`private` methods](http://openjdk.java
 
 Removes the clutter and unifies the attributes of Java interfaces. 
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.1
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -96,3 +87,9 @@ public interface InterfaceWithProperties {
 ```
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

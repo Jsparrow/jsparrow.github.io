@@ -33,15 +33,6 @@ This rule replaces occurrences of such code with a static method.
 This rule has performance benefits.
 As described above boxing the object simply to use the static `toString` method is a waste of memory and CPU cycles.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -150,3 +141,9 @@ public void transformed(boolean b) {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

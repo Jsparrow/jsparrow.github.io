@@ -5,6 +5,14 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.15.0 <Badge vertical="middle" text="18.06.2020"/>
+
+Three additional rules are shipped with the release 2.15.0 of the jSparrow Maven Plugin: 
+
+* [Use Parameterized JPA Query](/rules/use-parameterized-jpa-query.html)
+* [Avoid Concatenation in Logging Statements](/rules/avoid-concatenation-in-logging-statements.html)
+* [Use Arrays Stream](/rules/use-arrays-stream.html)
+
 ## 2.14.0 <Badge vertical="middle" text="20.05.2020"/>
 
 Another security rule is shipped with release 2.14.0 of the jSparrow Maven Plugin:

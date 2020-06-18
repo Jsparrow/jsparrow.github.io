@@ -31,15 +31,6 @@ Since Java 7 the [Diamond Operator](https://docs.oracle.com/javase/7/docs/techno
 
 Applying this rule reduces clutter and improves readability.
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 7
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -69,3 +60,9 @@ List<GenericSample> result = foo.genericMethod(new ArrayList<>(), input);
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

@@ -2,13 +2,13 @@
 title: Insert Break Statements in For-loops
 ruleId: InsertBreakStatementInLoops
 since: 3.9.0
-minJavaVersion: 1.5
+minJavaVersion: 5
 remediationCost: 2
 links:
 description:
     Finds the Enhanced For-loops whose sole purpose is to compute a boolean value without causing side effects and inserts a break statement immediately after the boolean value is computed. Thus, eliminating redundant loop iterations.
 
-tags: ["Java 1.5", "Loop", "Performance"]
+tags: ["Java 5", "Loop", "Performance"]
 ---
 
 # Insert Break Statements in For-loops
@@ -29,15 +29,6 @@ Thus, eliminating redundant loop iterations.
 
 Improves performance by eliminating redundant cycles in Enhanced For-loops. 
 
-## Requirement & Tags
-
-::: warning Requirements
-Java 1.5
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -123,3 +114,8 @@ __Pre__
 ```
 
 <VersionNotice />
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::

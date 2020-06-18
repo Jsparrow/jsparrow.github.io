@@ -47,15 +47,6 @@ The rest of inner type declarations like enumeration declarations, annotation de
 
 Adhering to code conventions such as file member orderings improves maintainability and readability.
 
-## Requirement & Tags
-
-::: warning Requirements
-None
-:::
-
-::: tip Tags
-<TagLinks />
-:::
 
 ## Code Changes
 
@@ -144,3 +135,9 @@ public class RearrangeClassMembersRule {
 
 <VersionNotice />
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
