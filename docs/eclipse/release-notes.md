@@ -7,14 +7,15 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.18.0 <Badge vertical="middle" text="18.06.2020"/>
 
-jSparrow 3.18.0 adds three additional rules to the rule set. Bugfixes are also included. 
+The midsummer release of jSparrow 3.18.0 adds three new rules to the ruleset and includes a few bugfixes. 
 
 ### New Rules
 
 #### [**Use Parameterized JPA Query**](/rules/use-parameterized-jpa-query.html)
 
-JPA queries are also vulnerable to SQL injections.
+It is a common misconception that JPA queries are immune to SQL injections, however there are ways to secure them. 
 This rule finds [JPQL](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF) queries that are built by dynamically concatenating query fragments with potential user inputs and replaces them with parameterized JPQL queries. 
+With this measure, the JDBC driver will escape input data before it is executed and therefore prevent SQL injection. 
 
 #### [**Avoid Concatenation in Logging Statements**](/rules/avoid-concatenation-in-logging-statements.html)
 
@@ -25,26 +26,26 @@ Additionally, a built-in formatted string message improves the readability, too.
 #### [**Use Arrays Stream**](/rules/use-arrays-stream.html)
 
 Transforms `Arrays.asList(T..values).stream()` into an un-boxed specialized stream (i.e., [`IntStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html), [`LongStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html),
- or [`DoubleStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html)) when possible. 
-Otherwise, the same stream generation is replaced with the short hand method [Stream.of(T... values)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
+ or [`DoubleStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html)) whenever possible. 
+Otherwise, the same stream generation is replaced with the shorthand method [Stream.of(T... values)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
 
 ### Fixed Bugs
 
 #### [**Make Fields And Variables Final**](/rules/make-fields-and-variables-final.html)
 
-* Avoids converting a field to final if it is reassigned in the constructors or initializers of inner classes. 
+* Avoids converting a field to `final` if it is reassigned in the constructors or initializers of inner classes. 
 
 #### [**Use Functional Interfaces**](/rules/functional-interface.html)
 
-* Prevents transforming an anonymous class into a lambda expression in a some cases where occurrences of `this` keyword refers to the instance of the anonymous class. 
+* Prevents transforming an anonymous class into a lambda expression in some cases where occurrences of the `this` keyword refers to the instance of the anonymous class. 
 
 #### [**StringBuffer() to StringBuilder()**](/rules/string-buffer-to-builder.html)
 
-Prevents replacing a StringBuffer with a StringBuilder in case the original StringBuffer variable implicitly determines the type of the returned value. 
+* Prevents replacing a `StringBuffer` with a `StringBuilder` in case the original `StringBuffer` variable implicitly determines the type of the returned value. 
 
 #### [**Replace For-Loop with Stream::forEach**](/rules/enhanced-for-loop-to-stream-for-each.html)
 
-* Using explicit parameter type for the lambda expression of the Stream::forEach, in certain cases when the loop parameter has a generic type. 
+* Using an explicit parameter type for the lambda expression of the `Stream::forEach`, in certain cases when the loop parameter has a generic type. 
 
 ## 3.17.0 <Badge vertical="middle" text="20.05.2020"/>
 
@@ -77,7 +78,7 @@ Parameterized queries enforce a distinction between the SQL code and the data pa
 
 ## 3.15.0 <Badge vertical="middle" text="19.03.2020"/>
 
-jSparrow 3.15.0 extends the rule set to 73 rules. Some UI improvements and Bug Fixes are also included. 
+jSparrow 3.15.0 extends the ruleset to 73 rules. Some UI improvements and Bug Fixes are also included. 
 
 ### New Rules
 
@@ -253,7 +254,7 @@ This rule automatically replaces invocations of [`Map::get`](https://docs.oracle
 
 ## 3.4.0 <Badge vertical="middle" text="18.04.2019"/>
 
-The jSparrow 3.4.0 release extends the the rule set further with one more rule.
+The jSparrow 3.4.0 release extends the the ruleset further with one more rule.
 Some stability improvements are also included.
 
 ### New Rules
