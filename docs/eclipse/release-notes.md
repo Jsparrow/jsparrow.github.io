@@ -45,7 +45,7 @@ Otherwise, the same stream generation is replaced with the shorthand method [Str
 
 #### [**Replace For-Loop with Stream::forEach**](/rules/enhanced-for-loop-to-stream-for-each.html)
 
-* Using an explicit parameter type for the lambda expression of the `Stream::forEach`, in certain cases when the loop parameter has a generic type. 
+* Fixes a corner case where the type boundaries of a generic lambda parameter could no longer be derived after the transformation. 
 
 ## 3.17.0 <Badge vertical="middle" text="20.05.2020"/>
 
