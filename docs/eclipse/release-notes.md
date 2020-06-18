@@ -13,7 +13,7 @@ The midsummer release of jSparrow 3.18.0 adds three new rules to the ruleset and
 
 #### [**Use Parameterized JPA Query**](/rules/use-parameterized-jpa-query.html)
 
-It is a common misconception that JPA queries are immune to SQL injections, however there are ways to secure them. 
+It is a common misconception that JPA queries are immune to SQL injections, however, there are ways to secure them. 
 This rule finds [JPQL](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF) queries that are built by dynamically concatenating query fragments with potential user inputs and replaces them with parameterized JPQL queries. 
 With this measure, the JDBC driver will escape input data before it is executed and therefore prevent SQL injection. 
 
@@ -55,7 +55,7 @@ The [75<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.17.0.
 #### [**Escape User Inputs in SQL Queries**](/rules/escape-user-inputs-in-sql-queries.html)
 
 This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [ESAPI.encoder().encodeForSql(codec, input)](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
-In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL Injection vulnerabilities.  
+In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL injection vulnerabilities.  
 
 
 ### Fixed Bugs
