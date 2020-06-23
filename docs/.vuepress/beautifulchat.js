@@ -1,5 +1,33 @@
 module.exports = {
-  
+
+    help: {
+      questions: ['Hello there! May I help you with something?'],
+      answers: [],
+      nextSuggestions: ['noThanks', 'whatIs', 'suggestion'],
+    },
+
+    noThanks: {
+      questions: ['No thanks!', 'no', 'no.', 'no!', 'No', 'No.', 'No!' ],
+      answers: ['Ok. Enjoy visiting our documentation!'],
+      nextSuggestions: [],
+    },
+
+    suggestion: {
+      questions: ['I want to suggest a rule.'],
+      answers: [
+        'I appreciate that! Please write your suggestion below. I will let the team know about your suggestion.'
+      ],
+      nextSuggestions: ['bugReport', 'suggestion', 'howManyRules'],
+    },
+
+    bugReport: {
+      questions: ['I want to report a bug.'],
+      answers: [
+        'I appreciate that! Please write your report below. I will let the team know about your suggestion. You can also report the problem in jSparrow Service Desk'
+      ],
+      nextSuggestions: ['bugReport', 'suggestion', 'howManyRules'],
+    },
+
     whatIs: {
       questions: ['What is jSparrow?', 'What does jSparrow do?'],
       answers: [
