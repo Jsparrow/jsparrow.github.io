@@ -1,21 +1,57 @@
 module.exports = {
 
+  whichVersion: {
+    questions: ['Which version do I need?'],
+    answers: ['There are three jSparrow versions. [Explanation for starter, pro and free]'],
+    nextSuggestions: ['whichEditions', 'whereToGet'],
+  },
+
+  whereToGet: {
+      questions: ['Where can I get jSparrow Pro?'],
+      answers: ['I want to buy a single license [redirect to Get jSparrow page.]. I want to get an offer for my company [redirect to the contact form]. '],
+      nextSuggestions: ['howManyRules', 'whichEditions', 'whichVersion'],
+    },
+
+    talkToHuman: {
+      questions: ['May I talk to a human?'],
+        answers: [
+          '[Contact us at support@jsparrow.eu], [I want to get an offer.] [Please contact me], [I want a web demo -> redirect to a contact form]',
+        ],
+        nextSuggestions: ['howToInstall', 'whereToGet', 'reportBug'],
+    },
+
+    interactiveRules: {
+      questions: ['Are there interactive rules?'],
+        answers: [
+          '[Logging], [Renaming]',
+        ],
+        nextSuggestions: ['howToInstall', 'whereToGet', 'reportBug'],
+    },	
+  
+    howDoesItWork: {
+      questions: ['How does jSparrow work?'],
+        answers: [
+          'Integrated in Eclipse IDE, Select rules, diff view, summary. [Select rules, preview changes, save accepted changes] ',
+        ],
+        nextSuggestions: ['howToInstall', 'whereToGet', 'reportBug'],
+    },
+
     help: {
       questions: ['Hello there! May I help you with something?'],
       answers: [],
-      nextSuggestions: ['noThanks', 'whatIs', 'suggestion'],
+      nextSuggestions: ['noThanks', 'whatIs', 'suggestion', 'whereToGet'],
     },
 
     noThanks: {
-      questions: ['No thanks!', 'no', 'no.', 'no!', 'No', 'No.', 'No!' ],
+      questions: ['I\'m just having a look.', 'no', 'no.', 'no!', 'No', 'No.', 'No!' ],
       answers: ['Ok. Enjoy visiting our documentation!'],
-      nextSuggestions: [],
+      nextSuggestions: ['whereToGet', 'bugReport', 'whatIs' ],
     },
 
     suggestion: {
-      questions: ['I want to suggest a rule.'],
+      questions: ['I want to suggest a rule.', 'I have a suggestion'],
       answers: [
-        'I appreciate that! Please write your suggestion below. I will let the team know about your suggestion.'
+        'Awesome! I recommend creating a \'*Rule suggestion*\' ticket at jSparrow Help Center  https://jsparrow.atlassian.net/servicedesk/. Alternatively, you can send an email to support@jsparrow.eu'
       ],
       nextSuggestions: ['bugReport', 'suggestion', 'howManyRules'],
     },
@@ -23,7 +59,7 @@ module.exports = {
     bugReport: {
       questions: ['I want to report a bug.'],
       answers: [
-        'I appreciate that! Please write your report below. I will let the team know about your suggestion. You can also report the problem in jSparrow Service Desk'
+        'Thank you for your valuable feedback! The recommended way to do that is to fi a bug report at jSparrow Help Center https://jsparrow.atlassian.net/servicedesk. Alternatively, you can send an email to support@jsparrow.eu'
       ],
       nextSuggestions: ['bugReport', 'suggestion', 'howManyRules'],
     },
@@ -32,7 +68,7 @@ module.exports = {
       questions: ['What is jSparrow?', 'What does jSparrow do?'],
       answers: [
         'jSparrow is a tool that provides automatic refactoring of Java sources',
-        'jSparrow is a tool that refactors Java code for you, powered by the Eclipse Java compiler',
+        'jSparrow is a tool that refactors Java code automatically for you. Thus, saving maintenance time'
       ],
       nextSuggestions: ['howToInstall', 'whichEditions', 'howDoIBenefit'],
     },
@@ -70,13 +106,13 @@ module.exports = {
 
     whatIsJMP: {
       questions: ['What is jSparrow Maven Plugin?'],
-      answers: ['jSparrow Maven Plugin is....'],
+      answers: ['jSparrow Maven Plugin (JMP) is a continuous integration tool to apply automatic refactoring. It applies the same rules as jSparrow Eclipse Plugin but works without user interaction'],
       nextSuggestions: ['howToInstall', 'whatIsJGA', 'whatIsJEP'],
     },
 
     whatIsJGA: {
       questions: ['What is jSparrow Cloud App?'],
-      answers: ['jSparrow Could App is....'],
+      answers: ['jSparrow Could App (JCA) is the integration of jSparrow\'s refactoring on a GitHub app. JCA is triggered upon creation of new pull requests.'],
       nextSuggestions: ['howToInstall', 'whatIsJMP', 'whatIsJEP'],
     },
 
@@ -134,13 +170,13 @@ module.exports = {
 
     whatIsRule: {
       questions: ['What is a jSparrow Rule?', 'What is a jSparrow refactoring Rule?', 'What is a Rule?'],
-      answers: ['Fill the answers for jSparrow rule'],
+      answers: ['....'],
       nextSuggestions: ['whatIsProfile'],
     },
 
     whatIsProfile: {
       questions: ['What is a profile?', 'howManyRules'],
-      answers: ['A profile is a list of jSparrow rules. You can use profiles to group together the rules of your choice. '],
+      answers: ['A profile is a list of jSparrow rules. You can create profiles for refactoring certain aspects of your source base.'],
       nextSuggestions: ['whatIsRule', 'howDoIBenefit'],
     },
 
@@ -155,14 +191,14 @@ module.exports = {
       nextSuggestions: ['howDoIBenefit'],
     }, 
     whatIsReleaseSchedule: {
-      questions: ['What is jSparrow release chedule?'],
+      questions: ['What is jSparrow release schedule?'],
       answers: ['Every third Thursday of each month.'],
       nextSuggestions: ['howManyRules', 'whichEditions'],
     },
     default: {
       questions: [],
       answers: ['Sorry, I didnt catch that. Please try again.'],
-      nextSuggestions: ['whatIs', 'howToInstall', 'whichEditions', 'howDoIBenefit'],
+      nextSuggestions: ['talkToHuman', 'whatIs', 'whereToGet'],
     }
   
   };

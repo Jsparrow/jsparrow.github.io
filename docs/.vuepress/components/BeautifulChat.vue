@@ -68,8 +68,15 @@ export default {
       messageList: [
           { 
             type: 'text', author: `support`, 
-            data: { text: `Hey there! Ask me a question...` }, 
-            suggestions: ['What is jSparrow?', 'What are the benefits?', 'Which editions are available?'] 
+            data: { text: `Hey there! May I help you?` }, 
+            suggestions: [
+              'What is jSparrow?', 
+              'What are the benefits?', 
+              'Where can I get jSparrow Pro?',
+              'Which editions are available?', 
+              'I have a suggestion', 
+              'I want to report a bug.',
+              'I\'m just having a look.'] 
             },
       ], // the list of the messages to show, can be paginated and adjusted dynamically
       newMessagesCount: 1,
