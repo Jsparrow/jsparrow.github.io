@@ -10,7 +10,7 @@ module.exports = {
   whereToGet: {
     questions: ['Where can I get jSparrow Pro?'],
     answers: [
-      'I want to buy a single license [redirect to Get jSparrow page.]. I want to get an offer for my company [redirect to the contact form]. ',
+      'To order a new license, please visit https://jsparrow.eu/get-jsparrow/. In case you want a special offer for your company, feel free to contact us directly at https://jsparrow.eu/contact/.',
     ],
     nextSuggestions: ['howManyRules', 'whichEditions', 'whichVersion'],
   },
@@ -18,7 +18,7 @@ module.exports = {
   talkToHuman: {
     questions: ['May I talk to a human?', 'I want to talk to a human.', 'How can I reach you?'],
     answers: [
-      '[Contact us at support@jsparrow.eu], [I want to get an offer.] [Please contact me], [I want a web demo -> redirect to a contact form]',
+      'Sure, our team will be happy to respond to your inquiries. In case you want technical support, please send an email to support@jsparrow.eu. This will automatically create a ticket at jSparrow Help Center. If you want a special offer for jSparrow Pro, please fill out the contact form at https://jsparrow.eu/contact/',
     ],
     nextSuggestions: ['howToInstall', 'whereToGet', 'bugReport'],
   },
@@ -32,7 +32,7 @@ module.exports = {
   howDoesItWork: {
     questions: ['How does jSparrow work?'],
     answers: [
-      'Integrated in Eclipse IDE, Select rules, diff view, summary. [Select rules, preview changes, save accepted changes] ',
+      'When integrated into Eclipse, you can start jSparrow in a Java file, package, or project. After selecting the rules you want to apply, jSparrow computes the changes and displays them side-by-side on a diff view. You can choose to unselect changes on certain files for different rules. The original sources are not affected until the changes are approved.',
     ],
     nextSuggestions: ['howToInstall', 'whereToGet', 'bugReport'],
   },
