@@ -1,7 +1,0 @@
----
-title: Tags
----
-
-# Tags
-
-<TagList />
