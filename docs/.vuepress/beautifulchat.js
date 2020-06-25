@@ -16,17 +16,17 @@ module.exports = {
   },
 
   talkToHuman: {
-    questions: ['May I talk to a human?', 'I want to talk to a human.'],
+    questions: ['May I talk to a human?', 'I want to talk to a human.', 'How can I reach you?'],
     answers: [
       '[Contact us at support@jsparrow.eu], [I want to get an offer.] [Please contact me], [I want a web demo -> redirect to a contact form]',
     ],
-    nextSuggestions: ['howToInstall', 'whereToGet', 'reportBug'],
+    nextSuggestions: ['howToInstall', 'whereToGet', 'bugReport'],
   },
 
   interactiveRules: {
     questions: ['Are there interactive rules?'],
-    answers: ['[Logging], [Renaming]'],
-    nextSuggestions: ['howToInstall', 'whereToGet', 'reportBug'],
+    answers: ['Yes, there are rules that can be configured to fit your needs. E.g., in the ‘Rename Fields’ rule you can configure how to generate the new field names; in the ‘Standard Logger’ rule you can configure which logging level to use in different scenarios. '],
+    nextSuggestions: ['howToInstall', 'whereToGet', 'bugReport'],
   },
 
   howDoesItWork: {
@@ -34,7 +34,7 @@ module.exports = {
     answers: [
       'Integrated in Eclipse IDE, Select rules, diff view, summary. [Select rules, preview changes, save accepted changes] ',
     ],
-    nextSuggestions: ['howToInstall', 'whereToGet', 'reportBug'],
+    nextSuggestions: ['howToInstall', 'whereToGet', 'bugReport'],
   },
 
   help: {
@@ -66,9 +66,9 @@ module.exports = {
   },
 
   bugReport: {
-    questions: ['I want to report a bug.'],
+    questions: ['I want to report a bug.', 'I want to create a bug report'],
     answers: [
-      'Thank you for your valuable feedback ;) ! The recommended way to do that is to file a bug report at jSparrow Help Center https://jsparrow.atlassian.net/servicedesk. Alternatively, you can send an email to support@jsparrow.eu',
+      'Thank you for your valuable feedback! The recommended way to do that is to file a bug report at jSparrow Help Center https://jsparrow.atlassian.net/servicedesk. Alternatively, you can send an email to support@jsparrow.eu',
     ],
     nextSuggestions: ['bugReport', 'suggestion', 'howManyRules'],
   },
@@ -89,7 +89,7 @@ module.exports = {
       'How do I install?',
     ],
     answers: [
-      'You can find jSparrow in Eclipse Marketplace. You can also install jSparrow directly from the update site https://update.jsparrow.eu',
+      'You can drag the installation button from the Eclipse Marketplace into your IDE. You can also install jSparrow directly from the update site https://update.jsparrow.eu',
     ],
     nextSuggestions: ['howToInstallJmp', 'whichPlatforms'],
   },
@@ -107,7 +107,7 @@ module.exports = {
     nextSuggestions: ['whatIsStarter', 'whatIsFree', 'whatIsPro'],
   },
 
-  whatIsJEP: {
+  whatIsJEP: { /* This duplicates 'What is jSparrow?'. We might consider removing it*/
     questions: ['What is jSparrow Eclipse Plugin?'],
     answers: ['jSparrow Eclipse Plugin is ...'],
     nextSuggestions: ['whatIsRule', 'whatIsJMP', 'whatIsJGA'],
@@ -149,8 +149,8 @@ module.exports = {
   },
 
   whichPlatforms: {
-    questions: ['Which platforms does jSparrow support'],
-    answers: ['jSparrow is available for Eclipse, Maven, and GitHub apps'],
+    questions: ['In which platforms is jSparrow integrated to?'],
+    answers: ['jSparrow is integrated into Eclipse IDE as jSparrow Eclipse Plugin, into Maven as jSparrow Maven Plugin, and into GitHub as jSparrow Cloud App.'],
     nextSuggestions: ['whatIsJEP', 'whatIsJMP', 'whatIsJGA'],
   },
 
@@ -194,7 +194,7 @@ module.exports = {
   whatIsProfile: {
     questions: ['What is a profile?'],
     answers: [
-      'A profile is a list of jSparrow rules. You can create any number of profiles with the rules of your choice. Profiles can be exported from jSparrow Eclipse to jSparrow Maven Plugin. The intention is to simplify the selection of the preferred rules.',
+      'A profile is a list of jSparrow rules. You can create any number of profiles with the rules of your choice. Profiles can be exported from jSparrow Eclipse to jSparrow Maven Plugin. The intention is to define company standards as sets of rules and to simplify the rule selection.',
     ],
     nextSuggestions: ['whatIsRule', 'howDoIBenefit', 'howManyRules'],
   },
