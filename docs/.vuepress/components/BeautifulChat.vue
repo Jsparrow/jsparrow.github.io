@@ -83,6 +83,7 @@ export default {
       isChatOpen: false, // to determine whether the chat window should be open or closed
       showTypingIndicator: '', // when set to a value matching the participant.id it shows the typing indicator for the specific user
       responseTimeout: 700,
+      defaultIntentKey: 'default',
       colors: {
         header: {
           bg: '#4e8cff',
@@ -148,7 +149,7 @@ export default {
           return key;
         }
       }
-      return Object.keys(this.db)[0]
+      return this.defaultIntentKey
     },
     findAnswer(key) {
       var questionObject = this.db[key]
@@ -159,30 +160,6 @@ export default {
       var questionObject = this.db[key]
       var nextSuggestions = questionObject.nextSuggestions.map(suggestionKey => this.db[suggestionKey].questions[0]) 
       return nextSuggestions
-    },
-    findReplyKey(choice) {
-      if(choice == 'What is jSparrow?') {
-        this.sendMessage(this.replies.whatIs)
-      } else if (choice == 'Where do I find jSparrow?') {
-        this.sendMessage(this.replies.whereDoIFind)
-      } else if (choice == 'How do I use jSparrow?') {
-        this.sendMessage(this.replies.howDoIUse)
-      } else {
-        this.sendMessage(this.replies.tryAgain)
-      }
-
-      for(let[key, questionObject] of Object.entries(this.db)) {
-        if(questionObject.questions.includes(choice)) {
-          console.log(`${key}:${choice}`) 
-          var answer = this.db[key].answers[Math.floor(Math.random() * this.db[key].answers.length)]
-          console.log(`Answer: ${answer}`)
-          var nextSuggestions = this.db[key].nextSuggestions.map(suggestionKey => this.db[suggestionKey].questions[0]) 
-          console.log('Next suggestions:')
-          nextSuggestions.forEach(element => {
-            console.log(element)
-          });
-        }
-      }
     },
     openChat () {
       // called when the user clicks on the fab button to open the chat
