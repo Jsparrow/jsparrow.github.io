@@ -50,13 +50,6 @@ export default {
           name: 'default',
         },
       },
-      replies: {
-        whatIs: 'jSparrow is a tool that provides automatic refactoring of Java sources', 
-        howDoIUse: 'You can install jSparrow as a plugin in Eclipse or you can integrate it into your maven build process using jSparrow Maven Plugin',
-        whereDoIFind: 'You can find jSparrow in the Eclipse Marketplace or you can directly install it from the jSparrow update site https://update.jsparrow.eu', 
-        tryAgain: 'I didn\'t quite get that. Please try again...'
-      },
-
       participants: [
         {
           id: 'support',

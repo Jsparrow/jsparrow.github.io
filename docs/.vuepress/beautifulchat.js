@@ -25,7 +25,7 @@ module.exports = {
 
   interactiveRules: {
     questions: ['Are there interactive rules?'],
-    answers: ['Yes, there are rules that can be configured to fit your needs. E.g., in the ‘Rename Fields’ rule you can configure how to generate the new field names; in the ‘Standard Logger’ rule you can configure which logging level to use in different scenarios. '],
+    answers: ['Yes, there are rules that can be configured to fit your needs. E.g., in the ‘Rename Fields’ rule you can configure how to generate the new field names; in the ‘Standard Logger’ rule you can configure which logging level to use in different scenarios.'],
     nextSuggestions: ['howToInstall', 'whereToGet', 'bugReport'],
   },
 
@@ -135,7 +135,7 @@ module.exports = {
       'What are the benefits?',
     ],
     answers: [
-      'Remove code smells',
+      'Among others, the benefits you get from jSparrow are: *Reduce repetitive work* - avoid repeating trivial but yet important cleanups manually over the entire source base. Thus, you have more time to focus on your tasks and eliminate human mistakes, too.; *Boost performance* - since Java keeps evolving, there are always new features introduced that are more performant than older alternatives. jSparrow offers various refactorings with a focus on performance improvement.;*Fix security leaks* - jSparrow provides a list of rules for preventing injection attacks of different kinds.;*Improve readability* - developers spend a significant amount of time reading existing code. jSparrow helps with making the code more readable and reducing cognitive complexity.',
     ] /* Write something for most important tags */,
     nextSuggestions: ['howToInstall', 'whatIsStarter', 'whichEditions'],
   },
@@ -143,7 +143,7 @@ module.exports = {
   howToInstallJmp: {
     questions: ['How to install jSparrow Maven Plugin?'],
     answers: [
-      'Download it from our repository and include it in your build script',
+      'To install JMP you simply need to add the plugin repository in the pom.xml file or in the settings.xml file. No additional downloads are required. The refactoring can be started from the command line. Further configuration can be provided with command line parameters, profiles, or yml files. See also http://localhost:8081/maven/getting-started.html#installation',
     ],
     nextSuggestions: ['whatIsJMP', 'whichPlatforms', 'howManyRules'],
   },
@@ -176,7 +176,7 @@ module.exports = {
   whatIsPro: {
     questions: ['What is jSparrow Pro?'],
     answers: [
-      'jSparrow Pro provides the full power of jSparrow rules. You can view and apply all changes from all jSparrow rules',
+      'jSparrow Pro provides the full power of jSparrow rules. You can view and apply all changes from all jSparrow rules.',
     ],
     nextSuggestions: ['howDoIBenefit', 'whatIsStarter', 'whatIsRule'],
   },
@@ -187,7 +187,7 @@ module.exports = {
       'What is a jSparrow refactoring Rule?',
       'What is a Rule?',
     ],
-    answers: ['....'],
+    answers: ['A jSparrow Rule is a definition of a granular refactoring performed by jSparrow to improve a code snippet. The scope of a single rule is very specific. E.g., ‘Use Functional Interface’ rule transforms when possible anonymous classes to lambda expressions. Rules can be combined to obtain a broader refactoring.'],
     nextSuggestions: ['whatIsProfile'],
   },
 
@@ -201,7 +201,7 @@ module.exports = {
 
   howManyRules: {
     questions: ['How many rules are implemented in jSparrow?'], /* Maybe we can remove this. We will for sure forget to update it. */
-    answers: ['Check our documentation space. '],
+    answers: ['By now, there are over 78 refactoring rules implemented in jSparrow.'],
     nextSuggestions: ['whatIsReleaseSchedule', 'whichEditions'],
   },
   requestFeature: { 
