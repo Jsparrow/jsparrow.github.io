@@ -66,7 +66,7 @@ export default {
               'What is jSparrow?', 
               'What are the benefits?', 
               'Where can I get jSparrow Pro?',
-              'Which editions are available?', 
+              'Which versions are available?', 
               'I have a suggestion', 
               'I want to report a bug.',
               'I\'m just having a look.'] 
