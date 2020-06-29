@@ -40,7 +40,7 @@ module.exports = {
     answers: [
       'When integrated into Eclipse, you can start jSparrow in a Java file, package, or project. After selecting the rules you want to apply, jSparrow computes the changes and displays them side-by-side on a diff view. You can choose to unselect changes on certain files for different rules. The original sources are not affected until the changes are approved.',
     ],
-    nextSuggestions: ['howToInstall', 'bugReport', 'talkToHuman'],
+    nextSuggestions: ['howToInstall', 'bugReport'],
   },
 
   help: {
@@ -60,7 +60,7 @@ module.exports = {
       'No!',
     ],
     answers: ['Ok. Enjoy visiting our documentation!'],
-    nextSuggestions: ['bugReport', 'suggestion', 'whatIs', 'talkToHuman'],
+    nextSuggestions: ['bugReport', 'suggestion', 'whatIs'],
   },
 
   suggestion: {
@@ -85,7 +85,7 @@ module.exports = {
       'jSparrow is a tool that provides automatic refactoring of Java sources',
       'jSparrow is a tool that refactors Java code automatically for you. Thus, saving maintenance time',
     ],
-    nextSuggestions: ['howToInstall', 'whichEditions', 'howDoIBenefit', 'howDoesItWork', 'talkToHuman'],
+    nextSuggestions: ['howToInstall', 'whichEditions', 'howDoIBenefit', 'howDoesItWork'],
   },
 
   howToInstall: {
@@ -112,13 +112,13 @@ module.exports = {
     answers: [
       'There are three jSparrow editions: jSparrow *Free*, jSparrow *Starter*, and jSparrow *Pro*.',
     ],
-    nextSuggestions: ['whatIsStarter', 'whatIsFree', 'whatIsPro', 'whichVersionDoINeed', 'talkToHuman'],
+    nextSuggestions: ['whatIsStarter', 'whatIsFree', 'whatIsPro', 'whichVersionDoINeed'],
   },
 
   whatIsJEP: { 
     questions: ['What is jSparrow Eclipse Plugin?'],
     answers: ['jSparrow Eclipse Plugin (JEP) is the integration of jSparrow in the Eclipse IDE. JEP is our most recommended product as it has a rich user interface that allows customers to have full control over the refactorings they perform on the source base.'],
-    nextSuggestions: ['whatIsRule', 'whatIsJMP', 'whereToGet', 'howDoesItWork', 'talkToHuman'],
+    nextSuggestions: ['whatIsRule', 'whatIsJMP', 'whereToGet', 'howDoesItWork'],
   },
 
   whatIsJMP: {
@@ -147,7 +147,7 @@ module.exports = {
     answers: [
       'Among others, the benefits you get from jSparrow are: *Reduce repetitive work* - avoid repeating trivial but yet important cleanups manually over the entire source base. Thus, you have more time to focus on your tasks and eliminate human mistakes, too.; *Boost performance* - since Java keeps evolving, there are always new features introduced that are more performant than older alternatives. jSparrow offers various refactorings with a focus on performance improvement.; *Fix security leaks* - jSparrow provides a list of rules for preventing injection attacks of different kinds.;*Improve readability* - developers spend a significant amount of time reading existing code. jSparrow helps with making the code more readable and reducing cognitive complexity.',
     ] /* Write something for most important tags */,
-    nextSuggestions: ['whereToGet', 'howToInstall', 'whatIsStarter', 'whichEditions', 'talkToHuman'],
+    nextSuggestions: ['whereToGet', 'howToInstall', 'whatIsStarter', 'whichEditions'],
   },
 
   howToInstallJmp: {
@@ -161,7 +161,7 @@ module.exports = {
   whichPlatforms: {
     questions: ['In which platforms is jSparrow integrated to?'],
     answers: ['jSparrow is integrated into Eclipse IDE as jSparrow Eclipse Plugin, into Maven as jSparrow Maven Plugin, and into GitHub as jSparrow Cloud App.'],
-    nextSuggestions: ['whatIsJEP', 'whatIsJMP', 'whatIsJGA', 'talkToHuman'],
+    nextSuggestions: ['whatIsJEP', 'whatIsJMP', 'whatIsJGA'],
   },
 
   whatIsStarter: {
@@ -169,7 +169,7 @@ module.exports = {
     answers: [
       'jSparrow starter allows to apply 15 Rules for FREE. After filling a registration form you will receive a license key for activating jSparrow Starter. Afterwards you can apply the changes of jSparrow rules tagged as FREE.',
     ],
-    nextSuggestions: ['howDoIBenefit', 'whatIsFree', 'whatIsPro', 'whatIsRule', 'talkToHuman'],
+    nextSuggestions: ['howDoIBenefit', 'whatIsFree', 'whatIsPro', 'whatIsRule'],
   },
   whatIsFree: {
     questions: ['What is jSparrow Free?'],
@@ -180,8 +180,7 @@ module.exports = {
       'howDoIBenefit',
       'whatIsStarter',
       'whatIsPro',
-      'whatIsRule',
-      'talkToHuman'
+      'whatIsRule'
     ],
   },
   whatIsPro: {
@@ -189,7 +188,7 @@ module.exports = {
     answers: [
       'jSparrow Pro provides the full power of jSparrow rules. You can view and apply all changes from all jSparrow rules.',
     ],
-    nextSuggestions: ['howDoIBenefit', 'whatIsStarter', 'whatIsRule', 'talkToHuman'],
+    nextSuggestions: ['howDoIBenefit', 'whatIsStarter', 'whatIsRule'],
   },
 
   whatIsRule: {
