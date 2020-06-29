@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="chat-bot">
     <beautiful-chat
       :participants="participants"
       :titleImageUrl="titleImageUrl"
@@ -31,7 +31,7 @@ import CloseIconSvg from 'vue-beautiful-chat/src/assets/close.svg'
 export default {
     data() {
     return {
-      db: require('../beautifulchat.js'),
+      db: require('../../beautifulchat.js'),
       icons:{
         open:{
           img: OpenIcon,
@@ -178,3 +178,17 @@ export default {
   }
 }
 </script>
+
+<style>
+.sc-launcher {
+  bottom: 55px !important;
+}
+
+.sc-launcher .sc-open-icon {
+  bottom: 55px !important;
+}
+
+.sc-launcher .sc-closed-icon {
+  bottom: 55px !important;
+}
+</style>
