@@ -85,7 +85,7 @@ module.exports = {
       'jSparrow is a tool that provides automatic refactoring of Java sources',
       'jSparrow is a tool that refactors Java code automatically for you. Thus, saving maintenance time',
     ],
-    nextSuggestions: ['howToInstall', 'whichEditions', 'howDoIBenefit', 'howDoesItWork'],
+    nextSuggestions: ['howDoesItWork', 'whichEditions', 'howDoIBenefit', 'whichPlatforms'],
   },
 
   howToInstall: {
@@ -155,7 +155,7 @@ module.exports = {
     answers: [
       'To install JMP you simply need to add the plugin repository in the pom.xml file or in the settings.xml file. No additional downloads are required. The refactoring can be started from the command line. Further configuration can be provided with command line parameters, profiles, or yml files. See also http://localhost:8081/maven/getting-started.html#installation',
     ],
-    nextSuggestions: ['whatIsJMP', 'whichPlatforms', 'howManyRules', 'talkToHuman'],
+    nextSuggestions: ['whatIsJMP', 'whichPlatforms', 'talkToHuman'],
   },
 
   whichPlatforms: {
