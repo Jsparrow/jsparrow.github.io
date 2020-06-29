@@ -11,7 +11,7 @@
       :icons="icons"
       :open="openChat"
       :showEmoji="true"
-      :showFile="true"
+      :showFile="false"
       :showTypingIndicator="showTypingIndicator"
       :colors="colors"
       :alwaysScrollToBottom="alwaysScrollToBottom"
@@ -61,7 +61,7 @@ export default {
       messageList: [
           { 
             type: 'text', author: `support`, 
-            data: { text: `Hey there! May I help you?` }, 
+            data: { text: `Hey there! May I help you? 😊` }, 
             suggestions: [
               'What is jSparrow?', 
               'What are the benefits?', 
