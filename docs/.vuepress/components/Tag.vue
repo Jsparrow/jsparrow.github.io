@@ -3,12 +3,18 @@
     <p>{{ tagName }}</p>
 
     <ul>
-      <li v-for="page in Object.keys(getPagesForTag)">
-        <router-link :to="{ path: page.path }">{{ page }}</router-link>
+      <li v-for="page in getPagesForTag">
+        <router-link :to="{ path: page.path }">{{ page.title }}</router-link>
       </li>
     </ul>
 
-    <p>{{ getTags }}</p>
+    ---------
+
+    <ul>
+      <li v-for="page in getPagesForTagFull">
+        <router-link :to="{ path: page.path }">{{ page.title }}</router-link>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -16,28 +22,26 @@
 export default {
   props: ["tagName"],
   computed: {
-    getTags() {
-      let tags = {};
+    getPagesForTag() {
+      let pages = [];
       for (let page of this.$site.pages) {
         for (let index in page.frontmatter.tags) {
           const tag = page.frontmatter.tags[index];
-          if (tag in tags) {
-            tags[tag].push(page);
-          } else {
-            tags[tag] = [page];
+          if (tag === this.tagName) {
+            pages.push({ title: page.title, path: page.path });
           }
         }
       }
-      return tags[this.tagName];
+      return pages;
     },
-    getPagesForTag() {
-      let pages = '';
+    getPagesForTagFull() {
+      let pages = [];
       for (let page of this.$site.pages) {
         for (let index in page.frontmatter.tags) {
-          const currentPage = page.frontmatter.tags[index];
-          if (currentPage === this.tagName) {
-            pages = page.title
-          } 
+          const tag = page.frontmatter.tags[index];
+          if (tag === this.tagName) {
+            pages.push(page);
+          }
         }
       }
       return pages;
