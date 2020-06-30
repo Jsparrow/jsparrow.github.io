@@ -1,13 +1,12 @@
 <template>
   <div>
-    <p>{{ tagName }}</p>
 
+    <p>List of rules with this tag:</p>
     <ul>
-      <li v-for="page in getPagesForTag">
+      <li v-for="page in pagesForTag">
         <router-link :to="{ path: page.path }">{{ page.title }}</router-link>
       </li>
     </ul>
-
   </div>
 </template>
 
@@ -16,7 +15,7 @@ export default {
   name: "Tag",
   props: ["tagName"],
   computed: {
-    getPagesForTag() {
+    pagesForTag() {
       let pages = [];
       for (let page of this.$site.pages) {
         for (let index in page.frontmatter.tags) {
@@ -26,14 +25,15 @@ export default {
           }
         }
       }
-      return pages;
+
+      function compare(a, b) {
+        if (a.title < b.title) return -1;
+        if (a.title > b.title) return 1;
+        return 0;
+      }
+
+      return pages.sort(compare);
     }
-  }
+  },
 };
 </script>
-
-<style scoped>
-button {
-  background-color: #4caf50;
-}
-</style>
