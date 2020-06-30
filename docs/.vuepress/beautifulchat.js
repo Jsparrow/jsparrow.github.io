@@ -18,7 +18,7 @@ module.exports = {
   talkToHuman: {
     questions: ['May I talk to a human?', 'I want to talk to a human.', 'How can I reach you?'],
     answers: [
-      'Sure, our team will be happy to respond to your inquiries. In case you want technical support, please send an email to support@jsparrow.eu. This will automatically create a ticket at jSparrow Help Center. If you want a special offer for jSparrow Pro, please fill out the contact form at https://jsparrow.eu/contact/',
+      'Sure, my team will be happy to respond to your inquiries. In case you want technical support, please send an email to support@jsparrow.eu. This will automatically create a ticket at jSparrow Help Center. If you want a special offer for jSparrow Pro, please fill out the contact form at https://jsparrow.eu/contact/',
     ],
     nextSuggestions: ['howToInstall', 'whatIs', 'bugReport', 'suggestion'],
   },
@@ -38,7 +38,7 @@ module.exports = {
   howDoesItWork: {
     questions: ['How does jSparrow work?'],
     answers: [
-      'When integrated into Eclipse, you can start jSparrow on Java sources. After selecting the rules you want to apply, jSparrow computes the changes and displays them side-by-side on a diff view. You can unselect changes on certain files for different rules. The original sources are not affected until the changes are approved.',
+      'jSparrow can be started on any Java source. After selecting the rules you want to apply, jSparrow computes the changes and displays them side-by-side on a diff view. You can choose to unselect changes on certain files for different rules. The original sources are not affected until the changes are approved.',
     ],
     nextSuggestions: ['howToInstall', 'bugReport'],
   },
@@ -145,9 +145,33 @@ module.exports = {
       'What benefits do I get?'
     ],
     answers: [
-      'Among others, the benefits you get from jSparrow are: *Reduce repetitive work* - avoid repeating trivial but yet important cleanups manually over the entire source base. Thus, you have more time to focus on your tasks and eliminate human mistakes, too.; *Boost performance* - since Java keeps evolving, there are always new features introduced that are more performant than older alternatives. jSparrow offers various refactorings with a focus on performance improvement.; *Fix security leaks* - jSparrow provides a list of rules for preventing injection attacks of different kinds.;*Improve readability* - developers spend a significant amount of time reading existing code. jSparrow helps with making the code more readable and reducing cognitive complexity.',
+      'Among others, the benefits you get from jSparrow are: reduce repetitive work, boost performance, fix security leaks, improve readability, and more.',
     ] /* Write something for most important tags */,
-    nextSuggestions: ['whereToGet', 'howToInstall', 'whatIsStarter', 'whichEditions'],
+    nextSuggestions: ['howIsRepetitiveWorkReduced', 'howIsSecurityImproved', 'howIsPerformanceImproved'],
+  },
+
+  howIsRepetitiveWorkReduced: {
+    questions: ['How is repetitive work reduced?'],
+    answers: [
+      'jSparrow helps to automatically resolve some trivial but yet important cleanups over the entire code base. Thus, you have more time to focus on your tasks and eliminate human mistakes, too.'
+    ],
+    nextSuggestions:['whereToGet', 'howToInstall', 'whatIsStarter', 'whichEditions', 'howDoIBenefit']
+  },
+
+  howIsSecurityImproved: {
+    questions: ['How is security improved?'],
+    answers: [
+      'jSparrow provides a list of rules for preventing injection attacks of different kinds.'
+    ],
+    nextSuggestions:['whereToGet', 'howToInstall', 'whatIsStarter', 'whichEditions', 'howDoIBenefit']
+  },
+
+  howIsPerformanceImproved: {
+    questions: ['How is Performance affected?'],
+    answers: [
+      'Since Java keeps evolving, there are always new features introduced that are more efficient than older alternatives. jSparrow offers various refactorings with a focus on performance improvement.'
+    ],
+    nextSuggestions:['whereToGet', 'howToInstall', 'whatIsStarter', 'whichEditions', 'howDoIBenefit']
   },
 
   howToInstallJmp: {
