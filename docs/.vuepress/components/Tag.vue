@@ -1,6 +1,5 @@
-<template>
+<template lang="html">
   <div>
-
     <p>List of rules with this tag:</p>
     <ul>
       <li v-for="page in pagesForTag">
