@@ -8,18 +8,12 @@
       </li>
     </ul>
 
-    ---------
-
-    <ul>
-      <li v-for="page in getPagesForTagFull">
-        <router-link :to="{ path: page.path }">{{ page.title }}</router-link>
-      </li>
-    </ul>
   </div>
 </template>
 
 <script>
 export default {
+  name: "Tag",
   props: ["tagName"],
   computed: {
     getPagesForTag() {
@@ -33,20 +27,8 @@ export default {
         }
       }
       return pages;
-    },
-    getPagesForTagFull() {
-      let pages = [];
-      for (let page of this.$site.pages) {
-        for (let index in page.frontmatter.tags) {
-          const tag = page.frontmatter.tags[index];
-          if (tag === this.tagName) {
-            pages.push(page);
-          }
-        }
-      }
-      return pages;
-    },
-  },
+    }
+  }
 };
 </script>
 
