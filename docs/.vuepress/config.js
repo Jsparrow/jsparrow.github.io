@@ -26,7 +26,7 @@ module.exports = {
             link: '/rules/'
         },
         {
-            text: 'New Tags',
+            text: 'Tags',
             link: '/tags/'
         },
         {
@@ -72,6 +72,7 @@ module.exports = {
             alias: {
                 '@styles': path.resolve(__dirname, './styles')
             }
-        }
+        },
+        devtool: 'source-map'
     }
 };
