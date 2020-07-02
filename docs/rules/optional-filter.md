@@ -33,8 +33,6 @@ Arguably, the lambda expression is easier to read and can be combined with other
 
 ## Code Changes
 
-### Base Case
-
 __Pre__
 ```java
 		Optional<User> oUser = findById(userId);
@@ -53,7 +51,7 @@ __Post__
 		});
 ```
 
-### Limitations
+## Limitations
 
 Multiple Statements in Lambda Body - no transformation is feasible. 
 

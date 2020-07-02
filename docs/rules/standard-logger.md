@@ -116,7 +116,7 @@ public void replaceSystemErrPrintln(String input) {
 
 public void replacePrintStackTrace(String input) {
     try {
-        StringUtils.substring(input, 5);
+        input.substring(5);
     } catch (Exception e) {
         logger.error(e.getMessage(), e);
     }
