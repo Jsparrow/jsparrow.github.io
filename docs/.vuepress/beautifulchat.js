@@ -191,7 +191,7 @@ module.exports = {
   whatIsStarter: {
     questions: ['What is jSparrow Starter?'],
     answers: [
-      'jSparrow starter allows to apply 15 Rules for FREE. After filling a registration form you will receive a license key for activating jSparrow Starter. Afterwards you can apply the changes of jSparrow rules tagged as FREE.',
+      'jSparrow starter allows to apply 15 Rules for FREE. After filling a registration form you will receive an activation key for jSparrow Starter. Afterwards you can apply the changes of jSparrow rules tagged as FREE.',
     ],
     nextSuggestions: ['howDoIBenefit', 'whatIsFree', 'whatIsPro', 'whatIsRule'],
   },
@@ -221,7 +221,7 @@ module.exports = {
       'What is a jSparrow refactoring Rule?',
       'What is a Rule?',
     ],
-    answers: ['A jSparrow rule is a definition of a granular refactoring performed by jSparrow to improve a code snippet. The scope of a single rule is very specific. E.g., ‘Use Functional Interface’ rule transforms when possible anonymous classes to lambda expressions. Rules can be combined to obtain a broader refactoring.'],
+    answers: ['A jSparrow rule is a definition of a granular refactoring performed by jSparrow. The scope of a single rule is very specific. E.g., ‘Use Functional Interface’ rule transforms when possible anonymous classes to lambda expressions. Rules can be combined to obtain a broader refactoring.'],
     nextSuggestions: ['whatIsProfile', 'howDoIBenefit', 'interactiveRules', 'talkToHuman'],
   },
 
