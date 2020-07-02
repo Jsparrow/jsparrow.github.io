@@ -14,10 +14,6 @@ Rules with this tag will alter source code parts to follow guides such as the [G
 
 <Tag tag-name="Coding Conventions" />
 
-## Formatting
-
-<Tag tag-name="Formatting" />
-
 ## Free
 
 Rules with this tag are free to use without limitation. See [jSparrow Starter Registration](/eclipse/jsparrow-starter-registration.html) for more details.
