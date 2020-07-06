@@ -7,7 +7,7 @@ remediationCost: 1
 links:
 description:
     Reformats code according to the coding conventions defined in Eclipse.
-tags: ["Java 1.1", "Formatting", "Readability"]
+tags: ["Java 1.1", "Readability"]
 defaultConfiguration: true
 ---
 

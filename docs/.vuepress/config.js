@@ -26,6 +26,10 @@ module.exports = {
             link: '/rules/'
         },
         {
+            text: 'Tags',
+            link: '/tags/'
+        },
+        {
             text: 'Eclipse Plugin',
             link: '/eclipse/getting-started.html',
         },
@@ -53,6 +57,7 @@ module.exports = {
             '/cloud/': ['getting-started'],
             '/rules/': require('./rules.js'),
             '/statistics/': ['statistics', 'jenkins-statistics', 'mdm-statistics', 'neo4j-statistics'],
+            '/tags/': [''],
             '/': ['']
         }
     },
@@ -67,6 +72,7 @@ module.exports = {
             alias: {
                 '@styles': path.resolve(__dirname, './styles')
             }
-        }
+        },
+        devtool: 'source-map'
     }
 };

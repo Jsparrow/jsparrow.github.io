@@ -7,7 +7,7 @@ remediationCost: 2
 links:
 description:
     This rule replaces the types on the local variable declarations with the reserved word var introduced in Java 10.
-tags: ["Java 10", "Formatting", "Readability"]
+tags: ["Java 10", "Readability"]
 ---
 
 # Use Local Variable Type Inference

@@ -10,7 +10,7 @@ links:
     
 description:
     Organize Imports according to the Eclipse's built in Organize Imports functionality.
-tags: ["Free", "Java 1.1", "Formatting", "Readability"]
+tags: ["Free", "Java 1.1", "Readability"]
 ---
 
 # Organize Imports
