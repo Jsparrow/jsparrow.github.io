@@ -8,10 +8,9 @@ node_js:
 
 install:
     - yarn install
-    - yarn run build
 
 script:
-    - true
+    - yarn run build
 
 cache:
     directories:
