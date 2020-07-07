@@ -95,7 +95,7 @@ module.exports = {
       'How do I install?',
     ],
     answers: [
-      'You can drag the installation button from the Eclipse Marketplace into your IDE. You can also install jSparrow directly from the update site https://update.jsparrow.eu.',
+      'You can drag and drop the installation button from the Eclipse Marketplace into your IDE. You can also install jSparrow directly from the update site https://update.jsparrow.eu.',
     ],
     nextSuggestions: ['howToInstallJmp', 'whichPlatforms', 'whereToGet', 'talkToHuman'],
   },
@@ -116,15 +116,15 @@ module.exports = {
   },
 
   whatIsJEP: { 
-    questions: ['What is jSparrow Eclipse Plugin?'],
-    answers: ['jSparrow Eclipse Plugin (JEP) is the integration of jSparrow in the Eclipse IDE. JEP is the recommended product as it has a rich user interface that allows customers to have full control over the refactorings they perform on the source base.'],
+    questions: ['What is the jSparrow Eclipse Plugin?'],
+    answers: ['The jSparrow Eclipse Plugin (JEP) is the integration of jSparrow in the Eclipse IDE. JEP is the recommended product as it has a rich user interface that allows customers to have full control over the refactorings they perform on the source base.'],
     nextSuggestions: ['whatIsRule', 'whatIsJMP', 'whereToGet', 'howDoesItWork'],
   },
 
   whatIsJMP: {
-    questions: ['What is jSparrow Maven Plugin?'],
+    questions: ['What is the jSparrow Maven Plugin?'],
     answers: [
-      'jSparrow Maven Plugin (JMP) is a continuous integration tool to apply automatic refactoring. It applies nearly the same rules as jSparrow Eclipse Plugin but works without user interaction. The rule selection and configuration can be provided through yml files.',
+      'The jSparrow Maven Plugin (JMP) is a continuous integration tool to apply automatic refactoring. It applies nearly the same rules as jSparrow Eclipse Plugin but works without user interaction. The rule selection and configuration can be provided through yml files.',
     ],
     nextSuggestions: ['howToInstall', 'whatIsJGA', 'whatIsJEP', 'talkToHuman'],
   },
@@ -153,7 +153,7 @@ module.exports = {
   howIsRepetitiveWorkReduced: {
     questions: ['How is repetitive work reduced?'],
     answers: [
-      'jSparrow helps to automatically resolve some trivial but yet important cleanups over the entire code base. Thus, you have more time to focus on your tasks and eliminate human mistakes, too.'
+      'jSparrow helps to automatically resolve some trivial but yet important cleanups over the entire code base. Thus, you have more time to focus on your tasks and avoid human mistakes, too.'
     ],
     nextSuggestions:['whereToGet', 'howToInstall', 'whatIsStarter', 'whichEditions', 'howDoIBenefit']
   },
@@ -175,30 +175,30 @@ module.exports = {
   },
 
   howToInstallJmp: {
-    questions: ['How to install jSparrow Maven Plugin?'],
+    questions: ['How to install the jSparrow Maven Plugin?'],
     answers: [
-      'To install JMP you simply need to add the plugin repository in the pom.xml file or in the settings.xml file. No additional downloads are required. The refactoring can be started from the command line. Further configuration can be provided with command line parameters, profiles, or yml files. See also http://localhost:8081/maven/getting-started.html#installation.',
+      'To install the JMP you simply need to add the plugin repository in the pom.xml file or in the settings.xml file. No additional downloads are required. The refactoring can be started from the command line. Further configuration can be provided with command line parameters, profiles, or yml files. See also http://localhost:8081/maven/getting-started.html#installation.',
     ],
     nextSuggestions: ['whatIsJMP', 'whichPlatforms', 'talkToHuman'],
   },
 
   whichPlatforms: {
-    questions: ['In which platforms is jSparrow integrated to?'],
-    answers: ['jSparrow is integrated into Eclipse IDE as jSparrow Eclipse Plugin, into Maven as jSparrow Maven Plugin, and into GitHub as jSparrow Cloud App.'],
+    questions: ['In which platforms is jSparrow integrated?'],
+    answers: ['jSparrow is integrated into the Eclipse IDE as jSparrow Eclipse Plugin, into Maven as jSparrow Maven Plugin, and into GitHub as jSparrow Cloud App.'],
     nextSuggestions: ['whatIsJEP', 'whatIsJMP', 'whatIsJGA'],
   },
 
   whatIsStarter: {
     questions: ['What is jSparrow Starter?'],
     answers: [
-      'jSparrow starter allows to apply 15 Rules for FREE. After filling a registration form you will receive an activation key for jSparrow Starter. Afterwards you can apply the changes of jSparrow rules tagged as FREE.',
+      'jSparrow starter allows you to apply 15 Rules for FREE. After filling a registration form you will receive an activation key for jSparrow Starter. Afterwards you can apply the changes of jSparrow rules tagged as FREE.',
     ],
     nextSuggestions: ['howDoIBenefit', 'whatIsFree', 'whatIsPro', 'whatIsRule'],
   },
   whatIsFree: {
     questions: ['What is jSparrow Free?'],
     answers: [
-      'jSparrow Free allows to view the changes computed by jSparrow rules. After installing jSparrow, you will automatically have jSparrow Free. It does not require licensing or registration.',
+      'jSparrow Free allows you to view the changes computed by jSparrow rules. After installing jSparrow, you will automatically have jSparrow Free. It does not require licensing or registration.',
     ],
     nextSuggestions: [
       'howDoIBenefit',
@@ -221,14 +221,14 @@ module.exports = {
       'What is a jSparrow refactoring Rule?',
       'What is a Rule?',
     ],
-    answers: ['A jSparrow rule is a definition of a granular refactoring performed by jSparrow. The scope of a single rule is very specific. E.g., ‘Use Functional Interface’ rule transforms when possible anonymous classes to lambda expressions. Rules can be combined to obtain a broader refactoring.'],
+    answers: ['A jSparrow rule is a definition of a granular refactoring performed by jSparrow. The scope of a single rule is very specific. E.g., the ‘Use Functional Interface’ rule transforms anonymous classes to lambda expressions when possible. Rules can be combined to obtain a broader refactoring.'],
     nextSuggestions: ['whatIsProfile', 'howDoIBenefit', 'interactiveRules', 'talkToHuman'],
   },
 
   whatIsProfile: {
     questions: ['What is a profile?'],
     answers: [
-      'A profile is a list of jSparrow rules. You can create any number of profiles with the rules of your choice. Profiles can be exported from jSparrow Eclipse to jSparrow Maven Plugin. The intention is to define company standards as sets of rules and to simplify the rule selection.',
+      'A profile is a list of jSparrow rules. You can create any number of profiles with the rules of your choice. Profiles can be exported from jSparrow Eclipse to the jSparrow Maven Plugin. The intention is to define company standards as sets of rules and to simplify the rule selection.',
     ],
     nextSuggestions: ['whatIsRule', 'howDoIBenefit', 'howManyRules', 'talkToHuman'],
   },
@@ -240,7 +240,7 @@ module.exports = {
   },
   whatIsReleaseSchedule: {
     questions: ['What is the release schedule?'],
-    answers: ['A new jSparrow version is released monthly. Each release contains at least one new rule. Every third release contains at least three rules. The releases take place on the third Thursday of the month.'],
+    answers: ['A new jSparrow version is released monthly. Each release contains at least one new rule. Every third release contains at least three rules. The releases take place on the third Thursday of each month.'],
     nextSuggestions: ['howManyRules', 'whichEditions', 'talkToHuman'],
   },
   default: {
