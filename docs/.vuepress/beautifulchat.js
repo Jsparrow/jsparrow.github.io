@@ -126,15 +126,7 @@ module.exports = {
     answers: [
       'The jSparrow Maven Plugin (JMP) is a continuous integration tool to apply automatic refactoring. It applies nearly the same rules as jSparrow Eclipse Plugin but works without user interaction. The rule selection and configuration can be provided through yml files.',
     ],
-    nextSuggestions: ['howToInstall', 'whatIsJGA', 'whatIsJEP', 'talkToHuman'],
-  },
-
-  whatIsJGA: {
-    questions: ['What is jSparrow Cloud App?'],
-    answers: [
-      "jSparrow Could App (JCA) is the integration of jSparrow's refactoring on a GitHub app. JCA is triggered upon creation of new pull requests. The rule selection and configuration can be provided through yml files.",
-    ],
-    nextSuggestions: ['howToInstall', 'whatIsJMP', 'whatIsJEP', 'talkToHuman'],
+    nextSuggestions: ['howToInstall', 'whatIsJEP', 'talkToHuman'],
   },
 
   howDoIBenefit: {
@@ -185,7 +177,7 @@ module.exports = {
   whichPlatforms: {
     questions: ['In which platforms is jSparrow integrated?'],
     answers: ['jSparrow is integrated into the Eclipse IDE as jSparrow Eclipse Plugin, into Maven as jSparrow Maven Plugin, and into GitHub as jSparrow Cloud App.'],
-    nextSuggestions: ['whatIsJEP', 'whatIsJMP', 'whatIsJGA'],
+    nextSuggestions: ['whatIsJEP', 'whatIsJMP'],
   },
 
   whatIsStarter: {
