@@ -137,7 +137,7 @@ module.exports = {
       'What benefits do I get?'
     ],
     answers: [
-      'Among others, the benefits you get from jSparrow are: reduce repetitive work, boost performance, fix security leaks, improve readability, and more.',
+      'Among others, some benefits of using jSparrow are: reducing repetitive work, boosting performance, fixing security leaks, improving readability, and more.',
     ] /* Write something for most important tags */,
     nextSuggestions: ['howIsRepetitiveWorkReduced', 'howIsSecurityImproved', 'howIsPerformanceImproved'],
   },
