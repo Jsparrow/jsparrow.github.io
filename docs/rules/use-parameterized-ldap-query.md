@@ -23,9 +23,10 @@ tags: ["Java 1.3", "Security"]
 
 ## Description
 
-Lightweight Directory Access Protocol (LDAP) allows to define search filters represented by String values. Like SQL query strings, also LDAP search filter strings can be vulnerable to injection as soon as the corresponding String is constructed by concatenating String literals with user supplied input (e.g., variables, method invocations, user input, etc).  
-This rule looks for invocations of [DirContext::search(Name name, String filter, SearchControls cons)](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/DirContext.html#search(javax.naming.Name,%20java.lang.String,%20javax.naming.directory.SearchControls)) or [DirContext::search(String name, String filter, SearchControls cons)](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/DirContext.html#search(java.lang.String,%20java.lang.String,%20javax.naming.directory.SearchControls)) which are both declared by the interface [javax.naming.directory.DirContext](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/DirContext.html).  
-The vulnerable concats of the LDAP search filter strings are parameterized, so that they can only be considered as data and not as code.
+Similar to SQL queries, the [LDAP](https://ldap.com/) search filters are also vulnerable to injection attacks.
+This rule parameterizes all potential user supplied input that are concatenated into an LDAP search filter. 
+For example, the invocations of [DirContext::search(Name name, **String filter**, SearchControls cons)](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/DirContext.html#search(javax.naming.Name,%20java.lang.String,%20javax.naming.directory.SearchControls)) 
+are replaced by [DirContext::search(Name name, **String filter**, **Object[] args**, SearchControls cons)](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/DirContext.html#search(javax.naming.Name,%20java.lang.String,%20java.lang.Object[],%20javax.naming.directory.SearchControls)) where the filter concatenation fragments are extracted into an Object array.
 
 ## Benefits
 
@@ -37,30 +38,27 @@ Prevents injections when using Lightweight Directory Access Protocol (LDAP).
 
 __Pre__
 ```java
-	String userId = "*)(uid=*))(|(uid=*";
-	String userPassword = "password";
-	DirContext ctx = getDirContext();
-	String filter = "(&(uid=" + userId + ")(userPassword=" + userPassword + "))";
-	try {
-		NamingEnumeration<SearchResult> results = ctx.search("ou=system", filter, new SearchControls());
-	} catch (NamingException e) {
-		e.printStackTrace();
-	}
-
+String userId = "*)(uid=*))(|(uid=*";
+String userPassword = "password";
+DirContext ctx = getDirContext();
+String filter = "(&(uid=" + userId + ")(userPassword=" + userPassword + "))";
+NamingEnumeration<SearchResult> results = ctx.search(
+		"ou=system", 
+		filter, 
+		new SearchControls());
 ```
 
 __Post__
 ```java
-	String userId = "*)(uid=*))(|(uid=*";
-	String userPassword = "password";
-	DirContext ctx = getDirContext();
-	String filter = "(&(uid={0}" + ")(userPassword={1}" + "))";
-	try {
-		NamingEnumeration<SearchResult> results = ctx.search("ou=system", filter, new Object[] { userId, userPassword }, new SearchControls());
-	} catch (NamingException e) {
-		e.printStackTrace();
-	}
-
+String userId = "*)(uid=*))(|(uid=*";
+String userPassword = "password";
+DirContext ctx = getDirContext();
+String filter = "(&(uid={0}" + ")(userPassword={1}" + "))";
+NamingEnumeration<SearchResult> results = ctx.search(
+		"ou=system", 
+		filter, 
+		new Object[] { userId, userPassword }, 
+		new SearchControls());
 ```
 
 
@@ -68,27 +66,25 @@ __Post__
 
 __Pre__
 ```java
-	String userId = "*)(uid=*))(|(uid=*";
-	String userPassword = "password";
-	DirContext ctx = getDirContext();
-	try {
-		NamingEnumeration<SearchResult> results = ctx.search("ou=system", "(&(uid=" + userId + ")(userPassword=" + userPassword + "))", new SearchControls());
-	} catch (NamingException e) {
-		e.printStackTrace();
-	}
+String userId = "*)(uid=*))(|(uid=*";
+String userPassword = "password";
+DirContext ctx = getDirContext();
+NamingEnumeration<SearchResult> results = ctx.search(
+		"ou=system", 
+		"(&(uid=" + userId + ")(userPassword=" + userPassword + "))", 
+		new SearchControls());
 ```
 
 __Post__
 ```java
-    String userId = "*)(uid=*))(|(uid=*";
-	String userPassword = "password";
-	DirContext ctx = getDirContext();
-	try {
-		NamingEnumeration<SearchResult> results = ctx.search("ou=system", "(&(uid={0}" + ")(userPassword={1}" + "))", new Object[] { userId, userPassword }, new SearchControls());
-	} catch (NamingException e) {
-		e.printStackTrace();
-	}
-
+String userId = "*)(uid=*))(|(uid=*";
+String userPassword = "password";
+DirContext ctx = getDirContext();
+NamingEnumeration<SearchResult> results = ctx.search(
+		"ou=system", 
+		"(&(uid={0}" + ")(userPassword={1}" + "))", 
+		new Object[] { userId, userPassword }, 
+		new SearchControls());
 ```
 
 
