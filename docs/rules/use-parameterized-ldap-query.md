@@ -5,7 +5,7 @@ since: 3.19.0
 minJavaVersion: 1.3
 remediationCost: 30
 links:
-    - displayName: "LDAP queries should not be vulnerable to injection attacks"
+    - displayName: "S2078"
       url: "https://sonarcloud.io/organizations/default/rules?open=javasecurity%3AS2078&rule_key=javasecurity%3AS2078"
     
 description:
@@ -23,7 +23,7 @@ tags: ["Java 1.3", "Security"]
 
 ## Description
 
-Lightweight Directory Access Protocol (LDAP) allows to define search filters represented by String values. Like SQL query strings, also LDAP search filter strings can be vulnerable to injection as soon as the corresponding String is constructed by concatenating String literals with user defined expressions (e.g., variables, method invocations, user input, etc).  
+Lightweight Directory Access Protocol (LDAP) allows to define search filters represented by String values. Like SQL query strings, also LDAP search filter strings can be vulnerable to injection as soon as the corresponding String is constructed by concatenating String literals with user supplied input (e.g., variables, method invocations, user input, etc).  
 This rule looks for invocations of [DirContext::search(Name name, String filter, SearchControls cons)](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/DirContext.html#search(javax.naming.Name,%20java.lang.String,%20javax.naming.directory.SearchControls)) or [DirContext::search(String name, String filter, SearchControls cons)](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/DirContext.html#search(java.lang.String,%20java.lang.String,%20javax.naming.directory.SearchControls)) which are both declared by the interface [javax.naming.directory.DirContext](https://docs.oracle.com/javase/7/docs/api/javax/naming/directory/DirContext.html).  
 The vulnerable concats of the LDAP search filter strings are parameterized, so that they can only be considered as data and not as code.
 
