@@ -72,7 +72,6 @@ module.exports = {
             alias: {
                 '@styles': path.resolve(__dirname, './styles')
             }
-        },
-        devtool: 'source-map'
+        }
     }
 };
