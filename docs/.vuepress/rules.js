@@ -64,6 +64,7 @@ module.exports = [
 'use-arrays-stream',
 'buffered-reader-lines',
 'use-collections-singleton-list',
+'primitive-object-use-equals',
 'collections-factory-methods',
 'functional-interface',
 'guard-condition',
@@ -84,6 +85,5 @@ module.exports = [
 'remove-new-string-constructor',
 'use-string-builder-append',
 'string-utils',
-'try-with-resource',
-'primitive-object-use-equals'
+'try-with-resource'
 ]
