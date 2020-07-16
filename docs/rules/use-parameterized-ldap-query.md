@@ -13,7 +13,7 @@ description:
 tags: ["Java 1.3", "Security"]
 ---
 
-# Use Parameterized JPA Query
+# Use Parameterized LDAP Query
 
 [[toc]]
 
