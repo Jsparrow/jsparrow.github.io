@@ -5,6 +5,23 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.19.0 <Badge vertical="middle" text="16.07.2020"/>
+
+The [79<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.19.0. It reduces security flaws by parameterizing the LDAP search filters.
+
+### New Rule
+
+#### [**Use Parameterized LDAP Query**](/rules/use-parameterized-ldap-query.html)
+
+Similar to SQL queries, the [LDAP](https://ldap.com/) search filters are also vulnerable to injection attacks.
+This rule parameterizes all potential user supplied input that are concatenated into an LDAP search filter.
+
+### Fixed Bugs
+
+#### [**Make Fields And Variables Final**](/rules/make-fields-and-variables-final.html)
+
+* Avoids throwing runtime exceptions in some cases when a field is initialized with a lambda expression.
+
 ## 3.18.0 <Badge vertical="middle" text="18.06.2020"/>
 
 The midsummer release of jSparrow 3.18.0 adds three new rules to the ruleset and includes a few bugfixes. 

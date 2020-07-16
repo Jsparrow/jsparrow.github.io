@@ -64,6 +64,7 @@ module.exports = [
 'use-arrays-stream',
 'buffered-reader-lines',
 'use-collections-singleton-list',
+'primitive-object-use-equals',
 'collections-factory-methods',
 'functional-interface',
 'guard-condition',
@@ -74,6 +75,7 @@ module.exports = [
 'optional-if-present-or-else',
 'optional-map',
 'use-parameterized-jpa-query',
+'use-parameterized-ldap-query',
 'use-parameterized-query',
 'string-format-line-separator',
 'lambda-for-each-if-wrapper-to-filter',
@@ -83,6 +85,5 @@ module.exports = [
 'remove-new-string-constructor',
 'use-string-builder-append',
 'string-utils',
-'try-with-resource',
-'primitive-object-use-equals'
+'try-with-resource'
 ]
