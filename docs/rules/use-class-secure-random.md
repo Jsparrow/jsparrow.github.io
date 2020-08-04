@@ -38,14 +38,14 @@ Prevents generating predictable pseudo-random numbers.
 __Pre__
 ```java
 	Random random = new Random();
-	byte bytes[] = new byte[20];
+	byte[] bytes = new byte[20];
 	random.nextBytes(bytes);
 ```
 
 __Post__
 ```java
 	Random random = new SecureRandom();
-	byte bytes[] = new byte[20];
+	byte[] bytes = new byte[20];
 	random.nextBytes(bytes);
 ```
 
@@ -54,7 +54,7 @@ __Post__
 __Pre__
 ```java
 	Random random = new Random(System.currentTimeMillis());
-	byte bytes[] = new byte[20];
+	byte[] bytes = new byte[20];
 	random.nextBytes(bytes);
 ```
 
@@ -62,7 +62,7 @@ __Post__
 ```java
 	Random random = new SecureRandom();
 	random.setSeed(System.currentTimeMillis());
-	byte bytes[] = new byte[20];
+	byte[] bytes = new byte[20];
 	random.nextBytes(bytes);
 ```
 
