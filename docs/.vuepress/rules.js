@@ -74,6 +74,7 @@ module.exports = [
 'optional-if-present',
 'optional-if-present-or-else',
 'optional-map',
+'use-class-secure-random',
 'use-parameterized-jpa-query',
 'use-parameterized-ldap-query',
 'use-parameterized-query',
