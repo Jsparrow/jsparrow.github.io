@@ -23,7 +23,8 @@ tags: ["Java 1.1", "Security"]
 
 ## Description
 
-Creating a new Random object each time a random value is needed is inefficient and may produce numbers which are not random. This rule extracts reusable [java.util.Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) objects, from local variables to class or instance fields.
+Creating a `new Random()` object each time a random value is needed is inefficient and may produce numbers which are not random. This rule extracts reusable [`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) objects, from local variables to class or instance fields. 
+Note that SonarCloud classifies this rule as a Critical Bug, [S2119](https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2119&q=S2119).
 
 ## Benefits
 
@@ -90,6 +91,27 @@ public void sampleMethod(String value) {
 __Post__
 ```java
 private Random random = new Random();
+
+public void sampleMethod(String value) {
+    int nextIndex = random.nextInt();
+    //...
+}
+```
+
+### Using Secure Random Initializer
+
+__Pre__
+```java
+public void sampleMethod(String value) {
+    Random random = new SecureRandom();
+    int nextIndex = random.nextInt();
+    //...
+}
+```
+
+__Post__
+```java
+private Random random = new SecureRandom();
 
 public void sampleMethod(String value) {
     int nextIndex = random.nextInt();
