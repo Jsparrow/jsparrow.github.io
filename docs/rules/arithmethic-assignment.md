@@ -6,7 +6,7 @@ minJavaVersion: 1.4
 remediationCost: 2
 links:
 description:
-    Simplifies arithmetic operations that an compound operator where possible.
+    Simplifies arithmetic operations where a compound operator is possible.
 tags: ["Java 1.4", "Readability", "Coding Conventions"]
 ---
 
