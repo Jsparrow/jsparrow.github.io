@@ -57,6 +57,7 @@ module.exports = [
 'put-if-absent',
 'collection-remove-all',
 'immutable-static-final-collections',
+'reuse-random-objects',
 'multi-variable-declaration-line',
 'string-buffer-to-builder',
 'standard-logger',
