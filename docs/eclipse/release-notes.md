@@ -5,6 +5,50 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.20.0 <Badge vertical="middle" text="20.08.2020"/>
+
+The [80<sup>th</sup> and 81<sup>st</sup> refactoring rules](/rules/) are shipped with jSparrow 3.20.0. The goal of the new rules is to improve the unpredictability of random number generators. Some bugfixes and UI changes are also included. 
+
+### New Rules 
+
+#### [**Reuse Random Objects**](/rules/reuse-random-objects.html)
+This rule extracts reusable `java.util.Random` objects, from local variables to class or instance fields. 
+The goal is to improve unpredictability and reduce the number of objects. 
+
+
+#### [**Use SecureRandom**](/rules/use-secure-random.html)
+This rule replaces pseudorandom number generators ([`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html)) with cryptographically strong random number generators (NRG), i.e., instances of [`java.security.SecureRandom` (NRG)](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html)
+
+### UI Changes
+
+#### Summary Page 
+
+The jSparrow Summary page is redesigned to show the rules having at least one finding in each Java file. 
+
+#### Preview Wizard
+
+The jSparrow Preview wizard is modified to disallow source code selection in case the required license to persist the changes is not present. 
+In such scenarios, the changes in all files can be previewed through the 'Change Navigation' controls highlighted in the following Figure. 
+
+### Fixed bugs
+
+SIM-1734
+#### [**Use Parameterized JPA Query**](/rules/use-parameterized-jpa-query.html) 
+* This fix allows the parameterization of the JPQL when the query string is stored in a local variable.
+
+#### [**Remove toString() on String**](/rules/remove-to-string-on-string.html) 
+* Avoids removing `toString()` in case it serves as the body of a [`Consumer<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html).
+
+#### [**Use StringBuilder::append**](/rules/use-string-builder-append.html.html) 
+* Avoids the StackOverflow errors thrown while refactoring string concatenations with an extremely large number of operands.
+
+#### **Creating jSparrow Profiles**
+* This fix prevents creating or importing profiles named 'Custom'. This name is reserved for any arbitrary selection of jSparrow rules. 
+
+#### [**Use Functional Interfaces**](/rules/functional-interface.html) 
+* Prevents refactoring in case the lambda expression candidate contains a reference to the field being currently initialized. 
+
+
 ## 3.19.0 <Badge vertical="middle" text="16.07.2020"/>
 
 The [79<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.19.0. It reduces security flaws by parameterizing the LDAP search filters.
