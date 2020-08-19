@@ -13,7 +13,7 @@ The [80<sup>th</sup> and 81<sup>st</sup> refactoring rules](/rules/) are shipped
 
 #### [**Reuse Random Objects**](/rules/reuse-random-objects.html)
 This rule extracts reusable `java.util.Random` objects, from local variables to class or instance fields. 
-The goal is to improve unpredictability and reduce the number of objects. 
+The goal is to improve the unpredictability of the generated values. Moreover, the rule reduces the number of objects created by the program.
 
 
 #### [**Use SecureRandom**](/rules/use-secure-random.html)
