@@ -81,6 +81,7 @@ module.exports = [
 'lambda-for-each-if-wrapper-to-filter',
 'lambda-for-each-map',
 'lambda-for-each-collect',
+'use-secure-random',
 'use-string-join',
 'remove-new-string-constructor',
 'use-string-builder-append',
