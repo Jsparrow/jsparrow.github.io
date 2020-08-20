@@ -27,8 +27,8 @@ The jSparrow Summary page is redesigned to show which rules have been applied fo
 
 #### Preview Wizard
 
-The jSparrow Preview wizard is modified to disallow source code selection in case the required license to persist the changes is not present. 
-In such scenarios, the changes in all files can be previewed through the 'Change Navigation' controls highlighted in the following Figure. 
+The jSparrow Preview wizard is updated to allow scrolling and source code selection in case the 'Finish' button is enabled (this applies to the [Free](/tags/#free) rules in [jSparrow Starter](/rules/#free-rules-in-jsparrow-starter) and to all rules in [jSparrow Pro](https://jsparrow.eu/get-jsparrow/) and [jSparrow Student](https://jsparrow.eu/get-jsparrow/)).
+Otherwise, the changes in all files can be previewed through the '*Change Navigation*' controls highlighted in the Figure. 
 
 ### Fixed bugs
 
