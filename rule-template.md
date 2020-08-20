@@ -10,7 +10,7 @@ links:
     
 description:
     Short rule description (this is shown on the [summary page](https://jsparrow.github.io/rules/#summary)).
-tags: ["Java 1.1", "Java 1.2", "Java 1.3", "Java 1.4", "Java 5", "Java 7", "Java 8", "Java 9", "Java 10", "String Manipulation", "Performance", "Lambda", "Old Language Constructs", "Loop", "Readability", "Formatting", "Coding Conventions", "Logging", "Free"]
+tags: ["Java 1.1", "Java 1.2", "Java 1.3", "Java 1.4", "Java 5", "Java 7", "Java 8", "Java 9", "Java 10", "String Manipulation", "Performance", "Lambda", "Old Language Constructs", "Loop", "Readability", "Formatting", "Coding Conventions", "Logging", "Free", "Security"]
 ---
 
 # Rulename
