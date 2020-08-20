@@ -27,8 +27,8 @@ The jSparrow Summary page is redesigned to show which rules have been applied fo
 
 #### Preview Wizard
 
-The jSparrow Preview wizard is updated to allow scrolling and source code selection in case the 'Finish' button is enabled (this applies to the [Free](/tags/#free) rules in [jSparrow Starter](/rules/#free-rules-in-jsparrow-starter) and to all rules in [jSparrow Pro](https://jsparrow.eu/get-jsparrow/) and [jSparrow Student](https://jsparrow.eu/get-jsparrow/)).
-Otherwise, the changes in all files can be previewed through the '*Change Navigation*' controls, as highlighted in the animation below. 
+The jSparrow Preview wizard is updated to allow scrolling and source code selection in case the *"Finish"* button is enabled (this applies to the [Free](/tags/#free) rules in [jSparrow Starter](/rules/#free-rules-in-jsparrow-starter) and to all rules in [jSparrow Pro](https://jsparrow.eu/get-jsparrow/) and [jSparrow Student](https://jsparrow.eu/get-jsparrow/)).
+Otherwise, the changes in all files can be previewed through the *"Change Navigation"* controls, as highlighted in the animation below. 
 
 [ ![Change Navigation](/img/eclipse/release_notes/3-20-0-change-navigation.gif) ](/img/eclipse/release_notes/3-20-0-change-navigation.gif)
 
