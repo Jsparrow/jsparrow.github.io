@@ -12,18 +12,18 @@ The [80<sup>th</sup> and 81<sup>st</sup> refactoring rules](/rules/) are shipped
 ### New Rules 
 
 #### [**Reuse Random Objects**](/rules/reuse-random-objects.html)
-This rule extracts reusable `java.util.Random` objects, from local variables to class or instance fields. 
+This rule extracts reusable `java.util.Random` objects from local variables to class or instance fields. 
 The goal is to improve the unpredictability of the generated values. Moreover, the rule reduces the number of objects created by the program.
 
 
 #### [**Use SecureRandom**](/rules/use-secure-random.html)
-This rule replaces pseudorandom number generators ([`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html)) with cryptographically strong random number generators (NRG), i.e., instances of [`java.security.SecureRandom` (NRG)](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html)
+This rule replaces pseudo-random number generators (PRNG), i.e., instances of [`Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) with cryptographically strong random number generators (RNG), i.e., instances of [`SecureRandom`](https://docs.oracle.com/javase/8/docs/api/java/security/SecureRandom.html).
 
 ### UI Changes
 
 #### Summary Page 
 
-The jSparrow Summary page is redesigned to show the rules having at least one finding in each Java file. 
+The jSparrow Summary page is redesigned to show which rules have been applied for each Java file.  
 
 #### Preview Wizard
 
@@ -32,7 +32,6 @@ In such scenarios, the changes in all files can be previewed through the 'Change
 
 ### Fixed bugs
 
-SIM-1734
 #### [**Use Parameterized JPA Query**](/rules/use-parameterized-jpa-query.html) 
 * This fix allows the parameterization of the JPQL when the query string is stored in a local variable.
 
