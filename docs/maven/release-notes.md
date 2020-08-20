@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Maven p
 
 ## 2.17.0 <Badge vertical="middle" text="20.08.2020"/>
 
-Two new rules are shipped with the release 2.17.0 of jSparrow Maven Plugin:
+Two new rules are shipped with release 2.17.0 of the jSparrow Maven Plugin:
 
 * [Reuse Random Objects](/rules/reuse-random-objects.html)  
 * [Use SecureRandom](/rules/use-secure-random.html)
