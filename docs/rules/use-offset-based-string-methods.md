@@ -1,7 +1,7 @@
 ---
 title: Use Offset Based String Methods
 ruleId: UseOffsetBasedStringMethods
-since: 3.20.0
+since: 3.21.0
 minJavaVersion: 1.1
 remediationCost: 5
 links:
