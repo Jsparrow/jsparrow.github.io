@@ -33,6 +33,20 @@ Prevents excessive creation of String instances due to invocations of `String.su
 
 ## Code Changes
 
+### Using String starts with
+
+__Pre__
+```java
+	String str = "Hello World!";
+	boolean startsWith = str.substring(6).startsWith("World");
+```
+
+__Post__
+```java
+	String str = "Hello World!";
+	boolean startsWith = str.startsWith("World", 6);
+```
+
 ### Using String index of
 
 __Pre__
@@ -47,7 +61,6 @@ __Post__
 	int index = Math.max(str.indexOf("d", 6) - 6, -1);
 ```
 
-
 ### Using String last index of
 
 __Pre__
@@ -60,20 +73,6 @@ __Post__
 ```java
 	String str = "Hello World!";
 	int index = Math.max(str.lastIndexOf("d", 6) - 6, -1);
-```
-
-### Using String starts with
-
-__Pre__
-```java
-	String str = "Hello World!";
-	boolean startsWith = str.substring(6).startsWith("World");
-```
-
-__Post__
-```java
-	String str = "Hello World!";
-	boolean startsWith = str.startsWith("World", 6);
 ```
 
 
