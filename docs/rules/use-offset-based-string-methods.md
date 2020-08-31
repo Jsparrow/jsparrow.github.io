@@ -24,11 +24,11 @@ tags: ["Java 1.1",  "String Manipulation", "Performance"]
 
 ## Description
 
-This rule avoids creating intermediate String instancess by making use of overloaded offset based methods in the String API. For example, if `substring(beginIndex)` is followed by `indexOf(aString)`, the substring invocation is eliminated and `indexOf(aString, beginIndex)` is used instead.
+This rule avoids creating intermediate String instancess by making use of overloaded offset based methods in the String API. For example, if [`substring(beginIndex)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#substring-int-) is followed by [`indexOf(aString)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-java.lang.String-), the substring invocation is eliminated and [`indexOf(aString, beginIndex)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-java.lang.String-int-) is used instead.
 
 ## Benefits
 
-Prevents excessive creation of String instances due to invocations of `String.substring(beginIndex)`.
+Reduces the number of String objects whose sole purpose is to indicate an offset.
 
 
 ## Code Changes
