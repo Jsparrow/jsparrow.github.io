@@ -10,6 +10,7 @@ module.exports = [
 'brackets-to-control',
 'avoid-concatenation-in-logging-statements',
 'collapse-if-statements',
+'create-temp-files-using-java-nio',
 'escape-user-inputs-in-sql-queries',
 'hide-default-constructor-in-utility-classes',
 'insert-break-statement-in-loops',
