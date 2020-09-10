@@ -9,11 +9,11 @@ links:
 
 
 description:
-    This rule replaces invocations of 'java.nio.charset.Charset.forName(String)' by a reference to the respective constant in 'java.nio.charset.StandardCharsets'.
+    This rule replaces invocations of 'java.nio.charset.Charset.forName(String)' by references to the respective constants declared in 'java.nio.charset.StandardCharsets'.
 tags: ["Java 1.7", "Performance"]
 ---
 
-# Use Parameterized Query
+# Use Predefined Standard Charset
 
 [[toc]]
 
@@ -23,7 +23,7 @@ tags: ["Java 1.7", "Performance"]
 
 ## Description
 
-This rule replaces invocations of[`java.nio.charset.Charset.forName(stringLiteral)`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#forName(java.lang.String)) which accept a String literal specifying one of the contants in[`java.nio.charset.StandardCharsets`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html) by the respective Charset constant references.
+An invocation of [`java.nio.charset.Charset.forName(stringLiteral)`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#forName(java.lang.String)) can be replaced by a reference to one of the contants declared in [`java.nio.charset.StandardCharsets`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html) if its argument is a String literal which represents one of these constants.
 
 ## Benefits
 
@@ -33,71 +33,28 @@ Improvement of performance by referencing a constant instead of calling a method
 ## Code Changes
 
 
-### Using Statement execute
+### Using Charset forName with "UTF-8"
 
 __Pre__
 ```java
-String departmentId = "40 OR '1'='1";
-String query = "SELECT first_name FROM employee WHERE department_id ='" + departmentId + "' ORDER BY last_name";
-Statement statement = connection.createStatement();
-statement.execute(query);
-ResultSet resultSet = statement.getResultSet();
+    Charset c = Charset.forName("UTF-8");
 ```
 
 __Post__
 ```java
-String departmentId = "40 OR '1'='1";
-String query = "SELECT first_name FROM employee WHERE department_id = ?" + " ORDER BY last_name";
-PreparedStatement statement = connection.prepareStatement(query);
-statement.setString(1, departmentId);
-ResultSet resultSet = statement.executeQuery();
+    Charset c = StandardCharsets.UTF_8;
 ```
 
-### Using Statement executeQuery
+### Using Charset forName with "US-ASCII"
 
 __Pre__
 ```java
-String departmentId = "40 OR '1'='1";
-String query = "SELECT first_name FROM employee WHERE department_id ='" + departmentId + "' ORDER BY last_name";
-Statement statement = connection.createStatement();
-ResultSet resultSet = statement.executeQuery(query);
+    Charset c = Charset.forName("US-ASCII");
 ```
 
 __Post__
 ```java
-String departmentId = "40 OR '1'='1";
-String query = "SELECT first_name FROM employee WHERE department_id = ?" + " ORDER BY last_name";
-PreparedStatement statement = connection.prepareStatement(query);
-statement.setString(1, departmentId);
-ResultSet resultSet = statement.executeQuery();
-```
-
-### Multiple Concatenation Lines
-
-__Pre__
-```java
-String departmentId = "40 OR '1'='1";
-int id = 10;
-String query = "SELECT first_name FROM employee WHERE";
-query += " id > '" + id + "'";
-query += " AND department_id ='" + departmentId + "'";
-query += " ORDER BY last_name";
-Statement statement = connection.createStatement();
-ResultSet resultSet = statement.executeQuery(query);
-```
-
-__Post__
-```java
-String departmentId = "40 OR '1'='1";
-int id = 10;
-String query = "SELECT first_name FROM employee WHERE";
-query += " id >  ?" + "";
-query += " AND department_id = ?" + "";
-query += " ORDER BY last_name";
-PreparedStatement statement = connection.prepareStatement(query);
-statement.setInt(1, id);
-statement.setString(2, departmentId);
-ResultSet resultSet = statement.executeQuery();
+    Charset c = StandardCharsets.US_ASCII;
 ```
 
 <VersionNotice />
