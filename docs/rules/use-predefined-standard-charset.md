@@ -5,7 +5,8 @@ since: 3.21.0
 minJavaVersion: 1.7
 remediationCost: 5
 links:
-    - displayName: "Use Predefined Standard Charset"
+    - displayName: "S4719"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS4719&q=S4719"
 
 
 description:
@@ -44,24 +45,24 @@ Avoids creating new objects that are already predefined.
 
 __Pre__
 ```java
-    Charset c = Charset.forName("UTF-8");
+Charset c = Charset.forName("UTF-8");
 ```
 
 __Post__
 ```java
-    Charset c = StandardCharsets.UTF_8;
+Charset c = StandardCharsets.UTF_8;
 ```
 
 ### Using Charset forName with "US-ASCII"
 
 __Pre__
 ```java
-    Charset c = Charset.forName("US-ASCII");
+Charset c = Charset.forName("US-ASCII");
 ```
 
 __Post__
 ```java
-    Charset c = StandardCharsets.US_ASCII;
+Charset c = StandardCharsets.US_ASCII;
 ```
 
 <VersionNotice />
