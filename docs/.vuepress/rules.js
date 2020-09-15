@@ -67,6 +67,7 @@ module.exports = [
 'use-collections-singleton-list',
 'primitive-object-use-equals',
 'collections-factory-methods',
+'use-files-buffered-reader',
 'functional-interface',
 'guard-condition',
 'local-variable-type-inference',
