@@ -5,16 +5,16 @@ since: 3.21.0
 minJavaVersion: 1.7
 remediationCost: 5
 links:
-    - displayName: "Create Temporary Files Using Java NIO"
+    - displayName: "Creating Temporary Files"
+      url: https://docs.oracle.com/javase/tutorial/essential/io/file.html#createTempFile
     
 description:
-    Because temporary files created by methods of the class 'java.nio.file.Files'
-    may have more restrictive access permissions compared to files created by methods of 'java.io.File', it is 
-    recommended to use the methods of 'java.nio.file.Files' in security-sensitive applications.
+    This rule replaces the temporary file creation using 'java.io.File' by the alternative methods defined in 'java.nio.file.Files'.
+
 tags: ["Java 1.7", "Security"]
 ---
 
-# Use Parameterized JPA Query
+# Create Temp Files Using Java NIO
 
 [[toc]]
 
@@ -24,11 +24,10 @@ tags: ["Java 1.7", "Security"]
 
 ## Description
 
-Because temporary files created by the methods [`java.nio.file.Files.createTempFile(prefix, suffix, attrs)`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#createTempFile-java.lang.String-java.lang.String-java.nio.file.attribute.FileAttribute...-)
-and [`java.nio.file.Files.createTempFile(dir, prefix, suffix, attrs))`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#createTempFile-java.nio.file.Path-java.lang.String-java.lang.String-java.nio.file.attribute.FileAttribute...-)
-may have more restrictive access permissions compared to files created by the corresponding methods of [`java.io.File`](https://docs.oracle.com/javase/7/docs/api/java/io/File.html), it is recommended to use the methods of the class [`java.nio.file.Files`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html) in security-sensitive applications.
+According to the documentation of [`File.createTempFile(String, String)`](https://docs.oracle.com/javase/8/docs/api/java/io/File.html#createTempFile-java.lang.String-java.lang.String-), a suitable alternative for creating temporary files in security-sensitive applications is to use [`java.nio.file.Files.createTempFile(String, String, FileAttribute<?>...)`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#createTempFile-java.lang.String-java.lang.String-java.nio.file.attribute.FileAttribute...-). 
+The reason behind it, is that files created by the latter have more restrictive access permissions.
 
-Terefore this rule replaces invocations of [`java.io.File.createTempFile(prefix, suffix)`](https://docs.oracle.com/javase/7/docs/api/java/io/File.html#createTempFile(java.lang.String,%20java.lang.String)) and [`java.io.File.createTempFile(prefix, suffix, directory)`](https://docs.oracle.com/javase/7/docs/api/java/io/File.html#createTempFile(java.lang.String,%20java.lang.String,%20java.io.File)) by the corresponding methods described above.
+This rule replaces the temporary file creation using `java.io.File` by the alternative methods defined in `java.nio.file.Files`. Some detailed examples are provided below. 
 
 ## Benefits
 
@@ -36,56 +35,56 @@ As mentioned in the [javadocs](https://docs.oracle.com/javase/8/docs/api/java/io
 
 ## Code Changes
 
-### Creating temporary files specifying prefix and suffix
+### Creating Temp files with Prefix and Suffix
 
 __Pre__
 ```java
-    File file = File.createTempFile("myFile", ".tmp");
+File file = File.createTempFile("myFile", ".tmp");
 ```
 
 __Post__
 ```java
-    File file = Files.createTempFile("myFile", ".tmp").toFile();
+File file = Files.createTempFile("myFile", ".tmp").toFile();
 ```
 
 
-### Creating temporary files specifying prefix, suffix and constructor for parent directory
+### Creating Temp Files in a new Parent Directory
 
 __Pre__
 ```java
-    File file = File.createTempFile("myFile", ".tmp", new File("/tmp/test/"));
+File file = File.createTempFile("myFile", ".tmp", new File("/tmp/test/"));
 ```
 
 __Post__
 ```java
-    File file = Files.createTempFile(Paths.get("/tmp/test/"), "myFile", ".tmp").toFile();
+File file = Files.createTempFile(Paths.get("/tmp/test/"), "myFile", ".tmp").toFile();
 ```
 
 
-### Creating temporary files specifying prefix, suffix and variable for parent directory
+### Creating Temp Files in a Given Parent Directory
 
 __Pre__
 ```java
-	File directory = new File("/tmp/test/");
-	File file = File.createTempFile("myFile", ".tmp", directory);
+File directory = new File("/tmp/test/");
+File file = File.createTempFile("myFile", ".tmp", directory);
 ```
 
 __Post__
 ```java
-	File directory = new File("/tmp/test/");
-	File file = Files.createTempFile(directory.toPath(), "myFile", ".tmp").toFile();
+File directory = new File("/tmp/test/");
+File file = Files.createTempFile(directory.toPath(), "myFile", ".tmp").toFile();
 ```
 
-### Creating temporary files specifying prefix, suffix and null for parent directory
+### Creating Temp Files in a `null` Parent Directory
 
 __Pre__
 ```java
-    File file = File.createTempFile("myFile", ".tmp", null);
+File file = File.createTempFile("myFile", ".tmp", null);
 ```
 
 __Post__
 ```java
-    File file = Files.createTempFile("myFile", ".tmp").toFile();
+File file = Files.createTempFile("myFile", ".tmp").toFile();
 ```
 
 <VersionNotice />
