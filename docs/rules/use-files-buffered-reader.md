@@ -6,7 +6,7 @@ minJavaVersion: 7
 remediationCost: 5
 links:
     - displayName: "File I/O (Featuring NIO.2)"
-      url: "https://docs.oracle.com/javase/tutorial/essential/io/fileio.html"
+      url: "https://docs.oracle.com/javase/tutorial/essential/io/file.html"
     
 description:
     Java 7 introduced the 'java.nio.file.Files' class that contains some convenience methods for operating on files. This rule makes use of 'Files.newBufferedReader' method for initializing 'BufferedReader' objects to read text files in an efficient non-blocking manner.
