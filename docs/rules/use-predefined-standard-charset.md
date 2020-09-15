@@ -23,11 +23,18 @@ tags: ["Java 1.7", "Performance"]
 
 ## Description
 
-An invocation of [`java.nio.charset.Charset.forName(stringLiteral)`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#forName(java.lang.String)) can be replaced by a reference to one of the contants declared in [`java.nio.charset.StandardCharsets`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html) if its argument is a String literal which represents one of these constants.
+An invocation of [`java.nio.charset.Charset.forName(String)`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#forName(java.lang.String)) can be replaced by a reference to one of the constants declared in [`java.nio.charset.StandardCharsets`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html) if its argument is any of the following string literals:
+* `"UTF-8"`
+* `"ISO-8859-1"`
+* `"US-ASCII"`
+* `"UTF-16"`
+* `"UTF-16BE"`
+* `"UTF-16LE"`
+
 
 ## Benefits
 
-Improvement of performance by referencing a constant instead of calling a method.
+Avoids creating new objects that are already predefined.
 
 
 ## Code Changes
