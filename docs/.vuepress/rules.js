@@ -79,6 +79,7 @@ module.exports = [
 'use-parameterized-ldap-query',
 'use-parameterized-query',
 'string-format-line-separator',
+'use-predefined-standard-charset',
 'lambda-for-each-if-wrapper-to-filter',
 'lambda-for-each-map',
 'lambda-for-each-collect',
