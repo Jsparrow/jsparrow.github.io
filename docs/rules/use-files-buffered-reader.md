@@ -24,11 +24,11 @@ tags: ["Java 7", "Performance", "Old Language Constructs"]
 ## Description
 
 Java 7 introduced the [`Files`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html) class that contains convenience methods for operating on files. 
-This rule makes use of [`Files.newBufferedReader`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#newBufferedReader-java.nio.file.Path-java.nio.charset.Charset-) method for initializing [`BufferedReader`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html) objects to read text files in an efficient non-blocking manner.
+This rule makes use of the [`Files.newBufferedReader`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#newBufferedReader-java.nio.file.Path-java.nio.charset.Charset-) method for initializing [`BufferedReader`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html) objects to read text files in an efficient non-blocking manner.
 
 ## Benefits
 
-Achieve better performance by using non-blocking I/O operations offered by `java.nio` package.
+Achieve better performance by using non-blocking I/O operations offered by the `java.nio` package.
 
 ## Code Changes
 
