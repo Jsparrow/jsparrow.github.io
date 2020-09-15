@@ -3,7 +3,7 @@ title: Use Predefined Standard Charset
 ruleId: UsePredefinedStandardCharset
 since: 3.21.0
 minJavaVersion: 1.7
-remediationCost: 5
+remediationCost: 2
 links:
     - displayName: "S4719"
       url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS4719&q=S4719"
