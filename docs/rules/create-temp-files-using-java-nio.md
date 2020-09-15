@@ -35,7 +35,7 @@ As mentioned in the [javadocs](https://docs.oracle.com/javase/8/docs/api/java/io
 
 ## Code Changes
 
-### Creating Temp files with Prefix and Suffix
+### Creating Temp File with Prefix and Suffix
 
 __Pre__
 ```java
@@ -48,7 +48,7 @@ File file = Files.createTempFile("myFile", ".tmp").toFile();
 ```
 
 
-### Creating Temp Files in a new Parent Directory
+### Creating Temp File in a new Parent Directory
 
 __Pre__
 ```java
@@ -61,7 +61,7 @@ File file = Files.createTempFile(Paths.get("/tmp/test/"), "myFile", ".tmp").toFi
 ```
 
 
-### Creating Temp Files in a Given Parent Directory
+### Creating Temp File in a Given Parent Directory
 
 __Pre__
 ```java
@@ -75,7 +75,7 @@ File directory = new File("/tmp/test/");
 File file = Files.createTempFile(directory.toPath(), "myFile", ".tmp").toFile();
 ```
 
-### Creating Temp Files in a `null` Parent Directory
+### Creating Temp File in a `null` Parent Directory
 
 __Pre__
 ```java
