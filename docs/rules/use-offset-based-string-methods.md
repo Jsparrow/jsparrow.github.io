@@ -9,7 +9,7 @@ links:
       url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS4635&q=S4635"
     
 description:
-    This rule avoids creating intermediate String instances by making use of overloaded offset based methods in the String API.
+    This rule avoids creating intermediate 'String' instances by making use of the overloaded offset based methods in the String API.
     
 tags: ["Java 1.1",  "String Manipulation", "Performance"]
 ---
@@ -24,7 +24,7 @@ tags: ["Java 1.1",  "String Manipulation", "Performance"]
 
 ## Description
 
-This rule avoids creating intermediate `String` instances by making use of overloaded offset based methods in the String API. For example, if [`substring(beginIndex)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#substring-int-) is followed by [`indexOf(aString)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-java.lang.String-), the substring invocation is eliminated and [`indexOf(aString, beginIndex)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#indexOf-java.lang.String-int-) is used instead.
+This rule avoids creating intermediate `String` instances by making use of the overloaded offset based methods in the String API. For example, if [`substring(beginIndex)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#substring-int-) is followed by [`startsWith(aString)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#startsWith-java.lang.String-), then both invocations are removed and [`startsWith(aString, beginIndex)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#startsWith-java.lang.String-int-) is used instead.
 
 ## Benefits
 
