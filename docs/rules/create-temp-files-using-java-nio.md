@@ -25,7 +25,7 @@ tags: ["Java 1.7", "Security"]
 ## Description
 
 According to the documentation of [`File.createTempFile(String, String)`](https://docs.oracle.com/javase/8/docs/api/java/io/File.html#createTempFile-java.lang.String-java.lang.String-), a suitable alternative for creating temporary files in security-sensitive applications is to use [`java.nio.file.Files.createTempFile(String, String, FileAttribute<?>...)`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#createTempFile-java.lang.String-java.lang.String-java.nio.file.attribute.FileAttribute...-). 
-The reason behind it, is that files created by the latter have more restrictive access permissions.
+The reason behind it is that files created by the latter have more restrictive access permissions.
 
 This rule replaces the temporary file creation using `java.io.File` by the alternative methods defined in `java.nio.file.Files`. Some detailed examples are provided below. 
 
