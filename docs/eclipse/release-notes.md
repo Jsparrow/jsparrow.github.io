@@ -22,12 +22,12 @@ Java 7 introduced the Files class that contains convenience methods for operatin
 This rule avoids creating intermediate String instances by making use of the overloaded offset based methods in the String API.
 
 #### [**Use Predefined Standard Charset**](/rules/use-predefined-standard-charset.html)
-This rule replaces invocations of [`Charset.forName(String)`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#forName(java.lang.String)) by constants defined in [`StandardCharsets`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html).
+In order to avoid creating new objects, this rule replaces invocations of [`Charset.forName(String)`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#forName(java.lang.String)) by constants defined in [`StandardCharsets`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html).
 
 ### Fixed Bugs
 
 #### [**Escape User Input in SQL Queries**](/rules/escape-user-inputs-in-sql-queries.html)
-* Extends the scope of the rules by analyzing the variable holding the SQL query.
+* Extends the scope of the rule by analyzing the variable holding the SQL query.
 
 #### Clean Up Third Party Dependencies 
 * Using some third party dependencies directly in the OSGi bundle classpath.
