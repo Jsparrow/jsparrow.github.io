@@ -5,6 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.18.0 <Badge vertical="middle" text="17.09.2020"/>
+
+Four new rules are shipped with release 2.18.0 of the jSparrow Maven Plugin:
+
+* [Create Temp Files Using Java NIO](/rules/create-temp-files-using-java-nio.html)
+* [Use Files.newBufferedReader](/rules/use-files-buffered-reader.html)
+* [Use Offset Based String Methods](/rules/use-offset-based-string-methods.html)
+* [Use Predefined Standard Charset](/rules/use-predefined-standard-charset.html)
+
 ## 2.17.0 <Badge vertical="middle" text="20.08.2020"/>
 
 Two new rules are shipped with release 2.17.0 of the jSparrow Maven Plugin:

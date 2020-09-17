@@ -5,6 +5,33 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.21.0 <Badge vertical="middle" text="17.09.2020"/>
+
+The autumn release of jSparrow 3.21.0 introduces [4 refactoring rules](/rules/). This extends the total number of jSparrow rules to 85. Some improvements and bugfixes are also included.
+
+### New Rules 
+
+#### [**Create Temp Files Using Java NIO**](/rules/create-temp-files-using-java-nio.html)
+
+A suitable alternative for creating temporary files in security-sensitive applications is to use [`java.nio.file.Files.createTempFile(String, String, FileAttribute<?>...)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#createTempFile(java.lang.String,java.lang.String,java.nio.file.attribute.FileAttribute...)) instead of [`java.io.File.createTempFile(String, String)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/File.html#createTempFile(java.lang.String,java.lang.String)). The reason behind it is that files created by the former have more restrictive access permissions. This rule replaces the temporary file creation using `java.io.File` by the alternative methods defined in `java.nio.file.Files`.
+
+#### [**Use Files.newBufferedReader**](/rules/use-files-buffered-reader.html)
+Java 7 introduced the Files class that contains convenience methods for operating on files. This rule makes use of the [`Files.newBufferedReader`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#newBufferedReader(java.nio.file.Path,%20java.nio.charset.Charset)) method for initializing BufferedReader objects to read text files in an efficient non-blocking manner.
+
+#### [**Use Offset Based String Methods**](/rules/use-offset-based-string-methods.html)
+This rule avoids creating intermediate String instances by making use of the overloaded offset based methods in the String API.
+
+#### [**Use Predefined Standard Charset**](/rules/use-predefined-standard-charset.html)
+In order to avoid creating new objects, this rule replaces invocations of [`Charset.forName(String)`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#forName(java.lang.String)) by constants defined in [`StandardCharsets`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html).
+
+### Fixed Bugs
+
+#### [**Escape User Input in SQL Queries**](/rules/escape-user-inputs-in-sql-queries.html)
+* Extends the scope of the rule by analyzing the variable holding the SQL query.
+
+#### Clean Up Third Party Dependencies 
+* Using some third party dependencies directly in the OSGi bundle classpath.
+
 ## 3.20.0 <Badge vertical="middle" text="20.08.2020"/>
 
 The [80<sup>th</sup> and 81<sup>st</sup> refactoring rules](/rules/) are shipped with jSparrow 3.20.0. The goal of the new rules is to improve the unpredictability of random number generators. Some bugfixes and UI changes are also included. 
