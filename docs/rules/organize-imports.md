@@ -36,7 +36,6 @@ Imports that are not used are optimized away by the compiler. Regardless, they c
 __Pre__
 
 ``` java
-package at.splendit.simonykees.sample.preRule;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.List;
@@ -57,7 +56,6 @@ public class OrganiseImportsRule {
 __Post__
 
 ``` java
-package at.splendit.simonykees.sample.postRule.allRules;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

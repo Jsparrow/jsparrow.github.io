@@ -35,7 +35,6 @@ Applying this rule improves readability and helps avoid merge conflicts.
 __Pre__
 
 ``` java
-package at.splendit.simonykees.sample.preRule;
 public class CodeFormatterRule {
     public int a( int i ) { i *= 2; return i; }
     public int b( int i ) { if (0 == i) {return 1;} else {return 0;  } }
@@ -52,7 +51,6 @@ public class CodeFormatterRule {
 __Post__
 
 ``` java
-package at.splendit.simonykees.sample.postRule.allRules;
 public class CodeFormatterRule {
     public int a(int i) {
         i *= 2;
