@@ -116,7 +116,7 @@ Additionally, a built-in formatted string message improves the readability, too.
 
 Transforms `Arrays.asList(T..values).stream()` into an un-boxed specialized stream (i.e., [`IntStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html), [`LongStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html),
  or [`DoubleStream`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/DoubleStream.html)) whenever possible. 
-Otherwise, the same stream generation is replaced with the shorthand method [Stream.of(T... values)](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
+Otherwise, the same stream generation is replaced with the shorthand method [`Stream.of(T... values)`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-).
 
 ### Fixed Bugs
 
@@ -143,7 +143,7 @@ The [75<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.17.0.
 ### New Rule
 #### [**Escape User Inputs in SQL Queries**](/rules/escape-user-inputs-in-sql-queries.html)
 
-This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [ESAPI.encoder().encodeForSql(codec, input)](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
+This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [`ESAPI.encoder().encodeForSql(codec, input)`](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
 In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL injection vulnerabilities.  
 
 
@@ -158,7 +158,7 @@ The [74<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.16.0.
 ### New Rule
 #### [**Use Parameterized Query**](/rules/use-parameterized-query.html)
 
-This rule replaces a [java.sql.Statement](https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html) with a [java.sql.PreparedStatement](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) if the SQL query is constructed by concatenating string literals with user defined expressions (e.g. variables, method invocations, user input, etc). 
+This rule replaces a [`java.sql.Statement`](https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html) with a [`java.sql.PreparedStatement`](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) if the SQL query is constructed by concatenating string literals with user defined expressions (e.g. variables, method invocations, user input, etc). 
 Parameterized queries enforce a distinction between the SQL code and the data passed through parameters.
 
 ### Fixed Bugs
@@ -173,8 +173,8 @@ jSparrow 3.15.0 extends the ruleset to 73 rules. Some UI improvements and Bug Fi
 
 #### [**Use String Join**](/rules/use-string-join.html) 
 
-Replaces [Collection::stream](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#stream--) with 
-[String::join](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#join-java.lang.CharSequence-java.lang.Iterable-) 
+Replaces [`Collection::stream`](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#stream--) with 
+[`String::join`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#join-java.lang.CharSequence-java.lang.Iterable-) 
 in cases where the sole purpose of the stream is to concatenate the String values of the collection. 
 
 #### [**Remove Redundant Type Casts**](/rules/remove-redundant-type-cast.html)
@@ -183,7 +183,7 @@ Finds and removes casting expressions whose target types matches exactly the typ
 
 #### [**Remove Collection::addAll**](/rules/remove-collection-add-all.html)
 
-Moves the parameters used in [Collection#addAll(Collection c)](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
+Moves the parameters used in [`Collection#addAll(Collection c)`](https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#addAll-java.util.Collection-) 
 to the constructor which is used for initializing a collection.
 
 ### UI improvements
@@ -324,7 +324,7 @@ This rule reorders the modifiers on Type, Field and Method Declarations based on
 
 ####  [**Replace Collection.sort with List.sort**](/rules/use-list-sort.html)
 
-Java 8 introduced an extension to the List API by adding a [sort](https://docs.oracle.com/javase/8/docs/api/java/util/List.html#sort-java.util.Comparator-) method that sorts by Comparator. This rule replaces static invocations of `Collections.sort(List, Comparator)` with `List.sort(Comparator)`.
+Java 8 introduced an extension to the List API by adding a [`sort`](https://docs.oracle.com/javase/8/docs/api/java/util/List.html#sort-java.util.Comparator-) method that sorts by Comparator. This rule replaces static invocations of `Collections.sort(List, Comparator)` with `List.sort(Comparator)`.
 
 ## 3.5.1 <Badge vertical="middle" text="23.05.2019"/>
 
@@ -411,7 +411,7 @@ This hotfix release brings bugfixes on refactoring rules.
 ### Fixed Bugs
 
 #### Use Try-With-Resource
-* Avoiding runtime exceptions when searching for the [Resource::close](https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html#close--) invocations.
+* Avoiding runtime exceptions when searching for the [`Resource::close`](https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html#close--) invocations.
 
 #### Replace Expression Lambda with Method Reference
 * Avoid creating method references on java arrays.

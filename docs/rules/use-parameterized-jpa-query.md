@@ -26,7 +26,7 @@ tags: ["Java 1.1", "Security"]
 JPA defines the [Java Persistence Query Language (JPQL)](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF).
 A JPQL query string may be constructed by concatenating string literals with user defined expressions (e.g., variables, method invocations, user input, etc). 
 Such a query string concatenation in JPQL may cause the same kind of vulnerability to injection attacks as a native SQL query string because the user input may contain fragments that can be interpreted as JPQL code.  
-This rule looks for queries of type [javax.persistence.Query](https://docs.oracle.com/javaee/7/api/javax/persistence/Query.html) which are created by [EntityManager::createQuery](https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#createQuery-java.lang.String-).
+This rule looks for queries of type [`javax.persistence.Query`](https://docs.oracle.com/javaee/7/api/javax/persistence/Query.html) which are created by [`EntityManager::createQuery`](https://docs.oracle.com/javaee/7/api/javax/persistence/EntityManager.html#createQuery-java.lang.String-).
 The vulnerable concats of the JPQL query strings are parameterized, so that they can only be considered as data and not as code.
 
 ::: warning Requirements

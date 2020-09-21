@@ -23,7 +23,7 @@ tags: ["Java 1.1", "Security"]
 
 ## Description
 
-This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [ESAPI.encoder().encodeForSql(codec, input)](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
+This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [`ESAPI.encoder().encodeForSql(codec, input)`](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
 In this way, the contents of the user input will only be considered as values and not as code, thus preventing the SQL Injection vulnerabilities.  
 A typical example of a malicious user input containing fragments that can change the intent of the SQL query is `1' or '1'='1`. 
 When wrapped by `encodeForSql(...)`, no part of the user input will be considered as code. For more details, see the examples below. 
