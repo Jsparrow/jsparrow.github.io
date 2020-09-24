@@ -34,8 +34,7 @@ This rule provides an easier-to read alternative to filter items in a list.
 __Pre__
 
 ```java
-public List<String> list = Arrays.asList("foo", "bar");
-
+List<String> list = Arrays.asList("foo", "bar");
 list.stream().forEach(s -> {
     if (s.length() > 3) {
         System.out.println(s);
@@ -47,8 +46,7 @@ list.stream().forEach(s -> {
 __Post__
 
 ```java
-public List<String> list = Arrays.asList("foo", "bar");
-
+List<String> list = Arrays.asList("foo", "bar");
 list.stream().filter((s)-> s.length() > 3).forEach((s)-> {
             System.out.println(s);
             System.out.println(s + s);

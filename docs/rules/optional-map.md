@@ -36,39 +36,39 @@ Arguably, the lambda expression is easier to read and can be combined with other
 
 __Pre__
 ```java
-    findById(userId)
-        .ifPresent(user -> {
-            String email = user.getMail();
-            sendMail(email);
-        });
+findById(userId)
+    .ifPresent(user -> {
+        String email = user.getMail();
+        sendMail(email);
+    });
 ```
 
 __Post__
 ```java
-    findById(userId)
-        .map(user -> user.getMail())
-        .ifPresent(email -> sendMail(email));
+findById(userId)
+    .map(user -> user.getMail())
+    .ifPresent(email -> sendMail(email));
 ```
 
 ### Multiple Statements in Lambda Body
 
 __Pre__
 ```java
-    Optional<User> oUser = findById(userId);
-    oUser.ifPresent(user -> {
-        Address address = user.getAddress();
-        sendGiftCard(address);
-        sendAds(address);
-    });
+Optional<User> oUser = findById(userId);
+oUser.ifPresent(user -> {
+    Address address = user.getAddress();
+    sendGiftCard(address);
+    sendAds(address);
+});
 ```
 
 __Post__
 ```java
-    Optional<User> oUser = findById(userId);
-    oUser.map(user -> user.getAddress()).ifPresent(address -> {
-        sendGiftCard(address);
-        sendAds(address);
-    });
+Optional<User> oUser = findById(userId);
+oUser.map(user -> user.getAddress()).ifPresent(address -> {
+    sendGiftCard(address);
+    sendAds(address);
+});
 ```
 
 <VersionNotice />
