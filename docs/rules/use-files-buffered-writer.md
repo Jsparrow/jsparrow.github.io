@@ -1,7 +1,7 @@
 ---
 title: Use Files.newBufferedWriter
 ruleId: UseFilesBufferedWriter
-since: 3.21.0
+since: 3.22.0
 minJavaVersion: 7
 remediationCost: 5
 links:
@@ -9,11 +9,11 @@ links:
       url: "https://docs.oracle.com/javase/tutorial/essential/io/file.html"
     
 description:
-    Java 7 introduced the 'java.nio.file.Files' class that contains some convenience methods for operating on files. This rule makes use of 'Files.newBufferedReader' method for initializing 'BufferedReader' objects to read text files in an efficient non-blocking manner.
+    Java 7 introduced the 'java.nio.file.Files' class that contains some convenience methods for operating on files. This rule makes use of 'Files.newBufferedWriter' method for initializing 'BufferedWriter' objects to write text files in an efficient non-blocking manner.
 tags: ["Java 7", "Performance", "Old Language Constructs"]
 ---
 
-# Use Files.newBufferedReader
+# Use Files.newBufferedWriter
 
 [[toc]]
 
@@ -24,7 +24,7 @@ tags: ["Java 7", "Performance", "Old Language Constructs"]
 ## Description
 
 Java 7 introduced the [`Files`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html) class that contains convenience methods for operating on files. 
-This rule makes use of the [`Files.newBufferedReader`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#newBufferedReader-java.nio.file.Path-java.nio.charset.Charset-) method for initializing [`BufferedReader`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html) objects to read text files in an efficient non-blocking manner.
+This rule makes use of the [`Files.newBufferedWriter`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,%20java.nio.charset.Charset,%20java.nio.file.OpenOption...)) method for initializing [`BufferedWriter`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedWriter.html) objects to read text files in an efficient non-blocking manner.
 
 ## Benefits
 
@@ -32,49 +32,48 @@ Achieve better performance by using non-blocking I/O operations offered by the `
 
 ## Code Changes
 
-### Creating a BufferedReader from a FileReader
+### Creating a BufferedWriter from a FileWriter
 
 __Pre__
 ```java
 String location = "path/to/file";
-BufferedReader br = new BufferedReader(new FileReader(location));
+BufferedWriter bw = new BufferedWriter(new FileWriter(location));
 ```
 
 __Post__
 ```java
 String location = "path/to/file";
-BufferedReader br = Files.newBufferedReader(Paths.get(location), Charset.defaultCharset());
+BufferedWriter bw = Files.newBufferedWriter(Paths.get(location), Charset.defaultCharset());
 ```
 
-### Creating a FileReader from a File
+### Creating a FileWriter from a File
 
 __Pre__
 ```java
 String location = "path/to/file";
-BufferedReader br = new BufferedReader(new FileReader(new File(location)));
-
+BufferedWriter bw = new BufferedWriter(new FileWriter(new File(location)));
 ```
 
 __Post__
 ```java
 String location = "path/to/file";
-BufferedReader br = Files.newBufferedReader(Paths.get(location), Charset.defaultCharset());
+BufferedWriter bw = Files.newBufferedWriter(Paths.get(location), Charset.defaultCharset());
 ```
 
 ### Declaring Resources in Try-With-Resource Statement
 
 __Pre__
 ```java
-try (FileReader reader = new FileReader(new File("path/to/file"));
-		BufferedReader br = new BufferedReader(reader)) {
+try (FileWriter writer = new FileWriter(new File("path/to/file"));
+		BufferedWriter bw = new BufferedWriter(writer)) {
     //...
 } catch (IOException e) {}
 ```
 
 __Post__
 ```java
-try (BufferedReader br = Files.newBufferedReader(Paths.get("path/to/file"), Charset.defaultCharset())) {
-    //...
+try (BufferedWriter bw = Files.newBufferedWriter(Paths.get("path/to/file"), Charset.defaultCharset())) {
+	// ...
 } catch (IOException e) {}
 ```
 
@@ -83,13 +82,13 @@ try (BufferedReader br = Files.newBufferedReader(Paths.get("path/to/file"), Char
 __Pre__
 ```java
 String location = "path/to/file";
-BufferedReader br = new BufferedReader(new FileReader(location, StandardCharsets.UTF_8));
+BufferedWriter bw = new BufferedWriter(new FileWriter(location, StandardCharsets.UTF_8));
 ```
 
 __Post__
 ```java
 String location = "path/to/file";
-BufferedReader br = Files.newBufferedReader(Paths.get(location), StandardCharsets.UTF_8);
+BufferedWriter bw = Files.newBufferedWriter(Paths.get(location), StandardCharsets.UTF_8);
 ```
 
 <VersionNotice />
