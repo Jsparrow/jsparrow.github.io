@@ -23,7 +23,7 @@ tags: ["Java 1.1", "Security"]
 
 ## Description
 
-Replaces [java.sql.Statement](https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html) with [java.sql.PreparedStatement](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) (aka parameterized queries) if the SQL query is constructed by concatenating string literals with user defined expressions (e.g. variables, method invocations, user input, etc). 
+Replaces [`java.sql.Statement`](https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html) with [`java.sql.PreparedStatement`](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) (aka parameterized queries) if the SQL query is constructed by concatenating string literals with user defined expressions (e.g. variables, method invocations, user input, etc). 
 Parameterized queries enforce a distinction between the SQL code and the data passed through parameters.
 
 ## Benefits

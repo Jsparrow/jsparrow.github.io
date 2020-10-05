@@ -44,13 +44,13 @@ __Pre__
 
 ```java
     public class UtilityClass {
-        public static doSomething() {
-            ...
+        public static void doSomething() {
+            //...
             System.out.println("did something");
         }
 
-        public static doSomethingElse() {
-            ...
+        public static void doSomethingElse() {
+            //...
             System.out.println("did something else");
         }
     }
@@ -64,13 +64,13 @@ __Post__
             throw new IllegalStateException("Utility class");
         }
 
-        public static doSomething() {
-            ...
+        public static void doSomething() {
+            //...
             System.out.println("did something");
         }
 
-        public static doSomethingElse() {
-            ...
+        public static void doSomethingElse() {
+            //...
             System.out.println("did something else");
         }
     }

@@ -35,20 +35,20 @@ Arguably, the lambda expression is easier to read and can be combined with other
 
 __Pre__
 ```java
-		Optional<User> oUser = findById(userId);
-		oUser.ifPresent(user -> {
-			if (isSpecial(user)) {
-				sendMail(user.getMail());
-			}
-		});
+Optional<User> oUser = findById(userId);
+oUser.ifPresent(user -> {
+	if (isSpecial(user)) {
+		sendMail(user.getMail());
+	}
+});
 ```
 
 __Post__
 ```java
-		Optional<User> oUser = findById(userId);
-		oUser.filter(user -> isSpecial(user)).ifPresent(user -> {
-			sendMail(user.getMail());
-		});
+Optional<User> oUser = findById(userId);
+oUser.filter(user -> isSpecial(user)).ifPresent(user -> {
+	sendMail(user.getMail());
+});
 ```
 
 ## Limitations
@@ -57,13 +57,13 @@ Multiple Statements in Lambda Body - no transformation is feasible.
 
 __Pre__
 ```java
-		Optional<User> oUser = findById(userId);
-		oUser.ifPresent(user -> {
-			if (isSpecial(user)) {
-				sendPresent(user);
-			}
-			sendMail(user.getMail());
-		});
+Optional<User> oUser = findById(userId);
+oUser.ifPresent(user -> {
+	if (isSpecial(user)) {
+		sendPresent(user);
+	}
+	sendMail(user.getMail());
+});
 ```
 
 <VersionNotice />
