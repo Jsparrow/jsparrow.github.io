@@ -185,40 +185,34 @@ public static String lowerCase(String str, Locale locale)
 __Pre__
 
 ```java
-public boolean testEmpty(String testString) {
-    return  /* test */ testString // save me
-            .isEmpty() /* trailing comment */;
+public boolean checkingEmpty(String value) {
+    return  value.isEmpty();
 }
 
-public String testTrim(String testString) {
-    String val = /* test */testString.trim();
-    return testString.trim();
+public String testTrim(String value) {
+    return value.trim();
 }
 
-public boolean testEqualsIgnoreCase(String testString) {
-    String sometimesExpectedString = testString.replaceAll("a", "b");
-
-    return testString.equalsIgnoreCase(sometimesExpectedString);
+public boolean testEqualsIgnoreCase(User user, String  expectedEmail) {
+    String email = user.getMail();
+    return email.equalsIgnoreCase(expectedEmail);
 }
 ```
 
 __Post__
 
 ```java
-public boolean testEmpty(String testString) {
-    // save me
-    return /* test */ StringUtils.isEmpty(testString) /* trailing comment */;
+public boolean checkingEmpty(String value) {
+    return  StringUtils.isEmpty(value);
 }
 
-public String testTrim(String testString) {
-    String val = /* test */StringUtils.trim(testString);
-    return StringUtils.trim(testString);
+public String testTrim(String value) {
+    return StringUtils.trim(value);
 }
 
-public boolean testEqualsIgnoreCase(String testString) {
-    String sometimesExpectedString = testString.replaceAll("a", "b");
-
-    return StringUtils.equalsIgnoreCase(testString, sometimesExpectedString);
+public boolean testEqualsIgnoreCase(User user, String  expectedEmail) {
+    String email = user.getMail();
+    return StringUtils.equalsIgnoreCase(email, expectedEmail);
 }
 ```
 
