@@ -52,7 +52,7 @@ module.exports = {
         ],
         logo: '/logo.png',
         sidebar: {
-            '/maven/': ['getting-started', 'local-license-server', 'additional-configuration', 'troubleshooting', 'release-notes'],
+            '/maven/': ['getting-started', 'local-license-server', 'additional-configuration', 'build-integration', 'troubleshooting', 'release-notes'],
             '/eclipse/': ['getting-started', 'installation-guide', 'jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
             '/cloud/': ['getting-started'],
             '/rules/': require('./rules.js'),
