@@ -5,8 +5,8 @@ since: 3.22.0
 minJavaVersion: 7
 remediationCost: 5
 links:
-    - displayName: "File I/O (Featuring NIO.2)"
-      url: "https://docs.oracle.com/javase/tutorial/essential/io/file.html"
+    - displayName: "Buffered I/O Methods for Text Files"
+      url: "https://docs.oracle.com/javase/tutorial/essential/io/file.html#writeBufferedStream"
     
 description:
     Java 7 introduced the 'java.nio.file.Files' class that contains some convenience methods for operating on files. This rule makes use of 'Files.newBufferedWriter' method for initializing 'BufferedWriter' objects to write text files in an efficient non-blocking manner.
@@ -32,7 +32,7 @@ Achieve better performance by using non-blocking I/O operations offered by the `
 
 ## Code Changes
 
-### Creating a BufferedWriter from a FileWriter
+### Creating the BufferedWriter from a new FileWriter
 
 __Pre__
 ```java
@@ -46,7 +46,7 @@ String location = "path/to/file";
 BufferedWriter bw = Files.newBufferedWriter(Paths.get(location), Charset.defaultCharset());
 ```
 
-### Creating a FileWriter from a File
+### Creating the FileWriter from a new File
 
 __Pre__
 ```java
@@ -60,7 +60,7 @@ String location = "path/to/file";
 BufferedWriter bw = Files.newBufferedWriter(Paths.get(location), Charset.defaultCharset());
 ```
 
-### Declaring Resources in Try-With-Resource Statement
+### Declaring the Resources on a Try-With-Resource Statement
 
 __Pre__
 ```java
