@@ -6,7 +6,7 @@
 
 Integrating the jSparrow Maven plugin into a build process has the advantage of automatically applying selected jSparrow rules in an already automated process. 
 The configuration is highly customizable and depends very much on the environment. 
-Here it will be described how Jenkins builds are able to trigger jSparrow Maven plugin builds, depending on the Git branch of the commit. In this example, all builds on a feature branch will trigger jSparrow. 
+Here it will be described how Jenkins builds are able to trigger jSparrow Maven plugin builds, depending on the Git branch of the commit. In this example, all builds on a *feature* branch will trigger jSparrow. 
 
 ## Requirements
 
@@ -65,13 +65,11 @@ The config file can be added as follows:
 
 With [Multibranch Pipelines](https://www.jenkins.io/doc/book/pipeline/multibranch/), Jenkins offers a way to run builds on all branches of a repository. This is very useful when following a branching model, such as [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), where different types of branches have different purposes. The current branch can be determined during runtime (`env.BRANCH_NAME` or via [Built-in Condition](https://www.jenkins.io/doc/book/pipeline/syntax/#built-in-conditions)), making it possible to process certain branches differently. 
 
-In this example, a declarative Multibranch Pipeline will be configured to run the jSparrow Maven plugin on feature branches. In Gitflow, a feature branch should only be merged into develop (and master) after being reviewed in a pull request. 
-
-### Step-by-step Description
+In this example, a declarative Multibranch Pipeline will be configured to run the jSparrow Maven plugin on *feature* branches. In Gitflow, a *feature* branch should only be merged into *develop* (and *master*) after being reviewed in a pull request. 
 
 Here, the necessary pipeline file will be described one part at a time. Click on [Jenkinsfile.groovy](https://gist.github.com/luigiwerzowa/aafba402bd36faa573f48a26fc056289) for the full file. 
 
-#### Tools Configuration
+### Tools Configuration
 
 Both the Maven and JDK version have to be specified for the build. 
 
@@ -85,7 +83,7 @@ tools {
 The referenced names (`JDK8` and `maven3`) have to point to a corresponding configuration in *Manage Jenkins* -> *Global Tool Configuration*, as seen in the example below. 
 [ ![Maven integration](/img/maven/jenkins-tools-maven.png) ](/img/maven/jenkins-tools-maven.png)
 
-#### Checkout and Setting a Flag
+### Checkout and Setting a Flag
 
 The purpose of this step is to checkout the current commit, to check if the last commit was done by jSparrow and to set a flag if that has been the case. 
 
@@ -117,16 +115,16 @@ stages {
 }
 ```
 
-In oder to avoid endless build loops, a flag (`JSPARROW_FLAG`) is set to `false` whenever the current commit has been done by jSparrow. In this example, the flag is set to `false` whenever the commit message contains `[jSparrow]`. 
+In order to avoid endless build loops, a flag (`JSPARROW_FLAG`) is set to `false` whenever the current commit has been done by jSparrow. In this example, the flag is set whenever the commit message contains `[jSparrow]`. 
 
-#### jSparrow Execution
+### jSparrow Execution
 
 This step can be split into three main parts: 
 1. Deciding on whether or not to trigger jSparrow
 1. Executing jSparrow
 1. Pushing the changes to Git
 
-##### Whether or Not to Trigger jSparrow
+#### Whether or Not to Trigger jSparrow
 
 By default, all conditions within a [`when` directive](https://www.jenkins.io/doc/book/pipeline/syntax/#when) must be true in order for the stage to be executed. 
 
@@ -141,9 +139,9 @@ when {
 }
 ```
 
-The purpose of this when condition is to make sure that the current branch is a feature branch and that the flag is still true. 
+The purpose of this `when` condition is to make sure that the current branch is a *feature* branch and that the flag is still true. 
 
-##### Executing jSparrow
+#### Executing jSparrow
 
 In this step we make use of the previously defined `JSPARROW_LICENSE` (see [License Key as Secret Text](/maven/build-integration.html#license-key-as-secret-text)) and `JSPARROW_CONFIG` (see [jSparrow Config File](/maven/build-integration.html#jsparrow-config-file)). 
 
@@ -169,7 +167,7 @@ The [`configFileProvider` plugin](https://www.jenkins.io/doc/pipeline/steps/conf
 
 All that remains is to call the [`jsparrow:refactor` goal](/maven/getting-started.html#refactor) with the two resouces. 
 
-##### Pushing the Changes to Git
+#### Pushing the Changes to Git
 
 After running jSparrow, the changes have to be committed and pushed to the original repository, in order for the changes to be persisted. 
 
@@ -189,4 +187,14 @@ sshagent(['SSH_KEY_ID']) {
 [ ![add ssh key to jenkins](/img/maven/jenkins-config-ssh.png) ](/img/maven/jenkins-config-ssh.png)
 1. Note: The commit message contains `[jSparrow]`. This is used as an indicator to set the `JSPARROW_FLAG` (see [Checkout and Setting a Flag
 ](/maven/build-integration.html#checkout-and-setting-a-flag)). 
-1. Jenkins always checks out single commits as detached HEAD. For this reason, we need to specify the branch to push to. Jenkins provides an environment variable `env.BRANCH_NAME`, which makes it easy to determine the refspec destination. 
+1. Jenkins always checks out single commits as *detached HEAD*. For this reason, we need to specify the branch to push to. Jenkins provides an environment variable `env.BRANCH_NAME`, which makes it easy to determine the refspec destination. 
+
+## End Result
+
+In the end, the pipeline should be triggered whenever both of the following conditions are met:
+1. The commit in question is done on a *feature* branch. 
+1. The commit in question is not done by a jSparrow refactoring (i.e., the commit message does not contain `[jSparrow]`).
+
+The screenshot below shows an example of a *feature* branch commit triggering jSparrow, followed by a `[jSparrow]` commit, which skips the jSparrow step. 
+
+[ ![jSparrow Refactoring](/img/maven/jenkins-jsparrow-run.png) ](/img/maven/jenkins-jsparrow-run.png)
