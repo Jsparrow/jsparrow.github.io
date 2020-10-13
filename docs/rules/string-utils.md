@@ -34,7 +34,7 @@ Activation of this rule requires the following classpath entry to be present:
 Using StringUtils helps avoid a number of issues, such as null pointer exceptions. Depending on the specific methods readability, performance and others may also be improved. In short: StringUtils is just generally better.   
 
 
-## Implemented Methods
+## Supported API
 
 ### isEmpty
 
@@ -182,44 +182,139 @@ public static String lowerCase(String str, Locale locale)
 
 ## Code Changes
 
+### Checking for Empty Strings
 __Pre__
 
 ```java
-public boolean testEmpty(String testString) {
-    return  /* test */ testString // save me
-            .isEmpty() /* trailing comment */;
-}
-
-public String testTrim(String testString) {
-    String val = /* test */testString.trim();
-    return testString.trim();
-}
-
-public boolean testEqualsIgnoreCase(String testString) {
-    String sometimesExpectedString = testString.replaceAll("a", "b");
-
-    return testString.equalsIgnoreCase(sometimesExpectedString);
-}
+value.isEmpty();
 ```
 
 __Post__
 
 ```java
-public boolean testEmpty(String testString) {
-    // save me
-    return /* test */ StringUtils.isEmpty(testString) /* trailing comment */;
-}
+StringUtils.isEmpty(value);
+```
 
-public String testTrim(String testString) {
-    String val = /* test */StringUtils.trim(testString);
-    return StringUtils.trim(testString);
-}
+### Dropping Surrounding Spaces
 
-public boolean testEqualsIgnoreCase(String testString) {
-    String sometimesExpectedString = testString.replaceAll("a", "b");
+__Pre__
 
-    return StringUtils.equalsIgnoreCase(testString, sometimesExpectedString);
-}
+```java
+value.trim();
+```
+
+__Post__
+
+```java
+StringUtils.trim(value);
+```
+
+### Comparing Equals
+
+__Pre__
+
+```java
+String email = user.getMail();
+String username = user.getUsername();
+
+username.equals(expectedUsername);
+email.equalsIgnoreCase(expectedEmail);
+```
+
+__Post__
+
+```java
+String email = user.getMail();
+String username = user.getUsername();
+
+StringUtils.equals(username, expectedUsername);
+StringUtils.equalsIgnoreCase(email, expectedEmail);
+```
+
+### Finding a Substring
+
+__Pre__
+
+```java
+value.substring(index);
+```
+
+__Post__
+
+```java
+StringUtils.substring(value, index);
+```
+
+### Finding the Index of a Substring
+
+__Pre__
+
+```java
+value.indexOf(sequence);
+```
+
+__Post__
+
+```java
+StringUtils.indexOf(value, sequence);
+```
+
+### Comparing the Suffix
+
+__Pre__
+
+```java
+value.endsWith(suffix);
+```
+
+__Post__
+
+```java
+StringUtils.endsWith(value, suffix);
+```
+
+### Comparing the Prefix
+
+__Pre__
+
+```java
+value.startsWith(prefix);
+```
+
+__Post__
+
+```java
+StringUtils.startsWith(value, prefix);
+```
+
+### Searching for a Sequence
+
+__Pre__
+
+```java
+value.contains(sequence);
+```
+
+__Post__
+
+```java
+StringUtils.contains(value, sequence);
+```
+
+### Changing Capitalization
+
+__Pre__
+
+```java
+String upper = value.toUpperCase();
+String lower = value.toLowerCase();
+```
+
+__Post__
+
+```java
+String upper = StringUtils.upperCase(value);
+String lower = StringUtils.lowerCase(value);
 ```
 
 <VersionNotice />
