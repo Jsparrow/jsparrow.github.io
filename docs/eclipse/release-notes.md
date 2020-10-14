@@ -11,7 +11,7 @@ The [86<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.20.0.
 
 ### New Rule
 
-#### [**Use Files.newBufferedWriter**](/rules/remove-unused-parameter.html)
+#### [**Use Files.newBufferedWriter**](/rules/use-files-buffered-writer.html)
 
 Java 7 introduced the [`Files`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html) class that contains convenience methods for operating on files. 
 This rule makes use of the [`Files.newBufferedWriter`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,%20java.nio.charset.Charset,%20java.nio.file.OpenOption...)) method for initializing [`BufferedWriter`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedWriter.html) objects to write text files in an efficient non-blocking manner.
