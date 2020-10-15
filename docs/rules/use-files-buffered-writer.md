@@ -28,7 +28,7 @@ This rule makes use of the [`Files.newBufferedWriter`](https://docs.oracle.com/j
 
 ## Benefits
 
-Achieve better performance by using non-blocking I/O operations offered by the `java.nio` package.
+Achieve better performance by using non-blocking I/O operations offered by the [`java.nio`](https://docs.oracle.com/javase/7/docs/api/java/nio/package-summary.html) package.
 
 ## Code Changes
 
