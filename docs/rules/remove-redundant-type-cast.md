@@ -3,8 +3,10 @@ title: Remove Redundant Type Casts
 ruleId: RemoveRedundantTypeCast
 since: 3.15.0
 minJavaVersion: 1.1
-remediationCost: 1
+remediationCost: 5
 links:
+    - displayName: "S1905"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS1905&q=S1905"
 description:
     A typecast expression can be removed if it casts an expression to a type which is already exactly the type of the expression. Additionally, also parentheses involved in the cast operation will be removed if they are not necessary any more.
 

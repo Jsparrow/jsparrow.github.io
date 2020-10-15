@@ -3,10 +3,12 @@ title: Use Parameterized Query
 ruleId: UseParameterizedQuery
 since: 3.16.0
 minJavaVersion: 1.1
-remediationCost: 10
+remediationCost: 20
 links:
     - displayName: "Prepared Statements (with Parameterized Queries)"
       url: "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html#defense-option-1-prepared-statements-with-parameterized-queries"
+    - displayName: "S2077"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2077&q=S2077"
     
 description:
     Rule description.

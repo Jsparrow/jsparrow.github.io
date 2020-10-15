@@ -5,6 +5,29 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.22.0 <Badge vertical="middle" text="15.10.2020"/>
+
+The [86<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.20.0. It makes use of the [`Files.newBufferedWriter`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,%20java.nio.charset.Charset,%20java.nio.file.OpenOption...)) method for initializing BufferedWriter objects for writing to text to files.
+
+### New Rule
+
+#### [**Use Files.newBufferedWriter**](/rules/use-files-buffered-writer.html)
+
+Java 7 introduced the [`Files`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html) class that contains convenience methods for operating on files. 
+This rule makes use of the [`Files.newBufferedWriter`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,%20java.nio.charset.Charset,%20java.nio.file.OpenOption...)) method for initializing [`BufferedWriter`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedWriter.html) objects to write text files in an efficient non-blocking manner.
+
+### Fixed Bugs
+
+#### [**Remove Unused Parameters in Private Methods**](/rules/remove-unused-parameter.html)
+* Keeps the unused parameters that are annotated for DI or other purposes.
+* Keeps the unused parameters if the method is pointed by a method reference. 
+
+#### [**Use StringUtils Methods**](/rules/string-utils.html)
+* Fixes a bug related to identifying the version of the [`apache.commons.lang`](https://commons.apache.org/proper/commons-lang/) library that is available in the project's classpath. 
+
+#### **Finding the Supported JLS Level**
+* Fixes a bug related to finding the latest JLS level supported by the Eclipse instance where jSparrow is running in.  
+
 ## 3.21.0 <Badge vertical="middle" text="17.09.2020"/>
 
 The autumn release of jSparrow 3.21.0 introduces [4 refactoring rules](/rules/). This extends the total number of jSparrow rules to 85. Some improvements and bugfixes are also included.

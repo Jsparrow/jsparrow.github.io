@@ -26,8 +26,8 @@ You can use jSparrow as part of your development process in the Eclipse IDE or i
 
 ## The Latest New Features
 
-We released four new rules and a number of bugfixes.  
-Check out the release notes for [jSparrow 3.21.0](/eclipse/release-notes.html#_3-21-0) and the [jSparrow Maven plugin 2.18.0](/maven/release-notes.html#_2-18-0)!
+We released a new rule and a number of bugfixes.  
+Check out the release notes for [jSparrow 3.22.0](/eclipse/release-notes.html#_3-22-0) and the [jSparrow Maven plugin 2.19.0](/maven/release-notes.html#_2-19-0)!
 
 ## Where to find jSparrow?
 
