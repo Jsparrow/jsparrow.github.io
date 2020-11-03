@@ -20,6 +20,12 @@ Rules with this tag are free to use without limitation. See [jSparrow Starter Re
 
 <Tag tag-name="Free" />
 
+## IO Operations
+
+This tag marks rules that deal with I/O operations provided by [`java.io`](https://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html) or [`java.nio`](https://docs.oracle.com/javase/8/docs/api/java/nio/package-summary.html). 
+
+<Tag tag-name="IO Operations" />
+
 ## Lambda
 
 Lambda expressions are anonymous and unnamed functions that enable you to treat functionality as a method argument or code as data. Lambda expressions are an integral part of the `java.util.stream` API.  
