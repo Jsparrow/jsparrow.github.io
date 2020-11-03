@@ -8,7 +8,7 @@ links:
 description:
     Replaces While-Loops and For-Loops that are using 'BufferedReader::readLine' to iterate through lines of a file by a stream generated with 'BufferedReader::lines'.
 
-tags: ["Java 8", "Lambda", "Loop", "Old Language Constructs"]
+tags: ["Java 8", "Lambda", "Loop", "Old Language Constructs", "IO Operations"]
 ---
 
 # Use BufferedReader::lines

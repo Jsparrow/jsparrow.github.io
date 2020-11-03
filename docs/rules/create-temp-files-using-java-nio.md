@@ -11,7 +11,7 @@ links:
 description:
     This rule replaces the temporary file creation using 'java.io.File' by the alternative methods defined in 'java.nio.file.Files'.
 
-tags: ["Java 1.7", "Security"]
+tags: ["Java 1.7", "Security", "IO Operations"]
 ---
 
 # Create Temp Files Using Java NIO
