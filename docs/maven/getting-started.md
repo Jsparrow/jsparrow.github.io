@@ -228,6 +228,7 @@ You may add the following parameters:
 | `-DdefaultConfiguration`	| The built-in default configuration will be used for refactoring. If this parameter is set, the configuration in the root of the project will be ignored. <br /> It executes the following rules: <DefaultConfigurationRules /> |
 | `-Dlicense=<license-key>`	| Specify the license key to be used. This takes priority over a configuration via config file. In "Machine Configuration" the config file approach is described. |
 | `-Durl=<url>`	| Specify the licensing server URL to use in case a [local server](/maven/local-license-server.html) should be used. |
+| `-DselectedSources=<glob-patterns>` | Specify the [glob expression patterns](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob) relative to the project root directory for selecting the sources to refactor. Use line breaks to specify multiple glob patterns. If not specified, all Java sources in the project will be considered for refactoring. Examples: <SelectedSourcesExamples /> |
 
 ### List Rules
 This goal lists rules with their IDs, names and descriptions.
