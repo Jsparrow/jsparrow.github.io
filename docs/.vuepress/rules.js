@@ -69,6 +69,7 @@ module.exports = [
 'primitive-object-use-equals',
 'collections-factory-methods',
 'use-files-buffered-reader',
+'use-files-buffered-writer',
 'functional-interface',
 'guard-condition',
 'local-variable-type-inference',

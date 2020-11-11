@@ -21,7 +21,7 @@ tags: ["Java 5", "Performance", "String Manipulation"]
 ## Description
 
 Java 8 introduced String.join which is a convenient method for concatenating String values of `Iterable`s. 
-This rule replaces String concatenations performed using [Collectors.joining()](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html#joining-java.lang.CharSequence-) with concatenations using [String.join()](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#join-java.lang.CharSequence-java.lang.Iterable-). 
+This rule replaces String concatenations performed using [`Collectors.joining()`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html#joining-java.lang.CharSequence-) with concatenations using [`String.join()`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#join-java.lang.CharSequence-java.lang.Iterable-). 
 A performance improvement can be observed with the increase of the number of elements in the Iterable. 
 
 ## Benefits

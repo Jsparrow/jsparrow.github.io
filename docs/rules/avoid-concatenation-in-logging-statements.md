@@ -31,8 +31,8 @@ This rule transforms logger statements where the message uses concatenation by i
 
 ::: warning Requirements
 This rule works on the following types and implementations of them:
-* [org.slf4j.Logger](http://www.slf4j.org/apidocs/org/slf4j/Logger.html) (includes [ch.qos.logback.classic.Logger](http://logback.qos.ch/apidocs/ch/qos/logback/classic/Logger.html))
-* [org.apache.logging.log4j.Logger](https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html) 
+* [`org.slf4j.Logger`](http://www.slf4j.org/apidocs/org/slf4j/Logger.html) (includes [`ch.qos.logback.classic.Logger`](http://logback.qos.ch/apidocs/ch/qos/logback/classic/Logger.html))
+* [`org.apache.logging.log4j.Logger`](https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html) 
 :::
 
 ## Benefits

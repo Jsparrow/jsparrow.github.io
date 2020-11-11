@@ -3,10 +3,12 @@ title: Use Parameterized Query
 ruleId: UseParameterizedQuery
 since: 3.16.0
 minJavaVersion: 1.1
-remediationCost: 10
+remediationCost: 20
 links:
     - displayName: "Prepared Statements (with Parameterized Queries)"
       url: "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html#defense-option-1-prepared-statements-with-parameterized-queries"
+    - displayName: "S2077"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS2077&q=S2077"
     
 description:
     Rule description.
@@ -23,7 +25,7 @@ tags: ["Java 1.1", "Security"]
 
 ## Description
 
-Replaces [java.sql.Statement](https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html) with [java.sql.PreparedStatement](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) (aka parameterized queries) if the SQL query is constructed by concatenating string literals with user defined expressions (e.g. variables, method invocations, user input, etc). 
+Replaces [`java.sql.Statement`](https://docs.oracle.com/javase/8/docs/api/java/sql/Statement.html) with [`java.sql.PreparedStatement`](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) (aka parameterized queries) if the SQL query is constructed by concatenating string literals with user defined expressions (e.g. variables, method invocations, user input, etc). 
 Parameterized queries enforce a distinction between the SQL code and the data passed through parameters.
 
 ## Benefits

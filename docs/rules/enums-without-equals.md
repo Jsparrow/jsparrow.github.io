@@ -3,8 +3,10 @@ title: Replace equals() on Enum Constants
 ruleId: EnumsWithoutEquals
 since: 2.2.0
 minJavaVersion: 5
-remediationCost: 2
+remediationCost: 5
 links:
+    - displayName: "S4551"
+      url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS4551&q=S4551"
 description:
     Replaces occurrences of 'equals()' on Enum constants with an identity comparison (==).
     In the case the equals relation is wrapped with an boolean negation the result will be an not equals (!=).

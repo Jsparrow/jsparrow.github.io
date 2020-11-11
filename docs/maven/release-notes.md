@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 2.19.0 <Badge vertical="middle" text="15.10.2020"/>
+
+A new rule is shipped with release 2.19.0 of the jSparrow Maven Plugin:
+
+* [Use Files.newBufferedWriter](/rules/use-files-buffered-writer.html)
+
 ## 2.18.0 <Badge vertical="middle" text="17.09.2020"/>
 
 Four new rules are shipped with release 2.18.0 of the jSparrow Maven Plugin:

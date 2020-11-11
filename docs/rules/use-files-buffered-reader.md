@@ -5,12 +5,12 @@ since: 3.21.0
 minJavaVersion: 7
 remediationCost: 5
 links:
-    - displayName: "File I/O (Featuring NIO.2)"
-      url: "https://docs.oracle.com/javase/tutorial/essential/io/file.html"
+    - displayName: "Buffered I/O Methods for Text Files"
+      url: "https://docs.oracle.com/javase/tutorial/essential/io/file.html#readBufferedStream"
     
 description:
     Java 7 introduced the 'java.nio.file.Files' class that contains some convenience methods for operating on files. This rule makes use of 'Files.newBufferedReader' method for initializing 'BufferedReader' objects to read text files in an efficient non-blocking manner.
-tags: ["Java 7", "Performance", "Old Language Constructs"]
+tags: ["Java 7", "Performance", "Old Language Constructs", "IO Operations"]
 ---
 
 # Use Files.newBufferedReader
@@ -32,7 +32,7 @@ Achieve better performance by using non-blocking I/O operations offered by the `
 
 ## Code Changes
 
-### Creating a BufferedReader from a FileReader
+### Creating the BufferedReader from a new FileReader
 
 __Pre__
 ```java
@@ -46,7 +46,7 @@ String location = "path/to/file";
 BufferedReader br = Files.newBufferedReader(Paths.get(location), Charset.defaultCharset());
 ```
 
-### Creating a FileReader from a File
+### Creating the FileReader from a new File
 
 __Pre__
 ```java
@@ -61,7 +61,7 @@ String location = "path/to/file";
 BufferedReader br = Files.newBufferedReader(Paths.get(location), Charset.defaultCharset());
 ```
 
-### Declaring Resources in Try-With-Resource Statement
+### Declaring the Resources on a Try-With-Resource Statement
 
 __Pre__
 ```java
