@@ -1,16 +1,13 @@
 ---
 title: Use Comparator Methods
 ruleId: UseComparatorMethods
-since: 3.22.0
+since: 3.23.0
 minJavaVersion: 1.8
 remediationCost: 15
-links:
-    - displayName: "Use Comparator methods"
-      url: ""
     
 description:
-    This rule replaces complex lambda expressions which create instances of 'java.util.Comparator' by expressions of less complexity. This can be accomplished with the help of static method invocations of the class 'java.util.Comparator'.
-tags: ["Java 1.8", "Lambda", "Coding Conventions"]
+    This rule replaces complex lambda expressions that create instances of 'java.util.Comparator' by a single invocation of the factory methods introduced in the 'java.util.Comparator' interface.
+tags: ["Java 1.8", "Coding Conventions", "Lambda", "Readability"]
 ---
 
 # Use SecureRandom
@@ -23,7 +20,7 @@ tags: ["Java 1.8", "Lambda", "Coding Conventions"]
 
 ## Description
 
-In Java 8, new static methods have been introduced for the class  [`Comparator`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) in order to create comparator objects:
+In Java 8, new factory methods have been introduced on the [`Comparator`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) interface to simplify the creation of `Comparator` objects:
 
 * [`Comparator.naturalOrder()`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#naturalOrder--) 
 * [`Comparator.reverseOrder()`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#reverseOrder--) 
@@ -32,32 +29,33 @@ In Java 8, new static methods have been introduced for the class  [`Comparator`]
 * [`Comparator.comparingLong(keyExtractor)`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#comparingLong-java.util.function.ToLongFunction-) 
 * [`Comparator.comparingDouble(keyExtractor)`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#comparingDouble-java.util.function.ToDoubleFunction-) 
 
-This rule can replace a complex lambda expression which represents a comparator by transforming it to an invocation expression of one of the methods listed above. This way the complexity of source code is reduced.
+This rule can replace a complex lambda expression which represents a comparator by transforming it to a single invocation of one of the methods listed above. 
+This reduces the complexity of source code.
 
 ## Benefits
 
-Increases readability of code.
+Reduces the code clutter and improves readability.
 
 ## Code Changes
 
 
-### Creating a Comparator of Integer objects
+### Natural Order Comparator
 
 __Pre__
 ```java
-Comparator<Integer> comparator = (lhs, rhs) -> lhs.compareTo(rhs);
+Comparator<User> comparator = (user1, user2) -> user1.compareTo(user2);
 ```
 
 __Post__
 ```java
-Comparator<Integer> comparator = Comparator.naturalOrder();
+Comparator<User> comparator = Comparator.naturalOrder();
 ```
 
-### Creating a Comparator of Integer objects with reversed order
+### Reversed Order Comparator
 
 __Pre__
 ```java
-Comparator<Integer> comparator = (lhs, rhs) -> rhs.compareTo(lhs);
+Comparator<User> comparator = (user1, user2) -> user2.compareTo(user1);
 ```
 
 __Post__
@@ -66,11 +64,11 @@ Comparator<Integer> comparator = Comparator.reverseOrder();
 ```
 
 
-### Creating a Comparator of users by user id
+### Comparing by a Long Property
 
 __Pre__
 ```java
-Comparator<User> comparator = (lhs, rhs) -> lhs.getUserId().compareTo(rhs.getUserId());
+Comparator<User> comparator = (user1, user2) -> user1.getUserId().compareTo(user2.getUserId());
 ```
 
 __Post__
@@ -78,11 +76,11 @@ __Post__
 Comparator<User> comparator = Comparator.comparingLong(User::getUserId);
 ```
 
-### Creating a Comparator of users by salary
+### Comparing by a Double Property
 
 __Pre__
 ```java
-Comparator<User> comparator = (lhs, rhs) -> lhs.getSalary().compareTo(rhs.getSalary());
+Comparator<User> comparator = (user1, user2) -> user1.getSalary().compareTo(user2.getSalary());
 ```
 
 __Post__
@@ -90,32 +88,32 @@ __Post__
 Comparator<User> comparator = Comparator.comparingDouble(User::getSalary);
 ```
 
-### Creating a Comparator of users by e-mail
+### Comparing by a Comparable Property
 
 __Pre__
 ```java
-Comparator<User> comparator = (lhs, rhs) -> lhs.getEmaíl().compareTo(rhs.getEmaíl());
+Comparator<User> comparator = (lhs, rhs) -> lhs.getEmail().compareTo(rhs.getEmail());
 ```
 
 __Post__
 ```java
-Comparator<User> comparator = Comparator.comparing(User::getEmaíl);
+Comparator<User> comparator = Comparator.comparing(User::getEmail);
 ```
 
 
-### Creating a Comparator of users by age with reversed order
+### Creating Reversed Comparator by Property
 
 __Pre__
 ```java
-Comparator<User> comparator = (lhs, rhs) -> rhs.getAge().compareTo(lhs.getAge());
+Comparator<User> comparator = (user1, user2) -> user2.getAge().compareTo(user1.getAge());
 ```
 
 __Post__
 ```java
-Comparator<User> comparator = Comparator.comparingInt((User lhs) -> lhs.getAge()).reversed();
+Comparator<User> comparator = Comparator.comparingInt(User::getAge).reversed();
 ```
 
-## Sorting an ArrayList of users
+### Sorting Collections of Comparables
 
 __Pre__
 ```java
