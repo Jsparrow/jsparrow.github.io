@@ -60,3 +60,16 @@ _Export All_ will export all self-made formatter profiles and therefore ignore t
 ::: warning Note
 In case of multiple self-made formatter profiles, jSparrow will take the first one. Either make sure, the formatter XML file only contains one profile, or that the desired profile comes first. 
 :::
+
+### Formatting Settings Similar to IntelliJ IDEA
+
+Eclipse's Code Formatter Preferences offer a vast amount of customizations and make it possible to configure formatting options similar to other IDEs, such as IntelliJ IDEA.
+There are subtle differences in the approach how Eclipse and IntelliJ handle formatting though, which makes it impossible to use the exact same formatting in Eclipse, that is default in IntelliJ. 
+
+#### Differences include:
+* Chained method calls cannot be excluded from line wrapping
+* A lot of parameter alignment options work differently (e.g., try-with-resource cannot have the option "Do not wrap" and "Indent on column" at the same time)
+* A lot of comment related formatting works differently (e.g., one-line block comments are not put into separate lines reliably, options to remove blank lines are different, etc.)
+* It is not possible to use different line wrapping options depending on the element of an annotation (e.g., "Wrap where necessary" on class annotations but not on local variable annotations)
+
+That being said, [here](https://gist.github.com/luigiwerzowa/bf91b62b6180fa86992f4cb7b7f71429) are formatting settings that are similar to IntelliJ. 
