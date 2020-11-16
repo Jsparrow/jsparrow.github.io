@@ -10,7 +10,7 @@ description:
 tags: ["Java 1.8", "Coding Conventions", "Lambda", "Readability"]
 ---
 
-# Use SecureRandom
+# Use Comparator Methods
 
 [[toc]]
 
