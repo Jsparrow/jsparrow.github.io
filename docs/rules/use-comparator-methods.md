@@ -3,7 +3,7 @@ title: Use Comparator Methods
 ruleId: UseComparatorMethods
 since: 3.23.0
 minJavaVersion: 1.8
-remediationCost: 15
+remediationCost: 5
     
 description:
     This rule replaces complex lambda expressions that create instances of 'java.util.Comparator' by a single invocation of the factory methods introduced in the 'java.util.Comparator' interface.
