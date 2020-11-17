@@ -92,7 +92,7 @@ Comparator<User> comparator = Comparator.comparingDouble(User::getSalary);
 
 __Pre__
 ```java
-Comparator<User> comparator = (lhs, rhs) -> lhs.getEmail().compareTo(rhs.getEmail());
+Comparator<User> comparator = (user1, user2) -> user1.getEmail().compareTo(user2.getEmail());
 ```
 
 __Post__
@@ -117,7 +117,7 @@ Comparator<User> comparator = Comparator.comparingInt(User::getAge).reversed();
 
 __Pre__
 ```java
-users.sort((lhs, rhs) -> lhs.getUserId().compareTo(rhs.getUserId()));
+users.sort((user1, user2) -> user1.getUserId().compareTo(user2.getUserId()));
 ```
 
 __Post__
