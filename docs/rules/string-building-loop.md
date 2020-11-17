@@ -74,7 +74,7 @@ for(String val : collectionOfStrings) {
 String result = resultSb.toString();
 ```
 
-### Bytecode JDK 1.8 (Optional)
+### Bytecode JDK 1.8
 
 __Pre__
 ```java

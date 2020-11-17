@@ -225,6 +225,7 @@ You may add the following parameters:
 |:----------|:-------------|
 | `-DconfigFile=<config-file-path>`	| The specified configuration file will be used instead of the default (`jsparrow.yml`). |
 | `-Dprofile=<selected-profile-id>`	| The specified profile will be used. Make sure that either a `jsparrow.yml` is in the root directory or `-DconfigFile=<config-file-path>` is specified. The given profile ID will be compared to the declared profiles in the configuration file. If the given profile ID is not declared, an error will be thrown. |
+| `-Dformatter=<formatter-file-path>`	| The specified Eclipse formatter file will be used when applying the [Reformat Code](/rules/code-formatter.html) rule. Have a look at [Eclipse Formatter File](/maven/additional-configuration.html#eclipse-formatter-file) for more information. |
 | `-DdefaultConfiguration`	| The built-in default configuration will be used for refactoring. If this parameter is set, the configuration in the root of the project will be ignored. <br /> It executes the following rules: <DefaultConfigurationRules /> |
 | `-Dlicense=<license-key>`	| Specify the license key to be used. This takes priority over a configuration via config file. In "Machine Configuration" the config file approach is described. |
 | `-Durl=<url>`	| Specify the licensing server URL to use in case a [local server](/maven/local-license-server.html) should be used. |
