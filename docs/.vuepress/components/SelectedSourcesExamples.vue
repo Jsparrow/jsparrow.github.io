@@ -3,14 +3,14 @@
     <li>
       <code>"core/*"</code>
       <div style="padding-left:1em">
-        Select the Java sources defined in <code>core</code> package. The
+        Select the Java sources defined in the <code>core</code> package. The
         subpackages are <strong>not</strong> included.
       </div>
     </li>
     <li>
       <code>"core/**"</code>
       <div style="padding-left:1em">
-        Select the Java sources defined in <code>core</code> package and in
+        Select the Java sources defined in the <code>core</code> package and in
         <strong>all</strong> subpackages recursively.
       </div>
     </li>
