@@ -231,8 +231,8 @@ You may add the following parameters:
 
 ### Demo 
 
-This goal starts jSparrow in Demo Mode. Similar to the `refactor` goal, the `demo` goal analyzes the project and computes the refactoring with the selected rules. 
-But instead of committing the code changes to the original sources, jSparrow generates a HTML report with the findings of each rule. 
+This goal starts jSparrow in Demo Mode. Similar to the `refactor` goal, the `demo` goal analyzes the project and computes refactorings with the selected rules.  
+However, instead of committing the code changes to the original sources, jSparrow generates an HTML report with the findings of each rule, similar to our statistics (e.g., for [jenkins-core](/statistics/jenkins-statistics.html?p=jenkins-core)).  
 No valid license is required and the source files are not affected.
 
 ```bash
