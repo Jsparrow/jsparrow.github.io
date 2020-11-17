@@ -230,6 +230,17 @@ You may add the following parameters:
 | `-Dlicense=<license-key>`	| Specify the license key to be used. This takes priority over a configuration via config file. In "Machine Configuration" the config file approach is described. |
 | `-Durl=<url>`	| Specify the licensing server URL to use in case a [local server](/maven/local-license-server.html) should be used. |
 
+### Demo 
+
+This goal starts jSparrow in Demo Mode. Similar to the `refactor` goal, the `demo` goal analyzes the project and computes refactorings with the selected rules.  
+However, instead of committing the code changes to the original sources, jSparrow generates an HTML report with the findings of each rule, similar to our statistics (e.g., for [jenkins-core](/statistics/jenkins-statistics.html?p=jenkins-core)).  
+No valid license is required and the source files are not affected.
+
+```bash
+$ mvn jsparrow:demo
+```
+ You may add the same parameters as in the [`refactor`](#refactor) goal.
+
 ### List Rules
 This goal lists rules with their IDs, names and descriptions.
 
