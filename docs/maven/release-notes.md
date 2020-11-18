@@ -26,8 +26,8 @@ You can find more information at [Eclipse Formatter File](/maven/additional-conf
 
 ### The `selectedSources` Parameter
 
-A parameter `-DselectedSources=<glob-expressions>` is introduced in the `refactor` as well as in the `demo` goal to allow users for specifying the sources that jSparrow shall consider to refactor.
-The sources can be specified using [glob expressions](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob). 
+A parameter `-DselectedSources=<glob-expressions>` is introduced in the `refactor` goal to allow users for specifying the sources that jSparrow shall consider to refactor.
+The sources can be specified by using [glob expressions](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob). 
 Find more information in the parameters description of [`refactor`](/maven/getting-started.html#refactor) goal. 
 
 

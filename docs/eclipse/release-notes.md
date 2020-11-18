@@ -7,14 +7,14 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.23.0 <Badge vertical="middle" text="19.11.2020"/>
 
-The [87<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.23.0. The new rule simplifies creating `Comparator` instances.
+The [87<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.23.0. The new rule simplifies the constructs used as `Comparator` instances.
 
 ### New Rule
 
 #### [**Use Comparator Methods**](/rules/use-comparator-methods.html)
 
 Java 8 introduced new factory methods in the [`Comparator`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) interface for simplifying the creation of `Comparator` instances. 
-This rule replaces lambda expressions representing comparators with a single invocations of factory methods, hence removing some code clutter and improving the readability.   
+This rule replaces lambda expressions representing comparators with simple invocations of `Comparator` factory methods, hence removing some code clutter and improving the readability.   
 
 ### Fixed Bugs
 
