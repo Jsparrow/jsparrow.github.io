@@ -6,8 +6,8 @@ minJavaVersion: 1.8
 remediationCost: 5
     
 description:
-    This rule replaces complex lambda expressions that create instances of 'java.util.Comparator' by a single invocation of the factory methods introduced in the 'java.util.Comparator' interface.
-tags: ["Java 1.8", "Coding Conventions", "Lambda", "Readability"]
+    This rule replaces complex lambda expressions that serve as instances of 'java.util.Comparator' by simple invocations of factory methods introduced in the 'java.util.Comparator' interface.
+tags: ["Java 1.8", "Lambda", "Readability", "Coding Conventions"]
 ---
 
 # Use Comparator Methods
@@ -29,12 +29,11 @@ In Java 8, new factory methods have been introduced on the [`Comparator`](https:
 * [`Comparator.comparingLong(keyExtractor)`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#comparingLong-java.util.function.ToLongFunction-) 
 * [`Comparator.comparingDouble(keyExtractor)`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#comparingDouble-java.util.function.ToDoubleFunction-) 
 
-This rule can replace a complex lambda expression which represents a comparator by transforming it to a single invocation of one of the methods listed above. 
-This reduces the complexity of source code.
+This rule replaces complex lambda expressions which represent `Comparator` instances by simple invocations of one of the methods listed above. 
 
 ## Benefits
 
-Reduces the code clutter and improves readability.
+Reduces the code clutter and improves the readability.
 
 ## Code Changes
 
