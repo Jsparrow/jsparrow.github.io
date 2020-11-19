@@ -231,16 +231,20 @@ You may add the following parameters:
 | `-Durl=<url>`	| Specify the licensing server URL to use in case a [local server](/maven/local-license-server.html) should be used. |
 | `-DselectedSources=<glob-patterns>` | Specify the [glob expression patterns](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob) relative to the project root directory for selecting the sources to refactor. Use line breaks to specify multiple glob patterns. If not specified, all Java sources in the project will be considered for refactoring. Examples: <SelectedSourcesExamples /> |
 
-### Demo 
+### Report 
 
-This goal starts jSparrow in Demo Mode. Similar to the `refactor` goal, the `demo` goal analyzes the project and computes refactorings with the selected rules.  
+This goal starts jSparrow in "Report Mode". Similar to the `refactor` goal, the `report` goal analyzes the project and computes refactorings with the selected rules.  
 However, instead of committing the code changes to the original sources, jSparrow generates an HTML report with the findings of each rule, similar to our statistics (e.g., for [jenkins-core](/statistics/jenkins-statistics.html?p=jenkins-core)).  
 No valid license is required and the source files are not affected.
 
 ```bash
-$ mvn jsparrow:demo
+$ mvn jsparrow:report
 ```
- You may add the same parameters as in the [`refactor`](#refactor) goal.
+You may add the same parameters as in the [`refactor`](#refactor) goal.
+
+::: tip Note
+Since the `report` goal does not require a license, this is a great way to see what the jSparrow Maven plugin has to offer for your project!
+:::
 
 ### List Rules
 This goal lists rules with their IDs, names and descriptions.

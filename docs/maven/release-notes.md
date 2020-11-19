@@ -10,14 +10,14 @@ Here you will find the latest information about releases of the jSparrow Maven p
 jSparrow Maven Plugin 3.0.0 arrives with a new feature that makes the jSparrow's static analysis capacity available to everyone.
 Additional features are introduced that allow users to provide a customized formatter and to select specific source files that shall be considered for refactoring.
 
-### [The jSparrow `demo` Goal](/maven/getting-started.html#demo)
+### [The jSparrow `report` Goal](/maven/getting-started.html#report)
 
 This goal is introduced to allow users to try the jSparrow Maven plugin on their sources for free. 
-Similar to the [`refactor`](/maven/getting-started.html#refactor) goal, the `demo` goal analyzes the project and computes refactorings with the selected rules.  
+Similar to the [`refactor`](/maven/getting-started.html#refactor) goal, the `report` goal analyzes the project and computes refactorings with the selected rules.  
 As a result, jSparrow generates an HTML report with the computed findings. 
 Similar reports are available in the statistics page (e.g., for [jenkins-core](/statistics/jenkins-statistics.html?p=jenkins-core)).  
 
-The `demo` goal supports the same parameters as the `refactor` goal. 
+The `report` goal supports the same parameters as the `refactor` goal. 
 
 ### The `formatter` Parameter
 
@@ -29,7 +29,7 @@ A more detailed description can be found at: [Eclipse Formatter File](/maven/add
 
 ### The `selectedSources` Parameter
 
-A parameter `-DselectedSources=<glob-expressions>` is introduced in the `refactor` goal (and the `demo` goal) to allow users to specify sources that jSparrow shall consider for refactorings.  
+A parameter `-DselectedSources=<glob-expressions>` is introduced in the `refactor` goal (and the `report` goal) to allow users to specify sources that jSparrow shall consider for refactorings.  
 The sources can be specified by using [glob expressions](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob). 
 Find more information in the parameters description of [`refactor`](/maven/getting-started.html#refactor) goal. 
 
