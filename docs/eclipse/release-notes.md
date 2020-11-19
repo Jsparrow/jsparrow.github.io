@@ -5,9 +5,25 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.23.0 <Badge vertical="middle" text="19.11.2020"/>
+
+The [87<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.23.0. The new rule simplifies `Comparator` usages by making use of convenience methods added to the API in Java 8.
+
+### New Rule
+
+#### [**Use Comparator Methods**](/rules/use-comparator-methods.html)
+
+Java 8 introduced new factory methods in the [`Comparator`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) interface for simplifying the creation of `Comparator` instances. 
+This rule replaces lambda expressions representing comparators with simple invocations of `Comparator` factory methods, hence removing some code clutter and improving readability.   
+
+### Fixed Bugs
+
+#### New Imports Name Conflicts
+* Prevents some conflicts that may arise when the name of a newly imported type coincides with the name of a local variable.
+
 ## 3.22.0 <Badge vertical="middle" text="15.10.2020"/>
 
-The [86<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.20.0. It makes use of the [`Files.newBufferedWriter`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,%20java.nio.charset.Charset,%20java.nio.file.OpenOption...)) method for initializing BufferedWriter objects for writing to text to files.
+The [86<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.22.0. It makes use of the [`Files.newBufferedWriter`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html#newBufferedWriter(java.nio.file.Path,%20java.nio.charset.Charset,%20java.nio.file.OpenOption...)) method for initializing BufferedWriter objects for writing to text to files.
 
 ### New Rule
 

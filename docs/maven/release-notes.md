@@ -5,6 +5,39 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.0.0 <Badge vertical="middle" text="19.11.2020"/>
+
+jSparrow Maven Plugin 3.0.0 arrives with a new feature that makes the jSparrow's static analysis capacity available to everyone.
+Additional features are introduced that allow users to provide a customized formatter and to select specific source files that shall be considered for refactoring.
+
+### [The jSparrow `report` Goal](/maven/getting-started.html#report)
+
+This goal is introduced to allow users to try the jSparrow Maven plugin on their sources for free. 
+Similar to the [`refactor`](/maven/getting-started.html#refactor) goal, the `report` goal analyzes the project and computes refactorings with the selected rules.  
+As a result, jSparrow generates an HTML report with the computed findings. 
+Similar reports are available in the statistics page (e.g., for [jenkins-core](/statistics/jenkins-statistics.html?p=jenkins-core)).  
+
+The `report` goal supports the same parameters as the `refactor` goal. 
+
+### The `formatter` Parameter
+
+A parameter is introduced in the `refactor` goal, to allow users to specify a customized Eclipse formatter. 
+The formatter can be exported from the Eclipse IDE and provided to the `refactor` goal through `-Dformatter=<path-to-formatter>` parameter. 
+The specified formatter is used by the [Reformat Code](/rules/code-formatter.html) rule so that it provides the same styling as the customized formatter in the Eclipse IDE. 
+
+A more detailed description can be found at: [Eclipse Formatter File](/maven/additional-configuration.html#eclipse-formatter-file). 
+
+### The `selectedSources` Parameter
+
+A parameter `-DselectedSources=<glob-expressions>` is introduced in the `refactor` goal (and the `report` goal) to allow users to specify sources that jSparrow shall consider for refactorings.  
+The sources can be specified by using [glob expressions](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob). 
+Find more information in the parameters description of [`refactor`](/maven/getting-started.html#refactor) goal. 
+
+
+### New Rule 
+
+* [Use Comparator Methods](/rules/use-comparator-methods.html) is a new refactoring rule that simplifies [`Comparator`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) usages by making use of convenience methods added to the API in Java 8.
+
 ## 2.19.0 <Badge vertical="middle" text="15.10.2020"/>
 
 A new rule is shipped with release 2.19.0 of the jSparrow Maven Plugin:

@@ -99,7 +99,7 @@ To use the jsparrow-maven-plugin on a project, add the following code snippet to
     <plugin>
       <groupId>eu.jsparrow</groupId>
       <artifactId>jsparrow-maven-plugin</artifactId>
-      <version>2.19.0</version>
+      <version>3.0.0</version>
     </plugin>
   </plugins>
 </build>  
@@ -225,9 +225,26 @@ You may add the following parameters:
 |:----------|:-------------|
 | `-DconfigFile=<config-file-path>`	| The specified configuration file will be used instead of the default (`jsparrow.yml`). |
 | `-Dprofile=<selected-profile-id>`	| The specified profile will be used. Make sure that either a `jsparrow.yml` is in the root directory or `-DconfigFile=<config-file-path>` is specified. The given profile ID will be compared to the declared profiles in the configuration file. If the given profile ID is not declared, an error will be thrown. |
+| `-Dformatter=<formatter-file-path>`	| The specified Eclipse formatter file will be used when applying the [Reformat Code](/rules/code-formatter.html) rule. Have a look at [Eclipse Formatter File](/maven/additional-configuration.html#eclipse-formatter-file) for more information. |
 | `-DdefaultConfiguration`	| The built-in default configuration will be used for refactoring. If this parameter is set, the configuration in the root of the project will be ignored. <br /> It executes the following rules: <DefaultConfigurationRules /> |
 | `-Dlicense=<license-key>`	| Specify the license key to be used. This takes priority over a configuration via config file. In "Machine Configuration" the config file approach is described. |
 | `-Durl=<url>`	| Specify the licensing server URL to use in case a [local server](/maven/local-license-server.html) should be used. |
+| `-DselectedSources=<glob-patterns>` | Specify the [glob expression patterns](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob) relative to the project root directory for selecting the sources to refactor. Use line breaks to specify multiple glob patterns. If not specified, all Java sources in the project will be considered for refactoring. Examples: <SelectedSourcesExamples /> |
+
+### Report 
+
+This goal starts jSparrow in "Report Mode". Similar to the `refactor` goal, the `report` goal analyzes the project and computes refactorings with the selected rules.  
+However, instead of committing the code changes to the original sources, jSparrow generates an HTML report with the findings of each rule, similar to our statistics (e.g., for [jenkins-core](/statistics/jenkins-statistics.html?p=jenkins-core)).  
+No valid license is required and the source files are not affected.
+
+```bash
+$ mvn jsparrow:report
+```
+You may add the same parameters as in the [`refactor`](#refactor) goal.
+
+::: tip Note
+Since the `report` goal does not require a license, this is a great way to see what the jSparrow Maven plugin has to offer for your project!
+:::
 
 ### List Rules
 This goal lists rules with their IDs, names and descriptions.
