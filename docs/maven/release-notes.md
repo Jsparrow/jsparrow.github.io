@@ -5,6 +5,10 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.0.1 <Badge vertical="middle" text="03.12.2020"/>
+
+Version 3.0.1 of the jSparrow Maven plugin fixes an issue with Java 11 and the newly introduced [`formatter`](/maven/additional-configuration.html#eclipse-formatter-file) parameter. 
+
 ## 3.0.0 <Badge vertical="middle" text="19.11.2020"/>
 
 jSparrow Maven Plugin 3.0.0 arrives with a new feature that makes the jSparrow's static analysis capacity available to everyone.
