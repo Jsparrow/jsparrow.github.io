@@ -20,11 +20,13 @@ tags: ["Java 8", "JUnit", "Lambda", "Readability"]
 
 ## Description
 
-The org.junit.rule.ExpectedException Test Rule is deprecated since deprecated since JUnit 4.13. 
-The recommended alternative is to use assertThrows. 
+The [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) is deprecated since deprecated since JUnit 4.13. 
+The recommended alternative is to use [`assertThrows()`](). 
 This makes JUnit tests easier to understand and prevents the scenarios where some parts the test code is unreachable. 
-The goal of this rule is to replace expectedException.expect() with assertThrows. 
-Additionally, new assertions are added for each invocation of expectMessage and expectCause.
+
+The goal of this rule is to replace `expectedException.expect()` with `assertThrows`. 
+Additionally, new assertions are added for each invocation of [`expectMessage()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#expectMessage(org.hamcrest.Matcher)) and [`expectCause()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#expectCause(org.hamcrest.Matcher)).
+See more examples in the section [below](#code-changes). 
 
 ::: warning Requirements
 This rule works on the following types and implementations of them:
@@ -95,7 +97,7 @@ public ExpectedException expectedException = ExpectedException.none();
 @Test
 public void expectIOException() throws IOException {
     expectedException.expect(IOException.class);
-    expectedException.expectMessage(CoreMatchers.containsString("IO"));
+    expectedException.expectMessage(containsString("IO"));
     throwsIOException("Throw an IOException");
 }
 ```
@@ -106,7 +108,7 @@ __Post__
 public void expectIOException() {
     IOException exception = assertThrows(IOException.class, 
         () -> throwsIOException("Throw an IOException"));
-    assertThat(exception.getMessage(), CoreMatchers.containsString("IO"));
+    assertThat(exception.getMessage(), containsString("IO"));
 }
 ```
 
