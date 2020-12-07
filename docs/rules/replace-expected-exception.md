@@ -22,11 +22,9 @@ tags: ["Java 8", "JUnit", "Lambda", "Readability"]
 
 The org.junit.rule.ExpectedException Test Rule is deprecated since deprecated since JUnit 4.13. 
 The recommended alternative is to use assertThrows. 
-This makes JUnit tests easier to understand and prevents scenarios where some parts the test code is unreachable. 
+This makes JUnit tests easier to understand and prevents the scenarios where some parts the test code is unreachable. 
 The goal of this rule is to replace expectedException.expect() with assertThrows. 
 Additionally, new assertions are added for each invocation of expectMessage and expectCause.
-
-Longer description of the rule.
 
 ::: warning Requirements
 This rule works on the following types and implementations of them:
@@ -39,7 +37,7 @@ Improves the tests readability. Helps with migrating to JUnit 5.
 
 ## Code Changes
 
-### Case description
+### Testing the Exception Type
 
 __Pre__
 ```java
@@ -62,7 +60,7 @@ public void expectIOException() {
 }
 ```
 
-### Case description
+### Testing the Exception Message
 
 __Pre__
 ```java
@@ -73,7 +71,6 @@ public ExpectedException expectedException = ExpectedException.none();
 public void expectIOException() throws IOException {
     expectedException.expect(IOException.class);
     expectedException.expectMessage("IO");
-    expectedException.expectMessage(CoreMatchers.containsString("IO"));
     throwsIOException("Throw an IOException");
 }
 ```
@@ -85,13 +82,97 @@ public void expectIOException() {
     IOException exception = assertThrows(IOException.class, 
         () -> throwsIOException("Throw an IOException"));
     assertTrue(exception.getMessage().contains("IO"));
+}
+```
+
+### Using Hamcrest Matchers
+
+__Pre__
+```java
+@Rule
+public ExpectedException expectedException = ExpectedException.none();
+
+@Test
+public void expectIOException() throws IOException {
+    expectedException.expect(IOException.class);
+    expectedException.expectMessage(CoreMatchers.containsString("IO"));
+    throwsIOException("Throw an IOException");
+}
+```
+
+__Post__
+```java
+@Test
+public void expectIOException() {
+    IOException exception = assertThrows(IOException.class, 
+        () -> throwsIOException("Throw an IOException"));
     assertThat(exception.getMessage(), CoreMatchers.containsString("IO"));
+}
+```
+
+### Testing Expected Cause
+
+__Pre__
+```java
+@Rule
+public ExpectedException expectedException = ExpectedException.none();
+
+@Test
+public void testingExceptionCause() throws IOException {
+    Matcher<Throwable> isNotFileNotFoundException = not(is(new FileNotFoundException()));
+    expectedException.expect(IOException.class);
+    expectedException.expectCause(isNotFileNotFoundException);
+    throwIOException();
+}
+```
+
+__Post__
+```java
+@Test
+public void testingExceptionCause() {
+    Matcher<Throwable> isNotFileNotFoundException = not(is(new FileNotFoundException()));
+    IOException exception = assertThrows(IOException.class, () -> throwIOException());
+    assertThat(exception.getCause(), isNotFileNotFoundException);
+}
+```
+
+### Throwing Runtime Exceptions Explicitly
+__Pre__
+```java
+@Rule
+public ExpectedException expectedException = ExpectedException.none();
+
+@Test
+public void explicitlyThrowingRuntimeException() {
+    expectedException.expect(NullPointerException.class);
+    throw new NullPointerException();
+}
+```
+
+__Post__
+```java
+@Test
+public void explicitlyThrowingRuntimeException() {
+    assertThrows(NullPointerException.class, () -> {
+        throw new NullPointerException();
+    });
 }
 ```
 
 ## Limitations (Optional)
 
-* Runtime exceptions are not supported.
+* Expected Runtime exceptions are not supported unless it can be explicitly derived that the last statements throws the expected exception. 
+
+```java
+@Test
+public void expectingRuntimeException() {
+    expectedException.expect(NullPointerException.class);
+    User user = userRepository.findById("10");
+    setName("John")
+    save(user);
+    throwRuntimeException();
+}
+```
 
 <VersionNotice />
 
