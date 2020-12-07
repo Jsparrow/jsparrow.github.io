@@ -87,6 +87,10 @@ jSparrow rules having this tag will therefore be related to such `String` operat
 
 <Tag tag-name="String Manipulation" />
 
+## JUnit
+jSparrow rules having this tag are designed to assist with migrating to JUnit 5. 
+<tag tag-name="JUnit"/>
+
 ## Java Version Tags
 
 Each rule has one Java version related tag, indicating the minimum required Java version of a project to apply the rule. 
