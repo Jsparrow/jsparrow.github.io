@@ -41,6 +41,7 @@ module.exports = [
 'use-list-sort',
 'string-concat-to-plus',
 'use-is-empty-on-collections',
+'replace-expected-annotation-property',
 'lambda-to-method-reference',
 'for-to-for-each',
 'enhanced-for-loop-to-stream-any-match',
