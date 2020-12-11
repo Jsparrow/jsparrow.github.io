@@ -1,16 +1,16 @@
 ---
-title: Replace ExpectedException JUnit Rule with assertThrows
+title: Replace JUnit ExpectedException Rule with assertThrows
 ruleId: ReplaceExpectedException
 since: 3.24.0
 minJavaVersion: 8
 remediationCost: 5
     
 description:
-    Short rule description (this is shown on the [summary page](https://jsparrow.github.io/rules/#summary)).
-tags: ["Java 8", "JUnit", "Lambda", "Readability"]
+    The goal of this rule is to replace the JUnit ExpectedException with 'assertThrows'. 
+tags: ["Java 8", "Testing", "Lambda", "Readability"]
 ---
 
-# Replace ExpectedException JUnit Rule with assertThrows
+# Replace JUnit ExpectedException Rule with assertThrows
 
 [[toc]]
 
@@ -43,7 +43,6 @@ Improves the tests readability. Helps with migrating to JUnit 5.
 
 __Pre__
 ```java
-
 @Rule
 public ExpectedException expectedException = ExpectedException.none();
 
