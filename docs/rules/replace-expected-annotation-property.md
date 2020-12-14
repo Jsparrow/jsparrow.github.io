@@ -23,9 +23,9 @@ tags: ["Java 8", "Testing", "Lambda", "Readability"]
 
 ## Description
 
-Using 'expected' annotation property for testing the thrown exceptions is rather misleading. 
-Often it becomes unclear which part of the code in the test case is responsible for throwing the exception. 
-This rule aims to overcome this problem by replacing the 'expected' annotation property with 'assertThrows' introduced in JUnit 4.13.
+Using [`expected`](https://junit.org/junit4/javadoc/latest/org/junit/Test.html#expected()) annotation property for testing the thrown exceptions is rather misleading. 
+Often it becomes unclear which part of the test code is responsible for throwing the exception. 
+This rule aims to overcome this problem by replacing the `expected` annotation property with [`assertThrows`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)) introduced in JUnit 4.13.
 
 ::: warning Requirements
 This rule works on the following types and implementations of them:
@@ -39,16 +39,45 @@ This rule works on the following types and implementations of them:
 ## Code Changes
 
 
-### Case description
+### Removing `expected` Property
 
 __Pre__
 ```java
-sampleCode();
+@Test(expected = PersistenceException.class)
+public void invalidRepo_shouldThrowPersistenceException() throws PersistenceException {
+    User user = new User("10", "John", "wolf");
+    invalidUserRepository.save(user);
+}
 ```
 
 __Post__
 ```java
-sampleCode();
+@Test
+public void invalidRepo_shouldThrowPersistenceException() {
+    User user = new User("10", "John", "wolf");
+    assertThrows(PersistenceException.class, () -> invalidUserRepository.save(user));
+}
+```
+
+
+### Multiple Annotation Properties
+
+__Pre__
+```java
+@Test(expected = PersistenceException.class, timeout = 500L)
+public void timeoutInvalidRepo_shouldThrowPersistenceException() throws PersistenceException {
+    User user = new User("10", "John", "wolf");
+    invalidUserRepository.save(user);
+}
+```
+
+__Post__
+```java
+@Test(timeout = 500L)
+public void timeoutInvalidRepo_shouldThrowPersistenceException() {
+    User user = new User("10", "John", "wolf");
+    assertThrows(PersistenceException.class, () -> invalidUserRepository.save(user));
+}
 ```
 
 ## Limitations
@@ -59,8 +88,8 @@ sampleCode();
 @Test(expected=NullPointerException.class)
 public void expectingRuntimeException() {
     User user = userRepository.findById("10");
-    setName("John")
-    save(user);
+    user.setName("John")
+    userRepository.save(user);
     throwRuntimeException();
 }
 ```
