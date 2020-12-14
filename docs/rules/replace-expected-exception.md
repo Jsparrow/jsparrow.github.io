@@ -160,7 +160,7 @@ public void explicitlyThrowingRuntimeException() {
 }
 ```
 
-## Limitations (Optional)
+## Limitations
 
 * Expected Runtime exceptions are not supported unless it can be explicitly derived that the last statements throws the expected exception. 
 
