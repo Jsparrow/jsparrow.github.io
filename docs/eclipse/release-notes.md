@@ -11,17 +11,17 @@ The midwinter jSparrow 3.24.0 release extends the rule set with three new refact
 
 ### New Rules 
 
-#### [**Replace JUnit ExpectedException Rule with assertThrows**](/rules/replace-expected-exception.html)
+#### [**Replace JUnit ExpectedException with assertThrows**](/rules/replace-j-unit-expected-exception.html)
 
-The [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) is deprecated since deprecated since JUnit 4.13. 
+The [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) rule is deprecated since deprecated since JUnit 4.13. 
 The recommended alternative is to use [`assertThrows()`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)). 
-This makes JUnit tests easier to understand and prevents the scenarios where some parts the test code are unreachable. 
+This makes JUnit tests easier to understand and prevents scenarios where some parts of the test code are unreachable. 
 
 The goal of this rule is to make a transition from `ExpectedException` to testing exceptions with `assertThrows`. 
 
-#### [**Replace JUnit Expected Annotation Property with assertThrows**](/rules/replace-expected-annotation-property.html)
+#### [**Replace JUnit Expected Annotation Property with assertThrows**](/rules/replace-j-unit-expected-annotation-property.html)
 
-Using [`expected`](https://junit.org/junit4/javadoc/latest/org/junit/Test.html#expected()) annotation property for testing the thrown exceptions is rather misleading. 
+Using the [`expected`](https://junit.org/junit4/javadoc/latest/org/junit/Test.html#expected()) annotation property for testing the thrown exceptions is rather misleading. 
 Often it becomes unclear which part of the test code is responsible for throwing the exception. 
 This rule aims to overcome this problem by replacing the `expected` annotation property with [`assertThrows`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)) introduced in JUnit 4.13.
 
