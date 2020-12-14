@@ -71,6 +71,7 @@ module.exports = [
 'collections-factory-methods',
 'use-files-buffered-reader',
 'use-files-buffered-writer',
+'use-files-write-string',
 'functional-interface',
 'guard-condition',
 'local-variable-type-inference',
