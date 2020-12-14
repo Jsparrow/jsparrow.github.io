@@ -1,6 +1,6 @@
 ---
-title: Replace JUnit ExpectedException Rule with assertThrows
-ruleId: ReplaceExpectedException
+title: Replace JUnit ExpectedException with assertThrows
+ruleId: ReplaceJUnitExpectedException
 since: 3.24.0
 minJavaVersion: 8
 remediationCost: 5
@@ -10,7 +10,7 @@ description:
 tags: ["Java 8", "Testing", "Lambda", "Readability"]
 ---
 
-# Replace JUnit ExpectedException Rule with assertThrows
+# Replace JUnit ExpectedException with assertThrows
 
 [[toc]]
 
@@ -20,9 +20,9 @@ tags: ["Java 8", "Testing", "Lambda", "Readability"]
 
 ## Description
 
-The [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) is deprecated since deprecated since JUnit 4.13. 
-The recommended alternative is to use [`assertThrows()`](). 
-This makes JUnit tests easier to understand and prevents the scenarios where some parts the test code is unreachable. 
+The [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) rule is deprecated since deprecated since JUnit 4.13. 
+The recommended alternative is to use [`assertThrows()`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)).
+This makes JUnit tests easier to understand and prevents scenarios where some parts of the test code are unreachable. 
 
 The goal of this rule is to replace `expectedException.expect()` with `assertThrows`. 
 Additionally, new assertions are added for each invocation of [`expectMessage()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#expectMessage(org.hamcrest.Matcher)) and [`expectCause()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#expectCause(org.hamcrest.Matcher)).
