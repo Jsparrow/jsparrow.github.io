@@ -1,6 +1,6 @@
 ---
 title: Replace JUnit Expected Annotation Property with assertThrows
-ruleId: ReplaceExpectedAnnotationProperty
+ruleId: ReplaceJUnitExpectedAnnotationProperty
 since: 3.24.0
 minJavaVersion: 8
 remediationCost: 5
@@ -9,7 +9,7 @@ links:
       url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS5777&q=S5777"
     
 description:
-    This rule aims to replace @Test(expected=...) annotation property with 'assertThrows' introduced in JUnit 4.13.
+    This rule aims to replace the @Test(expected=...) annotation property with 'assertThrows' introduced in JUnit 4.13.
 tags: ["Java 8", "Testing", "Lambda", "Readability"]
 ---
 
@@ -23,7 +23,7 @@ tags: ["Java 8", "Testing", "Lambda", "Readability"]
 
 ## Description
 
-Using [`expected`](https://junit.org/junit4/javadoc/latest/org/junit/Test.html#expected()) annotation property for testing the thrown exceptions is rather misleading. 
+Using the [`expected`](https://junit.org/junit4/javadoc/latest/org/junit/Test.html#expected()) annotation property for testing the thrown exceptions is rather misleading. 
 Often it becomes unclear which part of the test code is responsible for throwing the exception. 
 This rule aims to overcome this problem by replacing the `expected` annotation property with [`assertThrows`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)) introduced in JUnit 4.13.
 
@@ -35,6 +35,7 @@ This rule works on the following types and implementations of them:
 
 ## Benefits
 
+Improves the tests readability. Helps with migrating to JUnit 5. 
 
 ## Code Changes
 
@@ -82,7 +83,7 @@ public void timeoutInvalidRepo_shouldThrowPersistenceException() {
 
 ## Limitations
 
-* Expected Runtime exceptions are not supported unless it can be explicitly derived that the last statements throws the expected exception. 
+* Expected [RuntimeExceptions](https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html) are not supported unless it can be explicitly inferred that only the last statements throws the expected exception. 
 
 ```java
 @Test(expected=NullPointerException.class)
