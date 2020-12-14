@@ -5,6 +5,38 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.24.0 <Badge vertical="middle" text="17.12.2020"/>
+
+The midwinter jSparrow 3.24.0 release extends the rule set with three new refactoring rules. 
+
+### New Rules 
+
+#### [**Replace JUnit ExpectedException Rule with assertThrows**](/rules/replace-expected-exception.html)
+
+The [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) is deprecated since deprecated since JUnit 4.13. 
+The recommended alternative is to use [`assertThrows()`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)). 
+This makes JUnit tests easier to understand and prevents the scenarios where some parts the test code are unreachable. 
+
+The goal of this rule is to make a transition from `ExpectedException` to testing exceptions with `assertThrows`. 
+
+#### [**Replace JUnit Expected Annotation Property with assertThrows**](/rules/replace-expected-annotation-property.html)
+
+Using [`expected`](https://junit.org/junit4/javadoc/latest/org/junit/Test.html#expected()) annotation property for testing the thrown exceptions is rather misleading. 
+Often it becomes unclear which part of the test code is responsible for throwing the exception. 
+This rule aims to overcome this problem by replacing the `expected` annotation property with [`assertThrows`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)) introduced in JUnit 4.13.
+
+#### [**Use Files.writeString**](/rules/use-files-write-string.html)
+
+Java 11 introduced [`Files.writeString(Path, CharSequence, Charset, OpenOption...)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.charset.Charset,java.nio.file.OpenOption...)) and [`Files.writeString(Path, CharSequence, OpenOption...)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.file.OpenOption...)) for writing text into a file by one single invocation and in an efficient non-blocking manner. 
+
+This rule replaces `BufferedWriter`s that are used to write a single value into a file, with `Files.write(...)`.
+Thus, achieving better performance when writing small files and improving the readability by removing code clutter. 
+
+### Fixed Bugs 
+
+#### Support for macOS 11 
+* Fixes a bug that prevents the jSparrow License Check in [macOS 11 Big Sur](https://www.apple.com/macos/big-sur/). 
+
 ## 3.23.0 <Badge vertical="middle" text="19.11.2020"/>
 
 The [87<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.23.0. The new rule simplifies `Comparator` usages by making use of convenience methods added to the API in Java 8.
