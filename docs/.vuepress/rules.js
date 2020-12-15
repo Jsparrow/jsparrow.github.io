@@ -51,7 +51,6 @@ module.exports = [
 'enhanced-for-loop-to-stream-take-while',
 'inefficient-constructor',
 'replace-j-unit-expected-annotation-property',
-'map-get-or-default',
 'replace-j-unit-expected-exception',
 'map-get-or-default',
 'flat-map-instead-of-nested-loops',
