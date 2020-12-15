@@ -87,6 +87,10 @@ jSparrow rules having this tag will therefore be related to such `String` operat
 
 <Tag tag-name="String Manipulation" />
 
+## Testing
+jSparrow rules having this tag are designed to improve JUnit test cases by making use of the new features in [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) and other related testing libraries. 
+<tag tag-name="Testing"/>
+
 ## Java Version Tags
 
 Each rule has one Java version related tag, indicating the minimum required Java version of a project to apply the rule. 
