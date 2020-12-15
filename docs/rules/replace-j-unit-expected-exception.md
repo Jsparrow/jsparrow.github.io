@@ -20,7 +20,7 @@ tags: ["Java 8", "Testing", "Lambda", "Readability"]
 
 ## Description
 
-The [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) rule is deprecated since deprecated since JUnit 4.13. 
+The [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) rule is deprecated since JUnit 4.13. 
 The recommended alternative is to use [`assertThrows()`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)).
 This makes JUnit tests easier to understand and prevents scenarios where some parts of the test code are unreachable. 
 
