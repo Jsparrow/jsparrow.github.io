@@ -5,6 +5,14 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.1.0 <Badge vertical="middle" text="17.12.2020"/>
+
+Three new rules are shipped with the winter solstice release of jSparrow Maven Plugin 3.1.0:
+
+* [Replace JUnit ExpectedException with assertThrows](/rules/replace-j-unit-expected-exception.html)
+* [Replace JUnit Expected Annotation Property with assertThrows](/rules/replace-j-unit-expected-annotation-property.html)
+* [Use Files.writeString](/rules/use-files-write-string.html)
+
 ## 3.0.1 <Badge vertical="middle" text="03.12.2020"/>
 
 Version 3.0.1 of the jSparrow Maven plugin fixes an issue with Java 11 and the newly introduced [`formatter`](/maven/additional-configuration.html#eclipse-formatter-file) parameter. 
