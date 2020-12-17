@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.24.0 <Badge vertical="middle" text="17.12.2020"/>
 
-The midwinter jSparrow 3.24.0 release extends the rule set with three new refactoring rules. 
+The winter solstice jSparrow 3.24.0 release extends the rule set with three new refactoring rules. 
 
 ### New Rules 
 
