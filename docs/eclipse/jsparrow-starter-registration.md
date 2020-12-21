@@ -26,4 +26,4 @@ After a short registration, you will get a license key, allowing you to ***apply
 
 [ ![Installing jSparrow](/img/eclipse/jsparrow_activation.png) ](/img/eclipse/jsparrow_activation.png)
 
-5. Click "Activate" and enjoy 15 free automatic rules!
+5. Click "Activate" and enjoy 20 free automatic rules!
