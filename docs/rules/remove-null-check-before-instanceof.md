@@ -11,7 +11,7 @@ links:
 description:
     Finds and removes null-checks before occurrences of instanceof. Since null is not an instance of anything, the null-check is redundant.
 
-tags: ["Java 1.1", "Readability", "Coding Conventions"]
+tags: ["Free", "Java 1.1", "Readability", "Coding Conventions"]
 ---
 
 # Remove Null-Checks Before Instanceof

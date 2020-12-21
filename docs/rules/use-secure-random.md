@@ -10,7 +10,7 @@ links:
     
 description:
     This rule prevents vulnerabilities due to a pseudo-random number generator (PRNGs) by replacing it by a cryptographically strong random number generator (RNG).
-tags: ["Java 1.2", "Security"]
+tags: ["Free", "Java 1.2", "Security"]
 ---
 
 # Use SecureRandom
