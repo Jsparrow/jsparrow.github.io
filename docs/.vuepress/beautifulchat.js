@@ -183,7 +183,7 @@ module.exports = {
   whatIsStarter: {
     questions: ['What is jSparrow Starter?'],
     answers: [
-      'jSparrow starter allows you to apply 15 Rules for FREE. After filling a registration form you will receive an activation key for jSparrow Starter. Afterwards you can apply the changes of jSparrow rules tagged as FREE.',
+      'jSparrow starter allows you to apply 20 Rules for FREE. After filling a registration form you will receive an activation key for jSparrow Starter. Afterwards you can apply the changes of jSparrow rules tagged as FREE.',
     ],
     nextSuggestions: ['howDoIBenefit', 'whatIsFree', 'whatIsPro', 'whatIsRule'],
   },
