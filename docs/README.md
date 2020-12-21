@@ -26,7 +26,9 @@ You can use jSparrow as part of your development process in the Eclipse IDE or i
 
 ## The Latest New Features
 
-We released three new rules and a bugfix to support macOS 11!  
+* jSparrow Christmas Release adds **5 more Free rules** to jSparrow Starter. Check out the release notes for [jSparrow 3.25.0](/eclipse/release-notes.html#_3-25-0).
+
+* We released three new rules and a bugfix to support macOS 11!  
 Check out the release notes for [jSparrow 3.24.0](/eclipse/release-notes.html#_3-24-0) and the [jSparrow Maven plugin 3.1.0](/maven/release-notes.html#_3-1-0)!
 
 ## Where to find jSparrow?
