@@ -6,9 +6,9 @@ title: jSparrow Starter Registration
 
 [[toc]]
 
-After a short registration, you will get a license key, allowing you to ***apply 15 rules free of charge*** on your projects. You can then decide if you want to use the jSparrow Free version, as usual, or the new features of jSparrow Starter.
+After a short registration, you will get a license key, allowing you to ***apply 20 rules free of charge*** on your projects. You can then decide if you want to use the jSparrow Free version, as usual, or the new features of jSparrow Starter.
 
-## Registration for 15 free rules
+## Registration for 20 Free Rules
 
 1. Open the jSparrow Dashboard
 
@@ -26,4 +26,4 @@ After a short registration, you will get a license key, allowing you to ***apply
 
 [ ![Installing jSparrow](/img/eclipse/jsparrow_activation.png) ](/img/eclipse/jsparrow_activation.png)
 
-5. Click "Activate" and enjoy 15 free automatic rules!
+5. Click "Activate" and enjoy 20 free automatic rules!

@@ -15,7 +15,7 @@ This is a list of all the rules that are currently implemented in jSparrow.
 ## Free rules  in jSparrow Starter
 
 The following rules are included in *jSparrow Starter*. 
-See the documentation at: [Registration for 15 free rules](/eclipse/jsparrow-starter-registration.html).
+See the documentation at: [Registration for 20 free rules](/eclipse/jsparrow-starter-registration.html).
 
 <freeRules />
 

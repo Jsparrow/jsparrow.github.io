@@ -5,6 +5,17 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.25.0 <Badge vertical="middle" text="21.12.2020"/>
+
+The jSparrow 3.25.0 Christmas Release adds **5 more [Free](/tags/#free) rules** to jSparrow Starter:
+* [Remove Null-Checks Before Instanceof](/rules/remove-null-check-before-instanceof.html)
+* [Use Optional::filter](/rules/optional-filter.html)
+* [Collapse If Statements](/rules/collapse-if-statements.html)
+* [Use SecureRandom](/rules/use-secure-random.html)
+* [Use Offset Based String Methods](/rules/use-offset-based-string-methods.html)
+
+Now jSparrow Starter contains 20 [Free](/tags/#free) Rules. 
+
 ## 3.24.0 <Badge vertical="middle" text="17.12.2020"/>
 
 The winter solstice jSparrow 3.24.0 release extends the rule set with three new refactoring rules. 

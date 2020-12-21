@@ -11,7 +11,7 @@ links:
 description:
     Collapses, when possible, the nested if-statements into a single one by concatenating the conditions with the infix operator &&.
     
-tags: ["Java 1.1", "Coding Conventions", "Readability"]
+tags: ["Free", "Java 1.1", "Coding Conventions", "Readability"]
 ---
 
 # Collapse If Statements

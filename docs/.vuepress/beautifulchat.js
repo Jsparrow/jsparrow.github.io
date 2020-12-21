@@ -2,7 +2,7 @@ module.exports = {
   whichVersionDoINeed: {
     questions: ['Which version do I need?'],
     answers: [
-      'In case you want to analyze the code and learn about recommended coding practices then you can use *jSparrow Free*. *jSparrow Starter* is also free and it allows to apply *15 refactoring rules*. You can get the Starter activation code by filling out a registration form. If you want to improve your source base using *all rules* then you can get *jSparrow Pro*.',
+      'In case you want to analyze the code and learn about recommended coding practices then you can use *jSparrow Free*. *jSparrow Starter* is also free and it allows to apply *20 refactoring rules*. You can get the Starter activation code by filling out a registration form. If you want to improve your source base using *all rules* then you can get *jSparrow Pro*.',
     ],
     nextSuggestions: ['whatIsPro', 'whatIsStarter', 'whatIsFree', 'talkToHuman'],
   },
@@ -183,7 +183,7 @@ module.exports = {
   whatIsStarter: {
     questions: ['What is jSparrow Starter?'],
     answers: [
-      'jSparrow starter allows you to apply 15 Rules for FREE. After filling a registration form you will receive an activation key for jSparrow Starter. Afterwards you can apply the changes of jSparrow rules tagged as FREE.',
+      'jSparrow starter allows you to apply 20 Rules for FREE. After filling a registration form you will receive an activation key for jSparrow Starter. Afterwards you can apply the changes of jSparrow rules tagged as FREE.',
     ],
     nextSuggestions: ['howDoIBenefit', 'whatIsFree', 'whatIsPro', 'whatIsRule'],
   },
