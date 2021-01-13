@@ -28,9 +28,9 @@ Often it becomes unclear which part of the test code is responsible for throwing
 This rule aims to overcome this problem by replacing the `expected` annotation property with [`assertThrows`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)) introduced in JUnit 4.13.
 
 ::: warning Requirements
-This rule works on the following types and implementations of them:
+This rule requires one of the following libraries to be present:
 * junit:junit:4.13
-* org.junit.jupiter:junit-jupiter-engine:5.0.0
+* org.junit.jupiter:junit-jupiter-api:5.0.0
 :::
 
 ## Benefits
