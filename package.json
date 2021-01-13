@@ -10,19 +10,20 @@
   "author": "Martin Huter <martin.huter@splendit.at>",
   "license": "MIT",
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
-    "jshint": "^2.10.2",
+    "@vuepress/plugin-google-analytics": "^1.8.0",
+    "jshint": "^2.12.0",
     "material-design-icons-iconfont": "^5.0.1",
-    "vuepress": "^1.0.2",
+    "vuepress": "^1.8.0",
     "vuetify": "^1.5.14"
   },
   "resolutions": {
-    "webpack-dev-middleware": "3.7.0"
+    "webpack-dev-middleware": "^3.7.0"
   },
   "dependencies": {
     "node-forge": "^0.10.0",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
-    "vue-beautiful-chat": "^2.3.1"
+    "vue-beautiful-chat": "^2.3.1",
+    "webpack-dev-middleware": "^3.7.0"
   }
 }
