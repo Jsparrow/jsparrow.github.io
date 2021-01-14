@@ -20,7 +20,7 @@ tags: ["Java 8", "Testing", "Lambda", "Readability"]
 
 ## Description
 
-JUnit [Jupiter API](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html) provides timeout assertions, i.e., assertions that execution of some code completes before a timeout exceeds. 
+JUnit [Jupiter API](https://junit.org/junit5/docs/current/user-guide/#overview) provides timeout assertions, i.e., assertions that execution of some code completes before a timeout exceeds. 
 In JUnit 4 this is achieved by using the [`timeout`](https://junit.org/junit4/javadoc/latest/org/junit/Test.html#timeout()) property of `@Test(timeout=...)` annotation.
 
 This rule removes the `timeout` annotation property and inserts an  [`assertTimeout`](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html#assertTimeout-java.time.Duration-org.junit.jupiter.api.function.Executable-) instead.
@@ -33,7 +33,7 @@ This rule requires the following library to be present:
 
 ## Benefits
 
-Improves the tests readability. Helps with migrating to JUnit 5. 
+Improves the tests readability. Helps migrating to JUnit 5. 
 
 ## Code Changes
 
@@ -79,7 +79,7 @@ public void multipleStatements() throws PersistenceException {
 }
 ```
 
-### Multiple Annotation Properties Properties
+### Multiple Annotation Properties
 
 __Pre__
 ```java
