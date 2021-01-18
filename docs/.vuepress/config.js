@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
     title: 'jSparrow Documentation',
     head: [
+        ['meta', { name: 'google-site-verification', content: 'j2cDSWKnlxyl9lbnyaM74uJ7mVyOex6u-rCZZELq1GE' }],
         ['link', {
             rel: 'icon',
             href: '/logo.png'
