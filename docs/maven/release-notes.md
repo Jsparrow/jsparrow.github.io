@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.2.0 <Badge vertical="middle" text="21.01.2021"/>
+
+A new rule is shipped with release 3.2.0 of the jSparrow Maven Plugin:
+
+* [Replace JUnit Timeout Annotation Property with assertTimeout](/rules/replace-j-unit-timeout-annotation-property.html)
+
 ## 3.1.0 <Badge vertical="middle" text="17.12.2020"/>
 
 Three new rules are shipped with the winter solstice release of jSparrow Maven Plugin 3.1.0:

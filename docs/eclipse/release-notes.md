@@ -5,6 +5,24 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.26.0 <Badge vertical="middle" text="21.01.2021"/>
+
+The [91<sup>st</sup> refactoring rule](/rules/) is shipped with jSparrow 3.26.0. The new rule helps migrating to JUnit 5.
+
+### New Rule
+
+#### [**Replace JUnit Timeout Annotation Property with assertTimeout**](/rules/replace-j-unit-timeout-annotation-property.html)
+
+JUnit [Jupiter API](https://junit.org/junit5/docs/current/user-guide/#overview) provides timeout assertions, i.e., assertions that execution of some code completes before a timeout exceeds. 
+In JUnit 4 this is achieved by using annotation properties, e.g., `@Test(timeout=...)`.
+
+This rule removes the `timeout` annotation property and inserts an  [`assertTimeout`](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html#assertTimeout-java.time.Duration-org.junit.jupiter.api.function.Executable-) instead.
+
+### Fixed Bugs
+
+#### Classpath Conflict in OSGi Environment
+* This fix overcomes a dependency conflict with a certain Eclipse plugin which was preventing jSparrow to validate the license key.
+
 ## 3.25.0 <Badge vertical="middle" text="21.12.2020"/>
 
 The jSparrow 3.25.0 Christmas Release adds **5 more [Free](/tags/#free) rules** to jSparrow Starter:
