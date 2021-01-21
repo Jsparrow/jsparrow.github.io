@@ -29,13 +29,13 @@ Additionally, new assertions are added for each invocation of [`expectMessage()`
 See more examples in the section [below](#code-changes). 
 
 ::: warning Requirements
-This rule works on the following types and implementations of them:
+This rule requires one of the following libraries to be present:
 * junit:junit:4.13
-* org.junit.jupiter:junit-jupiter-engine:5.0.0
+* org.junit.jupiter:junit-jupiter-api:5.0.0
 :::
 
 ## Benefits
-Improves the tests readability. Helps with migrating to JUnit 5. 
+Improves the tests readability. Helps migrating to JUnit 5. 
 
 ## Code Changes
 
