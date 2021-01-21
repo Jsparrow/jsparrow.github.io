@@ -13,7 +13,7 @@ The [91<sup>st</sup> refactoring rule](/rules/) is shipped with jSparrow 3.26.0.
 
 #### [**Replace JUnit Timeout Annotation Property with assertTimeout**](/rules/replace-j-unit-timeout-annotation-property.html)
 
-JUnit [Jupiter API](https://junit.org/junit5/docs/current/user-guide/#overview) provides timeout assertions, i.e., assertions that execution of some code completes before a timeout exceeds. 
+The JUnit [Jupiter API](https://junit.org/junit5/docs/current/user-guide/#overview) provides timeout assertions, i.e., assertions that make sure an executable completes before a timeout is exceeded.  
 In JUnit 4 this is achieved by using annotation properties, e.g., `@Test(timeout=...)`.
 
 This rule removes the `timeout` annotation property and inserts an  [`assertTimeout`](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html#assertTimeout-java.time.Duration-org.junit.jupiter.api.function.Executable-) instead.
