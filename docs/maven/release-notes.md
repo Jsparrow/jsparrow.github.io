@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Maven p
 
 ## 3.2.1 <Badge vertical="middle" text="03.12.2020"/>
 
-Version 3.2.1 of the jSparrow Maven plugin fixes an issue with the [`selectedSources`](/maven/getting-started.html#refactor) parameter on Windows 10 operating system. 
+Version 3.2.1 of the jSparrow Maven plugin fixes an issue with the [`selectedSources`](/maven/getting-started.html#refactor) parameter on Windows 10. 
 
 ## 3.2.0 <Badge vertical="middle" text="21.01.2021"/>
 
