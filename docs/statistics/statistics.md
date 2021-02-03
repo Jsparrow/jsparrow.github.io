@@ -2,11 +2,11 @@
 sidebarDepth: 2
 ---
 
-# 50+ Open Source Projects
+# Open Source Projects
 
-For our testing we measured over 50 open source projects on GitHub.
+For our testing we measured open source projects on GitHub.
 
 The following statistics show results on those projects.
-The [jSparrow GitHub Beta version](https://github.com/apps/jsparrow-app) has been used to produce the results.
+The [jSparrow Eclipse Plugin](https://jsparrow.github.io/eclipse/getting-started.html) has been used to produce the results.
 
 <open-source-statistics />
