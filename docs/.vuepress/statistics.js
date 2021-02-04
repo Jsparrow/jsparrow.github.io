@@ -91,6 +91,84 @@ module.exports = [
                 issuesFixedCount: 2,
                 remediationCost: 2,
                 fileCount: 2
+            },
+            {
+                ruleId: "UseSecureRandom",
+                issuesFixedCount: 1,
+                remediationCost: 5,
+                fileCount: 1
+            },
+            {
+                ruleId: "StringFormatLineSeparator",
+                issuesFixedCount: 1,
+                remediationCost: 1,
+                fileCount: 1
+            },
+            {
+                ruleId: "StringLiteralEqualityCheck",
+                issuesFixedCount: 5,
+                remediationCost: 10,
+                fileCount: 3
+            },
+            {
+                ruleId: "WhileToForEach",
+                issuesFixedCount: 1,
+                remediationCost: 5,
+                fileCount: 1
+            },
+            {
+                ruleId: "EnhancedForLoopToStreamForEach",
+                issuesFixedCount: 47,
+                remediationCost: 15,
+                fileCount: 23
+            },
+            {
+                ruleId: "BufferedReaderLines",
+                issuesFixedCount: 1,
+                remediationCost: 5,
+                fileCount: 1
+            },
+            {
+                ruleId: "LambdaForEachIfWrapperToFilter",
+                issuesFixedCount: 1,
+                remediationCost: 5,
+                fileCount: 1
+            },
+            {
+                ruleId: "StatementLambdaToExpression",
+                issuesFixedCount: 27,
+                remediationCost: 5,
+                fileCount: 14
+            },
+            {
+                ruleId: "LambdaForEachMap",
+                issuesFixedCount: 6,
+                remediationCost: 15,
+                fileCount: 6
+            },
+            {
+                ruleId: "EnhancedForLoopToStreamAnyMatch",
+                issuesFixedCount: 1,
+                remediationCost: 2,
+                fileCount: 1
+            },
+            {
+                ruleId: "LambdaToMethodReference",
+                issuesFixedCount: 17,
+                remediationCost: 2,
+                fileCount: 9
+            },
+            {
+                ruleId: "UseStringBuilderAppend",
+                issuesFixedCount: 319,
+                remediationCost: 2,
+                fileCount: 69
+            },
+            {
+                ruleId: "LocalVariableTypeInference",
+                issuesFixedCount: 1787,
+                remediationCost: 2,
+                fileCount: 152
             }
         ]
     },
