@@ -87,7 +87,7 @@ module.exports = [
                 fileCount: 163
             },
             {
-                ruleId: "RemoveCollectionsAddAll",
+                ruleId: "RemoveCollectionAddAll",
                 issuesFixedCount: 2,
                 remediationCost: 2,
                 fileCount: 2
@@ -308,7 +308,7 @@ module.exports = [
                 fileCount: 731
             },
             {
-                ruleId: "RemoveCollectionsAddAll",
+                ruleId: "RemoveCollectionAddAll",
                 issuesFixedCount: 5,
                 remediationCost: 2,
                 fileCount: 4
@@ -505,7 +505,7 @@ module.exports = [
                 fileCount: 219
             },
             {
-                ruleId: "RemoveCollectionsAddAll",
+                ruleId: "RemoveCollectionAddAll",
                 issuesFixedCount: 1,
                 remediationCost: 2,
                 fileCount: 1
@@ -696,7 +696,7 @@ module.exports = [
                 fileCount: 1331
             },
             {
-                ruleId: "RemoveCollectionsAddAll",
+                ruleId: "RemoveCollectionAddAll",
                 issuesFixedCount: 34,
                 remediationCost: 2,
                 fileCount: 15
@@ -989,7 +989,7 @@ module.exports = [
                 fileCount: 78
             },
             {
-                ruleId: "RemoveCollectionsAddAll",
+                ruleId: "RemoveCollectionAddAll",
                 issuesFixedCount: 3,
                 remediationCost: 2,
                 fileCount: 3
@@ -1144,7 +1144,7 @@ module.exports = [
                 fileCount: 309
             },
             {
-                ruleId: "RemoveCollectionsAddAll",
+                ruleId: "RemoveCollectionAddAll",
                 issuesFixedCount: 5,
                 remediationCost: 2,
                 fileCount: 4
@@ -1353,7 +1353,7 @@ module.exports = [
                 fileCount: 468
             },
             {
-                ruleId: "RemoveCollectionsAddAll",
+                ruleId: "RemoveCollectionAddAll",
                 issuesFixedCount: 1,
                 remediationCost: 2,
                 fileCount: 1

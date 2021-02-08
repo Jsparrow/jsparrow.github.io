@@ -1,6 +1,6 @@
 ---
 title: Remove Collection::addAll
-ruleId: RemoveCollectionsAddAll
+ruleId: RemoveCollectionAddAll
 since: 3.15.0
 minJavaVersion: 1.2
 remediationCost: 2
