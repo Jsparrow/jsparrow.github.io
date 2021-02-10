@@ -1,6 +1,6 @@
 ---
 title: Use Files.writeString
-ruleId: UseFilesBufferedWriter
+ruleId: UseFilesWriteString
 since: 3.24.0
 minJavaVersion: 11
 remediationCost: 5
