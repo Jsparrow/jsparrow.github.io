@@ -57,7 +57,7 @@ module.exports = {
             '/eclipse/': ['getting-started', 'installation-guide', 'jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
             '/cloud/': ['getting-started'],
             '/rules/': require('./rules.js'),
-            '/statistics/': ['statistics', 'jenkins-statistics', 'mdm-statistics', 'neo4j-statistics'],
+            '/statistics/': ['statistics'],
             '/tags/': [''],
             '/': ['']
         }
