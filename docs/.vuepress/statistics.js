@@ -442,109 +442,301 @@ module.exports = [
         ]
     },
     {
-        projectName: "neo4j",
-        timestampGitHubStart: 1612347443,
-        timestampJSparrowFinish: 1612347470,
-        totalTimeSaved: 17932,
-        totalIssuesFixed: 3713,
-        totalFilesChanged: 236,
-        totalFilesCount: 446,
+        projectName: "neo4j-community",
+        timestampGitHubStart: 1612954485,
+        timestampJSparrowFinish: 1612954824,
+        totalTimeSaved: 306250,
+        totalIssuesFixed: 81621,
+        totalFilesChanged: 3541,
+        totalFilesCount: 5641,
         rules: [
             {
-                ruleId: "MultiVariableDeclarationLine",
-                issuesFixedCount: 1,
-                remediationCost: 2,
-                fileCount: 1
+                ruleId: "TryWithResource",
+                issuesFixedCount: 16,
+                remediationCost: 15,
+                fileCount: 7
             },
             {
-                ruleId: "EnumsWithoutEquals",
-                issuesFixedCount: 5,
-                remediationCost: 5,
-                fileCount: 4
-            },
-            {
-                ruleId: "GuardCondition",
-                issuesFixedCount: 20,
-                remediationCost: 5,
-                fileCount: 14
-            },
-            {
-                ruleId: "RemoveExplicitCallToSuper",
-                issuesFixedCount: 1,
-                remediationCost: 1,
-                fileCount: 1
-            },
-            {
-                ruleId: "RemoveUnnecessaryThrows",
-                issuesFixedCount: 28,
-                remediationCost: 2,
-                fileCount: 10
-            },
-            {
-                ruleId: "RemoveUnusedParameter",
+                ruleId: "MultiCatch",
                 issuesFixedCount: 1,
                 remediationCost: 5,
                 fileCount: 1
             },
             {
-                ruleId: "UseCollectionsSingletonList",
-                issuesFixedCount: 54,
-                remediationCost: 2,
-                fileCount: 8
-            },
-            {
-                ruleId: "HideDefaultConstructorInUtilityClasses",
-                issuesFixedCount: 3,
-                remediationCost: 5,
-                fileCount: 3
-            },
-            {
-                ruleId: "MakeFieldsAndVariablesFinal",
-                issuesFixedCount: 3448,
-                remediationCost: 5,
-                fileCount: 219
-            },
-            {
-                ruleId: "RemoveCollectionAddAll",
-                issuesFixedCount: 1,
-                remediationCost: 2,
-                fileCount: 1
-            },
-            {
-                ruleId: "RemoveRedundantTypeCast",
-                issuesFixedCount: 4,
-                remediationCost: 5,
-                fileCount: 3
-            },
-            {
-                ruleId: "ReuseRandomObjects",
-                issuesFixedCount: 1,
-                remediationCost: 5,
-                fileCount: 1
-            },
-            {
-                ruleId: "UseSecureRandom",
+                ruleId: "FunctionalInterface",
                 issuesFixedCount: 2,
                 remediationCost: 5,
                 fileCount: 2
             },
             {
-                ruleId: "StringFormatLineSeparator",
-                issuesFixedCount: 1,
+                ruleId: "ImmutableStaticFinalCollections",
+                issuesFixedCount: 6,
+                remediationCost: 10,
+                fileCount: 5
+            },
+            {
+                ruleId: "DiamondOperator",
+                issuesFixedCount: 6,
                 remediationCost: 1,
+                fileCount: 5
+            },
+            {
+                ruleId: "OverrideAnnotation",
+                issuesFixedCount: 89,
+                remediationCost: 5,
+                fileCount: 32
+            },
+            {
+                ruleId: "MultiVariableDeclarationLine",
+                issuesFixedCount: 67,
+                remediationCost: 2,
+                fileCount: 23
+            },
+            {
+                ruleId: "EnumsWithoutEquals",
+                issuesFixedCount: 29,
+                remediationCost: 5,
+                fileCount: 20
+            },
+            {
+                ruleId: "ReImplementingInterface",
+                issuesFixedCount: 7,
+                remediationCost: 2,
+                fileCount: 7
+            },
+            {
+                ruleId: "PutIfAbsent",
+                issuesFixedCount: 4,
+                remediationCost: 2,
+                fileCount: 4
+            },
+            {
+                ruleId: "OptionalIfPresent",
+                issuesFixedCount: 3,
+                remediationCost: 2,
+                fileCount: 3
+            },
+            {
+                ruleId: "OptionalMap",
+                issuesFixedCount: 3,
+                remediationCost: 2,
+                fileCount: 3
+            },
+            {
+                ruleId: "OptionalFilter",
+                issuesFixedCount: 1,
+                remediationCost: 2,
+                fileCount: 1
+            },
+            {
+                ruleId: "GuardCondition",
+                issuesFixedCount: 577,
+                remediationCost: 5,
+                fileCount: 414
+            },
+            {
+                ruleId: "CollapseIfStatements",
+                issuesFixedCount: 56,
+                remediationCost: 5,
+                fileCount: 48
+            },
+            {
+                ruleId: "RemoveExplicitCallToSuper",
+                issuesFixedCount: 28,
+                remediationCost: 1,
+                fileCount: 26
+            },
+            {
+                ruleId: "RemoveUnnecessaryThrows",
+                issuesFixedCount: 264,
+                remediationCost: 2,
+                fileCount: 90
+            },
+            {
+                ruleId: "RemoveUnusedParameter",
+                issuesFixedCount: 16,
+                remediationCost: 5,
+                fileCount: 10
+            },
+            {
+                ruleId: "CollectionsFactoryMethods",
+                issuesFixedCount: 8,
+                remediationCost: 5,
+                fileCount: 2
+            },
+            {
+                ruleId: "UseCollectionsSingletonList",
+                issuesFixedCount: 84,
+                remediationCost: 2,
+                fileCount: 27
+            },
+            {
+                ruleId: "HideDefaultConstructorInUtilityClasses",
+                issuesFixedCount: 92,
+                remediationCost: 5,
+                fileCount: 92
+            },
+            {
+                ruleId: "MakeFieldsAndVariablesFinal",
+                issuesFixedCount: 44173,
+                remediationCost: 5,
+                fileCount: 3213
+            },
+            {
+                ruleId: "RemoveCollectionAddAll",
+                issuesFixedCount: 16,
+                remediationCost: 2,
+                fileCount: 11
+            },
+            {
+                ruleId: "RemoveRedundantTypeCast",
+                issuesFixedCount: 57,
+                remediationCost: 5,
+                fileCount: 23
+            },
+            {
+                ruleId: "UseFilesWriteString",
+                issuesFixedCount: 1,
+                remediationCost: 5,
+                fileCount: 1
+            },
+            {
+                ruleId: "ReuseRandomObjects",
+                issuesFixedCount: 9,
+                remediationCost: 5,
+                fileCount: 6
+            },
+            {
+                ruleId: "UseSecureRandom",
+                issuesFixedCount: 23,
+                remediationCost: 5,
+                fileCount: 18
+            },
+            {
+                ruleId: "RemoveNewStringConstructor",
+                issuesFixedCount: 2,
+                remediationCost: 5,
+                fileCount: 1
+            },
+            {
+                ruleId: "PrimitiveBoxedForString",
+                issuesFixedCount: 22,
+                remediationCost: 5,
+                fileCount: 14
+            },
+            {
+                ruleId: "StringFormatLineSeparator",
+                issuesFixedCount: 4,
+                remediationCost: 1,
+                fileCount: 3
+            },
+            {
+                ruleId: "IndexOfToContains",
+                issuesFixedCount: 1,
+                remediationCost: 2,
                 fileCount: 1
             },
             {
                 ruleId: "StringLiteralEqualityCheck",
-                issuesFixedCount: 7,
+                issuesFixedCount: 73,
                 remediationCost: 10,
+                fileCount: 40
+            },
+            {
+                ruleId: "UseIsEmptyOnCollections",
+                issuesFixedCount: 1,
+                remediationCost: 2,
+                fileCount: 1
+            },
+            {
+                ruleId: "ArithmethicAssignment",
+                issuesFixedCount: 10,
+                remediationCost: 2,
+                fileCount: 7
+            },
+            {
+                ruleId: "PrimitiveObjectUseEquals",
+                issuesFixedCount: 2,
+                remediationCost: 2,
+                fileCount: 1
+            },
+            {
+                ruleId: "WhileToForEach",
+                issuesFixedCount: 4,
+                remediationCost: 5,
                 fileCount: 4
             },
             {
-                ruleId: "UseStringBuilderAppend",
-                issuesFixedCount: 136,
+                ruleId: "ForToForEach",
+                issuesFixedCount: 5,
+                remediationCost: 5,
+                fileCount: 4
+            },
+            {
+                ruleId: "EnhancedForLoopToStreamForEach",
+                issuesFixedCount: 427,
+                remediationCost: 15,
+                fileCount: 256
+            },
+            {
+                ruleId: "BufferedReaderLines",
+                issuesFixedCount: 1,
+                remediationCost: 5,
+                fileCount: 1
+            },
+            {
+                ruleId: "LambdaForEachIfWrapperToFilter",
+                issuesFixedCount: 26,
+                remediationCost: 5,
+                fileCount: 21
+            },
+            {
+                ruleId: "StatementLambdaToExpression",
+                issuesFixedCount: 284,
+                remediationCost: 5,
+                fileCount: 198
+            },
+            {
+                ruleId: "LambdaForEachMap",
+                issuesFixedCount: 17,
+                remediationCost: 15,
+                fileCount: 14
+            },
+            {
+                ruleId: "EnhancedForLoopToStreamAnyMatch",
+                issuesFixedCount: 7,
                 remediationCost: 2,
-                fileCount: 60
+                fileCount: 7
+            },
+            {
+                ruleId: "EnhancedForLoopToStreamFindFirst",
+                issuesFixedCount: 8,
+                remediationCost: 2,
+                fileCount: 7
+            },
+            {
+                ruleId: "LambdaToMethodReference",
+                issuesFixedCount: 130,
+                remediationCost: 2,
+                fileCount: 77
+            },
+            {
+                ruleId: "UseStringBuilderAppend",
+                issuesFixedCount: 2005,
+                remediationCost: 2,
+                fileCount: 864
+            },
+            {
+                ruleId: "UseStringJoin",
+                issuesFixedCount: 1,
+                remediationCost: 5,
+                fileCount: 1
+            },
+            {
+                ruleId: "LocalVariableTypeInference",
+                issuesFixedCount: 32953,
+                remediationCost: 2,
+                fileCount: 2819
             }
         ]
     },
