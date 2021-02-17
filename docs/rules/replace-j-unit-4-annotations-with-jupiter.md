@@ -6,7 +6,7 @@ minJavaVersion: 8
 remediationCost: 15
     
 description:
-    By replacing JUnit 4 annotations @Test, @Ignore, @Before, @BeforeClass, @After and @AfterClass with their corresponding Jupiter alternatives, this rule offers a stepwise transition to JUnit Jupiter.
+    This rule offers a stepwise transition to JUnit 5 by replacing JUnit 4 annotations @Test, @Ignore, @Before, @BeforeClass, @After, and @AfterClass with their corresponding Jupiter alternatives.
 tags: ["Java 8", "Testing"]
 ---
 
