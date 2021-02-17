@@ -50,6 +50,7 @@ module.exports = [
 'enhanced-for-loop-to-stream-find-first',
 'enhanced-for-loop-to-stream-take-while',
 'inefficient-constructor',
+'replace-j-unit4-annotations-with-jupiter',
 'replace-j-unit-expected-annotation-property',
 'replace-j-unit-expected-exception',
 'replace-j-unit-timeout-annotation-property',
