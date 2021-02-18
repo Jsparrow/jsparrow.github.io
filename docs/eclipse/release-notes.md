@@ -5,6 +5,48 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.27.0 <Badge vertical="middle" text="18.02.2021"/>
+
+The [92<sup>st</sup> refactoring rule](/rules/) is shipped with jSparrow 3.27.0. The new rule migrates JUnit 4 tests to JUnit 5.
+
+### New Rule
+#### [**Replace JUnit 4 Annotations with JUnit Jupiter**](/rules/replace-j-unit-4-annotations-with-jupiter.html)
+
+This rule offers a stepwise transition to JUnit 5 by replacing JUnit 4 annotations `@Test`, `@Ignore`, `@Before`, `@BeforeClass`, `@After`, and `@AfterClass` with their corresponding Jupiter alternatives.
+
+### Fixed Bugs
+
+#### [Replace Expression Lambda With Method Reference ](/rules/lambda-to-method-reference.html)
+* Prevents transforming lambdas to method references in some cases where lambda parameters have more specific types than the functional interface expected on the context. 
+
+#### [Use Multi Catch](/rules/multi-catch.html)
+* Prevents collapsing the catch clauses if the caught exception invokes a method which is not defined in the least upper-bound of all combined exceptions. 
+
+#### [Remove Collection::addAll](/rules/remove-collection-add-all.html)
+* Prevents transformation in some cases where there is no constructor defined for expecting a collection. 
+
+#### [Remove Redundant Type Cast](/rules/remove-redundant-type-cast.html)
+* Keeps the casting expression if the target is a lambda and the casting type is used for deriving the actual parameter types of the functional interface. 
+
+* Keeps the casting expressions occurring in the parameters of an overloaded generic method invocation if the casting expression is used to determine which of the overloads is invoked. 
+
+#### [Reuse Random Objects](/rules/reuse-random-objects.html)
+* Replaces `var` with `Random` if the object that can be reused is defined using local variable type inference. 
+
+#### [Replace JUnit Expected Annotation Property with assertThrows](/rules/replace-j-unit-expected-annotation-property.html)
+Prevents analyzing abstract methods. 
+
+#### [Use Functional Interfaces](/rules/functional-interface.html)
+Prevents converting an anonymous class into lambda in some cases where the method defined in the functional interface is generic.
+
+#### Verifying Third Party Libraries
+Fixes a bug on parsing the version numbers of third party libraries. 
+
+### Improvements 
+
+#### [Use Secure Random](/rules/use-secure-random.html)
+The rule id changes from `UseSecureRandomRule` to `UseSecureRandom`.
+
 ## 3.26.0 <Badge vertical="middle" text="21.01.2021"/>
 
 The [91<sup>st</sup> refactoring rule](/rules/) is shipped with jSparrow 3.26.0. The new rule helps migrating to JUnit 5.
