@@ -5,6 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.3.0 <Badge vertical="middle" text="18.02.2021"/>
+
+A new rule is shipped with release 3.3.0 of the jSparrow Maven Plugin:
+
+* [Replace JUnit 4 Annotations with JUnit Jupiter](/rules/replace-j-unit4-annotations-with-jupiter.html)
+
+### Improvements
+* [Use Secure Random](/rules/use-secure-random.html) - the rule id changes from `UseSecureRandomRule` to `UseSecureRandom`.
+
 ## 3.2.1 <Badge vertical="middle" text="03.12.2020"/>
 
 Version 3.2.1 of the jSparrow Maven plugin fixes an issue with the [`selectedSources`](/maven/getting-started.html#refactor) parameter on Windows 10. 
