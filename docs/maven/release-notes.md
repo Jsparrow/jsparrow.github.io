@@ -9,7 +9,7 @@ Here you will find the latest information about releases of the jSparrow Maven p
 
 A new rule is shipped with release 3.3.0 of the jSparrow Maven Plugin:
 
-* [Replace JUnit 4 Annotations with JUnit Jupiter](/rules/replace-j-unit-4-annotations-with-jupiter.html)
+* [Replace JUnit 4 Annotations with JUnit Jupiter](/rules/replace-j-unit4-annotations-with-jupiter.html)
 
 ### Improvements
 * [Use Secure Random](/rules/use-secure-random.html) - the rule id changes from `UseSecureRandomRule` to `UseSecureRandom`.

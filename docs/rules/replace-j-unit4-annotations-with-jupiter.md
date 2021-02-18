@@ -20,8 +20,8 @@ tags: ["Java 8", "Testing"]
 
 ## Description
 
-In JUnit Jupiter, the annotations reside in [`org.junit.jupiter.api`](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/package-summary.html) package, while in JUnit 4 the annotations reside in [`org.junit`](https://junit.org/junit4/javadoc/latest/).
-This rule, replaces the JUnit 4 annotations:
+In JUnit Jupiter, annotations reside in [`org.junit.jupiter.api`](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/package-summary.html), while in JUnit 4 annotations reside in [`org.junit`](https://junit.org/junit4/javadoc/latest/).
+This rule, replaces the following JUnit 4 annotations:
 * [@Test](https://junit.org/junit4/javadoc/latest/org/junit/Test.html)
 * [@Ignore](https://junit.org/junit4/javadoc/latest/org/junit/Ignore.html)
 * [@Before](https://junit.org/junit4/javadoc/latest/org/junit/Before.html)

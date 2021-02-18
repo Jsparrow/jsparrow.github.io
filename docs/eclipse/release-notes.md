@@ -10,7 +10,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 The [92<sup>st</sup> refactoring rule](/rules/) is shipped with jSparrow 3.27.0. The new rule migrates JUnit 4 tests to JUnit 5.
 
 ### New Rule
-#### [**Replace JUnit 4 Annotations with JUnit Jupiter**](/rules/replace-j-unit-4-annotations-with-jupiter.html)
+#### [**Replace JUnit 4 Annotations with JUnit Jupiter**](/rules/replace-j-unit4-annotations-with-jupiter.html)
 
 This rule offers a stepwise transition to JUnit 5 by replacing JUnit 4 annotations `@Test`, `@Ignore`, `@Before`, `@BeforeClass`, `@After`, and `@AfterClass` with their corresponding Jupiter alternatives.
 
@@ -40,7 +40,7 @@ Prevents analyzing abstract methods.
 Prevents converting an anonymous class into lambda in some cases where the method defined in the functional interface is generic.
 
 #### Verifying Third Party Libraries
-Fixes a bug on parsing the version numbers of third party libraries. 
+Fixes a bug on parsing unusual, non-numeric version number suffixes of third-party libraries. 
 
 ### Improvements 
 
