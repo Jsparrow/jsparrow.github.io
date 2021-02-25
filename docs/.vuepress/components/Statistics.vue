@@ -31,6 +31,10 @@
           <td>Total time saved</td>
           <td>{{secondsToHms(project.totalTimeSaved*60)}}</td>
         </tr>
+        <tr>
+          <td>jSparrow run time</td>
+          <td>{{secondsToHms(totalRunTime(project))}}</td>
+        </tr> 
       </tbody>
     </table>
 
@@ -180,15 +184,24 @@ export default {
       var s = Math.floor(d % 3600 % 60);
 
       // always show minutes, add comma and seconds if they are not 0
-      var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " hours, ") : "";
-      var mDisplay = m + (m == 1 ? " minute" : " minutes");
-      var sDisplay = s > 0 ? ", " + s + (s == 1 ? " second" : " seconds") : "";
-      return hDisplay + mDisplay + sDisplay;
+      var hDisplay = h > 0 ? h + (h == 1 ? " hour" : " hours") : "";
+      var mDisplay = m > 0 ? m + (m == 1 ? " minute" : " minutes") : "";
+      var sDisplay = s > 0 ? s + (s == 1 ? " second" : " seconds") : "";
+
+      var text = [hDisplay, mDisplay, sDisplay].filter(Boolean).join(", ")
+      return text;
     },
 
     timestampToDate: function(timestamp) {
       var d = new Date(timestamp*1000);
       return d.getDate() + "." + (d.getMonth() + 1) + "." + (d.getYear() + 1900);
+    },
+
+    totalRunTime: function (project) {
+      var totalRunTime = 0;
+      //console.log(project.timestampJSparrowFinish - project.timestampGitHubStart)
+      totalRunTime = project.timestampJSparrowFinish - project.timestampGitHubStart;
+      return totalRunTime;
     },
 
     findRuleName: function(id) {
