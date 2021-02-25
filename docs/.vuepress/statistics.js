@@ -1,60 +1,72 @@
 module.exports = [
     {
-        projectName: "cucumber-core",
-        timestampGitHubStart: 1612184419,
-        timestampJSparrowFinish: 1612184433,
-        totalTimeSaved: 15742,
-        totalIssuesFixed: 4329,
-        totalFilesChanged: 183,
-        totalFilesCount: 284,
+        projectName: "cucumber-jvm",
+        timestampGitHubStart: 1614268096,
+        timestampJSparrowFinish: 1614268126,
+        totalTimeSaved: 24397,
+        totalIssuesFixed: 6697,
+        totalFilesChanged: 392,
+        totalFilesCount: 1509,
         rules: [
             {
                 ruleId: "ImmutableStaticFinalCollections",
-                issuesFixedCount: 4,
+                issuesFixedCount: 5,
                 remediationCost: 10,
-                fileCount: 3
+                fileCount: 4
             },
             {
-                ruleId: "OverrideAnnotation",
-                issuesFixedCount: 15,
-                remediationCost: 5,
-                fileCount: 7
-            },
-            {
-                ruleId: "BracketsToControl",
-                issuesFixedCount: 12,
-                remediationCost: 2,
-                fileCount: 7
-            },
-            {
-                ruleId: "PutIfAbsent",
-                issuesFixedCount: 4,
-                remediationCost: 2,
+                ruleId: "DiamondOperator",
+                issuesFixedCount: 5,
+                remediationCost: 1,
                 fileCount: 2
             },
             {
-                ruleId: "GuardCondition",
-                issuesFixedCount: 20,
+                ruleId: "OverrideAnnotation",
+                issuesFixedCount: 32,
                 remediationCost: 5,
-                fileCount: 16
+                fileCount: 14
             },
             {
-                ruleId: "CollapseIfStatements",
+                ruleId: "BracketsToControl",
+                issuesFixedCount: 48,
+                remediationCost: 2,
+                fileCount: 18
+            },
+            {
+                ruleId: "MultiVariableDeclarationLine",
                 issuesFixedCount: 1,
-                remediationCost: 5,
+                remediationCost: 2,
                 fileCount: 1
             },
             {
-                ruleId: "RemoveUnnecessaryThrows",
-                issuesFixedCount: 11,
+                ruleId: "PutIfAbsent",
+                issuesFixedCount: 5,
                 remediationCost: 2,
-                fileCount: 8
+                fileCount: 3
+            },
+            {
+                ruleId: "GuardCondition",
+                issuesFixedCount: 31,
+                remediationCost: 5,
+                fileCount: 27
+            },
+            {
+                ruleId: "CollapseIfStatements",
+                issuesFixedCount: 2,
+                remediationCost: 5,
+                fileCount: 2
+            },
+            {
+                ruleId: "RemoveUnnecessaryThrows",
+                issuesFixedCount: 14,
+                remediationCost: 2,
+                fileCount: 11
             },
             {
                 ruleId: "RemoveUnusedParameter",
-                issuesFixedCount: 3,
+                issuesFixedCount: 5,
                 remediationCost: 5,
-                fileCount: 3
+                fileCount: 4
             },
             {
                 ruleId: "ReorderModifiers",
@@ -64,27 +76,27 @@ module.exports = [
             },
             {
                 ruleId: "CollectionsFactoryMethods",
-                issuesFixedCount: 7,
+                issuesFixedCount: 8,
                 remediationCost: 5,
-                fileCount: 4
+                fileCount: 5
             },
             {
                 ruleId: "UseCollectionsSingletonList",
-                issuesFixedCount: 1,
+                issuesFixedCount: 4,
                 remediationCost: 2,
-                fileCount: 1
+                fileCount: 2
             },
             {
                 ruleId: "HideDefaultConstructorInUtilityClasses",
-                issuesFixedCount: 9,
+                issuesFixedCount: 17,
                 remediationCost: 5,
-                fileCount: 9
+                fileCount: 17
             },
             {
                 ruleId: "MakeFieldsAndVariablesFinal",
-                issuesFixedCount: 2022,
+                issuesFixedCount: 3155,
                 remediationCost: 5,
-                fileCount: 163
+                fileCount: 328
             },
             {
                 ruleId: "RemoveCollectionAddAll",
@@ -99,16 +111,28 @@ module.exports = [
                 fileCount: 1
             },
             {
+                ruleId: "PrimitiveBoxedForString",
+                issuesFixedCount: 3,
+                remediationCost: 5,
+                fileCount: 3
+            },
+            {
                 ruleId: "StringFormatLineSeparator",
-                issuesFixedCount: 1,
+                issuesFixedCount: 3,
                 remediationCost: 1,
-                fileCount: 1
+                fileCount: 3
             },
             {
                 ruleId: "StringLiteralEqualityCheck",
-                issuesFixedCount: 5,
+                issuesFixedCount: 8,
                 remediationCost: 10,
-                fileCount: 3
+                fileCount: 5
+            },
+            {
+                ruleId: "ArithmethicAssignment",
+                issuesFixedCount: 2,
+                remediationCost: 2,
+                fileCount: 1
             },
             {
                 ruleId: "WhileToForEach",
@@ -118,9 +142,9 @@ module.exports = [
             },
             {
                 ruleId: "EnhancedForLoopToStreamForEach",
-                issuesFixedCount: 47,
+                issuesFixedCount: 70,
                 remediationCost: 15,
-                fileCount: 23
+                fileCount: 39
             },
             {
                 ruleId: "BufferedReaderLines",
@@ -130,21 +154,21 @@ module.exports = [
             },
             {
                 ruleId: "LambdaForEachIfWrapperToFilter",
-                issuesFixedCount: 1,
+                issuesFixedCount: 3,
                 remediationCost: 5,
-                fileCount: 1
+                fileCount: 3
             },
             {
                 ruleId: "StatementLambdaToExpression",
-                issuesFixedCount: 27,
+                issuesFixedCount: 43,
                 remediationCost: 5,
-                fileCount: 14
+                fileCount: 23
             },
             {
                 ruleId: "LambdaForEachMap",
-                issuesFixedCount: 6,
+                issuesFixedCount: 7,
                 remediationCost: 15,
-                fileCount: 6
+                fileCount: 7
             },
             {
                 ruleId: "EnhancedForLoopToStreamAnyMatch",
@@ -154,21 +178,21 @@ module.exports = [
             },
             {
                 ruleId: "LambdaToMethodReference",
-                issuesFixedCount: 17,
+                issuesFixedCount: 34,
                 remediationCost: 2,
-                fileCount: 9
+                fileCount: 19
             },
             {
                 ruleId: "UseStringBuilderAppend",
-                issuesFixedCount: 319,
+                issuesFixedCount: 459,
                 remediationCost: 2,
-                fileCount: 69
+                fileCount: 138
             },
             {
                 ruleId: "LocalVariableTypeInference",
-                issuesFixedCount: 1787,
+                issuesFixedCount: 2723,
                 remediationCost: 2,
-                fileCount: 152
+                fileCount: 303
             }
         ]
     },
@@ -1429,11 +1453,11 @@ module.exports = [
     },
     {
         projectName: "vert.x",
-        timestampGitHubStart: 1611838242,
-        timestampJSparrowFinish: 1611838291,
-        totalTimeSaved: 57537,
-        totalIssuesFixed: 11831,
-        totalFilesChanged: 553,
+        timestampGitHubStart: 1614245242,
+        timestampJSparrowFinish: 1614245335,
+        totalTimeSaved: 67087,
+        totalIssuesFixed: 13770,
+        totalFilesChanged: 557,
         totalFilesCount: 850,
         rules: [
             {
@@ -1450,21 +1474,21 @@ module.exports = [
             },
             {
                 ruleId: "OverrideAnnotation",
-                issuesFixedCount: 532,
+                issuesFixedCount: 611,
                 remediationCost: 5,
-                fileCount: 120
+                fileCount: 123
             },
             {
                 ruleId: "BracketsToControl",
-                issuesFixedCount: 141,
+                issuesFixedCount: 144,
                 remediationCost: 2,
-                fileCount: 45
+                fileCount: 46
             },
             {
                 ruleId: "MultiVariableDeclarationLine",
-                issuesFixedCount: 11,
+                issuesFixedCount: 12,
                 remediationCost: 2,
-                fileCount: 8
+                fileCount: 9
             },
             {
                 ruleId: "EnumsWithoutEquals",
@@ -1480,15 +1504,15 @@ module.exports = [
             },
             {
                 ruleId: "GuardCondition",
-                issuesFixedCount: 88,
+                issuesFixedCount: 90,
                 remediationCost: 5,
-                fileCount: 58
+                fileCount: 60
             },
             {
                 ruleId: "CollapseIfStatements",
-                issuesFixedCount: 26,
+                issuesFixedCount: 27,
                 remediationCost: 5,
-                fileCount: 20
+                fileCount: 21
             },
             {
                 ruleId: "RemoveExplicitCallToSuper",
@@ -1498,21 +1522,21 @@ module.exports = [
             },
             {
                 ruleId: "RemoveEmptyStatement",
-                issuesFixedCount: 4,
+                issuesFixedCount: 5,
                 remediationCost: 1,
-                fileCount: 3
+                fileCount: 4
             },
             {
                 ruleId: "RemoveUnnecessaryThrows",
-                issuesFixedCount: 145,
+                issuesFixedCount: 146,
                 remediationCost: 2,
-                fileCount: 44
+                fileCount: 45
             },
             {
                 ruleId: "RemoveUnusedParameter",
-                issuesFixedCount: 15,
+                issuesFixedCount: 16,
                 remediationCost: 5,
-                fileCount: 9
+                fileCount: 10
             },
             {
                 ruleId: "ReorderModifiers",
@@ -1528,9 +1552,9 @@ module.exports = [
             },
             {
                 ruleId: "UseCollectionsSingletonList",
-                issuesFixedCount: 14,
+                issuesFixedCount: 15,
                 remediationCost: 2,
-                fileCount: 5
+                fileCount: 6
             },
             {
                 ruleId: "HideDefaultConstructorInUtilityClasses",
@@ -1540,9 +1564,9 @@ module.exports = [
             },
             {
                 ruleId: "MakeFieldsAndVariablesFinal",
-                issuesFixedCount: 8833,
+                issuesFixedCount: 10001,
                 remediationCost: 5,
-                fileCount: 468
+                fileCount: 472
             },
             {
                 ruleId: "RemoveCollectionAddAll",
@@ -1552,9 +1576,9 @@ module.exports = [
             },
             {
                 ruleId: "RemoveRedundantTypeCast",
-                issuesFixedCount: 22,
+                issuesFixedCount: 13,
                 remediationCost: 5,
-                fileCount: 15
+                fileCount: 7
             },
             {
                 ruleId: "UsePredefinedStandardCharset",
@@ -1564,15 +1588,15 @@ module.exports = [
             },
             {
                 ruleId: "ReuseRandomObjects",
-                issuesFixedCount: 15,
+                issuesFixedCount: 19,
                 remediationCost: 5,
-                fileCount: 6
+                fileCount: 7
             },
             {
                 ruleId: "UseSecureRandom",
-                issuesFixedCount: 17,
+                issuesFixedCount: 19,
                 remediationCost: 5,
-                fileCount: 11
+                fileCount: 12
             },
             {
                 ruleId: "CreateTempFilesUsingJavaNIO",
@@ -1588,9 +1612,9 @@ module.exports = [
             },
             {
                 ruleId: "PrimitiveBoxedForString",
-                issuesFixedCount: 14,
+                issuesFixedCount: 23,
                 remediationCost: 5,
-                fileCount: 10
+                fileCount: 13
             },
             {
                 ruleId: "StringFormatLineSeparator",
@@ -1606,9 +1630,9 @@ module.exports = [
             },
             {
                 ruleId: "StringLiteralEqualityCheck",
-                issuesFixedCount: 50,
+                issuesFixedCount: 54,
                 remediationCost: 10,
-                fileCount: 25
+                fileCount: 27
             },
             {
                 ruleId: "UseIsEmptyOnCollections",
@@ -1636,9 +1660,9 @@ module.exports = [
             },
             {
                 ruleId: "EnhancedForLoopToStreamForEach",
-                issuesFixedCount: 92,
+                issuesFixedCount: 96,
                 remediationCost: 15,
-                fileCount: 53
+                fileCount: 54
             },
             {
                 ruleId: "LambdaForEachIfWrapperToFilter",
@@ -1648,9 +1672,9 @@ module.exports = [
             },
             {
                 ruleId: "StatementLambdaToExpression",
-                issuesFixedCount: 1095,
+                issuesFixedCount: 1701,
                 remediationCost: 5,
-                fileCount: 132
+                fileCount: 135
             },
             {
                 ruleId: "LambdaForEachMap",
@@ -1666,15 +1690,15 @@ module.exports = [
             },
             {
                 ruleId: "EnhancedForLoopToStreamFindFirst",
-                issuesFixedCount: 4,
+                issuesFixedCount: 2,
                 remediationCost: 2,
-                fileCount: 3
+                fileCount: 2
             },
             {
                 ruleId: "LambdaToMethodReference",
-                issuesFixedCount: 59,
+                issuesFixedCount: 68,
                 remediationCost: 2,
-                fileCount: 36
+                fileCount: 37
             },
             {
                 ruleId: "UseArraysStream",
@@ -1684,9 +1708,9 @@ module.exports = [
             },
             {
                 ruleId: "UseStringBuilderAppend",
-                issuesFixedCount: 459,
+                issuesFixedCount: 513,
                 remediationCost: 2,
-                fileCount: 140
+                fileCount: 142
             },
             {
                 ruleId: "UseStringJoin",
@@ -1698,10 +1722,10 @@ module.exports = [
     },
     {
         projectName: "biojava",
-        timestampGitHubStart: 1613469972,
-        timestampJSparrowFinish: 1613470066,
-        totalTimeSaved: 116412,
-        totalIssuesFixed: 25975,
+        timestampGitHubStart: 1614243200,
+        timestampJSparrowFinish: 1614243292,
+        totalTimeSaved: 116442,
+        totalIssuesFixed: 25981,
         totalFilesChanged: 1114,
         totalFilesCount: 1321,
         rules: [
@@ -1880,6 +1904,12 @@ module.exports = [
                 fileCount: 2
             },
             {
+                ruleId: "UseSecureRandom",
+                issuesFixedCount: 4,
+                remediationCost: 5,
+                fileCount: 4
+            },
+            {
                 ruleId: "CreateTempFilesUsingJavaNIO",
                 issuesFixedCount: 27,
                 remediationCost: 5,
@@ -1887,7 +1917,7 @@ module.exports = [
             },
             {
                 ruleId: "ReplaceJUnitExpectedAnnotationProperty",
-                issuesFixedCount: 0,
+                issuesFixedCount: 2,
                 remediationCost: 5,
                 fileCount: 2
             },
