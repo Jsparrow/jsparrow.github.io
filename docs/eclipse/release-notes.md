@@ -5,6 +5,20 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.27.1 <Badge vertical="middle" text="03.03.2021"/>
+
+### Hotfix Release
+This hotfix release fixes bugs on two refactoring rules.
+
+### Fixed Bugs
+#### [**Replace Expression Lambda with Method Reference**](/rules/lambda-to-method-reference.html)
+
+* Fixed an issue that could occur when lambdas are used as parameters of a vararg method invocation. 
+
+#### [**Remove Redundant Type Casts**](/rules/remove-redundant-type-cast.html)
+
+* Fixed an issue where compilation errors in overloaded methods could cause a NullPointerException.
+
 ## 3.27.0 <Badge vertical="middle" text="18.02.2021"/>
 
 The [92<sup>st</sup> refactoring rule](/rules/) is shipped with jSparrow 3.27.0. The new rule migrates JUnit 4 tests to JUnit 5.

@@ -5,6 +5,10 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.3.1 <Badge vertical="middle" text="03.03.2021"/>
+
+Version 3.3.1 fixes rare issues with the rules [Replace Expression Lambda with Method Reference](/rules/lambda-to-method-reference.html) and [Remove Redundant Type Casts](/rules/remove-redundant-type-cast.html). 
+
 ## 3.3.0 <Badge vertical="middle" text="18.02.2021"/>
 
 A new rule is shipped with release 3.3.0 of the jSparrow Maven Plugin:
