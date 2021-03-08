@@ -11,4 +11,6 @@ The [jSparrow Eclipse Plugin](https://jsparrow.github.io/eclipse/getting-started
 
 <statistics-summary />
 
+<statistics-summary-all />
+
 <open-source-statistics />
