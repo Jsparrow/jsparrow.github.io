@@ -52,7 +52,7 @@
       :must-sort="true"
     >
       <template slot="items" slot-scope="props">
-        <td class="text-xs-right"><a v-bind:href=findRuleLink(props.item.ruleId) target="_blank"> {{findRuleName(props.item.ruleId)}} </a</td>
+        <td class="text-xs-right"><a v-bind:href=findRuleLink(props.item.ruleId) target="_blank"> {{findRuleName(props.item.ruleId)}} </a></td>
         <td class="text-xs-right">{{ props.item.issuesFixedCount }}</td>
         <td class="text-xs-right">{{ props.item.fileCount }}</td>
         <td class="text-xs-right">{{ secondsToHms(props.item.remediationCost * props.item.issuesFixedCount *60) }}</td>
