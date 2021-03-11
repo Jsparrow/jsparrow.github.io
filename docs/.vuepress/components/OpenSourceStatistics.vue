@@ -8,6 +8,9 @@
 
 <script>
 export default {
+
+    name: 'OpenSourceStatistics',
+
     data() {
         return {
             statistics:

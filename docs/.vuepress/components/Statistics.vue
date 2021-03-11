@@ -1,5 +1,4 @@
 <template>
-<v-app>
 <div>
 
   <div class="tab" v-on:load="openFirstProject()">
@@ -14,7 +13,7 @@
     <p>Metrics for {{project.projectName}} (created on {{timestampToDate(project.timestampGitHubStart)}}):</p>
 
     <template>
-      <statistics-summary-table v-bind:project="project" />
+      <StatisticsSummaryTable v-bind:project="project" />
     </template>
 
     <h3 id="per-rule">Per Rule Statistics</h3>
@@ -22,14 +21,13 @@
     This table contains the list of rules that were applied on {{project.projectName}}.
 
     <template>
-      <statistics-table v-bind:project="project" />
+      <StatisticsTable v-bind:project="project" />
     </template>
 
     <hr/>
     <br/>
   </div>
 </div>
-</v-app>
 </template>
 
 <style lang="stylus">
@@ -83,14 +81,19 @@
 </style>
 
 <script>
-import StatisticsTable from './StatisticsTable.vue';
-import StatisticsSummaryTable from './StatisticsSummaryTable.vue';
-
 export default {
-  components: { StatisticsTable, StatisticsSummaryTable },
+
+  name: 'Statistics',
+
+  components: {
+    StatisticsSummaryTable: () => import('./StatisticsSummaryTable.vue'),
+    StatisticsTable: () => import('./StatisticsTable.vue')
+  },
+
   props: {
     statistics: Array
   },
+  
   computed: {
     currentTabComponent() {
       return "tab-" + this.currentTab.toLowerCase();

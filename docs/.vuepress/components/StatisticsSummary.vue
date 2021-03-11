@@ -3,7 +3,7 @@
     <h2>Summary of All {{ statistics.length }} Statistics Below</h2>
 
     <template>
-      <statistics-summary-table
+      <StatisticsSummaryTable
         v-bind:project="aggregatedProject"
         v-bind:isSummary="true"
       />
@@ -15,6 +15,13 @@
 
 <script>
 export default {
+
+  name: 'StatisticsSummary',
+
+  components: { 
+    StatisticsSummaryTable: () => import('./StatisticsSummaryTable.vue') 
+  }, 
+
   data() {
     return {
       statistics: require("../statistics.js"),

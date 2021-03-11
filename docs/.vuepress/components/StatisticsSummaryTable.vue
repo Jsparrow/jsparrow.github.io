@@ -32,6 +32,9 @@
 
 <script>
 export default {
+
+  name: 'StatisticsSummaryTable',
+
   props: {
     project: Object, 
     isSummary: Boolean

@@ -7,6 +7,11 @@
       hide-actions=""
       :custom-sort="customSort"
       :must-sort="true"
+      :disable-filtering="true"
+      :disable-pagination="true"
+      :hide-default-footer="true"
+      :items-per-page="100"
+      class="elevation-1"
     >
       <template slot="items" slot-scope="props">
         <td class="text-xs-right">
@@ -32,6 +37,8 @@
 
 <script>
 export default {
+
+  name: 'StatisticsTable',
 
   data() {
     return {
