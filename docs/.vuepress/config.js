@@ -44,7 +44,7 @@ module.exports = {
         },
         {
             text: 'Statistics',
-            link: '/statistics/statistics.html'
+            link: '/statistics/statistics-summary.html'
         },
         {
             text: 'Homepage',
@@ -57,7 +57,7 @@ module.exports = {
             '/eclipse/': ['getting-started', 'installation-guide', 'jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
             '/cloud/': ['getting-started'],
             '/rules/': require('./rules.js'),
-            '/statistics/': ['statistics', 'testing'],
+            '/statistics/': ['statistics-summary', 'statistics'],
             '/tags/': [''],
             '/': ['']
         }

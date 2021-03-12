@@ -1,15 +1,11 @@
 <template>
   <div>
-    <h2>Summary of All {{ statistics.length }} Statistics Below</h2>
-
     <template>
       <StatisticsSummaryTable
         v-bind:project="aggregatedProject"
         v-bind:isSummary="true"
       />
     </template>
-
-    <p/>
   </div>
 </template>
 

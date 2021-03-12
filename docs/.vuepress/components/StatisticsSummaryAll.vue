@@ -1,11 +1,8 @@
 <template>
   <div>
-    <h2>Combined Results</h2>
-
     <template>
       <StatisticsTable v-bind:rules="aggregatedRules" />
     </template>
-
   </div>
 </template>
 
