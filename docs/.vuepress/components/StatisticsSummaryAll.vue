@@ -3,7 +3,7 @@
     <h2>Combined Results</h2>
 
     <template>
-      <StatisticsTable v-bind:project="aggregatedRules" />
+      <StatisticsTable v-bind:rules="aggregatedRules" />
     </template>
 
   </div>
@@ -37,24 +37,30 @@ export default {
 
       for (var i = 0; i < this.statistics.length; i++) {
         for (var j = 0; j < this.statistics[i].rules.length; j++) {
-          const currentRule = this.statistics[i].rules[j];
-          const ruleIndex = uniqueRules.findIndex(
-            (x) => x.ruleId == currentRule.ruleId
+          var ruleId = this.statistics[i].rules[j].ruleId;
+          var issuesFixedCount = this.statistics[i].rules[j].issuesFixedCount;
+          var remediationCost = this.statistics[i].rules[j].remediationCost;
+          var fileCount = this.statistics[i].rules[j].fileCount;
+          
+          var ruleIndex = uniqueRules.findIndex(
+            (x) => x.ruleId == ruleId
           );
           if (ruleIndex === -1) {
-            uniqueRules.push(currentRule);
+            var rule = new Object();
+            rule.ruleId = ruleId;
+            rule.issuesFixedCount = issuesFixedCount;
+            rule.remediationCost = remediationCost;
+            rule.fileCount = fileCount;
+            uniqueRules.push(rule);
           } else {
-            uniqueRules[ruleIndex].fileCount += currentRule.fileCount;
-            uniqueRules[ruleIndex].issuesFixedCount +=
-              currentRule.issuesFixedCount;
-            uniqueRules[ruleIndex].remediationCost +=
-              currentRule.remediationCost;
+            uniqueRules[ruleIndex].fileCount += fileCount;
+            uniqueRules[ruleIndex].issuesFixedCount += issuesFixedCount;
+            uniqueRules[ruleIndex].remediationCost += remediationCost;
           }
         }
       }
-      var project = new Object();
-      project.rules = uniqueRules;
-      return project;
+
+      return uniqueRules;
     }
   }
 };

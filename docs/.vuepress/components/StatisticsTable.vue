@@ -2,7 +2,7 @@
   <div>
     <v-data-table
       :headers="headers"
-      :items="project.rules"
+      :items="rules"
       class=""
       hide-actions=""
       :custom-sort="customSort"
@@ -11,7 +11,6 @@
       :disable-pagination="true"
       :hide-default-footer="true"
       :items-per-page="100"
-      class="elevation-1"
     >
       <template slot="items" slot-scope="props">
         <td class="text-xs-right">
@@ -52,12 +51,10 @@ export default {
     };
   },
 
-  props: {
-    project: Object
-  },
+  props: ['rules'],
 
   computed: {
-    rules() {
+    allRules() {
       return this.$site.pages.filter(
         (x) => x.path.startsWith("/rules/") && !x.frontmatter.rules_index
       );
@@ -95,8 +92,8 @@ export default {
         return this.ruleCache[id];
       }
 
-      for (var i = 0; i < this.rules.length; i++) {
-        var element = this.rules[i];
+      for (var i = 0; i < this.allRules.length; i++) {
+        var element = this.allRules[i];
         if (element.frontmatter.ruleId == id) {
           this.ruleCache[id] = element;
           return element;

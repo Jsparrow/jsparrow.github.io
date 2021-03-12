@@ -21,7 +21,7 @@
     This table contains the list of rules that were applied on {{project.projectName}}.
 
     <template>
-      <StatisticsTable v-bind:project="project" />
+      <StatisticsTable v-bind:rules="project.rules" />
     </template>
 
     <hr/>
@@ -97,11 +97,6 @@ export default {
   computed: {
     currentTabComponent() {
       return "tab-" + this.currentTab.toLowerCase();
-    },
-
-    rules() {
-      return this.$site.pages
-          .filter(x => x.path.startsWith('/rules/') && !x.frontmatter.rules_index);
     }
   },
 
