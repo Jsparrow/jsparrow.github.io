@@ -16,13 +16,6 @@ tags: ["Java 1.1", "Readability"]
 
 # Remove Modifiers in Interface Properties
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 By default, the attributes declared in Java interfaces are `public`.

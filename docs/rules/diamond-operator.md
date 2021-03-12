@@ -16,13 +16,6 @@ defaultConfiguration: true
 
 # Remove Explicit Type Argument
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Since Java 7 the [Diamond Operator](https://docs.oracle.com/javase/7/docs/technotes/guides/language/type-inference-generic-instance-creation.html) (`<>`) can be used to simplify instance creation where generics are involved.

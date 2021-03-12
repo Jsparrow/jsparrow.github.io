@@ -14,12 +14,6 @@ tags: ["Java 8", "Coding Conventions", "Lambda", "Readability"]
 
 # Use Optional::map
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Extracts an `Optional::map` from the consumer used in `Optional::ifPresent`. 

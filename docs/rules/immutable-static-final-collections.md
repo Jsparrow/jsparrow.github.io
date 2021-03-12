@@ -15,13 +15,6 @@ tags: ["Java 1.2", "Coding Conventions"]
 
 # Replace static final Collections with Collections.unmodifiable...()
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 An unmodifiable Collection can be created with the matching `Collections.unmodifiable...()` method.

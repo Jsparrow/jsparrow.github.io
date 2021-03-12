@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop", "Old Language Constructs", "IO Operations"]
 
 # Use BufferedReader::lines
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 Java 8 introduced [`BufferedReader::lines`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html#lines--) to generate a stream of elements representing lines in the `BufferedReader`.
 This rule, replaces While-Loops and For-Loops that are using `BufferedReader::readLine` to iterate through lines of a file by a stream generated with `BufferedReader::lines`.

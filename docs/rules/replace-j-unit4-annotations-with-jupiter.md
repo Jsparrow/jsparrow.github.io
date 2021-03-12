@@ -12,12 +12,6 @@ tags: ["Java 8", "Testing"]
 
 # Replace JUnit 4 Annotations with JUnit Jupiter
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 In JUnit Jupiter, annotations reside in [`org.junit.jupiter.api`](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/package-summary.html), while in JUnit 4 annotations reside in [`org.junit`](https://junit.org/junit4/javadoc/latest/).

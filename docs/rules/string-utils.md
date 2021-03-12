@@ -12,13 +12,6 @@ tags: ["Java 1.1", "String Manipulation"]
 
 # Use StringUtils Methods
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces various String methods with their null-safe counterparts from StringUtils.

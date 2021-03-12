@@ -16,13 +16,6 @@ tags: ["Java 1.1", "Coding Conventions", "Readability"]
 
 # Reorder Modifiers
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule reorders the modifiers on Type, Field and Method Declarations in the following priority: 

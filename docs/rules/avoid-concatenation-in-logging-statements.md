@@ -15,12 +15,6 @@ tags: ["Java 1.1", "Performance", "Readability", "Coding Conventions", "Logging"
 
 # Avoid Concatenation in Logging Statements
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Concatenated arguments in a logging message lead to concatenation and therefore an evaluation, even if the logging level is too low to show a message. This leads to a needless performance reduction and is classified as a "Major" code smell by SonarCloud [S2629](https://sonarcloud.io/organizations/default/rules?open=java%3AS2629&q=S2629).

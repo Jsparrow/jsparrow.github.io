@@ -15,12 +15,6 @@ tags: ["Java 8", "Testing", "Lambda", "Readability"]
 
 # Replace JUnit Expected Annotation Property with assertThrows
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Using the [`expected`](https://junit.org/junit4/javadoc/latest/org/junit/Test.html#expected()) annotation property for testing the thrown exceptions is rather misleading. 

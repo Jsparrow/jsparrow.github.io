@@ -16,13 +16,6 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 # Hide Default Constructor In Utility Classes
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Utility classes are classes containing `static` properties only. Those classes should not be instantiated. A private constructor, which throws an `IllegalStateException`, is introduced to utility classes by this rule, if the following criteria are met:

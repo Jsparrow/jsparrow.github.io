@@ -14,13 +14,6 @@ tags: ["Free", "Java 1.1", "Readability", "Coding Conventions"]
 
 # Split Multiple Variable Declarations
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Multiple field or variable declarations on the same line could cause confusion about their types and initial values. That also makes it harder to read and to understand the code.

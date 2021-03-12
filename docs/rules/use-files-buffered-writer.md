@@ -15,12 +15,6 @@ tags: ["Java 7", "Performance", "Old Language Constructs", "IO Operations"]
 
 # Use Files.newBufferedWriter
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Java 7 introduced the [`Files`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html) class that contains convenience methods for operating on files. 

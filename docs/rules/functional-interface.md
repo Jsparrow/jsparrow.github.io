@@ -15,13 +15,6 @@ tags: ["Java 8", "Old Language Constructs", "Lambda"]
 
 # Use Functional Interfaces
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Converts anonymous inner classes to equivalent lambda expressions.

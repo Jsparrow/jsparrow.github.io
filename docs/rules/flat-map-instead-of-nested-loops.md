@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Replace Nested Loops with flatMap
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Compound data structures similar to `Collection<Collection<T>>` are fairly common. 

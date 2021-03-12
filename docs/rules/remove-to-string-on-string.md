@@ -15,13 +15,6 @@ tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
 
 # Remove toString() on String
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 All method invocations of `toString()` are tested as to whether they are used on a String element. If this is the case, the method call is removed, because it is not necessary.  

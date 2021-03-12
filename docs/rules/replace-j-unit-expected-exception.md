@@ -12,12 +12,6 @@ tags: ["Java 8", "Testing", "Lambda", "Readability"]
 
 # Replace JUnit ExpectedException with assertThrows
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 The [`ExpectedException.none()`](https://junit.org/junit4/javadoc/latest/org/junit/rules/ExpectedException.html#none()) rule is deprecated since JUnit 4.13. 

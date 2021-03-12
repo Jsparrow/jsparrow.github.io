@@ -16,13 +16,6 @@ tags: ["Free", "Java 8", "Lambda"]
 
 # Replace Expression Lambda with Method Reference
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule simplifies expression lambdas by using method reference.

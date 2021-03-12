@@ -15,12 +15,6 @@ tags: ["Java 8", "Performance", "Coding Conventions"]
 
 # Use Arrays Stream
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 This rule transforms `Arrays.asList(T..values).stream()` into either of the following: 

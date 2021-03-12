@@ -16,13 +16,6 @@ defaultConfiguration: true
 
 # Use Multi Catch
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Java 7 introduced the possibility to merge multiple catch clauses into a single multi-catch clause. Merging is only possible if the catch statements are identical.

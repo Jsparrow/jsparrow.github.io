@@ -12,13 +12,6 @@ tags: ["Java 1.1", "Readability"]
 
 # Remove Explicit Call To super()
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass. Hence, there is no need to explicitly call the default constructor of the super class.  

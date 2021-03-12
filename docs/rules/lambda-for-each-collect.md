@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Use Stream::collect
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 Replaces `Stream::forEach` with `Stream::collect` if the argument of the `forEach` statement is only used for adding elements to a list.
 This simplifies adding elements to a list.

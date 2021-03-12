@@ -13,13 +13,6 @@ defaultConfiguration: true
 
 # Replace While-Loop with Enhanced For-Loop
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Applying this rule replaces While-loops over iterators with an equivalent for-loop.     

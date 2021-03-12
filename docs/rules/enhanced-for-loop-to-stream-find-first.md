@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Replace For-Loop with Stream::findFirst
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Replaces enhanced for-loops which are used to find an element within a collection by a stream and uses `Stream::findFirst` to find the result.

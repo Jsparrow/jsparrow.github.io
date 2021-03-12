@@ -13,13 +13,6 @@ tags: ["Java 9", "Old Language Constructs", "Readability"]
 
 # Use Factory Methods for Collections
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Java 9 introduced factory methods for creating immutable collections. 

@@ -15,13 +15,6 @@ tags: ["Java 5", "String Manipulation"]
 
 # Use Portable Newline
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces any occurrences of '\n' with '%n'.  

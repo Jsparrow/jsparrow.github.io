@@ -16,13 +16,6 @@ tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
 
 # Remove Boxing for String Conversions
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 When calling toString() on a boxed primitive no new instance of that primitive has to be created.

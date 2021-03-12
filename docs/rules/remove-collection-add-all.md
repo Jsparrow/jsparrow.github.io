@@ -15,13 +15,6 @@ tags: ["Java 1.2", "Readability"]
 
 # Remove Collection::addAll
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 In order to apply the rule, the following two statements must occur:

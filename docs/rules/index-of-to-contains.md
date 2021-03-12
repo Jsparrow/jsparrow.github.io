@@ -13,13 +13,6 @@ tags: ["Java 5", "Old Language Constructs", "Readability"]
 
 # Replace indexOf() with contains()
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces calls to indexOf() on instances of `String`s or `Collection`s with calls to the `contains()` method.

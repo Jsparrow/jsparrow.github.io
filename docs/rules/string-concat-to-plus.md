@@ -12,13 +12,6 @@ tags: ["Java 1.1", "String Manipulation", "Performance"]
 
 # Replace Concatenation with Infix-Operation
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces the `concat()` method on `String`s with the `+` operator.

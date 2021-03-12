@@ -14,12 +14,6 @@ tags: ["Free", "Java 8", "Coding Conventions", "Lambda", "Readability"]
 
 # Use Optional::filter
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Extracts an [`Optional::filter`](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html#filter-java.util.function.Predicate-) from the consumer used in [`Optional::ifPresent`](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html#ifPresent-java.util.function.Consumer-). 

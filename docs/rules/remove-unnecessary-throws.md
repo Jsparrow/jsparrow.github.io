@@ -15,13 +15,6 @@ tags: ["Free", "Java 1.1", "Readability"]
 
 # Remove Unnecessary Thrown Exceptions on Method Signatures
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Removes the following exceptions on method signatures:

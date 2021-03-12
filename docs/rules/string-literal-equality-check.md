@@ -15,13 +15,6 @@ tags: ["Free", "Java 1.1", "String Manipulation"]
 
 # Reorder String Equality Check
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 To avoid NullPointerExceptions , it is recommended to put string literals in the left-hand-side of `equals()` or `equalsIgnoreCase()` when checking for equality.

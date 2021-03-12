@@ -12,13 +12,6 @@ tags: ["Java 8", "Old Language Constructs"]
 
 # Replace put(..) with putIfAbsent(..)
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 If `map.put(..)` is wrapped with a condition verifying the existence of an element, one can use `map.putIfAbsent(...)` instead.

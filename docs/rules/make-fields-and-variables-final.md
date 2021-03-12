@@ -13,13 +13,6 @@ tags: ["Java 1.1", "Readability"]
 
 # Make Fields And Variables Final
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule declares `private` fields and local variables `final`, if they are effectively `final`.  

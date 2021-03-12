@@ -16,12 +16,6 @@ tags: ["Java 1.7", "Performance"]
 
 # Use Predefined Standard Charset
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 This rule replaces invocations of [`Charset.forName(String)`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/Charset.html#forName(java.lang.String)) by constants defined in [`StandardCharsets`](https://docs.oracle.com/javase/7/docs/api/java/nio/charset/StandardCharsets.html).

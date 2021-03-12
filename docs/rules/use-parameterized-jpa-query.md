@@ -15,12 +15,6 @@ tags: ["Java 1.1", "Security"]
 
 # Use Parameterized JPA Query
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 JPA defines the [Java Persistence Query Language (JPQL)](https://docs.oracle.com/javaee/7/tutorial/persistence-querylanguage005.htm#BNBUF).

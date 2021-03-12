@@ -15,12 +15,6 @@ tags: ["Java 1.1", "Security"]
 
 # Escape User Inputs in SQL Queries
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [`ESAPI.encoder().encodeForSql(codec, input)`](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 

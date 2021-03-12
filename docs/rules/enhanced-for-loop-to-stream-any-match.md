@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Replace For-Loop with Stream::Match
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Replaces occurrences of enhanced for-loops which are only used to initialize or return a boolean variable with `Stream::anyMatch`, `Stream::allMatch` or `Stream::noneMatch`.

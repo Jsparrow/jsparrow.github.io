@@ -15,13 +15,6 @@ tags: ["Free", "Java 6", "Old Language Constructs", "Coding Conventions", "Reada
 
 # Replace Equality Check with isEmpty()
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces comparisons of `length()` or `size()` with `0` with a call to `isEmpty()`. Any occurrences of such a comparison will be replaced, regardless of surrounding control structure.

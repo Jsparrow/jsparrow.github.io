@@ -12,13 +12,6 @@ tags: ["Java 10", "Readability"]
 
 # Use Local Variable Type Inference
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 The derivable types on the declaration of local variables are replaced by the reserved word `var`.

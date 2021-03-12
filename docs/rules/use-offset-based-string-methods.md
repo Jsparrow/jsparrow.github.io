@@ -16,12 +16,6 @@ tags: ["Free", "Java 1.1",  "String Manipulation", "Performance"]
 
 # Use Offset Based String Methods
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 This rule avoids creating intermediate `String` instances by making use of the overloaded offset based methods in the String API. For example, if [`substring(beginIndex)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#substring-int-) is followed by [`startsWith(aString)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#startsWith-java.lang.String-), then both invocations are removed and [`startsWith(aString, beginIndex)`](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#startsWith-java.lang.String-int-) is used instead.

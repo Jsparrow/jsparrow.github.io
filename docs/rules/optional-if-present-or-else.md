@@ -12,13 +12,6 @@ tags: ["Java 9", "Old Language Constructs", "Lambda"]
 
 # Use Optional::ifPresentOrElse
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 It is common to have an else-statement following an Optional.isPresent check. 

@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Use Stream::map
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Extracts a block from the body of the consumer of the `Stream::forEach` method and introduces `Stream::map` instead.

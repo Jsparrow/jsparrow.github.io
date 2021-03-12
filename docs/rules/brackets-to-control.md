@@ -15,13 +15,6 @@ tags: ["Java 1.1", "Readability"]
 
 # Add Braces to Control Statements
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Checks if braces are used to encapsulate control statements and adds them if they aren't present.

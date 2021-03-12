@@ -15,12 +15,6 @@ tags: ["Java 1.3", "Security"]
 
 # Use Parameterized LDAP Query
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Similar to SQL queries, the [LDAP](https://ldap.com/) search filters are also vulnerable to injection attacks.

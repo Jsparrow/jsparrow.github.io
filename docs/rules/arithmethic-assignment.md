@@ -12,13 +12,6 @@ tags: ["Java 1.4", "Readability", "Coding Conventions"]
 
 # Replace Assignment with Compound Operator
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Assignments involving an arithmetic assignment can be simplified by using a compound operator such as `+=`, `-=`, `/=` or `*=`.

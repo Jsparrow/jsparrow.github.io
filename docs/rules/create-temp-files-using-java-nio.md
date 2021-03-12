@@ -16,12 +16,6 @@ tags: ["Java 1.7", "Security", "IO Operations"]
 
 # Create Temp Files Using Java NIO
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 According to the documentation of [`File.createTempFile(String, String)`](https://docs.oracle.com/javase/8/docs/api/java/io/File.html#createTempFile-java.lang.String-java.lang.String-), a suitable alternative for creating temporary files in security-sensitive applications is to use [`java.nio.file.Files.createTempFile(String, String, FileAttribute<?>...)`](https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html#createTempFile-java.lang.String-java.lang.String-java.nio.file.attribute.FileAttribute...-). 

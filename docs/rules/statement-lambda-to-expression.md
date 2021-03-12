@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda"]
 
 # Remove Lambda Expression Braces
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 If the body of the lambda statement contains only a single expression, the braces are optional. It can be reduced to a lambda expression.

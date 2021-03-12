@@ -16,13 +16,6 @@ tags: ["Free", "Java 1.1", "Coding Conventions", "Readability"]
 
 # Collapse If Statements
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Collapses, when possible, the nested if-statements into a single one by concatenating their conditions with the infix operator `&&`. 

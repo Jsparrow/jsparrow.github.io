@@ -13,13 +13,6 @@ defaultConfiguration: true
 
 # Use Stream::filter
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule transforms an if-Statement (without an else statement), which wraps the whole execution block of a `Stream::forEach` method into a call to `Stream::filter` with a lambda expression (Predicate) as parameter. This lambda is constructed using the expression from the if-Statement.

@@ -12,13 +12,6 @@ tags: ["Java 1.1", "Coding Conventions", "String Manipulation"]
 
 # Use equals() on Primitive Objects
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces the infix operators "==" and "!=" with equals() when used on primitive objects. The following types are considered primitive:

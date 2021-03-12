@@ -16,13 +16,6 @@ defaultConfiguration: true
 
 # Use Try-With-Resource
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as

@@ -15,13 +15,6 @@ tags: ["Free", "Java 5", "Coding Conventions", "Performance"]
 
 # Replace Inefficient Constructors with valueOf()
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 All calls to a constructor of a primitive type will be replaced by the corresponding static `valueOf()` method. For example `new Integer("1")` becomes `Integer.valueOf("1")`.

@@ -15,13 +15,6 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 # Make SerialVersionUID Static Final
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Adds the modifiers static and final to SerialVersionUid long variables when they are absent.

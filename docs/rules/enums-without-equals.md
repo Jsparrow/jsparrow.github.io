@@ -15,13 +15,6 @@ tags: ["Free", "Java 5", "Coding Conventions"]
 
 # Replace equals() on Enum Constants
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Replaces occurrences of `equals()` on Enum constants with an identity comparison (`==`).

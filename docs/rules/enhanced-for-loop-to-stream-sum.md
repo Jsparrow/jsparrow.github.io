@@ -12,13 +12,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Replace For-Loop with Stream::sum
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 Transforms enhanced for-loops which are only used for summing up the elements of a collection into a stream and uses the sum operation to compute the result.
 

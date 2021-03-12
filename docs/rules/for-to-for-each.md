@@ -13,13 +13,6 @@ defaultConfiguration: true
 
 # Replace For-Loop with Enhanced-For-Loop
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Since Java 1.5 enhanced for-loops can be used to iterate over collections. This rule replaces old for-loops utilizing iterators with enhanced for-loops in order to improve readability.       

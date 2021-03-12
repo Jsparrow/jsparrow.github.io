@@ -16,13 +16,6 @@ tags: ["Java 1.1", "Coding Conventions", "Readability"]
 
 # Rename Fields
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule finds the fields that do not comply with the naming conventions and renames them.

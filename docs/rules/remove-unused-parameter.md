@@ -16,13 +16,6 @@ tags: ["Java 1.1", "Readability", "Coding Conventions"]
 
 # Remove Unused Parameters in Private Methods
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 This rule finds and removes unused parameters in private method declarations.
 Consequently, all the invocations of the affected methods are updated accordingly.
