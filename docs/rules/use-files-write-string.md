@@ -131,12 +131,6 @@ try {
 
 <VersionNotice />
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

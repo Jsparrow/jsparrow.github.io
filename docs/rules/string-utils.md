@@ -313,12 +313,6 @@ String lower = StringUtils.lowerCase(value);
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

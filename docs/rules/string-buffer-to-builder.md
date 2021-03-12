@@ -103,12 +103,6 @@ public String transformed() {
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

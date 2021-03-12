@@ -83,12 +83,6 @@ List resultList = jpqlQuery.getResultList();
 
 
 <VersionNotice />
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

@@ -115,12 +115,6 @@ public void sampleMethod(String value) {
 
 <VersionNotice />
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

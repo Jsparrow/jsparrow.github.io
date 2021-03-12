@@ -57,12 +57,6 @@ double sum = numbers.stream().mapToDouble(Double::doubleValue).sum();
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

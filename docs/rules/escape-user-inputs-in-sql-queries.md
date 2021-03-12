@@ -106,12 +106,6 @@ ResultSet resultSet = statement.executeQuery(query);
 This technique of escaping user supplied input is database specific and supports Oracle DBMS. 
 
 <VersionNotice />
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

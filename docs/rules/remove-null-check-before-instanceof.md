@@ -70,12 +70,6 @@ if(x instanceof User) {
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

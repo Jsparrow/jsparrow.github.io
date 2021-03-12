@@ -98,12 +98,6 @@ Another deprecated `java.util.Date` constructor is `new Date(String s)` and is n
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

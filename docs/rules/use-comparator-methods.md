@@ -120,12 +120,6 @@ users.sort(Comparator.comparingLong(User::getUserId));
 
 
 <VersionNotice />
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

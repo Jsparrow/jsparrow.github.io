@@ -98,12 +98,6 @@ ResultSet resultSet = statement.executeQuery();
 ```
 
 <VersionNotice />
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

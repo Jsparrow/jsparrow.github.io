@@ -171,12 +171,6 @@ public void expectingRuntimeException() {
 
 <VersionNotice />
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

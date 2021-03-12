@@ -83,12 +83,6 @@ NamingEnumeration<SearchResult> results = ctx.search(
 
 
 <VersionNotice />
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

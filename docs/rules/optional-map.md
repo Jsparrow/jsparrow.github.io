@@ -66,12 +66,6 @@ oUser.map(user -> user.getAddress()).ifPresent(address -> {
 ```
 
 <VersionNotice />
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

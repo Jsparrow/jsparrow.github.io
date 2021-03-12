@@ -75,12 +75,6 @@ private static final Map<String, String> CONSTANT_MAP = Collections.unmodifiable
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

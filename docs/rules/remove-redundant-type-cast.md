@@ -102,12 +102,6 @@ Object object = (Supplier<String>) () -> "";
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

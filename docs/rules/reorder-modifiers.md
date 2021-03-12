@@ -91,12 +91,6 @@ private static class PrivateStaticClass {
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

@@ -139,12 +139,6 @@ The transformation cannot be performed automatically if:
 
 <VersionNotice />
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

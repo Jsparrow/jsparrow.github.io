@@ -75,12 +75,6 @@ public boolean isRoundUp(RoundingMode roundingMode) {
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

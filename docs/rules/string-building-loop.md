@@ -129,12 +129,6 @@ public String transformed(List<String>values) {
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

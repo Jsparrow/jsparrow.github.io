@@ -93,12 +93,6 @@ public void multipleAnnotationProperties() throws PersistenceException {
 
 <VersionNotice />
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

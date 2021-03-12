@@ -98,12 +98,6 @@ String value = 2 + 3 + "";
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

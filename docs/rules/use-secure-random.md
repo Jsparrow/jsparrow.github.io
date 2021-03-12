@@ -63,12 +63,6 @@ random.nextBytes(bytes);
 ```
 
 <VersionNotice />
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

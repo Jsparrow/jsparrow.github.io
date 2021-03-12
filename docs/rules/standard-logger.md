@@ -119,12 +119,6 @@ public void replacePrintStackTrace(String input) {
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

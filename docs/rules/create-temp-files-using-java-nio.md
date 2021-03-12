@@ -82,12 +82,6 @@ File file = Files.createTempFile("myFile", ".tmp").toFile();
 ```
 
 <VersionNotice />
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

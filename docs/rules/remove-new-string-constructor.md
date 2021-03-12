@@ -64,12 +64,6 @@ public String testNewStringOnNonStringElement(StringBuilder sb) {
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

@@ -42,12 +42,6 @@ List<String> list = new ArrayList<>(Arrays.asList("value1", "value2"));
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

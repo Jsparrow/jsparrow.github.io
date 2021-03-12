@@ -98,12 +98,6 @@ Charset c5 = StandardCharsets.UTF_16LE;
 ```
 
 <VersionNotice />
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

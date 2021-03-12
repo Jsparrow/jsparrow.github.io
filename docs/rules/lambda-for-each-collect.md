@@ -43,12 +43,6 @@ oStrings.addAll(objectList.stream()
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

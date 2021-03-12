@@ -101,12 +101,6 @@ matrix3.stream().filter(row -> !row.isEmpty()).flatMap(row -> row.stream())
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

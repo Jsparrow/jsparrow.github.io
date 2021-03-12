@@ -43,12 +43,6 @@ public Function<Function, Function> f = (Function function) -> function.compose(
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

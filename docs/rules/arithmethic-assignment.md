@@ -100,12 +100,6 @@ Rule can be applied only on the following types:
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

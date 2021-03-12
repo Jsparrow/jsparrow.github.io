@@ -88,12 +88,6 @@ BufferedReader br = Files.newBufferedReader(Paths.get(location), StandardCharset
 
 <VersionNotice />
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

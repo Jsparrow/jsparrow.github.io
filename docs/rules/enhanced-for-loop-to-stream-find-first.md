@@ -97,12 +97,6 @@ double defaultIndex = values.stream()
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

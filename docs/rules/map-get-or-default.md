@@ -51,12 +51,6 @@ The rule applies only on map implementations that do not allow `null` values, na
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />

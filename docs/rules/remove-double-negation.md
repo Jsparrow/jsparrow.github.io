@@ -64,12 +64,6 @@ boolean a = !true; // reduced to one time
 <VersionNotice />
 
 
-## Tags
-
-::: tip Tags
-<TagLinks />
-:::
-
 ## Properties
 
 <RuleProperties />
