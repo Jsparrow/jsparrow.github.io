@@ -26,6 +26,12 @@ The rule can only be applied if the parameters of the lambda expression and the 
 Improves the readability by removing unnecessary syntax.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Reference to static method

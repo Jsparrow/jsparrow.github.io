@@ -26,6 +26,12 @@ If the intent is merely to check inclusion of a value in a `String` or a List, t
 Clearer intent means better readability.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Replacing `indexOf()` by `!contains()` on String

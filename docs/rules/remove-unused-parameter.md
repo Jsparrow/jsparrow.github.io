@@ -24,6 +24,12 @@ Consequently, all the invocations of the affected methods are updated accordingl
 Removes the clutter and simplifies the method declarations.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

@@ -25,6 +25,12 @@ This rule avoids creating intermediate `String` instances by making use of the o
 Reduces the number of String objects whose sole purpose is to indicate an offset.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Using String startsWith

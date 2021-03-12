@@ -33,6 +33,12 @@ Activation of this rule requires the following classpath entries to be present:
 
 Prevents SQL injections.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 

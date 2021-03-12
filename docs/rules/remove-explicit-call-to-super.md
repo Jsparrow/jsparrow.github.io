@@ -21,6 +21,12 @@ If a constructor does not explicitly invoke a superclass constructor, the Java c
 Improves the readability by removing unnecessary lines of code.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

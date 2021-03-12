@@ -26,6 +26,12 @@ Java 9
 Remove verbosity and avoid creating intermediate collections only for the sake of initialization.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Creating immutable List

@@ -173,6 +173,12 @@ public static String lowerCase(String str)
 public static String lowerCase(String str, Locale locale)
 ```
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Checking for Empty Strings

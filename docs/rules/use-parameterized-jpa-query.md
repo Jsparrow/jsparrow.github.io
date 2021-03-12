@@ -35,6 +35,12 @@ Activation of this rule requires the following classpath entries to be present:
 Prevents SQL injections when using the Java Persistence API (JPA).
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Using Query get single result

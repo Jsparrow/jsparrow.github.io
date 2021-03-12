@@ -22,6 +22,12 @@ The rule only applies if both operands are primitive types.
 
 Applying this rule leads to more simplicity in the code base and thus improves readability.  
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Operator +=

@@ -24,6 +24,12 @@ Replaces, when possible, the last if-statement of a method body with a guard-if 
 Reduces the cognitive complexity of a method.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Void method ending with an if statement

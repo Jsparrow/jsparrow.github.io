@@ -21,6 +21,12 @@ This rule, replaces While-Loops and For-Loops that are using `BufferedReader::re
 
 Using streams instead of loops improves the readability and makes the code more compact.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### While Loops

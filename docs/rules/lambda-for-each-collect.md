@@ -22,6 +22,12 @@ This simplifies adding elements to a list.
 This rule provides an easier-to read alternative to add items in a list.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

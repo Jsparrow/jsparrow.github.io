@@ -25,6 +25,12 @@ Java 7 introduced the possibility to merge multiple catch clauses into a single 
 Using this rule reduces clutter and improves readability.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Merge and reduce subtype exceptions.

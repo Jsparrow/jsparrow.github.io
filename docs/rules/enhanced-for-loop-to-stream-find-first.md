@@ -23,6 +23,12 @@ By using the stream syntax, a multi-line control statement can be reduced to a s
 Applying this rule results in better readability.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Loop with break statement

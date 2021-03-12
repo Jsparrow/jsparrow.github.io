@@ -22,6 +22,12 @@ Applying this rule replaces While-loops over iterators with an equivalent for-lo
 Applying this rule leads to more simplicity in the code base by using new language constructs.  
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

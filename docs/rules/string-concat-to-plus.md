@@ -26,6 +26,12 @@ The Java compiler will convert the `+` operation to use a `StringBuilder`.
 The more concatenations occur, the bigger the performance gain is.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Base case

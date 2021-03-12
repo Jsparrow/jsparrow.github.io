@@ -24,6 +24,12 @@ This rule replaces comparisons of `length()` or `size()` with `0` with a call to
 The time complexity of any `isEmpty()` method implementation should be `O(1)` whereas some implementations of `size()` can be `O(n)`. Thus, using this rule provides performance benefits.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### size, length

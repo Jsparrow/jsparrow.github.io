@@ -29,6 +29,12 @@ This rule requires the following library to be present:
 
 Improves the tests readability. Helps migrating to JUnit 5. 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 

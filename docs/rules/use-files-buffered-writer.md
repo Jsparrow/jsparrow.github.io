@@ -24,6 +24,12 @@ This rule makes use of the [`Files.newBufferedWriter`](https://docs.oracle.com/j
 
 Achieve better performance by using non-blocking I/O operations offered by the [`java.nio`](https://docs.oracle.com/javase/7/docs/api/java/nio/package-summary.html) package.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Creating the BufferedWriter from a new FileWriter

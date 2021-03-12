@@ -26,6 +26,12 @@ the construct takes care of that.
 Applying this rule makes the code safer and more readable.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Moving resource to the try header

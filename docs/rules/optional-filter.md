@@ -25,6 +25,12 @@ This transformation is feasible only if the entire consumer's body is wrapped in
 Arguably, the lambda expression is easier to read and can be combined with other `Optional` operations.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

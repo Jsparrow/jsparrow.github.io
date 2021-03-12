@@ -24,6 +24,12 @@ To avoid NullPointerExceptions , it is recommended to put string literals in the
 This order prevents NullPointerExceptions from being raised, as a string literal can never be `null` by definition, and therefore makes the code less prone to errors. An example can be seen below.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

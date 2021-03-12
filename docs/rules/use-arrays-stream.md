@@ -48,6 +48,12 @@ Improves performance by avoiding unnecessary boxing of stream elements.
 Improves readability by using short hand method [`Stream.of(T... values)`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-) for generating a stream. 
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 

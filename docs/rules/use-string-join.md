@@ -23,6 +23,12 @@ A performance improvement can be observed with the increase of the number of ele
 Improves performance and reduces code clutter. 
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Concatenating without delimiter

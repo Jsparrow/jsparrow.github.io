@@ -24,6 +24,12 @@ Finds and removes the unnecessary semicolons from the code blocks.
 Improves the readability, by removing code that do not produce any computation steps.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Unnecessary semicolon in method body

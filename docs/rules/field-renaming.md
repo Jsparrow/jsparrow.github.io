@@ -46,6 +46,12 @@ The changes are shown in a Dif-View and the user can choose to accept or ignore 
 
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

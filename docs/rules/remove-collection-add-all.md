@@ -27,6 +27,12 @@ In order to apply the rule, the following two statements must occur:
 Reducing lines of code and improving readability.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

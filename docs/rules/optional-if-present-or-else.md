@@ -27,6 +27,12 @@ Java 9
 Improves readability and enables the use of higher order funtions on `Optional`.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Default

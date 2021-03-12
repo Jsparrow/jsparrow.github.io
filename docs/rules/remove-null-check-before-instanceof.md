@@ -25,6 +25,12 @@ Finds and removes null-checks before occurrences of `instanceof`. Since `null` i
 Improves readability by removing redundant code.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Null-check in conjunction with instanceof

@@ -23,6 +23,12 @@ Thus, eliminating redundant loop iterations.
 Improves performance by eliminating redundant cycles in Enhanced For-loops. 
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Searching for a fixed value

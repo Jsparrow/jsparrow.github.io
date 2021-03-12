@@ -25,6 +25,12 @@ Since Java 7 the [Diamond Operator](https://docs.oracle.com/javase/7/docs/techno
 Applying this rule reduces clutter and improves readability.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Type arguments on new instance creations

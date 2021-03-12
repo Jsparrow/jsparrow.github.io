@@ -22,6 +22,12 @@ This rule replaces the invocations of `Map::get` followed by a null-check with `
 Makes the code more readable, by using Java 8 extensions of Map interface.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

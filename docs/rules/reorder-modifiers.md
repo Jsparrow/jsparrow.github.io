@@ -38,6 +38,12 @@ This rule reorders the modifiers on Type, Field and Method Declarations in the f
 Improves the readability by unifying the order of modifiers in Type, Field and Method declarations. 
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Field Declarations 

@@ -25,6 +25,12 @@ Avoiding the constructor call has performance benefits as it reduces memory usag
 Furthermore, these constructors are deprecated in Java 9, which is an indication that they will eventually be removed from the language altogether.   
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

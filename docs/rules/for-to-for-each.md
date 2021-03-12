@@ -22,6 +22,12 @@ Since Java 1.5 enhanced for-loops can be used to iterate over collections. This 
 Applying this rule leads to more simplicity in the code base by using new language constructs.  
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

@@ -31,6 +31,12 @@ This rule replaces the infix operators "==" and "!=" with equals() when used on 
 If the equals method was overwritten on the instances being compared the == has a different meaning than using equals. This may lead to programming errors. Applying this rule means keeping with the coding conventions and thus helps avoid errors.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

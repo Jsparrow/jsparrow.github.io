@@ -27,6 +27,12 @@ This rule has performance benefits.
 As described above boxing the object simply to use the static `toString` method is a waste of memory and CPU cycles.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Boolean

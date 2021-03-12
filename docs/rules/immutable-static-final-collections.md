@@ -29,6 +29,12 @@ The Collections which are created with `Collections.unmodifiable...()` throw an
 Applying this rule helps avoid common errors by making sure a static final field is always modifiable.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Final `Collection`

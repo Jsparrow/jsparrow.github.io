@@ -25,6 +25,12 @@ Simplifies the code by replacing all occurrences of `removeAll()` which have the
 Calling `clear()` instead of `removeAll()` makes code more clear and efficient, when at the same time less error prone.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

@@ -23,6 +23,12 @@ This rule replaces `BufferedWriter`s that are used to write a single value into 
 
 Achieves better performance for writing small files. Additionally, improves readability by removing code clutter. 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### BufferedWriter Created with FileWriter

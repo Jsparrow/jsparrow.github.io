@@ -28,6 +28,12 @@ Removes the following exceptions on method signatures:
 Improves the readability by removing code that adds no information on the method signature.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Declaring a throws exception whose parent type is already thrown

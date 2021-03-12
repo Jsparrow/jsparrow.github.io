@@ -24,6 +24,12 @@ This rule makes use of the [`Files.newBufferedReader`](https://docs.oracle.com/j
 
 Achieve better performance by using non-blocking I/O operations offered by the `java.nio` package.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Creating the BufferedReader from a new FileReader

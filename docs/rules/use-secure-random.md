@@ -26,6 +26,12 @@ Sonarcloud marks [this issue](https://sonarcloud.io/organizations/default/rules?
 
 Prevents generating predictable pseudo-random numbers.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 

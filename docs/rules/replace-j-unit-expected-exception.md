@@ -31,6 +31,12 @@ This rule requires one of the following libraries to be present:
 ## Benefits
 Improves the tests readability. Helps migrating to JUnit 5. 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Testing the Exception Type

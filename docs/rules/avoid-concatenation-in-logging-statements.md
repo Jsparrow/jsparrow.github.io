@@ -33,6 +33,12 @@ This rule works on the following types and implementations of them:
 
 Improved performance, especially in cases where concatenation is used at low logging levels, such as `debug`. 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Introducing Parameters and Merging Strings

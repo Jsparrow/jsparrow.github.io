@@ -27,6 +27,12 @@ Java 10
 This rule reduces the length of variable definitions and therefore  improves the readability if the variable is named properly drastically.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Variable Declarations

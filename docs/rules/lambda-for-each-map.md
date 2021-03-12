@@ -22,6 +22,12 @@ This makes complicated code blocks easier to read and reuse.
 Arguably the lambda expression is easier to read and can be combined with other stream operations.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Unwrapping single statement

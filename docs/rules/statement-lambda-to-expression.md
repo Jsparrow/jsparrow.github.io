@@ -24,6 +24,12 @@ This is comparable to if-statements or loops with a single expression inside the
 This rule provides an easier-to read alternative to filter items in a list.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

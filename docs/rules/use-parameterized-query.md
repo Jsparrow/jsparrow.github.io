@@ -27,6 +27,12 @@ Parameterized queries enforce a distinction between the SQL code and the data pa
 Prevents SQL injections.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 

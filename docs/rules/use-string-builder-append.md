@@ -24,6 +24,12 @@ Replaces the infix operator `+` over `String` concatenations with at least three
 Improves the performance of the String concatenations.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Concatenating strings in infix expressions

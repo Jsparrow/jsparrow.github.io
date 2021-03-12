@@ -26,6 +26,12 @@ are replaced by [DirContext::search(Name name, **String filter**, **Object[] arg
 
 Prevents injections when using Lightweight Directory Access Protocol (LDAP).
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Using a String variable as filter

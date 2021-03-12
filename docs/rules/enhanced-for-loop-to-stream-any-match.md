@@ -22,6 +22,12 @@ The stream syntax is more concise and improves readability.
 Applying this rule results in better readability.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Loop with `break` statement to `Stream::anyMatch`

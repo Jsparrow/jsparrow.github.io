@@ -22,6 +22,12 @@ Replace static invocations of `Collections.sort(List, Comparator)` with `List.so
 Improves the readability by utilizing the Java 8 extensions of the `List` API. 
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Static Sort Invocation

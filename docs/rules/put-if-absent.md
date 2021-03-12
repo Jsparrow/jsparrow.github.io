@@ -21,6 +21,12 @@ If `map.put(..)` is wrapped with a condition verifying the existence of an eleme
 Makes the code more readable, by using Java 8 extensions of Map interface.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Default

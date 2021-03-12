@@ -29,6 +29,12 @@ This rule replaces complex lambda expressions which represent `Comparator` insta
 
 Reduces the code clutter and improves the readability.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 

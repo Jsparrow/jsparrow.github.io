@@ -24,6 +24,12 @@ These interfaces are inherited from the super class.
 Removing redundant syntax improves readability.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

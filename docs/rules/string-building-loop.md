@@ -27,6 +27,12 @@ Instead, in each loop iteration, the first String is converted to an intermediat
 Performing these operations degrades the longer the String is. Using a `StringBuilder` instead increases performance.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### At least Java 8

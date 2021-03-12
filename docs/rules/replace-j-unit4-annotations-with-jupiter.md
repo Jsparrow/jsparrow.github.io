@@ -44,6 +44,12 @@ This rule requires the following library to be present:
 
 Migrates JUnit 4 tests to JUnit 5.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 

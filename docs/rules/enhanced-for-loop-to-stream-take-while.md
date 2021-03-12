@@ -27,6 +27,12 @@ Java 9
 Applying this rule results in better readability and more compact code. 
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Iterating over a `List`

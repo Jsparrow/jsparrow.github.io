@@ -24,6 +24,12 @@ Note that SonarCloud classifies this rule as a Critical Bug, [S2119](https://son
 
 Improves the unpredictability and efficiency of the generated random values.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 

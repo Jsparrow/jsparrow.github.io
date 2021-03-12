@@ -24,6 +24,12 @@ There are some special cases, in which the transformation won't be possible due 
 Using streams instead of loops improves the readability and makes the code more compact.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Single statement in loop body

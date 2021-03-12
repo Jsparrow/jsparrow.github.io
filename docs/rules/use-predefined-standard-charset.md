@@ -26,6 +26,12 @@ This rule replaces invocations of [`Charset.forName(String)`](https://docs.oracl
 Avoids creating new objects that are already predefined.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 

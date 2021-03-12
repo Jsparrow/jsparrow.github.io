@@ -27,6 +27,12 @@ This rule replaces the temporary file creation using `java.io.File` by the alter
 
 As mentioned in the [javadocs](https://docs.oracle.com/javase/8/docs/api/java/io/File.html#createTempFile-java.lang.String-java.lang.String-), the key benefit is security.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Creating Temp File with Prefix and Suffix

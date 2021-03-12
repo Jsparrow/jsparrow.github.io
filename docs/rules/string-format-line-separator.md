@@ -25,6 +25,12 @@ For example 'String.format("\n\n")' is replaced by 'String.format("%n%n")'.
 The benefit of this approach is that '%n' is portable across platforms.  
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

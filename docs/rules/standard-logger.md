@@ -74,6 +74,12 @@ There is also an option in each of the drop-downs to "Leave as is", which skips 
 
 The bottom of the wizard contains additional configuration. It allows you to choose if you want to add logger statements where they are missing, like empty catch blocks. Also, there you can choose whether you want to always add the exception as a parameter in the logger statements and always use the selected severity level for logging exceptions.  
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

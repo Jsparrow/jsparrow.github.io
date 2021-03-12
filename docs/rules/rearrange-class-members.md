@@ -41,6 +41,12 @@ The rest of inner type declarations like enumeration declarations, annotation de
 Adhering to code conventions such as file member orderings improves maintainability and readability.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

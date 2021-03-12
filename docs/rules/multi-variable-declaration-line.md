@@ -27,6 +27,12 @@ This is recommended by the Code Conventions for the Java Programming Language.
 Applying this rule makes the code easier to read.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__

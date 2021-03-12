@@ -22,6 +22,12 @@ Using `flatMap()` not only makes the code more readable and but also allows for 
 ## Benefits
 Arguably, a flattened stream is easier to read.
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Iterating over nested collections

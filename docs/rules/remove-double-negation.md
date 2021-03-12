@@ -31,6 +31,12 @@ Removes pairs of negations from boolean expressions until only zero or one negat
 Improves the readability of the code, by removing cascaded negations of boolean expressions.
 
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 ### Example based on an even number of negations
