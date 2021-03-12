@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Automatic Application of This Rule</h2>
+    <h2>You Want To Have Those Changes Done Automatically?</h2>
     <div v-if="$page.frontmatter.tags.includes('Free')">
       The automatic application of this rule is supported in the following jSparrow versions:
       <ul>
