@@ -91,3 +91,7 @@ public void sortUsersById(List<User> users) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -98,3 +98,7 @@ class Foo {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -105,3 +105,7 @@ Rule can be applied only on the following types:
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

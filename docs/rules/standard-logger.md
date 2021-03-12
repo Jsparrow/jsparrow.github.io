@@ -124,3 +124,7 @@ public void replacePrintStackTrace(String input) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

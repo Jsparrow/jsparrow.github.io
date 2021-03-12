@@ -69,3 +69,7 @@ class Parent implements Observer {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

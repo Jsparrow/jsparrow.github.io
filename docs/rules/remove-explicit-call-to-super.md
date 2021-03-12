@@ -64,3 +64,7 @@ class Child extends Parent {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

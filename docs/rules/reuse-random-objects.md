@@ -120,3 +120,7 @@ public void sampleMethod(String value) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

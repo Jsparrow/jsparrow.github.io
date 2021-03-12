@@ -69,3 +69,7 @@ boolean a = !true; // reduced to one time
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

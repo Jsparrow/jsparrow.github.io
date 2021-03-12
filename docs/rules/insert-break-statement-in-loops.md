@@ -112,3 +112,7 @@ __Pre__
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -102,3 +102,7 @@ logger.info("A " + 1 + " B {}", 2);
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -103,3 +103,7 @@ ResultSet resultSet = statement.executeQuery();
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -80,3 +80,7 @@ private static final Map<String, String> CONSTANT_MAP = Collections.unmodifiable
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

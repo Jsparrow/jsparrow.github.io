@@ -96,3 +96,7 @@ public void expectingRuntimeException() {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

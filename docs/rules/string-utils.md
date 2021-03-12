@@ -318,3 +318,7 @@ String lower = StringUtils.lowerCase(value);
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

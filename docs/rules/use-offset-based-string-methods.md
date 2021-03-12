@@ -76,3 +76,7 @@ int index = Math.max(str.lastIndexOf("d", 6) - 6, -1);
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

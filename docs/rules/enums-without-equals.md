@@ -80,3 +80,7 @@ public boolean isRoundUp(RoundingMode roundingMode) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

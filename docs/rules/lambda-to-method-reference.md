@@ -128,3 +128,7 @@ public void transformed(List<String> values) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

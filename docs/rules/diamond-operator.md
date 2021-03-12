@@ -59,3 +59,7 @@ List<GenericSample> result = foo.genericMethod(new ArrayList<>(), input);
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -140,3 +140,7 @@ public void transformed(boolean b) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

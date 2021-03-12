@@ -79,3 +79,7 @@ public class TestSerialVersionUidRule {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

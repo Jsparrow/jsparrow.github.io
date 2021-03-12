@@ -48,3 +48,7 @@ oStrings.addAll(objectList.stream()
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

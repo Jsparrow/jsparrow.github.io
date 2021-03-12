@@ -96,3 +96,7 @@ private static class PrivateStaticClass {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

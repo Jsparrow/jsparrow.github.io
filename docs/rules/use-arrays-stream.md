@@ -104,3 +104,7 @@ Stream.of(stringArray)
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

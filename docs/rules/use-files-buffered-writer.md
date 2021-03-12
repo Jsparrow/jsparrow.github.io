@@ -92,3 +92,7 @@ BufferedWriter bw = Files.newBufferedWriter(Paths.get(location), StandardCharset
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

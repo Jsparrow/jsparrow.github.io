@@ -197,3 +197,7 @@ public void transformedTryWithResource(String path) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

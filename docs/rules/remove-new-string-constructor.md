@@ -69,3 +69,7 @@ public String testNewStringOnNonStringElement(StringBuilder sb) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

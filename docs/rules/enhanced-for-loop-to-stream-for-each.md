@@ -68,3 +68,7 @@ stringList1.forEach(s -> {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

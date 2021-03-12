@@ -73,3 +73,7 @@ public class OrganiseImportsRule {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

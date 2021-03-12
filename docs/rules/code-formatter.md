@@ -80,3 +80,7 @@ public class CodeFormatterRule {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

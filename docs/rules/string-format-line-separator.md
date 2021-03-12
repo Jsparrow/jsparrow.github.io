@@ -74,3 +74,7 @@ public class TestStringFormatLineSeparatorRule {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

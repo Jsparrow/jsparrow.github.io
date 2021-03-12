@@ -67,3 +67,7 @@ public String testIfCollectionIsEmpty(String input){
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

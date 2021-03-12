@@ -68,3 +68,7 @@ random.nextBytes(bytes);
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

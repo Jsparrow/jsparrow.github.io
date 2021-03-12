@@ -102,3 +102,7 @@ Can not be applied if the __then__ path of the branch contains a non-effectively
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

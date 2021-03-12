@@ -88,3 +88,7 @@ __Post__
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

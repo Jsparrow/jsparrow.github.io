@@ -67,3 +67,7 @@ if (!a.equals(b)) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

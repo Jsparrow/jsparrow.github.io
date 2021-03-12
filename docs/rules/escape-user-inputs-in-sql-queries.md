@@ -111,3 +111,7 @@ This technique of escaping user supplied input is database specific and supports
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

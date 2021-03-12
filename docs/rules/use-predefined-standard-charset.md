@@ -103,3 +103,7 @@ Charset c5 = StandardCharsets.UTF_16LE;
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

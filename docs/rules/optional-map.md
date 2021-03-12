@@ -71,3 +71,7 @@ oUser.map(user -> user.getAddress()).ifPresent(address -> {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

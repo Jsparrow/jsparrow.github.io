@@ -47,3 +47,7 @@ List<String> list = new ArrayList<>(Arrays.asList("value1", "value2"));
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -205,3 +205,7 @@ This rule only affects `private` fields and local variables at the moment. `publ
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -108,3 +108,7 @@ If the declaration or the initializer are raw type, then the transformation is n
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

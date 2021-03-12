@@ -134,3 +134,7 @@ public class RearrangeClassMembersRule {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

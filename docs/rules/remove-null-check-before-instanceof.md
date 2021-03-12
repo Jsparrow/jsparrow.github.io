@@ -75,3 +75,7 @@ if(x instanceof User) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

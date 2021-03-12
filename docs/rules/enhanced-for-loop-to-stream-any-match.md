@@ -100,3 +100,7 @@ return strings.stream().anyMatch(value -> emptyString.equals(value));
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

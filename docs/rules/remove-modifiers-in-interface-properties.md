@@ -86,3 +86,7 @@ public interface InterfaceWithProperties {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

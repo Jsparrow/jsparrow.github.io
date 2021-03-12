@@ -125,3 +125,7 @@ users.sort(Comparator.comparingLong(User::getUserId));
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

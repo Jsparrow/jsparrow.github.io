@@ -87,3 +87,7 @@ File file = Files.createTempFile("myFile", ".tmp").toFile();
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

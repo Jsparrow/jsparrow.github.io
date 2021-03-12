@@ -73,3 +73,7 @@ The non-private methods are not modified by this rule because they could be invo
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

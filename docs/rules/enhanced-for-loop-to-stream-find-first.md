@@ -102,3 +102,7 @@ double defaultIndex = values.stream()
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

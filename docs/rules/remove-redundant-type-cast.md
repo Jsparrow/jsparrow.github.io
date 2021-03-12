@@ -107,3 +107,7 @@ Object object = (Supplier<String>) () -> "";
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -56,3 +56,7 @@ The rule applies only on map implementations that do not allow `null` values, na
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

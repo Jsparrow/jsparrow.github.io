@@ -48,3 +48,7 @@ public Function<Function, Function> f = (Function function) -> function.compose(
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -144,3 +144,7 @@ The transformation cannot be performed automatically if:
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

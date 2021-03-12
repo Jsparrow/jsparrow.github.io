@@ -93,3 +93,7 @@ A file cannot be automatically renamed on any of the following condition:
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

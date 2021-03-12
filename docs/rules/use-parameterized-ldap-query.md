@@ -88,3 +88,7 @@ NamingEnumeration<SearchResult> results = ctx.search(
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

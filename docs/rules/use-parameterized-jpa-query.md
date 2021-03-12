@@ -88,3 +88,7 @@ List resultList = jpqlQuery.getResultList();
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -118,3 +118,7 @@ public void transformed() {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

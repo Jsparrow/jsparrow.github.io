@@ -103,3 +103,7 @@ String value = 2 + 3 + "";
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

@@ -52,3 +52,7 @@ list.stream()
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

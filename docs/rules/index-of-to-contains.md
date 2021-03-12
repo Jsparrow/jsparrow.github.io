@@ -100,3 +100,7 @@ if (list.contains(string)) {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

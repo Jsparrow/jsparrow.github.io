@@ -66,3 +66,7 @@ oUser.ifPresent(user -> {
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />

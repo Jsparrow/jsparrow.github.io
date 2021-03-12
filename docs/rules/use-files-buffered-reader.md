@@ -93,3 +93,7 @@ BufferedReader br = Files.newBufferedReader(Paths.get(location), StandardCharset
 ::: tip Tags
 <TagLinks />
 :::
+
+## Properties
+
+<RuleProperties />
