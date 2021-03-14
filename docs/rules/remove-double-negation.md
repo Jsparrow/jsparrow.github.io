@@ -15,13 +15,6 @@ tags: ["Free", "Java 1.1", "Coding Conventions"]
 
 # Remove Double Negations
 
-[[TOC]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Removes pairs of negations from boolean expressions until only zero or one negation is left.
