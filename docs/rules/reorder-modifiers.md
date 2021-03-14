@@ -16,13 +16,6 @@ tags: ["Java 1.1", "Coding Conventions", "Readability"]
 
 # Reorder Modifiers
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule reorders the modifiers on Type, Field and Method Declarations in the following priority: 
@@ -44,6 +37,12 @@ This rule reorders the modifiers on Type, Field and Method Declarations in the f
 
 Improves the readability by unifying the order of modifiers in Type, Field and Method declarations. 
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -98,8 +97,6 @@ private static class PrivateStaticClass {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

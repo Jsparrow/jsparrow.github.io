@@ -15,12 +15,6 @@ tags: ["Java 7", "Performance", "Old Language Constructs", "IO Operations"]
 
 # Use Files.newBufferedReader
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Java 7 introduced the [`Files`](https://docs.oracle.com/javase/7/docs/api/java/nio/file/Files.html) class that contains convenience methods for operating on files. 
@@ -29,6 +23,12 @@ This rule makes use of the [`Files.newBufferedReader`](https://docs.oracle.com/j
 ## Benefits
 
 Achieve better performance by using non-blocking I/O operations offered by the `java.nio` package.
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -94,8 +94,6 @@ BufferedReader br = Files.newBufferedReader(Paths.get(location), StandardCharset
 
 <VersionNotice />
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

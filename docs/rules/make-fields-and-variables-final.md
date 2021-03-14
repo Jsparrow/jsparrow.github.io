@@ -13,13 +13,6 @@ tags: ["Java 1.1", "Readability"]
 
 # Make Fields And Variables Final
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule declares `private` fields and local variables `final`, if they are effectively `final`.  
@@ -39,6 +32,12 @@ The criteria for being effectively `final` are as follows:
 
 Readability and maintainability of code is improved and accidental reassignments are prevented for affected fields and variables.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -207,8 +206,6 @@ public class MakeFinal {
 This rule only affects `private` fields and local variables at the moment. `public`, `protected` or package-private fields as well as method parameters are not considered yet.
 
 <VersionNotice />
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

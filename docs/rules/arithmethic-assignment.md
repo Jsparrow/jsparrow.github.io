@@ -12,13 +12,6 @@ tags: ["Java 1.4", "Readability", "Coding Conventions"]
 
 # Replace Assignment with Compound Operator
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Assignments involving an arithmetic assignment can be simplified by using a compound operator such as `+=`, `-=`, `/=` or `*=`.
@@ -28,6 +21,12 @@ The rule only applies if both operands are primitive types.
 ## Benefits
 
 Applying this rule leads to more simplicity in the code base and thus improves readability.  
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -107,8 +106,6 @@ Rule can be applied only on the following types:
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -13,13 +13,6 @@ defaultConfiguration: true
 
 # Replace For-Loop with Enhanced-For-Loop
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Since Java 1.5 enhanced for-loops can be used to iterate over collections. This rule replaces old for-loops utilizing iterators with enhanced for-loops in order to improve readability.       
@@ -28,6 +21,12 @@ Since Java 1.5 enhanced for-loops can be used to iterate over collections. This 
 
 Applying this rule leads to more simplicity in the code base by using new language constructs.  
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -66,8 +65,6 @@ Loops where the body modifies the iterator in some way will not be transformed.
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

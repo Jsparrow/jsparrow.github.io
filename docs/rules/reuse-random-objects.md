@@ -15,12 +15,6 @@ tags: ["Java 1.1", "Security"]
 
 # Reuse Random Objects
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Creating a `new Random()` object each time a random value is needed is inefficient and may produce numbers which are not random. This rule extracts reusable [`java.util.Random`](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) objects, from local variables to class or instance fields. 
@@ -29,6 +23,12 @@ Note that SonarCloud classifies this rule as a Critical Bug, [S2119](https://son
 ## Benefits
 
 Improves the unpredictability and efficiency of the generated random values.
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -121,8 +121,6 @@ public void sampleMethod(String value) {
 
 <VersionNotice />
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

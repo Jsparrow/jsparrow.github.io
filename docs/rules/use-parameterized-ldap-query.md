@@ -15,12 +15,6 @@ tags: ["Java 1.3", "Security"]
 
 # Use Parameterized LDAP Query
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Similar to SQL queries, the [LDAP](https://ldap.com/) search filters are also vulnerable to injection attacks.
@@ -31,6 +25,12 @@ are replaced by [DirContext::search(Name name, **String filter**, **Object[] arg
 ## Benefits
 
 Prevents injections when using Lightweight Directory Access Protocol (LDAP).
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -89,8 +89,6 @@ NamingEnumeration<SearchResult> results = ctx.search(
 
 
 <VersionNotice />
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -12,13 +12,6 @@ tags: ["Java 8", "Old Language Constructs", "Lambda"]
 
 # Use Optional::ifPresent
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 The usage of  `Optional.get` should be avoided in general because it can potentially throw a `NoSuchElementException` (it is likely to be deprecated in future releases).  It is often the case that the invocation of `Optional.get` is wrapped by a condition that uses  `Optional.isPresent`. Such cases can be replaced with the `Optional.ifPresent(Consumer<? super T> consumer)`.
@@ -27,6 +20,12 @@ The usage of  `Optional.get` should be avoided in general because it can potenti
 
 Improves readability and enables the use of higher order functions on `Optional`.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -86,8 +85,6 @@ Can not be applied if the __then__ path of the branch contains a non-effectively
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -16,13 +16,6 @@ tags: ["Java 1.1", "Readability"]
 
 # Remove Modifiers in Interface Properties
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 By default, the attributes declared in Java interfaces are `public`.
@@ -34,6 +27,12 @@ Note, from Java 9 it is possible to have [`private` methods](http://openjdk.java
 
 Removes the clutter and unifies the attributes of Java interfaces. 
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -88,8 +87,6 @@ public interface InterfaceWithProperties {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

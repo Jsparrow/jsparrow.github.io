@@ -15,13 +15,6 @@ tags: ["Java 5", "String Manipulation", "Performance"]
 
 # StringBuffer() to StringBuilder()
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule changes the type of local variables from StringBuffer() to StringBuilder(). The `java.lang.StringBuilder` and the `java.lang.StringBuffer` have exactly the same API and functionality, so it could just be replaced without any effort. The only difference is, that `StringBuffer` uses synchronized methods, which doesn't automatically result in thread safety. In almost all cases, it is recommended to use StringBuilder because no locking and syncing is done. Hence, it's faster. Also the java compiler optimizes strings, which are altered, and replaces them with `StringBuilder`.
@@ -30,6 +23,12 @@ This rule changes the type of local variables from StringBuffer() to StringBuild
 
 When running programs in a single thread, which is generally the case, `StringBuilder` offers performance benefits over StringBuffer. This is due to the fact that `StringBuffer` is synchronized and `StringBuilder` is not. For a reference see [here](https://docs.oracle.com/javase/8/docs/api/index.html?java/lang/StringBuilder.html).
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -110,8 +109,6 @@ public String transformed() {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

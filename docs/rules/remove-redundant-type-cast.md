@@ -15,13 +15,6 @@ tags: ["Java 1.1", "Readability"]
 
 # Remove Redundant Type Casts
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 The rule first searches the next type-cast operation. If the expression is casted to a type which already is exactly the type of the expression, then the type casting expression is removed. Additionally, also parentheses involved in the cast operation will be removed if they are not necessary any more. This rule regards two types as exactly the same only when both types have also exactly the same generic arguments.
@@ -30,6 +23,12 @@ The rule first searches the next type-cast operation. If the expression is caste
 
 This rule increases readability by removing redundant code.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -109,8 +108,6 @@ Object object = (Supplier<String>) () -> "";
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

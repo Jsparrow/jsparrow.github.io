@@ -15,13 +15,6 @@ tags: ["Java 5", "String Manipulation", "Performance"]
 
 # Use StringBuilder::append
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Replaces the infix operator `+` over `String` concatenations with at least three operands by `StringBuilder::append`. When possible, unwraps the parenthesized expressions.
@@ -30,6 +23,12 @@ Replaces the infix operator `+` over `String` concatenations with at least three
 
 Improves the performance of the String concatenations.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -105,8 +104,6 @@ String value = 2 + 3 + "";
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

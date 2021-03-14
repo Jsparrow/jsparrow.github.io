@@ -13,13 +13,6 @@ tags: ["Java 8", "Old Language Constructs", "Coding Conventions", "Readability"]
 
 # Replace Collection.sort with List.sort
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Replace static invocations of `Collections.sort(List, Comparator)` with `List.sort(Comparator)`.
@@ -28,6 +21,12 @@ Replace static invocations of `Collections.sort(List, Comparator)` with `List.so
 
 Improves the readability by utilizing the Java 8 extensions of the `List` API. 
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -93,8 +92,6 @@ public void sortUsersById(List<User> users) {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -12,13 +12,6 @@ tags: ["Java 1.1", "String Manipulation", "Performance"]
 
 # Replace Concatenation with Infix-Operation
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces the `concat()` method on `String`s with the `+` operator.
@@ -32,6 +25,12 @@ Applying this rule has slight performance benefits and arguably improves readabi
 The Java compiler will convert the `+` operation to use a `StringBuilder`.
 The more concatenations occur, the bigger the performance gain is.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -104,8 +103,6 @@ public void transformed() {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

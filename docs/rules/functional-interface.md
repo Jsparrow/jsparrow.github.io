@@ -15,13 +15,6 @@ tags: ["Java 8", "Old Language Constructs", "Lambda"]
 
 # Use Functional Interfaces
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Converts anonymous inner classes to equivalent lambda expressions.
@@ -30,6 +23,12 @@ Converts anonymous inner classes to equivalent lambda expressions.
 
 Increases the performance, because lesser objects need to be created. Improves readability because a lot of boilerplate code will be removed.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -133,8 +132,6 @@ Variables that are used inside the anonymous class must be effectively final.
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

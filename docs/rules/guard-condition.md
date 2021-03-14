@@ -15,13 +15,6 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 # Use Guard Condition
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Replaces, when possible, the last if-statement of a method body with a guard-if and unwraps its body.
@@ -30,6 +23,12 @@ Replaces, when possible, the last if-statement of a method body with a guard-if 
 
 Reduces the cognitive complexity of a method.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -121,8 +120,6 @@ __Post__
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

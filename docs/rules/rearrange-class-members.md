@@ -15,13 +15,6 @@ tags: ["Java 1.1", "Coding Conventions", "Readability"]
 
 # Rearrange Class Members
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule rearranges the body declarations of a class based on the Oracle Code Convention for File Organization.
@@ -47,6 +40,12 @@ The rest of inner type declarations like enumeration declarations, annotation de
 
 Adhering to code conventions such as file member orderings improves maintainability and readability.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -136,8 +135,6 @@ public class RearrangeClassMembersRule {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

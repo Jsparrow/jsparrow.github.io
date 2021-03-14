@@ -15,13 +15,6 @@ tags: ["Java 1.1", "String Manipulation", "Performance"]
 
 # Use String Literals
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Removes all class instantiations from String if its parameter is empty or a String. An empty parameter is replaced with the empty String and the construction of a String or String-literal removes the constructor.   
@@ -31,6 +24,12 @@ Removes all class instantiations from String if its parameter is empty or a Stri
 Avoiding the constructor call has performance benefits as it reduces memory usage and improves readability.   
 Furthermore, these constructors are deprecated in Java 9, which is an indication that they will eventually be removed from the language altogether.   
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -71,8 +70,6 @@ public String testNewStringOnNonStringElement(StringBuilder sb) {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -12,12 +12,6 @@ tags: ["Java 1.8", "Lambda", "Readability", "Coding Conventions"]
 
 # Use Comparator Methods
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 In Java 8, new factory methods have been introduced on the [`Comparator`](https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html) interface to simplify the creation of `Comparator` objects:
@@ -34,6 +28,12 @@ This rule replaces complex lambda expressions which represent `Comparator` insta
 ## Benefits
 
 Reduces the code clutter and improves the readability.
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -126,8 +126,6 @@ users.sort(Comparator.comparingLong(User::getUserId));
 
 
 <VersionNotice />
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -12,13 +12,6 @@ tags: ["Java 9", "Old Language Constructs", "Lambda"]
 
 # Use Optional::ifPresentOrElse
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 It is common to have an else-statement following an Optional.isPresent check. 
@@ -33,6 +26,12 @@ Java 9
 
 Improves readability and enables the use of higher order funtions on `Optional`.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -104,8 +103,6 @@ Can not be applied if the __then__ path of the branch contains a non-effectively
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

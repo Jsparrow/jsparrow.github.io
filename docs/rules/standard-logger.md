@@ -15,13 +15,6 @@ tags: ["Java 1.1", "Logging", "Old Language Constructs", "Coding Conventions"]
 
 # System Out To Logging
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces the standard output statements with logger statements when possible. As a precondition, either [SLF4J](https://www.slf4j.org/) or [LOG4J](https://logging.apache.org/log4j/2.x/) should be present on the classpath of the project. Then, the user is asked to choose the replacing options for the standard output statements.     
@@ -81,6 +74,12 @@ There is also an option in each of the drop-downs to "Leave as is", which skips 
 
 The bottom of the wizard contains additional configuration. It allows you to choose if you want to add logger statements where they are missing, like empty catch blocks. Also, there you can choose whether you want to always add the exception as a parameter in the logger statements and always use the selected severity level for logging exceptions.  
 
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
+
 ## Code Changes
 
 __Pre__
@@ -126,8 +125,6 @@ public void replacePrintStackTrace(String input) {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

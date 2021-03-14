@@ -13,13 +13,6 @@ defaultConfiguration: true
 
 # Replace While-Loop with Enhanced For-Loop
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Applying this rule replaces While-loops over iterators with an equivalent for-loop.     
@@ -28,6 +21,12 @@ Applying this rule replaces While-loops over iterators with an equivalent for-lo
 
 Applying this rule leads to more simplicity in the code base by using new language constructs.  
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -66,8 +65,6 @@ Loops where the body modifies the iterator in some way will not be transformed.
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

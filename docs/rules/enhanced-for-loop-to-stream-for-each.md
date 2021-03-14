@@ -13,13 +13,6 @@ defaultConfiguration: true
 
 # Replace For-Loop with Stream::forEach
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces enhanced for loops (for-each-loops) with an invocation of `java.util.stream.Stream::forEach`-method and passes the body of the for-loop as a lambda `Consumer` parameter.
@@ -30,6 +23,12 @@ There are some special cases, in which the transformation won't be possible due 
 
 Using streams instead of loops improves the readability and makes the code more compact.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -70,8 +69,6 @@ stringList1.forEach(s -> {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

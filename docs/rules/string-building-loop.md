@@ -15,13 +15,6 @@ tags: ["Java 5", "Java 8", "Loop", "Lambda", "Performance"]
 
 # Replace For-Loop with Stream::collect(Collectors.joining())
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule refactors the enhanced for loops which are only being used for concatenating the elements of collections or arrays.
@@ -33,6 +26,12 @@ Strings are immutable objects, so concatenation doesn't simply add the new Strin
 Instead, in each loop iteration, the first String is converted to an intermediate object type, the second string is appended, and then the intermediate object is converted back to a String.
 Performing these operations degrades the longer the String is. Using a `StringBuilder` instead increases performance.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -136,8 +135,6 @@ public String transformed(List<String>values) {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

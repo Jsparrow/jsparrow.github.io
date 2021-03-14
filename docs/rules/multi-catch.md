@@ -16,13 +16,6 @@ defaultConfiguration: true
 
 # Use Multi Catch
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Java 7 introduced the possibility to merge multiple catch clauses into a single multi-catch clause. Merging is only possible if the catch statements are identical.
@@ -31,6 +24,12 @@ Java 7 introduced the possibility to merge multiple catch clauses into a single 
 
 Using this rule reduces clutter and improves readability.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -196,8 +195,6 @@ public void transformed() {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

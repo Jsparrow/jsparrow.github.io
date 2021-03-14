@@ -15,13 +15,6 @@ tags: ["Free", "Java 1.1", "Readability"]
 
 # Organize Imports
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Organizes the imports of a Java class. Removes unused imports and applies an alphanumeric order.   
@@ -30,6 +23,12 @@ Organizes the imports of a Java class. Removes unused imports and applies an alp
 
 Imports that are not used are optimized away by the compiler. Regardless, they clutter up the file and might lead to confusion. Removing unused imports and applying alphanumeric order improves readability and maintainability.    
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -75,8 +74,6 @@ public class OrganiseImportsRule {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

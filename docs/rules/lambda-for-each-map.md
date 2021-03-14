@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Use Stream::map
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Extracts a block from the body of the consumer of the `Stream::forEach` method and introduces `Stream::map` instead.
@@ -28,6 +21,12 @@ This makes complicated code blocks easier to read and reuse.
 ## Benefits
 Arguably the lambda expression is easier to read and can be combined with other stream operations.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -54,8 +53,6 @@ list.stream()
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

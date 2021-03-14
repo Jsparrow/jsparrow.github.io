@@ -12,13 +12,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Replace For-Loop with Stream::sum
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 Transforms enhanced for-loops which are only used for summing up the elements of a collection into a stream and uses the sum operation to compute the result.
 
@@ -26,6 +19,12 @@ Transforms enhanced for-loops which are only used for summing up the elements of
 
 Applying this rule yields no major performance benefits. One could argue that readability is somewhat improved, at least if one is familiar with lambdas.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -64,8 +63,6 @@ double sum = numbers.stream().mapToDouble(Double::doubleValue).sum();
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -16,13 +16,6 @@ tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
 
 # Remove Boxing for String Conversions
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 When calling toString() on a boxed primitive no new instance of that primitive has to be created.
@@ -33,6 +26,12 @@ This rule replaces occurrences of such code with a static method.
 This rule has performance benefits.
 As described above boxing the object simply to use the static `toString` method is a waste of memory and CPU cycles.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -142,8 +141,6 @@ public void transformed(boolean b) {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

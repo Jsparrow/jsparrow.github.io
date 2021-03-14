@@ -15,12 +15,6 @@ tags: ["Java 8", "Performance", "Coding Conventions"]
 
 # Use Arrays Stream
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 This rule transforms `Arrays.asList(T..values).stream()` into either of the following: 
@@ -53,6 +47,12 @@ Stream.of("1", "2", "3")
 Improves performance by avoiding unnecessary boxing of stream elements. 
 Improves readability by using short hand method [`Stream.of(T... values)`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#of-T...-) for generating a stream. 
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -105,8 +105,6 @@ Stream.of(stringArray)
 
 
 <VersionNotice />
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

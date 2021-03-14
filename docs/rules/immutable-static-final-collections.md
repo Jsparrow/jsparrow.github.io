@@ -15,13 +15,6 @@ tags: ["Java 1.2", "Coding Conventions"]
 
 # Replace static final Collections with Collections.unmodifiable...()
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 An unmodifiable Collection can be created with the matching `Collections.unmodifiable...()` method.
@@ -35,6 +28,12 @@ The Collections which are created with `Collections.unmodifiable...()` throw an
 
 Applying this rule helps avoid common errors by making sure a static final field is always modifiable.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -82,8 +81,6 @@ private static final Map<String, String> CONSTANT_MAP = Collections.unmodifiable
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -13,13 +13,6 @@ defaultConfiguration: true
 
 # Use Stream::filter
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule transforms an if-Statement (without an else statement), which wraps the whole execution block of a `Stream::forEach` method into a call to `Stream::filter` with a lambda expression (Predicate) as parameter. This lambda is constructed using the expression from the if-Statement.
@@ -28,6 +21,12 @@ This rule transforms an if-Statement (without an else statement), which wraps th
 
 This rule provides an easier-to read alternative to filter items in a list.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -56,8 +55,6 @@ list.stream().filter((s)-> s.length() > 3).forEach((s)-> {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

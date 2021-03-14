@@ -15,13 +15,6 @@ tags: ["Java 1.2", "Readability"]
 
 # Remove Collection::addAll
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 In order to apply the rule, the following two statements must occur:
@@ -33,6 +26,12 @@ In order to apply the rule, the following two statements must occur:
 
 Reducing lines of code and improving readability.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -49,8 +48,6 @@ List<String> list = new ArrayList<>(Arrays.asList("value1", "value2"));
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

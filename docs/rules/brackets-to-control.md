@@ -15,13 +15,6 @@ tags: ["Java 1.1", "Readability"]
 
 # Add Braces to Control Statements
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Checks if braces are used to encapsulate control statements and adds them if they aren't present.
@@ -29,6 +22,12 @@ Checks if braces are used to encapsulate control statements and adds them if the
 ## Benefits
 
 While not technically incorrect, the omission of curly braces can be misleading, and may lead to the introduction of errors during maintenance. Applying this read helps avoid such errors and improves readability.
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -122,8 +121,6 @@ do {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

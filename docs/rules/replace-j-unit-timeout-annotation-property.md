@@ -12,12 +12,6 @@ tags: ["Java 8", "Testing", "Lambda", "Readability"]
 
 # Replace JUnit Timeout Annotation Property with assertTimeout
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 The JUnit [Jupiter API](https://junit.org/junit5/docs/current/user-guide/#overview) provides timeout assertions, i.e., assertions that make sure an executable completes before a timeout is exceeded.  
@@ -34,6 +28,12 @@ This rule requires the following library to be present:
 ## Benefits
 
 Improves the tests readability. Helps migrating to JUnit 5. 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -99,8 +99,6 @@ public void multipleAnnotationProperties() throws PersistenceException {
 
 <VersionNotice />
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

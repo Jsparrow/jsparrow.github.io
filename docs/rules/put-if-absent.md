@@ -12,13 +12,6 @@ tags: ["Java 8", "Old Language Constructs"]
 
 # Replace put(..) with putIfAbsent(..)
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 If `map.put(..)` is wrapped with a condition verifying the existence of an element, one can use `map.putIfAbsent(...)` instead.
@@ -27,6 +20,12 @@ If `map.put(..)` is wrapped with a condition verifying the existence of an eleme
 
 Makes the code more readable, by using Java 8 extensions of Map interface.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -125,8 +124,6 @@ The rule can be applied if a map type is present, a call to map.put(..) is prese
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

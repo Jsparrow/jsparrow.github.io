@@ -15,13 +15,6 @@ tags: ["Java 1.2", "Coding Conventions"]
 
 # Replace removeAll() with clear()
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Simplifies the code by replacing all occurrences of `removeAll()` which have the current collection as parameter with `clear()`. Calling `c.removeAll(c)` to clear a collection is less clear, susceptible to errors from typos, less efficient and for some collections, might throw a `ConcurrentModificationException`.   
@@ -31,6 +24,12 @@ Simplifies the code by replacing all occurrences of `removeAll()` which have the
 
 Calling `clear()` instead of `removeAll()` makes code more clear and efficient, when at the same time less error prone.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -69,8 +68,6 @@ public String testIfCollectionIsEmpty(String input){
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

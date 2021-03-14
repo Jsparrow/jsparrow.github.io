@@ -14,12 +14,6 @@ tags: ["Free", "Java 8", "Coding Conventions", "Lambda", "Readability"]
 
 # Use Optional::filter
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Extracts an [`Optional::filter`](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html#filter-java.util.function.Predicate-) from the consumer used in [`Optional::ifPresent`](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html#ifPresent-java.util.function.Consumer-). 
@@ -30,6 +24,12 @@ This transformation is feasible only if the entire consumer's body is wrapped in
 
 Arguably, the lambda expression is easier to read and can be combined with other `Optional` operations.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -67,8 +67,6 @@ oUser.ifPresent(user -> {
 ```
 
 <VersionNotice />
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

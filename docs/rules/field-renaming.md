@@ -16,13 +16,6 @@ tags: ["Java 1.1", "Coding Conventions", "Readability"]
 
 # Rename Fields
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule finds the fields that do not comply with the naming conventions and renames them.
@@ -52,6 +45,12 @@ The changes are shown in a Dif-View and the user can choose to accept or ignore 
 [ ![Rename fields preview wizard](/img/eclipse/rename_field_preview_wizard.png) ](/img/eclipse/rename_field_preview_wizard.png)
 
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -95,8 +94,6 @@ A file cannot be automatically renamed on any of the following condition:
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

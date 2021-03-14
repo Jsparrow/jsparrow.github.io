@@ -15,13 +15,6 @@ tags: ["Free", "Java 6", "Readability", "Coding Conventions"]
 
 # Use @Override Annotation
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule adds the `@Override` annotation to methods overriding or implementing parent class methods.
@@ -34,6 +27,12 @@ Even though adding `@Override` is not mandatory, using this annotation is consid
 
 Improves the readability by making it clear that the methods are overridden and helps avoiding potential bugs arising from unintended changes in method signatures.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -100,8 +99,6 @@ class Foo {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

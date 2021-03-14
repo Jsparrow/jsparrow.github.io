@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop", "Old Language Constructs", "IO Operations"]
 
 # Use BufferedReader::lines
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 Java 8 introduced [`BufferedReader::lines`](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedReader.html#lines--) to generate a stream of elements representing lines in the `BufferedReader`.
 This rule, replaces While-Loops and For-Loops that are using `BufferedReader::readLine` to iterate through lines of a file by a stream generated with `BufferedReader::lines`.
@@ -27,6 +20,12 @@ This rule, replaces While-Loops and For-Loops that are using `BufferedReader::re
 ## Benefits
 
 Using streams instead of loops improves the readability and makes the code more compact.
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -92,8 +91,6 @@ try (BufferedReader bufferedReader = new BufferedReader(new FileReader("file.nam
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

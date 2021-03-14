@@ -15,13 +15,6 @@ tags: ["Free", "Java 5", "Coding Conventions", "Performance"]
 
 # Replace Inefficient Constructors with valueOf()
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 All calls to a constructor of a primitive type will be replaced by the corresponding static `valueOf()` method. For example `new Integer("1")` becomes `Integer.valueOf("1")`.
@@ -30,6 +23,12 @@ All calls to a constructor of a primitive type will be replaced by the correspon
 
 Using this rule saves memory and CPU cycles, as the constructors are not needed in this case. Furthermore, the constructors are deprecated in Java 9, which is an indication that they will eventually be removed from the language altogether.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -125,8 +124,6 @@ public void transformed() {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

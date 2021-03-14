@@ -15,12 +15,6 @@ tags: ["Java 1.1", "Security"]
 
 # Escape User Inputs in SQL Queries
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 This rule detects potential user inputs that are concatenated with Oracle SQL queries and wraps them in [`ESAPI.encoder().encodeForSql(codec, input)`](https://javadoc.io/doc/org.owasp.esapi/esapi/latest/org/owasp/esapi/Encoder.html). 
@@ -38,6 +32,12 @@ Activation of this rule requires the following classpath entries to be present:
 ## Benefits
 
 Prevents SQL injections.
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -112,8 +112,6 @@ ResultSet resultSet = statement.executeQuery(query);
 This technique of escaping user supplied input is database specific and supports Oracle DBMS. 
 
 <VersionNotice />
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

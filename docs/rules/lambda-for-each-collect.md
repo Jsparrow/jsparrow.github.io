@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Use Stream::collect
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 Replaces `Stream::forEach` with `Stream::collect` if the argument of the `forEach` statement is only used for adding elements to a list.
 This simplifies adding elements to a list.
@@ -28,6 +21,12 @@ This simplifies adding elements to a list.
 
 This rule provides an easier-to read alternative to add items in a list.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -50,8 +49,6 @@ oStrings.addAll(objectList.stream()
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

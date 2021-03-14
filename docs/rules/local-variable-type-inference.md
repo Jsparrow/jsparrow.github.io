@@ -12,13 +12,6 @@ tags: ["Java 10", "Readability"]
 
 # Use Local Variable Type Inference
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 The derivable types on the declaration of local variables are replaced by the reserved word `var`.
@@ -33,6 +26,12 @@ Java 10
 
 This rule reduces the length of variable definitions and therefore  improves the readability if the variable is named properly drastically.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -110,8 +109,6 @@ If the declaration or the initializer are raw type, then the transformation is n
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

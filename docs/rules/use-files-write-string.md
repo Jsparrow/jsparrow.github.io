@@ -13,12 +13,6 @@ tags: ["Java 11", "Performance", "Old Language Constructs", "IO Operations"]
 
 # Use Files.writeString
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Java 11 introduced [`Files.writeString(Path, CharSequence, Charset, OpenOption...)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.charset.Charset,java.nio.file.OpenOption...)) and [`Files.writeString(Path, CharSequence, OpenOption...)`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/nio/file/Files.html#writeString(java.nio.file.Path,java.lang.CharSequence,java.nio.file.OpenOption...)) for writing text into a file by one single invocation and in an efficient non-blocking manner. 
@@ -28,6 +22,12 @@ This rule replaces `BufferedWriter`s that are used to write a single value into 
 ## Benefits
 
 Achieves better performance for writing small files. Additionally, improves readability by removing code clutter. 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -137,8 +137,6 @@ try {
 
 <VersionNotice />
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

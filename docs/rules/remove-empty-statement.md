@@ -15,13 +15,6 @@ tags: ["Free", "Java 1.1", "Coding Conventions"]
 
 # Remove Unnecessary Semicolons
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Finds and removes the unnecessary semicolons from the code blocks.
@@ -30,6 +23,12 @@ Finds and removes the unnecessary semicolons from the code blocks.
 
 Improves the readability, by removing code that do not produce any computation steps.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -83,8 +82,6 @@ class Foo {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -15,13 +15,6 @@ tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
 
 # Remove toString() on String
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 All method invocations of `toString()` are tested as to whether they are used on a String element. If this is the case, the method call is removed, because it is not necessary.  
@@ -31,6 +24,12 @@ For example, `"string".toString()` becomes `"string"`.
 
 As the Java compiler will get rid of the redundant method call, there are no performance benefits.  However, removing the call improves readability of the code.  
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -109,8 +108,6 @@ public void transformed(String value) {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

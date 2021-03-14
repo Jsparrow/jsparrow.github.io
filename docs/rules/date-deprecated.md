@@ -12,13 +12,6 @@ tags: ["Java 1.1", "Readability"]
 
 # Remove Deprecated Date Constructs
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Some `java.util.Date` constructors like `new Date(int year, int month, int day)`, `new Date(int year, int month, int date, int hrs, int min)` and `new Date(int year, int month, int date, int hrs, int min, int sec)` are deprecated and the `Calendar` should be used instead.  This rule searches for deprecated date constructors, introduces calendar instances, sets the time corresponding to the parameters in the deprecated constructor, and replaces the latter with an invocation of `Calendar.getTime()`.
@@ -31,6 +24,12 @@ If the deprecated constructor is used in a field initialization, then an initial
 
 The major advantage of this rule is that you get rid of the long deprecated Date constructors.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -105,8 +104,6 @@ Another deprecated `java.util.Date` constructor is `new Date(String s)` and is n
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

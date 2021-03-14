@@ -14,13 +14,6 @@ tags: ["Free", "Java 1.1", "Readability", "Coding Conventions"]
 
 # Split Multiple Variable Declarations
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Multiple field or variable declarations on the same line could cause confusion about their types and initial values. That also makes it harder to read and to understand the code.
@@ -33,6 +26,12 @@ This is recommended by the Code Conventions for the Java Programming Language.
 
 Applying this rule makes the code easier to read.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -78,8 +77,6 @@ enum Foo {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

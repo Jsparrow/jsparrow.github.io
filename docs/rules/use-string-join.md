@@ -12,12 +12,6 @@ tags: ["Java 5", "Performance", "String Manipulation"]
 
 # Use String Join
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Java 8 introduced String.join which is a convenient method for concatenating String values of `Iterable`s. 
@@ -28,6 +22,12 @@ A performance improvement can be observed with the increase of the number of ele
 
 Improves performance and reduces code clutter. 
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -102,8 +102,6 @@ public void transformed(List<String> values) {
 ```
 
 <VersionNotice />
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

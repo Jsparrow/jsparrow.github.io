@@ -15,13 +15,6 @@ tags: ["Free", "Java 1.1", "Readability"]
 
 # Remove Unnecessary Thrown Exceptions on Method Signatures
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Removes the following exceptions on method signatures:
@@ -34,6 +27,12 @@ Removes the following exceptions on method signatures:
 
 Improves the readability by removing code that adds no information on the method signature.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -88,8 +87,6 @@ public void throwingRuntimeException() {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

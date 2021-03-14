@@ -13,13 +13,6 @@ tags: ["Java 5", "Loop", "Performance"]
 
 # Insert Break Statements in For-loops
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Finds the Enhanced For-loops whose sole purpose is to compute a boolean value without causing side effects and inserts a break statement immediately after the boolean value is computed. 
@@ -29,6 +22,12 @@ Thus, eliminating redundant loop iterations.
 
 Improves performance by eliminating redundant cycles in Enhanced For-loops. 
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -114,8 +113,6 @@ __Pre__
 ```
 
 <VersionNotice />
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

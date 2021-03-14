@@ -13,13 +13,6 @@ tags: ["Java 8", "Lambda", "Loop"]
 
 # Replace For-Loop with Stream::findFirst
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Replaces enhanced for-loops which are used to find an element within a collection by a stream and uses `Stream::findFirst` to find the result.
@@ -29,6 +22,12 @@ By using the stream syntax, a multi-line control statement can be reduced to a s
 
 Applying this rule results in better readability.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -104,8 +103,6 @@ double defaultIndex = values.stream()
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

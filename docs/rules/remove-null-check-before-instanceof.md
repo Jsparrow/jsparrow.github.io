@@ -16,13 +16,6 @@ tags: ["Free", "Java 1.1", "Readability", "Coding Conventions"]
 
 # Remove Null-Checks Before Instanceof
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Finds and removes null-checks before occurrences of `instanceof`. Since `null` is not an instance of anything, the null-check is redundant.
@@ -31,6 +24,12 @@ Finds and removes null-checks before occurrences of `instanceof`. Since `null` i
 
 Improves readability by removing redundant code.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -77,8 +76,6 @@ if(x instanceof User) {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

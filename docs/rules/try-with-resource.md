@@ -16,13 +16,6 @@ defaultConfiguration: true
 
 # Use Try-With-Resource
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as
@@ -32,6 +25,12 @@ the construct takes care of that.
 
 Applying this rule makes the code safer and more readable.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -199,8 +198,6 @@ public void transformedTryWithResource(String path) {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

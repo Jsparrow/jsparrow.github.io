@@ -13,15 +13,6 @@ defaultConfiguration: true
 
 # Reformat Code
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
-
-
 ## Description
 
 Reformats code according to the coding conventions defined in Eclipse. For example, line breaks will be added if lines are too long. Properly formatted code improves readability and makes collaboration easier.   
@@ -29,6 +20,12 @@ Reformats code according to the coding conventions defined in Eclipse. For examp
 ## Benefits
 
 Applying this rule improves readability and helps avoid merge conflicts.   
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -84,8 +81,6 @@ public class CodeFormatterRule {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -13,13 +13,6 @@ tags: ["Java 1.3", "Old Language Constructs", "Performance"]
 
 # Use Collections Singleton List
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Replaces [`Arrays.asList`](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#asList-T...-) with 0 or 1 parameters respectively with [`Collections.emptyList()`](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#emptyList--) or [`Collections.singletonList(..)`](https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singletonList-T-).
@@ -32,6 +25,12 @@ Replaces [`Arrays.asList`](https://docs.oracle.com/javase/8/docs/api/java/util/A
 
 Improves the efficiency of creating short lists. 
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -120,8 +119,6 @@ public void transformed() {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

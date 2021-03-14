@@ -15,13 +15,6 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 # Remove Inherited Interfaces from Class Declaration
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 This rule removes interfaces from class declaration, which are already implemented by a super class.
 These interfaces are inherited from the super class.
@@ -30,6 +23,12 @@ These interfaces are inherited from the super class.
 
 Removing redundant syntax improves readability.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -71,8 +70,6 @@ class Parent implements Observer {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

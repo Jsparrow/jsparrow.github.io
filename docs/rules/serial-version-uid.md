@@ -15,13 +15,6 @@ tags: ["Java 1.1", "Coding Conventions"]
 
 # Make SerialVersionUID Static Final
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Adds the modifiers static and final to SerialVersionUid long variables when they are absent.
@@ -30,6 +23,12 @@ Adds the modifiers static and final to SerialVersionUid long variables when they
 
 For serializable classes the SerialVersionUid should be written explicitly. If the UID changes, that can lead to errors (for example, an object not being able to be deserialized). To avoid those errors, apply this rule.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -81,8 +80,6 @@ public class TestSerialVersionUidRule {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

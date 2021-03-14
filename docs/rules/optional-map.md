@@ -14,12 +14,6 @@ tags: ["Java 8", "Coding Conventions", "Lambda", "Readability"]
 
 # Use Optional::map
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Extracts an `Optional::map` from the consumer used in `Optional::ifPresent`. 
@@ -29,6 +23,12 @@ This makes complicated code blocks easier to read and reuse.
 
 Arguably, the lambda expression is easier to read and can be combined with other `Optional` operations.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -72,8 +72,6 @@ oUser.map(user -> user.getAddress()).ifPresent(address -> {
 ```
 
 <VersionNotice />
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

@@ -15,13 +15,6 @@ tags: ["Java 5", "String Manipulation"]
 
 # Use Portable Newline
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 This rule replaces any occurrences of '\n' with '%n'.  
@@ -31,6 +24,12 @@ For example 'String.format("\n\n")' is replaced by 'String.format("%n%n")'.
 
 The benefit of this approach is that '%n' is portable across platforms.  
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -76,8 +75,6 @@ public class TestStringFormatLineSeparatorRule {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />

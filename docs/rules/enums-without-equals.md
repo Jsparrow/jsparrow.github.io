@@ -15,13 +15,6 @@ tags: ["Free", "Java 5", "Coding Conventions"]
 
 # Replace equals() on Enum Constants
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
-
 ## Description
 
 Replaces occurrences of `equals()` on Enum constants with an identity comparison (`==`).
@@ -31,6 +24,12 @@ In the case the equals relation is wrapped with an boolean negation the result w
 
 Technically, equals and `==` are the same. `==` however is null safe and thus can help avoid programming errors.
 
+
+## Tags
+
+::: tip Tags
+<TagLinks />
+:::
 
 ## Code Changes
 
@@ -82,8 +81,6 @@ public boolean isRoundUp(RoundingMode roundingMode) {
 <VersionNotice />
 
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />
