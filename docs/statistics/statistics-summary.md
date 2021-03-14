@@ -6,7 +6,7 @@ sidebarDepth: 2
 
 For our testing we measured open source projects on GitHub.
 
-The following statistics show combined results all those projects. The [jSparrow Eclipse Plugin](/eclipse/getting-started.html) has been used to produce the results.
+The following statistics show combined results over all those projects. The [jSparrow Eclipse Plugin](/eclipse/getting-started.html) has been used to produce the results.
 
 <h2>Summary of Statistics</h2>
 
