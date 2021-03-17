@@ -1,22 +1,23 @@
 ---
-title: Replace JUnit 4 Assert with JUnit Jupiter
-ruleId: ReplaceJUnit4AssertWithJupiter
+title: Replace JUnit 4 Assertions with JUnit Jupiter
+ruleId: ReplaceJUnit4AssertionsWithJupiter
 since: 3.28.0
 minJavaVersion: 8
 remediationCost: 15
     
 description:
-    This rule contributes to the stepwise transition from JUnit 4 to JUnit 5 by replacing invocations of Methods declared in the JUnit 4 class `org.junit.Assert` by the corresponding invocations of methods declared in the JUnit 5 class `org.junit.jupiter.api.Assertions`.
+    This rule contributes to the stepwise transition from JUnit 4 to JUnit 5 by replacing the assertions methods defined in JUnit 4 class 'org.junit.Assert' by equivalent assertion methods defined in the JUnit 5 class 'org.junit.jupiter.api.Assertions'.
 tags: ["Java 8", "Testing"]
 ---
 
-# Replace JUnit 4 Assert with JUnit Jupiter
+# Replace JUnit 4 Assertions with JUnit Jupiter
 
 ## Description
 
-In JUnit Jupiter, all methods used to carry out assertions are declared by the class [`org.junit.jupiter.api.Assertions`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assert.html), while in JUnit 4 annthe corresponding methods are declared by the class [`org.junit.Assert`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html).
+This rule contributes to a stepwise transition to JUnit 5 by replacing the JUnit 4 assertion methods by the equivalent JUnit 5 ones.
+In JUnit 5, all methods used to carry out assertions are declared in [`org.junit.jupiter.api.Assertions`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html), while in JUnit 4 the equivalent assertion methods are declared in [`org.junit.Assert`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assert.html).
 
-This rule looks for invocations of overloaded methods of the class JUnit 4 Assert, see the following examples:
+This rule looks for invocations of overloaded methods of the JUnit 4 class `Assert`, see the following examples:
 * [`assertArrayEquals`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assert.html#assertArrayEquals(java.lang.Object[],%20java.lang.Object[]))
 * [`assertEquals`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assert.html#assertEquals(java.lang.Object,%20java.lang.Object))
 * [`assertFalse`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assert.html#assertFalse(boolean))
@@ -28,7 +29,7 @@ This rule looks for invocations of overloaded methods of the class JUnit 4 Asser
 * [`assertTrue`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assert.html#assertTrue(boolean))
 * [`fail`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assert.html#fail())
 
-and replaces them with the invocations of the corresponding - also overloaded - alternatives declared in the JUnit 5 class Assertions:
+and replaces them with the invocations of equivalent - also overloaded - assertion alternatives declared in the JUnit 5 class `Assertions`:
 
 * [`assertArrayEquals`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html#assertArrayEquals(java.lang.Object%5B%5D,java.lang.Object%5B%5D))
 * [`assertEquals`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html#assertEquals(java.lang.Object,java.lang.Object))
@@ -41,7 +42,7 @@ and replaces them with the invocations of the corresponding - also overloaded - 
 * [`assertTrue`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html#assertTrue(boolean))
 * [`fail`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html#fail())
 
-By replacing each of these JUnit 4 Assert method invocations by the corresponding Jupiter alternatives, this rule promotes a stepwise transition to JUnit Jupiter.
+By replacing each of these JUnit 4 Assert methods by the corresponding Jupiter alternatives, this rule promotes a stepwise transition to JUnit 5.
 
 ::: warning Requirements
 This rule requires the following library to be present:
@@ -66,7 +67,7 @@ Migrates JUnit 4 tests to JUnit 5.
 
 __Pre__
 ```java
-package sim1892.junit.jupiter.githubdoc.replacingimport;
+package eu.jsparrow.junit.jupiter.samples;
 
 import static org.junit.Assert.assertEquals;
 
@@ -82,7 +83,7 @@ public class TestExample {
 
 __Post__
 ```java
-package sim1892.junit.jupiter.githubdoc.replacingimport;
+package eu.jsparrow.junit.jupiter.samples;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -99,7 +100,7 @@ public class TestExample {
 
 __Pre__
 ```java
-package sim1892.junit.jupiter.githubdoc.usingmessage;
+package eu.jsparrow.junit.jupiter.samples.usingmessage;
 
 import static org.junit.Assert.assertEquals;
 
@@ -115,7 +116,7 @@ public class TestExample {
 
 __Post__
 ```java
-package sim1892.junit.jupiter.githubdoc.usingmessage;
+package eu.jsparrow.junit.jupiter.samples.usingmessage;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -132,7 +133,7 @@ public class TestExample {
 
 __Pre__
 ```java
-package sim1892.junit.jupiter.githubdoc.replacequalifier;
+package eu.jsparrow.junit.jupiter.samples.replacequalifier;
 
 import static org.assertmethods.AssertMethods.assertEquals;
 import org.junit.Assert;
@@ -149,7 +150,7 @@ public class TestExample {
 
 __Post__
 ```java
-package sim1892.junit.jupiter.githubdoc.replacequalifier;
+package eu.jsparrow.junit.jupiter.samples.replacequalifier;
 
 import static org.assertmethods.AssertMethods.assertEquals;
 import org.junit.Assert;
@@ -164,11 +165,6 @@ public class TestExample {
 	}
 }
 ```
-
-## Limitations 
-
-The transformation cannot be performed automatically if: 
-* Any JUnit 4 annotation like `@Test` or `@Ignore` is used explicitly or implicitly within the given compilation unit. 
 
 <VersionNotice />
 
