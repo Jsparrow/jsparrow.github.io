@@ -35,7 +35,7 @@ This hotfix release fixes bugs on two refactoring rules.
 
 ## 3.27.0 <Badge vertical="middle" text="18.02.2021"/>
 
-The [92<sup>st</sup> refactoring rule](/rules/) is shipped with jSparrow 3.27.0. The new rule migrates JUnit 4 tests to JUnit 5.
+The [92<sup>nd</sup> refactoring rule](/rules/) is shipped with jSparrow 3.27.0. The new rule migrates JUnit 4 tests to JUnit 5.
 
 ### New Rule
 #### [**Replace JUnit 4 Annotations with JUnit Jupiter**](/rules/replace-j-unit4-annotations-with-jupiter.html)
