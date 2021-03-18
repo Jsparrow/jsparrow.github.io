@@ -5,6 +5,20 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.28.0 <Badge vertical="middle" text="18.03.2021"/>
+
+The [93<sup>rd</sup> refactoring rule](/rules/) is shipped with jSparrow 3.28.0. The new rule migrates JUnit 4 assertions to JUnit 5.
+
+### New Rule
+#### [**Replace JUnit 4 Assertions with JUnit Jupiter**](/rules/replace-j-unit4-assertions-with-jupiter.html)
+
+This rule contributes to a stepwise transition to JUnit 5 by replacing the JUnit 4 assertion methods by the equivalent JUnit 5 ones.
+
+### Fixed Bugs
+
+#### [Replace JUnit Expected Annotation Property with assertThrows](/rules/replace-j-unit-expected-annotation-property.html)
+* Extends the rule coverage by allowing non-final fields to be referenced in the lambda expressions used in `assertThrows`. 
+
 ## 3.27.1 <Badge vertical="middle" text="03.03.2021"/>
 
 ### Hotfix Release
@@ -21,7 +35,7 @@ This hotfix release fixes bugs on two refactoring rules.
 
 ## 3.27.0 <Badge vertical="middle" text="18.02.2021"/>
 
-The [92<sup>st</sup> refactoring rule](/rules/) is shipped with jSparrow 3.27.0. The new rule migrates JUnit 4 tests to JUnit 5.
+The [92<sup>nd</sup> refactoring rule](/rules/) is shipped with jSparrow 3.27.0. The new rule migrates JUnit 4 tests to JUnit 5.
 
 ### New Rule
 #### [**Replace JUnit 4 Annotations with JUnit Jupiter**](/rules/replace-j-unit4-annotations-with-jupiter.html)
