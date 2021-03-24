@@ -73,3 +73,34 @@ There are subtle differences in the approach how Eclipse and IntelliJ handle for
 * It is not possible to use different line wrapping options depending on the element of an annotation (e.g., "Wrap where necessary" on class annotations but not on local variable annotations)
 
 That being said, [here](https://gist.github.com/luigiwerzowa/bf91b62b6180fa86992f4cb7b7f71429) are formatting settings that are similar to IntelliJ. 
+
+## Specifying the Lombok Agent 
+
+If the project uses [Lombok](https://projectlombok.org/), then maven has to be configured to include the Lombok Java Agent upon the JVM spin up. 
+This is achieved through the [`MAVEN_OPTS`](https://maven.apache.org/configure.html) environment variable.
+Depending on your operating system, the environment variables are set as follows:
+
+### Linux
+
+Use the following commands to set `MAVEN_OPTS` and run the jSparrow Maven Plugin in **Linux**:
+```bash
+export MAVEN_OPTS=-javaagent:/path/to/lombok.jar
+mvn jsparrow:refactor
+```
+
+### Windows
+
+Use the following commands to set `MAVEN_OPTS` and run the jSparrow Maven Plugin in **Windows Command Prompt**:
+```batch
+set MAVEN_OPTS="-javaagent:C:\path\to\lombok.jar"
+mvn jsparrow:refactor
+```
+
+Similarly, on **Windows Powershell** you can use the following:
+
+```powershell
+$Env:MAVEN_OPTS = "-javaagent:C:\path\to\lombok.jar"
+mvn jsparrow:refactor
+```
+
+In both cases, relative paths can also be used.
