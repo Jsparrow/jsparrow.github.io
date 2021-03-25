@@ -5,6 +5,10 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.4.1 <Badge vertical="middle" text="25.03.2021"/>
+
+This patch adds support for maven projects using [Lombok](https://projectlombok.org/). See more details on [Specifying the Lombok Agent](additional-configuration.html#specifying-the-lombok-agent).
+
 ## 3.4.0 <Badge vertical="middle" text="18.03.2021"/>
 
 A new rule is shipped with release 3.4.0 of the jSparrow Maven Plugin:
