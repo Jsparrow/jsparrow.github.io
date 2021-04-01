@@ -1,5 +1,4 @@
 import Vuetify from 'vuetify';
-import Chat from 'vue-beautiful-chat';
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -7,6 +6,5 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
-  Vue.use(Vuetify);
-  Vue.use(Chat);
+  Vue.use(Vuetify)
 }
