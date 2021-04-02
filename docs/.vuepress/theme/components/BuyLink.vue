@@ -1,17 +1,17 @@
 <template>
   <v-app>
     <div class="buy-link" id="buy">
-      <v-btn color="info" href="https://jsparrow.eu/get-jsparrow/" target="_blank">
-        Compare Versions
+      <v-btn color="info" href="https://jsparrow.eu/schedule-demo/" target="_blank">
+        Schedule Demo
         <v-icon right dark small class=".v-icon--right">apps</v-icon>
       </v-btn>
       <v-btn
-        color="warning"
+        color="success"
         href="https://order.shareit.com/cart/new?vendorid=200267175&PRODUCT%5B300770603%5D=1"
         target="_blank"
       >
-        Unlock All Features
-        <v-icon right dark small class=".v-icon--right">favorite</v-icon>
+        Buy Now
+        <v-icon right dark small class=".v-icon--right">add_shopping_cart</v-icon>
       </v-btn>
     </div>
   </v-app>
