@@ -67,8 +67,6 @@ Migrates JUnit 4 tests to JUnit 5.
 
 __Pre__
 ```java
-package eu.jsparrow.junit.jupiter.samples;
-
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
@@ -83,10 +81,9 @@ public class TestExample {
 
 __Post__
 ```java
-package eu.jsparrow.junit.jupiter.samples;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestExample {
 	@Test
@@ -100,8 +97,6 @@ public class TestExample {
 
 __Pre__
 ```java
-package eu.jsparrow.junit.jupiter.samples.usingmessage;
-
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
@@ -116,10 +111,9 @@ public class TestExample {
 
 __Post__
 ```java
-package eu.jsparrow.junit.jupiter.samples.usingmessage;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestExample {
 	@Test
@@ -133,9 +127,8 @@ public class TestExample {
 
 __Pre__
 ```java
-package eu.jsparrow.junit.jupiter.samples.replacequalifier;
-
 import static org.assertmethods.AssertMethods.assertEquals;
+
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
@@ -150,12 +143,10 @@ public class TestExample {
 
 __Post__
 ```java
-package eu.jsparrow.junit.jupiter.samples.replacequalifier;
-
 import static org.assertmethods.AssertMethods.assertEquals;
-import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TestExample {
 	@Test
@@ -197,7 +188,7 @@ import java.io.IOException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
-public class ChangingTypeOfThrowingRunnableTestT {
+public class ChangingTypeOfThrowingRunnableTest {
 	@Test
 	public void testExpectedIOException() {
 		Executable runnable = () -> throwsIOException("Simply throw an IOException");
