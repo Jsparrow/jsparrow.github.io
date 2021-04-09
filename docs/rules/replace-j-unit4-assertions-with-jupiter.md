@@ -166,6 +166,46 @@ public class TestExample {
 }
 ```
 
+
+
+### Changing Type of ThrowingRunnable Variable
+
+__Pre__
+```java
+import static org.junit.Assert.assertThrows;
+
+import java.io.IOException;
+
+import org.junit.function.ThrowingRunnable;
+import org.junit.jupiter.api.Test;
+
+public class ChangingTypeOfThrowingRunnableTest {
+	@Test
+	public void testExpectedIOException() {
+		ThrowingRunnable runnable = () -> throwsIOException("Simply throw an IOException");
+		assertThrows("Test changing type of ThrowingRunnable variable.", IOException.class, runnable);
+	}
+}
+```
+
+__Post__
+```java
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import java.io.IOException;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+
+public class ChangingTypeOfThrowingRunnableTestT {
+	@Test
+	public void testExpectedIOException() {
+		Executable runnable = () -> throwsIOException("Simply throw an IOException");
+		assertThrows(IOException.class, runnable, "Test changing type of ThrowingRunnable variable.");
+	}
+}
+```
+
 <VersionNotice />
 
 ## Properties
