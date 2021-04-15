@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 3.29.0 <Badge vertical="middle" text="15.04.2021"/>
 
-The [94<sup>rd</sup> refactoring rule](/rules/) is shipped with jSparrow 3.29.0. The new rule replaces JUnit `assertThat` to Hamcrest.
+The [94<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.29.0. The new rule replaces JUnit `assertThat` to Hamcrest.
 
 ### New Rule
 #### [**Replace JUnit assertThat with Hamcrest**](/rules/replace-j-unit-assert-that-with-hamcrest.html)
