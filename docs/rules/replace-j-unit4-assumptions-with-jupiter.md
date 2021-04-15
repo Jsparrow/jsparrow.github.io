@@ -55,7 +55,7 @@ import static org.junit.Assume.assumeTrue;
 
 import org.junit.jupiter.api.Test;
 
-public class TestReplacingImport {
+public class TestExample {
 	@Test
 	void test() {
 		assumeTrue(1L == 1L);
@@ -69,7 +69,7 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 import org.junit.jupiter.api.Test;
 
-public class TestReplacingImport {
+public class TestExample {
 	@Test
 	void test() {
 		assumeTrue(1L == 1L);
@@ -85,7 +85,7 @@ import static org.junit.Assume.assumeTrue;
 
 import org.junit.jupiter.api.Test;
 
-public class TestReplacingInvocationWithMessage {
+public class TestExample {
 	@Test
 	void test() {
 		assumeTrue("Assumption that 1L is equal to 1L", 1L == 1L);
@@ -99,7 +99,7 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 import org.junit.jupiter.api.Test;
 
-public class TestReplacingInvocationWithMessage {
+public class TestExample {
 	@Test
 	void test() {
 		assumeTrue(1L == 1L, "Assumption that 1L is equal to 1L");
@@ -116,7 +116,7 @@ import static org.assumeMethods.AssumeMethods.assumeTrue;
 import org.junit.Assume;
 import org.junit.jupiter.api.Test;
 
-public class TestReplacingQualifier {
+public class TestExample {
 	@Test
 	void test() {
 		Assume.assumeTrue(1L == 1L);
@@ -132,7 +132,7 @@ import static org.assumeMethods.AssumeMethods.assumeTrue;
 import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 
-public class TestReplacingQualifier {
+public class TestExample {
 	@Test
 	void test() {
 		Assumptions.assumeTrue(1L == 1L);
