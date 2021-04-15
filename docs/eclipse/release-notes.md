@@ -5,6 +5,21 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.29.0 <Badge vertical="middle" text="15.04.2021"/>
+
+The [94<sup>rd</sup> refactoring rule](/rules/) is shipped with jSparrow 3.29.0. The new rule replaces JUnit `assertThat` to Hamcrest.
+
+### New Rule
+#### [**Replace JUnit assertThat with Hamcrest**](/rules/replace-j-unit-assert-that-with-hamcrest.html)
+
+The JUnit Assert.assertThat method is deprecated. Its sole purpose is to forward the call to the MatcherAssert.assertThat method defined in Hamcrest 1.3. 
+Therefore, it is recommended to directly use the equivalent assertion defined in the third party Hamcrest library.
+
+### Enhancements
+
+#### [Replace JUnit 4 Assertions with JUnit Jupiter](/rules/replace-j-unit4-assertions-with-jupiter.html)
+* Extends the rule coverage by allowing the replacement of JUnit 4 assertion [`Assert.assertThrows`](https://junit.org/junit4/javadoc/latest/org/junit/Assert.html#assertThrows(java.lang.Class,%20org.junit.function.ThrowingRunnable)) with its equialent Jupiter alternative [`Assertions.assertThrows`](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html#assertThrows-java.lang.Class-org.junit.jupiter.api.function.Executable-).
+
 ## 3.28.0 <Badge vertical="middle" text="18.03.2021"/>
 
 The [93<sup>rd</sup> refactoring rule](/rules/) is shipped with jSparrow 3.28.0. The new rule migrates JUnit 4 assertions to JUnit 5.
