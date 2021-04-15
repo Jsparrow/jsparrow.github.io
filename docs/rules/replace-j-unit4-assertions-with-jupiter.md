@@ -3,7 +3,7 @@ title: Replace JUnit 4 Assertions with JUnit Jupiter
 ruleId: ReplaceJUnit4AssertionsWithJupiter
 since: 3.28.0
 minJavaVersion: 8
-remediationCost: 15
+remediationCost: 2
     
 description:
     This rule contributes to the stepwise transition from JUnit 4 to JUnit 5 by replacing the assertions methods defined in JUnit 4 class 'org.junit.Assert' by equivalent assertion methods defined in the JUnit 5 class 'org.junit.jupiter.api.Assertions'.
