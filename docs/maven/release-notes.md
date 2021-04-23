@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.5.0 <Badge vertical="middle" text="15.04.2021"/>
+
+A new rule is shipped with release 3.5.0 of the jSparrow Maven Plugin:
+
+* [Replace JUnit assertThat with Hamcrest](/rules/replace-j-unit-assert-that-with-hamcrest.html)
+
 ## 3.4.1 <Badge vertical="middle" text="25.03.2021"/>
 
 This patch adds support for maven projects using [Lombok](https://projectlombok.org/). See more details on [Specifying the Lombok Agent](additional-configuration.html#specifying-the-lombok-agent).
