@@ -15,16 +15,14 @@ tags: ["Java 8", "Testing"]
 ## Description
 
 This rule contributes to a stepwise transition to JUnit 5 by replacing the JUnit 4 assumption methods by the equivalent JUnit 5 ones.
-In JUnit 5, all methods used to carry out assumptions are declared in [`org.junit.jupiter.api.Assumptions`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assumptions.html), while in JUnit 4 the equivalent methods are declared in [`org.junit.Assume`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html).
-
-This rule looks for invocations of overloaded methods of the JUnit 4 class `Assume`, for example:
-* [`assumeFalse`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeFalse(boolean))
-* [`assumeTrue`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeTrue(boolean))
+In JUnit 5, all methods used to carry out assumptions are declared in [`org.junit.jupiter.api.Assumptions`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assumptions.html), while in JUnit 4 the equivalent methods are declared in [`org.junit.Assume`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html). 
+This rule looks for invocations of overloaded methods of the JUnit 4 class `Assume` and replaces them with the invocations of equivalent overloaded alternatives declared in the JUnit 5 class `Assumptions`:
 
 
-and replaces them with the invocations of equivalent overloaded alternatives declared in the JUnit 5 class `Assumptions`:
-* [`assumeFalse`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assumptions.html#assumeFalse(boolean))
-* [`assumeTrue`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assumptions.html#assumeTrue(boolean))
+| Assertions in Junit 4 `org.junit.Assume` | Assertions in JUnit 5 `org.junit.jupiter.api.Assumptions` | 
+| ------------- | ------------- |
+| [`Assume.assumeFalse`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeFalse(boolean)) | [`Assumptions.assumeFalse`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assumptions.html#assumeFalse(boolean)) |
+| [`Assume.assumeTrue`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeTrue(boolean)) | [`Assumptions.assumeTrue`](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assumptions.html#assumeTrue(boolean)) |   
 
 By replacing each of these JUnit 4 Assume methods by the corresponding Jupiter alternative, this rule promotes a stepwise transition to JUnit 5.
 
@@ -58,7 +56,8 @@ import org.junit.jupiter.api.Test;
 public class TestExample {
 	@Test
 	void test() {
-		assumeTrue(1L == 1L);
+		assumeTrue(isTestExecutable());
+		//...
 	}
 }
 ```
@@ -72,7 +71,8 @@ import org.junit.jupiter.api.Test;
 public class TestExample {
 	@Test
 	void test() {
-		assumeTrue(1L == 1L);
+		assumeTrue(isTestExecutable());
+		//...
 	}
 }
 ```
@@ -88,7 +88,8 @@ import org.junit.jupiter.api.Test;
 public class TestExample {
 	@Test
 	void test() {
-		assumeTrue("Assumption that 1L is equal to 1L", 1L == 1L);
+		assumeTrue("Conditional execution.", isTestExecutable());
+		//...
 	}
 }
 ```
@@ -102,7 +103,8 @@ import org.junit.jupiter.api.Test;
 public class TestExample {
 	@Test
 	void test() {
-		assumeTrue(1L == 1L, "Assumption that 1L is equal to 1L");
+		assumeTrue(isTestExecutable(), "Conditional execution.");
+		//...
 	}
 }
 ```
@@ -119,8 +121,9 @@ import org.junit.jupiter.api.Test;
 public class TestExample {
 	@Test
 	void test() {
-		Assume.assumeTrue(1L == 1L);
-		assumeTrue(1L == 1L);
+		Assume.assumeTrue(isTestExecutable());
+		assumeTrue(isTestExecutable());
+		//...
 	}
 }
 ```
@@ -135,8 +138,9 @@ import org.junit.jupiter.api.Test;
 public class TestExample {
 	@Test
 	void test() {
-		Assumptions.assumeTrue(1L == 1L);
-		assumeTrue(1L == 1L);
+		Assumptions.assumeTrue(isTestExecutable());
+		assumeTrue(isTestExecutable());
+		//...
 	}
 }
 ```
