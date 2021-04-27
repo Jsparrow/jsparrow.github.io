@@ -50,14 +50,14 @@ Migrates JUnit 4 tests to JUnit 5.
 __Pre__
 ```java
 import static org.junit.Assume.assumeTrue;
-
-import org.junit.jupiter.api.Test;
-
-public class TestExample {
+//...
+public class OrderTest {
+	//...
 	@Test
-	void test() {
-		assumeTrue(isTestExecutable());
-		//...
+	public void testService() {
+		assumeTrue(orderService.isAvailableInStock("1", 5));
+		Order order = orderService.book("1", 5, "user-id");
+		assertNotNull(order);
 	}
 }
 ```
@@ -65,14 +65,14 @@ public class TestExample {
 __Post__
 ```java
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
-
-import org.junit.jupiter.api.Test;
-
-public class TestExample {
+//...
+public class OrderTest {
+	//...
 	@Test
-	void test() {
-		assumeTrue(isTestExecutable());
-		//...
+	public void testService() {
+		assumeTrue(orderService.isAvailableInStock("1", 5));
+		Order order = orderService.book("1", 5, "user-id");
+		assertNotNull(order);
 	}
 }
 ```
@@ -82,14 +82,14 @@ public class TestExample {
 __Pre__
 ```java
 import static org.junit.Assume.assumeTrue;
-
-import org.junit.jupiter.api.Test;
-
-public class TestExample {
+//...
+public class OrderTest {
+	//...
 	@Test
-	void test() {
-		assumeTrue("Conditional execution.", isTestExecutable());
-		//...
+	public void testService() {
+		assumeTrue("If product 1 is available", orderService.isAvailableInStock("1", 5));
+		Order order = orderService.book("1", 5, "user-id");
+		assertNotNull(order);
 	}
 }
 ```
@@ -97,14 +97,14 @@ public class TestExample {
 __Post__
 ```java
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
-
-import org.junit.jupiter.api.Test;
-
-public class TestExample {
+//...
+public class OrderTest {
+	//...
 	@Test
-	void test() {
-		assumeTrue(isTestExecutable(), "Conditional execution.");
-		//...
+	public void testService() {
+		assumeTrue(orderService.isAvailableInStock("1", 5), "If product 1 is available");
+		Order order = orderService.book("1", 5, "user-id");
+		assertNotNull(order);
 	}
 }
 ```
@@ -114,16 +114,15 @@ public class TestExample {
 __Pre__
 ```java
 import static org.assumeMethods.AssumeMethods.assumeTrue;
-
 import org.junit.Assume;
-import org.junit.jupiter.api.Test;
-
-public class TestExample {
+//...
+public class OrderTest {
+	//...
 	@Test
-	void test() {
-		Assume.assumeTrue(isTestExecutable());
-		assumeTrue(isTestExecutable());
-		//...
+	public void testService() {
+		Assume.assumeTrue(orderService.isAvailableInStock("1", 5));
+		Order order = orderService.book("1", 5, "user-id");
+		assertNotNull(order);
 	}
 }
 ```
@@ -131,16 +130,15 @@ public class TestExample {
 __Post__
 ```java
 import static org.assumeMethods.AssumeMethods.assumeTrue;
-
 import org.junit.jupiter.api.Assumptions;
-import org.junit.jupiter.api.Test;
-
-public class TestExample {
+//...
+public class OrderTest {
+	//...
 	@Test
-	void test() {
-		Assumptions.assumeTrue(isTestExecutable());
-		assumeTrue(isTestExecutable());
-		//...
+	public void testService() {
+		Assumptions.assumeTrue(orderService.isAvailableInStock("1", 5));
+		Order order = orderService.book("1", 5, "user-id");
+		assertNotNull(order);
 	}
 }
 ```
