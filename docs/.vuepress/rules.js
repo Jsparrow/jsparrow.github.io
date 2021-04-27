@@ -52,6 +52,7 @@ module.exports = [
 'inefficient-constructor',
 'replace-j-unit4-annotations-with-jupiter',
 'replace-j-unit4-assertions-with-jupiter',
+'replace-j-unit4-assumptions-with-jupiter',
 'replace-j-unit-assert-that-with-hamcrest',
 'replace-j-unit-expected-annotation-property',
 'replace-j-unit-expected-exception',
