@@ -20,9 +20,11 @@ This rule replaces each JUnit 4 [@Category](https://junit.org/junit4/javadoc/lat
 This rule requires the following library to be present:
 * junit:junit:4.13
 * org.junit.jupiter:junit-jupiter-api:5.0.0
+:::
 
-As for test suites, a refactoring may be necessary.
-For example, 
+::: warning
+In order to run the test suites, some further refactorings may be necessary.
+For example, the following suite:
 ```java
 import org.junit.experimental.categories.Categories;
 import org.junit.experimental.categories.Categories.IncludeCategory;
@@ -41,7 +43,7 @@ public class TestSuiteJUnit4 {
 
 }
 ```
-must be refactored to
+should be refactored to
 ```java
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.platform.suite.api.IncludeTags;
@@ -59,7 +61,7 @@ import org.test.jsparrow.examples.ClassBTest;
 public class TestSuiteJupiter {
 }
 ```
-Libraries needed by the refactored test suite:
+Additionally, the following libraries may by required for running the refactored tests:
 * junit-platform-runner:1.7.1 for compilation
 * junit-platform-engine:1.7.1 for running
 * junit-jupiter-engine:5.5.2 for running
@@ -77,8 +79,7 @@ Migrates JUnit 4 tests to JUnit 5.
 
 ## Code Changes
 
-
-### Replacing Category Annotation with Class Literal
+### Replacing Category with Tag Annotation
 
 __Pre__
 ```java
@@ -98,7 +99,7 @@ __Post__
 	}
 ```
 
-### Replacing Category Annotation with Array of Class Literals
+### Replacing Multiple Categories with Tag Annotations
 
 __Pre__
 ```java
@@ -136,9 +137,6 @@ __Post__
 		//...
 	}
 ```
-
-## Limitations 
-
 
 <VersionNotice />
 
