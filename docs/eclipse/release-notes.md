@@ -5,9 +5,18 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 3.30.0 <Badge vertical="middle" text="20.05.2021"/>
+
+The [95<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.30.0. The new rule replaces JUnit 4 assumption methods with Jupiter assumptions.
+
+### New Rule
+#### [**Replace JUnit 4 Assumptions with JUnit Jupiter**](/rules/replace-j-unit4-assumptions-with-jupiter.html)
+
+This rule contributes to a stepwise transition to JUnit 5 by replacing the JUnit 4 assumption methods `assumeTrue` and `assumeFalse` by their equivalent JUnit 5 ones.
+
 ## 3.29.0 <Badge vertical="middle" text="15.04.2021"/>
 
-The [94<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.29.0. The new rule replaces JUnit `assertThat` to Hamcrest.
+The [94<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.29.0. The new rule replaces JUnit `assertThat` with Hamcrest `assertThat`.
 
 ### New Rule
 #### [**Replace JUnit assertThat with Hamcrest**](/rules/replace-j-unit-assert-that-with-hamcrest.html)
