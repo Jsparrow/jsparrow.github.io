@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.6.0 <Badge vertical="middle" text="20.05.2021"/>
+
+A new rule is shipped with release 3.6.0 of the jSparrow Maven Plugin:
+
+* [Replace JUnit 4 Assumptions with JUnit Jupiter](/rules/replace-j-unit4-assumptions-with-jupiter.html)
+
 ## 3.5.0 <Badge vertical="middle" text="15.04.2021"/>
 
 A new rule is shipped with release 3.5.0 of the jSparrow Maven Plugin:
