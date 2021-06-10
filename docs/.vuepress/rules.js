@@ -76,6 +76,7 @@ module.exports = [
 'use-comparator-methods',
 'primitive-object-use-equals',
 'collections-factory-methods',
+'use-dedicated-assertions',
 'use-files-buffered-reader',
 'use-files-buffered-writer',
 'use-files-write-string',
