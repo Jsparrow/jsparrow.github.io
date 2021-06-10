@@ -75,6 +75,7 @@ module.exports = [
 'buffered-reader-lines',
 'use-collections-singleton-list',
 'use-comparator-methods',
+'use-dedicated-assertions',
 'primitive-object-use-equals',
 'collections-factory-methods',
 'use-files-buffered-reader',
