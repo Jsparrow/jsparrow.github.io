@@ -18,8 +18,20 @@ tags: ["Java 5", "Testing", "Coding Conventions"]
 ## Description
 
 Testing for equality or *null* values using `assertTrue` or `assertFalse` makes the test code and the assertion failure messages harder to read and understand. 
-The dedicated assertions should be used instead. 
-This rule replaces boolean assertions, e.g., `assertTrue` or `assertFalse` with the corresponding dedicated assertions, e.g., `assertEquals`, `assertNotEquals`, `assertNull` or `assertNotNull`. See the section below for concrete code examples.
+The dedicated assertions should be used instead.  
+This rule replaces the following boolean assertions:
+* `assertTrue` 
+* `assertFalse` 
+
+with the corresponding dedicated assertions: 
+* `assertEquals`
+* `assertNotEquals`
+* `assertNull`
+* `assertNotNull`
+* `assertSame`
+* `assertNotSame` 
+
+See the section below for concrete code examples.
 
 ::: warning Requirements
 This rule requires one of the following libraries to be present:
