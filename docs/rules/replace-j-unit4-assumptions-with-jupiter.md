@@ -27,7 +27,7 @@ This rule looks for invocations of overloaded methods of the JUnit 4 class `Assu
 By replacing each of these JUnit 4 Assume methods by the corresponding Jupiter alternative, this rule promotes a stepwise transition to JUnit 5.
 
 ::: warning Requirements
-This rule requires the following library to be present:
+This rule requires the following libraries to be present:
 * junit:junit:4.13
 * org.junit.jupiter:junit-jupiter-api:5.4.0
 :::
