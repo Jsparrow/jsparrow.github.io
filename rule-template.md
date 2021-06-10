@@ -15,12 +15,6 @@ tags: ["Java 1.1", "Java 1.2", "Java 1.3", "Java 1.4", "Java 5", "Java 7", "Java
 
 # Rulename
 
-[[toc]]
-
-## Properties
-
-<RuleProperties />
-
 ## Description
 
 Longer description of the rule.
@@ -41,8 +35,13 @@ This rule works on the following types and implementations of them:
 
 ## Configuration (Optional)
 
-## Code Changes
+## Tags
 
+::: tip Tags
+<TagLinks />
+:::
+
+## Code Changes
 
 ### Case description
 
@@ -82,8 +81,6 @@ An example code snippet could make sense.
 
 <VersionNotice />
 
-## Tags
+## Properties
 
-::: tip Tags
-<TagLinks />
-:::
+<RuleProperties />
