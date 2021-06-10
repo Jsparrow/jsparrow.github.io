@@ -5,6 +5,43 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.0.0 <Badge vertical="middle" text="17.06.2021"/>
+
+The new jSparrow 4.0.0 major release, introduces jSparrow Markers and adds 3 more rule to the rule set.
+
+### jSparrow Markers 
+
+jSparrow introduces resource markers for highlighting and providing quick-fixes for issues and code smells. 
+
+![jSparrow Markers](/img/eclipse/release_notes/jSparrowMarkers_003.gif)
+
+The following rules will automatically generate markers for the Java files that are opened in the editor:
+* [Replace equals() on Enum Constants](/rules/enums-without-equals.html)
+* [Use Functional Interfaces](/rules/functional-interface.html)
+* [Replace Inefficient Constructors with valueOf()](/rules/inefficient-constructor.html)
+* [Replace Expression Lambda with Method Reference](/rules/lambda-to-method-reference.html)
+* [Remove Boxing for String Conversions](/rules/primitive-boxed-for-string.html)
+* [Replace put(..) with putIfAbsent(..)](/rules/put-if-absent.html)
+* [Remove Null-Checks Before Instanceof](/rules/remove-null-check-before-instanceof.html)
+* [Reorder String Equality Check](/rules/string-literal-equality-check.html)
+* [Use Comparator Methods](/rules/use-comparator-methods.html)
+* [Replace Equality Check with isEmpty()](/rules/use-is-empty-on-collections.html)
+
+jSparrow Markers are not persisted on disk. They are generated and deleted when a Java file is respectively opened and closed. 
+
+### New Rules
+
+#### [**  **](/rules/__replace-j-unit-expected-exception__.html)
+
+
+
+#### [**  **](/rules/__replace-j-unit-expected-annotation-property__.html)
+
+
+
+#### [**  **](/rules/__use-files-write-string__.html)
+
+
 ## 3.30.0 <Badge vertical="middle" text="20.05.2021"/>
 
 The [95<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.30.0. The new rule replaces JUnit 4 assumption methods with Jupiter assumptions.
