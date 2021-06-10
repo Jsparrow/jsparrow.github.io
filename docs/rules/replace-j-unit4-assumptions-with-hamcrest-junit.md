@@ -1,7 +1,7 @@
 ---
 title: Replace JUnit Assumptions with Hamcrest Junit
 ruleId: ReplaceJUnit4AssumptionsWithHamcrestJUnit
-since: 3.30.0
+since: 4.0.0
 minJavaVersion: 5
 remediationCost: 2
     
@@ -18,7 +18,7 @@ This rule replaces invocations of methods like [`Assume.assumeThat`](https://jav
 Since JUnit 5 contains no equivalent assumption methods, this rule eliminates an obstacle for migration to JUnit 5. 
 
 ::: warning Requirements
-This rule requires the following library to be present:
+This rule requires the following libraries to be available in the project's classpath:
 * org.hamcrest:hamcrest-core:1.3
 * org.hamcrest:hamcrest-junit:1.0.0.0
 :::
@@ -45,13 +45,11 @@ import static org.junit.Assume.assumeThat;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	//...
 	@Test
 	public void test() {
-		assumeThat(stringvalue, equalToIgnoringCase("value"));
 		//...
+		assumeThat(value, equalToIgnoringCase("value"));
 	}
-	//...
 }
 ```
 
@@ -63,13 +61,11 @@ import static org.hamcrest.junit.MatcherAssume.assumeThat;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	//...
 	@Test
 	public void test() {
-		assumeThat(stringvalue, equalToIgnoringCase("value"));
 		//...
+		assumeThat(value, equalToIgnoringCase("value"));
 	}
-	//...
 }
 ```
 
@@ -83,14 +79,13 @@ import static org.junit.Assume.assumeThat;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	//...
 	@Test
 	public void test() {
-		assumeThat("Assumed that stringvalue is equal to \"value\", ignoring upper/lower case.", stringvalue,
-				equalToIgnoringCase("value"));
 		//...
+		assumeThat("Assuming case insensitive \"value\".", 
+			value,
+			equalToIgnoringCase("value"));
 	}
-	//...
 }
 ```
 
@@ -102,18 +97,17 @@ import static org.hamcrest.junit.MatcherAssume.assumeThat;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	//...
 	@Test
 	public void test() {
-		assumeThat("Assumed that stringvalue is equal to \"value\", ignoring upper/lower case.", stringvalue,
-				equalToIgnoringCase("value"));
 		//...
+		assumeThat("Assuming case insensitive \"value\".", 
+			value,
+			equalToIgnoringCase("value"));
 	}
-	//...
 }
 ```
 
-### Invocation of `assumeThat` with changing Qualifier
+### Invocation of `assumeThat` with Qualifier
 
 __Pre__
 ```java
@@ -124,17 +118,16 @@ import org.junit.Assume;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	//...
+
 	static <T> void assumeThat(T actual, Matcher<T> matcher) {
 		//...
 	}
-	//...
+
 	@Test
 	public void test() {
-		Assume.assumeThat(stringvalue, equalToIgnoringCase("value"));
 		//...
+		Assume.assumeThat(value, equalToIgnoringCase("value"));
 	}
-	//...
 }
 ```
 
@@ -147,17 +140,15 @@ import org.hamcrest.junit.MatcherAssume;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	//...
 	static <T> void assumeThat(T actual, Matcher<T> matcher) {
 		//...
 	}
-	//...
+
 	@Test
 	public void test() {
-		MatcherAssume.assumeThat(stringvalue, equalToIgnoringCase("value"));
 		//...
+		MatcherAssume.assumeThat(value, equalToIgnoringCase("value"));
 	}
-	//...
 }
 ```
 
@@ -170,13 +161,12 @@ import static org.junit.Assume.assumeNoException;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	//...
+
 	@Test
 	public void test() {
-		assumeNoException("Assuming that not any exception has been thrown.", exception);
 		//...
+		assumeNoException("No exception is thrown.", exception);
 	}
-	//...
 }
 ```
 
@@ -188,13 +178,12 @@ import static org.hamcrest.junit.MatcherAssume.assumeThat;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	//...
+	
 	@Test
 	public void test() {
-		assumeThat("Assuming that not any exception has been thrown.", exception, nullValue());
 		//...
+		assumeThat("No exception is thrown.", exception, nullValue());
 	}
-	//...
 }
 
 ```
@@ -209,15 +198,12 @@ import static org.junit.Assume.assumeNotNull;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	Object o1;
-	Object o2;
-	//...
+
 	@Test
 	public void test() {
-		assumeNotNull(o1, o2);
 		//...
+		assumeNotNull(o1, o2);
 	}
-	//...
 }
 ```
 
@@ -231,15 +217,12 @@ import static org.hamcrest.junit.MatcherAssume.assumeThat;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	Object o1;
-	Object o2;
-	//...
+
 	@Test
 	public void test() {
-		assumeThat(asList(o1, o1), everyItem(notNullValue()));
 		//...
+		assumeThat(asList(o1, o1), everyItem(notNullValue()));
 	}
-	//...
 }
 ```
 
@@ -252,14 +235,11 @@ import static org.junit.Assume.assumeNotNull;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	Object o;
-	//...
 	@Test
 	public void test() {
-		assumeNotNull(o);
 		//...
+		assumeNotNull(o);
 	}
-	//...
 }
 ```
 
@@ -271,14 +251,12 @@ import static org.hamcrest.junit.MatcherAssume.assumeThat;
 import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
-	Object o;
-	//...
+
 	@Test
 	public void test() {
-		assumeThat(o, notNullValue());
 		//...
+		assumeThat(o, notNullValue());
 	}
-	//...
 }
 ```
 
@@ -292,13 +270,12 @@ import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
 	Object[] objects;
-	//...
+
 	@Test
 	public void test() {
-		assumeNotNull(objects);
 		//...
+		assumeNotNull(objects);
 	}
-	//...
 }
 ```
 
@@ -313,14 +290,14 @@ import org.junit.jupiter.api.Test;
 
 public class AssumptionExampleTest {
 	Object[] objects;
-	//...
+
 	@Test
 	public void test() {
+		//...
 		assumeThat(objects, notNullValue());
 		assumeThat(asList(objects), everyItem(notNullValue()));
-		//...
+		
 	}
-	//...
 }
 ```
 
