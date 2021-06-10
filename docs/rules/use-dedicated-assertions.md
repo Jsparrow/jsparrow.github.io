@@ -9,27 +9,27 @@ links:
       url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS5785&q=S5785"
     
 description:
-    Short rule description (this is shown on the [summary page](https://jsparrow.github.io/rules/#summary)).
+    Replaces boolean assertions e.g., assertTrue and assertFalse with the corresponding dedicated assertions when testing for equality or null values. 
 tags: ["Java 5", "Testing", "Coding Conventions"]
 ---
 
 # Use Dedicated Assertions
 
-<RuleProperties />
-
 ## Description
 
-This rule looks for JUnit 4 and JUnit Jupiter assertions which can be replaced by more specific ones. 
-For example, `assertTrue(a.equals(b))` can be replaced by `assertEquals(a, b)`, `assertTrue(a == b)` can be 
-replaced by `assertSame(a, b)` and `assertTrue(a == null)` can be replaced by `assertNull(a)`.
+Testing for equality or *null* values using `assertTrue` or `assertFalse` makes the test code and the assertion failure messages harder to read and understand. 
+The dedicated assertions should be used instead. 
+This rule replaces boolean assertions, e.g., `assertTrue` or `assertFalse` with the corresponding dedicated assertions, e.g., `assertEquals`, `assertNotEquals`, `assertNull` or `assertNotNull`. See the section below for concrete code examples.
 
 ::: warning Requirements
 This rule requires one of the following libraries to be present:
-* junit:junit:4.13
+* junit:junit:4.0
 * org.junit.jupiter:junit-jupiter-api:5.0.0
 :::
 
 ## Benefits
+
+Improves the readability of both, the test code and the assertion failure messages. 
 
 ## Tags
 
@@ -39,16 +39,114 @@ This rule requires one of the following libraries to be present:
 
 ## Code Changes
 
-### Case description
+### Testing Equality
 
 __Pre__
 ```java
-sampleCode();
+@Test
+void equalityTesting() {
+    User expected = new User(0, "John", "Snow");
+    User other = new User(37, "John", "Snow");
+    User actual = userRepo.findById(0);
+    assertTrue(expected.equals(actual));
+    assertFalse(other.equals(actual));
+}
 ```
 
 __Post__
 ```java
-sampleCode();
+@Test
+void equalityTesting() {
+    User expected = new User(0, "John", "Snow");
+    User actual = userRepo.findById(0);
+    assertEquals(expected, actual);
+    assertNotEquals(other, actual);
+}
+```
+
+### Testing Null Values
+
+__Pre__
+```java
+@Test
+void nullnessTesting() {
+    User user = userRepo.findById(0);
+    User nullUser = userRepo.findById(-1);
+    assertTrue(user != null);
+    assertTrue(nullUser == null);
+}
+```
+
+__Post__
+```java
+@Test
+void nullnessTesting() {
+    User user = userRepo.findById(0);
+    assertNotNull(user);
+    assertNull(nullUser);
+}
+```
+
+### Constants as Expected Values
+
+__Pre__
+```java
+@Test
+void usingConstantsAsExpectedValues() {
+    User user = userRepo.findById(0);
+    assertTrue(user.getFirstName().equals("John"));
+}
+```
+
+__Post__
+```java
+@Test
+void usingConstantsAsExpectedValues() {
+    User user = userRepo.findById(0);
+    assertEquals("John", user.getFirstName());
+}
+```
+
+### Comparing Primitives
+
+__Pre__
+```java
+@Test
+void comparingPrimitives() {
+    User user = userRepo.findById("0");
+    assertTrue(0 == user.getId());
+}
+```
+
+__Post__
+```java
+@Test
+void comparingPrimitives() {
+    User user = userRepo.findById("0");
+    assertEquals(0, user.getId());
+}
+```
+
+### Comparing Same Objects
+
+__Pre__
+```java
+@Test
+void compareSame() {
+    User user = userRepo.findById("0");
+    User actual = userRepo.save(user);
+    assertTrue(user == actual);
+}
+```
+
+__Post__
+```java
+@Test
+void compareSame() {
+    User user = userRepo.findById("0");
+    User actual = userRepo.save(user);
+    assertSame(user, actual);
+}
 ```
 
 <VersionNotice />
