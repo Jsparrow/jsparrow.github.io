@@ -13,7 +13,7 @@ The new jSparrow 4.0.0 major release introduces jSparrow Markers and adds 3 more
 
 jSparrow introduces resource markers for highlighting and providing quick-fixes for issues and code smells. 
 
-![jSparrow Markers](/img/eclipse/release_notes/jSparrowMarkers_003.gif)
+![jSparrow Markers](/img/eclipse/release_notes/jSparrowMarkers_016.gif)
 
 The following rules will automatically generate markers for the Java files that are opened in the editor:
 * [Replace equals() on Enum Constants](/rules/enums-without-equals.html)
@@ -27,13 +27,13 @@ The following rules will automatically generate markers for the Java files that 
 * [Use Comparator Methods](/rules/use-comparator-methods.html)
 * [Replace Equality Check with isEmpty()](/rules/use-is-empty-on-collections.html)
 
-jSparrow Markers are not persisted on disk. They are generated and deleted when a Java file is respectively opened and closed. 
+jSparrow Markers are not persisted on disk. They are generated and deleted when a Java file is opened and closed. 
 
 ### New Rules
 
 #### [**Replace JUnit Assumptions with Hamcrest JUnit**](/rules/replace-j-unit4-assumptions-with-hamcrest-junit.html)
 
-This rule replaces invocations of methods like [`Assume.assumeThat`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)), [`Assume.assumeNoException`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNoException(java.lang.String,%20java.lang.Throwable)) or [`Assume.assumeNotNull`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNotNull(java.lang.Object...)) by equivalent invocations of methods like [`MatcherAssume.assumeThat`](https://www.javadoc.io/doc/org.hamcrest/hamcrest-junit/1.0.0.0/org/hamcrest/junit/MatcherAssume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)) which belong to the third party Hamcrest JUnit library. 
+This rule replaces JUnit assumptions [`assumeThat`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)), [`assumeNoException`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNoException(java.lang.String,%20java.lang.Throwable)) or [`assumeNotNull`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNotNull(java.lang.Object...)) by equivalent Hamcrest assumptions [`MatcherAssume.assumeThat`](https://www.javadoc.io/doc/org.hamcrest/hamcrest-junit/1.0.0.0/org/hamcrest/junit/MatcherAssume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)). 
 Since JUnit 5 contains no equivalent assumption methods, this rule eliminates an obstacle for migration to JUnit 5. 
 
 #### [**Replace JUnit 4 Category with JUnit Jupiter Tag**](/rules/replace-j-unit4-category-with-jupiter-tag.html)
