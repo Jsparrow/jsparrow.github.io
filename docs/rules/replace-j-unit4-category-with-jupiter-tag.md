@@ -14,7 +14,8 @@ tags: ["Java 8", "Testing"]
 
 ## Description
 
-This rule replaces each JUnit 4 [@Category](https://junit.org/junit4/javadoc/latest/org/junit/experimental/categories/Category.html) annotation with one or more JUnit Jupiter [@Tag](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Tag.html) annotations. This replacements are a further step in direction of a transition from JUnit 4 to JUnit Jupiter.
+This rule replaces each JUnit 4 [@Category](https://junit.org/junit4/javadoc/latest/org/junit/experimental/categories/Category.html) annotation with one or more JUnit Jupiter [@Tag](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Tag.html) annotations. 
+These replacements are a further step towards a transition from JUnit 4 to JUnit Jupiter.
 
 ::: warning Requirements
 This rule requires the following library to be present:
@@ -83,59 +84,59 @@ Migrates JUnit 4 tests to JUnit 5.
 
 __Pre__
 ```java
-	@Category(FirstCategory.class)
-	@Test
-	public void test() {
-		//...
-	}
+@Category(FirstCategory.class)
+@Test
+public void test() {
+	//...
+}
 ```
 
 __Post__
 ```java
-	@Tag("org.test.jsparrow.examples.FirstCategory")
-	@Test
-	public void test() {
-		//...
-	}
+@Tag("org.test.jsparrow.examples.FirstCategory")
+@Test
+public void test() {
+	//...
+}
 ```
 
 ### Replacing Multiple Categories with Tag Annotations
 
 __Pre__
 ```java
-	@Category({ FirstCategory.class, SecondCategory.class })
-	@Test
-	public void test() {
-		// ...
-	}
+@Category({ FirstCategory.class, SecondCategory.class })
+@Test
+public void test() {
+	// ...
+}
 ```
 
 __Post__
 ```java
-	@Tag("org.test.jsparrow.examples.FirstCategory")
-	@Tag("org.test.jsparrow.examples.SecondCategory")
-	@Test
-	public void test() {
-		// ...
-	}
+@Tag("org.test.jsparrow.examples.FirstCategory")
+@Tag("org.test.jsparrow.examples.SecondCategory")
+@Test
+public void test() {
+	// ...
+}
 ```
 
 ### Category Annotation on a Class
 
 __Pre__
 ```java
-	@Category(ExampleCategory.class)
-	public class ExampleTest {
-		//...
-	}
+@Category(ExampleCategory.class)
+public class ExampleTest {
+	//...
+}
 ```
 
 __Post__
 ```java
-	@Tag("org.test.jsparrow.examples.ExampleCategory")
-	public class ExampleTest {
-		//...
-	}
+@Tag("org.test.jsparrow.examples.ExampleCategory")
+public class ExampleTest {
+	//...
+}
 ```
 
 <VersionNotice />

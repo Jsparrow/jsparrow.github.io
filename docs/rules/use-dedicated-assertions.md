@@ -31,7 +31,7 @@ with the corresponding dedicated assertions:
 * `assertSame`
 * `assertNotSame` 
 
-See the section below for concrete code examples.
+See the section [below](#code-changes) for concrete code examples.
 
 ::: warning Requirements
 This rule requires one of the following libraries to be present:
