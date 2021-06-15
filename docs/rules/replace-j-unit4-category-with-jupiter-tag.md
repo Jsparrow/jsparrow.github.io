@@ -1,7 +1,7 @@
 ---
 title: Replace JUnit 4 Category with JUnit Jupiter Tag
 ruleId: ReplaceJUnit4CategoryWithJupiterTag
-since: 3.30.0
+since: 4.0.0
 minJavaVersion: 8
 remediationCost: 5
     
@@ -14,7 +14,7 @@ tags: ["Java 8", "Testing"]
 
 ## Description
 
-This rule replaces each JUnit 4 [@Category](https://junit.org/junit4/javadoc/latest/org/junit/experimental/categories/Category.html) annotation with one or more JUnit Jupiter [@Tag](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Tag.html) annotations. 
+This rule replaces JUnit 4 [@Category](https://junit.org/junit4/javadoc/latest/org/junit/experimental/categories/Category.html) annotations with one or more JUnit Jupiter [@Tag](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Tag.html) annotations. 
 These replacements are a further step towards a transition from JUnit 4 to JUnit Jupiter.
 
 ::: warning Requirements
