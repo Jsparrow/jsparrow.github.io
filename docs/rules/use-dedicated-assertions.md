@@ -1,7 +1,7 @@
 ---
 title: Use Dedicated Assertions
 ruleId: UseDedicatedAssertions
-since: 3.31.0
+since: 4.0.0
 minJavaVersion: 5
 remediationCost: 2
 links:
@@ -31,7 +31,7 @@ with the corresponding dedicated assertions:
 * `assertSame`
 * `assertNotSame` 
 
-See the section [below](#code-changes) for concrete code examples.
+See the section [below](#code-changes) for more code examples.
 
 ::: warning Requirements
 This rule requires one of the following libraries to be present:
@@ -70,6 +70,7 @@ __Post__
 @Test
 void equalityTesting() {
     User expected = new User(0, "John", "Snow");
+    User other = new User(37, "John", "Snow");
     User actual = userRepo.findById(0);
     assertEquals(expected, actual);
     assertNotEquals(other, actual);
@@ -94,6 +95,7 @@ __Post__
 @Test
 void nullnessTesting() {
     User user = userRepo.findById(0);
+    User nullUser = userRepo.findById(-1);
     assertNotNull(user);
     assertNull(nullUser);
 }
