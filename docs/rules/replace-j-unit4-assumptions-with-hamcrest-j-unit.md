@@ -14,7 +14,7 @@ tags: ["Java 5", "Testing"]
 
 ## Description
 
-This rule replaces invocations of methods like [`Assume.assumeThat`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)), [`Assume.assumeNoException`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNoException(java.lang.String,%20java.lang.Throwable)) or [`Assume.assumeNotNull`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNotNull(java.lang.Object...)) by equivalent invocations of methods like [`MatcherAssume.assumeThat`](https://www.javadoc.io/doc/org.hamcrest/hamcrest-junit/1.0.0.0/org/hamcrest/junit/MatcherAssume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)) which belong to the third party Hamcrest JUnit library. 
+This rule replaces the JUnit 4 assumptions [`Assume.assumeThat`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)), [`Assume.assumeNoException`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNoException(java.lang.String,%20java.lang.Throwable)), and [`Assume.assumeNotNull`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNotNull(java.lang.Object...)) by the equivalent invocations of Hamcrest JUnit assumption [`MatcherAssume.assumeThat`](https://www.javadoc.io/doc/org.hamcrest/hamcrest-junit/1.0.0.0/org/hamcrest/junit/MatcherAssume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)).  
 Since JUnit 5 contains no equivalent assumption methods, this rule eliminates an obstacle for migration to JUnit 5. 
 
 ::: warning Requirements
