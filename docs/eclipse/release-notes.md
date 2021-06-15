@@ -31,19 +31,18 @@ jSparrow Markers are not persisted on disk. They are generated and deleted when 
 
 ### New Rules
 
-#### [**Replace JUnit Assumptions with Hamcrest JUnit**](/rules/replace-j-unit4-assumptions-with-hamcrest-junit.html)
+#### [**Use Dedicated Assertions**](/rules/use-dedicated-assertions.html)
 
-This rule replaces JUnit assumptions [`assumeThat`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)), [`assumeNoException`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNoException(java.lang.String,%20java.lang.Throwable)) or [`assumeNotNull`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNotNull(java.lang.Object...)) by equivalent Hamcrest assumptions [`MatcherAssume.assumeThat`](https://www.javadoc.io/doc/org.hamcrest/hamcrest-junit/1.0.0.0/org/hamcrest/junit/MatcherAssume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)). 
-Since JUnit 5 contains no equivalent assumption methods, this rule eliminates an obstacle for migration to JUnit 5. 
+Replaces boolean assertions (e.g., `assertTrue` and `assertFalse`) with the corresponding dedicated assertions when testing for equality or **null** values.  
+For example, `assertTrue(a.equals(b))` can be replaced by `assertEquals(a, b)`. Similarly, `assertSame`, `assertNotSame`, `assertNull`, or `assertNotNull` can be used instead of `assertTrue` or `assertFalse`.
+
+#### [**Replace JUnit Assumptions with Hamcrest JUnit**](/rules/replace-j-unit4-assumptions-with-hamcrest-j-unit.html)
+
+This rule replaces the JUnit 4 assumptions [`assumeThat`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)), [`assumeNoException`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNoException(java.lang.String,%20java.lang.Throwable)), and [`assumeNotNull`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNotNull(java.lang.Object...)) by the equivalent Hamcrest JUnit assumption [`MatcherAssume.assumeThat`](https://www.javadoc.io/doc/org.hamcrest/hamcrest-junit/1.0.0.0/org/hamcrest/junit/MatcherAssume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)). 
 
 #### [**Replace JUnit 4 Category with JUnit Jupiter Tag**](/rules/replace-j-unit4-category-with-jupiter-tag.html)
 
-This rule replaces each JUnit 4 [@Category](https://junit.org/junit4/javadoc/latest/org/junit/experimental/categories/Category.html) annotation with one or more JUnit Jupiter [@Tag](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Tag.html) annotations. 
-These replacements are a further step towards a transition from JUnit 4 to JUnit Jupiter.
-
-#### [**Use Dedicated Assertions**](/rules/use-dedicated-assertions.html)
-
-Replaces boolean assertions (e.g., `assertTrue` and `assertFalse`) with the corresponding dedicated assertions (e.g., `assertEquals`, `assertNotNull`, etc) when testing for equality or null values.
+This rule replaces JUnit 4 [@Category](https://junit.org/junit4/javadoc/latest/org/junit/experimental/categories/Category.html) annotations with one or more JUnit Jupiter [@Tag](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Tag.html) annotations.
 
 ## 3.30.0 <Badge vertical="middle" text="20.05.2021"/>
 
