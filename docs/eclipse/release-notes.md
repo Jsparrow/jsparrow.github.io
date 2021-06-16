@@ -13,7 +13,7 @@ The new jSparrow 4.0.0 major release introduces jSparrow Markers and adds 3 more
 
 jSparrow introduces resource markers for highlighting and providing quick-fixes for issues and code smells. 
 
-![jSparrow Markers](/img/eclipse/release_notes/jSparrowMarkers_016.gif)
+![jSparrow Markers](/img/eclipse/release_notes/jSparrowMarker.gif)
 
 The following rules will automatically generate markers for the Java files that are opened in the editor:
 * [Replace equals() on Enum Constants](/rules/enums-without-equals.html)
