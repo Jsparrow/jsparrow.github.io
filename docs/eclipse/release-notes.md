@@ -5,6 +5,45 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.0.0 <Badge vertical="middle" text="17.06.2021"/>
+
+The new jSparrow 4.0.0 major release introduces jSparrow Markers and adds 3 more rules to the rule set, thus increasing the total number of refactoring rules to 98.
+
+### jSparrow Markers 
+
+jSparrow introduces resource markers for highlighting and providing quick-fixes for issues and code smells. 
+
+![jSparrow Markers](/img/eclipse/release_notes/jSparrowMarker.gif)
+
+The following rules will automatically generate markers for the Java files that are opened in the editor:
+* [Replace equals() on Enum Constants](/rules/enums-without-equals.html)
+* [Use Functional Interfaces](/rules/functional-interface.html)
+* [Replace Inefficient Constructors with valueOf()](/rules/inefficient-constructor.html)
+* [Replace Expression Lambda with Method Reference](/rules/lambda-to-method-reference.html)
+* [Remove Boxing for String Conversions](/rules/primitive-boxed-for-string.html)
+* [Replace put(..) with putIfAbsent(..)](/rules/put-if-absent.html)
+* [Remove Null-Checks Before Instanceof](/rules/remove-null-check-before-instanceof.html)
+* [Reorder String Equality Check](/rules/string-literal-equality-check.html)
+* [Use Comparator Methods](/rules/use-comparator-methods.html)
+* [Replace Equality Check with isEmpty()](/rules/use-is-empty-on-collections.html)
+
+jSparrow Markers are not persisted on disk. They are generated and deleted when a Java file is opened and closed. 
+
+### New Rules
+
+#### [**Use Dedicated Assertions**](/rules/use-dedicated-assertions.html)
+
+Replaces boolean assertions (e.g., `assertTrue` and `assertFalse`) with the corresponding dedicated assertions when testing for equality or **null** values.  
+For example, `assertTrue(a.equals(b))` can be replaced by `assertEquals(a, b)`. Similarly, `assertSame`, `assertNotSame`, `assertNull`, or `assertNotNull` can be used instead of `assertTrue` or `assertFalse`.
+
+#### [**Replace JUnit Assumptions with Hamcrest JUnit**](/rules/replace-j-unit4-assumptions-with-hamcrest-j-unit.html)
+
+This rule replaces the JUnit 4 assumptions [`assumeThat`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)), [`assumeNoException`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNoException(java.lang.String,%20java.lang.Throwable)), and [`assumeNotNull`](https://javadoc.io/doc/junit/junit/latest/org/junit/Assume.html#assumeNotNull(java.lang.Object...)) by the equivalent Hamcrest JUnit assumption [`MatcherAssume.assumeThat`](https://www.javadoc.io/doc/org.hamcrest/hamcrest-junit/1.0.0.0/org/hamcrest/junit/MatcherAssume.html#assumeThat(java.lang.String,%20T,%20org.hamcrest.Matcher)). 
+
+#### [**Replace JUnit 4 Category with JUnit Jupiter Tag**](/rules/replace-j-unit4-category-with-jupiter-tag.html)
+
+This rule replaces JUnit 4 [@Category](https://junit.org/junit4/javadoc/latest/org/junit/experimental/categories/Category.html) annotations with one or more JUnit Jupiter [@Tag](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Tag.html) annotations.
+
 ## 3.30.0 <Badge vertical="middle" text="20.05.2021"/>
 
 The [95<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 3.30.0. The new rule replaces JUnit 4 assumption methods with Jupiter assumptions.

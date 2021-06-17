@@ -5,6 +5,14 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.7.0 <Badge vertical="middle" text="17.06.2021"/>
+
+Three new rules are shipped with the midsummer release of jSparrow Maven Plugin 3.7.0:
+
+* [Use Dedicated Assertions](/rules/use-dedicated-assertions.html)
+* [Replace JUnit Assumptions with Hamcrest JUnit](/rules/replace-j-unit4-assumptions-with-hamcrest-j-unit.html)
+* [Replace JUnit 4 Category with JUnit Jupiter Tag](/rules/replace-j-unit4-category-with-jupiter-tag.html)
+
 ## 3.6.0 <Badge vertical="middle" text="20.05.2021"/>
 
 A new rule is shipped with release 3.6.0 of the jSparrow Maven Plugin:
