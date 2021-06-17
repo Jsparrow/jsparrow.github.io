@@ -26,9 +26,9 @@ You can use jSparrow as part of your development process in the Eclipse IDE or i
 
 ## The Latest New Features
 
-We are excited to announce the midsummer release comes with a major update to jSparrow 4.0.0.
-The key new features in this release are the **jSparrow Markers**.  
-Additionally, 3 more rules for refactoring JUnit tests are added to the jSparrow rule set. 
+We are excited to announce that this midsummer release brings a major update to **jSparrow 4.0.0**.
+The key new feature in this release is the **jSparrow Marker**. 
+Additionally, 3 more rules for refactoring JUnit tests are added to the jSparrow rule set.  
 Check out the release notes for [jSparrow 4.0.0](/eclipse/release-notes.html#_4-0-0) and the [jSparrow Maven plugin 3.7.0](/maven/release-notes.html#_3-7-0)!
 
 ## Where to find jSparrow?
