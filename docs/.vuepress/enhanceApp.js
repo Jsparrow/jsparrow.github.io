@@ -1,4 +1,6 @@
 import Vuetify from 'vuetify';
+import Vue from "vue";
+import VueGtag from "vue-gtag";
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -8,3 +10,5 @@ export default ({
 }) => {
   Vue.use(Vuetify)
 }
+
+Vue.use(VueGtag, { config: { id: "UA-144352955-2" } });
