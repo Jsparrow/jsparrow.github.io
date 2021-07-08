@@ -50,6 +50,7 @@ module.exports = [
 'enhanced-for-loop-to-stream-find-first',
 'enhanced-for-loop-to-stream-take-while',
 'inefficient-constructor',
+'replace-j-unit3-tests',
 'replace-j-unit4-annotations-with-jupiter',
 'replace-j-unit4-assertions-with-jupiter',
 'replace-j-unit4-assumptions-with-hamcrest-j-unit',
