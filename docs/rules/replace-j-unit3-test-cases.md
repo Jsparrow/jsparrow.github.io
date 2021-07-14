@@ -10,7 +10,7 @@ description:
 tags: ["Java 8", "Testing"]
 ---
 
-# Replace JUnit 3 Tests
+# Replace JUnit 3 Test Cases
 
 ## Description
 
