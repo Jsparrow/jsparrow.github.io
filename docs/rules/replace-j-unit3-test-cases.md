@@ -3,7 +3,7 @@ title: Replace JUnit 3 Tests
 ruleId: ReplaceJUnit3TestCases
 since: 4.1.0
 minJavaVersion: 5
-remediationCost: 2
+remediationCost: 15
     
 description:
     This rule migrates JUnit 3 tests to either JUnit JUpiter or JUnit 4 depending on the most up-to-date JUnit version available in the classpath. 
@@ -18,13 +18,13 @@ This rule migrates JUnit 3 tests to either JUnit JUpiter or JUnit 4 depending on
 The migration is achieved by: 
 * inserting the annoations to the test cases and life cycle methods accordingly 
 * inserting the correct import statements to the assertions or assumptions 
-* removing the extension to the JUnit 3 TestCase
+* removing the extension to the JUnit 3 TestCase class
 * and removing the main methods that used to serve as entry points for executing tests. 
 
-The migration of a test class is atomic, i.e., either all test cases and life cycle methods within the class are migrated or the class is left intact. 
+The migration of a test class is atomic, i.e., either all test cases and life cycle methods within the test class are migrated or the class is left intact. 
 
 ::: warning Requirements
-This rule requires either of the following library to be present:
+This rule requires either of the following libraries to be present:
 * JUnit 4
 * JUnit Jupiter
 :::
@@ -41,7 +41,7 @@ Migrates JUnit 3 tests.
 
 ## Code Changes
 
-### 
+### Migrate to JUnit 4
 
 __Pre__
 ```java
@@ -66,7 +66,7 @@ public class ReplaceJUnit3TestCasesWithJUnit4Rule extends TestCase {
 	}
 
 	public static void main(String[] args) {
-
+		TestRunner.run(ReplaceJUnit3TestCasesWithJUnit4Rule.class);
 	}
 }
 ```
@@ -100,10 +100,11 @@ public class ReplaceJUnit3TestCasesWithJUnit4Rule {
 }
 ```
 
-### 
+### Migrate to JUnit Jupiter
 
 __Pre__
 ```java
+import junit.textui.TestRunner;
 import junit.framework.TestCase;
 
 public class ReplaceJUnit3TestCasesWithJupiterRule extends TestCase {
@@ -125,7 +126,7 @@ public class ReplaceJUnit3TestCasesWithJupiterRule extends TestCase {
 	}
 
 	public static void main(String[] args) {
-
+		TestRunner.run(ReplaceJUnit3TestCasesWithJupiterRule.class);
 	}
 }
 ```
