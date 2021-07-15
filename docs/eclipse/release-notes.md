@@ -5,6 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.1.0 <Badge vertical="middle" text="15.07.2021"/>
+
+The [99<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.1.0. The new rule replaces JUnit 3 test cases with JUnit 4 or JUnit Jupiter. 
+
+### New Rule 
+#### [**Replace JUnit 3 Test Cases**](/rules/replace-j-unit3-test-cases.html)
+
+This rule migrates JUnit 3 tests to either JUnit JUpiter or JUnit 4 depending on the most up-to-date JUnit version available in the classpath.
+
 ## 4.0.0 <Badge vertical="middle" text="17.06.2021"/>
 
 The new jSparrow 4.0.0 major release introduces jSparrow Markers and adds 3 more rules to the rule set, thus increasing the total number of refactoring rules to 98.
