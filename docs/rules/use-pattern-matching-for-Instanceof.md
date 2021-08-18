@@ -18,7 +18,7 @@ This rule replaces instanceof expressions by [Pattern Matching for instanceof](h
 
 It is very common for Java programs to contain logic that combines type checking using `instanceof` with explicit type casting. 
 Naturaly, an `instanceof` expression is followed by a local variable declaration initialized with a casting expression. 
-The Pattern Matching for Instanceof combines the three steps (i.e., type checking, variable declaration and type casting) into a single step, thus reducing some boilerplate code and eliminating sources of errors. 
+The Pattern Matching for instanceof combines these three steps (i.e., type checking, variable declaration and type casting) into a single step, thus reducing some boilerplate code and eliminating sources of errors. 
 
 ::: warning Requirements
 * Java 16
@@ -36,28 +36,66 @@ Removes code clutter. Improves readability.
 
 ## Code Changes
 
-### Sample One
+### Pattern Matching in If Statement
 
 __Pre__
 ```java
-
+if(o instanceof String) {
+    String value = (String)o;		
+    showValue(value);
+}
 ```
 
 __Post__
 ```java
-
+if(o instanceof String value) {
+    showValue(value);
+}
 ```
 
-### Sample Two
+### Pattern Matching in If-Then-Else Statement
 
 __Pre__
 ```java
-
+if (!(o instanceof String)) {
+    dontShowValue();
+} else {
+    String value = (String) o;
+    showValue(value);
+}
 ```
 
 __Post__
 ```java
+if (!(o instanceof String value)) {
+    dontShowValue();
 
+} else {
+    showValue(value);
+}
+```
+
+### Pattern Matching with Return Statement
+
+__Pre__
+```java
+if (!(o instanceof String)) {
+    dontShowValue();
+    return false;
+}
+String value = (String)o;
+showValue(value);
+return "Olympics 2020".equals(value);
+```
+
+__Post__
+```java
+if (!(o instanceof String value)) {
+    dontShowValue();
+    return false;
+}
+showValue(value);
+return "Olympics 2020".equals(value);
 ```
 
 <VersionNotice />
