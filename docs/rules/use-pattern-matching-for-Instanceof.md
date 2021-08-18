@@ -6,7 +6,7 @@ minJavaVersion: 16
 remediationCost: 5
     
 description:
-    This rule replaces instanceof expressions by instanceof expressions with Pattern Matching which is introduced in Java 16.
+    This rule replaces instanceof expressions by Pattern Matching for instanceof expressions introduced in Java 16.
 tags: ["Java 16", "Old Language Constructs", "Readability"]
 ---
 
@@ -14,8 +14,11 @@ tags: ["Java 16", "Old Language Constructs", "Readability"]
 
 ## Description
 
-This rule replaces instanceof expressions by instanceof expressions with Pattern Matching which is introduced in Java 16. 
-For example, a piece of code like "if(o instanceof String)" can be transformed to "if(o instanceof String value)".
+This rule replaces instanceof expressions by [Pattern Matching for instanceof](https://openjdk.java.net/jeps/394) introduced in Java 16. 
+
+It is very common for Java programs to contain logic that combines type checking using `instanceof` with explicit type casting. 
+Naturaly, an `instanceof` expression is followed by a local variable declaration initialized with a casting expression. 
+The Pattern Matching for Instanceof combines the three steps (i.e., type checking, variable declaration and type casting) into a single step, thus reducing some boilerplate code and eliminating sources of errors. 
 
 ::: warning Requirements
 * Java 16
