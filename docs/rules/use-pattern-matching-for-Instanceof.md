@@ -18,7 +18,7 @@ This rule replaces instanceof expressions by [Pattern Matching for instanceof](h
 
 It is very common for Java programs to contain logic that combines type checking using `instanceof` with explicit type casting. 
 Naturally, an `instanceof` expression is followed by a local variable declaration initialized with a casting expression. 
-The Pattern Matching for instanceof combines these three steps (i.e., type checking, variable declaration and type casting) into a single step, thus reducing boilerplate code and eliminating sources of errors. 
+Pattern Matching for instanceof combines these three steps (i.e., type checking, variable declaration, and type casting) into a single step, thus reducing boilerplate code and eliminating sources of errors. 
 
 ::: warning Requirements
 * Java 16
