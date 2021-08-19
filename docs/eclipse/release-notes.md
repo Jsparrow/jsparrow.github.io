@@ -5,6 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.1.0 <Badge vertical="middle" text="19.08.2021"/>
+
+The [100<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.2.0. The new rule supports upgrading to Java 16. 
+
+### New Rule
+#### [**Use Pattern Matching for Instanceof**](/rules/use-pattern-matching-for-instanceof.html)
+
+The new rule replaces instanceof expressions by [Pattern Matching for instanceof](https://openjdk.java.net/jeps/394) introduced in Java 16. 
+
 ## 4.1.0 <Badge vertical="middle" text="15.07.2021"/>
 
 The [99<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.1.0. The new rule replaces JUnit 3 test cases with JUnit 4 or JUnit Jupiter. 
