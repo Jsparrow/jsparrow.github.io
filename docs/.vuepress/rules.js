@@ -95,6 +95,7 @@ module.exports = [
 'use-parameterized-jpa-query',
 'use-parameterized-ldap-query',
 'use-parameterized-query',
+'use-pattern-matching-for-instanceof',
 'string-format-line-separator',
 'use-predefined-standard-charset',
 'lambda-for-each-if-wrapper-to-filter',
