@@ -5,7 +5,7 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
-## 4.1.0 <Badge vertical="middle" text="19.08.2021"/>
+## 4.2.0 <Badge vertical="middle" text="19.08.2021"/>
 
 The [100<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.2.0. The new rule supports upgrading to Java 16. 
 

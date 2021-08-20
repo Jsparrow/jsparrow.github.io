@@ -5,7 +5,7 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
-## 3.8.0 <Badge vertical="middle" text="20.05.2021"/>
+## 3.8.0 <Badge vertical="middle" text="20.07.2021"/>
 
 A new rule is shipped with release 3.8.0 of the jSparrow Maven Plugin:
 
