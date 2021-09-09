@@ -1,27 +1,25 @@
 ---
-title: Use Pattern Matching for Instanceof
-ruleId: UsePatternMatchingForInstanceof
-since: 4.2.0
-minJavaVersion: 16
-remediationCost: 5
+title: Replace String Format by Formatted
+ruleId: ReplaceStringFormatByFormatted
+since: 4.3.0
+minJavaVersion: 15
+remediationCost: 2
     
 description:
-    This rule replaces instanceof expressions by Pattern Matching for instanceof expressions introduced in Java 16.
-tags: ["Java 16", "Old Language Constructs", "Readability"]
+    This rule replaces invocations of the static method `String.format` by invocations of the instance method `String.formatted`.
+tags: ["Java 15", "Old Language Constructs", "Readability"]
 ---
 
-# Use Pattern Matching for Instanceof
+# Replace String Format by Formatted
 
 ## Description
 
-This rule replaces instanceof expressions by [Pattern Matching for instanceof](https://openjdk.java.net/jeps/394) introduced in Java 16. 
+Java 15 introduced the new instance method [`formatted​(Object... args)`](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)) for [`String`](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html).
 
-It is very common for Java programs to contain logic that combines type checking using `instanceof` with explicit type casting. 
-Naturally, an `instanceof` expression is followed by a local variable declaration initialized with a casting expression. 
-Pattern Matching for instanceof combines these three steps (i.e., type checking, variable declaration, and type casting) into a single step, thus reducing boilerplate code and eliminating sources of errors. 
+This rule replaces invocations of the static method [`String.format​(String format, Object... args)`](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...)) by invocations of the new method described above. This way code is simplified and readability is improved.
 
 ::: warning Requirements
-* Java 16
+* Java 15
 :::
 
 ## Benefits
@@ -36,65 +34,57 @@ Removes code clutter. Improves readability.
 
 ## Code Changes
 
-### Pattern Matching in If Statement
+### Formatted Data about a Person
 
 __Pre__
 ```java
-if(o instanceof String) {
-    String value = (String)o;		
-    showValue(value);
-}
+String output = String.format(
+    "Name: %s, Phone: %s, Address: %s, Salary: $%.2f",
+    name, phone, address, salary);
 ```
 
 __Post__
 ```java
-if(o instanceof String value) {
-    showValue(value);
-}
+String output = "Name: %s, Phone: %s, Address: %s, Salary: $%.2f"
+                .formatted(name, phone, address, salary);
 ```
 
-### Pattern Matching in If-Then-Else Statement
+### Using %n for Platform Independent Line Breaks
 
 __Pre__
 ```java
-if (!(o instanceof String)) {
-    dontShowValue();
-} else {
-    String value = (String) o;
-    showValue(value);
-}
+String output = String.format(
+    "Name: %s %s%nAddress: %s%nPhone: %s",
+    firstName, lastName, address, phone);
 ```
 
 __Post__
 ```java
-if (!(o instanceof String value)) {
-    dontShowValue();
-} else {
-    showValue(value);
-}
+String output = "Name: %s %s%nAddress: %s%nPhone: %s"
+                .formatted(firstName, lastName, address, phone);
 ```
 
-### Pattern Matching with Return Statement
+### Formatting a TextBlock
 
 __Pre__
 ```java
-if (!(o instanceof String)) {
-    dontShowValue();
-    return false;
-}
-String value = (String)o;
-showValue(value);
-return "Olympics 2020".equals(value);
+String output = String.format("""
+		Name:    %s
+		Phone:   %s
+		Address: %s
+		Salary:  $%.2f
+		""", 
+        name, phone, address, salary);
 ```
 
 __Post__
 ```java
-if (!(o instanceof String value)) {
-    dontShowValue();
-    return false;
-}
-showValue(value);
-return "Olympics 2020".equals(value);
+String output = """
+		Name:    %s
+		Phone:   %s
+		Address: %s
+		Salary:  $%.2f
+		""".formatted(name, phone, address, salary);
 ```
 
 <VersionNotice />
