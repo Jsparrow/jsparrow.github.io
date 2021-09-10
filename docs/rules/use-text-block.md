@@ -17,9 +17,10 @@ tags: ["Java 15", "Old Language Constructs", "Readability"]
 
 ## Description
 
-Java 15 introduced [Text Blocks](https://openjdk.java.net/jeps/378) which can express String literals spanning several lines of source code and avoid the need for the most escape sequences.
+Java 15 introduced [Text Blocks](https://openjdk.java.net/jeps/378) which can express String literals spanning several lines of source code and significantly reduce the need for escape sequences.
 
-This rule replaces String concatenation expresions with the operator `+` by Text Block String literals and thus increases the readability of String expressions.
+This rule replaces multiline String concatenation expressions with Text Block String literals. 
+Thus, removing some boilerplate code and increasing the readability of String expressions.
 
 ::: warning Requirements
 * Java 15
@@ -42,11 +43,11 @@ Reduces the need for escape sequences. Improves readability.
 __Pre__
 ```java
 String html = "" +
-		"<head>\n" +
-		"\t<meta charset=\"utf-8\">" +
-		"</head>\n" +
-		"<html>\n" + 
-		"<body class=\"default-view\" style=\"word-wrap: break-word;\">\n"+ 
+		"<html>\n" +
+		"\t<head>\n" +
+		"\t\t<meta charset=\"utf-8\">" +
+		"\t</head>\n" +
+		"\t<body class=\"default-view\" style=\"word-wrap: break-word;\">\n"+ 
 		"\t\t<p>Hello, world</p>\n" + 
 		"\t</body>\n"+
 		"</html>\n";
@@ -55,10 +56,11 @@ String html = "" +
 __Post__
 ```java
 String html = """
-		<head>
-			<meta charset="utf-8"></head>
 		<html>
-		<body class="default-view" style="word-wrap: break-word;">
+			<head>
+				<meta charset="utf-8">
+			</head>
+			<body class="default-view" style="word-wrap: break-word;">
 				<p>Hello, world</p>
 			</body>
 		</html>
@@ -99,12 +101,12 @@ String java = "" +
 
 __Post__
 ```java
-		String java = """
-				int[] intArray = new int[3];
-				intArray[0] = 10;
-				intArray[1] = 20;
-				intArray[2] = 30;
-		""";
+String java = """
+		int[] intArray = new int[3];
+		intArray[0] = 10;
+		intArray[1] = 20;
+		intArray[2] = 30;
+""";
 ```
 
 <VersionNotice />
