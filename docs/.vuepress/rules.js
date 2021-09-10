@@ -106,5 +106,6 @@ module.exports = [
 'remove-new-string-constructor',
 'use-string-builder-append',
 'string-utils',
+'use-text-block',
 'try-with-resource'
 ]
