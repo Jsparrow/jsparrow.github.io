@@ -60,6 +60,7 @@ module.exports = [
 'replace-j-unit-expected-annotation-property',
 'replace-j-unit-expected-exception',
 'replace-j-unit-timeout-annotation-property',
+'replace-string-format-by-formatted',
 'map-get-or-default',
 'flat-map-instead-of-nested-loops',
 'while-to-for-each',
@@ -107,5 +108,6 @@ module.exports = [
 'use-string-builder-append',
 'string-utils',
 'use-switch-expression',
+'use-text-block',
 'try-with-resource'
 ]
