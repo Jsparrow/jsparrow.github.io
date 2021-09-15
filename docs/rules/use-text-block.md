@@ -17,7 +17,7 @@ tags: ["Java 15", "Old Language Constructs", "Readability"]
 
 ## Description
 
-Java 15 introduced [Text Blocks](https://openjdk.java.net/jeps/378) which can express String literals spanning several lines of source code and significantly reduce the need for escape sequences.
+Java 15 introduced [Text Blocks](https://openjdk.java.net/jeps/378) to express String literals spanning several lines and significantly reduce the need for escape sequences.
 
 This rule replaces multiline String concatenation expressions with Text Block String literals. 
 Thus, removing some boilerplate code and increasing the readability of String expressions.

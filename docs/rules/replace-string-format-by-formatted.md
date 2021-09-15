@@ -7,7 +7,7 @@ remediationCost: 2
     
 description:
     This rule replaces invocations of the static method `String.format` by invocations of the instance method `String.formatted`.
-tags: ["Java 15", "Old Language Constructs", "Readability"]
+tags: ["Java 15", "String Manipulation", "Readability"]
 ---
 
 # Replace String Format by Formatted
