@@ -5,6 +5,30 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.3.0 <Badge vertical="middle" text="16.09.2021"/>
+
+The autumn release of jSparrow 4.3.0 introduces [3 refactoring rules](/rules/). This extends the total number of jSparrow rules to 103. 
+The new rules support some new features in Java 14 and 15. 
+
+### New Rules
+#### [**Use Switch Expression**](/rules/use-switch-expression.html)
+
+This rule replaces the traditional switch-case statements with switch-case expressions, which turned to standard feature in Java 14. 
+
+#### [**Use Text Block**](/rules/use-text-block.html)
+
+This rule replaces multiline String concatenation expressions with Text Block String literals, which turned to standard feature in Java 15. 
+
+#### [**Replace String Format by Formatted**](/rules/replace-string-format-by-formatted.html)
+
+This rule replaces the static invocations of [`String.format​(String format, Object... args)`](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...)) by invocations of the new instance method [`String.formatted(Object... args`)](https://docs.oracle.com/en/java/javase/15/docs/api/java.base/java/lang/String.html#formatted(java.lang.Object...)). 
+
+
+### Installation
+
+The jSparrow rules that make use of the new language features, e.g., Pattern Matching for Instanceof, Text Blocks, or Switch Expressions are available for Eclipse 2021-06 (4.20) and later.
+Choose 'jSparrow for Eclipse 4.20 and above' in the installation wizard to get jSparrow with the complete rule-set for the latest Java version. 
+
 ## 4.2.0 <Badge vertical="middle" text="19.08.2021"/>
 
 The [100<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.2.0. The new rule supports upgrading to Java 16. 
