@@ -134,3 +134,19 @@ Each rule has one Java version related tag, indicating the minimum required Java
 ### Java 10
 
 <Tag tag-name="Java 10" />
+
+### Java 11
+
+<Tag tag-name="Java 11" />
+
+### Java 14
+
+<Tag tag-name="Java 14" />
+
+### Java 15
+
+<Tag tag-name="Java 15" />
+
+### Java 16
+
+<Tag tag-name="Java 16" />

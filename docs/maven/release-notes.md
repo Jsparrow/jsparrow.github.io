@@ -5,6 +5,22 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.10.0 <Badge vertical="middle" text="20.07.2021"/>
+
+Three new rules are shipped with release 3.10.0 of the jSparrow Maven Plugin:
+
+* [Use Switch Expression](/rules/rules/use-switch-expression.html)
+* [Use Text Block](/rules/rules/use-switch-expression.html)
+* [Replace String Format by Formatted](/rules/rules/replace-string-format-by-formatted.html)
+
+### Important Node
+
+::: warning
+The jSparrow Maven Plugin 3.10.0 requires Java 11 or later as a runtime environment. 
+Future releases will provide an alternative version of jSparrow Maven Plugin to support Java 8. 
+:::
+
+
 ## 3.8.0 <Badge vertical="middle" text="20.07.2021"/>
 
 A new rule is shipped with release 3.8.0 of the jSparrow Maven Plugin:
