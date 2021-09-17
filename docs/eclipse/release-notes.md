@@ -27,7 +27,9 @@ This rule replaces the static invocations of [`String.format​(String format, O
 ### Installation
 
 The jSparrow rules that make use of the new language features, e.g., Pattern Matching for Instanceof, Text Blocks, or Switch Expressions are available for Eclipse 2021-06 (4.20) and later.
-Choose 'jSparrow for Eclipse 4.20 and above' in the installation wizard to get jSparrow with the complete rule-set for the latest Java version. 
+Choose 'jSparrow for Eclipse 4.20 and above' in the installation wizard to get jSparrow with the complete rule-set for the latest Java versions. 
+
+![jSparrow for Eclipse 2021-06 (4.20) and above](/img/eclipse/release_notes/jSparrow-installation-Eclipse-4.20-mac-highlighted.png)
 
 ## 4.2.0 <Badge vertical="middle" text="19.08.2021"/>
 
