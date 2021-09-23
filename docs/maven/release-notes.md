@@ -5,7 +5,24 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
-## 3.10.0 <Badge vertical="middle" text="20.07.2021"/>
+## 3.10.1 <Badge vertical="middle" text="23.09.2021"/>
+
+Version 3.10.1 ads a new parameter `tempWorkspace` to [jsparrow:refactor](/maven/getting-started.html#refactor) and [jsparrow:report](/maven/getting-started.html#report) goals.
+The new parameter allows users to define a custom location of the temporary Eclipse workspace that gets created to import the projects being analyzed by jSparrow. 
+If not provided, jSparrow uses the Java temp directory for creating the workspace. 
+
+The following command is an example of using the new parameter `tempWorkspace` in Linux: 
+```shell
+mvn jsparrow:refactor -DtempWorkspace="/home/John/tmp-jmp-workspace"
+```
+
+Similarly, the new parameter can be used on Windows, as follows:
+
+```shell
+mvn jsparrow:refactor -DtempWorkspace="C:\Users\John\tmp-jmp-workspace"
+```
+
+## 3.10.0 <Badge vertical="middle" text="16.09.2021"/>
 
 Three new rules are shipped with release 3.10.0 of the jSparrow Maven Plugin:
 
