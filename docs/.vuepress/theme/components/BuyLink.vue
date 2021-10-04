@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <div class="buy-link" id="buy">
-      <v-btn color="info" href="https://jsparrow.eu/schedule-demo/" target="_blank" v-on:click="scheduleDemoFunction">
+      <v-btn color="info" href="https://jsparrow.io/#webdemo" target="_blank" v-on:click="scheduleDemoFunction">
         Schedule Demo
         <v-icon right dark small class=".v-icon--right">apps</v-icon>
       </v-btn>
       <v-btn
         color="success"
-        href="https://order.shareit.com/cart/new?vendorid=200267175&PRODUCT%5B300770603%5D=1"
+        href="https://jsparrow.io/get-jsparrow/"
         target="_blank"
         v-on:click="buyNowFunction"
       >
