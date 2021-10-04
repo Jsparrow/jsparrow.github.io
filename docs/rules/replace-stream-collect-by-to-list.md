@@ -14,10 +14,11 @@ tags: ["Java 16", "Old Language Constructs", "Readability"]
 
 ## Description
 
-Java 16 introduced a new instance method [`Stream.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()) to format a string with the supplied arguments. 
+Java 16 introduced a new method [`Stream.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()) to convert a stream into a list. 
 
-This rule replaces invocations of [`Stream.collect​(Collector)`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.stream.Collector)) by invocations of the new method described above if the argument passed to the `collect` invocation is a list collector retrieved by the invocation of [`Collectors.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Collectors.html#toList()) or [`Collectors.toUnmodifiableList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableList())
-Thus, simplifying the code and improving the readability.
+This rule replaces invocations of [`Stream.collect​(Collector)`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.stream.Collector)) by invocations of the new method described above if the argument passed to the `collect` invocation is a list collector retrieved by the invocation of [`Collectors.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Collectors.html#toList()) or [`Collectors.toUnmodifiableList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableList()).
+
+Thus code is simplified and readability is improved.
 
 ::: warning Requirements
 * Java 16
@@ -35,57 +36,148 @@ Removes code clutter. Improves readability.
 
 ## Code Changes
 
-### Invoking `formatted`
+### Using `Collectors.toUnmodifiableList()`
 
 __Pre__
 ```java
-String output = String.format(
-    "Name: %s, Phone: %s, Address: %s, Salary: $%.2f",
-    name, phone, address, salary);
+		List<String> List = collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.collect(Collectors.toUnmodifiableList());
 ```
 
 __Post__
 ```java
-String output = "Name: %s, Phone: %s, Address: %s, Salary: $%.2f"
-                .formatted(name, phone, address, salary);
+		List<String> List = collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.toList();
 ```
 
-### Platform Independent Line Breaks
+### Using `Collectors.toList()`
 
 __Pre__
 ```java
-String output = String.format(
-    "Name: %s %s%nAddress: %s%nPhone: %s",
-    firstName, lastName, address, phone);
+		List<String> list = collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.collect(Collectors.toList());
 ```
 
 __Post__
 ```java
-String output = "Name: %s %s%nAddress: %s%nPhone: %s"
-                .formatted(firstName, lastName, address, phone);
+		List<String> list = collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.toList();
 ```
 
-### Formatted Text Block
+### Argument of `Collections.unmodifiableList(...)`
 
 __Pre__
 ```java
-String output = String.format("""
-		Name:    %s
-		Phone:   %s
-		Address: %s
-		Salary:  $%.2f
-		""", 
-        name, phone, address, salary);
+		return Collections.unmodifiableList(collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.collect(Collectors.toList()));
 ```
 
 __Post__
 ```java
-String output = """
-		Name:    %s
-		Phone:   %s
-		Address: %s
-		Salary:  $%.2f
-		""".formatted(name, phone, address, salary);
+		return Collections.unmodifiableList(collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.toList());
+```
+
+### Argument of `Collections.min(...)`
+
+__Pre__
+```java
+		int min = Collections.min(collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.collect(Collectors.toList()));
+```
+
+__Post__
+```java
+		int min = Collections.min(collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.toList());
+```
+
+### Argument of `List.copyOf(...)`
+
+__Pre__
+```java
+		return List.copyOf(collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.collect(Collectors.toList()));
+```
+
+__Post__
+```java
+		return List.copyOf(collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.toList());
+```
+
+### Argument of `list.addAll(...)`
+
+__Pre__
+```java
+		list.addAll(collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.collect(Collectors.toList()));
+```
+
+__Post__
+```java
+		list.addAll(collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.toList());
+```
+
+### Enhanced For Loop with `Stream.collect(...)`
+
+__Pre__
+```java
+		for (String s : collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.collect(Collectors.toList())) {
+			//...
+		}
+```
+
+__Post__
+```java
+		for (String s : collection
+				.stream()
+				.map(function)
+				.filter(predicate)
+				.toList()) {
+			//...
+		}
 ```
 
 <VersionNotice />
