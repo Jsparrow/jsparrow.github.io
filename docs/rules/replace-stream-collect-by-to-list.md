@@ -6,7 +6,7 @@ minJavaVersion: 16
 remediationCost: 2
     
 description:
-    Java 16 introduced Stream.toList() for simplifying the conversion of a stream into a list. For example, stream.collect(Collectors.toUnmodifiableList()) can be transformed to stream.toList().
+    Java 16 introduced 'Stream.toList()' as a shorthand method for converting a Stream into an unmodifiable List. This rule replaces invocations of `collect(Collectors.toUnmodifiableList())` on a stream by the new method `stream.toList()`. 
 tags: ["Java 16", "Old Language Constructs", "Readability"]
 ---
 
@@ -14,11 +14,12 @@ tags: ["Java 16", "Old Language Constructs", "Readability"]
 
 ## Description
 
-Java 16 introduced a new method [`Stream.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()) to convert a stream into a list. 
+Java 16 introduced [`Stream.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()) as a shorthand method for converting a Stream into an unmodifiable List.  
+This rule replaces invocations of `collect(Collectors.toUnmodifiableList())` on a stream by the new method `stream.toList()`. 
+In case `Collectors.toList()` is used as a collector, the rule makes additional verifications whether the generated list is modified by the context or not. 
+In the latter case, invocations of `collect(Collectors.toList())` on streams are also replaced by invocations of `toList()`.
 
-This rule replaces invocations of [`Stream.collect​(Collector)`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#collect(java.util.stream.Collector)) by invocations of the new method described above if the argument passed to the `collect` invocation is a list collector retrieved by the invocation of [`Collectors.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Collectors.html#toList()) or [`Collectors.toUnmodifiableList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Collectors.html#toUnmodifiableList()).
-
-Thus code is simplified and readability is improved.
+Thus the code is simplified and readability is improved.
 
 ::: warning Requirements
 * Java 16
@@ -40,144 +41,152 @@ Removes code clutter. Improves readability.
 
 __Pre__
 ```java
-		List<String> List = collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.collect(Collectors.toUnmodifiableList());
+List<String> List = collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.collect(Collectors.toUnmodifiableList());
 ```
 
 __Post__
 ```java
-		List<String> List = collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.toList();
-```
-
-### Using `Collectors.toList()`
-
-__Pre__
-```java
-		List<String> list = collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.collect(Collectors.toList());
-```
-
-__Post__
-```java
-		List<String> list = collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.toList();
+List<String> List = collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.toList();
 ```
 
 ### Argument of `Collections.unmodifiableList(...)`
 
 __Pre__
 ```java
-		return Collections.unmodifiableList(collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.collect(Collectors.toList()));
+return Collections.unmodifiableList(collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.collect(Collectors.toList()));
 ```
 
 __Post__
 ```java
-		return Collections.unmodifiableList(collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.toList());
+return Collections.unmodifiableList(collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.toList());
+```
+
+### Using `Collectors.toList()`
+
+__Pre__
+```java
+void sendMails(List<User>users) {
+	List<String> emails = users.stream()
+		.map(User::getMail)
+		.collect(Collectors.toList());
+	for (String email : emails) {
+		validate(email);
+		send(email);
+	}
+}
+```
+
+__Post__
+```java
+void sendMails(List<User>users) {
+	List<String> emails = users.stream()
+		.map(User::getMail)
+		.toList();
+	for (String email : emails) {
+		validate(email);
+		send(email);
+	}
+}
 ```
 
 ### Argument of `Collections.min(...)`
 
 __Pre__
 ```java
-		int min = Collections.min(collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.collect(Collectors.toList()));
+int min = Collections.min(collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.collect(Collectors.toList()));
 ```
 
 __Post__
 ```java
-		int min = Collections.min(collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.toList());
+int min = Collections.min(collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.toList());
 ```
 
 ### Argument of `List.copyOf(...)`
 
 __Pre__
 ```java
-		return List.copyOf(collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.collect(Collectors.toList()));
+return List.copyOf(collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.collect(Collectors.toList()));
 ```
 
 __Post__
 ```java
-		return List.copyOf(collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.toList());
+return List.copyOf(collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.toList());
 ```
 
 ### Argument of `list.addAll(...)`
 
 __Pre__
 ```java
-		list.addAll(collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.collect(Collectors.toList()));
+list.addAll(collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.collect(Collectors.toList()));
 ```
 
 __Post__
 ```java
-		list.addAll(collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.toList());
+list.addAll(collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.toList());
 ```
 
 ### Enhanced For Loop with `Stream.collect(...)`
 
 __Pre__
 ```java
-		for (String s : collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.collect(Collectors.toList())) {
-			//...
-		}
+for (String s : collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.collect(Collectors.toList())) {
+	//...
+}
 ```
 
 __Post__
 ```java
-		for (String s : collection
-				.stream()
-				.map(function)
-				.filter(predicate)
-				.toList()) {
-			//...
-		}
+for (String s : collection
+		.stream()
+		.map(function)
+		.filter(predicate)
+		.toList()) {
+	//...
+}
 ```
 
 <VersionNotice />
