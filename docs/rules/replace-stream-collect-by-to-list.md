@@ -15,7 +15,7 @@ tags: ["Java 16", "Old Language Constructs", "Readability"]
 ## Description
 
 Java 16 introduced [`Stream.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()) as a shorthand method for converting a Stream into an unmodifiable List.  
-This rule replaces invocations of `collect(Collectors.toUnmodifiableList())` on a stream by the new method `stream.toList()`. 
+This rule replaces invocations of `collect(Collectors.toUnmodifiableList())` on streams by invocations of the new method `stream.toList()`. 
 In case `Collectors.toList()` is used as a collector, the rule makes additional verifications whether the generated list is modified by the context or not. 
 In the latter case, invocations of `collect(Collectors.toList())` on streams are also replaced by invocations of `toList()`.
 

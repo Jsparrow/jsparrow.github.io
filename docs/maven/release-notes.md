@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Maven p
 
 ## 3.11.0 <Badge vertical="middle" text="21.10.2021"/>
 
-One new rules are shipped with release 3.11.0 of the jSparrow Maven Plugin:
+One new rule is shipped with release 3.11.0 of the jSparrow Maven Plugin:
 
 * [Replace Stream Collect By ToList](/rules/rules/replace-stream-collect-by-to-list.html)
 
@@ -41,7 +41,7 @@ Use the following following plugin entry to include jSparrow 4JDK8 Maven Plugin 
 </build>  
 ```
 
-Note that the configuration for jSparrow 4JDK8 is very similar to the main jSparrow Maven Plugin version. Both are hosted on the same maven plugin repository. The only difference to main version is the artifactId that change to `jsparrow-4jdk8-maven-plugin` for jSparrow 4JDK8, and remains the same `jsparrow-maven-plugin` for the main version.
+Note that the configuration for jSparrow 4JDK8 is very similar to the main jSparrow Maven Plugin version. Both are hosted on the same maven plugin repository. The only difference to the main version is the artifactId that changed to `jsparrow-4jdk8-maven-plugin` for jSparrow 4JDK8, and remains the same `jsparrow-maven-plugin` for the main version.
 
 #### How to run? 
 
@@ -49,7 +49,7 @@ The goal prefix for running jSparrow 4JDK8 remains `jsparrow`.
 
 ### jSparrow Report `destination` Path
 
-The default path for generation the jSparrow Reports is changed to the default project build directory, which is typically the `target` folder in the project root.
+The default path for generating jSparrow Reports is changed to the default project build directory, which is typically the `target` folder in the project root.
 Additionally, a new parameter `destination` is added to the report goal that allows users to specify a custom path for generating jSparrow reports. E.g.:
 
 ```shell
