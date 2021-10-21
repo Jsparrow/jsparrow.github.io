@@ -99,11 +99,15 @@ To use the jsparrow-maven-plugin on a project, add the following code snippet to
     <plugin>
       <groupId>eu.jsparrow</groupId>
       <artifactId>jsparrow-maven-plugin</artifactId>
-      <version>3.10.0</version>
+      <version>3.11.0</version>
     </plugin>
   </plugins>
 </build>  
 ```
+
+::: tip Note
+Use the artifactId `jsparrow-4jdk8-maven-plugin` if the runtime environment is restricted to Java 8. 
+:::
 
 ### Plugin Configuration
 
@@ -230,6 +234,7 @@ You may add the following parameters:
 | `-Dlicense=<license-key>`	| Specify the license key to be used. This takes priority over a configuration via config file. In "Machine Configuration" the config file approach is described. |
 | `-Durl=<url>`	| Specify the licensing server URL to use in case a [local server](/maven/local-license-server.html) should be used. |
 | `-DselectedSources=<glob-patterns>` | Specify the [glob expression patterns](https://docs.oracle.com/javase/tutorial/essential/io/fileOps.html#glob) relative to the project root directory for selecting the sources to refactor. Use line breaks to specify multiple glob patterns. If not specified, all Java sources in the project will be considered for refactoring. Examples: <SelectedSourcesExamples /> |
+| `-DtempWorkspace='...'` |  Specify the location for the temporal Eclipse workspace to import the project during jSparrow execution. This should an absolute path of an empty directory with read, write, and execute permissions. If not provided, jSparrow will use the Java temp directory for creating the workspace. |
 
 ### Report 
 
@@ -241,6 +246,10 @@ No valid license is required and the source files are not affected.
 $ mvn jsparrow:report
 ```
 You may add the same parameters as in the [`refactor`](#refactor) goal.
+Additionally, the `report` goal offers a parameter to specify the location of the generated reports
+| Parameter	| Description |
+|:----------|:-------------|
+| `-Ddestination='path'` | Specify the location to generate the jSparrow reports into. The default value is the path of the project's build directory which is typically the target folder in the project root. |
 
 ::: tip Note
 Since the `report` goal does not require a license, this is a great way to see what the jSparrow Maven plugin has to offer for your project!

@@ -16,7 +16,7 @@ tags: ["Java 8", "Testing"]
 
 This rule migrates JUnit 3 tests to either JUnit JUpiter or JUnit 4 depending on the most up-to-date JUnit version available in the classpath. 
 The migration is achieved by: 
-* inserting the annoations to the test cases and life cycle methods accordingly 
+* inserting the annotations to the test cases and life cycle methods accordingly 
 * inserting the correct import statements to the assertions or assumptions 
 * removing the extension to the JUnit 3 TestCase class
 * and removing the main methods that used to serve as entry points for executing tests. 
