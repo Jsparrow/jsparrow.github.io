@@ -5,6 +5,57 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.11.0 <Badge vertical="middle" text="21.10.2021"/>
+
+One new rules are shipped with release 3.11.0 of the jSparrow Maven Plugin:
+
+* [Replace Stream Collect By ToList](/rules/rules/replace-stream-collect-by-to-list.html)
+
+
+### jSparrow 4JDK8 Maven Plugin
+
+jSparrow Maven plugin provides a separate version to support JDK 8 as runtime environment. 
+
+#### What is this?
+
+jSparrow 4JDK8 is a limited version of the jSparrow Maven Plugin that supports JDK 8 as runtime environment but does not include jSparrow rules related to the Java features introduced in Java 14 and above. 
+The plugin goals and the syntax for the jSparrow YML configuration remain the same as the main version of jSparrow Maven Plugin.
+
+::: warning
+Use this version only in case the execution environment is restricted JDK 8.
+:::
+
+#### How to configure?
+
+Use the following following plugin entry to include jSparrow 4JDK8 Maven Plugin in the pom file: 
+
+```XML
+<build>
+  <plugins>
+    <plugin>
+      <groupId>eu.jsparrow</groupId>
+      <artifactId>jsparrow-4jdk8-maven-plugin</artifactId>
+      <version>3.11.0</version>
+    </plugin>
+  </plugins>
+</build>  
+```
+
+Note that the configuration for jSparrow 4JDK8 is very similar to the main jSparrow Maven Plugin version. Both are hosted on the same maven plugin repository. The only difference to main version is the artifactId that change to `jsparrow-4jdk8-maven-plugin` for jSparrow 4JDK8, and remains the same `jsparrow-maven-plugin` for the main version.
+
+#### How to run? 
+
+The goal prefix for running jSparrow 4JDK8 remains `jsparrow`. 
+
+### jSparrow Report `destination` Path
+
+The default path for generation the jSparrow Reports is changed to the default project build directory, which is typically the `target` folder in the project root.
+Additionally, a new parameter `destination` is added to the report goal that allows users to specify a custom path for generating jSparrow reports. E.g.:
+
+```shell
+mvn jsparrow:report -Ddestination='custom/path'
+```
+
 ## 3.10.1 <Badge vertical="middle" text="23.09.2021"/>
 
 Version 3.10.1 ads a new parameter `tempWorkspace` to [jsparrow:refactor](/maven/getting-started.html#refactor) and [jsparrow:report](/maven/getting-started.html#report) goals.

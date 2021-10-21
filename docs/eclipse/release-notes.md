@@ -5,6 +5,24 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.4.0 <Badge vertical="middle" text="21.10.2021"/>
+
+The [104<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.4.0. The new rule supports upgrading to Java 16. 
+
+### New Rule
+#### [**Replace Stream Collect By ToList**](/rules/replace-stream-collect-by-to-list.html)
+
+Java 16 introduced [`Stream.toList()`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html#toList()) as a shorthand method for converting a Stream into an unmodifiable List.  
+This rule replaces invocations of `collect(Collectors.toUnmodifiableList())` on a stream by the new method `stream.toList()`.
+
+### Fixed Bugs
+
+#### [Use Files.writeString](/rules/use-files-write-string.html)
+* Unwrapping Files.writeString from the try-catch statements in some cases where the catch clause is missing.
+
+#### [Replace JUnit 3 Test Cases](/rules/replace-j-unit-3-test-cases.html)
+* Avoids transformation in some cases where the `TestCase` type is explicitly used is the main method of the test class. 
+
 ## 4.3.0 <Badge vertical="middle" text="16.09.2021"/>
 
 The autumn release of jSparrow 4.3.0 introduces [3 refactoring rules](/rules/). This extends the total number of jSparrow rules to 103. 
