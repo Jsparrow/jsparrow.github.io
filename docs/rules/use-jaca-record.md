@@ -1,9 +1,9 @@
 ---
 title: Use Java Record
 ruleId: UseJavaRecords
-since: 4.4.0
+since: 4.5.0
 minJavaVersion: 16
-remediationCost: 15
+remediationCost: 20
 links:
     - displayName: "S6206"
       url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS6206&q=S6206"
