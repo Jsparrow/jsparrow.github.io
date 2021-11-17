@@ -1,5 +1,5 @@
 ---
-title: Use Java Record
+title: Use Java Records
 ruleId: UseJavaRecords
 since: 4.5.0
 minJavaVersion: 16
@@ -13,7 +13,7 @@ description:
 tags: ["Java 16", "Old Language Constructs", "Readability"]
 ---
 
-# Use Java Record
+# Use Java Records
 
 ## Description
 
