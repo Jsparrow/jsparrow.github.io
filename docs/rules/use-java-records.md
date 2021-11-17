@@ -9,7 +9,7 @@ links:
       url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS6206&q=S6206"
     
 description:
-    In Java 16 record classes are a new kind of classes in the Java language. Record classes help to model plain data aggregates with less ceremony than normal classes. This rule replaces the declarations of local classes, inner classes, and package private root classes with record class declarations.
+    Since Java 16, record classes are a new kind of class in the Java language. Record classes help to model plain data aggregates with less ceremony than normal classes. This rule replaces the declarations of local classes, inner classes, and package private root classes with record class declarations.
 tags: ["Java 16", "Old Language Constructs", "Readability"]
 ---
 
@@ -17,7 +17,7 @@ tags: ["Java 16", "Old Language Constructs", "Readability"]
 
 ## Description
 
-In Java 16 record classes are a new kind of classes in the Java language. Record classes help to model plain data aggregates with less ceremony than normal classes. 
+Since Java 16, record classes are a new kind of classes in the Java language. Record classes help to model plain data aggregates with less ceremony than normal classes. 
 This rule replaces the declarations of: 
 * local classes 
 * inner classes 
