@@ -9,7 +9,7 @@ links:
       url: "https://sonarcloud.io/organizations/default/rules?languages=java&open=java%3AS6206&q=S6206"
     
 description:
-    This rule replaces declarations of immutable data wrapper classes by record declarations introduced as feature in Java 16. For example, a 'class Point {...}' declaration with the two private final int fields 'x' and 'y' can be replaced by a 'record Point(int x, int y) {...}' declaration.
+    In Java 16 record classes are a new kind of classes in the Java language. Record classes help to model plain data aggregates with less ceremony than normal classes. This rule replaces the declarations of local classes, inner classes, and package private root classes with record class declarations.
 tags: ["Java 16", "Old Language Constructs", "Readability"]
 ---
 
@@ -17,8 +17,14 @@ tags: ["Java 16", "Old Language Constructs", "Readability"]
 
 ## Description
 
-Detailed Description will be here...
+In Java 16 record classes are a new kind of classes in the Java language. Record classes help to model plain data aggregates with less ceremony than normal classes. 
+This rule replaces the declarations of: 
+* local classes 
+* inner classes 
+* package private root classes
 
+with record class declarations. 
+Thus dropping some boilerplate code, guaranteeing immutability in language level, and providing better compatibility with the new or upcoming features, e.g., Pattern Matching.
 
 ::: warning Requirements
 * Java 16
@@ -26,7 +32,7 @@ Detailed Description will be here...
 
 ## Benefits
 
-Reduces redundant code by replacing by the corresponding - more compact - record declaration. Improves readability.
+Guarantees immutability. Eliminates boilerplate code. Encourages better serialization. Boosts compatibility with upcoming features. 
 
 ## Tags
 
@@ -36,223 +42,184 @@ Reduces redundant code by replacing by the corresponding - more compact - record
 
 ## Code Changes
 
-### Point as Local Class
+### Local Classes
 
 __Pre__
 ```java
-	void plainGeometry() {
-		// ...
-		class Point {
-			private final int x;
-			private final int y;
+void plainGeometry() {
+	// ...
+	class Point {
+		private final int x;
+		private final int y;
 
-			Point(int x, int y) {
+		Point(int x, int y) {
+		this.x = x;
+			this.y = y;
+		}
+
+		public int x() {
+			return x;
+		}
+
+		public int y() {
+			return y;
+		}
+	}
+	// ...
+}
+```
+
+__Post__
+```java
+void plainGeometry() {
+	// ...
+	record Point(int x, int y) {}
+	//...
+}
+```
+
+### Nested Classes
+
+__Pre__
+```java
+public class PlainGeometry {
+	// ...
+	private static final class Point {
+		private final int x;
+		private final int y;
+
+		Point(int x, int y) {
 			this.x = x;
-				this.y = y;
-			}
-
-			public int x() {
-				return x;
-			}
-
-			public int y() {
-				return y;
-			}
+			this.y = y;
 		}
-		// ...
+
+		public int x() {
+			return x;
+		}
+
+		public int y() {
+			return y;
+		}
 	}
+	// ...
+}
 ```
 
 __Post__
 ```java
-	void plainGeometry() {
-		// ...
-		record Point(int x, int y) {
-		}
-		//...
+public class PlainGeometry {
+	//...
+	private record Point(int x, int y) {}
+	//...
+}
+```
+
+### Multiple Constructors
+
+__Pre__
+```java
+// ...
+private static final class Point {
+	private final int x;
+	private final int y;
+
+	Point(int x, int y) {
+		this.x = x;
+		this.y = y;
 	}
-```
+	
+	Point() {
+		this(0,0);
+	}
 
-### Point as Nested Class
+	public int x() {
+		return x;
+	}
 
-__Pre__
-```java
-		public class PlainGeometry {
-			// ...
-			private static final class Point {
-				private final int x;
-				private final int y;
-
-				Point(int x, int y) {
-					this.x = x;
-					this.y = y;
-				}
-
-				public int x() {
-					return x;
-				}
-
-				public int y() {
-					return y;
-				}
-			}
-			// ...
-		}
+	public int y() {
+		return y;
+	}
+}
+// ...
 ```
 
 __Post__
 ```java
-		public class PlainGeometry {
-			//...
-			private record Point(int x, int y) {
-			}
-			//...
-		}
+//...
+private record Point(int x, int y) {
+	
+	Point() {
+		this(0,0);
+	}
+}
+//...
 ```
 
-### Additional Constructor
+### Parameterized Inner Classes
 
 __Pre__
 ```java
-			// ...
-			private static final class Point {
-				private final int x;
-				private final int y;
+//...
+private static final class GenericWrapper<T> {
+	private final T value;
 
-				Point(int x, int y) {
-					this.x = x;
-					this.y = y;
-				}
-				
-				Point() {
-					this(0,0);
-				}
+	public GenericWrapper(T value) {
+		this.value = value;
+	}
 
-				public int x() {
-					return x;
-				}
-
-				public int y() {
-					return y;
-				}
-			}
-			// ...
+	public T value() {
+		return value;
+	}
+}
+//...
 ```
 
 __Post__
 ```java
-			//...
-			private record Point(int x, int y) {
-				
-				Point() {
-					this(0,0);
-				}
-			}
-			//...
+//...
+private record GenericWrapper<T> (T value) {}
+//...
 ```
 
-### Record with Type Parameter
+### Additional Methods
 
 __Pre__
 ```java
-		//...
-		private static final class GenericWrapper<T> {
-			private final T value;
+// ...
+private static final class Person {
+	private final String firstName;
+	private final String lastName;
 
-			public GenericWrapper(T value) {
-				this.value = value;
-			}
+	Person(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 
-			public T value() {
-				return value;
-			}
-		}
-		//...
+	public String firstName() {
+		return firstName;
+	}
+
+	public String lastName() {
+		return lastName;
+	}
+	
+	public String name() {
+		return firstName + " " + lastName;
+	}			
+}
+// ...
 ```
 
 __Post__
 ```java
-		//...
-		private record GenericWrapper<T> (T value) {
-		}
-		//...
-```
-
-### Additional Method
-
-__Pre__
-```java
-		// ...
-		private static final class Person {
-			private final String firstName;
-			private final String lastName;
-
-			Person(String firstName, String lastName) {
-				this.firstName = firstName;
-				this.lastName = lastName;
-			}
-
-			public String firstName() {
-				return firstName;
-			}
-
-			public String lastName() {
-				return lastName;
-			}
-			
-			public String name() {
-				return firstName + " " + lastName;
-			}			
-		}
-		// ...
-```
-
-__Post__
-```java
-		//...
-		private record Person(String firstName, String lastName) {
-			
-			public String name() {
-				return firstName + " " + lastName;
-			}
-		}
-		//...
-```
-
-### 6
-
-__Pre__
-```java
-		// ...
-		private static final class Person implements IPerson {
-			private final String firstName;
-			private final String lastName;
-
-			Person(String firstName, String lastName) {
-				this.firstName = firstName;
-				this.lastName = lastName;
-			}
-
-			@Override
-			public String firstName() {
-				return firstName;
-			}
-
-			@Override
-			public String lastName() {
-				return lastName;
-			}
-			// ...
-		}
-		// ...
-```
-
-__Post__
-```java
-		//...
-		private record Person(String firstName, String lastName) implements IPerson {
-		}
-		//...
+//...
+private record Person(String firstName, String lastName) {
+	
+	public String name() {
+		return firstName + " " + lastName;
+	}
+}
+//...
 ```
 
 <VersionNotice />
