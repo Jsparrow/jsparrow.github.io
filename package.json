@@ -13,7 +13,7 @@
     "@vuepress/plugin-google-analytics": "^1.8.0",
     "jshint": "^2.12.0",
     "material-design-icons-iconfont": "^5.0.1",
-    "vuepress": "^1.8.0",
+    "vuepress": "^1.8.2",
     "vuetify": "^1.5.14"
   },
   "resolutions": {
