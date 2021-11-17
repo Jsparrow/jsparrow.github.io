@@ -87,6 +87,7 @@ module.exports = [
 'use-files-write-string',
 'functional-interface',
 'guard-condition',
+'use-java-records',
 'local-variable-type-inference',
 'multi-catch',
 'optional-filter',
