@@ -17,7 +17,7 @@ tags: ["Java 16", "Old Language Constructs", "Readability"]
 
 ## Description
 
-Since Java 16, record classes are a new kind of classes in the Java language. Record classes help to model plain data aggregates with less ceremony than normal classes. 
+Since Java 16, record classes are a new kind of class in the Java language. Record classes help to model plain data aggregates with less ceremony than normal classes. 
 This rule replaces the declarations of: 
 * local classes 
 * inner classes 
