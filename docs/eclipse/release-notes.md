@@ -5,6 +5,17 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.5.0 <Badge vertical="middle" text="18.11.2021"/>
+
+The [105<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.5.0. The new rule supports Java Record classes introduced in Java 16. 
+
+### New Rule
+#### [**Use Java Records**](/rules/use-java-records.html)
+
+Since Java 16, record classes are a new kind of class in the Java language. 
+Record classes help to model plain data aggregates with less ceremony than normal classes.
+This rule replaces the declarations of local classes, inner classes, and package private root classes with record class declarations.
+
 ## 4.4.0 <Badge vertical="middle" text="21.10.2021"/>
 
 The [104<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.4.0. The new rule supports an extension of the Stream API introduced in Java 16. 

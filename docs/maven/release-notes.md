@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.12.0 <Badge vertical="middle" text="18.11.2021"/>
+
+One new rule is shipped with release 3.12.0 of the jSparrow Maven Plugin:
+
+* [Use Java Records](/rules/rules/use-java-records.html)
+
 ## 3.11.0 <Badge vertical="middle" text="21.10.2021"/>
 
 One new rule is shipped with release 3.11.0 of the jSparrow Maven Plugin:
