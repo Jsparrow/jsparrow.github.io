@@ -71,6 +71,7 @@ module.exports = [
 'collection-remove-all',
 'immutable-static-final-collections',
 'reuse-random-objects',
+'shift-assert-j-description-before-assertion',
 'multi-variable-declaration-line',
 'string-buffer-to-builder',
 'standard-logger',
