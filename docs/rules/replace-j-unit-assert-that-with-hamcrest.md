@@ -7,7 +7,7 @@ remediationCost: 2
     
 description:
     The JUnit Assert.assertThat method is deprecated. Its sole purpose is to forward the call to the MatcherAssert.assertThat method defined in Hamcrest 1.3. Therefore, it is recommended to directly use the equivalent assertion defined in the third party Hamcrest library.
-tags: ["Java 5", "Testing"]
+tags: ["Java 5", "Testing", "JUnit"]
 ---
 
 # Replace JUnit assertThat with Hamcrest

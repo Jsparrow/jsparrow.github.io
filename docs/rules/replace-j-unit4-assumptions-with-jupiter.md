@@ -7,7 +7,7 @@ remediationCost: 2
     
 description:
     This rule contributes to the stepwise transition from JUnit 4 to JUnit 5 by replacing the assumption methods defined in the JUnit 4 class 'org.junit.Assume' by equivalent assumption methods defined in the JUnit 5 class 'org.junit.jupiter.api.Assumptions'.
-tags: ["Java 8", "Testing"]
+tags: ["Java 8", "Testing", "JUnit"]
 ---
 
 # Replace JUnit 4 Assumptions with JUnit Jupiter

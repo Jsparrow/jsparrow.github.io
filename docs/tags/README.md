@@ -91,6 +91,14 @@ jSparrow rules having this tag will therefore be related to such `String` operat
 jSparrow rules having this tag are designed to improve JUnit test cases by making use of the new features in [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) and other related testing libraries. 
 <tag tag-name="Testing"/>
 
+## JUnit
+jSparrow rules having this tag are designed to improve JUnit test cases by making use of the new features in [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) and other related testing libraries. 
+<tag tag-name="JUnit"/>
+
+## AssertJ
+jSparrow rules having this tag are designed to improve JUnit test cases by making use of the new features in [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) and other related testing libraries. 
+<tag tag-name="AssertJ"/>
+
 ## Java Version Tags
 
 Each rule has one Java version related tag, indicating the minimum required Java version of a project to apply the rule. 
