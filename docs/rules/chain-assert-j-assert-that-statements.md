@@ -32,7 +32,7 @@ Applying this rule makes the code more readable.
 
 ## Code Changes
 
-### Assertions on String
+### Assertions on a String
 
 __Pre__
 ```java
@@ -63,7 +63,7 @@ __Post__
 		.doesNotEndWith("Hello");
 ```
 
-### Assertions on Primitive Int
+### Assertions on a Primitive Int Value
 
 __Pre__
 ```java
@@ -88,7 +88,7 @@ __Post__
 		.isLessThan(11);		
 ```
 
-### Assertions on  String List
+### Assertions on a String List
 
 __Pre__
 ```java
@@ -111,7 +111,7 @@ __Post__
 		.contains("String-2", atIndex(1));
 ```
 
-### Assertions on File
+### Assertions on a File
 
 __Pre__
 ```java
@@ -134,7 +134,7 @@ __Post__
 		.canRead();
 ```
 
-### Assertions on Type Literal
+### Assertions on String.class
 
 __Pre__
 ```java
@@ -157,7 +157,7 @@ __Post__
             clazz -> !Modifier.isAbstract(clazz.getModifiers()), ""));
 ```
 
-### Assertions on Predicate
+### Assertions on a Predicate
 
 __Pre__
 ```java
@@ -180,7 +180,7 @@ __Post__
 		.acceptsAll(Arrays.asList("s-3", "s-4", "s-5"));
 ```
 
-### assertThatThrownBy on ThrowingCallable
+### assertThatThrownBy on a ThrowingCallable
 
 __Pre__
 ```java
