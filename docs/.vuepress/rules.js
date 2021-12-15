@@ -9,6 +9,7 @@ module.exports = [
 '',
 'brackets-to-control',
 'avoid-concatenation-in-logging-statements',
+'chain-assert-j-assert-that-statements',
 'collapse-if-statements',
 'create-temp-files-using-java-nio',
 'escape-user-inputs-in-sql-queries',
