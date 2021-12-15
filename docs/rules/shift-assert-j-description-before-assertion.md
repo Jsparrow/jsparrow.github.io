@@ -2,7 +2,7 @@
 title: Shift AssertJ Description Before Assertion
 ruleId: ShiftAssertJDescriptionBeforeAssertion
 since: 4.6.0
-minJavaVersion: 5
+minJavaVersion: 7
 remediationCost: 5
 links:
     - displayName: "S5833"
@@ -12,7 +12,7 @@ links:
 description:
     This rule shifts the invocation of methods setting descriptions or error messages before the invocations of the actual assertions they intend to describe. 
 
-tags: ["Java 5", "Testing", "AssertJ", "Coding Conventions"]
+tags: ["Java 7", "Testing", "AssertJ", "Coding Conventions"]
 ---
 
 # Shift AssertJ Description Before Assertion
