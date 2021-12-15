@@ -88,8 +88,16 @@ jSparrow rules having this tag will therefore be related to such `String` operat
 <Tag tag-name="String Manipulation" />
 
 ## Testing
-jSparrow rules having this tag are designed to improve JUnit test cases by making use of the new features in [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) and other related testing libraries. 
+jSparrow rules having this tag encourage using best practices in the test code. 
 <tag tag-name="Testing"/>
+
+## JUnit
+jSparrow rules having this tag are designed to improve JUnit test cases by making use of the new features in [JUnit 5](https://junit.org/junit5/docs/current/user-guide/) and other related testing libraries. 
+<tag tag-name="JUnit"/>
+
+## AssertJ
+jSparrow rules having this tag encourage best practices on using the [AssertJ](https://assertj.github.io/doc/#assertj-overview) library for writing fluent assertions in unit tests.
+<tag tag-name="AssertJ"/>
 
 ## Java Version Tags
 

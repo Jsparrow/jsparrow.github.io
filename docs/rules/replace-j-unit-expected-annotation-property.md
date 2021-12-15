@@ -10,7 +10,7 @@ links:
     
 description:
     This rule aims to replace the @Test(expected=...) annotation property with 'assertThrows' introduced in JUnit 4.13.
-tags: ["Java 8", "Testing", "Lambda", "Readability"]
+tags: ["Java 8", "Testing", "JUnit", "Lambda", "Readability"]
 ---
 
 # Replace JUnit Expected Annotation Property with assertThrows
