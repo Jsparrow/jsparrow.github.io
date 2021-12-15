@@ -2,7 +2,7 @@
 title: Chain AssertJ AssertThat Statements
 ruleId: ChainAssertJAssertThatStatements
 since: 4.6.0
-minJavaVersion: 8
+minJavaVersion: 7
 remediationCost: 5
 links:
     - displayName: "S5853"
@@ -10,7 +10,7 @@ links:
     
 description:
     AssertJ assertions carried out on the same object can be chained instead of using multiple assertThat, avoiding duplication and increasing the clarity of the code.
-tags: ["Java 8", "Coding Conventions", "Readability"]
+tags: ["Java 7", "Testing", "AssertJ", "Coding Conventions", "Readability"]
 ---
 
 # Chain AssertJ AssertThat Statements
