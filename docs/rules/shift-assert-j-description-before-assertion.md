@@ -24,7 +24,6 @@ AssertJ provides methods for setting descriptions or error messages of assertion
 * [describedAs](https://www.javadoc.io/doc/org.assertj/assertj-core/3.2.0/org/assertj/core/api/Descriptable.html#describedAs-java.lang.String-java.lang.Object...-)
 * [withFailMessage](https://javadoc.io/doc/org.assertj/assertj-core/2.3.0/org/assertj/core/api/AbstractAssert.html#withFailMessage(java.lang.String,%20java.lang.Object...)) 
 * [overridingErrorMessage](https://javadoc.io/doc/org.assertj/assertj-core/2.3.0/org/assertj/core/api/AbstractAssert.html#overridingErrorMessage(java.lang.String,%20java.lang.Object...))
-* etc...
 
 These methods should always be invoked before the actual assertion they intend to describe, otherwise, they have no effect. 
 
@@ -37,7 +36,7 @@ See the code examples below.
 
 ## Benefits
 
-Improves AssertJ report messages and error messages. 
+Improves the readability of assertion failure messages. 
 
 ## Tags
 
