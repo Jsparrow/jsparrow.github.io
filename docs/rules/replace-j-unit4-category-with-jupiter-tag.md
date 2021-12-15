@@ -7,7 +7,7 @@ remediationCost: 5
     
 description:
     This rule offers a stepwise transition to JUnit 5 by replacing JUnit 4 @Category annotations with JUnit Jupiter @Tag annotations.
-tags: ["Java 8", "Testing"]
+tags: ["Java 8", "Testing", "JUnit"]
 ---
 
 # Replace JUnit 4 Category with JUnit Jupiter Tag

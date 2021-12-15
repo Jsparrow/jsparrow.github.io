@@ -7,7 +7,7 @@ remediationCost: 2
     
 description:
     This rule replaces invocations of the JUnit 4 methods Assume.assumeThat, Assume.assumeNoException and Assume.assumeNotNull with invocations of the hamcrest-junit method MatcherAssume.assumeThat. Thus the use of JUnit 4 methods is replaced by the use of methods of a third party library. 
-tags: ["Java 5", "Testing"]
+tags: ["Java 5", "Testing", "JUnit"]
 ---
 
 # Replace JUnit Assumptions with Hamcrest JUnit
