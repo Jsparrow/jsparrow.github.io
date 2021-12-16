@@ -5,6 +5,13 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.13.0 <Badge vertical="middle" text="16.12.2021"/>
+
+One new rule is shipped with release 3.13.0 of the jSparrow Maven Plugin:
+
+* [Chain AssertJ AssertThat Statements](/rules/rules/chain-assert-j-assert-that-statements.html)
+* [Shift AssertJ Description Before Assertion](/rules/rules/shift-assert-j-description-before-assertion.html)
+
 ## 3.12.0 <Badge vertical="middle" text="18.11.2021"/>
 
 One new rule is shipped with release 3.12.0 of the jSparrow Maven Plugin:
