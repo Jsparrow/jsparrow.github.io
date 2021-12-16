@@ -7,7 +7,7 @@ remediationCost: 15
     
 description:
     This rule migrates JUnit 3 tests to either JUnit JUpiter or JUnit 4 depending on the most up-to-date JUnit version available in the classpath. 
-tags: ["Java 8", "Testing"]
+tags: ["Java 8", "Testing", "JUnit"]
 ---
 
 # Replace JUnit 3 Test Cases

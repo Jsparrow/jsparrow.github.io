@@ -7,7 +7,7 @@ remediationCost: 5
     
 description:
     This rule aims to replace the @Test(timeout=...) annotation property with 'assertTimeout' in JUnit Jupiter.
-tags: ["Java 8", "Testing", "Lambda", "Readability"]
+tags: ["Java 8", "Testing", "JUnit", "Lambda", "Readability"]
 ---
 
 # Replace JUnit Timeout Annotation Property with assertTimeout

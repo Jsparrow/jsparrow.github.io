@@ -5,6 +5,58 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.6.0 <Badge vertical="middle" text="16.12.2021"/>
+
+The winter solstice jSparrow 4.6.0 release extends the rule set with two new refactoring rules, introduces the Pay-Per-Use license model, and adds 10 more jSparrow Markers.
+
+### New Rules 
+
+#### [**Chain AssertJ AssertThat Statements**](/rules/chain-assert-j-assert-that-statements.html)
+
+AssertJ encourages writing fluent test cases by chaining the assertions that target the same object instead of invoking [`assertThat`](https://javadoc.io/doc/org.assertj/assertj-core/latest/org/assertj/core/api/Assertions.html) multiple times.
+This rule replaces consecutive AssertJ assertThat invocations targeting the same object with an assertion chain. 
+Thus, eliminating some redundant code and increasing the readability of test cases.  
+
+#### [**Shift AssertJ Description Before Assertion**](/rules/shift-assert-j-description-before-assertion.html)
+
+AssertJ provides methods for setting descriptions or error messages of assertions, e.g.: [as](https://www.javadoc.io/doc/org.assertj/assertj-core/3.2.0/org/assertj/core/api/Descriptable.html#as-java.lang.String-java.lang.Object...-), [describedAs](https://www.javadoc.io/doc/org.assertj/assertj-core/3.2.0/org/assertj/core/api/Descriptable.html#describedAs-java.lang.String-java.lang.Object...-), [withFailMessage](https://javadoc.io/doc/org.assertj/assertj-core/2.3.0/org/assertj/core/api/AbstractAssert.html#withFailMessage(java.lang.String,%20java.lang.Object...)), and [overridingErrorMessage](https://javadoc.io/doc/org.assertj/assertj-core/2.3.0/org/assertj/core/api/AbstractAssert.html#overridingErrorMessage(java.lang.String,%20java.lang.Object...)).
+These methods should always be invoked before the actual assertion they intend to describe, otherwise, they have no effect. 
+This rule, swaps the invocation of the assertion methods with the invocation of the methods setting descriptions or the error messages for the corresponding assertions.
+
+### Pay-Per-Use License Model 
+
+This is a new licensing model that jSparrow offers in addition to the existing Floating and Node-Locked models. 
+Users can get [pre-paid packages](https://jsparrow.io/pricing) of 675 or 1350 credits.
+One **unit of credit** represents an estimation of **one minute remediation cost**. 
+
+::: tip Credit Calculation
+Every jSparrow rule has an estimation of the remediation cost in minutes for one resolved issue. 
+Resolving one issue with a certain rule, reduces the available credit with the amount of the remediation cost for that rule. 
+Exceptions are rules having a remediation cost higher than 20, as they charge only 20 units of credit for every resolved issue. 
+:::
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 10 additional markers for the following rules:
+
+The following rules will automatically generate markers in the Java files that are opened in the editor:
+* [Avoid Concatenation in Logging Statements](/rules/avoid-concatenation-in-logging-statements.html)
+* [Insert Break Statements in For-loops](/rules/insert-break-statement-in-loops.html)
+* [Remove Explicit Type Argument](/rules/diamond-operator.html)
+* [Remove Unused Parameters in Private Methods](/rules/remove-unused-parameter.html)
+* [Remove Redundant Type Cast](/rules/remove-redundant-type-cast.html)
+* [Replace indexOf() with contains()](/rules/index-of-to-contains.html)
+* [Replace Map::get by Map::getOrDefault](/rules/map-get-or-default.html)
+* [Replace put(..) with putIfAbsent(..)](/rules/put-if-absent.html)
+* [Replace removeAll() with clear()](/rules/collection-remove-all.html)
+* [Use Collections Singleton List](/rules/use-collections-singleton-list.html)
+
+### jSparrow Markers Preference Page 
+
+The jSparrow Markers preference page allows users to the set of markers that automatically appear in the opened Java editors.
+
+![jSparrow Markers Preference Page](/img/eclipse/release_notes/jsparrow_markers_preference_page_light.png)
+
 ## 4.5.0 <Badge vertical="middle" text="18.11.2021"/>
 
 The [105<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.5.0. The new rule supports Java Record classes introduced in Java 16. 
