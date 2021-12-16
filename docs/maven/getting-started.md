@@ -99,7 +99,7 @@ To use the jsparrow-maven-plugin on a project, add the following code snippet to
     <plugin>
       <groupId>eu.jsparrow</groupId>
       <artifactId>jsparrow-maven-plugin</artifactId>
-      <version>3.12.0</version>
+      <version>3.13.0</version>
     </plugin>
   </plugins>
 </build>  
