@@ -82,6 +82,7 @@ module.exports = [
 'use-collections-singleton-list',
 'use-comparator-methods',
 'use-dedicated-assertions',
+'use-dedicated-assert-j-assertions',
 'primitive-object-use-equals',
 'collections-factory-methods',
 'use-files-buffered-reader',
