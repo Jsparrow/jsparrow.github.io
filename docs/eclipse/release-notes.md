@@ -5,6 +5,57 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.7.0 <Badge vertical="middle" text="20.01.2022"/>
+
+The [108<sup>th</sup> refactoring rule](/rules/) and 21 additional jSparrow markers for existing rules are shipped with jSparrow 4.7.0.
+The new rule encourages the usage of dedicated AssertJ assertions.
+
+### New Rule 
+
+#### [**Use Dedicated AssertJ Assertions**](/rules/use-dedicated-assert-j-assertions.html)
+
+AssertJ contains a rich API for writing specific assertions about different types of objects. 
+Making use of the appropriate dedicated methods when writing certain assertions will simplify the test code and improve the corresponding failure messages. 
+This rule finds AssertJ assertions that can be simplified and replaces them with equivalent dedicated assertions. 
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 21 additional markers for the following rules:
+* [Replace For-Loop with Enhanced-For-Loop](/rules/for-to-for-each.html)
+* [Replace While-Loop with Enhanced For-Loop](/rules/while-to-for-each.html)
+* [Replace For-Loop with Stream::collect(Collectors.joining())](/rules/string-building-loop.html)
+* [Use String Join](/rules/use-string-join.html)
+* [Use Multi Catch](/rules/multi-catch.html)
+* [Use Try-With-Resource](/rules/try-with-resource.html)
+* [Use Arrays Stream](/rules/use-arrays-stream.html)
+* [Use Stream::filter](/rules/lambda-for-each-if-wrapper-to-filter.html)
+* [Use Stream::map](/rules/lambda-for-each-map.html)
+* [Use Stream::collect](/rules/lambda-for-each-collect.html)
+* [Use Factory Methods for Collections](/rules/collections-factory-methods.html)
+* [Replace Stream Collect By ToList](/rules/replace-stream-collect-by-to-list.html)
+* [Replace For-Loop with Stream::Match](/rules/enhanced-for-loop-to-stream-any-match.html)
+* [Replace For-Loop with Stream::findFirst](/rules/enhanced-for-loop-to-stream-find-first.html)
+* [Replace For-Loop with Stream::forEach](/rules/enhanced-for-loop-to-stream-for-each.html)
+* [Replace For-Loop with Stream::sum](/rules/enhanced-for-loop-to-stream-sum.html)
+* [Replace For-Loop with Stream::takeWhile](/rules/enhanced-for-loop-to-stream-take-while.html)
+* [Use Text Block](/rules/use-text-block.html)
+* [Use Switch Expression](/rules/use-switch-expression.html)
+* [Use Java Records](/rules/use-java-records.html)
+* [Use Pattern Matching for Instanceof](/rules/use-pattern-matching-for-instanceof.html)
+
+Thus, setting the total number of available jSparrow Markers to 41. 
+
+### jSparrow Markers Preference Page 
+
+The jSparrow Markers preference page is redesigned to group the markers by  [tags](/tags/): 
+
+![jSparrow Markers Preference Page](/img/eclipse/release_notes/jsparrow_markers_preference_page_redesign_light.png)
+
+### Fixed Bugs
+
+#### [Use Stream::map](/rules/lambda-for-each-map.html)
+* Avoids duplicating the `final` modifier in the parameter declaration of the extracted Stream or Optional map. 
+
 ## 4.6.0 <Badge vertical="middle" text="16.12.2021"/>
 
 The winter solstice jSparrow 4.6.0 release extends the rule set with two new refactoring rules, introduces the Pay-Per-Use license model, and adds 10 more jSparrow Markers.
@@ -53,7 +104,7 @@ The following rules will automatically generate markers in the Java files that a
 
 ### jSparrow Markers Preference Page 
 
-The jSparrow Markers preference page allows users to the set of markers that automatically appear in the opened Java editors.
+The jSparrow Markers preference page allows users to choose the set of markers that automatically appear in the opened Java editors.
 
 ![jSparrow Markers Preference Page](/img/eclipse/release_notes/jsparrow_markers_preference_page_light.png)
 

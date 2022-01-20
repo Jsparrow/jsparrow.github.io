@@ -5,9 +5,15 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.14.0 <Badge vertical="middle" text="20.01.2022"/>
+
+One new rule is shipped with release 3.14.0 of the jSparrow Maven Plugin:
+
+* [Use Dedicated AssertJ Assertions](/rules/rules/use-dedicated-assert-j-assertions.html)
+
 ## 3.13.0 <Badge vertical="middle" text="16.12.2021"/>
 
-One new rule is shipped with release 3.13.0 of the jSparrow Maven Plugin:
+Two new rules are shipped with release 3.13.0 of the jSparrow Maven Plugin:
 
 * [Chain AssertJ AssertThat Statements](/rules/rules/chain-assert-j-assert-that-statements.html)
 * [Shift AssertJ Description Before Assertion](/rules/rules/shift-assert-j-description-before-assertion.html)
@@ -35,7 +41,7 @@ jSparrow 4JDK8 is a limited version of the jSparrow Maven Plugin that supports J
 The plugin goals and the syntax for the jSparrow YML configuration remain the same as the main version of jSparrow Maven Plugin.
 
 ::: warning
-Use this version only in case the execution environment is restricted JDK 8.
+Use this version only in case the execution environment is restricted to JDK 8.
 :::
 
 #### How to configure?
@@ -54,7 +60,8 @@ Use the following following plugin entry to include jSparrow 4JDK8 Maven Plugin 
 </build>  
 ```
 
-Note that the configuration for jSparrow 4JDK8 is very similar to the main jSparrow Maven Plugin version. Both are hosted on the same maven plugin repository. The only difference to the main version is the artifactId that changed to `jsparrow-4jdk8-maven-plugin` for jSparrow 4JDK8, and remains the same `jsparrow-maven-plugin` for the main version.
+Note that the configuration for jSparrow 4JDK8 is very similar to the main jSparrow Maven Plugin version. Both are hosted on the same maven plugin repository.
+The only difference to the main version is the artifactId that changed to `jsparrow-4jdk8-maven-plugin` for jSparrow 4JDK8, and remains the same `jsparrow-maven-plugin` for the main version.
 
 #### How to run? 
 
@@ -63,7 +70,7 @@ The goal prefix for running jSparrow 4JDK8 remains `jsparrow`.
 ### jSparrow Report `destination` Path
 
 The default path for generating jSparrow Reports is changed to the default project build directory, which is typically the `target` folder in the project root.
-Additionally, a new parameter `destination` is added to the report goal that allows users to specify a custom path for generating jSparrow reports. E.g.:
+Additionally, a new parameter `destination` is added to the report goal that allows users to specify a custom path for generating the jSparrow reports. E.g.:
 
 ```shell
 mvn jsparrow:report -Ddestination='custom/path'
