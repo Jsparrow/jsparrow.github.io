@@ -33,6 +33,7 @@ module.exports = [
 'remove-redundant-type-cast',
 'remove-empty-statement',
 'remove-unnecessary-throws',
+'remove-unused-fields',
 'remove-unused-parameter',
 'remove-to-string-on-string',
 'field-renaming',
