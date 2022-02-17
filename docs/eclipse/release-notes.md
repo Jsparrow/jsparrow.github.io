@@ -5,6 +5,41 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.8.0 <Badge vertical="middle" text="17.02.2022"/>
+
+The [109<sup>th</sup> refactoring rule](/rules/) and 15 additional jSparrow markers for existing rules are shipped with jSparrow 4.8.0.
+The new rule encourages the removal of unused fields.
+
+### New Rule 
+
+#### [**Remove Unused Fields**](/rules/remove-unused-fields.html)
+
+This rule finds the field declarations that are never used and removes them. 
+Reassignments in the same or in external Java files are not counted as active usages. 
+A dedicated configuration wizard allows users to choose whether to remove fields whose initializers may cause side effects. 
+Any annotation except for `@Deprecated` and `@SuppressWarnings` prevents the field declaration from being considered as unused. 
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 15 additional markers for the following rules:
+* [Replace Assignment with Compound Operator](/rules/arithmethic-assignment.html)
+* [Use Files.newBufferedReader](/rules/use-files-buffered-reader.html)
+* [Use Files.newBufferedWriter](/rules/use-files-buffered-writer.html)
+* [Use Files.writeString](/rules/use-files-write-string.html)
+* [Use BufferedReader::lines](/rules/buffered-reader-lines.html)
+* [Use Optional::filter](/rules/optional-filter.html)
+* [Use Optional::ifPresent](/rules/optional-if-present.html)
+* [Use Optional::ifPresentOrElse](/rules/optional-if-present-or-else.html)
+* [Use Optional::map](/rules/optional-map.html)
+* [Create Temp Files Using Java NIO](/rules/create-temp-files-using-java-nio.html)
+* [Reuse Random Objects](/rules/reuse-random-objects.html)
+* [Use SecureRandom](/rules/use-secure-random.html)
+* [Use Parameterized JPA Query](/rules/use-parameterized-jpa-query.html)
+* [Use Parameterized Query](/rules/use-parameterized-query.html)
+* [Use Parameterized LDAP Query](/rules/use-parameterized-ldap-query.html)
+
+Thus, setting the total number of available jSparrow Markers to 56. 
+
 ## 4.7.0 <Badge vertical="middle" text="20.01.2022"/>
 
 The [108<sup>th</sup> refactoring rule](/rules/) and 21 additional jSparrow markers for existing rules are shipped with jSparrow 4.7.0.
