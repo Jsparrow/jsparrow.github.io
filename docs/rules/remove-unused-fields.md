@@ -22,9 +22,9 @@ Any annotation except for `@Deprecated` and `@SuppressWarnings` prevents the fie
 
 ### Avoiding Side Effects
 
-In general, any method or constructor invocation may cause side effects that may be necessary for the correct behavior of the program. 
-Therefore, the initializers in field declarations or the right hand sides of the field reassignments that may cause side effects are preventing the field from being removed by this rule. 
-Some exceptions are made for popular Java builtin constructors and methods. For example: 
+In general, any method or constructor invocation may cause side effects that may be necessary for the correct behavior of the program execution. 
+Therefore, the initializers in field declarations or in the right-hand sides of field reassignments that may cause side effects are preventing the field from being removed by this rule.  
+Some exceptions are made for some popular Java builtin constructors and methods. For example:
 * constructors of collections, maps, sets, and other popular Java classes, e.g., `new ArrayList<>()`, `new HashMap<>()`, `new Object()`, etc...
 * methods for retrieving information about a collection without modifying it, e.g., `contains()`, `isEmpty()`, `size()`, `lastIndexOf()`, etc...
 * factory methods for collections, e.g., `List.of()`, `Set.of()`, etc...
@@ -34,21 +34,21 @@ Some exceptions are made for popular Java builtin constructors and methods. For 
 Some benefits of removing unused code, and in particular unused fields, are:
 * Reduces maintenance costs.
 * Reduces the compilation time.
-* May potentially eliminate unnecessary computations for unwanted side effects. 
-
+* May potentially eliminate unnecessary computations for unwanted side effects.
 
 ## Configuration
 
 This rule provides a dedicated configuration wizard that allows users to:
-* choose the fields to remove by their access modifier. By default only the `private` modifier is selected.
+* choose which fields to remove based on their access modifier. By default only the `private` modifier is selected.
 * choose the search scope for field references. It can either be set to `Project` or `Workspace`.
-* choose whether to deliberately remove the fields whose initializers may cause side effects. By default this option is not checked. Users are advised to be cautions with this option as the side effects may be necessary for a correct behavior of the program. 
+* choose whether to deliberately remove the fields whose initializers may cause side effects. By default this option is not checked.  
+Users are advised to be cautions with this option as the side effects may be necessary for a correct behavior of the program execution.  
 
 The following is a shot of the configuration wizard:
 
 [ ![Remove unused code wizard](/img/eclipse/remove_unused_code_wizard.png) ](/img/eclipse/remove_unused_code_wizard.png)
 
-When clicking Finish, jSparrow will search for unused fields (as described above), find and analyse their references, compute the code changes.
+When clicking Finish, jSparrow will search for unused fields (as described above), find and analyse their references, and compute the code changes. 
 The changes are shown in a Dif-View and users can choose to accept the computed changes for each field:
 
 [ ![Remove unused code preview wizard](/img/eclipse/remove_unused_code_preview_wizard.png) ](/img/eclipse/remove_unused_code_preview_wizard.png)
