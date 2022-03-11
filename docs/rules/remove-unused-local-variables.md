@@ -1,7 +1,7 @@
 ---
-title: Remove Unused Fields
-ruleId: RemoveUnusedFields
-since: 4.8.0
+title: Remove Unused Local Variables
+ruleId: RemoveUnusedLocalVariables
+since: 4.9.0
 minJavaVersion: 1.1
 remediationCost: 2
 
@@ -11,7 +11,7 @@ description:
 tags: ["Java 1.1", "Readability", "Coding Conventions"]
 ---
 
-# Remove Unused Fields
+# Remove Unused Local Variables
 
 ## Description
 
@@ -36,24 +36,6 @@ Some benefits of removing unused code, and in particular unused fields, are:
 * Reduces the compilation time.
 * May potentially eliminate unnecessary computations for unwanted side effects.
 
-## Configuration
-
-This rule provides a dedicated configuration wizard that allows users to:
-* choose which fields to remove based on their access modifier. By default only the `private` modifier is selected.
-* choose the search scope for field references. It can either be set to `Project` or `Workspace`.
-* choose whether to deliberately remove the fields whose initializers may cause side effects. By default this option is not checked.  
-Users are advised to be cautions with this option as the side effects may be necessary for a correct behavior of the program execution.  
-
-The following is a shot of the configuration wizard:
-
-[ ![Remove unused code wizard](/img/eclipse/remove_unused_code_wizard.png) ](/img/eclipse/remove_unused_code_wizard.png)
-
-When clicking Finish, jSparrow will search for unused fields (as described above), find and analyse their references, and compute the code changes. 
-The changes are shown in a Dif-View and users can choose to accept the computed changes for each field:
-
-[ ![Remove unused code preview wizard](/img/eclipse/remove_unused_code_preview_wizard.png) ](/img/eclipse/remove_unused_code_preview_wizard.png)
-
-
 ## Tags
 
 ::: tip Tags
@@ -62,45 +44,111 @@ The changes are shown in a Dif-View and users can choose to accept the computed 
 
 ## Code Changes
 
+### Remove Unused Variable Declaration
+
 __Pre__
 ```java
-public class UnusedFieldsSample {
-	
-	public String publicUsedField = "";
-	public String publicUnusedReassignedField = "";
-	
-	private String privateUsedField = "";
-	
-	void foo() {
-		publicUnusedReassignedField = "";
-		BlackHole blackHole = new BlackHole();
-		blackHole.use(publicUsedField);
-		blackHole.use(privateUsedField);
-	}
-}
+		String usedLocalVariable = "";
+		String unusedLocalVariable = "";
 
+		BlackHole blackHole = new BlackHole();
+		blackHole.use(usedLocalVariable);
 ```
 
 __Post__
 ```java
-public class UnusedFieldsSample {
-	
-	public String publicUsedField = "";
-	
-	private String privateUsedField = "";
-	
-	void foo() {
+		String usedLocalVariable = "";
+
 		BlackHole blackHole = new BlackHole();
-		blackHole.use(publicUsedField);
-		blackHole.use(privateUsedField);
-	}
-}
+		blackHole.use(usedLocalVariable);
 ```
 
+### Selective Removing Of Variable Declaration Fragments
 
-## Limitations
+__Pre__
+```java
+		String usedLocalVariable1 = "",
+				unusedLocalVariable2 = "",
+				usedLocalVariable3 = "",
+				unusedLocalVariable4 = "";
 
-At most one field at a time can be removed from the field declarations with multiple declaration fragments.
+		BlackHole blackHole = new BlackHole();
+		blackHole.use(usedLocalVariable1);
+		blackHole.use(usedLocalVariable3);
+```
+
+__Post__
+```java
+		String usedLocalVariable1 = "",
+				usedLocalVariable3 = "";
+
+		BlackHole blackHole = new BlackHole();
+		blackHole.use(usedLocalVariable1);
+		blackHole.use(usedLocalVariable3);
+```
+
+### Remove Declaration together With Re-Assignment
+
+__Pre__
+```java
+		String usedLocalVariable = "";
+		String unusedLocalVariable = "";
+		
+		unusedLocalVariable = "s";
+
+		BlackHole blackHole = new BlackHole();
+		blackHole.use(usedLocalVariable);
+```
+
+__Post__
+```java
+		String usedLocalVariable = "";
+
+		BlackHole blackHole = new BlackHole();
+		blackHole.use(usedLocalVariable);
+```
+
+### Remove Unused Variable With @SuppressWarnings
+
+__Pre__
+```java
+		String usedLocalVariable = "";
+		@SuppressWarnings({ "unused" })
+		String unusedLocalVariable = "";
+
+		BlackHole blackHole = new BlackHole();
+		blackHole.use(usedLocalVariable);
+```
+
+__Post__
+```java
+		String usedLocalVariable = "";
+
+		BlackHole blackHole = new BlackHole();
+		blackHole.use(usedLocalVariable);
+```
+
+### Remove Unused Loop Counter
+
+__Pre__
+```java
+		BlackHole blackHole = new BlackHole();
+		int counter = 0;
+		
+		for (String s : strings) {
+			counter++;
+			blackHole.use(s);
+		}
+```
+
+__Post__
+```java
+		BlackHole blackHole = new BlackHole();
+		
+		for (String s : strings) {
+			blackHole.use(s);
+		}
+```
 
 <VersionNotice />
 
