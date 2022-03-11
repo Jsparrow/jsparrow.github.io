@@ -7,7 +7,7 @@ remediationCost: 2
 
     
 description:
-    Finds and remove fields that are never used actively.
+    Finds and remove local variables that are never used actively.
 tags: ["Java 1.1", "Readability", "Coding Conventions"]
 ---
 
@@ -15,23 +15,22 @@ tags: ["Java 1.1", "Readability", "Coding Conventions"]
 
 ## Description
 
-This rule finds the field declarations that are never used and removes them. 
-Reassignments in the same or in external Java files are not counted as active usages. 
-A configuration wizard allows users to choose whether to remove fields whose initializers may cause side effects (see [Configuration](#configuration)). 
-Any annotation except for `@Deprecated` and `@SuppressWarnings` prevents the field declaration from being considered as unused. 
+This rule finds declarations of local variables that are never used and removes them. 
+Reassignments as well as increment and decrement operations are not counted as active usages. 
+Any annotation except for `@Deprecated` and `@SuppressWarnings` prevents the local variable from being considered as unused. 
 
 ### Avoiding Side Effects
 
 In general, any method or constructor invocation may cause side effects that may be necessary for the correct behavior of the program execution. 
-Therefore, the initializers in field declarations or in the right-hand sides of field reassignments that may cause side effects are preventing the field from being removed by this rule.  
-Some exceptions are made for some popular Java builtin constructors and methods. For example:
+Therefore, the initializers in local variable declarations or in the right-hand sides of reassignments that may cause side effects are preventing the local variable from being removed by this rule.  
+Some exceptions are made for some popular Java built-in constructors and methods. For example:
 * constructors of collections, maps, sets, and other popular Java classes, e.g., `new ArrayList<>()`, `new HashMap<>()`, `new Object()`, etc...
 * methods for retrieving information about a collection without modifying it, e.g., `contains()`, `isEmpty()`, `size()`, `lastIndexOf()`, etc...
 * factory methods for collections, e.g., `List.of()`, `Set.of()`, etc...
 
 ## Benefits
 
-Some benefits of removing unused code, and in particular unused fields, are:
+Some benefits of removing unused code, and in particular unused local variables, are:
 * Reduces maintenance costs.
 * Reduces the compilation time.
 * May potentially eliminate unnecessary computations for unwanted side effects.
@@ -144,7 +143,7 @@ __Pre__
 __Post__
 ```java
 		BlackHole blackHole = new BlackHole();
-		
+
 		for (String s : strings) {
 			blackHole.use(s);
 		}
