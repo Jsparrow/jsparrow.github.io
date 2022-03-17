@@ -7,7 +7,7 @@ remediationCost: 2
 
     
 description:
-    Finds and remove local variables that are never used actively.
+    Finds and removes local variables that are never used actively.
 tags: ["Java 1.1", "Readability", "Coding Conventions"]
 ---
 
@@ -47,106 +47,106 @@ Some benefits of removing unused code, and in particular unused local variables,
 
 __Pre__
 ```java
-		String usedLocalVariable = "";
-		String unusedLocalVariable = "";
+String usedLocalVariable = "";
+String unusedLocalVariable = "";
 
-		BlackHole blackHole = new BlackHole();
-		blackHole.use(usedLocalVariable);
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable);
 ```
 
 __Post__
 ```java
-		String usedLocalVariable = "";
+String usedLocalVariable = "";
 
-		BlackHole blackHole = new BlackHole();
-		blackHole.use(usedLocalVariable);
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable);
 ```
 
 ### Selective Removing Of Variable Declaration Fragments
 
 __Pre__
 ```java
-		String usedLocalVariable1 = "",
-				unusedLocalVariable2 = "",
-				usedLocalVariable3 = "",
-				unusedLocalVariable4 = "";
+String usedLocalVariable1 = "",
+		unusedLocalVariable2 = "",
+		usedLocalVariable3 = "",
+		unusedLocalVariable4 = "";
 
-		BlackHole blackHole = new BlackHole();
-		blackHole.use(usedLocalVariable1);
-		blackHole.use(usedLocalVariable3);
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable1);
+blackHole.use(usedLocalVariable3);
 ```
 
 __Post__
 ```java
-		String usedLocalVariable1 = "",
-				usedLocalVariable3 = "";
+String usedLocalVariable1 = "",
+		usedLocalVariable3 = "";
 
-		BlackHole blackHole = new BlackHole();
-		blackHole.use(usedLocalVariable1);
-		blackHole.use(usedLocalVariable3);
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable1);
+blackHole.use(usedLocalVariable3);
 ```
 
-### Remove Declaration together With Re-Assignment
+### Remove Declaration Together With Re-Assignment
 
 __Pre__
 ```java
-		String usedLocalVariable = "";
-		String unusedLocalVariable = "";
-		
-		unusedLocalVariable = "s";
+String usedLocalVariable = "";
+String unusedLocalVariable = "";
 
-		BlackHole blackHole = new BlackHole();
-		blackHole.use(usedLocalVariable);
+unusedLocalVariable = "s";
+
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable);
 ```
 
 __Post__
 ```java
-		String usedLocalVariable = "";
+String usedLocalVariable = "";
 
-		BlackHole blackHole = new BlackHole();
-		blackHole.use(usedLocalVariable);
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable);
 ```
 
 ### Remove Unused Variable With @SuppressWarnings
 
 __Pre__
 ```java
-		String usedLocalVariable = "";
-		@SuppressWarnings({ "unused" })
-		String unusedLocalVariable = "";
+String usedLocalVariable = "";
+@SuppressWarnings({ "unused" })
+String unusedLocalVariable = "";
 
-		BlackHole blackHole = new BlackHole();
-		blackHole.use(usedLocalVariable);
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable);
 ```
 
 __Post__
 ```java
-		String usedLocalVariable = "";
+String usedLocalVariable = "";
 
-		BlackHole blackHole = new BlackHole();
-		blackHole.use(usedLocalVariable);
+BlackHole blackHole = new BlackHole();
+blackHole.use(usedLocalVariable);
 ```
 
 ### Remove Unused Loop Counter
 
 __Pre__
 ```java
-		BlackHole blackHole = new BlackHole();
-		int counter = 0;
-		
-		for (String s : strings) {
-			counter++;
-			blackHole.use(s);
-		}
+BlackHole blackHole = new BlackHole();
+int counter = 0;
+
+for (String s : strings) {
+	counter++;
+	blackHole.use(s);
+}
 ```
 
 __Post__
 ```java
-		BlackHole blackHole = new BlackHole();
+BlackHole blackHole = new BlackHole();
 
-		for (String s : strings) {
-			blackHole.use(s);
-		}
+for (String s : strings) {
+	blackHole.use(s);
+}
 ```
 
 <VersionNotice />
