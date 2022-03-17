@@ -5,6 +5,42 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.9.0 <Badge vertical="middle" text="17.03.2022"/>
+
+The [111<sup>th</sup> refactoring rule](/rules/) and 10 additional jSparrow markers for existing rules are shipped with jSparrow 4.9.0.
+The new rules encourage the removal of unused methods and local variables.
+
+### New Rules
+
+#### [**Remove Unused Methods**](/rules/remove-unused-methods.html)
+
+This rule finds the method declarations that are never used and removes them. 
+Users can choose to remove methods that are only used in test sources, together with their corresponding tests. 
+Any annotation except for `@Deprecated` and `@SuppressWarnings` prevents the method declaration from being considered as unused. 
+
+#### [**Remove Local Variables**](/rules/remove-unused-local-variables.html)
+
+This rule finds declarations of local variables that are never used and removes them. 
+Reassignments as well as increment and decrement operations are not counted as active usages. 
+Any annotation except for `@Deprecated` and `@SuppressWarnings` prevents the local variable from being considered as unused. 
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 10 additional markers for the following rules:
+* [Collapse If Statements](/rules/collapse-if-statements.html)
+* [Use Guard Condition](/rules/guard-condition.html)
+* [Split Multiple Variable Declarations](/rules/multi-variable-declaration-line.html)
+* [Remove Inherited Interfaces from Class Declaration](/rules/re-implementing-interface.html)
+* [Remove Double Negations](/rules/remove-double-negation.html)
+* [Remove Unnecessary Semicolons](/rules/remove-empty-statement.html)
+* [Remove Modifiers in Interface Properties](/rules/remove-modifiers-in-interface-properties.html)
+* [Remove toString() on String](/rules/remove-to-string-on-string.html)
+* [Replace String Format by Formatted](/rules/replace-string-format-by-formatted.html)
+* [Replace Collection.sort with List.sort](/rules/use-list-sort.html)
+
+
+Thus, setting the total number of available jSparrow Markers to 66. 
+
 ## 4.8.0 <Badge vertical="middle" text="17.02.2022"/>
 
 The [109<sup>th</sup> refactoring rule](/rules/) and 15 additional jSparrow markers for existing rules are shipped with jSparrow 4.8.0.
