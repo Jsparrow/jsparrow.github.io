@@ -7,7 +7,7 @@ remediationCost: 2
 
     
 description:
-    Finds and remove fields that are never used actively.
+    Finds and removes fields that are never used actively.
 tags: ["Java 1.1", "Readability", "Coding Conventions"]
 ---
 
@@ -38,7 +38,7 @@ Some benefits of removing unused code, and in particular unused fields, are:
 
 ## Configuration
 
-This rule provides a dedicated configuration wizard that allows users to:
+This rule, together with [Remove Unused Methods](remove-unused-methods.html) provides a dedicated configuration wizard that allows users to:
 * choose which fields to remove based on their access modifier. By default only the `private` modifier is selected.
 * choose the search scope for field references. It can either be set to `Project` or `Workspace`.
 * choose whether to deliberately remove the fields whose initializers may cause side effects. By default this option is not checked.  
@@ -46,7 +46,7 @@ Users are advised to be cautions with this option as the side effects may be nec
 
 The following is a shot of the configuration wizard:
 
-[ ![Remove unused code wizard](/img/eclipse/remove_unused_code_wizard.png) ](/img/eclipse/remove_unused_code_wizard.png)
+[ ![Remove unused code wizard](/img/eclipse/remove_unused_code_wizard_002.png) ](/img/eclipse/remove_unused_code_wizard_002.png)
 
 When clicking Finish, jSparrow will search for unused fields (as described above), find and analyse their references, and compute the code changes. 
 The changes are shown in a Dif-View and users can choose to accept the computed changes for each field:
