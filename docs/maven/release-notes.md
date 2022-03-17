@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.16.0 <Badge vertical="middle" text="17.03.2022"/>
+
+One new rule is shipped with release 3.16.0 of the jSparrow Maven Plugin:
+
+* [Remove Unused Local Variables](/rules/rules/remove-unused-local-variables.html)
+
 ## 3.14.0 <Badge vertical="middle" text="20.01.2022"/>
 
 One new rule is shipped with release 3.14.0 of the jSparrow Maven Plugin:
