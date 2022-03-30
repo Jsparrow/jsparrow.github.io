@@ -9,32 +9,32 @@ Here you will find the latest information about releases of the jSparrow Maven p
 
 One new rule is shipped with release 3.16.0 of the jSparrow Maven Plugin:
 
-* [Remove Unused Local Variables](/rules/rules/remove-unused-local-variables.html)
+* [Remove Unused Local Variables](/rules/remove-unused-local-variables.html)
 
 ## 3.14.0 <Badge vertical="middle" text="20.01.2022"/>
 
 One new rule is shipped with release 3.14.0 of the jSparrow Maven Plugin:
 
-* [Use Dedicated AssertJ Assertions](/rules/rules/use-dedicated-assert-j-assertions.html)
+* [Use Dedicated AssertJ Assertions](/rules/use-dedicated-assert-j-assertions.html)
 
 ## 3.13.0 <Badge vertical="middle" text="16.12.2021"/>
 
 Two new rules are shipped with release 3.13.0 of the jSparrow Maven Plugin:
 
-* [Chain AssertJ AssertThat Statements](/rules/rules/chain-assert-j-assert-that-statements.html)
-* [Shift AssertJ Description Before Assertion](/rules/rules/shift-assert-j-description-before-assertion.html)
+* [Chain AssertJ AssertThat Statements](/rules/chain-assert-j-assert-that-statements.html)
+* [Shift AssertJ Description Before Assertion](/rules/shift-assert-j-description-before-assertion.html)
 
 ## 3.12.0 <Badge vertical="middle" text="18.11.2021"/>
 
 One new rule is shipped with release 3.12.0 of the jSparrow Maven Plugin:
 
-* [Use Java Records](/rules/rules/use-java-records.html)
+* [Use Java Records](/rules/use-java-records.html)
 
 ## 3.11.0 <Badge vertical="middle" text="21.10.2021"/>
 
 One new rule is shipped with release 3.11.0 of the jSparrow Maven Plugin:
 
-* [Replace Stream Collect By ToList](/rules/rules/replace-stream-collect-by-to-list.html)
+* [Replace Stream Collect By ToList](/rules/replace-stream-collect-by-to-list.html)
 
 
 ### jSparrow 4JDK8 Maven Plugin
@@ -103,9 +103,9 @@ mvn jsparrow:refactor -DtempWorkspace="C:\Users\John\tmp-jmp-workspace"
 
 Three new rules are shipped with release 3.10.0 of the jSparrow Maven Plugin:
 
-* [Use Switch Expression](/rules/rules/use-switch-expression.html)
-* [Use Text Block](/rules/rules/use-switch-expression.html)
-* [Replace String Format by Formatted](/rules/rules/replace-string-format-by-formatted.html)
+* [Use Switch Expression](/rules/use-switch-expression.html)
+* [Use Text Block](/rules/use-switch-expression.html)
+* [Replace String Format by Formatted](/rules/replace-string-format-by-formatted.html)
 
 ### Important Node
 
@@ -119,7 +119,7 @@ Future releases will provide an alternative version of jSparrow Maven Plugin to 
 
 A new rule is shipped with release 3.8.0 of the jSparrow Maven Plugin:
 
-* [Replace JUnit 3 Test Cases](/rules/rules/replace-j-unit3-test-cases.html)
+* [Replace JUnit 3 Test Cases](/rules/replace-j-unit3-test-cases.html)
 
 ### Improvements 
 
