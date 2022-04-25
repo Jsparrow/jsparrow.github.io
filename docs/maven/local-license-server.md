@@ -13,4 +13,4 @@ The Local License Server is a lightweight tool that can be deployed on isolated 
   [JRE](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) is the minimum requirement for running the Local License Server. 
   - Physical USB connectivity - for security reasons, the Local License Server requires a physical connection with a hardware dongle. 
 
-In case you are unable to reach the online license server, feel free to [contact us](mailto:support@jsparrow.eu) and we will arrange a setup of the Local License Server for you. 
+In case you are unable to reach the online license server, feel free to [contact us](mailto:support@jsparrow.io) and we will arrange a setup of the Local License Server for you. 

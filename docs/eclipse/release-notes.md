@@ -534,7 +534,7 @@ The jSparrow Summary page is redesigned to show which rules have been applied fo
 
 #### Preview Wizard
 
-The jSparrow Preview wizard is updated to allow scrolling and source code selection in case the *"Finish"* button is enabled (this applies to the [Free](/tags/#free) rules in [jSparrow Starter](/rules/#free-rules-in-jsparrow-starter) and to all rules in [jSparrow Pro](https://jsparrow.eu/get-jsparrow/) and [jSparrow Student](https://jsparrow.eu/get-jsparrow/)).
+The jSparrow Preview wizard is updated to allow scrolling and source code selection in case the *"Finish"* button is enabled (this applies to the [Free](/tags/#free) rules in [jSparrow Starter](/rules/#free-rules-in-jsparrow-starter) and to all rules in [jSparrow Pro](https://jsparrow.io/pricing/) and [jSparrow Student](https://jsparrow.io/pricing/)).
 Otherwise, the changes in all files can be previewed through the *"Change Navigation"* controls, as highlighted in the animation below. 
 
 [ ![Change Navigation](/img/eclipse/release_notes/3-20-0-change-navigation.gif) ](/img/eclipse/release_notes/3-20-0-change-navigation.gif)
@@ -809,7 +809,7 @@ Java 8 introduced an extension to the List API by adding a [`sort`](https://docs
 ## 3.5.1 <Badge vertical="middle" text="23.05.2019"/>
 
 We have introduced a [Customer Portal](https://jsparrow.atlassian.net/servicedesk/customer/portal/1), where you can report bugs and get support. 
-There is also a new email address for customer support: [support@jsparrow.eu](mailto:support@jsparrow.eu) 
+There is also a new email address for customer support: [support@jsparrow.io](mailto:support@jsparrow.io) 
 
 This release adds the link to our Customer Portal and the new email address to the help dialogs in jSparrow.
 
@@ -1183,7 +1183,7 @@ Updated the way the free licenses work.
 ### Detailed Information
 
 Free licenses have been reworked to no longer require a connection to the licensing server. When using older versions of jSparrow this might have led to warning issues. However, jSparrow functionality should not be adversely impacted.
-Any warnings should be able to be removed by upgrading to the latest version of jSparrow. If you experience errors that persist after the upgrade please contact us at [bugreport@jsparrow.eu](mailto:bugreport@jsparrow.eu).
+Any warnings should be able to be removed by upgrading to the latest version of jSparrow. If you experience errors that persist after the upgrade please contact us at [bugreport@jsparrow.io](mailto:bugreport@jsparrow.io).
 
 ## 2.4.3 <Badge vertical="middle" text="20.02.2018"/>
 

@@ -32,11 +32,11 @@ Check out the release notes for [jSparrow 4.9.0](/eclipse/release-notes.html#_4-
 
 ## Where to find jSparrow?
 
-Have a look at our homepage at: [jSparrow.eu](https://jsparrow.io)  
-Compare jSparrow versions at: [Get jSparrow: The automatic Java code refactoring plugin](https://jsparrow.eu/get-jsparrow/)
+Have a look at our homepage at: [jSparrow.io](https://jsparrow.io)  
+Compare jSparrow versions at: [Get jSparrow: The automatic Java code refactoring plugin](https://jsparrow.io/get-jsparrow/)
 
 ## How to reach us?
 
 Do you have questions, want to report a bug, or want to see a feature implemented?  
-Contact us at: [support@jsparrow.eu](mailto:support@jsparrow.eu)
+Contact us at: [support@jsparrow.io](mailto:support@jsparrow.io)
 

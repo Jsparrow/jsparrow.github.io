@@ -48,7 +48,7 @@ module.exports = {
         },
         {
             text: 'Homepage',
-            link: 'https://jsparrow.eu/'
+            link: 'https://jsparrow.io/'
         }
         ],
         logo: '/logo.png',

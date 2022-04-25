@@ -27,8 +27,8 @@
         required
       >
         <span slot="label">
-          By clicking on the checkbox you confirm that you have read and understoof the
-          <a @click.stop href="https://jsparrow.eu/gdpr/" target="_blank">
+          By clicking on the checkbox you confirm that you have read and understood the
+          <a @click.stop href="https://jsparrow.io/wp-content/uploads/GDPR.pdf" target="_blank">
           General Data Protection Regulation</a> and that you agree to all points listed therein.
         </span>
       </v-checkbox>
@@ -40,7 +40,7 @@
       >
         <span slot="label">
           I agree with the terms and conditions of the
-          <a @click.stop href="https://jsparrow.eu/eula/" target="_blank">
+          <a @click.stop href="https://jsparrow.io/wp-content/uploads/EULA.pdf" target="_blank">
           License Agreement</a>
         </span>
       </v-checkbox>

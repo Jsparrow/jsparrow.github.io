@@ -176,7 +176,7 @@ As long as the `GitPublisher` plugin does not support pushing (see [JENKINS-2833
 ```groovy
 sshagent(['SSH_KEY_ID']) {
   sh "git config user.name 'jSparrow'"
-  sh "git config user.email 'info@jsparrow.eu'"
+  sh "git config user.email 'info@jsparrow.io'"
   sh "git add --all"
   sh "git commit -m '[jSparrow] automatic refactoring'"
   sh "git push origin HEAD:$env.BRANCH_NAME"
