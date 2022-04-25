@@ -4,6 +4,43 @@ title: Release Notes
 # Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
+## 4.10.0 <Badge vertical="middle" text="25.04.2022"/>
+
+The [112<sup>th</sup> refactoring rule](/rules/) and 10 additional jSparrow markers for existing rules are shipped with jSparrow 4.10.0.
+The new rule encourage the removal of unused types.
+
+### New Rule
+
+#### [**Remove Unused Types**](/rules/remove-unused-types.html)
+
+This rule finds the type declarations that are never used and removes them. 
+Users can choose to remove types that are only used in test sources, together with their corresponding tests. 
+Any annotation except for `@Deprecated` and `@SuppressWarnings` prevents the type declaration from being considered as unused. 
+
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 10 additional markers for the following rules:
+* [Make Fields and Variables Final](/rules/make-fields-and-variables-final.html)
+* [Use @Override Annotation](/rules/override-annotation.html)
+* [Use equals() on Primitive Objects](/rules/primitive-object-use-equals.html)
+* [Remove Collection::addAll](/rules/remove-collection-add-all.html)
+* [Remove Explicit Call To super()](/rules/remove-explicit-call-to-super.html)
+* [Remove Unnecessary Thrown Exceptions on Method Signatures](/rules/remove-unnecessary-throws.html)
+* [Reorder Modifiers](/rules/reorder-modifiers.html)
+* [Remove Lambda Expression Braces](/rules/statement-lambda-to-expression.html)
+* [StringBuffer() to StringBuilder()](/rules/string-buffer-to-builder.html)
+* [Use Offset Based String Methods](/rules/use-offset-based-string-methods.html)
+
+
+Thus, setting the total number of available jSparrow Markers to 76. 
+
+## jSparrow Markers Preference Page 
+
+## Quick-fix to Deactivate jSparrow Markers
+
+## Run jSparrow with the Default Profile 
+
 
 ## 4.9.0 <Badge vertical="middle" text="17.03.2022"/>
 
