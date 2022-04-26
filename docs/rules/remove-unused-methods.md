@@ -31,7 +31,7 @@ Some benefits of removing unused code, and in particular unused methods, are:
 
 ## Configuration
 
-This rule, together with [Remove Unused Fields](remove-unused-fields.html) provide a dedicated configuration wizard that allows users to:
+This rule, together with [Remove Unused Fields](remove-unused-fields.html) and [Remove Unused Types](remove-unused-types.html), provides a dedicated configuration wizard that allows users to:
 * choose which methods to remove based on their access modifier. By default only the `private` modifier is selected.
 * choose the search scope for method references. It can either be set to `Project` or `Workspace`.
 * choose whether to remove methods that are only used in unit tests. In this case, the corresponding test cases are also removed. 
@@ -39,7 +39,7 @@ Users are advised to be cautions with this option as the test cases may cover mo
 
 The following is a shot of the configuration wizard:
 
-[ ![Remove unused code wizard](/img/eclipse/remove_unused_code_wizard_002.png) ](/img/eclipse/remove_unused_code_wizard_002.png)
+[ ![Remove unused code wizard](/img/eclipse/remove_unused_code_wizard_003.png) ](/img/eclipse/remove_unused_code_wizard_003.png)
 
 When clicking Finish, jSparrow will search for unused fields and methods (as described above), find and analyse their references, and compute the code changes.  
 The changes are shown in a Dif-View and users can choose to accept the computed changes for each unused method or field:

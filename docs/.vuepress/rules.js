@@ -37,6 +37,7 @@ module.exports = [
 'remove-unused-local-variables',
 'remove-unused-methods',
 'remove-unused-parameter',
+'remove-unused-types',
 'remove-to-string-on-string',
 'field-renaming',
 'reorder-modifiers',
