@@ -26,9 +26,9 @@ You can use jSparrow as part of your development process in the Eclipse IDE or i
 
 ## The Latest New Features
 
-We released two new rules and 10 additional jSparrow markers for existing rules. 
-The new rules find and remove unused methods and local variables.
-Check out the release notes for [jSparrow 4.9.0](/eclipse/release-notes.html#_4-9-0) and [jSparrow Maven Plugin 3.16.0](/maven/release-notes.html#_3-16-0).
+We released one new rule, 10 additional jSparrow markers for existing rules, and some UI changes. 
+The new rule finds and removes unused types.
+Check out the release notes for [jSparrow 4.10.0](/eclipse/release-notes.html#_4-10-0).
 
 ## Where to find jSparrow?
 

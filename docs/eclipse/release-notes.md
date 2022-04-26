@@ -7,7 +7,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 ## 4.10.0 <Badge vertical="middle" text="25.04.2022"/>
 
 The [112<sup>th</sup> refactoring rule](/rules/) and 10 additional jSparrow markers for existing rules are shipped with jSparrow 4.10.0.
-The new rule encourage the removal of unused types.
+The new rule encourageS the removal of unused types.
 
 ### New Rule
 
@@ -37,10 +37,25 @@ Thus, setting the total number of available jSparrow Markers to 76.
 
 ## jSparrow Markers Preference Page 
 
+The jSparrow Markers preference page is extended with a search field that allows users to find jSparrow markers by their name and category:
+
+![jSparrow Markers Preference Page](/img/eclipse/release_notes/jsparrow_markers_preference_page_search_field_dark.png)
+
 ## Quick-fix to Deactivate jSparrow Markers
+
+All jSparrow markers are extended with a quick-fix that allows users to deactivate markers. 
+This quick-fix, automatically opens the preference page and searches for the corresponding marker by its name:
+
+![jSparrow Markers Deactivate Quick-Fix](/img/eclipse/release_notes/jsparrow_markers_deactivate_quickfix_003.gif)
 
 ## Run jSparrow with the Default Profile 
 
+The jSparrow context menu is extended with new entires: 
+* '*Refactor with Default Profile*' - starts jSparrow in the selected sources with the rules defined in the default profile. 
+In this way, the select rules wizard is skipped and the preview wizard will open immediately after computing refactoring is over. 
+* '*Edit profiles...*' - opens the jSparrow preference page for editing profiles and selecting the default profile. 
+
+![jSparrow Context Menu](/img/eclipse/release_notes/jsparrow_context_menu_002.png)
 
 ## 4.9.0 <Badge vertical="middle" text="17.03.2022"/>
 
