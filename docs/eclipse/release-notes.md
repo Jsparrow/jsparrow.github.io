@@ -4,6 +4,58 @@ title: Release Notes
 # Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
+## 4.10.0 <Badge vertical="middle" text="25.04.2022"/>
+
+The [112<sup>th</sup> refactoring rule](/rules/) and 10 additional jSparrow markers for existing rules are shipped with jSparrow 4.10.0.
+The new rule encourageS the removal of unused types.
+
+### New Rule
+
+#### [**Remove Unused Types**](/rules/remove-unused-types.html)
+
+This rule finds the type declarations that are never used and removes them. 
+Users can choose to remove types that are only used in test sources, together with their corresponding tests. 
+Any annotation except for `@Deprecated` and `@SuppressWarnings` prevents the type declaration from being considered as unused. 
+
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 10 additional markers for the following rules:
+* [Make Fields and Variables Final](/rules/make-fields-and-variables-final.html)
+* [Use @Override Annotation](/rules/override-annotation.html)
+* [Use equals() on Primitive Objects](/rules/primitive-object-use-equals.html)
+* [Remove Collection::addAll](/rules/remove-collection-add-all.html)
+* [Remove Explicit Call To super()](/rules/remove-explicit-call-to-super.html)
+* [Remove Unnecessary Thrown Exceptions on Method Signatures](/rules/remove-unnecessary-throws.html)
+* [Reorder Modifiers](/rules/reorder-modifiers.html)
+* [Remove Lambda Expression Braces](/rules/statement-lambda-to-expression.html)
+* [StringBuffer() to StringBuilder()](/rules/string-buffer-to-builder.html)
+* [Use Offset Based String Methods](/rules/use-offset-based-string-methods.html)
+
+
+Thus, setting the total number of available jSparrow Markers to 76. 
+
+## jSparrow Markers Preference Page 
+
+The jSparrow Markers preference page is extended with a search field that allows users to find jSparrow markers by their name and category:
+
+![jSparrow Markers Preference Page](/img/eclipse/release_notes/jsparrow_markers_preference_page_search_field_dark.png)
+
+## Quick-fix to Deactivate jSparrow Markers
+
+All jSparrow markers are extended with a quick-fix that allows users to deactivate markers. 
+This quick-fix, automatically opens the preference page and searches for the corresponding marker by its name:
+
+![jSparrow Markers Deactivate Quick-Fix](/img/eclipse/release_notes/jsparrow_markers_deactivate_quickfix_003.gif)
+
+## Run jSparrow with the Default Profile 
+
+The jSparrow context menu is extended with new entires: 
+* '*Refactor with Default Profile*' - starts jSparrow in the selected sources with the rules defined in the default profile. 
+In this way, the select rules wizard is skipped and the preview wizard will open immediately after computing refactoring is over. 
+* '*Edit profiles...*' - opens the jSparrow preference page for editing profiles and selecting the default profile. 
+
+![jSparrow Context Menu](/img/eclipse/release_notes/jsparrow_context_menu_002.png)
 
 ## 4.9.0 <Badge vertical="middle" text="17.03.2022"/>
 
@@ -534,7 +586,7 @@ The jSparrow Summary page is redesigned to show which rules have been applied fo
 
 #### Preview Wizard
 
-The jSparrow Preview wizard is updated to allow scrolling and source code selection in case the *"Finish"* button is enabled (this applies to the [Free](/tags/#free) rules in [jSparrow Starter](/rules/#free-rules-in-jsparrow-starter) and to all rules in [jSparrow Pro](https://jsparrow.eu/get-jsparrow/) and [jSparrow Student](https://jsparrow.eu/get-jsparrow/)).
+The jSparrow Preview wizard is updated to allow scrolling and source code selection in case the *"Finish"* button is enabled (this applies to the [Free](/tags/#free) rules in [jSparrow Starter](/rules/#free-rules-in-jsparrow-starter) and to all rules in [jSparrow Pro](https://jsparrow.io/pricing/) and [jSparrow Student](https://jsparrow.io/pricing/)).
 Otherwise, the changes in all files can be previewed through the *"Change Navigation"* controls, as highlighted in the animation below. 
 
 [ ![Change Navigation](/img/eclipse/release_notes/3-20-0-change-navigation.gif) ](/img/eclipse/release_notes/3-20-0-change-navigation.gif)
@@ -809,7 +861,7 @@ Java 8 introduced an extension to the List API by adding a [`sort`](https://docs
 ## 3.5.1 <Badge vertical="middle" text="23.05.2019"/>
 
 We have introduced a [Customer Portal](https://jsparrow.atlassian.net/servicedesk/customer/portal/1), where you can report bugs and get support. 
-There is also a new email address for customer support: [support@jsparrow.eu](mailto:support@jsparrow.eu) 
+There is also a new email address for customer support: [support@jsparrow.io](mailto:support@jsparrow.io) 
 
 This release adds the link to our Customer Portal and the new email address to the help dialogs in jSparrow.
 
@@ -1183,7 +1235,7 @@ Updated the way the free licenses work.
 ### Detailed Information
 
 Free licenses have been reworked to no longer require a connection to the licensing server. When using older versions of jSparrow this might have led to warning issues. However, jSparrow functionality should not be adversely impacted.
-Any warnings should be able to be removed by upgrading to the latest version of jSparrow. If you experience errors that persist after the upgrade please contact us at [bugreport@jsparrow.eu](mailto:bugreport@jsparrow.eu).
+Any warnings should be able to be removed by upgrading to the latest version of jSparrow. If you experience errors that persist after the upgrade please contact us at [bugreport@jsparrow.io](mailto:bugreport@jsparrow.io).
 
 ## 2.4.3 <Badge vertical="middle" text="20.02.2018"/>
 
