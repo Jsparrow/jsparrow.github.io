@@ -1,27 +1,27 @@
 ---
-title: Replace For-Loop with Stream::forEach
+title: Replace For-Loop with Iterable::forEach
 ruleId: EnhancedForLoopToStreamForEach
 since: 2.0.0
 minJavaVersion: 8
 remediationCost: 15
 links:
 description:
-    This rule replaces enhanced for loops (for-each-loops) with an invocation of 'java.util.stream.Stream::forEach' method and passes the body of the for-loop as a lambda Consumer parameter.
+    This rule replaces enhanced for loops (for-each-loops) with an invocation of 'java.lang.Iterable::forEach' method and passes the body of the for-loop as a lambda Consumer parameter.
 tags: ["Java 8", "Lambda", "Loop"]
 defaultConfiguration: true
 ---
 
-# Replace For-Loop with Stream::forEach
+# Replace For-Loop with Iterable::forEach
 
 ## Description
 
-This rule replaces enhanced for loops (for-each-loops) with an invocation of `java.util.stream.Stream::forEach`-method and passes the body of the for-loop as a lambda `Consumer` parameter.
+This rule replaces enhanced for loops (for-each-loops) with an invocation of `java.lang.Iterable::forEach`-method and passes the body of the for-loop as a lambda `Consumer` parameter.
 
 There are some special cases, in which the transformation won't be possible due to restrictions of lambda expressions and the Consumer interface.
 
 ## Benefits
 
-Using streams instead of loops improves the readability and makes the code more compact.
+Using functional coding style instead of imperative loops improves the readability and makes the code more compact.
 
 
 ## Tags
@@ -48,21 +48,23 @@ stringList.forEach(s -> System.out.println(s));
 
 __Pre__
 ```java
-for (String s : stringList1) {
-    int length = 0;
-    if (s.length() < 2) {
-        length /= s.length();
+for (String value : values) {
+    int length = value.length();
+    if (length > 2) {
+        length /= 2;
     }
+    print(value.substring(0, length));
 }
 ```
 
 __Post__
 ```java
-stringList1.forEach(s -> {
-    int length = 0;
-    if (s.length() < 2) {
-        length /= s.length();
+stringList.forEach(value -> {
+    int length = value.length();
+    if (length > 2) {
+        length /= 2;
     }
+    print(value.substring(0, length));
 });
 ```
 

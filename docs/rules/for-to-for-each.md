@@ -33,7 +33,6 @@ Applying this rule leads to more simplicity in the code base by using new langua
 __Pre__
 
 ``` java
-
 public String testConvertIteratorToForEach(String input) {
     List<String> foo = generateList(input);
     StringBuilder sb = new StringBuilder();
@@ -41,7 +40,7 @@ public String testConvertIteratorToForEach(String input) {
         String s = iterator.next();
         sb.append(s);
     }
-        return sb.toString();
+    return sb.toString();
 }
 ```
 
@@ -51,7 +50,7 @@ __Post__
 public String testConvertIteratorToForEach(String input) {
     List<String> foo = generateList(input);
     StringBuilder sb = new StringBuilder();
-        for (String s : foo) {
+    for (String s : foo) {
         sb.append(s);
     }
     return sb.toString();
