@@ -6,7 +6,7 @@ minJavaVersion: 5
 remediationCost: 15
     
 description:
-    This rule migrates JUnit 3 tests to either JUnit JUpiter or JUnit 4 depending on the most up-to-date JUnit version available in the classpath. 
+    This rule migrates JUnit 3 tests to either JUnit Jupiter or JUnit 4 depending on the most up-to-date JUnit version available in the classpath. 
 tags: ["Java 8", "Testing", "JUnit"]
 ---
 
@@ -14,7 +14,7 @@ tags: ["Java 8", "Testing", "JUnit"]
 
 ## Description
 
-This rule migrates JUnit 3 tests to either JUnit JUpiter or JUnit 4 depending on the most up-to-date JUnit version available in the classpath. 
+This rule migrates JUnit 3 tests to either JUnit Jupiter or JUnit 4 depending on the most up-to-date JUnit version available in the classpath. 
 The migration is achieved by: 
 * inserting the annotations to the test cases and life cycle methods accordingly 
 * inserting the correct import statements to the assertions or assumptions 

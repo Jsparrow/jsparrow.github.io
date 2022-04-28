@@ -56,14 +56,14 @@ public void throwingChildAndParent() throws ParentException {
 
 __Pre__
 ```java
-public void throwingTheSameExceptionTwice_() throws Exception, Exception {
+public void throwingTheSameExceptionTwice() throws Exception, Exception {
 	...
 }
 ```
 
 __Post__
 ```java
-public void throwingTheSameExceptionTwice_() throws Exception {
+public void throwingTheSameExceptionTwice() throws Exception {
 	...
 }
 ```
