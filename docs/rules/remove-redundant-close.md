@@ -9,7 +9,7 @@ links:
       url: "https://sonarcloud.io/organizations/default/rules?q=close&open=java%3AS4087"
     
 description:
-    This rule is used to remove redundant 'close()'-invocations on resources which are declared in the header of try-with-resource statements.
+    This rule is used to remove redundant 'close()'-invocation statements on resources which are declared in the header of try-with-resource statements.
 tags: ["Java 7", "Coding Conventions", "Readability"]
 defaultConfiguration: true
 ---
@@ -55,6 +55,28 @@ __Post__
 		}
 ```
 
+### Remove Close For Resource Declared Outside The Header
+
+__Pre__
+```java
+		BufferedReader br = new BufferedReader(new FileReader(path));
+		try (br) {
+			System.out.println("First line: " + br.readLine());
+			br.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+```
+
+__Post__
+```java
+		BufferedReader br = new BufferedReader(new FileReader(path));
+		try (br) {
+			System.out.println("First line: " + br.readLine());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+```
 
 ### Remove Close For Multiple Resources
 
@@ -83,6 +105,9 @@ __Post__
 		}
 ```
 
+## Limitations
+
+The 'close()'-invocation statement can only be removed if the resource is a local variable which is declared in the same scope.
 
 <VersionNotice />
 
