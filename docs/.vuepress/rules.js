@@ -30,6 +30,7 @@ module.exports = [
 'statement-lambda-to-expression',
 'remove-modifiers-in-interface-properties',
 'remove-null-check-before-instanceof',
+'remove-redundant-close',
 'remove-redundant-type-cast',
 'remove-empty-statement',
 'remove-unnecessary-throws',
