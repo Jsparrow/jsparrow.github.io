@@ -8,30 +8,30 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 ## 4.11.0 <Badge vertical="middle" text="19.05.2022"/>
 
 The [113<sup>th</sup> refactoring rule](/rules/) and 13 additional jSparrow markers for existing rules are shipped with jSparrow 4.11.0.
-The new rule encourage the removal of redundant resource 'close()' invocations.
+The new rule encourages the removal of redundant resource 'close()' invocations.
 
 ### New Rule
 
 #### [**Remove Redundant Close**](/rules/remove-redundant-close.html)
 
-This rule is used to remove redundant 'close()'-invocation statements on resources which are declared in the header of try-with-resource statements.
+This rule is used to remove redundant 'close()' invocation statements on resources which are declared in the header of try-with-resource statements.
 
 ### More jSparrow Markers
 
 jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 13 additional markers for the following rules:
-* [Add Braces to Control Statements](/rules/brackets-to-control.html)
-* [Remove Deprecated Date Constructs](/rules/date-deprecated.html)
-* [Replace Nested Loops with flatMap](/rules/flat-map-instead-of-nested-loops.html)
-* [Replace static final Collections with Collections.unmodifiable...()](/rules/immutable-static-final-collections.html)
-* [Use Portable Newline](/rules/string-format-line-separator.html)
-* [Use StringUtils Methods](/rules/string-utils.html)
-* [Use Predefined Standard Charset](/rules/use-predefined-standard-charset.html)
-* [Use Dedicated AssertJ Assertions](/rules/use-dedicated-assert-j-assertions.html)
-* [Replace JUnit assertThat with Hamcrest](/rules/replace-j-unit-assert-that-with-hamcrest.html)
-* [Replace JUnit Expected Annotation Property with assertThrows](/rules/replace-j-unit-expected-annotation-property.html)
-* [Replace JUnit ExpectedException with assertThrows](/rules/replace-j-unit-expected-exception.html)
-* [Replace JUnit Timeout Annotation Property with assertTimeout](/rules/replace-j-unit-timeout-annotation-property.html)
-* [Remove Redundant Close](/rules/remove-redundant-close.html)
+1. [Add Braces to Control Statements](/rules/brackets-to-control.html)
+2. [Remove Deprecated Date Constructs](/rules/date-deprecated.html)
+3. [Replace Nested Loops with flatMap](/rules/flat-map-instead-of-nested-loops.html)
+4. [Replace static final Collections with Collections.unmodifiable...()](/rules/immutable-static-final-collections.html)
+5. [Use Portable Newline](/rules/string-format-line-separator.html)
+6. [Use StringUtils Methods](/rules/string-utils.html)
+7. [Use Predefined Standard Charset](/rules/use-predefined-standard-charset.html)
+8. [Use Dedicated AssertJ Assertions](/rules/use-dedicated-assert-j-assertions.html)
+9. [Replace JUnit assertThat with Hamcrest](/rules/replace-j-unit-assert-that-with-hamcrest.html)
+10. [Replace JUnit Expected Annotation Property with assertThrows](/rules/replace-j-unit-expected-annotation-property.html)
+11. [Replace JUnit ExpectedException with assertThrows](/rules/replace-j-unit-expected-exception.html)
+12. [Replace JUnit Timeout Annotation Property with assertTimeout](/rules/replace-j-unit-timeout-annotation-property.html)
+13. [Remove Redundant Close](/rules/remove-redundant-close.html)
 
 Thus, setting the total number of available jSparrow Markers to 89. 
 
