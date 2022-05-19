@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.18.0 <Badge vertical="middle" text="19.05.2022"/>
+
+One new rule is shipped with release 3.18.0 of the jSparrow Maven Plugin:
+
+* [Remove Redundant Close](/rules/remove-redundant-close.html)
+
 ## 3.16.0 <Badge vertical="middle" text="17.03.2022"/>
 
 One new rule is shipped with release 3.16.0 of the jSparrow Maven Plugin:
