@@ -48,62 +48,142 @@ Applying this rule removes unnecessary code.
 
 __Pre__
 ```java
+@RequestMapping(value = "/users/get/{userId}", method = RequestMethod.GET)
+public @ResponseBody ResourceBean getUser(@PathVariable String userId,
+    HttpServletRequest request) {
 
+	ResourceBean responseBean;
+	// determine responseBean...
+
+	return responseBean;
+}
 ```
 
 __Post__
 ```java
+@GetMapping(value = "/users/get/{userId}")
+public @ResponseBody ResourceBean getUser(@PathVariable String userId,
+    HttpServletRequest request) {
 
+	ResourceBean responseBean;
+	// determine responseBean...
+
+	return responseBean;
+}
 ```
 
-### Replacement by @GetMapping 
+### Replacement by @PostMapping 
 
 __Pre__
 ```java
+@RequestMapping(value = "/users", method = RequestMethod.POST)
+public @ResponseBody ResourceBean addUser(@RequestBody UserBean userBean,
+    HttpServletRequest request) {
 
+	ResourceBean responseBean;
+	// determine responseBean...
+
+	return responseBean;
+}
 ```
 
 __Post__
 ```java
+@PostMapping(value = "/users")
+public @ResponseBody ResourceBean addUser(@RequestBody UserBean userBean,
+    HttpServletRequest request) {
 
+	ResourceBean responseBean;
+	// determine responseBean...
+
+	return responseBean;
+}
 ```
 
-### Replacement by @GetMapping
+### Replacement by @PutMapping
 
 __Pre__
 
 ```java
+@RequestMapping(value = "/users", method = RequestMethod.PUT)
+public @ResponseBody ResourceBean updateUser(@RequestBody UserBean userBean,
+    HttpServletRequest request) {
 
+	ResourceBean responseBean;
+	// determine responseBean...
+
+	return responseBean;
+}
 ```
 
 __Post__
 ```java
+@PutMapping(value = "/users")
+public @ResponseBody ResourceBean updateUser(@RequestBody UserBean userBean,
+    HttpServletRequest request) {
+	
+    ResourceBean responseBean;
+	// determine responseBean...
 
+	return responseBean;
+}
 ```
 
-### Replacement by @GetMapping
+### Replacement by @PatchMapping
 
 __Pre__
 
 ```java
+@RequestMapping(value = "/users", method = RequestMethod.PATCH)
+public @ResponseBody ResourceBean updateUser(@RequestBody UserBean userBean,
+    HttpServletRequest request) {
+        
+	ResourceBean responseBean;
+	// determine responseBean...
 
+	return responseBean;
+}
 ```
 
 __Post__
 ```java
+@PatchMapping(value = "/users")
+public @ResponseBody ResourceBean updateUser(@RequestBody UserBean userBean,
+    HttpServletRequest request) {
+    
+    ResourceBean responseBean;
+	// determine responseBean...
 
+	return responseBean;
+}
 ```
-### Replacement by @GetMapping
+### Replacement by @DeleteMapping
 
 __Pre__
 
 ```java
+@RequestMapping(value = "/users/{userId}", method = RequestMethod.DELETE)
+public @ResponseBody ResourceBean deleteUser(@PathVariable String userId,
+    HttpServletRequest request) {
 
+	ResourceBean responseBean;
+	// determine responseBean...
+
+	return responseBean;
+}
 ```
 
 __Post__
 ```java
+@DeleteMapping(value = "/users/{userId}")
+public @ResponseBody ResourceBean deleteUser(@PathVariable String userId,
+    HttpServletRequest request) {
 
+	ResourceBean responseBean;
+	// determine responseBean...
+
+	return responseBean;
+}
 ```
 
 
