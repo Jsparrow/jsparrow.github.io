@@ -40,12 +40,12 @@ Improves readability and enables the use of higher order funtions on `Optional`.
 __Pre__
 
 ```java
-		if(optional.isPresent()) {
-			String value = optional.get();
-			consume(value);
-		} else {
-			consume("No value");
-		}
+if(optional.isPresent()) {
+	String value = optional.get();
+	consume(value);
+} else {
+	consume("No value");
+}
 ```
 
 __Post__
@@ -59,28 +59,28 @@ __Post__
 __Pre__
 
 ```java
-		Optional<User> optional = findById(id);
-		if(optional.isPresent()) {
-			User user = optional.get();
-			consume(user);
-			consume(user);
-		} else {
-			System.out.println();
-			noUserFound();
-		}
+Optional<User> optional = findById(id);
+if(optional.isPresent()) {
+	User user = optional.get();
+	consume(user);
+	consume(user);
+} else {
+	System.out.println();
+	noUserFound();
+}
 ```
 
 __Post__
 
 ```java
-		Optional<User> optional = findById(id);
-		optional.ifPresentOrElse(user -> {
-			consume(user);
-			consume(user);
-		}, () -> {
-			System.out.println();
-			noUserFound();
-		});
+Optional<User> optional = findById(id);
+optional.ifPresentOrElse(user -> {
+	consume(user);
+	consume(user);
+}, () -> {
+	System.out.println();
+	noUserFound();
+});
 ```
 
 
@@ -89,15 +89,15 @@ __Post__
 Can not be applied if the __then__ path of the branch contains a non-effectively final variable or contains unhandled exceptions. E.g.:
 
 ```java
-		int i = 0;
-		i++;
-		if(optional.isPresent()) {
-			String value = optional.get();
-			consume(value);
-			i++;
-		} else {
-			consume("No value");
-		}
+int i = 0;
+i++;
+if(optional.isPresent()) {
+	String value = optional.get();
+	consume(value);
+	i++;
+} else {
+	consume("No value");
+}
 ```
 
 <VersionNotice />
