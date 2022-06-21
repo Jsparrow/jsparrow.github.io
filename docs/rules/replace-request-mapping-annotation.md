@@ -9,7 +9,8 @@ links:
       url: "https://sonarcloud.io/organizations/default/rules?open=java%3AS4488&rule_key=java%3AS4488"
     
 description:
-    Version 4.3 of the Spring Framework introduced annotations like '@GetMapping' or '@PostMapping' to be used instead of '@RequestMapping' when a certain request method is specified. Accordingly, this rule tries to replace annotations. For example,  '@RequestMapping(value = "/hello", method = RequestMethod.GET)' can be replaced by '@GetMapping(value = "/hello")'.
+    The Spring Framework 4.3 introduced some composed annotations like '@GetMapping', '@PostMapping', etc, as an alternative of '@RequestMapping(method=...)' for annotating HTTP request handlers. Accordingly, this rule replaces the '@RequestMapping' annotations with their equivalent dedicated alternatives, for example, '@RequestMapping(value = "/hello", method = RequestMethod.GET)' is replaced by '@GetMapping(value = "/hello")'.
+	
 tags: ["Java 5", "Spring", "Coding Conventions", "Readability"]
 defaultConfiguration: true
 ---
@@ -17,7 +18,7 @@ defaultConfiguration: true
 # Replace Request Mapping Annotation
 
 ## Description
-Spring framework 4.3 introduced variants of the '@RequestMapping' annotation to represent the semantics of the annotated methods in a more specific way. This rule looks for [`@RequestMapping`](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html) annotations on methods and tries to replace them by one of the following annotations which specify a certain [`RequestMethod`](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMethod.html):
+The Spring Framework 4.3 introduced some composed annotations like '@GetMapping', '@PostMapping', etc... as an alternative of [`@RequestMapping(method=...)`](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html)' for annotating HTTP request handlers. Accordingly, this rule replaces the '@RequestMapping' annotations with their equivalent dedicated alternatives, for example, '@RequestMapping(value = "/hello", method = RequestMethod.GET)' is replaced by '@GetMapping(value = "/hello")'.
 
 | Annotation | Request Method |
 | ----------- | ----------- |
@@ -27,9 +28,6 @@ Spring framework 4.3 introduced variants of the '@RequestMapping' annotation to 
 | [`@PatchMapping`](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/PatchMapping.html)  | RequestMethod.PATCH |
 | [`@DeleteMapping`](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/DeleteMapping.html)  | RequestMethod.DELETE |
 
-In Java, the try-with-resource statements are able to automatically close the resources which are defined in the try-with-resource header.
-Thus, any explicit [`close()`](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/lang/AutoCloseable.html#close()) invocation in the try block is redundant and potentially confusing. 
-This rule eliminates redundant resource `close()` invocations.
 
 ## Benefits
 
