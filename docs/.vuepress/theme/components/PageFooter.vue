@@ -4,6 +4,7 @@
 
     <div class="footer-links">
       <p>
+      jSparrow is a brand of ©2004-2022 Splendit IT Consulting GmbH |&nbsp;
         <a href="https://jsparrow.io/wp-content/uploads/Impressum.pdf">Impressum |&nbsp;</a>
         <a
           href="https://jsparrow.io/wp-content/uploads/Software-download-terms.pdf"
