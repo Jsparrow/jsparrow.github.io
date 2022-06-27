@@ -99,6 +99,10 @@ jSparrow rules having this tag are designed to improve JUnit test cases by makin
 jSparrow rules having this tag encourage best practices on using the [AssertJ](https://assertj.github.io/doc/#assertj-overview) library for writing fluent assertions in unit tests.
 <tag tag-name="AssertJ"/>
 
+## Spring
+jSparrow rules having this tag encourage best practices on using the [Spring](https://spring.io/projects/spring-framework) library for writing web applications.
+<tag tag-name="Spring"/>
+
 ## Java Version Tags
 
 Each rule has one Java version related tag, indicating the minimum required Java version of a project to apply the rule. 

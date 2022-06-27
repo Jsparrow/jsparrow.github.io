@@ -5,6 +5,18 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.12.0 <Badge vertical="middle" text="23.06.2022"/>
+
+The [114<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.12.0.
+The new rule encourages the usage of Spring dedicated annotations for creating web controllers.
+
+### New Rule
+
+#### [**Replace Request Mapping Annotation**](/rules/replace-request-mapping-annotation.html)
+
+The Spring Framework 4.3 introduced some composed annotations like '@GetMapping', '@PostMapping', etc... as an alternative of [`@RequestMapping(method=...)`](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html) for annotating HTTP request handlers. 
+Accordingly, this rule replaces the `@RequestMapping` annotations with their equivalent dedicated alternatives, for example, `@RequestMapping(value = "/hello", method = RequestMethod.GET)` is replaced by `@GetMapping(value = "/hello")`.
+
 ## 4.11.0 <Badge vertical="middle" text="19.05.2022"/>
 
 The [113<sup>th</sup> refactoring rule](/rules/) and 13 additional jSparrow markers for existing rules are shipped with jSparrow 4.11.0.

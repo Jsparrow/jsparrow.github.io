@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.19.0 <Badge vertical="middle" text="23.06.2022"/>
+
+One new rule is shipped with release 3.19.0 of the jSparrow Maven Plugin:
+
+* [Replace Request Mapping Annotations](/rules/replace-request-mapping-annotation.html)
+
 ## 3.18.0 <Badge vertical="middle" text="19.05.2022"/>
 
 One new rule is shipped with release 3.18.0 of the jSparrow Maven Plugin:
