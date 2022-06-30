@@ -3,7 +3,10 @@ const path = require('path');
 module.exports = {
     title: 'jSparrow Documentation',
     head: [
-        ['meta', { name: 'google-site-verification', content: '1EOegR91kbVWv-4x23fHUki6OgU7loau_CsiGDtJHok' }],
+        ['meta', {
+            name: 'google-site-verification',
+            content: '1EOegR91kbVWv-4x23fHUki6OgU7loau_CsiGDtJHok'
+        }],
         ['link', {
             rel: 'icon',
             href: '/logo.png'
@@ -19,37 +22,41 @@ module.exports = {
     ],
     themeConfig: {
         nav: [{
-            text: 'What is jSparrow?',
-            link: '/'
-        },
-        {
-            text: 'Rules',
-            link: '/rules/'
-        },
-        {
-            text: 'Tags',
-            link: '/tags/'
-        },
-        {
-            text: 'Eclipse Plugin',
-            link: '/eclipse/getting-started.html',
-        },
-        {
-            text: 'Maven Plugin',
-            link: '/maven/getting-started.html'
-        },
-        {
-            text: 'Cloud App',
-            link: '/cloud/getting-started.html'
-        },
-        {
-            text: 'Statistics',
-            link: '/statistics/statistics-summary.html'
-        },
-        {
-            text: 'Homepage',
-            link: 'https://jsparrow.io/'
-        }
+                text: 'What is jSparrow?',
+                link: '/'
+            },
+            {
+                text: 'Rules',
+                link: '/rules/'
+            },
+            {
+                text: 'Tags',
+                link: '/tags/'
+            },
+            {
+                text: 'Eclipse Plugin',
+                link: '/eclipse/getting-started.html',
+            },
+            {
+                text: 'Maven Plugin',
+                link: '/maven/getting-started.html'
+            },
+            {
+                text: 'Cloud App',
+                link: '/cloud/getting-started.html'
+            },
+            {
+                text: 'Statistics',
+                link: '/statistics/statistics-summary.html'
+            },
+            {
+                text: 'Registration for jSparrow Starter',
+                link: '/eclipse/starter-registration.html'
+            },
+            {
+                text: 'Homepage',
+                link: 'https://jsparrow.io/'
+            }
         ],
         logo: '/logo.png',
         sidebar: {
