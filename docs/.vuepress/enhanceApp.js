@@ -11,4 +11,4 @@ export default ({
   Vue.use(Vuetify)
 }
 
-Vue.use(VueGtag, { config: { id: "UA-144352955-2" } });
+Vue.use(VueGtag, { config: { id: "G-B39Q6TLDBR" } });
