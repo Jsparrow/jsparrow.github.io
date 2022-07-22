@@ -70,34 +70,8 @@ public class Employee extends User {
 }
 ```
 
-### java.util.logging.Logger with Class Name
 
-__Pre__
-```java
-//...
-import java.util.logging.Logger;
-
-//...
-public class Employee extends User {
-	static final Logger LOGGER = Logger.getLogger(User.class.getName());
-	// ...
-}
-```
-
-__Post__
-```java
-//...
-import java.util.logging.Logger;
-
-//...
-public class Employee extends User {
-	static final Logger LOGGER = Logger.getLogger(Employee.class.getName());
-	// ...
-}
-```
-
-
-### org.apache.logging.log4j.Logger with Class
+### Using org.apache.logging.log4j.Logger
 
 __Pre__
 ```java
@@ -125,6 +99,39 @@ public class Employee extends User {
 }
 ```
 
+### Calling Logging Method on java.util.logging.Logger.getLogger
+
+__Pre__
+```java
+//...
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
+//...
+public class Employee extends User {
+	// ...
+	void logInfo(String message) {
+		Logger.getLogger(User.class.getName()).log(Level.INFO, message);
+	}
+	// ...
+}
+```
+
+__Post__
+```java
+//...
+import java.util.logging.Logger;
+import java.util.logging.Level;
+
+//...
+public class Employee extends User {
+	// ...
+	void logInfo(String message) {
+		Logger.getLogger(Employee.class.getName()).log(Level.INFO, message);
+	}
+	// ...
+}
+```
 
 <VersionNotice />
 
