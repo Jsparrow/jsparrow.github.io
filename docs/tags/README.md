@@ -14,12 +14,6 @@ Rules with this tag will alter source code parts to follow guides such as the [G
 
 <Tag tag-name="Coding Conventions" />
 
-## Code Smell
-
-Code Smells are peaces of code which indicate the violation of important design principles. Although Code Smells are technically correct, they deteriorate code quality. See also [CodeSmell](https://martinfowler.com/bliki/CodeSmell.html). 
-
-<Tag tag-name="Code Smell" />
-
 ## Free
 
 Rules with this tag are free to use without limitation. See [jSparrow Starter Registration](/eclipse/jsparrow-starter-registration.html) for more details.
