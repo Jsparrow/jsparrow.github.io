@@ -23,11 +23,11 @@ A conventional way of initializing a logger for a certain class is the use of a 
 
 * [`org.slf4j.LoggerFactory.getLogger(Class<?>)`](https://www.slf4j.org/api/org/slf4j/LoggerFactory.html#getLogger-java.lang.Class-)
  to create a [`org.slf4j.Logger`](https://www.slf4j.org/api/org/slf4j/Logger.html).
+* [`org.apache.logging.log4j.LogManager.getLogger(Class<?>)`](https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/LogManager.html#getLogger-java.lang.Class-) to initialize a [`org.apache.logging.log4j.Logger`](https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html)
 *  [`java.util.logging.Logger.getLogger(String)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.logging/java/util/logging/Logger.html#getLogger(java.lang.String))
  returning a [`java.util.logging.Logger`](https://docs.oracle.com/en/java/javase/17/docs/api/java.logging/java/util/logging/Logger.html).
-* [`org.apache.logging.log4j.LogManager.getLogger(Class<?>)`](https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/LogManager.html#getLogger-java.lang.Class-) to initialize a [`org.apache.logging.log4j.Logger`](https://logging.apache.org/log4j/2.x/log4j-api/apidocs/org/apache/logging/log4j/Logger.html)
 
-If a given logger is initialized with a class which is different from the class where it is declared, then this rule will replace the wrong initialization argument by the correct one. For example, if a logger for the class 'Employee' is initialized with 'User.class', then the argument of the initialization will be replaced by 'Employee.class'.
+If a given logger is initialized with a class which is different from the class where it is declared, then this rule will replace the wrong initialization argument by the correct one. For example, if a logger for the class `Employee` is initialized with `User.class`, then the argument of the initialization will be replaced by `Employee.class`.
 
 ## Benefits
 
@@ -42,7 +42,7 @@ This rule removes misleading logging messages.
 
 ## Code Changes
 
-### org.slf4j.Logger with Class
+### Using org.slf4j.Logger
 
 __Pre__
 ```java
@@ -69,7 +69,6 @@ public class Employee extends User {
 	// ...
 }
 ```
-
 
 ### Using org.apache.logging.log4j.Logger
 
