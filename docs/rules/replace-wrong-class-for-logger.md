@@ -9,7 +9,7 @@ links:
       url: "https://sonarcloud.io/organizations/default/rules?q=+logger&open=java%3AS3416"
     
 description:
-    If a given logger is initialized with a class which is different from the class where it is declared, then this rule will replace the wrong initialization argument by the correct one. For example, if a logger for the class 'Employee' is initialized with 'User.class', then the argument of the initialization will be replaced by 'Employee.class'.
+    If a given logger is initialized with a class that is different from the class where it is declared, then this rule will replace the wrong initialization argument with the correct one. For example, if a logger for the class 'Employee' is initialized with 'User.class', then the argument of the initialization will be replaced by 'Employee.class'.
 
 tags: ["Java 1.1", "Readability", "Logging"]
 defaultConfiguration: true
@@ -19,7 +19,7 @@ defaultConfiguration: true
 
 ## Description
 
-A conventional way of initializing a logger for a certain class is the use of a factory method. Examples for common factory methods are:
+A conventional way of initializing a logger for a certain class is the use of a factory method. Examples of common factory methods are:
 
 * [`org.slf4j.LoggerFactory.getLogger(Class<?>)`](https://www.slf4j.org/api/org/slf4j/LoggerFactory.html#getLogger-java.lang.Class-)
  to create a [`org.slf4j.Logger`](https://www.slf4j.org/api/org/slf4j/Logger.html).
@@ -27,7 +27,9 @@ A conventional way of initializing a logger for a certain class is the use of a 
 *  [`java.util.logging.Logger.getLogger(String)`](https://docs.oracle.com/en/java/javase/17/docs/api/java.logging/java/util/logging/Logger.html#getLogger(java.lang.String))
  returning a [`java.util.logging.Logger`](https://docs.oracle.com/en/java/javase/17/docs/api/java.logging/java/util/logging/Logger.html).
 
-If a given logger is initialized with a class which is different from the class where it is declared, then this rule will replace the wrong initialization argument by the correct one. For example, if a logger for the class `Employee` is initialized with `User.class`, then the argument of the initialization will be replaced by `Employee.class`.
+If a given logger is initialized with a class 
+
+different from the class where it is declared, then this rule will replace the wrong initialization argument with the correct one. For example, if a logger for the class `Employee` is initialized with `User.class`, then the argument of the initialization will be replaced by `Employee.class`.
 
 ## Benefits
 
