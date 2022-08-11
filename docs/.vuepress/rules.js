@@ -69,6 +69,7 @@ module.exports = [
 'replace-request-mapping-annotation',
 'replace-string-format-by-formatted',
 'replace-stream-collect-by-to-list',
+'replace-wrong-class-for-logger',
 'map-get-or-default',
 'flat-map-instead-of-nested-loops',
 'while-to-for-each',
