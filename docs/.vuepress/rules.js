@@ -67,6 +67,7 @@ module.exports = [
 'replace-j-unit-expected-exception',
 'replace-j-unit-timeout-annotation-property',
 'replace-request-mapping-annotation',
+'replace-set-remove-all-with-for-each',
 'replace-string-format-by-formatted',
 'replace-stream-collect-by-to-list',
 'replace-wrong-class-for-logger',
