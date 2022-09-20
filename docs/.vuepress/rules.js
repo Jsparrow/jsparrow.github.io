@@ -66,6 +66,7 @@ module.exports = [
 'replace-j-unit-expected-annotation-property',
 'replace-j-unit-expected-exception',
 'replace-j-unit-timeout-annotation-property',
+'replace-multi-branch-if-by-switch',
 'replace-request-mapping-annotation',
 'replace-set-remove-all-with-for-each',
 'replace-string-format-by-formatted',
