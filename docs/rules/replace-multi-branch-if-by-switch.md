@@ -13,7 +13,7 @@ description:
 tags: ["Java 14", "Old Language Constructs", "Readability"]
 ---
 
-# Use Switch Expression
+# Replace Multi Branch If By Switch
 
 ## Description
 
