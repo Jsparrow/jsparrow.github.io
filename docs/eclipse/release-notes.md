@@ -5,9 +5,44 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.13.0 <Badge vertical="middle" text="26.09.2022"/>
+
+Three new rules are shipped with 4.13.0.
+
+The [115<sup>th</sup> refactoring rule](/rules/replace-set-remove-all-with-for-each.html) can be used to improve the performance whem removing elements from a 'java.util.Set'.
+
+The [116<sup>th</sup> refactoring rule](/rules/replace-wrong-class-for-logger.html) replaces wrong class names which are initialization arguments of loggers.
+
+The [117<sup>th</sup> refactoring rule](/rules/replace-multi-branch-if-by-switch.html) replaces complex cascading if statements by switch expressions or switch statements with switch labeled rules.
+
+
+### New Rules 
+
+
+#### [**Replace Set.removeAll With ForEach**](/rules/replace-set-remove-all-with-for-each.html)
+
+Calling the method 'removeAll' on a Set with a List as invocation argument may lead to performance problems due to a possible O(n^2) complexity. This rule replaces such invocations. For example, the invocation 'mySet.removeAll(myList);' is replaced by 'myList.forEach(mySet::remove);'.
+
+#### [**Replace Wrong Class for Logger**](/rules/replace-wrong-class-for-logger.html)
+
+If a given logger is initialized with a class that is different from the class where it is declared, then this rule will replace the wrong initialization argument with the correct one. For example, if a logger for the class 'Employee' is initialized with 'User.class', then the argument of the initialization will be replaced by 'Employee.class'.
+
+#### [**Replace Multi Branch If By Switch**](/rules/replace-multi-branch-if-by-switch.html)
+
+In Java 14, the switch expressions turned into a standard feature. 
+This rule replaces multi-branch if statements by corresponding switch expressions or switch statements with a switch labeled rules. 
+Because this rule removes a lot of redundant parts of code, readability is improved.
+
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 2 markers for the following rules:
+* [Replace Set.removeAll With ForEach](/rules/replace-set-remove-all-with-for-each.html)
+* [Replace Wrong Class for Logger](/rules/replace-wrong-class-for-logger.html)
+
 ## 4.12.0 <Badge vertical="middle" text="23.06.2022"/>
 
-The [114<sup>th</sup> refactoring rule](/rules/) is shipped with jSparrow 4.12.0.
+The [114<sup>th</sup> refactoring rule](/rules/replace-request-mapping-annotation.html) is shipped with jSparrow 4.12.0.
 The new rule encourages the usage of Spring dedicated annotations for creating web controllers.
 
 ### New Rule
@@ -16,6 +51,11 @@ The new rule encourages the usage of Spring dedicated annotations for creating w
 
 The Spring Framework 4.3 introduced some composed annotations like '@GetMapping', '@PostMapping', etc... as an alternative of [`@RequestMapping(method=...)`](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RequestMapping.html) for annotating HTTP request handlers. 
 Accordingly, this rule replaces the `@RequestMapping` annotations with their equivalent dedicated alternatives, for example, `@RequestMapping(value = "/hello", method = RequestMethod.GET)` is replaced by `@GetMapping(value = "/hello")`.
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds one marker for the following rule:
+* [Replace Request Mapping Annotation](/rules/replace-request-mapping-annotation.html)
 
 ## 4.11.0 <Badge vertical="middle" text="19.05.2022"/>
 
