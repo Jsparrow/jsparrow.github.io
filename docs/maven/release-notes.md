@@ -5,6 +5,14 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Maven plugin.
 
+## 3.20.0 <Badge vertical="middle" text="26.09.2022"/>
+
+Three new rules are shipped with release 3.20.0 of the jSparrow Maven Plugin:
+
+* [Replace Set.removeAll With ForEach](/rules/replace-request-mapping-annotation.html)
+* [Replace Wrong Class for Logger](/rules/replace-wrong-class-for-logger.html)
+* [Replace Multi Branch If By Switch](/rules/replace-multi-branch-if-by-switch.html)
+
 ## 3.19.0 <Badge vertical="middle" text="23.06.2022"/>
 
 One new rule is shipped with release 3.19.0 of the jSparrow Maven Plugin:
