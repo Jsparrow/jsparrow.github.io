@@ -7,7 +7,7 @@ remediationCost: 15
     
 description:
     In Java 14, the switch expressions turned into a standard feature. 
-    This rule replaces multi-branch if statements by corresponding switch expressions or switch statements with a switch labeled rules. 
+    This rule replaces multi-branch if statements by corresponding switch expressions or switch statements with switch labeled rules. 
     Because this rule removes a lot of redundant parts of code, readability is improved.
 
 tags: ["Java 14", "Old Language Constructs", "Readability"]
@@ -17,13 +17,13 @@ tags: ["Java 14", "Old Language Constructs", "Readability"]
 
 ## Description
 
-In Java 14, the [switch expressions](https://openjdk.java.net/jeps/361) turned into a standard feature. 
-This rule replaces multi-branch if statements by corresponding switch expressions or switch statements with a switch labeled rules. 
+In Java 14, [switch expressions](https://openjdk.java.net/jeps/361) turned into a standard feature. 
+This rule replaces multi-branch if statements by corresponding switch expressions or switch statements with switch labeled rules. 
 Because this rule removes a lot of redundant parts of code, readability is improved.
 
 
 ::: warning Requirements
-* Java 16
+* Java 14
 :::
 
 ## Benefits
