@@ -7,13 +7,7 @@ Here you will find the latest information about releases of the jSparrow Eclipse
 
 ## 4.13.0 <Badge vertical="middle" text="26.09.2022"/>
 
-Three new rules are shipped with 4.13.0.
-
-The [115<sup>th</sup> refactoring rule](/rules/replace-set-remove-all-with-for-each.html) can be used to improve the performance whem removing elements from a 'java.util.Set'.
-
-The [116<sup>th</sup> refactoring rule](/rules/replace-wrong-class-for-logger.html) replaces wrong class names which are initialization arguments of loggers.
-
-The [117<sup>th</sup> refactoring rule](/rules/replace-multi-branch-if-by-switch.html) replaces complex cascading if statements by switch expressions or switch statements with switch labeled rules.
+The [117<sup>th</sup> refactoring rule](/rules/replace-multi-branch-if-by-switch.html) is shipped with jSparrow 4.13.0. It replaces complex cascading if statements by switch expressions or switch statements with switch labeled rules which have been introduced in Java 14.
 
 
 ### New Rules 
@@ -30,7 +24,7 @@ If a given logger is initialized with a class that is different from the class w
 #### [**Replace Multi Branch If By Switch**](/rules/replace-multi-branch-if-by-switch.html)
 
 In Java 14, the switch expressions turned into a standard feature. 
-This rule replaces multi-branch if statements by corresponding switch expressions or switch statements with a switch labeled rules. 
+This rule replaces multi-branch if statements by corresponding switch expressions or switch statements with switch labeled rules. 
 Because this rule removes a lot of redundant parts of code, readability is improved.
 
 

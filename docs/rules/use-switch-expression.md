@@ -17,14 +17,14 @@ tags: ["Java 14", "Old Language Constructs", "Readability"]
 
 ## Description
 
-In Java 14, the [switch expressions](https://openjdk.java.net/jeps/361) turned to a standard feature. 
-This rule replaces the traditional switch-case statements with switch-case expressions. 
+In Java 14, [switch expressions](https://openjdk.java.net/jeps/361) turned into a standard feature. 
+This rule replaces the traditional switch-case statements with switch-case expressions or switch statements with switch labeled rules. 
 Thus, avoiding the fall-through semantics of control flow and at the same time, removing some boilerplate code.
 
 
 
 ::: warning Requirements
-* Java 16
+* Java 14
 :::
 
 ## Benefits

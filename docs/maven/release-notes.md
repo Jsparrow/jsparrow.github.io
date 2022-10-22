@@ -9,7 +9,7 @@ Here you will find the latest information about releases of the jSparrow Maven p
 
 Three new rules are shipped with release 3.20.0 of the jSparrow Maven Plugin:
 
-* [Replace Set.removeAll With ForEach](/rules/replace-request-mapping-annotation.html)
+* [Replace Set.removeAll With ForEach](/rules/replace-set-remove-all-with-for-each.html)
 * [Replace Wrong Class for Logger](/rules/replace-wrong-class-for-logger.html)
 * [Replace Multi Branch If By Switch](/rules/replace-multi-branch-if-by-switch.html)
 
