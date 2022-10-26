@@ -5,6 +5,16 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.13.1 <Badge vertical="middle" text="26.10.2022"/>
+
+### Hotfix Release
+This hotfix release fixes a JNA issue related to license validation. 
+
+### Fixed Bugs
+#### **Cannot initialize class JNA Native**
+
+* Fixed a license validation issue on some Eclipse versions started with JDK 11+.
+
 ## 4.13.0 <Badge vertical="middle" text="26.09.2022"/>
 
 The [117<sup>th</sup> refactoring rule](/rules/replace-multi-branch-if-by-switch.html) is shipped with jSparrow 4.13.0. It replaces complex cascading if statements by switch expressions or switch statements with switch labeled rules which have been introduced in Java 14.
