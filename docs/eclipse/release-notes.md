@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.14.0 <Badge vertical="middle" text="30.12.2022"/>
+
+### UI Improvements
+
+This release offers an improved user experience of our jSparrow Eclipse Plugin. We have changed the appearance of the UI for the rule selection and the licensing process. 
+
 ## 4.13.1 <Badge vertical="middle" text="26.10.2022"/>
 
 ### Hotfix Release
