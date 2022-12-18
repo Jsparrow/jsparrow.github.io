@@ -45,7 +45,7 @@
         </span>
       </v-checkbox>
 
-      <v-checkbox v-model="registration.newsletter"
+      <v-checkbox v-model="registration.newsLetterAccepted"
       label="I agree to receive the jSparrow newsletter about new product features,
        special offers and interesting information about Java refactoring and improving code quality"></v-checkbox>
 
@@ -66,7 +66,7 @@ export default {
       company: "",
       dsgvo: false,
       license: false,
-      newsletter: true
+      newsLetterAccepted: true
     },
     valid: true,
     firstNameRules: [
@@ -96,7 +96,7 @@ export default {
       this.registration.company = "";
       this.registration.dsgvo = false;
       this.registration.license = false;
-      this.registration.newsletter = true;
+      this.registration.newsLetterAccepted = true;
       this.$refs.form.resetValidation();
     },
     sendRegistration: function() {
