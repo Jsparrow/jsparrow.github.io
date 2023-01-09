@@ -5,7 +5,7 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
-## 4.14.1 <Badge vertical="middle" text="12.01.2023"/>
+## 4.14.1 <Badge vertical="middle" text="10.01.2023"/>
 
 ### Hotfix Release
 
