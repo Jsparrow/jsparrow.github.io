@@ -1,18 +1,18 @@
 <template>
   <v-app>
     <div class="buy-link" id="buy">
-      <v-btn color="info" href="https://jsparrow.io/#webdemo" target="_blank" v-on:click="scheduleDemoFunction">
-        Schedule Demo
-        <v-icon right dark small class=".v-icon--right">apps</v-icon>
+      <v-btn color="#00000" href="https://jsparrow.io/contact-us" target="_blank" v-on:click="onSupportClick">
+        Support
+        <v-icon right dark small class=".v-icon--right">help</v-icon>
       </v-btn>
       <v-btn
-        color="success"
-        href="https://jsparrow.io/get-jsparrow/"
+        color="info"
+        href="https://jsparrow.io/try-free/"
         target="_blank"
-        v-on:click="buyNowFunction"
+        v-on:click="tryFreeClick"
       >
-        Buy Now
-        <v-icon right dark small class=".v-icon--right">add_shopping_cart</v-icon>
+        Get Trial Key
+        <v-icon right dark small class=".v-icon--right">get_app</v-icon>
       </v-btn>
     </div>
   </v-app>
@@ -20,16 +20,15 @@
 <script>
   export default {
     methods: {
-      scheduleDemoFunction($event) {
-        gtag("event", "schedule demo", {
-          event_label: "button",
-          event_category: window.location.href,
+      onSupportClick($event) {
+        gtag("event", "support_btn_clicked", {
+          event_location: window.location.href,
         });
       },
-      buyNowFunction($event) {
-        gtag("event", "buy now", {
-          event_label: "button",
-          event_category: window.location.href,
+      tryFreeClick($event) {
+        gtag("event", "trial_btn_clicked", {
+          trial_key: "interested",
+          event_location: window.location.href,
         });
       },
     },
