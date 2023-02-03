@@ -32,7 +32,6 @@ The plugin is activated with a right-click in the editor or the package tree. Th
 
 [ ![Screenshot for a selected project](/img/eclipse/selected_project_large.jpg) ](/img/eclipse/selected_project_large.jpg)
 
-
 ## Selection of rules
 
 After the execution of “Select Rules” a selection window is opened, where rules to be applied can be selected.
@@ -46,6 +45,16 @@ The window is split into three parts:
 Desired rules may be added to the right list simply by selecting one or more rules on the left list and pushing the `Add` button. If you want to apply all the rules, you can do just that by simply pushing the `Add all` button.
 * __Bottom:__ On the bottom part of the window, the description of the currently selected rule is displayed.
 
+<div style="border: 2px dashed #83b9ff;padding: 2rem;">
+
+### Access all Refactorings
+Please note that the trial version only contains 20 of our most liked rules signed with a tick. 
+<br>
+To get full access to all the rules jSparrow provides,  an [upgrade of your license](https://jsparrow.io/pricing/) is required.
+
+<img src="/jsparrow-comic-pointing-at-a-graph.PNG" width="200" alt="a drawn cute bird pointing at a graph that shows positive results">
+
+</div>
 
 ### Selection of the profile
 
@@ -103,12 +112,16 @@ For more information see [Setting the default profile](profiles.html#setting-the
 Rules can be filtered by text or by tags. Tags group rules by functionality, requirements or any relevant common factor they have.
 
 ### Disabled rules
-
-Some rules may not be available to be applied on certain projects. The reason for that is one of the following missing requirements:
+Some rules may not be available to be applied on certain projects; The reason for that is one of the following missing requirements:
 * Java version too low
 * Missing required library
+* Using Free or Trial Version
+
 ::: tip Note
 Information about unsatisfied requirements will be shown in red color in the rule description in the select rules window.
+:::
+::: tip Note
+Some of our rules are disabled in the Trial version and need to be unlocked by [upgrading your license](https://jsparrow.io/pricing/).
 :::
 
 
