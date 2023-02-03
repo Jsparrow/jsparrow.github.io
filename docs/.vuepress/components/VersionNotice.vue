@@ -25,6 +25,7 @@
         <strong><a href="https://jsparrow.io/pricing/" target="_blank" rel="noopener noreferrer">your jSparrow license</a></strong>.
       </p>   
     </div>
+    <img src="/jsparrow-comic-pointing-at-a-graph.PNG" width="200" alt="a drawn cute bird pointing at a graph that shows positive results">
   </div>
 </template>
 
