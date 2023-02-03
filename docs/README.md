@@ -4,38 +4,46 @@ title: What is jSparrow?
 
 # What is jSparrow?
 
-jSparrow is a tool that refactors Java code for you, powered by the Eclipse Java compiler.
+jSparrow is an IDE extension for refactoring Java code with a rule-based approach, powered by the Eclipse Java compiler. A jSparrow rule is a definition of many small composed refactoring steps performed by the plug-in; one rule, when selected, can by itself refactor a very specific area within your system-wide code.
 
-Based on a set of rules you can decide which improvements should be applied to your code base. These rules include removing code smells, introducing lambda expressions, adding proper logging, and many many more. See also our [Rules](/rules/) page for more information!
 
-jSparrow is in active development and there are new rules released regularly. The latest changes are always linked in [The Latest New Features](#the-latest-new-features)!
-
-When it comes to refactoring, it is always important to have a measurable result. This is why we analyzed [50+ open source projects](github/statistics.html) and [Jenkins source code](/github/jenkins-statistics.html?p=jenkins-core) with jSparrow. The results are shown in the corresponding links.
-
-You can use jSparrow as part of your development process in the Eclipse IDE or integrate it seamlessly into your CI/CD pipeline as a Maven plugin.
+Additionally jSparrow now also offers markers that will allow you live and in-depth guidance towards best practice java while you are programming.
 
 *Refactor your Java code.*
 *Improve the code quality.*
 *Apply the latest Java features.*
 
-**One tool three platforms:**
+jSparrow is in active development and there are new rules released regularly. The latest changes are always linked in the [Latest Release Notes](#latest-release-notes)!
+
+## Install jSparrow
+
+To install jSparrow for Eclipse IDE please visit [Eclipse Marketplace](https://marketplace.eclipse.org/content/jsparrow) in your browser or in your IDE directly.
+
+
+**One tool, four platforms:**
+
+jSparrow is a plugin for Eclipse IDE, Maven, and GitHub. However, jSparrow for Maven and GitHub is currently only available through contacting us. You’ll work tightly with one of our inhouse-developers because of potential library restrictions.
+Additionally, we are currently working on introducing jSparrow to Visual Studio Code.
 
 * [jSparrow Eclipse plugin](eclipse/getting-started.html)
 * [jSparrow Maven plugin](maven/getting-started.html)
 * [jSparrow Cloud App](cloud/getting-started.html)
 
-## The Latest New Features
+## Latest Release Notes
 
 We fixed the issues for the usage of jSparrow on eclipse 2022-12.
 Check out the release notes for [jSparrow 4.14.1](/eclipse/release-notes.html#_4-14-1).
 
-## Where to find jSparrow?
-
-Have a look at our homepage at: [jSparrow.io](https://jsparrow.io)  
-Compare jSparrow versions at: [Get jSparrow: The automatic Java code refactoring plugin](https://jsparrow.io/get-jsparrow/)
-
 ## How to reach us?
 
 Do you have questions, want to report a bug, or want to see a feature implemented?  
-Contact us at: [support@jsparrow.io](mailto:support@jsparrow.io)
+Contact us at: [support@jsparrow.io](mailto:support@jsparrow.io) or through our [contact form](https://jsparrow.io/contact-us)
+
+
+**jSparrow Quick Links**
+
+* Have a look at our homepage for an overview of all Rules: [jSparrow.io](https://jsparrow.io/about-jsparrow/)
+* Find a license version, which fits your needs best: [Packages](https://jsparrow.io/pricing/)
+* Or start with the jSparrow Eclipse IDE Free license: [Try Free](https://jsparrow.io/try-free/)
+
 
