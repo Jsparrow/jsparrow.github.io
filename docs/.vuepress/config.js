@@ -9,7 +9,7 @@ module.exports = {
         }],
         ['link', {
             rel: 'icon',
-            href: '/logo.png'
+            href: '/jsparrow-tab-icon.png'
         }]
     ],
     plugins: [
@@ -50,7 +50,7 @@ module.exports = {
                 link: 'https://jsparrow.io/try-free'
             }
         ],
-        logo: '/logo.png',
+        logo: '/jsparrow-logo.png',
         sidebar: {
             '/maven/': ['getting-started', 'local-license-server', 'additional-configuration', 'build-integration', 'troubleshooting', 'release-notes'],
             '/eclipse/': ['getting-started', 'installation-guide', 'jsparrow-starter-registration', 'profiles', 'additional-configuration', 'release-notes'],
