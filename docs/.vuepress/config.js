@@ -42,20 +42,12 @@ module.exports = {
                 link: '/maven/getting-started.html'
             },
             {
-                text: 'Cloud App',
-                link: '/cloud/getting-started.html'
-            },
-            {
                 text: 'Statistics',
                 link: '/statistics/statistics-summary.html'
             },
             {
-                text: 'Registration for jSparrow Starter',
-                link: '/eclipse/starter-registration.html'
-            },
-            {
-                text: 'Homepage',
-                link: 'https://jsparrow.io/'
+                text: 'Try Free (for Eclipse)',
+                link: 'https://jsparrow.io/try-free'
             }
         ],
         logo: '/logo.png',
