@@ -31,8 +31,8 @@ Additionally, we are currently working on introducing jSparrow to Visual Studio 
 
 ## Latest Release Notes
 
-We fixed the issues for the usage of jSparrow on eclipse 2022-12.
-Check out the release notes for [jSparrow 4.14.1](/eclipse/release-notes.html#_4-14-1).
+We once again improved the user experience of our jSparrow Eclipse Plugin.
+Check out the release notes for [jSparrow 4.15.0](/eclipse/release-notes.html#_4-15-0).
 
 ## How to reach us?
 
