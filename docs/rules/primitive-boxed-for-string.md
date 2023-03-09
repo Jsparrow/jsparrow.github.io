@@ -11,7 +11,7 @@ links:
 description:
     When calling 'toString()' on a boxed primitive no new instance of that primitive has to be created.
     This rule replaces occurrences of such code with a static method
-tags: ["Free", "Java 1.1", "String Manipulation", "Performance"]
+tags: ["Free", "Java 1.1", "String Manipulation", "Performance", "Marker"]
 ---
 
 # Remove Boxing for String Conversions

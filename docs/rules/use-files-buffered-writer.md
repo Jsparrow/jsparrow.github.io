@@ -10,7 +10,7 @@ links:
     
 description:
     Java 7 introduced the 'java.nio.file.Files' class that contains some convenience methods for operating on files. This rule makes use of 'Files.newBufferedWriter' method for initializing 'BufferedWriter' objects to write text files in an efficient non-blocking manner.
-tags: ["Java 7", "Performance", "Old Language Constructs", "IO Operations"]
+tags: ["Java 7", "Performance", "Old Language Constructs", "IO Operations", "Marker"]
 ---
 
 # Use Files.newBufferedWriter

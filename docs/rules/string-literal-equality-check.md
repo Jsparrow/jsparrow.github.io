@@ -10,7 +10,7 @@ links:
     
 description:
     Moves the string literals in the left-hand-side of 'equals()' or 'equalsIgnoreCase()' when checking for equality.
-tags: ["Free", "Java 1.1", "String Manipulation"]
+tags: ["Free", "Java 1.1", "String Manipulation", "Marker"]
 ---
 
 # Reorder String Equality Check

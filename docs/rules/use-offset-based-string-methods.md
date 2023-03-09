@@ -11,7 +11,7 @@ links:
 description:
     This rule avoids creating intermediate 'String' instances by making use of the overloaded offset based methods in the String API.
     
-tags: ["Free", "Java 1.1",  "String Manipulation", "Performance"]
+tags: ["Free", "Java 1.1",  "String Manipulation", "Performance", "Marker"]
 ---
 
 # Use Offset Based String Methods

@@ -10,7 +10,7 @@ links:
 description:
     A typecast expression can be removed if it casts an expression to a type which is already exactly the type of the expression. Additionally, also parentheses involved in the cast operation will be removed if they are not necessary any more.
 
-tags: ["Java 1.1", "Readability"]
+tags: ["Java 1.1", "Readability", "Marker"]
 ---
 
 # Remove Redundant Type Casts

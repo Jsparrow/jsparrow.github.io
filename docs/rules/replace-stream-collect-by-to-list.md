@@ -7,7 +7,7 @@ remediationCost: 2
     
 description:
     Java 16 introduced 'Stream.toList()' as a shorthand method for converting a Stream into an unmodifiable List. This rule replaces invocations of `collect(Collectors.toUnmodifiableList())` on a stream by the new method `stream.toList()`. 
-tags: ["Java 16", "Old Language Constructs", "Readability"]
+tags: ["Java 16", "Old Language Constructs", "Readability", "Marker"]
 ---
 
 # Replace Stream Collect By ToList

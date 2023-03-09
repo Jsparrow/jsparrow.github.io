@@ -7,7 +7,7 @@ remediationCost: 2
 links:
 description:
     Simplifies arithmetic operations where a compound operator is possible.
-tags: ["Java 1.4", "Readability", "Coding Conventions"]
+tags: ["Java 1.4", "Readability", "Coding Conventions", "Marker"]
 ---
 
 # Replace Assignment with Compound Operator

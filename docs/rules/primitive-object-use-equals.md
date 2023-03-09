@@ -7,7 +7,7 @@ remediationCost: 2
 links:
 description:
     This rule replaces the infix operators "==" and "!=" with 'equals()' when used on primitive objects.
-tags: ["Java 1.1", "Coding Conventions", "String Manipulation"]
+tags: ["Java 1.1", "Coding Conventions", "String Manipulation", "Marker"]
 ---
 
 # Use equals() on Primitive Objects

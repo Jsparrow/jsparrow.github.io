@@ -10,7 +10,7 @@ links:
     
 description:
     Checks if braces are used to encapsulate control statements and adds them if they aren't present.
-tags: ["Java 1.1", "Readability"]
+tags: ["Java 1.1", "Readability", "Marker"]
 ---
 
 # Add Braces to Control Statements

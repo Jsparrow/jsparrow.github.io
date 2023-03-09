@@ -10,7 +10,7 @@ links:
     
 description:
     Removes the unnecessary semicolons from the code blocks.
-tags: ["Free", "Java 1.1", "Coding Conventions"]
+tags: ["Free", "Java 1.1", "Coding Conventions", "Marker"]
 ---
 
 # Remove Unnecessary Semicolons

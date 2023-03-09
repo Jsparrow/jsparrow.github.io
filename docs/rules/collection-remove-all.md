@@ -10,7 +10,7 @@ links:
     
 description:
     Simplifies the code by replacing all occurrences of 'removeAll()' which have the current collection as parameter with 'clear()'.
-tags: ["Java 1.2", "Coding Conventions"]
+tags: ["Java 1.2", "Coding Conventions", "Marker"]
 ---
 
 # Replace removeAll() with clear()

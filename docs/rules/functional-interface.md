@@ -10,7 +10,7 @@ links:
     
 description:
     Converts anonymous inner classes to equivalent lambda expressions.
-tags: ["Java 8", "Old Language Constructs", "Lambda"]
+tags: ["Java 8", "Old Language Constructs", "Lambda", "Marker"]
 ---
 
 # Use Functional Interfaces

@@ -10,7 +10,7 @@ links:
     
 description:
     This rule adds the try-with-resources statement introduced in Java 7. Closing statements are removed as the construct takes care of that.
-tags: ["Free", "Java 7", "Old Language Constructs", "Readability"]
+tags: ["Free", "Java 7", "Old Language Constructs", "Readability", "Marker"]
 defaultConfiguration: true
 ---
 

@@ -10,7 +10,7 @@ links:
     
 description:
     Replaces boolean assertions e.g., assertTrue and assertFalse with the corresponding dedicated assertions when testing for equality or null values. 
-tags: ["Java 5", "Testing", "JUnit", "Coding Conventions"]
+tags: ["Java 5", "Testing", "JUnit", "Coding Conventions", "Marker"]
 ---
 
 # Use Dedicated Assertions

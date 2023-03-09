@@ -10,7 +10,7 @@ links:
 description:
     This rule finds AssertJ assertions that can be simplified and replaces them with equivalent dedicated assertions.
 
-tags: ["Java 8", "Testing", "AssertJ", "Coding Conventions", Readability]
+tags: ["Java 8", "Testing", "AssertJ", "Coding Conventions", "Readability", "Marker"]
 ---
 
 # Use Dedicated AssertJ Assertions

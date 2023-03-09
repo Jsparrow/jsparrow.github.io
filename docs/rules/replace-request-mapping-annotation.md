@@ -11,7 +11,7 @@ links:
 description:
     The Spring Framework 4.3 introduced some composed annotations like '@GetMapping', '@PostMapping', etc, as an alternative of '@RequestMapping(method=...)' for annotating HTTP request handlers. Accordingly, this rule replaces the '@RequestMapping' annotations with their equivalent dedicated alternatives, for example, '@RequestMapping(value = "/hello", method = RequestMethod.GET)' is replaced by '@GetMapping(value = "/hello")'.
 
-tags: ["Java 5", "Spring", "Coding Conventions", "Readability"]
+tags: ["Java 5", "Spring", "Coding Conventions", "Readability", "Marker"]
 defaultConfiguration: true
 ---
 

@@ -10,7 +10,7 @@ links:
     
 description:
     Java 7 introduced the possibility to merge multiple catch clauses into a single multi-catch clause. Merging is only possible if the catch statements are identical.
-tags: ["Java 7", "Old Language Constructs", "Readability"]
+tags: ["Java 7", "Old Language Constructs", "Readability", "Marker"]
 defaultConfiguration: true
 ---
 

@@ -10,7 +10,7 @@ links:
     
 description:
     Wraps the initialization of a final collection with 'Collections.unmodifiable...()'
-tags: ["Java 1.2", "Coding Conventions"]
+tags: ["Java 1.2", "Coding Conventions", "Marker"]
 ---
 
 # Replace static final Collections with Collections.unmodifiable...()

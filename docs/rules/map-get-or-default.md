@@ -8,7 +8,7 @@ links:
 description:
     Java 8 introduced 'Map::getOrDefault' which offers the possibility to return a default value if the map does not contain a mapping for the given key. This rule replaces the invocations of 'Map::get' followed by a null-check with 'Map::getOrDefault'. 
 
-tags: ["Java 8", "Old Language Constructs"]
+tags: ["Java 8", "Old Language Constructs", "Marker"]
 ---
 
 # Replace Map::get by Map::getOrDefault

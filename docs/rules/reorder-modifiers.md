@@ -11,7 +11,7 @@ links:
 description:
     This rule reorders the modifiers on Type, Field and Method declarations.
 
-tags: ["Java 1.1", "Coding Conventions", "Readability"]
+tags: ["Java 1.1", "Coding Conventions", "Readability", "Marker"]
 ---
 
 # Reorder Modifiers

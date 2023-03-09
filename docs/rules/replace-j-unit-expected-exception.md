@@ -7,7 +7,7 @@ remediationCost: 5
     
 description:
     The goal of this rule is to replace the JUnit ExpectedException with 'assertThrows'. 
-tags: ["Java 8", "Testing", "JUnit", "Lambda", "Readability"]
+tags: ["Java 8", "Testing", "JUnit", "Lambda", "Readability", "Marker"]
 ---
 
 # Replace JUnit ExpectedException with assertThrows

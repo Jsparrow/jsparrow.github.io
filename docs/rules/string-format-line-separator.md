@@ -10,7 +10,7 @@ links:
     
 description:
     It is generally preferable better to use "%n", which will produce the platform-specific line separator.
-tags: ["Java 5", "String Manipulation"]
+tags: ["Java 5", "String Manipulation", "Marker"]
 ---
 
 # Use Portable Newline

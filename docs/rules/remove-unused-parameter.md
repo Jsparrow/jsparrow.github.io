@@ -11,7 +11,7 @@ links:
 description:
     Finds and removes unused parameters in private method declarations. Updates the affected method invocations accordingly.
 
-tags: ["Java 1.1", "Readability", "Coding Conventions"]
+tags: ["Java 1.1", "Readability", "Coding Conventions", "Marker"]
 ---
 
 # Remove Unused Parameters in Private Methods

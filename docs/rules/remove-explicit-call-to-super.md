@@ -7,7 +7,7 @@ remediationCost: 1
 links:
 description:
     Removes unnecessary explicit call to the default constructor of the super class.
-tags: ["Java 1.1", "Readability"]
+tags: ["Java 1.1", "Readability", "Marker"]
 ---
 
 # Remove Explicit Call To super()

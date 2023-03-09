@@ -11,7 +11,7 @@ links:
 description:
     This rule simplifies expression lambdas by using method reference.
     The rule can only be applied if the parameters of the lambda expression and the method match.
-tags: ["Free", "Java 8", "Lambda"]
+tags: ["Free", "Java 8", "Lambda", "Marker"]
 ---
 
 # Replace Expression Lambda with Method Reference

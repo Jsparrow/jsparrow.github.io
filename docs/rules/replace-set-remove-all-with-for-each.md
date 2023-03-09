@@ -7,7 +7,7 @@ remediationCost: 5
     
 description:
     Calling the method 'removeAll' on a Set with a List as invocation argument may lead to performance problems due to a possible O(n^2) complexity. This rule replaces such invocations. For example, the invocation 'mySet.removeAll(myList);' is replaced by 'myList.forEach(mySet::remove);'.
-tags: ["Java 8", "Performance"]
+tags: ["Java 8", "Performance", "Marker"]
 ---
 
 # Replace Set.removeAll With ForEach

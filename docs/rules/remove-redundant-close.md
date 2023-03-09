@@ -10,7 +10,7 @@ links:
     
 description:
     This rule is used to remove redundant 'close()'-invocation statements on resources which are declared in the header of try-with-resource statements.
-tags: ["Java 7", "Coding Conventions", "Readability"]
+tags: ["Java 7", "Coding Conventions", "Readability", "Marker"]
 defaultConfiguration: true
 ---
 

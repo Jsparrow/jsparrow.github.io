@@ -10,7 +10,7 @@ links:
     
 description:
     This rule replaces String concatenation expressions by Text Block String literals which have been introduced in Java 15.
-tags: ["Java 15", "Old Language Constructs", "Readability"]
+tags: ["Java 15", "Old Language Constructs", "Readability", "Marker"]
 ---
 
 # Use Text Block

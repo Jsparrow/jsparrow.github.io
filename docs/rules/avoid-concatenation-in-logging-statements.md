@@ -10,7 +10,7 @@ links:
     
 description:
     Avoid always evaluating concatenated logging messages by introducing parameters, which only evaluate when the logging level is active.
-tags: ["Java 1.1", "Performance", "Readability", "Coding Conventions", "Logging"]
+tags: ["Java 1.1", "Performance", "Readability", "Coding Conventions", "Logging", "Marker"]
 ---
 
 # Avoid Concatenation in Logging Statements

@@ -10,7 +10,7 @@ links:
 description:
     Calling collection constructors with arguments in order to avoid calls of addAll.
 
-tags: ["Java 1.2", "Readability"]
+tags: ["Java 1.2", "Readability", "Marker"]
 ---
 
 # Remove Collection::addAll

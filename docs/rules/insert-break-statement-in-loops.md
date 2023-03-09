@@ -8,7 +8,7 @@ links:
 description:
     Finds the Enhanced For-loops whose sole purpose is to compute a boolean value without causing side effects and inserts a break statement immediately after the boolean value is computed. Thus, eliminating redundant loop iterations.
 
-tags: ["Java 5", "Loop", "Performance"]
+tags: ["Java 5", "Loop", "Performance", "Marker"]
 ---
 
 # Insert Break Statements in For-loops

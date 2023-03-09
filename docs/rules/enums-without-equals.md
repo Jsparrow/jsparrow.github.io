@@ -10,7 +10,7 @@ links:
 description:
     Replaces occurrences of 'equals()' on Enum constants with an identity comparison (==).
     In the case the equals relation is wrapped with an boolean negation the result will be an not equals (!=).
-tags: ["Free", "Java 5", "Coding Conventions"]
+tags: ["Free", "Java 5", "Coding Conventions", "Marker"]
 ---
 
 # Replace equals() on Enum Constants

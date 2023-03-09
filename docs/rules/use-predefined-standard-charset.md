@@ -11,7 +11,7 @@ links:
 
 description:
     This rule replaces invocations of 'java.nio.charset.Charset.forName(String)' by references to the respective constants declared in 'java.nio.charset.StandardCharsets'.
-tags: ["Java 1.7", "Performance"]
+tags: ["Java 1.7", "Performance", "Marker"]
 ---
 
 # Use Predefined Standard Charset

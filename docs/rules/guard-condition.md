@@ -10,7 +10,7 @@ links:
     
 description:
     Replaces the last statement of a method with a guard condition.
-tags: ["Java 1.1", "Coding Conventions"]
+tags: ["Java 1.1", "Coding Conventions", "Marker"]
 ---
 
 # Use Guard Condition

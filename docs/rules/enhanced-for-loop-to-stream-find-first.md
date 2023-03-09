@@ -8,7 +8,7 @@ links:
 description:
     Replaces enhanced for-loops which are used to find an element within a collection by a stream and uses 'Stream::findFirst' to find the result.
     By using the stream syntax, a multi-line control statement can be reduced to a single line.
-tags: ["Java 8", "Lambda", "Loop"]
+tags: ["Java 8", "Lambda", "Loop", "Marker"]
 ---
 
 # Replace For-Loop with Stream::findFirst

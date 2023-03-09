@@ -10,7 +10,7 @@ links:
     
 description:
     This rule prevents LDAP injections by parameterizing vulnerable concats of LDAP search filters. Thus, vulnerable fragments of an LDAP search filter can only be considered as data and not as code.
-tags: ["Java 1.3", "Security"]
+tags: ["Java 1.3", "Security", "Marker"]
 ---
 
 # Use Parameterized LDAP Query

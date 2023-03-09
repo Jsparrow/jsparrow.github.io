@@ -11,7 +11,7 @@ links:
 description:
     If a given logger is initialized with a class that is different from the class where it is declared, then this rule will replace the wrong initialization argument with the correct one. For example, if a logger for the class 'Employee' is initialized with 'User.class', then the argument of the initialization will be replaced by 'Employee.class'.
 
-tags: ["Java 1.1", "Readability", "Logging"]
+tags: ["Java 1.1", "Readability", "Logging", "Marker"]
 defaultConfiguration: true
 ---
 

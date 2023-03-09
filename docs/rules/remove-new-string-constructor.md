@@ -10,7 +10,7 @@ links:
     
 description:
     Removes all class instantiations from 'String' if its parameter is empty or a 'String'.
-tags: ["Java 1.1", "String Manipulation", "Performance"]
+tags: ["Java 1.1", "String Manipulation", "Performance", "Marker"]
 ---
 
 # Use String Literals

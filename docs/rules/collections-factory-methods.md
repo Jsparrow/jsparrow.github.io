@@ -8,7 +8,7 @@ links:
 description:
     Replaces the invocations of 'Collections.unmodifiableList/Set/Map' with the corresponding factory method 'List.of', 'Set.of' and 'Map.ofEntries' introduced in Java 9. 
 
-tags: ["Java 9", "Old Language Constructs", "Readability"]
+tags: ["Java 9", "Old Language Constructs", "Readability", "Marker"]
 ---
 
 # Use Factory Methods for Collections

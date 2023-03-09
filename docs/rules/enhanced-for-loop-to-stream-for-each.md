@@ -7,7 +7,7 @@ remediationCost: 15
 links:
 description:
     This rule replaces enhanced for loops (for-each-loops) with an invocation of 'java.lang.Iterable::forEach' method and passes the body of the for-loop as a lambda Consumer parameter.
-tags: ["Java 8", "Lambda", "Loop"]
+tags: ["Java 8", "Lambda", "Loop", "Marker"]
 defaultConfiguration: true
 ---
 

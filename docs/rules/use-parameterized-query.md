@@ -12,7 +12,7 @@ links:
     
 description:
     Rule description.
-tags: ["Java 1.1", "Security"]
+tags: ["Java 1.1", "Security", "Marker"]
 ---
 
 # Use Parameterized Query

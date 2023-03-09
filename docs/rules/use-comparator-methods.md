@@ -7,7 +7,7 @@ remediationCost: 5
     
 description:
     This rule replaces complex lambda expressions that serve as instances of 'java.util.Comparator' by simple invocations of factory methods introduced in the 'java.util.Comparator' interface.
-tags: ["Java 1.8", "Lambda", "Readability", "Coding Conventions"]
+tags: ["Java 1.8", "Lambda", "Readability", "Coding Conventions", "Marker"]
 ---
 
 # Use Comparator Methods

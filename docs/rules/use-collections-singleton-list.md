@@ -8,7 +8,7 @@ links:
 description:
     Replaces Arrays.asList with 0 or 1 parameters respectively with Collections.emptyList() or Collections.singletonList(..)
 
-tags: ["Java 1.3", "Old Language Constructs", "Performance"]
+tags: ["Java 1.3", "Old Language Constructs", "Performance", "Marker"]
 ---
 
 # Use Collections Singleton List

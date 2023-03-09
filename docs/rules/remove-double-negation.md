@@ -10,7 +10,7 @@ links:
     
 description:
     Removes multiple negations from boolean expressions.
-tags: ["Free", "Java 1.1", "Coding Conventions"]
+tags: ["Free", "Java 1.1", "Coding Conventions", "Marker"]
 ---
 
 # Remove Double Negations

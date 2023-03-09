@@ -8,7 +8,7 @@ links:
 description:
     This rule declares private fields and local variables final, if they are effectively final
 
-tags: ["Java 1.1", "Readability"]
+tags: ["Java 1.1", "Readability", "Marker"]
 ---
 
 # Make Fields And Variables Final

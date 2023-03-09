@@ -8,7 +8,7 @@ remediationCost: 5
 description:
     This rule makes use of the overloaded static methods 'java.nio.file.Files.writeString' which were introduced in Java 11. 
     With the help of this methods it is possible to write text into a file in an efficient non-blocking manner by one single invocation. 
-tags: ["Java 11", "Performance", "Old Language Constructs", "IO Operations"]
+tags: ["Java 11", "Performance", "Old Language Constructs", "IO Operations", "Marker"]
 ---
 
 # Use Files.writeString

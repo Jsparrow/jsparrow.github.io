@@ -10,7 +10,7 @@ links:
     
 description:
     Removes the RuntimeExceptions, duplications and exceptions which are subtypes of already thrown exceptions on the method signatures.
-tags: ["Free", "Java 1.1", "Readability"]
+tags: ["Free", "Java 1.1", "Readability", "Marker"]
 ---
 
 # Remove Unnecessary Thrown Exceptions on Method Signatures

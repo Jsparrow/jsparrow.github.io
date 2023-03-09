@@ -10,7 +10,7 @@ links:
     
 description:
     Rule description.
-tags: ["Java 8", "Performance", "Coding Conventions"]
+tags: ["Java 8", "Performance", "Coding Conventions", "Marker"]
 ---
 
 # Use Arrays Stream

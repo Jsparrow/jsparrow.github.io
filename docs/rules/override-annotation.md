@@ -10,7 +10,7 @@ links:
     
 description:
     This rule adds the '@Override' annotation to methods overriding or implementing parent class methods.
-tags: ["Free", "Java 6", "Readability", "Coding Conventions"]
+tags: ["Free", "Java 6", "Readability", "Coding Conventions", "Marker"]
 ---
 
 # Use @Override Annotation

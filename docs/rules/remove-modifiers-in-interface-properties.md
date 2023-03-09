@@ -11,7 +11,7 @@ links:
 description:
     Removes the 'public' modifiers from method declarations and 'public static final' modifiers from field declarations in Java interfaces.
 
-tags: ["Java 1.1", "Readability"]
+tags: ["Java 1.1", "Readability", "Marker"]
 ---
 
 # Remove Modifiers in Interface Properties

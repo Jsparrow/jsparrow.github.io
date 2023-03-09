@@ -7,7 +7,7 @@ remediationCost: 10
 links:
 description:
     Transforms enhanced for-loops which are only used for summing up the elements of a collection to a 'Stream::sum' invocation.
-tags: ["Java 8", "Lambda", "Loop"]
+tags: ["Java 8", "Lambda", "Loop", "Marker"]
 ---
 
 # Replace For-Loop with Stream::sum

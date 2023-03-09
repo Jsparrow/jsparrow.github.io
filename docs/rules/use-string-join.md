@@ -7,7 +7,7 @@ remediationCost: 5
     
 description:
     Replaces stream Collectors that are used for concatenating values of a collection with StringJoiner.
-tags: ["Java 5", "Performance", "String Manipulation"]
+tags: ["Java 5", "Performance", "String Manipulation", "Marker"]
 ---
 
 # Use String Join
