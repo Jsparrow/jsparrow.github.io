@@ -61,6 +61,13 @@ A loop is an instruction that repeats until a specified condition is reached. Ex
 
 <Tag tag-name="Loop" />
 
+
+## Marker
+
+The "marker" tag marks rules that include quick-fixes. Markers give developers the ability to click and choose an automatic fix to various problems during programming. jSparrow's markers i.e. quick fixes can be used to make refactoring much faster.
+
+<Tag tag-name="Marker" />
+
 ## Old Language Constructs
 
 With additions to the Java platform, a shift towards new best practices is not uncommon, leading to old language constructs that can be improved by using more modern alternatives. 
