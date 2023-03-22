@@ -31,8 +31,8 @@ Additionally, we are currently working on introducing jSparrow to Visual Studio 
 
 ## Latest Release Notes
 
-We once again improved the user experience of our jSparrow Eclipse Plugin.
-Check out the release notes for [jSparrow 4.15.0](/eclipse/release-notes.html#_4-15-0).
+From now on our 20 free rules and additionally our markers are available without any registration.
+Check out the release notes for [jSparrow 4.16.0](/eclipse/release-notes.html#_4-16-0).
 
 ## How to reach us?
 

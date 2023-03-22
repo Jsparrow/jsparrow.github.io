@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.16.0 <Badge vertical="middle" text="23.03.2023"/>
+
+### Free License without Registration
+
+In this release we have abolished the need to register for a free trial version. From now on 20 of our most liked rules and additionally also our markers can be applied without any License immediately after the installation in Eclipse.
+
 ## 4.15.0 <Badge vertical="middle" text="23.02.2023"/>
 
 ### UI Improvements
