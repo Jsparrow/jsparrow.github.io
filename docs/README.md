@@ -44,6 +44,6 @@ Contact us at: [support@jsparrow.io](mailto:support@jsparrow.io) or through our 
 
 * Have a look at our homepage for an overview of all Rules: [jSparrow.io](https://jsparrow.io/about-jsparrow/)
 * Find a license version, which fits your needs best: [Packages](https://jsparrow.io/pricing/)
-* Or start with the jSparrow Eclipse IDE Free license: [Try Free](https://jsparrow.io/try-free/)
+* Or start your experience with our markers and our 20 free rules which are available automatically without any registration.
 
 
