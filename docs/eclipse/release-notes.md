@@ -5,6 +5,12 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.17.0 <Badge vertical="middle" text="31.05.2023"/>
+
+### New "Select Java Sources To Refactor" Dialog
+
+In this release we have introduced a new dialog. This dialog offers the developer a comfortable user interface to select all Java sources which he wants to refactor with jSparrow rules.
+
 ## 4.16.0 <Badge vertical="middle" text="23.03.2023"/>
 
 ### Free License without Registration
