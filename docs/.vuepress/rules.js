@@ -122,6 +122,7 @@ module.exports = [
 'use-string-builder-append',
 'string-utils',
 'use-switch-expression',
+'use-ternary-operator',
 'use-text-block',
 'try-with-resource'
 ]
