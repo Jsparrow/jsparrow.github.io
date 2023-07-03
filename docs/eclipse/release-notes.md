@@ -5,6 +5,26 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.18.0 <Badge vertical="middle" text="07.07.2023"/>
+
+The [118<sup>th</sup> refactoring rule](/rules/) and 2 additional jSparrow markers are shipped with jSparrow 4.18.0.
+The new rule replaces simple if-statements by equivalent constructs where the ternary operator is used.
+
+### New Rule
+
+#### [**Use Ternary Operator**](/rules/use-ternary-operator.html)
+
+This rule is used to replace if-statements by equivalent statements using the ternary operator in cases where such a replacement is reasonable.
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 2 additional markers for the following rules:
+1. [Use Ternary Operator](/rules/use-ternary-operator.html)
+2. [Replace Multi Branch If By Switch](/rules/replace-multi-branch-if-by-switch.html)
+
+Thus, setting the total number of available jSparrow Markers to 94. 
+
+
 ## 4.17.0 <Badge vertical="middle" text="31.05.2023"/>
 
 ### New "Select Java Sources To Refactor" Dialog
@@ -74,6 +94,9 @@ jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 2 
 * [Replace Set.removeAll With ForEach](/rules/replace-set-remove-all-with-for-each.html)
 * [Replace Wrong Class for Logger](/rules/replace-wrong-class-for-logger.html)
 
+Thus, setting the total number of available jSparrow Markers to 92.
+
+
 ## 4.12.0 <Badge vertical="middle" text="23.06.2022"/>
 
 The [114<sup>th</sup> refactoring rule](/rules/replace-request-mapping-annotation.html) is shipped with jSparrow 4.12.0.
@@ -90,6 +113,8 @@ Accordingly, this rule replaces the `@RequestMapping` annotations with their equ
 
 jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds one marker for the following rule:
 * [Replace Request Mapping Annotation](/rules/replace-request-mapping-annotation.html)
+
+Thus, setting the total number of available jSparrow Markers to 90.
 
 ## 4.11.0 <Badge vertical="middle" text="19.05.2022"/>
 
@@ -119,7 +144,7 @@ jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds 13
 12. [Replace JUnit Timeout Annotation Property with assertTimeout](/rules/replace-j-unit-timeout-annotation-property.html)
 13. [Remove Redundant Close](/rules/remove-redundant-close.html)
 
-Thus, setting the total number of available jSparrow Markers to 89. 
+Thus, setting the total number of available jSparrow Markers to 89.
 
 ## 4.10.0 <Badge vertical="middle" text="25.04.2022"/>
 

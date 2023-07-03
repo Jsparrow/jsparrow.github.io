@@ -31,8 +31,8 @@ Additionally, we are currently working on introducing jSparrow to Visual Studio 
 
 ## Latest Release Notes
 
-We introduced a new comfortable dialog to select Java sources for a subsequent jSparrow refactoring.
-Check out the release notes for [jSparrow 4.17.0](/eclipse/release-notes.html#_4-17-0).
+We released a new rule and two new markers!
+Check out the release notes for [jSparrow 4.18.0](/eclipse/release-notes.html#_4-18-0).
 
 ## How to reach us?
 

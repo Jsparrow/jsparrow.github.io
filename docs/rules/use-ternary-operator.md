@@ -6,7 +6,7 @@ minJavaVersion: 1.1
 remediationCost: 5
     
 description:
-    This rule replaces if-statements by equivalent statements using the ternary operator in cases where such a replacement is reasonable.
+    This rule replaces if-statements by equivalent constructs using the ternary operator in cases where such a replacement is reasonable.
 
 tags: ["Readability"]
 ---
@@ -14,7 +14,7 @@ tags: ["Readability"]
 # Use Ternary Operator
 
 ## Description
-This rule replaces if-statements by equivalent statements using the ternary operator in cases where such a replacement is reasonable. For example, the statement 'x = condition ? 1 : 0;' is shorter and better readable than the equivalent construct using an if-statement.
+This rule replaces if-statements by equivalent constructs using the ternary operator in cases where such a replacement is reasonable. For example, the statement 'x = condition ? 1 : 0;' is shorter and better readable than the equivalent construct using an if-statement.
 
 
 
