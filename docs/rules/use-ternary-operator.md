@@ -11,10 +11,10 @@ description:
 tags: ["Readability"]
 ---
 
-# Replace Multi Branch If By Switch
+# Use Ternary Operator
 
 ## Description
-This rule replaces if-statements by equivalent statements using the ternary operator in cases where such a replacement is reasonable. For example, the statement 'x = condition ? 1 : 0;'' is shorter and better readable than the corresponding if-statement.
+This rule replaces if-statements by equivalent statements using the ternary operator in cases where such a replacement is reasonable. For example, the statement 'x = condition ? 1 : 0;' is shorter and better readable than the equivalent construct using an if-statement.
 
 
 
