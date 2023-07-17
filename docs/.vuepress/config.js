@@ -22,7 +22,7 @@ module.exports = {
     ],
     themeConfig: {
         nav: [{
-                text: 'What is jSparrow?',
+                text: 'Home',
                 link: '/'
             },
             {
@@ -44,10 +44,6 @@ module.exports = {
             {
                 text: 'Statistics',
                 link: '/statistics/statistics-summary.html'
-            },
-            {
-                text: 'Try Free (for Eclipse)',
-                link: 'https://jsparrow.io/try-free'
             }
         ],
         logo: '/jsparrow-logo.png',
