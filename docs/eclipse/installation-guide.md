@@ -40,3 +40,6 @@ jSparrow can simply be installed by dragging this Button to your running Eclipse
 
 7. When prompted, please restart Eclipse
 
+## Troubleshooting
+Can't install? Please [Report the Issue](https://jsparrow.io/report-an-issue) and we'll do our best to help you
+
