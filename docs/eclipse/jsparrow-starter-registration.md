@@ -6,6 +6,10 @@ title: jSparrow Starter Registration
 
 [[toc]]
 
+::: warning Note
+It is no longer necessary to register for the free rules since 23.03.2023
+:::
+
 After a short registration, you will get a license key, allowing you to ***apply 20 rules free of charge*** on your projects. You can then decide if you want to use the jSparrow Free version, as usual, or the new features of jSparrow Starter.
 
 ## Registration for 20 Free Rules
