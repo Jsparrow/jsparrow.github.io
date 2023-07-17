@@ -15,11 +15,14 @@ This is a summary of all statistics seen below. For a summary table of the indiv
 
 <StatisticsSummary />
 
-<div style="border: 2px dashed rgb(189 255 176);padding: 2rem;margin:1rem 0;">
+<div style="">
 
-### No license required
-You can *review* the refactoring on your project **without a license** by installing jSparrow to your Eclipse IDE.
-Install the plug-in from Eclipse IDE: [Eclipse Marketplace](https://marketplace.eclipse.org/content/jsparrow)
+## Cleanup code with plugin
+To see your statistics, install jSparrow by dropping this button to your Eclipse IDE workspace:
+
+[![Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.svg)](https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3503691 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
+
+Need help? Check out or [installation guide](/eclipse/installation-guide.html#requirements).
 
 </div>
 
