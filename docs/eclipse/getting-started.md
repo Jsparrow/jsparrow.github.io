@@ -17,6 +17,17 @@ jSparrow can help in the following regards:
 
 With the support of screenshots the functionality of jSparrow will be explained.
 
+<div style="">
+
+### Cleanup code with plugin
+Install jSparrow by dropping this button to your Eclipse IDE workspace:
+
+[![Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.svg)](https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3503691 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
+
+Need help? Check out or [installation guide](/eclipse/installation-guide.html#requirements).
+
+</div>
+
 ## Usage of the Plugin
 
 The plugin is activated with a right-click in the editor or the package tree. The selection of elements defines which files are used for the refactoring process. jSparrow may be applied to the following artifacts:
@@ -44,17 +55,6 @@ The window is split into three parts:
 * __Middle:__ The middle of the window is divided into two lists. The left list contains the unselected rules, whereas the right one contains rules that are about to be applied.
 Desired rules may be added to the right list simply by selecting one or more rules on the left list and pushing the `Add` button. If you want to apply all the rules, you can do just that by simply pushing the `Add all` button.
 * __Bottom:__ On the bottom part of the window, the description of the currently selected rule is displayed.
-
-<div style="border: 2px dashed #83b9ff;padding: 2rem;">
-
-### Access all Refactorings
-Please note that the trial version only contains 20 of our most liked rules signed with a tick. 
-<br>
-To get full access to all the rules jSparrow provides,  an [upgrade of your license](https://jsparrow.io/pricing/) is required.
-
-<img src="/jsparrow-comic-pointing-at-a-graph.PNG" width="200" alt="a drawn cute bird pointing at a graph that shows positive results">
-
-</div>
 
 ### Selection of the profile
 
@@ -111,17 +111,17 @@ For more information see [Setting the default profile](profiles.html#setting-the
 
 Rules can be filtered by text or by tags. Tags group rules by functionality, requirements or any relevant common factor they have.
 
-### Disabled rules
+### Locked rules
 Some rules may not be available to be applied on certain projects; The reason for that is one of the following missing requirements:
 * Java version too low
 * Missing required library
-* Using Free or Trial Version
+* Using Free Version
 
 ::: tip Note
 Information about unsatisfied requirements will be shown in red color in the rule description in the select rules window.
 :::
 ::: tip Note
-Some of our rules are disabled in the Trial version and need to be unlocked by [upgrading your license](https://jsparrow.io/pricing/).
+Some of our rules are locked in the free version and need to be unlocked by [upgrading your license](https://jsparrow.io/pricing/).
 :::
 
 
