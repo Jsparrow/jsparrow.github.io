@@ -1,18 +1,9 @@
 <template>
   <v-app>
     <div class="buy-link" id="buy">
-      <v-btn color="#00000" href="https://jsparrow.io/contact-us" target="_blank" v-on:click="onSupportClick">
+      <v-btn color="#00000" href="https://jsparrow.io/report-an-issue" target="_blank" v-on:click="onSupportClick">
         Support
         <v-icon right dark small class=".v-icon--right">help</v-icon>
-      </v-btn>
-      <v-btn
-        color="info"
-        href="https://jsparrow.io/try-free/"
-        target="_blank"
-        v-on:click="tryFreeClick"
-      >
-        Get Trial Key
-        <v-icon right dark small class=".v-icon--right">get_app</v-icon>
       </v-btn>
     </div>
   </v-app>
