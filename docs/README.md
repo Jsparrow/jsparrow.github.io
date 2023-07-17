@@ -1,49 +1,37 @@
 ---
-title: What is jSparrow?
+title: jSparrow Documentation
 ---
 
-# What is jSparrow?
+# jSparrow Documentation
 
-jSparrow is an IDE extension for refactoring Java code with a rule-based approach, powered by the Eclipse Java compiler. A jSparrow rule is a definition of many small composed refactoring steps performed by the plug-in; one rule, when selected, can by itself refactor a very specific area within your system-wide code.
-
-
-Additionally jSparrow now also offers markers that will allow you live and in-depth guidance towards best practice java while you are programming.
-
-*Refactor your Java code.*
-*Improve the code quality.*
-*Apply the latest Java features.*
-
-jSparrow is in active development and there are new rules released regularly. The latest changes are always linked in the [Latest Release Notes](#latest-release-notes)!
-
-## Install jSparrow
-
-To install jSparrow for Eclipse IDE please visit [Eclipse Marketplace](https://marketplace.eclipse.org/content/jsparrow) in your browser or in your IDE directly.
-
-
-**One tool, four platforms:**
-
-jSparrow is a plugin for Eclipse IDE, Maven, and GitHub. However, jSparrow for Maven and GitHub is currently only available through contacting us. You’ll work tightly with one of our inhouse-developers because of potential library restrictions.
-Additionally, we are currently working on introducing jSparrow to Visual Studio Code.
-
-* [jSparrow Eclipse plugin](eclipse/getting-started.html)
-* [jSparrow Maven plugin](maven/getting-started.html)
-* [jSparrow Cloud App](cloud/getting-started.html)
+Welcome! Here you will find the complete documentation of jSparrow.
 
 ## Latest Release Notes
 
 We released a new rule and two new markers!
 Check out the release notes for [jSparrow 4.18.0](/eclipse/release-notes.html#_4-18-0).
 
-## How to reach us?
+jSparrow is in active development and there are new rules released regularly! Stay tuned! 
 
-Do you have questions, want to report a bug, or want to see a feature implemented?  
-Contact us at: [support@jsparrow.io](mailto:support@jsparrow.io) or through our [contact form](https://jsparrow.io/contact-us)
+<img src="/jsparrow-comic-pointing-at-a-graph.PNG" width="200" alt="a drawn cute bird pointing at a graph that shows positive results">
 
+## What is jSparrow?
 
-**jSparrow Quick Links**
+jSparrow is a plugin for **Java code cleanup** and **refactoring** developed by us from [Splendit IT-Consulting GmbH](https://splendit.at/).
 
-* Have a look at our homepage for an overview of all Rules: [jSparrow.io](https://jsparrow.io/about-jsparrow/)
-* Find a license version, which fits your needs best: [Packages](https://jsparrow.io/pricing/)
-* Or start your experience with our markers and our 20 free rules which are available automatically without any registration.
+Visit [jSparrow.io](https://jsparrow.io/) for more information.
 
+### Install jSparrow
+To install jSparrow for Eclipse IDE, please drag-and-drop this button into your workspace:
+
+[![Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.svg)](https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3503691 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
+
+Need help? Check out or [installation guide](/eclipse/installation-guide.html#requirements).
+
+#### Included on installation
+- all quick-fixes or [markers](/tags/#marker)
+- the [free-tagged](/tags/#free-rules-for-jsparrow-eclipse-ide) rules
+
+### Support
+[Report an Issue](https://jsparrow.io/report-an-issue)
 
