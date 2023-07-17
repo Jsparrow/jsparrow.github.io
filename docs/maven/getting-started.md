@@ -9,6 +9,10 @@ sidebarDepth: 2
 
 The jSparrow Maven plugin (JMP) is a continuous integration tool to apply automatic refactorings. It supplies similar rules as the jSparrow Eclipse plugin, but works without user input.
 
+::: warning Important
+We are currently only offering Maven licenses on request
+:::
+
 ## Installation
 ### Requirements
 
