@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Statistics Summary | jSparrow Documentation</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/jsparrow-tab-icon.png">
+    <meta name="description" content="">
+    <meta name="google-site-verification" content="1EOegR91kbVWv-4x23fHUki6OgU7loau_CsiGDtJHok">
+    
+    <link rel="preload" href="/assets/css/0.styles.1229d12d.css" as="style"><link rel="preload" href="/assets/js/app.e92f03df.js" as="script"><link rel="preload" href="/assets/js/17.56318689.js" as="script"><link rel="preload" href="/assets/js/5.d6f1970e.js" as="script"><link rel="preload" href="/assets/js/175.93985ba1.js" as="script"><link rel="preload" href="/assets/js/28.90310cdf.js" as="script"><link rel="preload" href="/assets/js/24.44aaf280.js" as="script"><link rel="prefetch" href="/assets/js/1.c858b974.js"><link rel="prefetch" href="/assets/js/10.ccc3a467.js"><link rel="prefetch" href="/assets/js/100.c2683053.js"><link rel="prefetch" href="/assets/js/101.cfce73aa.js"><link rel="prefetch" href="/assets/js/102.ffdb31a2.js"><link rel="prefetch" href="/assets/js/103.64e3fe5b.js"><link rel="prefetch" href="/assets/js/104.73fb70ef.js"><link rel="prefetch" href="/assets/js/105.c75f09e9.js"><link rel="prefetch" href="/assets/js/106.742579a8.js"><link rel="prefetch" href="/assets/js/107.561cc231.js"><link rel="prefetch" href="/assets/js/108.fd38d43c.js"><link rel="prefetch" href="/assets/js/109.011a4d3b.js"><link rel="prefetch" href="/assets/js/11.65100cd2.js"><link rel="prefetch" href="/assets/js/110.50835fc9.js"><link rel="prefetch" href="/assets/js/111.c1fe8743.js"><link rel="prefetch" href="/assets/js/112.49522c64.js"><link rel="prefetch" href="/assets/js/113.d8fe3b92.js"><link rel="prefetch" href="/assets/js/114.b71fe816.js"><link rel="prefetch" href="/assets/js/115.b9164238.js"><link rel="prefetch" href="/assets/js/116.8ff32d12.js"><link rel="prefetch" href="/assets/js/117.7cffed29.js"><link rel="prefetch" href="/assets/js/118.920ed1fc.js"><link rel="prefetch" href="/assets/js/119.c6c9b359.js"><link rel="prefetch" href="/assets/js/12.aeb81bf7.js"><link rel="prefetch" href="/assets/js/120.153af382.js"><link rel="prefetch" href="/assets/js/121.08976d5c.js"><link rel="prefetch" href="/assets/js/122.ffe7e514.js"><link rel="prefetch" href="/assets/js/123.0aa51e47.js"><link rel="prefetch" href="/assets/js/124.42ddc91e.js"><link rel="prefetch" href="/assets/js/125.c8f4d0e6.js"><link rel="prefetch" href="/assets/js/126.98f26411.js"><link rel="prefetch" href="/assets/js/127.3eb6f377.js"><link rel="prefetch" href="/assets/js/128.4542297c.js"><link rel="prefetch" href="/assets/js/129.d23c6d8b.js"><link rel="prefetch" href="/assets/js/13.5253c745.js"><link rel="prefetch" href="/assets/js/130.fb6f1459.js"><link rel="prefetch" href="/assets/js/131.89893298.js"><link rel="prefetch" href="/assets/js/132.efbed7f0.js"><link rel="prefetch" href="/assets/js/133.772b5991.js"><link rel="prefetch" href="/assets/js/134.22dde262.js"><link rel="prefetch" href="/assets/js/135.affed5df.js"><link rel="prefetch" href="/assets/js/136.27f346e8.js"><link rel="prefetch" href="/assets/js/137.524d6ff2.js"><link rel="prefetch" href="/assets/js/138.fb282f66.js"><link rel="prefetch" href="/assets/js/139.c263b2b9.js"><link rel="prefetch" href="/assets/js/14.0e74d67b.js"><link rel="prefetch" href="/assets/js/140.c724f079.js"><link rel="prefetch" href="/assets/js/141.d1a3baac.js"><link rel="prefetch" href="/assets/js/142.20039488.js"><link rel="prefetch" href="/assets/js/143.3f68c01e.js"><link rel="prefetch" href="/assets/js/144.6f8f3d41.js"><link rel="prefetch" href="/assets/js/145.a36e9545.js"><link rel="prefetch" href="/assets/js/146.d4ce7fc5.js"><link rel="prefetch" href="/assets/js/147.15fef86c.js"><link rel="prefetch" href="/assets/js/148.1728bef4.js"><link rel="prefetch" href="/assets/js/149.8c4a4456.js"><link rel="prefetch" href="/assets/js/15.a429ef2d.js"><link rel="prefetch" href="/assets/js/150.512efa4e.js"><link rel="prefetch" href="/assets/js/151.125a554f.js"><link rel="prefetch" href="/assets/js/152.14ce601f.js"><link rel="prefetch" href="/assets/js/153.995cd220.js"><link rel="prefetch" href="/assets/js/154.5c6a1c86.js"><link rel="prefetch" href="/assets/js/155.bf78b4ed.js"><link rel="prefetch" href="/assets/js/156.648486e4.js"><link rel="prefetch" href="/assets/js/157.b40f8709.js"><link rel="prefetch" href="/assets/js/158.7cdb81f8.js"><link rel="prefetch" href="/assets/js/159.e91a18ac.js"><link rel="prefetch" href="/assets/js/16.ade8fee8.js"><link rel="prefetch" href="/assets/js/160.ae3f3995.js"><link rel="prefetch" href="/assets/js/161.39984738.js"><link rel="prefetch" href="/assets/js/162.78ad2d4c.js"><link rel="prefetch" href="/assets/js/163.961a7d46.js"><link rel="prefetch" href="/assets/js/164.bbc6f122.js"><link rel="prefetch" href="/assets/js/165.f7947dd1.js"><link rel="prefetch" href="/assets/js/166.2fa4ef93.js"><link rel="prefetch" href="/assets/js/167.ee0d6c81.js"><link rel="prefetch" href="/assets/js/168.9c98cac3.js"><link rel="prefetch" href="/assets/js/169.1985fc27.js"><link rel="prefetch" href="/assets/js/170.32f7b8e2.js"><link rel="prefetch" href="/assets/js/171.ecf9f799.js"><link rel="prefetch" href="/assets/js/172.4ce52f56.js"><link rel="prefetch" href="/assets/js/173.82c05f39.js"><link rel="prefetch" href="/assets/js/174.9f03d300.js"><link rel="prefetch" href="/assets/js/176.1d6a49d4.js"><link rel="prefetch" href="/assets/js/177.8e13d6c2.js"><link rel="prefetch" href="/assets/js/18.35a04082.js"><link rel="prefetch" href="/assets/js/19.9dbd871e.js"><link rel="prefetch" href="/assets/js/2.c705bd7e.js"><link rel="prefetch" href="/assets/js/20.e9f621ea.js"><link rel="prefetch" href="/assets/js/21.18703be1.js"><link rel="prefetch" href="/assets/js/22.9e19c976.js"><link rel="prefetch" href="/assets/js/23.7d254c63.js"><link rel="prefetch" href="/assets/js/25.191c6621.js"><link rel="prefetch" href="/assets/js/26.1dc04b82.js"><link rel="prefetch" href="/assets/js/27.ba927b54.js"><link rel="prefetch" href="/assets/js/29.185b4d62.js"><link rel="prefetch" href="/assets/js/3.e61b0488.js"><link rel="prefetch" href="/assets/js/30.949d7ba2.js"><link rel="prefetch" href="/assets/js/31.ffce93b0.js"><link rel="prefetch" href="/assets/js/32.1108b27d.js"><link rel="prefetch" href="/assets/js/33.59e4c2c5.js"><link rel="prefetch" href="/assets/js/34.9877f6f7.js"><link rel="prefetch" href="/assets/js/35.f8fc58bd.js"><link rel="prefetch" href="/assets/js/36.7a10ff7a.js"><link rel="prefetch" href="/assets/js/37.fd9d9f27.js"><link rel="prefetch" href="/assets/js/38.76e45af3.js"><link rel="prefetch" href="/assets/js/39.2cf12b41.js"><link rel="prefetch" href="/assets/js/40.a33c78b2.js"><link rel="prefetch" href="/assets/js/41.643b07a5.js"><link rel="prefetch" href="/assets/js/42.9ab2e93f.js"><link rel="prefetch" href="/assets/js/43.917e7e65.js"><link rel="prefetch" href="/assets/js/44.e90609f7.js"><link rel="prefetch" href="/assets/js/45.9184163d.js"><link rel="prefetch" href="/assets/js/46.2bf64dcc.js"><link rel="prefetch" href="/assets/js/47.76fd53da.js"><link rel="prefetch" href="/assets/js/48.cc6607da.js"><link rel="prefetch" href="/assets/js/49.d26250ba.js"><link rel="prefetch" href="/assets/js/50.885df6bc.js"><link rel="prefetch" href="/assets/js/51.445268cb.js"><link rel="prefetch" href="/assets/js/52.5b9da5ea.js"><link rel="prefetch" href="/assets/js/53.abf6986f.js"><link rel="prefetch" href="/assets/js/54.fcf1b3a1.js"><link rel="prefetch" href="/assets/js/55.1e36d1bf.js"><link rel="prefetch" href="/assets/js/56.c3881b35.js"><link rel="prefetch" href="/assets/js/57.94d5ff35.js"><link rel="prefetch" href="/assets/js/58.2f7527e6.js"><link rel="prefetch" href="/assets/js/59.987cd8b6.js"><link rel="prefetch" href="/assets/js/6.3ff8b7a0.js"><link rel="prefetch" href="/assets/js/60.f44a37c5.js"><link rel="prefetch" href="/assets/js/61.debda96e.js"><link rel="prefetch" href="/assets/js/62.b21e8d0b.js"><link rel="prefetch" href="/assets/js/63.3bebba2d.js"><link rel="prefetch" href="/assets/js/64.6bc46e19.js"><link rel="prefetch" href="/assets/js/65.e5fa6f22.js"><link rel="prefetch" href="/assets/js/66.ac4c5b42.js"><link rel="prefetch" href="/assets/js/67.70696d91.js"><link rel="prefetch" href="/assets/js/68.de0fbac4.js"><link rel="prefetch" href="/assets/js/69.223b6d5b.js"><link rel="prefetch" href="/assets/js/7.fe1e94fe.js"><link rel="prefetch" href="/assets/js/70.8f7bf980.js"><link rel="prefetch" href="/assets/js/71.e047d463.js"><link rel="prefetch" href="/assets/js/72.46c59468.js"><link rel="prefetch" href="/assets/js/73.a4135c80.js"><link rel="prefetch" href="/assets/js/74.5ed1218d.js"><link rel="prefetch" href="/assets/js/75.731995e3.js"><link rel="prefetch" href="/assets/js/76.5766ad59.js"><link rel="prefetch" href="/assets/js/77.24f16b86.js"><link rel="prefetch" href="/assets/js/78.61de48ac.js"><link rel="prefetch" href="/assets/js/79.7d2af157.js"><link rel="prefetch" href="/assets/js/8.e6d9add6.js"><link rel="prefetch" href="/assets/js/80.f580b4d5.js"><link rel="prefetch" href="/assets/js/81.66151d45.js"><link rel="prefetch" href="/assets/js/82.0e7df186.js"><link rel="prefetch" href="/assets/js/83.e1401c03.js"><link rel="prefetch" href="/assets/js/84.43cdc670.js"><link rel="prefetch" href="/assets/js/85.f2cdde03.js"><link rel="prefetch" href="/assets/js/86.1688a220.js"><link rel="prefetch" href="/assets/js/87.09825905.js"><link rel="prefetch" href="/assets/js/88.679d07b6.js"><link rel="prefetch" href="/assets/js/89.9d1ad668.js"><link rel="prefetch" href="/assets/js/9.02be327a.js"><link rel="prefetch" href="/assets/js/90.2ee4c31d.js"><link rel="prefetch" href="/assets/js/91.8c8e0ae3.js"><link rel="prefetch" href="/assets/js/92.e0fc8fcd.js"><link rel="prefetch" href="/assets/js/93.56135677.js"><link rel="prefetch" href="/assets/js/94.d7e55b06.js"><link rel="prefetch" href="/assets/js/95.7f8a191a.js"><link rel="prefetch" href="/assets/js/96.ef173e65.js"><link rel="prefetch" href="/assets/js/97.2a47f730.js"><link rel="prefetch" href="/assets/js/98.3ddc1b81.js"><link rel="prefetch" href="/assets/js/99.09905885.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1229d12d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/jsparrow-logo.png" alt="jSparrow Documentation" class="logo"> <span class="site-name can-hide">jSparrow Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/rules/" class="nav-link">
+  Rules
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link">
+  Tags
+</a></div><div class="nav-item"><a href="/eclipse/getting-started.html" class="nav-link">
+  Eclipse Plugin
+</a></div><div class="nav-item"><a href="/maven/getting-started.html" class="nav-link">
+  Maven Plugin
+</a></div><div class="nav-item"><a href="/statistics/statistics-summary.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Statistics
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/rules/" class="nav-link">
+  Rules
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link">
+  Tags
+</a></div><div class="nav-item"><a href="/eclipse/getting-started.html" class="nav-link">
+  Eclipse Plugin
+</a></div><div class="nav-item"><a href="/maven/getting-started.html" class="nav-link">
+  Maven Plugin
+</a></div><div class="nav-item"><a href="/statistics/statistics-summary.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Statistics
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/statistics/statistics-summary.html" aria-current="page" class="active sidebar-link">Statistics Summary</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/statistics/statistics-summary.html#cleanup-code-with-plugin" class="sidebar-link">Cleanup code with plugin</a></li></ul></li><li><a href="/statistics/statistics.html" class="sidebar-link">Statistics of Open Source Projects</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="statistics-summary"><a href="#statistics-summary" class="header-anchor">#</a> Statistics Summary</h1> <p>For our testing we measured open source projects on GitHub.</p> <p>The following statistics show combined results over all those projects. The <a href="/eclipse/getting-started.html">jSparrow Eclipse Plugin</a> has been used to produce the results.</p> <h2>Summary of Statistics</h2> <p>This is a summary of the statistics of all open source projects listed on the <a href="/statistics/statistics.html">Statistics of Open Source Projects</a> page.</p> <div><div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>19792</td></tr> <tr><td>Number of files changed</td> <td>12581</td></tr> <tr><td>Total number of issues fixed</td> <td>228616</td></tr> <tr><td>Total time saved</td> <td>15997 hours, 33 minutes</td></tr> <tr><td>Total jSparrow run time</td> <td>20 minutes, 34 seconds</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div></div> <div><h2 id="cleanup-code-with-plugin"><a href="#cleanup-code-with-plugin" class="header-anchor">#</a> Cleanup code with plugin</h2> <p>To see your statistics, install jSparrow by dropping this button to your Eclipse IDE workspace:</p> <p><a href="https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3503691" title="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client" target="_blank" rel="noopener noreferrer"><img src="https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.svg" alt="Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client"><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>Need help? Check out or <a href="/eclipse/installation-guide.html#requirements">installation guide</a>.</p></div> <h2>Combined Statistics</h2> <p>This table adds up all the numbers seen on the <a href="/statistics/statistics.html">Statistics of Open Source Projects</a> page for each project.</p> <div><div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/brackets-to-control.html" target="_blank">
+          Add Braces to Control Statements
+        </a></td> <td class="text-xs-right">18988</td> <td class="text-xs-right">1979</td> <td class="text-xs-right">
+        4430 hours, 32 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/avoid-concatenation-in-logging-statements.html" target="_blank">
+          Avoid Concatenation in Logging Statements
+        </a></td> <td class="text-xs-right">330</td> <td class="text-xs-right">89</td> <td class="text-xs-right">
+        110 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/collapse-if-statements.html" target="_blank">
+          Collapse If Statements
+        </a></td> <td class="text-xs-right">758</td> <td class="text-xs-right">513</td> <td class="text-xs-right">
+        631 hours, 40 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/create-temp-files-using-java-nio.html" target="_blank">
+          Create Temp Files Using Java NIO
+        </a></td> <td class="text-xs-right">56</td> <td class="text-xs-right">37</td> <td class="text-xs-right">
+        23 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/hide-default-constructor-in-utility-classes.html" target="_blank">
+          Hide Default Constructor In Utility Classes
+        </a></td> <td class="text-xs-right">678</td> <td class="text-xs-right">678</td> <td class="text-xs-right">
+        565 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/insert-break-statement-in-loops.html" target="_blank">
+          Insert Break Statements in For-loops
+        </a></td> <td class="text-xs-right">5</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/make-fields-and-variables-final.html" target="_blank">
+          Make Fields And Variables Final
+        </a></td> <td class="text-xs-right">129753</td> <td class="text-xs-right">10783</td> <td class="text-xs-right">
+        108127 hours, 30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/primitive-boxed-for-string.html" target="_blank">
+          Remove Boxing for String Conversions
+        </a></td> <td class="text-xs-right">90</td> <td class="text-xs-right">56</td> <td class="text-xs-right">
+        60 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-collection-add-all.html" target="_blank">
+          Remove Collection::addAll
+        </a></td> <td class="text-xs-right">103</td> <td class="text-xs-right">71</td> <td class="text-xs-right">
+        34 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-explicit-call-to-super.html" target="_blank">
+          Remove Explicit Call To super()
+        </a></td> <td class="text-xs-right">290</td> <td class="text-xs-right">274</td> <td class="text-xs-right">
+        43 hours, 30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/diamond-operator.html" target="_blank">
+          Remove Explicit Type Argument
+        </a></td> <td class="text-xs-right">3815</td> <td class="text-xs-right">1044</td> <td class="text-xs-right">
+        572 hours, 15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/re-implementing-interface.html" target="_blank">
+          Remove Inherited Interfaces from Class Declaration
+        </a></td> <td class="text-xs-right">135</td> <td class="text-xs-right">106</td> <td class="text-xs-right">
+        36 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">4342</td> <td class="text-xs-right">1452</td> <td class="text-xs-right">
+        3618 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-modifiers-in-interface-properties.html" target="_blank">
+          Remove Modifiers in Interface Properties
+        </a></td> <td class="text-xs-right">1228</td> <td class="text-xs-right">131</td> <td class="text-xs-right">
+        102 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-null-check-before-instanceof.html" target="_blank">
+          Remove Null-Checks Before Instanceof
+        </a></td> <td class="text-xs-right">72</td> <td class="text-xs-right">46</td> <td class="text-xs-right">
+        24 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-redundant-type-cast.html" target="_blank">
+          Remove Redundant Type Casts
+        </a></td> <td class="text-xs-right">217</td> <td class="text-xs-right">131</td> <td class="text-xs-right">
+        144 hours, 40 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-to-string-on-string.html" target="_blank">
+          Remove toString() on String
+        </a></td> <td class="text-xs-right">19</td> <td class="text-xs-right">16</td> <td class="text-xs-right">
+        3 hours, 10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-empty-statement.html" target="_blank">
+          Remove Unnecessary Semicolons
+        </a></td> <td class="text-xs-right">332</td> <td class="text-xs-right">38</td> <td class="text-xs-right">
+        27 hours, 40 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">1225</td> <td class="text-xs-right">561</td> <td class="text-xs-right">
+        408 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unused-parameter.html" target="_blank">
+          Remove Unused Parameters in Private Methods
+        </a></td> <td class="text-xs-right">274</td> <td class="text-xs-right">143</td> <td class="text-xs-right">
+        228 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/reorder-modifiers.html" target="_blank">
+          Reorder Modifiers
+        </a></td> <td class="text-xs-right">662</td> <td class="text-xs-right">349</td> <td class="text-xs-right">
+        132 hours, 24 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-literal-equality-check.html" target="_blank">
+          Reorder String Equality Check
+        </a></td> <td class="text-xs-right">1496</td> <td class="text-xs-right">453</td> <td class="text-xs-right">
+        2493 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/arithmethic-assignment.html" target="_blank">
+          Replace Assignment with Compound Operator
+        </a></td> <td class="text-xs-right">134</td> <td class="text-xs-right">71</td> <td class="text-xs-right">
+        35 hours, 44 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-list-sort.html" target="_blank">
+          Replace Collection.sort with List.sort
+        </a></td> <td class="text-xs-right">40</td> <td class="text-xs-right">33</td> <td class="text-xs-right">
+        8 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-concat-to-plus.html" target="_blank">
+          Replace Concatenation with Infix-Operation
+        </a></td> <td class="text-xs-right">13</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        1 hour, 5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-is-empty-on-collections.html" target="_blank">
+          Replace Equality Check with isEmpty()
+        </a></td> <td class="text-xs-right">198</td> <td class="text-xs-right">124</td> <td class="text-xs-right">
+        52 hours, 48 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enums-without-equals.html" target="_blank">
+          Replace equals() on Enum Constants
+        </a></td> <td class="text-xs-right">280</td> <td class="text-xs-right">106</td> <td class="text-xs-right">
+        210 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-to-method-reference.html" target="_blank">
+          Replace Expression Lambda with Method Reference
+        </a></td> <td class="text-xs-right">1177</td> <td class="text-xs-right">671</td> <td class="text-xs-right">
+        392 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/for-to-for-each.html" target="_blank">
+          Replace For-Loop with Enhanced-For-Loop
+        </a></td> <td class="text-xs-right">175</td> <td class="text-xs-right">127</td> <td class="text-xs-right">
+        102 hours, 5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">3842</td> <td class="text-xs-right">1670</td> <td class="text-xs-right">
+        9605 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-find-first.html" target="_blank">
+          Replace For-Loop with Stream::findFirst
+        </a></td> <td class="text-xs-right">196</td> <td class="text-xs-right">133</td> <td class="text-xs-right">
+        58 hours, 48 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-any-match.html" target="_blank">
+          Replace For-Loop with Stream::Match
+        </a></td> <td class="text-xs-right">196</td> <td class="text-xs-right">130</td> <td class="text-xs-right">
+        65 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-sum.html" target="_blank">
+          Replace For-Loop with Stream::sum
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/index-of-to-contains.html" target="_blank">
+          Replace indexOf() with contains()
+        </a></td> <td class="text-xs-right">18</td> <td class="text-xs-right">13</td> <td class="text-xs-right">
+        2 hours, 24 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/inefficient-constructor.html" target="_blank">
+          Replace Inefficient Constructors with valueOf()
+        </a></td> <td class="text-xs-right">250</td> <td class="text-xs-right">45</td> <td class="text-xs-right">
+        104 hours, 10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/replace-j-unit-expected-annotation-property.html" target="_blank">
+          Replace JUnit Expected Annotation Property with assertThrows
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/replace-j-unit-timeout-annotation-property.html" target="_blank">
+          Replace JUnit Timeout Annotation Property with assertTimeout
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/map-get-or-default.html" target="_blank">
+          Replace Map::get by Map::getOrDefault
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/flat-map-instead-of-nested-loops.html" target="_blank">
+          Replace Nested Loops with flatMap
+        </a></td> <td class="text-xs-right">8</td> <td class="text-xs-right">8</td> <td class="text-xs-right">
+        4 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/put-if-absent.html" target="_blank">
+          Replace put(..) with putIfAbsent(..)
+        </a></td> <td class="text-xs-right">49</td> <td class="text-xs-right">38</td> <td class="text-xs-right">
+        13 hours, 4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/immutable-static-final-collections.html" target="_blank">
+          Replace static final Collections with Collections.unmodifiable...()
+        </a></td> <td class="text-xs-right">29</td> <td class="text-xs-right">22</td> <td class="text-xs-right">
+        29 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/while-to-for-each.html" target="_blank">
+          Replace While-Loop with Enhanced For-Loop
+        </a></td> <td class="text-xs-right">68</td> <td class="text-xs-right">26</td> <td class="text-xs-right">
+        45 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/reuse-random-objects.html" target="_blank">
+          Reuse Random Objects
+        </a></td> <td class="text-xs-right">91</td> <td class="text-xs-right">44</td> <td class="text-xs-right">
+        53 hours, 5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/multi-variable-declaration-line.html" target="_blank">
+          Split Multiple Variable Declarations
+        </a></td> <td class="text-xs-right">558</td> <td class="text-xs-right">279</td> <td class="text-xs-right">
+        148 hours, 48 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-buffer-to-builder.html" target="_blank">
+          StringBuffer() to StringBuilder()
+        </a></td> <td class="text-xs-right">84</td> <td class="text-xs-right">61</td> <td class="text-xs-right">
+        16 hours, 48 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/override-annotation.html" target="_blank">
+          Use @Override Annotation
+        </a></td> <td class="text-xs-right">5400</td> <td class="text-xs-right">1505</td> <td class="text-xs-right">
+        4050 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-arrays-stream.html" target="_blank">
+          Use Arrays Stream
+        </a></td> <td class="text-xs-right">7</td> <td class="text-xs-right">6</td> <td class="text-xs-right">
+        1 hour, 45 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/buffered-reader-lines.html" target="_blank">
+          Use BufferedReader::lines
+        </a></td> <td class="text-xs-right">22</td> <td class="text-xs-right">17</td> <td class="text-xs-right">
+        9 hours, 10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-collections-singleton-list.html" target="_blank">
+          Use Collections Singleton List
+        </a></td> <td class="text-xs-right">195</td> <td class="text-xs-right">78</td> <td class="text-xs-right">
+        52 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-comparator-methods.html" target="_blank">
+          Use Comparator Methods
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        45 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/primitive-object-use-equals.html" target="_blank">
+          Use equals() on Primitive Objects
+        </a></td> <td class="text-xs-right">42</td> <td class="text-xs-right">30</td> <td class="text-xs-right">
+        11 hours, 12 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/collections-factory-methods.html" target="_blank">
+          Use Factory Methods for Collections
+        </a></td> <td class="text-xs-right">16</td> <td class="text-xs-right">7</td> <td class="text-xs-right">
+        2 hours, 40 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-files-buffered-reader.html" target="_blank">
+          Use Files.newBufferedReader
+        </a></td> <td class="text-xs-right">5</td> <td class="text-xs-right">5</td> <td class="text-xs-right">
+        25 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-files-buffered-writer.html" target="_blank">
+          Use Files.newBufferedWriter
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-files-write-string.html" target="_blank">
+          Use Files.writeString
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/functional-interface.html" target="_blank">
+          Use Functional Interfaces
+        </a></td> <td class="text-xs-right">474</td> <td class="text-xs-right">265</td> <td class="text-xs-right">
+        276 hours, 30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">2589</td> <td class="text-xs-right">1667</td> <td class="text-xs-right">
+        2157 hours, 30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/local-variable-type-inference.html" target="_blank">
+          Use Local Variable Type Inference
+        </a></td> <td class="text-xs-right">35676</td> <td class="text-xs-right">3122</td> <td class="text-xs-right">
+        2378 hours, 24 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/multi-catch.html" target="_blank">
+          Use Multi Catch
+        </a></td> <td class="text-xs-right">166</td> <td class="text-xs-right">52</td> <td class="text-xs-right">
+        83 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-offset-based-string-methods.html" target="_blank">
+          Use Offset Based String Methods
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/optional-filter.html" target="_blank">
+          Use Optional::filter
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/optional-if-present.html" target="_blank">
+          Use Optional::ifPresent
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">4</td> <td class="text-xs-right">
+        16 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/optional-map.html" target="_blank">
+          Use Optional::map
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        6 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-format-line-separator.html" target="_blank">
+          Use Portable Newline
+        </a></td> <td class="text-xs-right">66</td> <td class="text-xs-right">33</td> <td class="text-xs-right">
+        8 hours, 48 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-predefined-standard-charset.html" target="_blank">
+          Use Predefined Standard Charset
+        </a></td> <td class="text-xs-right">20</td> <td class="text-xs-right">14</td> <td class="text-xs-right">
+        3 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-secure-random.html" target="_blank">
+          Use SecureRandom
+        </a></td> <td class="text-xs-right">239</td> <td class="text-xs-right">119</td> <td class="text-xs-right">
+        199 hours, 10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-collect.html" target="_blank">
+          Use Stream::collect
+        </a></td> <td class="text-xs-right">120</td> <td class="text-xs-right">92</td> <td class="text-xs-right">
+        180 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-if-wrapper-to-filter.html" target="_blank">
+          Use Stream::filter
+        </a></td> <td class="text-xs-right">542</td> <td class="text-xs-right">359</td> <td class="text-xs-right">
+        451 hours, 40 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-map.html" target="_blank">
+          Use Stream::map
+        </a></td> <td class="text-xs-right">246</td> <td class="text-xs-right">201</td> <td class="text-xs-right">
+        615 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-join.html" target="_blank">
+          Use String Join
+        </a></td> <td class="text-xs-right">9</td> <td class="text-xs-right">8</td> <td class="text-xs-right">
+        4 hours, 30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-new-string-constructor.html" target="_blank">
+          Use String Literals
+        </a></td> <td class="text-xs-right">14</td> <td class="text-xs-right">8</td> <td class="text-xs-right">
+        4 hours, 40 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">10432</td> <td class="text-xs-right">3727</td> <td class="text-xs-right">
+        3477 hours, 20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/try-with-resource.html" target="_blank">
+          Use Try-With-Resource
+        </a></td> <td class="text-xs-right">39</td> <td class="text-xs-right">21</td> <td class="text-xs-right">
+        58 hours, 30 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/statistics/statistics.html">
+        Statistics of Open Source Projects
+      </a>
+      →
+    </span></p></div> <div class="footer"><hr> <div class="footer-links"><p>
+    jSparrow is a brand of ©2004-2022 Splendit IT Consulting GmbH | 
+      <a href="https://jsparrow.io/wp-content/uploads/Impressum.pdf">Impressum | </a> <a href="https://jsparrow.io/wp-content/uploads/Software-download-terms.pdf">Software Download Terms | </a> <a href="https://jsparrow.io/wp-content/uploads/Digital-store-terms.pdf">Digital Store Terms | </a> <a href="https://jsparrow.io/wp-content/uploads/Terms-and-conditions-of-use.pdf">Website Terms | </a> <a href="https://jsparrow.io/wp-content/uploads/EULA.pdf">EULA | </a> <a href="https://jsparrow.io/wp-content/uploads/GDPR.pdf">GDPR | </a> <a href="https://jsparrow.io/wp-content/uploads/Privacy-and-cookies-policy.pdf">Privacy and Cookies</a></p></div></div><div data-app="true" id="app" class="application theme--light"><div class="application--wrap"><div id="buy" class="buy-link"><a href="https://jsparrow.io/report-an-issue" target="_blank" class="v-btn theme--light" style="background-color:#00000;border-color:#00000;"><div class="v-btn__content">
+      Support
+      <i aria-hidden="true" class="v-icon .v-icon--right v-icon--right material-icons theme--dark" style="font-size:16px;">help</i></div></a></div></div></div></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e92f03df.js" defer></script><script src="/assets/js/17.56318689.js" defer></script><script src="/assets/js/5.d6f1970e.js" defer></script><script src="/assets/js/175.93985ba1.js" defer></script><script src="/assets/js/28.90310cdf.js" defer></script><script src="/assets/js/24.44aaf280.js" defer></script>
+  </body>
+</html>
