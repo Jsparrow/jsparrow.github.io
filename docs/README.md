@@ -21,16 +21,13 @@ jSparrow is a plugin for **Java code cleanup** and **refactoring** developed by 
 
 Visit [jSparrow.io](https://jsparrow.io/) for more information.
 
-### Install jSparrow
-To install jSparrow for Eclipse IDE, please drag-and-drop this button into your workspace:
+### 🛠️ Auto-refactor Available
+jSparrow offers a wide range of extensively tested refactorings. 
+Drop this button to your Eclipse IDE workspace to install jSparrow for free:
 
 [![Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client](https://marketplace.eclipse.org/sites/all/themes/solstice/public/images/marketplace/btn-install.svg)](https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=3503691 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
 
 Need help? Check out or [installation guide](/eclipse/installation-guide.html#requirements).
-
-#### Included on installation
-- all quick-fixes or [markers](/tags/#marker)
-- the [free-tagged](/tags/#free-rules-for-jsparrow-eclipse-ide) rules
 
 ### Support
 [Report an Issue](https://jsparrow.io/report-an-issue)
