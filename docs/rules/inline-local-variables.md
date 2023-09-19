@@ -2,7 +2,7 @@
 title: Inline Local Variables
 ruleId: InlineLocalVariables
 since: 4.19.0
-minJavaVersion: 1
+minJavaVersion: 1.1
 remediationCost: 2
 links:
     - displayName: "S1488"
@@ -17,7 +17,7 @@ tags: ["Java 1.1", "Coding Conventions", "Marker"]
 
 ## Description
 
-As described in the sonarcloud rule S1488, local variables should not be declared and then immediately returned or thrown. Therfore this rule scans for variables which are exclusively used in one single return- or throw statement and inlines them if this is possible.
+ According to the rule [`S1488`](https://sonarcloud.io/organizations/default/rules?open=java%3AS1488&q=S1488) on the web site 'sonarcloud.io', local variables should not be declared and then immediately returned or thrown. Therefore this rule scans for local variables which are exclusively used in one single return- or throw statement and in-lines them if this is possible.
 
 ## Benefits
 
