@@ -35,26 +35,26 @@ Simplifies code by removing unnecessary variable declarations.
 
 __Pre__
 ```java
-	int x = 1;
-	return x;
+	int result = (a + b) * (c + d);
+	return result;
 ```
 
 __Post__
 ```java
-    return 1;
+    return (a + b) * (c + d);
 ```
 
 ### Variables In Throw Statements
 
 __Pre__
 ```java
-	RuntimeException x = new RuntimeException();
-	throw x;
+	RuntimeException exception = new RuntimeException(message, cause);
+	throw exception;
 ```
 
 __Post__
 ```java
-    throw new RuntimeException();
+    throw new RuntimeException(message, cause);
 ```
 
 
