@@ -14,6 +14,7 @@ module.exports = [
 'create-temp-files-using-java-nio',
 'escape-user-inputs-in-sql-queries',
 'hide-default-constructor-in-utility-classes',
+'inline-local-variables',
 'insert-break-statement-in-loops',
 'make-fields-and-variables-final',
 'serial-version-uid',
