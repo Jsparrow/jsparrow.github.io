@@ -8,8 +8,8 @@ Welcome! Here you will find the complete documentation of jSparrow.
 
 ## Latest Release Notes
 
-We released a new rule and two new markers!
-Check out the release notes for [jSparrow 4.18.0](/eclipse/release-notes.html#_4-18-0).
+We released a new rule and one new marker!
+Check out the release notes for [jSparrow 4.19.0](/eclipse/release-notes.html#_4-19-0).
 
 jSparrow is in active development and there are new rules released regularly! Stay tuned! 
 

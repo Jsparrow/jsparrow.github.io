@@ -5,6 +5,25 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.19.0 <Badge vertical="middle" text="25.09.2023"/>
+
+The [119<sup>th</sup> refactoring rule](/rules/) and one additional jSparrow marker are shipped with jSparrow 4.19.0.
+The new rule in-lines local variables which are returned or thrown immediately after their declaration.
+
+### New Rule
+
+#### [**Inline Local Variables**](/rules/inline-local-variables.html)
+
+This rule is used to in-line local variables which are used exactly once in a return- or in a throw statement.
+
+### More jSparrow Markers
+
+jSparrow introduced Markers since version [4.0.0](#_4-0-0). This release adds one additional marker for the following rule:
+* [Inline Local Variables](/rules/inline-local-variables.html)
+
+Thus, setting the total number of available jSparrow Markers to 95. 
+
+
 ## 4.18.0 <Badge vertical="middle" text="07.07.2023"/>
 
 The [118<sup>th</sup> refactoring rule](/rules/) and 2 additional jSparrow markers are shipped with jSparrow 4.18.0.
