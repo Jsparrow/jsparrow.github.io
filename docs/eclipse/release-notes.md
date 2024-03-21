@@ -5,7 +5,7 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
-## 4.19.0 <Badge vertical="middle" text="25.09.2023"/>
+## 4.19.0 <Badge vertical="middle" text="05.04.2024"/>
 
 The [119<sup>th</sup> refactoring rule](/rules/) and one additional jSparrow marker are shipped with jSparrow 4.19.0.
 The new rule in-lines local variables which are returned or thrown immediately after their declaration.
