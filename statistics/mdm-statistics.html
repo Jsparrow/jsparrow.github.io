@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Eclipse MDM|BL | jSparrow Documentation</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/jsparrow-tab-icon.png">
+    <meta name="description" content="">
+    <meta name="google-site-verification" content="1EOegR91kbVWv-4x23fHUki6OgU7loau_CsiGDtJHok">
+    
+    <link rel="preload" href="/assets/css/0.styles.b4501b04.css" as="style"><link rel="preload" href="/assets/js/app.8d6be1f6.js" as="script"><link rel="preload" href="/assets/js/17.56318689.js" as="script"><link rel="preload" href="/assets/js/5.d6f1970e.js" as="script"><link rel="preload" href="/assets/js/174.58b98e9f.js" as="script"><link rel="preload" href="/assets/js/22.9e19c976.js" as="script"><link rel="preload" href="/assets/js/16.ade8fee8.js" as="script"><link rel="prefetch" href="/assets/js/1.c858b974.js"><link rel="prefetch" href="/assets/js/10.ccc3a467.js"><link rel="prefetch" href="/assets/js/100.c0f0dbd3.js"><link rel="prefetch" href="/assets/js/101.583e608b.js"><link rel="prefetch" href="/assets/js/102.870a08ed.js"><link rel="prefetch" href="/assets/js/103.b85bb276.js"><link rel="prefetch" href="/assets/js/104.bd9e8fd8.js"><link rel="prefetch" href="/assets/js/105.e2a7836d.js"><link rel="prefetch" href="/assets/js/106.6cfa0e80.js"><link rel="prefetch" href="/assets/js/107.5e079488.js"><link rel="prefetch" href="/assets/js/108.86b23b1f.js"><link rel="prefetch" href="/assets/js/109.89f6e0f9.js"><link rel="prefetch" href="/assets/js/11.65100cd2.js"><link rel="prefetch" href="/assets/js/110.cc8b860a.js"><link rel="prefetch" href="/assets/js/111.18049374.js"><link rel="prefetch" href="/assets/js/112.e3677323.js"><link rel="prefetch" href="/assets/js/113.a5dddd32.js"><link rel="prefetch" href="/assets/js/114.486d14b3.js"><link rel="prefetch" href="/assets/js/115.bfe7156f.js"><link rel="prefetch" href="/assets/js/116.fa7ee757.js"><link rel="prefetch" href="/assets/js/117.ff87db7f.js"><link rel="prefetch" href="/assets/js/118.2cc09463.js"><link rel="prefetch" href="/assets/js/119.2734e64e.js"><link rel="prefetch" href="/assets/js/12.aeb81bf7.js"><link rel="prefetch" href="/assets/js/120.3c597058.js"><link rel="prefetch" href="/assets/js/121.ee7cf8a1.js"><link rel="prefetch" href="/assets/js/122.5cad8a73.js"><link rel="prefetch" href="/assets/js/123.d43f3f17.js"><link rel="prefetch" href="/assets/js/124.2705a138.js"><link rel="prefetch" href="/assets/js/125.83e1b874.js"><link rel="prefetch" href="/assets/js/126.92641c4d.js"><link rel="prefetch" href="/assets/js/127.04706883.js"><link rel="prefetch" href="/assets/js/128.1391ccc5.js"><link rel="prefetch" href="/assets/js/129.dae98475.js"><link rel="prefetch" href="/assets/js/13.5253c745.js"><link rel="prefetch" href="/assets/js/130.83d922cc.js"><link rel="prefetch" href="/assets/js/131.08171fa5.js"><link rel="prefetch" href="/assets/js/132.ae7cbfbf.js"><link rel="prefetch" href="/assets/js/133.b8d1e53a.js"><link rel="prefetch" href="/assets/js/134.a4f27263.js"><link rel="prefetch" href="/assets/js/135.09a11449.js"><link rel="prefetch" href="/assets/js/136.8dde0038.js"><link rel="prefetch" href="/assets/js/137.f56c12f1.js"><link rel="prefetch" href="/assets/js/138.cf8ea898.js"><link rel="prefetch" href="/assets/js/139.9a79d763.js"><link rel="prefetch" href="/assets/js/14.0e74d67b.js"><link rel="prefetch" href="/assets/js/140.3f2cf965.js"><link rel="prefetch" href="/assets/js/141.41ec8901.js"><link rel="prefetch" href="/assets/js/142.05c24721.js"><link rel="prefetch" href="/assets/js/143.9ebc7877.js"><link rel="prefetch" href="/assets/js/144.47990608.js"><link rel="prefetch" href="/assets/js/145.f3f46e76.js"><link rel="prefetch" href="/assets/js/146.6c9caa38.js"><link rel="prefetch" href="/assets/js/147.63cd6061.js"><link rel="prefetch" href="/assets/js/148.82c73aa9.js"><link rel="prefetch" href="/assets/js/149.1304eccf.js"><link rel="prefetch" href="/assets/js/15.a429ef2d.js"><link rel="prefetch" href="/assets/js/150.1629f7b5.js"><link rel="prefetch" href="/assets/js/151.76172846.js"><link rel="prefetch" href="/assets/js/152.8a0379e8.js"><link rel="prefetch" href="/assets/js/153.7c918fd4.js"><link rel="prefetch" href="/assets/js/154.3ccf3205.js"><link rel="prefetch" href="/assets/js/155.46cb03ef.js"><link rel="prefetch" href="/assets/js/156.f09fc41f.js"><link rel="prefetch" href="/assets/js/157.a347ebb2.js"><link rel="prefetch" href="/assets/js/158.7a249291.js"><link rel="prefetch" href="/assets/js/159.e5c1f152.js"><link rel="prefetch" href="/assets/js/160.5c0af28d.js"><link rel="prefetch" href="/assets/js/161.cd3934cd.js"><link rel="prefetch" href="/assets/js/162.6751a4f5.js"><link rel="prefetch" href="/assets/js/163.3ffc7f5c.js"><link rel="prefetch" href="/assets/js/164.d5c98a8b.js"><link rel="prefetch" href="/assets/js/165.2822eda8.js"><link rel="prefetch" href="/assets/js/166.fbf56370.js"><link rel="prefetch" href="/assets/js/167.49f41f62.js"><link rel="prefetch" href="/assets/js/168.15d34c9e.js"><link rel="prefetch" href="/assets/js/169.ccdf0432.js"><link rel="prefetch" href="/assets/js/170.b3ff66a0.js"><link rel="prefetch" href="/assets/js/171.8ebe1301.js"><link rel="prefetch" href="/assets/js/172.be06b9ac.js"><link rel="prefetch" href="/assets/js/173.afd6b6e1.js"><link rel="prefetch" href="/assets/js/175.560b6174.js"><link rel="prefetch" href="/assets/js/176.eebe5eb9.js"><link rel="prefetch" href="/assets/js/177.5201a265.js"><link rel="prefetch" href="/assets/js/178.4ba14a52.js"><link rel="prefetch" href="/assets/js/18.88d4bf58.js"><link rel="prefetch" href="/assets/js/19.66e149a0.js"><link rel="prefetch" href="/assets/js/2.c705bd7e.js"><link rel="prefetch" href="/assets/js/20.6d2ddfd9.js"><link rel="prefetch" href="/assets/js/21.18703be1.js"><link rel="prefetch" href="/assets/js/23.7d254c63.js"><link rel="prefetch" href="/assets/js/24.44aaf280.js"><link rel="prefetch" href="/assets/js/25.191c6621.js"><link rel="prefetch" href="/assets/js/26.1dc04b82.js"><link rel="prefetch" href="/assets/js/27.52e530d6.js"><link rel="prefetch" href="/assets/js/28.90310cdf.js"><link rel="prefetch" href="/assets/js/29.185b4d62.js"><link rel="prefetch" href="/assets/js/3.e61b0488.js"><link rel="prefetch" href="/assets/js/30.949d7ba2.js"><link rel="prefetch" href="/assets/js/31.15073a9c.js"><link rel="prefetch" href="/assets/js/32.1108b27d.js"><link rel="prefetch" href="/assets/js/33.29344cfb.js"><link rel="prefetch" href="/assets/js/34.9877f6f7.js"><link rel="prefetch" href="/assets/js/35.f8fc58bd.js"><link rel="prefetch" href="/assets/js/36.7a10ff7a.js"><link rel="prefetch" href="/assets/js/37.fd9d9f27.js"><link rel="prefetch" href="/assets/js/38.c01fe288.js"><link rel="prefetch" href="/assets/js/39.e9921711.js"><link rel="prefetch" href="/assets/js/40.717c4ebe.js"><link rel="prefetch" href="/assets/js/41.99e263f5.js"><link rel="prefetch" href="/assets/js/42.9ab2e93f.js"><link rel="prefetch" href="/assets/js/43.521ba911.js"><link rel="prefetch" href="/assets/js/44.a88f65d3.js"><link rel="prefetch" href="/assets/js/45.46c5c547.js"><link rel="prefetch" href="/assets/js/46.15f79e94.js"><link rel="prefetch" href="/assets/js/47.76fd53da.js"><link rel="prefetch" href="/assets/js/48.cc6607da.js"><link rel="prefetch" href="/assets/js/49.124263f3.js"><link rel="prefetch" href="/assets/js/50.2786c290.js"><link rel="prefetch" href="/assets/js/51.53e28d32.js"><link rel="prefetch" href="/assets/js/52.5b9da5ea.js"><link rel="prefetch" href="/assets/js/53.4d3506d5.js"><link rel="prefetch" href="/assets/js/54.5d870d30.js"><link rel="prefetch" href="/assets/js/55.9f897ae0.js"><link rel="prefetch" href="/assets/js/56.b25e966e.js"><link rel="prefetch" href="/assets/js/57.94d5ff35.js"><link rel="prefetch" href="/assets/js/58.2f7527e6.js"><link rel="prefetch" href="/assets/js/59.ed62f9d2.js"><link rel="prefetch" href="/assets/js/6.3ff8b7a0.js"><link rel="prefetch" href="/assets/js/60.25024c4e.js"><link rel="prefetch" href="/assets/js/61.cea8b16b.js"><link rel="prefetch" href="/assets/js/62.6f399ffb.js"><link rel="prefetch" href="/assets/js/63.bd256cd5.js"><link rel="prefetch" href="/assets/js/64.fdff20f4.js"><link rel="prefetch" href="/assets/js/65.42f7a320.js"><link rel="prefetch" href="/assets/js/66.9bf2a9f6.js"><link rel="prefetch" href="/assets/js/67.d9f9b45f.js"><link rel="prefetch" href="/assets/js/68.77fe8866.js"><link rel="prefetch" href="/assets/js/69.1c5a2abc.js"><link rel="prefetch" href="/assets/js/7.fe1e94fe.js"><link rel="prefetch" href="/assets/js/70.3cbd5ed3.js"><link rel="prefetch" href="/assets/js/71.039c40da.js"><link rel="prefetch" href="/assets/js/72.7623bd5b.js"><link rel="prefetch" href="/assets/js/73.f1f05c3f.js"><link rel="prefetch" href="/assets/js/74.732d1d4a.js"><link rel="prefetch" href="/assets/js/75.cebf3c1c.js"><link rel="prefetch" href="/assets/js/76.d96a2f52.js"><link rel="prefetch" href="/assets/js/77.3f073bbb.js"><link rel="prefetch" href="/assets/js/78.2adae821.js"><link rel="prefetch" href="/assets/js/79.ba0f46ae.js"><link rel="prefetch" href="/assets/js/8.e6d9add6.js"><link rel="prefetch" href="/assets/js/80.75c8b7cb.js"><link rel="prefetch" href="/assets/js/81.f21bf775.js"><link rel="prefetch" href="/assets/js/82.507ed7cd.js"><link rel="prefetch" href="/assets/js/83.86b905ec.js"><link rel="prefetch" href="/assets/js/84.bf5bb808.js"><link rel="prefetch" href="/assets/js/85.93b6d0fb.js"><link rel="prefetch" href="/assets/js/86.1e400f80.js"><link rel="prefetch" href="/assets/js/87.601e60df.js"><link rel="prefetch" href="/assets/js/88.0bb909dc.js"><link rel="prefetch" href="/assets/js/89.71286ce0.js"><link rel="prefetch" href="/assets/js/9.02be327a.js"><link rel="prefetch" href="/assets/js/90.0d55617b.js"><link rel="prefetch" href="/assets/js/91.f1702f25.js"><link rel="prefetch" href="/assets/js/92.050500c8.js"><link rel="prefetch" href="/assets/js/93.a1a6b096.js"><link rel="prefetch" href="/assets/js/94.1fb466e7.js"><link rel="prefetch" href="/assets/js/95.68fe4f56.js"><link rel="prefetch" href="/assets/js/96.2e64066e.js"><link rel="prefetch" href="/assets/js/97.6fc797ff.js"><link rel="prefetch" href="/assets/js/98.23ab4241.js"><link rel="prefetch" href="/assets/js/99.c5d83c98.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b4501b04.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/jsparrow-logo.png" alt="jSparrow Documentation" class="logo"> <span class="site-name can-hide">jSparrow Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/rules/" class="nav-link">
+  Rules
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link">
+  Tags
+</a></div><div class="nav-item"><a href="/eclipse/getting-started.html" class="nav-link">
+  Eclipse Plugin
+</a></div><div class="nav-item"><a href="/maven/getting-started.html" class="nav-link">
+  Maven Plugin
+</a></div><div class="nav-item"><a href="/statistics/statistics-summary.html" class="nav-link">
+  Statistics
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/rules/" class="nav-link">
+  Rules
+</a></div><div class="nav-item"><a href="/tags/" class="nav-link">
+  Tags
+</a></div><div class="nav-item"><a href="/eclipse/getting-started.html" class="nav-link">
+  Eclipse Plugin
+</a></div><div class="nav-item"><a href="/maven/getting-started.html" class="nav-link">
+  Maven Plugin
+</a></div><div class="nav-item"><a href="/statistics/statistics-summary.html" class="nav-link">
+  Statistics
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/statistics/statistics-summary.html" class="sidebar-link">Statistics Summary</a></li><li><a href="/statistics/statistics.html" class="sidebar-link">Statistics of Open Source Projects</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="eclipse-mdm-bl"><a href="#eclipse-mdm-bl" class="header-anchor">#</a> Eclipse MDM|BL</h1> <div><div><div><div class="tab"><button id="org.eclipse.mdm Statistics Over All Projects" class="tablinks"> org.eclipse.mdm Statistics Over All Projects
+            </button><button id="org.eclipse.mdm.api.base" class="tablinks"> org.eclipse.mdm.api.base
+            </button><button id="org.eclipse.mdm.api.default" class="tablinks"> org.eclipse.mdm.api.default
+            </button><button id="org.eclipse.mdm.api.odsadapter" class="tablinks"> org.eclipse.mdm.api.odsadapter
+            </button><button id="org.eclipse.mdm.mdfsorter" class="tablinks"> org.eclipse.mdm.mdfsorter
+            </button><button id="org.eclipse.mdm.application" class="tablinks"> org.eclipse.mdm.application
+            </button><button id="org.eclipse.mdm.businessobjects" class="tablinks"> org.eclipse.mdm.businessobjects
+            </button><button id="org.eclipse.mdm.connector" class="tablinks"> org.eclipse.mdm.connector
+            </button><button id="org.eclipse.mdm.filerelease" class="tablinks"> org.eclipse.mdm.filerelease
+            </button><button id="org.eclipse.mdm.freetextindexer" class="tablinks"> org.eclipse.mdm.freetextindexer
+            </button><button id="org.eclipse.mdm.preferences" class="tablinks"> org.eclipse.mdm.preferences
+            </button><button id="org.eclipse.mdm.property" class="tablinks"> org.eclipse.mdm.property
+            </button><button id="org.eclipse.mdm.openatfx.mdf" class="tablinks"> org.eclipse.mdm.openatfx.mdf
+            </button><button id="org.eclipse.mdm.realm.login.glassfish" class="tablinks"> org.eclipse.mdm.realm.login.glassfish
+            </button></div> <div id="0" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm Statistics Over All Projects</h2> <p>Metrics for org.eclipse.mdm Statistics Over All Projects (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>1575</td></tr> <tr><td>Number of files changed</td> <td>1088</td></tr> <tr><td>Total number of issues fixed</td> <td>7086</td></tr> <tr><td>Total time saved</td> <td>494 hours, 55 minutes</td></tr> <tr><td>jSparrow run time</td> <td>46 seconds</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm Statistics Over All Projects.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/brackets-to-control.html" target="_blank">
+          Add Braces to Control Statements
+        </a></td> <td class="text-xs-right">2285</td> <td class="text-xs-right">327</td> <td class="text-xs-right">
+        76 hours, 10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">426</td> <td class="text-xs-right">426</td> <td class="text-xs-right">
+        7 hours, 6 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-explicit-call-to-super.html" target="_blank">
+          Remove Explicit Call To super()
+        </a></td> <td class="text-xs-right">7</td> <td class="text-xs-right">6</td> <td class="text-xs-right">
+        7 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/diamond-operator.html" target="_blank">
+          Remove Explicit Type Argument
+        </a></td> <td class="text-xs-right">108</td> <td class="text-xs-right">38</td> <td class="text-xs-right">
+        1 hour, 48 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">74</td> <td class="text-xs-right">36</td> <td class="text-xs-right">
+        6 hours, 10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-to-string-on-string.html" target="_blank">
+          Remove toString() on String
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">214</td> <td class="text-xs-right">49</td> <td class="text-xs-right">
+        7 hours, 8 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-literal-equality-check.html" target="_blank">
+          Reorder String Equality Check
+        </a></td> <td class="text-xs-right">821</td> <td class="text-xs-right">94</td> <td class="text-xs-right">
+        136 hours, 50 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-concat-to-plus.html" target="_blank">
+          Replace Concatenation with Infix-Operation
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enums-without-equals.html" target="_blank">
+          Replace equals() on Enum Constants
+        </a></td> <td class="text-xs-right">6</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        12 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-to-method-reference.html" target="_blank">
+          Replace Expression Lambda with Method Reference
+        </a></td> <td class="text-xs-right">44</td> <td class="text-xs-right">27</td> <td class="text-xs-right">
+        1 hour, 28 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/for-to-for-each.html" target="_blank">
+          Replace For-Loop with Enhanced-For-Loop
+        </a></td> <td class="text-xs-right">91</td> <td class="text-xs-right">86</td> <td class="text-xs-right">
+        7 hours, 35 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">241</td> <td class="text-xs-right">70</td> <td class="text-xs-right">
+        60 hours, 15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/inefficient-constructor.html" target="_blank">
+          Replace Inefficient Constructors with valueOf()
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/immutable-static-final-collections.html" target="_blank">
+          Replace static final Collections with Collections.unmodifiable...()
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/while-to-for-each.html" target="_blank">
+          Replace While-Loop with Enhanced For-Loop
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/multi-variable-declaration-line.html" target="_blank">
+          Split Multiple Variable Declarations
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        8 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-buffer-to-builder.html" target="_blank">
+          StringBuffer() to StringBuilder()
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/override-annotation.html" target="_blank">
+          Use @Override Annotation
+        </a></td> <td class="text-xs-right">2047</td> <td class="text-xs-right">417</td> <td class="text-xs-right">
+        170 hours, 35 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/primitive-object-use-equals.html" target="_blank">
+          Use equals() on Primitive Objects
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/functional-interface.html" target="_blank">
+          Use Functional Interfaces
+        </a></td> <td class="text-xs-right">6</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">73</td> <td class="text-xs-right">48</td> <td class="text-xs-right">
+        6 hours, 5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/local-variable-type-inference.html" target="_blank">
+          Use Local Variable Type Inference
+        </a></td> <td class="text-xs-right">102</td> <td class="text-xs-right">24</td> <td class="text-xs-right">
+        3 hours, 24 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/multi-catch.html" target="_blank">
+          Use Multi Catch
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">4</td> <td class="text-xs-right">
+        20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/optional-if-present.html" target="_blank">
+          Use Optional::ifPresent
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        6 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-collect.html" target="_blank">
+          Use Stream::collect
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-if-wrapper-to-filter.html" target="_blank">
+          Use Stream::filter
+        </a></td> <td class="text-xs-right">5</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        25 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-map.html" target="_blank">
+          Use Stream::map
+        </a></td> <td class="text-xs-right">13</td> <td class="text-xs-right">7</td> <td class="text-xs-right">
+        3 hours, 15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">505</td> <td class="text-xs-right">201</td> <td class="text-xs-right">
+        16 hours, 50 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-utils.html" target="_blank">
+          Use StringUtils Methods
+        </a></td> <td class="text-xs-right">134</td> <td class="text-xs-right">43</td> <td class="text-xs-right">
+        22 hours, 20 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="1" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.api.base</h2> <p>Metrics for org.eclipse.mdm.api.base (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>105</td></tr> <tr><td>Number of files changed</td> <td>62</td></tr> <tr><td>Total number of issues fixed</td> <td>145</td></tr> <tr><td>Total time saved</td> <td>4 hours, 54 minutes</td></tr> <tr><td>jSparrow run time</td> <td>3 seconds</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.api.base.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">49</td> <td class="text-xs-right">49</td> <td class="text-xs-right">
+        49 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-explicit-call-to-super.html" target="_blank">
+          Remove Explicit Call To super()
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        1 minute
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/diamond-operator.html" target="_blank">
+          Remove Explicit Type Argument
+        </a></td> <td class="text-xs-right">9</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        9 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">48</td> <td class="text-xs-right">9</td> <td class="text-xs-right">
+        1 hour, 36 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        45 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/inefficient-constructor.html" target="_blank">
+          Replace Inefficient Constructors with valueOf()
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/override-annotation.html" target="_blank">
+          Use @Override Annotation
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">4</td> <td class="text-xs-right">
+        20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/optional-if-present.html" target="_blank">
+          Use Optional::ifPresent
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">22</td> <td class="text-xs-right">14</td> <td class="text-xs-right">
+        44 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        6 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="2" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.api.default</h2> <p>Metrics for org.eclipse.mdm.api.default (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>24</td></tr> <tr><td>Number of files changed</td> <td>19</td></tr> <tr><td>Total number of issues fixed</td> <td>63</td></tr> <tr><td>Total time saved</td> <td>2 hours, 50 minutes</td></tr> <tr><td>jSparrow run time</td> <td>1 second</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.api.default.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">17</td> <td class="text-xs-right">17</td> <td class="text-xs-right">
+        17 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">6</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">6</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        12 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enums-without-equals.html" target="_blank">
+          Replace equals() on Enum Constants
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">10</td> <td class="text-xs-right">7</td> <td class="text-xs-right">
+        50 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/optional-if-present.html" target="_blank">
+          Use Optional::ifPresent
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">20</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        40 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="3" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.api.odsadapter</h2> <p>Metrics for org.eclipse.mdm.api.odsadapter (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>1089</td></tr> <tr><td>Number of files changed</td> <td>698</td></tr> <tr><td>Total number of issues fixed</td> <td>5506</td></tr> <tr><td>Total time saved</td> <td>401 hours, 50 minutes</td></tr> <tr><td>jSparrow run time</td> <td>25 seconds</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.api.odsadapter.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/brackets-to-control.html" target="_blank">
+          Add Braces to Control Statements
+        </a></td> <td class="text-xs-right">2212</td> <td class="text-xs-right">325</td> <td class="text-xs-right">
+        73 hours, 44 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">63</td> <td class="text-xs-right">63</td> <td class="text-xs-right">
+        1 hour, 3 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/diamond-operator.html" target="_blank">
+          Remove Explicit Type Argument
+        </a></td> <td class="text-xs-right">10</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">36</td> <td class="text-xs-right">13</td> <td class="text-xs-right">
+        3 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-to-string-on-string.html" target="_blank">
+          Remove toString() on String
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">118</td> <td class="text-xs-right">24</td> <td class="text-xs-right">
+        3 hours, 56 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-literal-equality-check.html" target="_blank">
+          Reorder String Equality Check
+        </a></td> <td class="text-xs-right">705</td> <td class="text-xs-right">78</td> <td class="text-xs-right">
+        117 hours, 30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enums-without-equals.html" target="_blank">
+          Replace equals() on Enum Constants
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-to-method-reference.html" target="_blank">
+          Replace Expression Lambda with Method Reference
+        </a></td> <td class="text-xs-right">15</td> <td class="text-xs-right">9</td> <td class="text-xs-right">
+        30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/for-to-for-each.html" target="_blank">
+          Replace For-Loop with Enhanced-For-Loop
+        </a></td> <td class="text-xs-right">90</td> <td class="text-xs-right">85</td> <td class="text-xs-right">
+        7 hours, 30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">41</td> <td class="text-xs-right">19</td> <td class="text-xs-right">
+        10 hours, 15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/override-annotation.html" target="_blank">
+          Use @Override Annotation
+        </a></td> <td class="text-xs-right">2045</td> <td class="text-xs-right">415</td> <td class="text-xs-right">
+        170 hours, 25 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/functional-interface.html" target="_blank">
+          Use Functional Interfaces
+        </a></td> <td class="text-xs-right">5</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        25 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">21</td> <td class="text-xs-right">15</td> <td class="text-xs-right">
+        1 hour, 45 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-map.html" target="_blank">
+          Use Stream::map
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        45 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">93</td> <td class="text-xs-right">50</td> <td class="text-xs-right">
+        3 hours, 6 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-utils.html" target="_blank">
+          Use StringUtils Methods
+        </a></td> <td class="text-xs-right">46</td> <td class="text-xs-right">17</td> <td class="text-xs-right">
+        7 hours, 40 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="4" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.mdfsorter</h2> <p>Metrics for org.eclipse.mdm.mdfsorter (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>61</td></tr> <tr><td>Number of files changed</td> <td>56</td></tr> <tr><td>Total number of issues fixed</td> <td>322</td></tr> <tr><td>Total time saved</td> <td>16 hours, 7 minutes</td></tr> <tr><td>jSparrow run time</td> <td>3 seconds</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.mdfsorter.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">52</td> <td class="text-xs-right">52</td> <td class="text-xs-right">
+        52 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-explicit-call-to-super.html" target="_blank">
+          Remove Explicit Call To super()
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        3 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/diamond-operator.html" target="_blank">
+          Remove Explicit Type Argument
+        </a></td> <td class="text-xs-right">28</td> <td class="text-xs-right">15</td> <td class="text-xs-right">
+        28 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">10</td> <td class="text-xs-right">7</td> <td class="text-xs-right">
+        50 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-literal-equality-check.html" target="_blank">
+          Reorder String Equality Check
+        </a></td> <td class="text-xs-right">22</td> <td class="text-xs-right">7</td> <td class="text-xs-right">
+        3 hours, 40 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-to-method-reference.html" target="_blank">
+          Replace Expression Lambda with Method Reference
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">11</td> <td class="text-xs-right">7</td> <td class="text-xs-right">
+        2 hours, 45 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/multi-variable-declaration-line.html" target="_blank">
+          Split Multiple Variable Declarations
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">19</td> <td class="text-xs-right">11</td> <td class="text-xs-right">
+        1 hour, 35 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/local-variable-type-inference.html" target="_blank">
+          Use Local Variable Type Inference
+        </a></td> <td class="text-xs-right">102</td> <td class="text-xs-right">24</td> <td class="text-xs-right">
+        3 hours, 24 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">70</td> <td class="text-xs-right">34</td> <td class="text-xs-right">
+        2 hours, 20 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="5" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.application</h2> <p>Metrics for org.eclipse.mdm.application (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>4</td></tr> <tr><td>Number of files changed</td> <td>4</td></tr> <tr><td>Total number of issues fixed</td> <td>8</td></tr> <tr><td>Total time saved</td> <td>39 minutes</td></tr> <tr><td>jSparrow run time</td> <td></td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.application.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">4</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-utils.html" target="_blank">
+          Use StringUtils Methods
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        30 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="6" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.businessobjects</h2> <p>Metrics for org.eclipse.mdm.businessobjects (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>137</td></tr> <tr><td>Number of files changed</td> <td>109</td></tr> <tr><td>Total number of issues fixed</td> <td>433</td></tr> <tr><td>Total time saved</td> <td>26 hours, 20 minutes</td></tr> <tr><td>jSparrow run time</td> <td>7 seconds</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.businessobjects.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/brackets-to-control.html" target="_blank">
+          Add Braces to Control Statements
+        </a></td> <td class="text-xs-right">71</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 hours, 22 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">106</td> <td class="text-xs-right">106</td> <td class="text-xs-right">
+        1 hour, 46 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/diamond-operator.html" target="_blank">
+          Remove Explicit Type Argument
+        </a></td> <td class="text-xs-right">13</td> <td class="text-xs-right">9</td> <td class="text-xs-right">
+        13 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">15</td> <td class="text-xs-right">8</td> <td class="text-xs-right">
+        1 hour, 15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">30</td> <td class="text-xs-right">9</td> <td class="text-xs-right">
+        1 hour
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enums-without-equals.html" target="_blank">
+          Replace equals() on Enum Constants
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-to-method-reference.html" target="_blank">
+          Replace Expression Lambda with Method Reference
+        </a></td> <td class="text-xs-right">21</td> <td class="text-xs-right">12</td> <td class="text-xs-right">
+        42 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">32</td> <td class="text-xs-right">14</td> <td class="text-xs-right">
+        8 hours
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/while-to-for-each.html" target="_blank">
+          Replace While-Loop with Enhanced For-Loop
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/multi-variable-declaration-line.html" target="_blank">
+          Split Multiple Variable Declarations
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        6 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-buffer-to-builder.html" target="_blank">
+          StringBuffer() to StringBuilder()
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/override-annotation.html" target="_blank">
+          Use @Override Annotation
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-if-wrapper-to-filter.html" target="_blank">
+          Use Stream::filter
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-map.html" target="_blank">
+          Use Stream::map
+        </a></td> <td class="text-xs-right">9</td> <td class="text-xs-right">4</td> <td class="text-xs-right">
+        2 hours, 15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">95</td> <td class="text-xs-right">39</td> <td class="text-xs-right">
+        3 hours, 10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-utils.html" target="_blank">
+          Use StringUtils Methods
+        </a></td> <td class="text-xs-right">30</td> <td class="text-xs-right">15</td> <td class="text-xs-right">
+        5 hours
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="7" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.connector</h2> <p>Metrics for org.eclipse.mdm.connector (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>5</td></tr> <tr><td>Number of files changed</td> <td>4</td></tr> <tr><td>Total number of issues fixed</td> <td>23</td></tr> <tr><td>Total time saved</td> <td>1 hour, 29 minutes</td></tr> <tr><td>jSparrow run time</td> <td>1 second</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.connector.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">4</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-explicit-call-to-super.html" target="_blank">
+          Remove Explicit Call To super()
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        1 minute
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-to-method-reference.html" target="_blank">
+          Replace Expression Lambda with Method Reference
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">11</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        22 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-utils.html" target="_blank">
+          Use StringUtils Methods
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        40 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="8" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.filerelease</h2> <p>Metrics for org.eclipse.mdm.filerelease (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>19</td></tr> <tr><td>Number of files changed</td> <td>17</td></tr> <tr><td>Total number of issues fixed</td> <td>127</td></tr> <tr><td>Total time saved</td> <td>10 hours, 40 minutes</td></tr> <tr><td>jSparrow run time</td> <td>1 second</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.filerelease.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">17</td> <td class="text-xs-right">17</td> <td class="text-xs-right">
+        17 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/diamond-operator.html" target="_blank">
+          Remove Explicit Type Argument
+        </a></td> <td class="text-xs-right">6</td> <td class="text-xs-right">4</td> <td class="text-xs-right">
+        6 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-to-method-reference.html" target="_blank">
+          Replace Expression Lambda with Method Reference
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        6 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">5</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        1 hour, 15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/primitive-object-use-equals.html" target="_blank">
+          Use equals() on Primitive Objects
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/multi-catch.html" target="_blank">
+          Use Multi Catch
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-collect.html" target="_blank">
+          Use Stream::collect
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        30 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-if-wrapper-to-filter.html" target="_blank">
+          Use Stream::filter
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">47</td> <td class="text-xs-right">9</td> <td class="text-xs-right">
+        1 hour, 34 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-utils.html" target="_blank">
+          Use StringUtils Methods
+        </a></td> <td class="text-xs-right">36</td> <td class="text-xs-right">7</td> <td class="text-xs-right">
+        6 hours
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="9" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.freetextindexer</h2> <p>Metrics for org.eclipse.mdm.freetextindexer (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>15</td></tr> <tr><td>Number of files changed</td> <td>10</td></tr> <tr><td>Total number of issues fixed</td> <td>40</td></tr> <tr><td>Total time saved</td> <td>3 hours, 20 minutes</td></tr> <tr><td>jSparrow run time</td> <td>1 second</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.freetextindexer.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/brackets-to-control.html" target="_blank">
+          Add Braces to Control Statements
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">10</td> <td class="text-xs-right">10</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">5</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-to-method-reference.html" target="_blank">
+          Replace Expression Lambda with Method Reference
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">5</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        1 hour, 15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/immutable-static-final-collections.html" target="_blank">
+          Replace static final Collections with Collections.unmodifiable...()
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/functional-interface.html" target="_blank">
+          Use Functional Interfaces
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/lambda-for-each-map.html" target="_blank">
+          Use Stream::map
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">6</td> <td class="text-xs-right">3</td> <td class="text-xs-right">
+        12 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-utils.html" target="_blank">
+          Use StringUtils Methods
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        40 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="10" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.preferences</h2> <p>Metrics for org.eclipse.mdm.preferences (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>7</td></tr> <tr><td>Number of files changed</td> <td>5</td></tr> <tr><td>Total number of issues fixed</td> <td>26</td></tr> <tr><td>Total time saved</td> <td>2 hours, 25 minutes</td></tr> <tr><td>jSparrow run time</td> <td></td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.preferences.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">5</td> <td class="text-xs-right">5</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-explicit-call-to-super.html" target="_blank">
+          Remove Explicit Call To super()
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-concat-to-plus.html" target="_blank">
+          Replace Concatenation with Infix-Operation
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        20 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        8 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-utils.html" target="_blank">
+          Use StringUtils Methods
+        </a></td> <td class="text-xs-right">11</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        1 hour, 50 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="11" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.property</h2> <p>Metrics for org.eclipse.mdm.property (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>3</td></tr> <tr><td>Number of files changed</td> <td>2</td></tr> <tr><td>Total number of issues fixed</td> <td>9</td></tr> <tr><td>Total time saved</td> <td>35 minutes</td></tr> <tr><td>jSparrow run time</td> <td></td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.property.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/statement-lambda-to-expression.html" target="_blank">
+          Remove Lambda Expression Braces
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/enhanced-for-loop-to-stream-for-each.html" target="_blank">
+          Replace For-Loop with Iterable::forEach
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        15 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">3</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        6 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="12" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.openatfx.mdf</h2> <p>Metrics for org.eclipse.mdm.openatfx.mdf (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>104</td></tr> <tr><td>Number of files changed</td> <td>100</td></tr> <tr><td>Total number of issues fixed</td> <td>380</td></tr> <tr><td>Total time saved</td> <td>23 hours, 40 minutes</td></tr> <tr><td>jSparrow run time</td> <td>3 seconds</td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.openatfx.mdf.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">95</td> <td class="text-xs-right">95</td> <td class="text-xs-right">
+        1 hour, 35 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/diamond-operator.html" target="_blank">
+          Remove Explicit Type Argument
+        </a></td> <td class="text-xs-right">42</td> <td class="text-xs-right">8</td> <td class="text-xs-right">
+        42 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/remove-unnecessary-throws.html" target="_blank">
+          Remove Unnecessary Thrown Exceptions on Method Signatures
+        </a></td> <td class="text-xs-right">4</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        8 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-literal-equality-check.html" target="_blank">
+          Reorder String Equality Check
+        </a></td> <td class="text-xs-right">94</td> <td class="text-xs-right">9</td> <td class="text-xs-right">
+        15 hours, 40 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/for-to-for-each.html" target="_blank">
+          Replace For-Loop with Enhanced-For-Loop
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        5 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/string-buffer-to-builder.html" target="_blank">
+          StringBuffer() to StringBuilder()
+        </a></td> <td class="text-xs-right">1</td> <td class="text-xs-right">1</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/guard-condition.html" target="_blank">
+          Use Guard Condition
+        </a></td> <td class="text-xs-right">12</td> <td class="text-xs-right">5</td> <td class="text-xs-right">
+        1 hour
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/multi-catch.html" target="_blank">
+          Use Multi Catch
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        10 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">129</td> <td class="text-xs-right">42</td> <td class="text-xs-right">
+        4 hours, 18 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div><div id="13" class="tabcontent"><h2>jSparrow results for org.eclipse.mdm.realm.login.glassfish</h2> <p>Metrics for org.eclipse.mdm.realm.login.glassfish (created on 13.2.2019):</p> <div><table class="table-hover"><tbody><tr><td>Total Java file* count</td> <td>2</td></tr> <tr><td>Number of files changed</td> <td>2</td></tr> <tr><td>Total number of issues fixed</td> <td>4</td></tr> <tr><td>Total time saved</td> <td>6 minutes</td></tr> <tr><td>jSparrow run time</td> <td></td></tr></tbody></table>
+
+  * One Java file could contain more than one Java class.
+</div> <h3 id="per-rule">Per Rule Statistics</h3>
+
+    This table contains the list of rules that were applied on org.eclipse.mdm.realm.login.glassfish.
+
+    <div><div disable-filtering="true" disable-pagination="true" hide-default-footer="true" items-per-page="100"><div class="v-table__overflow"><table class="v-datatable v-table theme--light"><thead><tr><th role="columnheader" scope="col" aria-label="Rule Name: Sorted ascending. Activate to sort descending." aria-sort="ascending" tabIndex="0" class="column sortable active asc text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Rule Name</th><th role="columnheader" scope="col" aria-label="Issues Fixed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Issues Fixed</th><th role="columnheader" scope="col" aria-label="Files Changed: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Files Changed</th><th role="columnheader" scope="col" aria-label="Time saved: Not sorted. Activate to sort ascending." aria-sort="none" tabIndex="0" class="column sortable text-xs-center"><i aria-hidden="true" class="v-icon material-icons theme--light" style="font-size:16px;">arrow_upward</i>Time saved</th></tr><tr class="v-datatable__progress"><th colspan="4" class="column"></th></tr></thead><tbody><tr><td class="text-xs-right"><a href="/rules/organize-imports.html" target="_blank">
+          Organize Imports
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        2 minutes
+      </td></tr><tr><td class="text-xs-right"><a href="/rules/use-string-builder-append.html" target="_blank">
+          Use StringBuilder::append
+        </a></td> <td class="text-xs-right">2</td> <td class="text-xs-right">2</td> <td class="text-xs-right">
+        4 minutes
+      </td></tr></tbody></table></div></div>
+
+  * One Java file could contain more than one Java class.
+</div> <hr> <br></div></div></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="footer"><hr> <div class="footer-links"><p>
+    jSparrow is a brand of ©2004-2022 Splendit IT Consulting GmbH | 
+      <a href="https://jsparrow.io/wp-content/uploads/Impressum.pdf">Impressum | </a> <a href="https://jsparrow.io/wp-content/uploads/Software-download-terms.pdf">Software Download Terms | </a> <a href="https://jsparrow.io/wp-content/uploads/Digital-store-terms.pdf">Digital Store Terms | </a> <a href="https://jsparrow.io/wp-content/uploads/Terms-and-conditions-of-use.pdf">Website Terms | </a> <a href="https://jsparrow.io/wp-content/uploads/EULA.pdf">EULA | </a> <a href="https://jsparrow.io/wp-content/uploads/GDPR.pdf">GDPR | </a> <a href="https://jsparrow.io/wp-content/uploads/Privacy-and-cookies-policy.pdf">Privacy and Cookies</a></p></div></div><div data-app="true" id="app" class="application theme--light"><div class="application--wrap"><div id="buy" class="buy-link"><a href="https://jsparrow.io/report-an-issue" target="_blank" class="v-btn theme--light" style="background-color:#00000;border-color:#00000;"><div class="v-btn__content">
+      Support
+      <i aria-hidden="true" class="v-icon .v-icon--right v-icon--right material-icons theme--dark" style="font-size:16px;">help</i></div></a></div></div></div></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8d6be1f6.js" defer></script><script src="/assets/js/17.56318689.js" defer></script><script src="/assets/js/5.d6f1970e.js" defer></script><script src="/assets/js/174.58b98e9f.js" defer></script><script src="/assets/js/22.9e19c976.js" defer></script><script src="/assets/js/16.ade8fee8.js" defer></script>
+  </body>
+</html>
