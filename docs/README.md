@@ -8,10 +8,12 @@ Welcome! Here you will find the complete documentation of jSparrow.
 
 ## Latest Release Notes
 
-We released a new rule and one new marker!
-Check out the release notes for [jSparrow 4.19.0](/eclipse/release-notes.html#_4-19-0).
+jSparrow goes open source!
+Check out the release notes for [jSparrow 4.20.0](/eclipse/release-notes.html#_4-20-0).
 
-jSparrow is in active development and there are new rules released regularly! Stay tuned! 
+At jSparrow, we are dedicated to improving and maintaining high code quality. 
+We welcome contributions from the community that help us achieve this goal.
+
 
 <img src="/jsparrow-comic-pointing-at-a-graph.PNG" width="200" alt="a drawn cute bird pointing at a graph that shows positive results">
 
