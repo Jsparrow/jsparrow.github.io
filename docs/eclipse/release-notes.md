@@ -5,6 +5,18 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
+## 4.20 <Badge vertical="middle" text="19.07.2025"/>
+
+
+jSparrow goes open source! The jSparrow Eclipse plugin is now available under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+We are excited to announce that the source code is now publicly available on [GitHub](https://github.com/Splendit/simonykees). This means that jSparrow no longer requires a license—everyone can use, modify, and distribute the plugin freely.
+
+We invite the community to contribute, report issues, and help shape the future of jSparrow. Whether you want to suggest new features, improve existing rules, or simply explore the codebase, your participation is welcome!
+
+Thank you for supporting jSparrow. We look forward to building an even better tool together with the open source community.
+
+
 ## 4.19.0 <Badge vertical="middle" text="05.04.2024"/>
 
 The [119<sup>th</sup> refactoring rule](/rules/) and one additional jSparrow marker are shipped with jSparrow 4.19.0.

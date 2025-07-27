@@ -4,8 +4,8 @@
   "description": "jSparrow Documentation",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs"
   },
   "author": "Martin Huter <martin.huter@splendit.at>",
   "license": "MIT",
