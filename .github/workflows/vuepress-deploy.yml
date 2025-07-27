@@ -36,6 +36,7 @@ jobs:
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./docs/.vuepress/dist
+          publish_branch: master
       - name: Checkout
         uses: actions/checkout@master
           
