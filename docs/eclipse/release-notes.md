@@ -5,10 +5,9 @@ title: Release Notes
 
 Here you will find the latest information about releases of the jSparrow Eclipse plugin.
 
-## 4.20 <Badge vertical="middle" text="19.07.2025"/>
+## 4.20.0 <Badge vertical="middle" text="27.07.2025"/>
 
-
-jSparrow goes open source! The jSparrow Eclipse plugin is now available under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+jSparrow goes open source! The jSparrow Eclipse plugin is now available under the MIT License with the Commons Clause, which permits use and modification of the software, but does not allow selling the software as a service or as a product
 
 We are excited to announce that the source code is now publicly available on [GitHub](https://github.com/Splendit/simonykees). This means that jSparrow no longer requires a license—everyone can use, modify, and distribute the plugin freely.
 
